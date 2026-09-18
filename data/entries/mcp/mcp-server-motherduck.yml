@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: mcp-server-motherduck
+name: motherduckdb/mcp-server-motherduck
+title: MotherDuck SQL analytics
+url: https://github.com/motherduckdb/mcp-server-motherduck
+type: mcp-server
+category: cloud
+license: MIT
+tags:
+  - duckdb
+  - analytics
+description:
+  en: SQL analytics and data engineering for AI assistants and IDEs via MotherDuck; needs a MOTHERDUCK_TOKEN.
+  pt: Analytics em SQL e engenharia de dados para assistentes de IA e IDEs via MotherDuck; exige MOTHERDUCK_TOKEN.
+mcp:
+  name: mcp-server-motherduck
+  stdio:
+    command: uvx
+    args:
+      - mcp-server-motherduck
+    env:
+      MOTHERDUCK_TOKEN: <MOTHERDUCK_TOKEN>
+      AWS_ACCESS_KEY_ID: <AWS_ACCESS_KEY_ID>
+      AWS_SECRET_ACCESS_KEY: <AWS_SECRET_ACCESS_KEY>
+      AWS_SESSION_TOKEN: <AWS_SESSION_TOKEN>
+origin:
+  list: mcp-registry
+  ref: io.github.motherduckdb/mcp-server-motherduck

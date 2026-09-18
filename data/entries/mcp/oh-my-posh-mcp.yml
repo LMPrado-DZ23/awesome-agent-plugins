@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: oh-my-posh-mcp
+name: Oh My Posh Validator
+title: Validate oh-my-posh configs
+url: https://github.com/JanDeDobbeleer/oh-my-posh/tree/main/website/api/mcp
+type: mcp-server
+category: dev
+license: MIT
+tags:
+  - shell
+  - validation
+description:
+  en: Validates oh-my-posh configurations and segment snippets against the official schema.
+  pt: Valida configurações do oh-my-posh e trechos de segmentos contra o schema oficial.
+mcp:
+  name: validator
+  http:
+    url: https://ohmyposh.dev/api/mcp
+origin:
+  list: mcp-registry
+  ref: dev.ohmyposh/validator

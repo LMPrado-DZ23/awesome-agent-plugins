@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: clauder-mcp
+name: ClaudeR - RStudio MCP Server
+title: RStudio AI assistant connection
+url: https://github.com/IMNMV/ClaudeR
+type: mcp-server
+category: dev
+license: null
+tags:
+  - r
+  - rstudio
+description:
+  en: Connects RStudio to AI assistants for interactive R coding and data analysis.
+  pt: Conecta o RStudio a assistentes de IA para codificação interativa em R e análise de dados.
+mcp:
+  name: clauder
+  stdio:
+    command: uvx
+    args:
+      - clauder-mcp
+origin:
+  list: mcp-registry
+  ref: io.github.IMNMV/clauder

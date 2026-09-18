@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: mcp-odoo
+name: erpipe-org/mcp-odoo
+title: Odoo ERP access
+url: https://github.com/erpipe-org/mcp-odoo
+type: mcp-server
+category: integrations
+license: MIT
+tags:
+  - erp
+  - odoo
+description:
+  en: Odoo server with gated writes and multi-instance support; needs Odoo URL, database, and credentials.
+  pt: Servidor para o Odoo com escritas controladas e suporte multi-instância; exige URL, banco e credenciais do Odoo.
+mcp:
+  name: mcp-odoo
+  stdio:
+    command: uvx
+    args:
+      - odoo-mcp
+    env:
+      ODOO_URL: <ODOO_URL>
+      ODOO_DB: <ODOO_DB>
+      ODOO_USERNAME: <ODOO_USERNAME>
+      ODOO_PASSWORD: <ODOO_PASSWORD>
+origin:
+  list: mcp-registry
+  ref: io.github.erpipe-org/mcp-odoo

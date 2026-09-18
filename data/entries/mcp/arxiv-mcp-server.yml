@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: arxiv-mcp-server
+name: blazickjp/arxiv-mcp-server
+title: arXiv paper search and analysis
+url: https://github.com/blazickjp/arxiv-mcp-server
+type: mcp-server
+category: docs
+license: Apache-2.0
+tags:
+  - docs
+  - research
+  - arxiv
+description:
+  en: Searches arXiv papers, downloads full text, and provides semantic search, citation graphs, and alerts.
+  pt: Busca artigos no arXiv, baixa o texto completo e oferece busca semântica, grafos de citação e alertas.
+mcp:
+  name: arxiv-mcp-server
+  stdio:
+    command: uvx
+    args:
+      - arxiv-mcp-server
+origin:
+  list: mcp-registry
+  ref: io.github.blazickjp/arxiv-mcp-server

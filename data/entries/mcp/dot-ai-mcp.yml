@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dot-ai-mcp
+name: vfarcic/dot-ai
+title: AI-driven Kubernetes deployment
+url: https://github.com/vfarcic/dot-ai
+type: mcp-server
+category: cloud
+license: MIT
+tags:
+  - kubernetes
+  - deployment
+description:
+  en: AI-powered development platform for Kubernetes deployments and intelligent automation.
+  pt: Plataforma de desenvolvimento com IA para deployments no Kubernetes e automação inteligente.
+mcp:
+  name: dot-ai
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@vfarcic/dot-ai"
+origin:
+  list: mcp-registry
+  ref: io.github.vfarcic/dot-ai

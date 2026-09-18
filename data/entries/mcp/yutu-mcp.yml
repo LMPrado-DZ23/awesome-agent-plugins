@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: yutu-mcp
+name: yutu
+title: Grow a YouTube channel
+url: https://github.com/eat-pray-ai/yutu
+type: mcp-server
+category: integrations
+license: Apache-2.0
+tags:
+  - youtube
+description:
+  en: AI-powered toolkit to grow a YouTube channel; needs YUTU_CREDENTIAL and YUTU_CACHE_TOKEN.
+  pt: Kit com IA para fazer crescer um canal do YouTube; exige YUTU_CREDENTIAL e YUTU_CACHE_TOKEN.
+mcp:
+  name: yutu
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@eat-pray-ai/yutu"
+    env:
+      YUTU_CREDENTIAL: <YUTU_CREDENTIAL>
+      YUTU_CACHE_TOKEN: <YUTU_CACHE_TOKEN>
+origin:
+  list: mcp-registry
+  ref: io.github.eat-pray-ai/yutu

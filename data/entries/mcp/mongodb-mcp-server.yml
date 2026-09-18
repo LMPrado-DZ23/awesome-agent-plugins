@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: mongodb-mcp-server
+name: mongodb-js/mongodb-mcp-server
+title: MongoDB database access
+url: https://github.com/mongodb-js/mongodb-mcp-server
+type: mcp-server
+category: cloud
+license: Apache-2.0
+tags:
+  - mongodb
+  - database
+description:
+  en: Official MongoDB server for database operations from AI agents.
+  pt: Servidor oficial do MongoDB para operações de banco de dados a partir de agentes de IA.
+mcp:
+  name: mongodb-mcp-server
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - mongodb-mcp-server
+    env:
+      MDB_MCP_API_CLIENT_ID: <MDB_MCP_API_CLIENT_ID>
+      MDB_MCP_API_CLIENT_SECRET: <MDB_MCP_API_CLIENT_SECRET>
+      MDB_MCP_CONNECTION_STRING: <MDB_MCP_CONNECTION_STRING>
+      MDB_MCP_VOYAGE_API_KEY: <MDB_MCP_VOYAGE_API_KEY>
+origin:
+  list: mcp-registry
+  ref: io.github.mongodb-js/mongodb-mcp-server

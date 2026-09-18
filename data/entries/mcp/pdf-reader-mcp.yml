@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: pdf-reader-mcp
+name: PDF Reader MCP
+title: PDF reading with page citations
+url: https://github.com/SylphxAI/pdf-reader-mcp
+type: mcp-server
+category: docs
+license: MIT
+tags:
+  - pdf
+  - docs
+description:
+  en: Evidence-first PDF server that returns citeable page and bounding-box evidence for documents.
+  pt: Servidor de PDF com foco em evidências, retornando página e coordenadas citáveis dos trechos do documento.
+mcp:
+  name: pdf-reader-mcp
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@sylphx/pdf-reader-mcp"
+alternatives:
+  - name: Docling MCP
+    url: https://github.com/docling-project/docling-mcp
+    adds:
+      en: Converts PDFs and other document formats to structured output via Docling; needs a Docling API key.
+      pt: >-
+        Converte PDFs e outros formatos de documento em saída estruturada via Docling; exige uma chave de API do
+        Docling.
+  - name: PageIndex MCP
+    url: https://github.com/VectifyAI/pageindex-mcp
+    adds:
+      en: Reasoning-based RAG for chatting with long PDFs, local or online.
+      pt: RAG baseado em raciocínio para conversar com PDFs longos, locais ou online.
+  - name: MinerU Open MCP
+    url: https://github.com/opendatalab/MinerU-Ecosystem
+    adds:
+      en: Parses PDF, image, doc, ppt, and xls files into Markdown via the MinerU API; needs a MINERU_API_TOKEN.
+      pt: Converte PDF, imagem, doc, ppt e xls em Markdown via a API do MinerU; exige MINERU_API_TOKEN.
+origin:
+  list: mcp-registry
+  ref: io.github.SylphxAI/pdf-reader-mcp

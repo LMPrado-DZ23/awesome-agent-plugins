@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: iwe-mcp
+name: IWE
+title: Markdown notes as agent memory
+url: https://github.com/iwe-org/iwe
+type: mcp-server
+category: memory
+license: Apache-2.0
+tags:
+  - memory
+  - markdown
+  - notes
+description:
+  en: Runs a Markdown knowledge base as agent memory against the notes directory it is started in.
+  pt: Executa uma base de conhecimento em Markdown como memória do agente, sobre o diretório de notas em que é iniciado.
+mcp:
+  name: iwe
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@iwe-org/mcp"
+origin:
+  list: mcp-registry
+  ref: io.github.iwe-org/iwe

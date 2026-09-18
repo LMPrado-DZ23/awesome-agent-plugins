@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: testkube-mcp
+name: kubeshop/testkube
+title: Manage test workflows via Kubernetes
+url: https://github.com/kubeshop/testkube
+type: mcp-server
+category: dev
+license: null
+tags:
+  - testing
+  - kubernetes
+description:
+  en: Manages test workflows, executions, and artifacts on Kubernetes via AI assistants; needs a TK_ACCESS_TOKEN.
+  pt: Gerencia workflows de teste, execuções e artefatos no Kubernetes via assistentes de IA; exige TK_ACCESS_TOKEN.
+mcp:
+  name: testkube-mcp
+  stdio:
+    command: docker
+    args:
+      - run
+      - "-i"
+      - "--rm"
+      - "-e"
+      - TK_ACCESS_TOKEN
+      - "-e"
+      - TK_ORG_ID
+      - "-e"
+      - TK_ENV_ID
+      - docker.io/kubeshop/mcp-server:2.9.1
+    env:
+      TK_ACCESS_TOKEN: <TK_ACCESS_TOKEN>
+      TK_ORG_ID: <TK_ORG_ID>
+      TK_ENV_ID: <TK_ENV_ID>
+origin:
+  list: mcp-registry
+  ref: io.github.kubeshop/testkube-mcp

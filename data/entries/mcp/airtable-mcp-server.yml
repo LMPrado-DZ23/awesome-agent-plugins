@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: airtable-mcp-server
+name: Airtable
+title: Airtable read/write access
+url: https://github.com/domdomegg/airtable-mcp-server
+type: mcp-server
+category: integrations
+license: MIT
+tags:
+  - airtable
+  - database
+description:
+  en: Reads and writes Airtable database schemas, tables, and records; needs an AIRTABLE_API_KEY.
+  pt: Lê e escreve schemas, tabelas e registros de bases do Airtable; exige AIRTABLE_API_KEY.
+mcp:
+  name: airtable-mcp-server
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - airtable-mcp-server
+    env:
+      AIRTABLE_API_KEY: <AIRTABLE_API_KEY>
+origin:
+  list: mcp-registry
+  ref: io.github.domdomegg/airtable-mcp-server

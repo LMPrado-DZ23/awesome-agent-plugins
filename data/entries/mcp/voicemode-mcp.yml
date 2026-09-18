@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: voicemode-mcp
+name: mbailey/voicemode
+title: Natural voice conversations
+url: https://github.com/mbailey/voicemode
+type: mcp-server
+category: multimodal
+license: MIT
+tags:
+  - voice
+  - tts
+description:
+  en: Natural voice conversations for AI assistants via speech-to-text and text-to-speech; needs an OPENAI_API_KEY.
+  pt: Conversas de voz naturais para assistentes de IA via speech-to-text e text-to-speech; exige OPENAI_API_KEY.
+mcp:
+  name: voicemode
+  stdio:
+    command: uvx
+    args:
+      - voice-mode
+    env:
+      OPENAI_API_KEY: <OPENAI_API_KEY>
+origin:
+  list: mcp-registry
+  ref: dev.voicemode/voicemode

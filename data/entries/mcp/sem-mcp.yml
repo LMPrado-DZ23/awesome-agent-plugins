@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: sem-mcp
+name: Ataraxy-Labs/sem
+title: Entity-level semantic code diff
+url: https://github.com/Ataraxy-Labs/sem
+type: mcp-server
+category: code-intel
+license: Apache-2.0
+tags:
+  - code-intel
+  - diff
+  - analysis
+description:
+  en: "Entity-level code intelligence: semantic diff, impact analysis, blame, and context for AI agents."
+  pt: >-
+    Inteligência de código no nível de entidade: diff semântico, análise de impacto, blame e contexto para agentes de
+    IA.
+mcp:
+  name: sem
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@ataraxy-labs/sem"
+origin:
+  list: mcp-registry
+  ref: io.github.Ataraxy-Labs/sem

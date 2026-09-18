@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: mcp-grafana
+name: grafana/mcp-grafana
+title: Grafana dashboards and data
+url: https://github.com/grafana/mcp-grafana
+type: mcp-server
+category: cloud
+license: Apache-2.0
+tags:
+  - grafana
+  - dashboards
+description:
+  en: Official server giving access to Grafana dashboards, data sources, and more.
+  pt: Servidor oficial que dá acesso a dashboards, fontes de dados e mais recursos do Grafana.
+mcp:
+  name: mcp-grafana
+  stdio:
+    command: docker
+    args:
+      - run
+      - "-i"
+      - "--rm"
+      - "-e"
+      - GRAFANA_URL
+      - "-e"
+      - GRAFANA_SERVICE_ACCOUNT_TOKEN
+      - "-e"
+      - GRAFANA_PASSWORD
+      - docker.io/grafana/mcp-grafana:1.5.1
+    env:
+      GRAFANA_URL: <GRAFANA_URL>
+      GRAFANA_SERVICE_ACCOUNT_TOKEN: <GRAFANA_SERVICE_ACCOUNT_TOKEN>
+      GRAFANA_PASSWORD: <GRAFANA_PASSWORD>
+  http:
+    url: https://mcp.grafana.com/mcp
+origin:
+  list: mcp-registry
+  ref: io.github.grafana/mcp-grafana

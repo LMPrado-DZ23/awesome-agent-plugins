@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: orcareplay-mcp
+name: Continuum-AI-Corp/OrcaReplay
+title: Replay recorded agent runs
+url: https://github.com/Continuum-AI-Corp/OrcaReplay
+type: mcp-server
+category: workflow
+license: Apache-2.0
+tags:
+  - replay
+  - debugging
+description:
+  en: Reads, replays, and forks recorded coding-agent runs.
+  pt: Lê, reproduz e bifurca execuções gravadas de agentes de código.
+mcp:
+  name: orcareplay
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - orcareplay
+origin:
+  list: mcp-registry
+  ref: io.github.Continuum-AI-Corp/orcareplay

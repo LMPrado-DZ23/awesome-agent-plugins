@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: webcomponents-react-mcp-server
+name: UI5/webcomponents-react
+title: UI5 Web Components for React docs
+url: https://github.com/UI5/webcomponents-react/tree/main/packages/mcp-server
+type: mcp-server
+category: docs
+license: Apache-2.0
+tags:
+  - docs
+  - ui5
+  - react
+description:
+  en: Official developer documentation and API assistance for UI5 Web Components for React.
+  pt: Documentação oficial para desenvolvedores e assistência de API para UI5 Web Components for React.
+mcp:
+  name: webcomponents-react-mcp-server
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@ui5/webcomponents-react-mcp"
+origin:
+  list: mcp-registry
+  ref: io.github.UI5/webcomponents-react-mcp-server

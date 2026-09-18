@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: appllama-skills-mcp
+name: Appllama
+title: Study top app screens and paywalls
+url: https://github.com/Appllama/appllama-skills
+type: mcp-server
+category: tools
+license: MIT
+tags:
+  - design
+  - mobile
+description:
+  en: Studies screens, flows, and paywalls from top-earning iOS apps to inform new app designs.
+  pt: Estuda telas, fluxos e paywalls de apps de iOS com maior faturamento para embasar o design de novos apps.
+mcp:
+  name: appllama
+  http:
+    url: https://mcp.appllama.io/mcp
+origin:
+  list: mcp-registry
+  ref: io.appllama/appllama

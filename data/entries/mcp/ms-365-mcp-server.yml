@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: ms-365-mcp-server
+name: Microsoft 365 MCP Server
+title: Microsoft 365 and Graph API
+url: https://github.com/Softeria/ms-365-mcp-server
+type: mcp-server
+category: integrations
+license: MIT
+tags:
+  - microsoft-365
+description:
+  en: Interacts with Microsoft 365 and Office services through the Microsoft Graph API.
+  pt: Interage com o Microsoft 365 e serviços do Office por meio da Microsoft Graph API.
+mcp:
+  name: ms-365-mcp-server
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@softeria/ms-365-mcp-server"
+origin:
+  list: mcp-registry
+  ref: io.github.Softeria/ms-365-mcp-server

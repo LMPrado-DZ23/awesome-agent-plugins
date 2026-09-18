@@ -11,8 +11,22 @@
 - [LaTeX paper workbench with review](#dsh-paperlab) — Bancada de trabalho LaTeX estilo Overleaf: anote qualquer texto no PDF renderizado e deixe um agente do DSH re…
 - [Text-to-slideshow presentation skill](#dsh-dsh-ppt) — Transforma uma frase ou um documento em uma apresentação HTML mais um PPTX editável, com sete layouts (incluin…
 - [In-chat preview for produced files](#dsh-dsh-markdown-preview) — Pré-visualização no chat para arquivos produzidos: clique em um chip de arquivo para renderizar Markdown (mark…
+- [3D and AR SDK reference](#sceneview-mcp) — Documentação de API, exemplos, validação e geração de código para o SDK 3D e AR SceneView em Android, iOS e We…
+- [arXiv paper search and analysis](#arxiv-mcp-server) — Busca artigos no arXiv, baixa o texto completo e oferece busca semântica, grafos de citação e alertas.
 - [Auto-generate architecture diagrams](#dsh-archify-integrations-deepseek-harness) — Gera diagramas interativos e autocontidos, validados, de arquitetura, fluxo de trabalho, sequência, fluxo de d…
+- [Claude Code reference search](#claude-code-ultimate-guide-mcp) — Busca no Claude Code Ultimate Guide e em referências legíveis por máquina, a partir de qualquer cliente MCP.
+- [Explore Claude Code source](#claude-code-mcp-server) — Explora o código-fonte do CLI do Claude Code: navega por ferramentas, comandos e faz busca no código.
 - [MarkItDown MCP](#markitdown-mcp) — Converte PDF, documentos Office, imagens, áudio, HTML e mais em Markdown para o agente, usando o Microsoft Mar…
+- [Microsoft Learn documentation](#mcp) — Servidor oficial do Microsoft Learn com documentação confiável em tempo real e exemplos de código para agentes…
+- [Org's technical decisions log](#packmind-mcp-server) — Captura, escala e reforça as decisões técnicas de uma organização como referência pesquisável.
+- [PDF reading with page citations](#pdf-reader-mcp) — Servidor de PDF com foco em evidências, retornando página e coordenadas citáveis dos trechos do documento.
+- [PostgreSQL docs and best practices](#pg-aiguide-mcp) — Documentação e boas práticas abrangentes de PostgreSQL, incluindo ferramentas do ecossistema; exige OPENAI_API…
+- [Svelte docs and autofixing](#ai-tools-mcp-stdio) — Servidor oficial do Svelte com documentação e ferramentas de correção automática para desenvolvimento em Svelt…
+- [Token-efficient docs search](#ref-tools-mcp) — Busca eficiente em tokens para agentes de código sobre documentação pública e privada; exige REF_API_KEY.
+- [UI5 Web Components for React docs](#webcomponents-react-mcp-server) — Documentação oficial para desenvolvedores e assistência de API para UI5 Web Components for React.
+- [Unified SAP documentation search](#mcp-sap-docs) — Busca unificada e rápida na documentação SAP (SAPUI5, CAP, OpenUI5, wdi5) usando busca full-text BM25.
+- [Yuque knowledge base access](#yuque-mcp-server) — Expõe uma base de conhecimento do Yuque a assistentes de IA; exige um token pessoal, de grupo ou geral do Yuqu…
+- [Zotero research library access](#zotero-mcp) — Busca, leitura, anotação e adição de itens na biblioteca de pesquisa do Zotero, local ou web; exige ZOTERO_API…
 
 <a id="context7"></a>
 
@@ -441,6 +455,376 @@ dsh plugin --profile web add github:GitHubJiKe/dsh-markdown-preview
 
 </details>
 
+<a id="sceneview-mcp"></a>
+
+### 3D and AR SDK reference
+
+[SceneView/sceneview](https://github.com/SceneView/sceneview) — `Servidor MCP` · Licença: Apache-2.0 · Funciona com: Todos os clientes
+
+Documentação de API, exemplos, validação e geração de código para o SDK 3D e AR SceneView em Android, iOS e Web.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio mcp -- npx -y sceneview-mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add mcp -- npx -y sceneview-mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add mcp npx -y sceneview-mcp
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "sceneview-mcp"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "mcp": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "sceneview-mcp"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "mcp": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "sceneview-mcp"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "sceneview-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "sceneview-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "mcp": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "sceneview-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  mcp:
+    type: stdio
+    cmd: npx
+    args: ["-y","sceneview-mcp"]
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "sceneview-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "sceneview-mcp"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `mcp.cordis.yml  →  dsh web --patch ./mcp.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: mcp
+        transport: stdio
+        command: npx
+        args: ["-y","sceneview-mcp"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="arxiv-mcp-server"></a>
+
+### arXiv paper search and analysis
+
+[blazickjp/arxiv-mcp-server](https://github.com/blazickjp/arxiv-mcp-server) — `Servidor MCP` · Licença: Apache-2.0 · Funciona com: Todos os clientes
+
+Busca artigos no arXiv, baixa o texto completo e oferece busca semântica, grafos de citação e alertas.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio arxiv-mcp-server -- uvx arxiv-mcp-server
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add arxiv-mcp-server -- uvx arxiv-mcp-server
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add arxiv-mcp-server uvx arxiv-mcp-server
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "arxiv-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "arxiv-mcp-server"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "arxiv-mcp-server": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "arxiv-mcp-server"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "arxiv-mcp-server": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "arxiv-mcp-server"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "arxiv-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "arxiv-mcp-server"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "arxiv-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "arxiv-mcp-server"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "arxiv-mcp-server": {
+      "source": "custom",
+      "command": "uvx",
+      "args": [
+        "arxiv-mcp-server"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  arxiv-mcp-server:
+    type: stdio
+    cmd: uvx
+    args: ["arxiv-mcp-server"]
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "arxiv-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "arxiv-mcp-server"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "arxiv-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "arxiv-mcp-server"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `arxiv-mcp-server.cordis.yml  →  dsh web --patch ./arxiv-mcp-server.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-arxiv-mcp-server
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: arxiv-mcp-server
+        transport: stdio
+        command: uvx
+        args: ["arxiv-mcp-server"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
 <a id="dsh-archify-integrations-deepseek-harness"></a>
 
 ### Auto-generate architecture diagrams
@@ -455,6 +839,384 @@ Gera diagramas interativos e autocontidos, validados, de arquitetura, fluxo de t
 
 ```bash
 dsh plugin --profile web add github:tt-a1i/archify#path:/integrations/deepseek-harness
+```
+
+</details>
+
+<a id="claude-code-ultimate-guide-mcp"></a>
+
+### Claude Code reference search
+
+[Claude Code Ultimate Guide](https://github.com/FlorianBruniaux/claude-code-ultimate-guide) — `Servidor MCP` · Licença: CC-BY-SA-4.0 · Funciona com: Todos os clientes
+
+Busca no Claude Code Ultimate Guide e em referências legíveis por máquina, a partir de qualquer cliente MCP.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio claude-code-guide -- npx -y claude-code-ultimate-guide-mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add claude-code-guide -- npx -y claude-code-ultimate-guide-mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add claude-code-guide npx -y claude-code-ultimate-guide-mcp
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "claude-code-guide": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "claude-code-ultimate-guide-mcp"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "claude-code-guide": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "claude-code-ultimate-guide-mcp"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "claude-code-guide": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "claude-code-ultimate-guide-mcp"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "claude-code-guide": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "claude-code-ultimate-guide-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "claude-code-guide": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "claude-code-ultimate-guide-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "claude-code-guide": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "claude-code-ultimate-guide-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  claude-code-guide:
+    type: stdio
+    cmd: npx
+    args: ["-y","claude-code-ultimate-guide-mcp"]
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "claude-code-guide": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "claude-code-ultimate-guide-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "claude-code-guide": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "claude-code-ultimate-guide-mcp"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `claude-code-guide.cordis.yml  →  dsh web --patch ./claude-code-guide.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-claude-code-guide
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: claude-code-guide
+        transport: stdio
+        command: npx
+        args: ["-y","claude-code-ultimate-guide-mcp"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="claude-code-mcp-server"></a>
+
+### Explore Claude Code source
+
+[Claude Code Explorer MCP](https://github.com/nirholas/claude-code/tree/main/mcp-server) — `Servidor MCP` · Licença: ver repo · Funciona com: Todos os clientes
+
+Explora o código-fonte do CLI do Claude Code: navega por ferramentas, comandos e faz busca no código.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio claude-code-explorer-mcp -- npx -y claude-code-explorer-mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add claude-code-explorer-mcp -- npx -y claude-code-explorer-mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add claude-code-explorer-mcp npx -y claude-code-explorer-mcp
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "claude-code-explorer-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "claude-code-explorer-mcp"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "claude-code-explorer-mcp": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "claude-code-explorer-mcp"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "claude-code-explorer-mcp": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "claude-code-explorer-mcp"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "claude-code-explorer-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "claude-code-explorer-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "claude-code-explorer-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "claude-code-explorer-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "claude-code-explorer-mcp": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "claude-code-explorer-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  claude-code-explorer-mcp:
+    type: stdio
+    cmd: npx
+    args: ["-y","claude-code-explorer-mcp"]
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "claude-code-explorer-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "claude-code-explorer-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "claude-code-explorer-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "claude-code-explorer-mcp"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `claude-code-explorer-mcp.cordis.yml  →  dsh web --patch ./claude-code-explorer-mcp.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-claude-code-explorer-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: claude-code-explorer-mcp
+        transport: stdio
+        command: npx
+        args: ["-y","claude-code-explorer-mcp"]
+        env: {}
+        cwd: !!js process.cwd()
 ```
 
 </details>
@@ -646,6 +1408,2020 @@ Pré-requisito: `pip install markitdown-mcp`
         command: markitdown-mcp
         args: []
         env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="mcp"></a>
+
+### Microsoft Learn documentation
+
+[Microsoft Learn MCP](https://github.com/MicrosoftDocs/mcp) — `Servidor MCP` · Licença: CC-BY-4.0 · Funciona com: Todos os clientes
+
+Servidor oficial do Microsoft Learn com documentação confiável em tempo real e exemplos de código para agentes de IA.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport http microsoft-learn-mcp https://learn.microsoft.com/api/mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add microsoft-learn-mcp --url https://learn.microsoft.com/api/mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add --transport http microsoft-learn-mcp https://learn.microsoft.com/api/mcp
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "microsoft-learn-mcp": {
+      "url": "https://learn.microsoft.com/api/mcp"
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "microsoft-learn-mcp": {
+      "type": "http",
+      "url": "https://learn.microsoft.com/api/mcp"
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "microsoft-learn-mcp": {
+      "type": "remote",
+      "url": "https://learn.microsoft.com/api/mcp",
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "microsoft-learn-mcp": {
+      "type": "streamableHttp",
+      "url": "https://learn.microsoft.com/api/mcp"
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "microsoft-learn-mcp": {
+      "serverUrl": "https://learn.microsoft.com/api/mcp"
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "microsoft-learn-mcp": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://learn.microsoft.com/api/mcp"
+      ]
+    }
+  }
+}
+```
+_Remote server bridged through the mcp-remote stdio proxy._
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  microsoft-learn-mcp:
+    type: streamable_http
+    uri: https://learn.microsoft.com/api/mcp
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "microsoft-learn-mcp": {
+      "type": "streamable-http",
+      "url": "https://learn.microsoft.com/api/mcp"
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "microsoft-learn-mcp": {
+      "type": "streamable-http",
+      "url": "https://learn.microsoft.com/api/mcp"
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `microsoft-learn-mcp.cordis.yml  →  dsh web --patch ./microsoft-learn-mcp.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-microsoft-learn-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: microsoft-learn-mcp
+        transport: streamable-http
+        url: https://learn.microsoft.com/api/mcp
+```
+
+</details>
+
+<a id="packmind-mcp-server"></a>
+
+### Org's technical decisions log
+
+[PackmindHub/packmind](https://github.com/PackmindHub/packmind/tree/main/apps/mcp-server) — `Servidor MCP` · Licença: Apache-2.0 · Funciona com: Todos os clientes
+
+Captura, escala e reforça as decisões técnicas de uma organização como referência pesquisável.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport http mcp-server https://app.packmind.ai/mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add mcp-server --url https://app.packmind.ai/mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add --transport http mcp-server https://app.packmind.ai/mcp
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "mcp-server": {
+      "url": "https://app.packmind.ai/mcp"
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "mcp-server": {
+      "type": "http",
+      "url": "https://app.packmind.ai/mcp"
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "mcp-server": {
+      "type": "remote",
+      "url": "https://app.packmind.ai/mcp",
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "mcp-server": {
+      "type": "streamableHttp",
+      "url": "https://app.packmind.ai/mcp"
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "mcp-server": {
+      "serverUrl": "https://app.packmind.ai/mcp"
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "mcp-server": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://app.packmind.ai/mcp"
+      ]
+    }
+  }
+}
+```
+_Remote server bridged through the mcp-remote stdio proxy._
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  mcp-server:
+    type: streamable_http
+    uri: https://app.packmind.ai/mcp
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "mcp-server": {
+      "type": "streamable-http",
+      "url": "https://app.packmind.ai/mcp"
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "mcp-server": {
+      "type": "streamable-http",
+      "url": "https://app.packmind.ai/mcp"
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `mcp-server.cordis.yml  →  dsh web --patch ./mcp-server.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-mcp-server
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: mcp-server
+        transport: streamable-http
+        url: https://app.packmind.ai/mcp
+```
+
+</details>
+
+<a id="pdf-reader-mcp"></a>
+
+### PDF reading with page citations
+
+[PDF Reader MCP](https://github.com/SylphxAI/pdf-reader-mcp) — `Servidor MCP` · Licença: MIT · Funciona com: Todos os clientes
+
+Servidor de PDF com foco em evidências, retornando página e coordenadas citáveis dos trechos do documento.
+
+**Alternativas:**
+
+- [Docling MCP](https://github.com/docling-project/docling-mcp) — Converte PDFs e outros formatos de documento em saída estruturada via Docling; exige uma chave de API do Docling.
+- [PageIndex MCP](https://github.com/VectifyAI/pageindex-mcp) — RAG baseado em raciocínio para conversar com PDFs longos, locais ou online.
+- [MinerU Open MCP](https://github.com/opendatalab/MinerU-Ecosystem) — Converte PDF, imagem, doc, ppt e xls em Markdown via a API do MinerU; exige MINERU_API_TOKEN.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio pdf-reader-mcp -- npx -y @sylphx/pdf-reader-mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add pdf-reader-mcp -- npx -y @sylphx/pdf-reader-mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add pdf-reader-mcp npx -y @sylphx/pdf-reader-mcp
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "pdf-reader-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@sylphx/pdf-reader-mcp"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "pdf-reader-mcp": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@sylphx/pdf-reader-mcp"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "pdf-reader-mcp": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@sylphx/pdf-reader-mcp"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "pdf-reader-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@sylphx/pdf-reader-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "pdf-reader-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@sylphx/pdf-reader-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "pdf-reader-mcp": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@sylphx/pdf-reader-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  pdf-reader-mcp:
+    type: stdio
+    cmd: npx
+    args: ["-y","@sylphx/pdf-reader-mcp"]
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "pdf-reader-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@sylphx/pdf-reader-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "pdf-reader-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@sylphx/pdf-reader-mcp"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `pdf-reader-mcp.cordis.yml  →  dsh web --patch ./pdf-reader-mcp.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-pdf-reader-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: pdf-reader-mcp
+        transport: stdio
+        command: npx
+        args: ["-y","@sylphx/pdf-reader-mcp"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="pg-aiguide-mcp"></a>
+
+### PostgreSQL docs and best practices
+
+[timescale/pg-aiguide](https://github.com/timescale/pg-aiguide) — `Servidor MCP` · Licença: Apache-2.0 · Funciona com: Todos os clientes
+
+Documentação e boas práticas abrangentes de PostgreSQL, incluindo ferramentas do ecossistema; exige OPENAI_API_KEY e parâmetros de conexão PG.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio pg-aiguide --env OPENAI_API_KEY='<OPENAI_API_KEY>' --env PGHOST='<PGHOST>' --env PGPORT='<PGPORT>' --env PGUSER='<PGUSER>' --env PGPASSWORD='<PGPASSWORD>' --env PGDATABASE='<PGDATABASE>' --env DB_SCHEMA='<DB_SCHEMA>' -- npx -y @tigerdata/pg-aiguide
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add pg-aiguide --env OPENAI_API_KEY='<OPENAI_API_KEY>' --env PGHOST='<PGHOST>' --env PGPORT='<PGPORT>' --env PGUSER='<PGUSER>' --env PGPASSWORD='<PGPASSWORD>' --env PGDATABASE='<PGDATABASE>' --env DB_SCHEMA='<DB_SCHEMA>' -- npx -y @tigerdata/pg-aiguide
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add -e OPENAI_API_KEY='<OPENAI_API_KEY>' -e PGHOST='<PGHOST>' -e PGPORT='<PGPORT>' -e PGUSER='<PGUSER>' -e PGPASSWORD='<PGPASSWORD>' -e PGDATABASE='<PGDATABASE>' -e DB_SCHEMA='<DB_SCHEMA>' pg-aiguide npx -y @tigerdata/pg-aiguide
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "pg-aiguide": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@tigerdata/pg-aiguide"
+      ],
+      "env": {
+        "OPENAI_API_KEY": "<OPENAI_API_KEY>",
+        "PGHOST": "<PGHOST>",
+        "PGPORT": "<PGPORT>",
+        "PGUSER": "<PGUSER>",
+        "PGPASSWORD": "<PGPASSWORD>",
+        "PGDATABASE": "<PGDATABASE>",
+        "DB_SCHEMA": "<DB_SCHEMA>"
+      }
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "pg-aiguide": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@tigerdata/pg-aiguide"
+      ],
+      "env": {
+        "OPENAI_API_KEY": "<OPENAI_API_KEY>",
+        "PGHOST": "<PGHOST>",
+        "PGPORT": "<PGPORT>",
+        "PGUSER": "<PGUSER>",
+        "PGPASSWORD": "<PGPASSWORD>",
+        "PGDATABASE": "<PGDATABASE>",
+        "DB_SCHEMA": "<DB_SCHEMA>"
+      }
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "pg-aiguide": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@tigerdata/pg-aiguide"
+      ],
+      "enabled": true,
+      "environment": {
+        "OPENAI_API_KEY": "<OPENAI_API_KEY>",
+        "PGHOST": "<PGHOST>",
+        "PGPORT": "<PGPORT>",
+        "PGUSER": "<PGUSER>",
+        "PGPASSWORD": "<PGPASSWORD>",
+        "PGDATABASE": "<PGDATABASE>",
+        "DB_SCHEMA": "<DB_SCHEMA>"
+      }
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "pg-aiguide": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@tigerdata/pg-aiguide"
+      ],
+      "env": {
+        "OPENAI_API_KEY": "<OPENAI_API_KEY>",
+        "PGHOST": "<PGHOST>",
+        "PGPORT": "<PGPORT>",
+        "PGUSER": "<PGUSER>",
+        "PGPASSWORD": "<PGPASSWORD>",
+        "PGDATABASE": "<PGDATABASE>",
+        "DB_SCHEMA": "<DB_SCHEMA>"
+      }
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "pg-aiguide": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@tigerdata/pg-aiguide"
+      ],
+      "env": {
+        "OPENAI_API_KEY": "<OPENAI_API_KEY>",
+        "PGHOST": "<PGHOST>",
+        "PGPORT": "<PGPORT>",
+        "PGUSER": "<PGUSER>",
+        "PGPASSWORD": "<PGPASSWORD>",
+        "PGDATABASE": "<PGDATABASE>",
+        "DB_SCHEMA": "<DB_SCHEMA>"
+      }
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "pg-aiguide": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@tigerdata/pg-aiguide"
+      ],
+      "env": {
+        "OPENAI_API_KEY": "<OPENAI_API_KEY>",
+        "PGHOST": "<PGHOST>",
+        "PGPORT": "<PGPORT>",
+        "PGUSER": "<PGUSER>",
+        "PGPASSWORD": "<PGPASSWORD>",
+        "PGDATABASE": "<PGDATABASE>",
+        "DB_SCHEMA": "<DB_SCHEMA>"
+      }
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  pg-aiguide:
+    type: stdio
+    cmd: npx
+    args: ["-y","@tigerdata/pg-aiguide"]
+    envs:
+      OPENAI_API_KEY: "<OPENAI_API_KEY>"
+      PGHOST: "<PGHOST>"
+      PGPORT: "<PGPORT>"
+      PGUSER: "<PGUSER>"
+      PGPASSWORD: "<PGPASSWORD>"
+      PGDATABASE: "<PGDATABASE>"
+      DB_SCHEMA: "<DB_SCHEMA>"
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "pg-aiguide": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@tigerdata/pg-aiguide"
+      ],
+      "env": {
+        "OPENAI_API_KEY": "<OPENAI_API_KEY>",
+        "PGHOST": "<PGHOST>",
+        "PGPORT": "<PGPORT>",
+        "PGUSER": "<PGUSER>",
+        "PGPASSWORD": "<PGPASSWORD>",
+        "PGDATABASE": "<PGDATABASE>",
+        "DB_SCHEMA": "<DB_SCHEMA>"
+      }
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "pg-aiguide": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@tigerdata/pg-aiguide"
+      ],
+      "env": {
+        "OPENAI_API_KEY": "<OPENAI_API_KEY>",
+        "PGHOST": "<PGHOST>",
+        "PGPORT": "<PGPORT>",
+        "PGUSER": "<PGUSER>",
+        "PGPASSWORD": "<PGPASSWORD>",
+        "PGDATABASE": "<PGDATABASE>",
+        "DB_SCHEMA": "<DB_SCHEMA>"
+      }
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `pg-aiguide.cordis.yml  →  dsh web --patch ./pg-aiguide.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-pg-aiguide
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: pg-aiguide
+        transport: stdio
+        command: npx
+        args: ["-y","@tigerdata/pg-aiguide"]
+        env: {"OPENAI_API_KEY":"<OPENAI_API_KEY>","PGHOST":"<PGHOST>","PGPORT":"<PGPORT>","PGUSER":"<PGUSER>","PGPASSWORD":"<PGPASSWORD>","PGDATABASE":"<PGDATABASE>","DB_SCHEMA":"<DB_SCHEMA>"}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="ai-tools-mcp-stdio"></a>
+
+### Svelte docs and autofixing
+
+[Svelte MCP](https://github.com/sveltejs/ai-tools/tree/main/packages/mcp-stdio) — `Servidor MCP` · Licença: MIT · Funciona com: Todos os clientes
+
+Servidor oficial do Svelte com documentação e ferramentas de correção automática para desenvolvimento em Svelte.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio mcp -- npx -y @sveltejs/mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add mcp -- npx -y @sveltejs/mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add mcp npx -y @sveltejs/mcp
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@sveltejs/mcp"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "mcp": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@sveltejs/mcp"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "mcp": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@sveltejs/mcp"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@sveltejs/mcp"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@sveltejs/mcp"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "mcp": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@sveltejs/mcp"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  mcp:
+    type: stdio
+    cmd: npx
+    args: ["-y","@sveltejs/mcp"]
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@sveltejs/mcp"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@sveltejs/mcp"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `mcp.cordis.yml  →  dsh web --patch ./mcp.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: mcp
+        transport: stdio
+        command: npx
+        args: ["-y","@sveltejs/mcp"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="ref-tools-mcp"></a>
+
+### Token-efficient docs search
+
+[ref-tools/ref-tools-mcp](https://github.com/ref-tools/ref-tools-mcp) — `Servidor MCP` · Licença: MIT · Funciona com: Todos os clientes
+
+Busca eficiente em tokens para agentes de código sobre documentação pública e privada; exige REF_API_KEY.
+
+**Alternativas:**
+
+- [jDocmunch MCP](https://github.com/jgravelle/jdocmunch-mcp) — Busca local no nível de seção em arquivos .md, .rst, .adoc, .ipynb, .html, .yaml, .json e OpenAPI.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio ref-tools-mcp --env REF_API_KEY='<REF_API_KEY>' -- npx -y ref-tools-mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add ref-tools-mcp --env REF_API_KEY='<REF_API_KEY>' -- npx -y ref-tools-mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add -e REF_API_KEY='<REF_API_KEY>' ref-tools-mcp npx -y ref-tools-mcp
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "ref-tools-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "ref-tools-mcp"
+      ],
+      "env": {
+        "REF_API_KEY": "<REF_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "ref-tools-mcp": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "ref-tools-mcp"
+      ],
+      "env": {
+        "REF_API_KEY": "<REF_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "ref-tools-mcp": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "ref-tools-mcp"
+      ],
+      "enabled": true,
+      "environment": {
+        "REF_API_KEY": "<REF_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "ref-tools-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "ref-tools-mcp"
+      ],
+      "env": {
+        "REF_API_KEY": "<REF_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "ref-tools-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "ref-tools-mcp"
+      ],
+      "env": {
+        "REF_API_KEY": "<REF_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "ref-tools-mcp": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "ref-tools-mcp"
+      ],
+      "env": {
+        "REF_API_KEY": "<REF_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  ref-tools-mcp:
+    type: stdio
+    cmd: npx
+    args: ["-y","ref-tools-mcp"]
+    envs:
+      REF_API_KEY: "<REF_API_KEY>"
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "ref-tools-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "ref-tools-mcp"
+      ],
+      "env": {
+        "REF_API_KEY": "<REF_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "ref-tools-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "ref-tools-mcp"
+      ],
+      "env": {
+        "REF_API_KEY": "<REF_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `ref-tools-mcp.cordis.yml  →  dsh web --patch ./ref-tools-mcp.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-ref-tools-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: ref-tools-mcp
+        transport: stdio
+        command: npx
+        args: ["-y","ref-tools-mcp"]
+        env: {"REF_API_KEY":"<REF_API_KEY>"}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="webcomponents-react-mcp-server"></a>
+
+### UI5 Web Components for React docs
+
+[UI5/webcomponents-react](https://github.com/UI5/webcomponents-react/tree/main/packages/mcp-server) — `Servidor MCP` · Licença: Apache-2.0 · Funciona com: Todos os clientes
+
+Documentação oficial para desenvolvedores e assistência de API para UI5 Web Components for React.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio webcomponents-react-mcp-server -- npx -y @ui5/webcomponents-react-mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add webcomponents-react-mcp-server -- npx -y @ui5/webcomponents-react-mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add webcomponents-react-mcp-server npx -y @ui5/webcomponents-react-mcp
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "webcomponents-react-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@ui5/webcomponents-react-mcp"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "webcomponents-react-mcp-server": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@ui5/webcomponents-react-mcp"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "webcomponents-react-mcp-server": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@ui5/webcomponents-react-mcp"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "webcomponents-react-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@ui5/webcomponents-react-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "webcomponents-react-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@ui5/webcomponents-react-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "webcomponents-react-mcp-server": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@ui5/webcomponents-react-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  webcomponents-react-mcp-server:
+    type: stdio
+    cmd: npx
+    args: ["-y","@ui5/webcomponents-react-mcp"]
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "webcomponents-react-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@ui5/webcomponents-react-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "webcomponents-react-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@ui5/webcomponents-react-mcp"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `webcomponents-react-mcp-server.cordis.yml  →  dsh web --patch ./webcomponents-react-mcp-server.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-webcomponents-react-mcp-server
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: webcomponents-react-mcp-server
+        transport: stdio
+        command: npx
+        args: ["-y","@ui5/webcomponents-react-mcp"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="mcp-sap-docs"></a>
+
+### Unified SAP documentation search
+
+[marianfoo/mcp-sap-docs](https://github.com/marianfoo/mcp-sap-docs) — `Servidor MCP` · Licença: Apache-2.0 · Funciona com: Todos os clientes
+
+Busca unificada e rápida na documentação SAP (SAPUI5, CAP, OpenUI5, wdi5) usando busca full-text BM25.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio mcp-sap-docs -- npx -y mcp-sap-docs
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add mcp-sap-docs -- npx -y mcp-sap-docs
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add mcp-sap-docs npx -y mcp-sap-docs
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "mcp-sap-docs": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-sap-docs"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "mcp-sap-docs": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-sap-docs"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "mcp-sap-docs": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "mcp-sap-docs"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "mcp-sap-docs": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-sap-docs"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "mcp-sap-docs": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-sap-docs"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "mcp-sap-docs": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-sap-docs"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  mcp-sap-docs:
+    type: stdio
+    cmd: npx
+    args: ["-y","mcp-sap-docs"]
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "mcp-sap-docs": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-sap-docs"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "mcp-sap-docs": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-sap-docs"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `mcp-sap-docs.cordis.yml  →  dsh web --patch ./mcp-sap-docs.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-mcp-sap-docs
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: mcp-sap-docs
+        transport: stdio
+        command: npx
+        args: ["-y","mcp-sap-docs"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="yuque-mcp-server"></a>
+
+### Yuque knowledge base access
+
+[yuque/yuque-mcp-server](https://github.com/yuque/yuque-mcp-server) — `Servidor MCP` · Licença: MIT · Funciona com: Todos os clientes
+
+Expõe uma base de conhecimento do Yuque a assistentes de IA; exige um token pessoal, de grupo ou geral do Yuque.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio yuque-mcp --env YUQUE_PERSONAL_TOKEN='<YUQUE_PERSONAL_TOKEN>' --env YUQUE_GROUP_TOKEN='<YUQUE_GROUP_TOKEN>' --env YUQUE_TOKEN='<YUQUE_TOKEN>' -- npx -y yuque-mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add yuque-mcp --env YUQUE_PERSONAL_TOKEN='<YUQUE_PERSONAL_TOKEN>' --env YUQUE_GROUP_TOKEN='<YUQUE_GROUP_TOKEN>' --env YUQUE_TOKEN='<YUQUE_TOKEN>' -- npx -y yuque-mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add -e YUQUE_PERSONAL_TOKEN='<YUQUE_PERSONAL_TOKEN>' -e YUQUE_GROUP_TOKEN='<YUQUE_GROUP_TOKEN>' -e YUQUE_TOKEN='<YUQUE_TOKEN>' yuque-mcp npx -y yuque-mcp
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "yuque-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "yuque-mcp"
+      ],
+      "env": {
+        "YUQUE_PERSONAL_TOKEN": "<YUQUE_PERSONAL_TOKEN>",
+        "YUQUE_GROUP_TOKEN": "<YUQUE_GROUP_TOKEN>",
+        "YUQUE_TOKEN": "<YUQUE_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "yuque-mcp": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "yuque-mcp"
+      ],
+      "env": {
+        "YUQUE_PERSONAL_TOKEN": "<YUQUE_PERSONAL_TOKEN>",
+        "YUQUE_GROUP_TOKEN": "<YUQUE_GROUP_TOKEN>",
+        "YUQUE_TOKEN": "<YUQUE_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "yuque-mcp": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "yuque-mcp"
+      ],
+      "enabled": true,
+      "environment": {
+        "YUQUE_PERSONAL_TOKEN": "<YUQUE_PERSONAL_TOKEN>",
+        "YUQUE_GROUP_TOKEN": "<YUQUE_GROUP_TOKEN>",
+        "YUQUE_TOKEN": "<YUQUE_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "yuque-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "yuque-mcp"
+      ],
+      "env": {
+        "YUQUE_PERSONAL_TOKEN": "<YUQUE_PERSONAL_TOKEN>",
+        "YUQUE_GROUP_TOKEN": "<YUQUE_GROUP_TOKEN>",
+        "YUQUE_TOKEN": "<YUQUE_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "yuque-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "yuque-mcp"
+      ],
+      "env": {
+        "YUQUE_PERSONAL_TOKEN": "<YUQUE_PERSONAL_TOKEN>",
+        "YUQUE_GROUP_TOKEN": "<YUQUE_GROUP_TOKEN>",
+        "YUQUE_TOKEN": "<YUQUE_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "yuque-mcp": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "yuque-mcp"
+      ],
+      "env": {
+        "YUQUE_PERSONAL_TOKEN": "<YUQUE_PERSONAL_TOKEN>",
+        "YUQUE_GROUP_TOKEN": "<YUQUE_GROUP_TOKEN>",
+        "YUQUE_TOKEN": "<YUQUE_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  yuque-mcp:
+    type: stdio
+    cmd: npx
+    args: ["-y","yuque-mcp"]
+    envs:
+      YUQUE_PERSONAL_TOKEN: "<YUQUE_PERSONAL_TOKEN>"
+      YUQUE_GROUP_TOKEN: "<YUQUE_GROUP_TOKEN>"
+      YUQUE_TOKEN: "<YUQUE_TOKEN>"
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "yuque-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "yuque-mcp"
+      ],
+      "env": {
+        "YUQUE_PERSONAL_TOKEN": "<YUQUE_PERSONAL_TOKEN>",
+        "YUQUE_GROUP_TOKEN": "<YUQUE_GROUP_TOKEN>",
+        "YUQUE_TOKEN": "<YUQUE_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "yuque-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "yuque-mcp"
+      ],
+      "env": {
+        "YUQUE_PERSONAL_TOKEN": "<YUQUE_PERSONAL_TOKEN>",
+        "YUQUE_GROUP_TOKEN": "<YUQUE_GROUP_TOKEN>",
+        "YUQUE_TOKEN": "<YUQUE_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `yuque-mcp.cordis.yml  →  dsh web --patch ./yuque-mcp.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-yuque-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: yuque-mcp
+        transport: stdio
+        command: npx
+        args: ["-y","yuque-mcp"]
+        env: {"YUQUE_PERSONAL_TOKEN":"<YUQUE_PERSONAL_TOKEN>","YUQUE_GROUP_TOKEN":"<YUQUE_GROUP_TOKEN>","YUQUE_TOKEN":"<YUQUE_TOKEN>"}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="zotero-mcp"></a>
+
+### Zotero research library access
+
+[Zotero MCP](https://github.com/54yyyu/zotero-mcp) — `Servidor MCP` · Licença: MIT · Funciona com: Todos os clientes
+
+Busca, leitura, anotação e adição de itens na biblioteca de pesquisa do Zotero, local ou web; exige ZOTERO_API_KEY.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio zotero-mcp --env ZOTERO_API_KEY='<ZOTERO_API_KEY>' -- uvx zotero-mcp-server
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add zotero-mcp --env ZOTERO_API_KEY='<ZOTERO_API_KEY>' -- uvx zotero-mcp-server
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add -e ZOTERO_API_KEY='<ZOTERO_API_KEY>' zotero-mcp uvx zotero-mcp-server
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "zotero-mcp": {
+      "command": "uvx",
+      "args": [
+        "zotero-mcp-server"
+      ],
+      "env": {
+        "ZOTERO_API_KEY": "<ZOTERO_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "zotero-mcp": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "zotero-mcp-server"
+      ],
+      "env": {
+        "ZOTERO_API_KEY": "<ZOTERO_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "zotero-mcp": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "zotero-mcp-server"
+      ],
+      "enabled": true,
+      "environment": {
+        "ZOTERO_API_KEY": "<ZOTERO_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "zotero-mcp": {
+      "command": "uvx",
+      "args": [
+        "zotero-mcp-server"
+      ],
+      "env": {
+        "ZOTERO_API_KEY": "<ZOTERO_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "zotero-mcp": {
+      "command": "uvx",
+      "args": [
+        "zotero-mcp-server"
+      ],
+      "env": {
+        "ZOTERO_API_KEY": "<ZOTERO_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "zotero-mcp": {
+      "source": "custom",
+      "command": "uvx",
+      "args": [
+        "zotero-mcp-server"
+      ],
+      "env": {
+        "ZOTERO_API_KEY": "<ZOTERO_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  zotero-mcp:
+    type: stdio
+    cmd: uvx
+    args: ["zotero-mcp-server"]
+    envs:
+      ZOTERO_API_KEY: "<ZOTERO_API_KEY>"
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "zotero-mcp": {
+      "command": "uvx",
+      "args": [
+        "zotero-mcp-server"
+      ],
+      "env": {
+        "ZOTERO_API_KEY": "<ZOTERO_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "zotero-mcp": {
+      "command": "uvx",
+      "args": [
+        "zotero-mcp-server"
+      ],
+      "env": {
+        "ZOTERO_API_KEY": "<ZOTERO_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `zotero-mcp.cordis.yml  →  dsh web --patch ./zotero-mcp.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-zotero-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: zotero-mcp
+        transport: stdio
+        command: uvx
+        args: ["zotero-mcp-server"]
+        env: {"ZOTERO_API_KEY":"<ZOTERO_API_KEY>"}
         cwd: !!js process.cwd()
 ```
 

@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: skylos-mcp
+name: duriantaco/skylos
+title: Dead code and secrets detection
+url: https://github.com/duriantaco/skylos
+type: mcp-server
+category: security
+license: Apache-2.0
+tags:
+  - secrets
+  - code-quality
+description:
+  en: Dead code, security, secrets detection, and code quality for Python, TypeScript, and Go; needs a SKYLOS_API_KEY.
+  pt: Detecção de código morto, segredos e problemas de qualidade para Python, TypeScript e Go; exige SKYLOS_API_KEY.
+mcp:
+  name: skylos
+  stdio:
+    command: uvx
+    args:
+      - skylos
+    env:
+      SKYLOS_API_KEY: <SKYLOS_API_KEY>
+origin:
+  list: mcp-registry
+  ref: io.github.duriantaco/skylos

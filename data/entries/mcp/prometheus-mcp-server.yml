@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: prometheus-mcp-server
+name: Prometheus MCP Server
+title: Prometheus metrics and PromQL
+url: https://github.com/pab1it0/prometheus-mcp-server
+type: mcp-server
+category: cloud
+license: MIT
+tags:
+  - prometheus
+  - metrics
+description:
+  en: Provides Prometheus metrics access and PromQL query execution for AI assistants.
+  pt: Dá acesso a métricas do Prometheus e execução de consultas PromQL para assistentes de IA.
+mcp:
+  name: prometheus-mcp-server
+  stdio:
+    command: docker
+    args:
+      - run
+      - "-i"
+      - "--rm"
+      - "-e"
+      - PROMETHEUS_URL
+      - "-e"
+      - PROMETHEUS_PASSWORD
+      - "-e"
+      - PROMETHEUS_TOKEN
+      - ghcr.io/pab1it0/prometheus-mcp-server:1.6.2
+    env:
+      PROMETHEUS_URL: <PROMETHEUS_URL>
+      PROMETHEUS_PASSWORD: <PROMETHEUS_PASSWORD>
+      PROMETHEUS_TOKEN: <PROMETHEUS_TOKEN>
+origin:
+  list: mcp-registry
+  ref: io.github.pab1it0/prometheus-mcp-server

@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: search-console-mcp
+name: Search Console MCP
+title: Unified SEO intelligence
+url: https://github.com/saurabhsharma2u/search-console-mcp
+type: mcp-server
+category: integrations
+license: MIT
+tags:
+  - seo
+description:
+  en: >-
+    Google Search Console, Bing, GA4, and AdSense combined into unified SEO intelligence; needs Google credentials and
+    optional Bing/PageSpeed keys.
+  pt: >-
+    Google Search Console, Bing, GA4 e AdSense combinados em inteligência de SEO unificada; exige credenciais do Google
+    e chaves opcionais de Bing/PageSpeed.
+mcp:
+  name: search-console-mcp
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - search-console-mcp
+    env:
+      GOOGLE_APPLICATION_CREDENTIALS: <GOOGLE_APPLICATION_CREDENTIALS>
+      BING_API_KEY: <BING_API_KEY>
+      PAGESPEED_API_KEY: <PAGESPEED_API_KEY>
+origin:
+  list: mcp-registry
+  ref: io.github.saurabhsharma2u/search-console-mcp

@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: xcodebuildmcp
+name: cameroncooke/XcodeBuildMCP
+title: Xcode project and simulator control
+url: https://github.com/cameroncooke/XcodeBuildMCP
+type: mcp-server
+category: dev
+license: MIT
+tags:
+  - xcode
+  - ios
+description:
+  en: Provides tools for Xcode project management, simulator management, and app utilities.
+  pt: Fornece ferramentas para gestão de projetos Xcode, gestão de simuladores e utilitários de apps.
+mcp:
+  name: xcodebuildmcp
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - xcodebuildmcp
+origin:
+  list: mcp-registry
+  ref: io.github.cameroncooke/XcodeBuildMCP

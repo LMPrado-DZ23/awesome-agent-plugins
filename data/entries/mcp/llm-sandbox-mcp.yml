@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: llm-sandbox-mcp
+name: LLM Sandbox
+title: Sandboxed LLM code execution
+url: https://github.com/vndee/llm-sandbox
+type: mcp-server
+category: dev
+license: MIT
+tags:
+  - sandbox
+  - execution
+description:
+  en: Securely runs LLM-generated code in isolated containers, across 7 languages and 3 container backends.
+  pt: Executa com segurança código gerado por LLM em contêineres isolados, em 7 linguagens e 3 backends de contêiner.
+mcp:
+  name: llm-sandbox
+  stdio:
+    command: uvx
+    args:
+      - llm-sandbox
+alternatives:
+  - name: taybenlor/runno
+    url: https://github.com/taybenlor/runno
+    adds:
+      en: Runs code in the browser-based Runno WebAssembly sandbox.
+      pt: Executa código em um sandbox WebAssembly no navegador, o Runno.
+  - name: formulahendry/mcp-server-code-runner
+    url: https://github.com/formulahendry/mcp-server-code-runner
+    adds:
+      en: Runs code in various programming languages via the Code Runner extension.
+      pt: Executa código em várias linguagens de programação via a extensão Code Runner.
+origin:
+  list: mcp-registry
+  ref: io.github.vndee/llm-sandbox

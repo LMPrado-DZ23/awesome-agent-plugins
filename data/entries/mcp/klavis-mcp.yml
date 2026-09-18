@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: klavis-mcp
+name: Klavis-AI/klavis
+title: Progressive MCP tool exposure
+url: https://github.com/Klavis-AI/klavis
+type: mcp-server
+category: tools
+license: Apache-2.0
+tags:
+  - mcp
+  - tools
+description:
+  en: Server for progressive tool usage at scale, exposing large MCP tool sets incrementally to agents.
+  pt: >-
+    Servidor para uso progressivo de ferramentas em escala, expondo grandes conjuntos de ferramentas MCP de forma
+    incremental.
+mcp:
+  name: strata
+  http:
+    url: https://strata.klavis.ai/mcp/
+origin:
+  list: mcp-registry
+  ref: ai.klavis/strata

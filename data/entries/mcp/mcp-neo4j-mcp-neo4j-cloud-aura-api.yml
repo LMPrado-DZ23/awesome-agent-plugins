@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: mcp-neo4j-mcp-neo4j-cloud-aura-api
+name: neo4j-contrib/mcp-neo4j
+title: Neo4j Aura instance management
+url: https://github.com/neo4j-contrib/mcp-neo4j/tree/main/servers/mcp-neo4j-cloud-aura-api
+type: mcp-server
+category: cloud
+license: MIT
+tags:
+  - neo4j
+  - database
+description:
+  en: Server for managing a Neo4j Aura Database Instance; needs NEO4J_AURA_CLIENT_ID and secret.
+  pt: Servidor para gerenciar uma instância do Neo4j Aura Database; exige NEO4J_AURA_CLIENT_ID e secret.
+mcp:
+  name: mcp-neo4j-aura-manager
+  stdio:
+    command: uvx
+    args:
+      - mcp-neo4j-aura-manager
+    env:
+      NEO4J_AURA_CLIENT_ID: <NEO4J_AURA_CLIENT_ID>
+      NEO4J_AURA_CLIENT_SECRET: <NEO4J_AURA_CLIENT_SECRET>
+origin:
+  list: mcp-registry
+  ref: io.github.neo4j-contrib/mcp-neo4j-aura-manager

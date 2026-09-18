@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: rustunnel-mcp
+name: rustunnel
+title: Public tunnels for localhost services
+url: https://github.com/joaoh82/rustunnel
+type: mcp-server
+category: dev
+license: AGPL-3.0
+tags:
+  - tunnel
+  - localhost
+description:
+  en: Gives agents public HTTPS/TCP/UDP URLs for any localhost service; open source and self-hostable.
+  pt: Dá a agentes URLs públicas HTTPS/TCP/UDP para qualquer serviço local; é open source e pode ser auto-hospedado.
+mcp:
+  name: rustunnel
+  stdio:
+    command: docker
+    args:
+      - run
+      - "-i"
+      - "--rm"
+      - ghcr.io/joaoh82/rustunnel-mcp:0.8.5
+origin:
+  list: mcp-registry
+  ref: io.github.joaoh82/rustunnel

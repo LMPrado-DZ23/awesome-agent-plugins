@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: mindwtr-mcp-server
+name: Mindwtr
+title: Mindwtr task automation
+url: https://github.com/dongdongbh/Mindwtr/tree/main/apps/mcp-server
+type: mcp-server
+category: integrations
+license: AGPL-3.0
+tags:
+  - project-management
+description:
+  en: Task and project automation for local and self-hosted Mindwtr Cloud data, read-only by default.
+  pt: Automação de tarefas e projetos para dados locais e auto-hospedados do Mindwtr Cloud, somente leitura por padrão.
+mcp:
+  name: mindwtr
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - mindwtr-mcp
+origin:
+  list: mcp-registry
+  ref: io.github.dongdongbh/mindwtr

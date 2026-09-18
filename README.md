@@ -4,27 +4,29 @@
 
 > One catalog of **MCP servers, Agent Skills and native plugins** for AI coding agents — with the exact install command for *your* client.
 
-![entries](https://img.shields.io/badge/entries-264-blue) ![projects](https://img.shields.io/badge/projects-461-blue) ![clients](https://img.shields.io/badge/clients-13-green)
+![entries](https://img.shields.io/badge/entries-462-blue) ![projects](https://img.shields.io/badge/projects-717-blue) ![clients](https://img.shields.io/badge/clients-13-green)
 
 Most lists are tied to one client. Here every entry says which agents it works with, and install instructions are generated per client from a single canonical spec, so they stay consistent. Near-duplicate plugins are folded into one entry that points to the best option and lists what each alternative adds.
 
 ## Supported clients
 
-| Client | MCP | Skills | Native plugins | Project instructions |
-|---|---|---|---|---|
-| [Claude Code](https://code.claude.com/docs/en/mcp) | ✅ | ✅ | ✅ 1 | `CLAUDE.md` |
-| [Codex CLI](https://developers.openai.com/codex/mcp) | ✅ | ✅ | — | `AGENTS.md` |
-| [Gemini CLI](https://github.com/google-gemini/gemini-cli/blob/main/docs/tools/mcp-server.md) | ✅ | ✅ | — | `GEMINI.md` |
-| [Cursor](https://cursor.com/docs/context/mcp) | ✅ | ✅ | — | `AGENTS.md / .cursor/rules` |
-| [VS Code (Copilot)](https://code.visualstudio.com/docs/copilot/customization/mcp-servers) | ✅ | ✅ | — | `.github/copilot-instructions.md` |
-| [OpenCode](https://opencode.ai/docs/mcp-servers/) | ✅ | ✅ | — | `AGENTS.md` |
-| [Cline](https://docs.cline.bot/mcp/configuring-mcp-servers) | ✅ | ✅ | — | `.clinerules` |
-| [Windsurf](https://docs.windsurf.com/windsurf/cascade/mcp) | ✅ | ✅ | — | `AGENTS.md` |
-| [Zed](https://zed.dev/docs/ai/mcp) | ✅ | ✅ | — | `AGENTS.md` |
-| [Goose](https://block.github.io/goose/docs/getting-started/using-extensions) | ✅ | ✅ | — | `.goosehints` |
-| [Kiro](https://kiro.dev/docs/mcp/configuration/) | ✅ | ✅ | — | `.kiro/steering/` |
-| [Roo Code](https://docs.roocode.com/features/mcp/using-mcp-in-roo) | ✅ | ✅ | — | `.roo/rules/ + AGENTS.md` |
-| [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness/blob/main/docs/user/guide/mcp-memory.md) | ✅ | ✅ | ✅ 221 | `AGENTS.md` |
+| Client | MCP | Skills | Native plugins | Project instructions | Install commands |
+|---|---|---|---|---|---|
+| [Claude Code](https://code.claude.com/docs/en/mcp) | ✅ | ✅ | ✅ 1 | `CLAUDE.md` | ✅ tested end-to-end |
+| [Codex CLI](https://developers.openai.com/codex/mcp) | ✅ | ✅ | — | `AGENTS.md` | ✅ tested end-to-end |
+| [Gemini CLI](https://github.com/google-gemini/gemini-cli/blob/main/docs/tools/mcp-server.md) | ✅ | ✅ | — | `GEMINI.md` | ✅ tested end-to-end |
+| [Cursor](https://cursor.com/docs/context/mcp) | ✅ | ✅ | — | `AGENTS.md / .cursor/rules` | from official docs |
+| [VS Code (Copilot)](https://code.visualstudio.com/docs/copilot/customization/mcp-servers) | ✅ | ✅ | — | `.github/copilot-instructions.md` | from official docs |
+| [OpenCode](https://opencode.ai/docs/mcp-servers/) | ✅ | ✅ | — | `AGENTS.md` | from official docs |
+| [Cline](https://docs.cline.bot/mcp/configuring-mcp-servers) | ✅ | ✅ | — | `.clinerules` | from official docs |
+| [Windsurf](https://docs.windsurf.com/windsurf/cascade/mcp) | ✅ | ✅ | — | `AGENTS.md` | from official docs |
+| [Zed](https://zed.dev/docs/ai/mcp) | ✅ | ✅ | — | `AGENTS.md` | from official docs |
+| [Goose](https://block.github.io/goose/docs/getting-started/using-extensions) | ✅ | ✅ | — | `.goosehints` | from official docs |
+| [Kiro](https://kiro.dev/docs/mcp/configuration/) | ✅ | ✅ | — | `.kiro/steering/` | from official docs |
+| [Roo Code](https://docs.roocode.com/features/mcp/using-mcp-in-roo) | ✅ | ✅ | — | `.roo/rules/ + AGENTS.md` | from official docs |
+| [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness/blob/main/docs/user/guide/mcp-memory.md) | ✅ | ✅ | ✅ 221 | `AGENTS.md` | from official docs |
+
+_“Tested end-to-end” means `npm run e2e` runs the generated MCP and skill install commands against the real CLI in a throwaway directory. Other clients follow their official documentation ([sources](docs/clients.md))._
 
 ## Quick start (CLI)
 
@@ -74,27 +76,38 @@ Ready-made kits for common setups — install a whole kit on one client with a s
 - [Standards & Specs](catalog/standards.md) — 3 entries
 - [Registries, Lists & Plugin Managers](catalog/meta.md) — 11 entries + 4 alternatives folded in
 - [Skills & Instructions](catalog/skills.md) — 23 entries + 7 alternatives folded in
-- [Code Intelligence](catalog/code-intel.md) — 1 entries
-- [Browser & Web](catalog/browser.md) — 11 entries + 9 alternatives folded in
-- [Docs & Knowledge](catalog/docs.md) — 9 entries + 4 alternatives folded in
-- [Memory](catalog/memory.md) — 16 entries + 14 alternatives folded in
-- [Tools & Capabilities](catalog/tools.md) — 27 entries + 9 alternatives folded in
-- [Development & Runtime](catalog/dev.md) — 20 entries + 11 alternatives folded in
-- [Git & Code Review](catalog/git.md) — 12 entries + 10 alternatives folded in
-- [Cloud, Data & Infra](catalog/cloud.md) — 4 entries
-- [Workflow & Agents](catalog/workflow.md) — 22 entries + 14 alternatives folded in
-- [Integrations & Notifications](catalog/integrations.md) — 10 entries + 6 alternatives folded in
-- [Security & Permissions](catalog/security.md) — 12 entries + 20 alternatives folded in
-- [Models & Providers](catalog/models.md) — 12 entries + 18 alternatives folded in
+- [Code Intelligence](catalog/code-intel.md) — 10 entries
+- [Browser & Web](catalog/browser.md) — 13 entries + 17 alternatives folded in
+- [Docs & Knowledge](catalog/docs.md) — 23 entries + 8 alternatives folded in
+- [Memory](catalog/memory.md) — 25 entries + 18 alternatives folded in
+- [Tools & Capabilities](catalog/tools.md) — 45 entries + 18 alternatives folded in
+- [Development & Runtime](catalog/dev.md) — 49 entries + 17 alternatives folded in
+- [Git & Code Review](catalog/git.md) — 15 entries + 10 alternatives folded in
+- [Cloud, Data & Infra](catalog/cloud.md) — 36 entries + 1 alternatives folded in
+- [Workflow & Agents](catalog/workflow.md) — 32 entries + 16 alternatives folded in
+- [Integrations & Notifications](catalog/integrations.md) — 55 entries + 13 alternatives folded in
+- [Security & Permissions](catalog/security.md) — 24 entries + 23 alternatives folded in
+- [Models & Providers](catalog/models.md) — 13 entries + 18 alternatives folded in
 - [Usage & Cost](catalog/usage.md) — 8 entries + 8 alternatives folded in
 - [Sessions & Messages](catalog/sessions.md) — 10 entries + 7 alternatives folded in
-- [Vision & Voice](catalog/multimodal.md) — 12 entries + 15 alternatives folded in
-- [Remote & Mobile](catalog/remote.md) — 8 entries + 10 alternatives folded in
+- [Vision & Voice](catalog/multimodal.md) — 23 entries + 20 alternatives folded in
+- [Remote & Mobile](catalog/remote.md) — 11 entries + 19 alternatives folded in
 - [UI Enhancements](catalog/ui.md) — 20 entries + 21 alternatives folded in
 - [Themes & Appearance](catalog/themes.md) — 8 entries + 6 alternatives folded in
 - [Just for Fun](catalog/fun.md) — 5 entries + 4 alternatives folded in
 
-## DeepSeek Harness plugins
+## Where entries come from
+
+Every import is reproducible (`scripts/import/`) and every entry passes the same validator. Importers only produce candidates; a review step groups duplicates and writes the descriptions.
+
+| Source | Entries | How it is selected |
+|---|---|---|
+| Hand-curated | 44 | Official servers, specs and skill packs checked against their READMEs. |
+| [MCP Registry](https://registry.modelcontextprotocol.io) | 198 | Servers from the official registry with ≥200★, whose registry namespace matches the GitHub owner (anti-impersonation); install spec taken from the registry package data. |
+| GitHub discovery | 0 | Topic/keyword search, classified by files actually present (SKILL.md, plugin marketplace, Gemini extension manifest). |
+| [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) | 220 | Top plugins by stars and npm downloads; near-duplicates folded into alternatives. |
+
+### DeepSeek Harness plugins
 
 Imported from [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin): the 220 strongest of ~3,900 plugins (ranked by GitHub stars and npm downloads, archived/missing repos dropped), with 193 similar plugins folded in as alternatives. Install with `dsh plugin add`; browse the original list for everything else.
 

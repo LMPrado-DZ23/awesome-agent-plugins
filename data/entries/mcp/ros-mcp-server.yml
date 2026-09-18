@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: ros-mcp-server
+name: robotmcp/ros-mcp-server
+title: Connect AI models to ROS robots
+url: https://github.com/robotmcp/ros-mcp-server
+type: mcp-server
+category: dev
+license: Apache-2.0
+tags:
+  - ros
+  - robotics
+description:
+  en: Connects AI models to ROS robots for robotics development.
+  pt: Conecta modelos de IA a robôs ROS para desenvolvimento de robótica.
+mcp:
+  name: ros-mcp-server
+  stdio:
+    command: uvx
+    args:
+      - ros-mcp
+origin:
+  list: mcp-registry
+  ref: io.github.robotmcp/ros-mcp-server

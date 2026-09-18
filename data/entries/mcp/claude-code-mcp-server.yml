@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: claude-code-mcp-server
+name: Claude Code Explorer MCP
+title: Explore Claude Code source
+url: https://github.com/nirholas/claude-code/tree/main/mcp-server
+type: mcp-server
+category: docs
+license: null
+tags:
+  - docs
+  - claude-code
+description:
+  en: "Explores the Claude Code CLI source code: browse tools, commands, and search the codebase."
+  pt: "Explora o código-fonte do CLI do Claude Code: navega por ferramentas, comandos e faz busca no código."
+mcp:
+  name: claude-code-explorer-mcp
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - claude-code-explorer-mcp
+origin:
+  list: mcp-registry
+  ref: io.github.nirholas/claude-code-explorer-mcp

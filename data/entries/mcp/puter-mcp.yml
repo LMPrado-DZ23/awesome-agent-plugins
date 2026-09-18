@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: puter-mcp
+name: HeyPuter/puter
+title: Cloud OS files, sites, and workers
+url: https://github.com/HeyPuter/puter
+type: mcp-server
+category: cloud
+license: AGPL-3.0
+tags:
+  - cloud
+  - files
+description:
+  en: Lets AI tools interact with Puter to manage files, websites, and workers on the Puter cloud OS.
+  pt: Permite que ferramentas de IA interajam com o Puter para gerenciar arquivos, sites e workers no cloud OS do Puter.
+mcp:
+  name: mcp-server
+  http:
+    url: https://mcp.puter.com/
+origin:
+  list: mcp-registry
+  ref: com.puter/mcp-server

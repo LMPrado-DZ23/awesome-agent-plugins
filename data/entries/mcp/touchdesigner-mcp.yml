@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: touchdesigner-mcp
+name: 8beeeaaat/touchdesigner-mcp
+title: Control TouchDesigner projects
+url: https://github.com/8beeeaaat/touchdesigner-mcp
+type: mcp-server
+category: dev
+license: MIT
+tags:
+  - touchdesigner
+  - creative-coding
+description:
+  en: Controls and operates TouchDesigner projects through AI agents.
+  pt: Controla e opera projetos do TouchDesigner por meio de agentes de IA.
+mcp:
+  name: touchdesigner-mcp-server
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - touchdesigner-mcp-server
+origin:
+  list: mcp-registry
+  ref: io.github.8beeeaaat/touchdesigner-mcp-server

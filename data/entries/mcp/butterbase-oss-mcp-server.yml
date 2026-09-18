@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: butterbase-oss-mcp-server
+name: butterbase-ai/butterbase-oss
+title: Backend platform management
+url: https://github.com/butterbase-ai/butterbase-oss/tree/main/services/mcp-server
+type: mcp-server
+category: cloud
+license: Apache-2.0
+tags:
+  - backend
+  - baas
+description:
+  en: "Manages a backend platform: schemas, auth, functions, storage, RAG, and deploys; needs a BUTTERBASE_API_KEY."
+  pt: "Gerencia uma plataforma de backend: schemas, auth, funções, storage, RAG e deploys; exige BUTTERBASE_API_KEY."
+mcp:
+  name: mcp
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@butterbase/mcp"
+    env:
+      BUTTERBASE_API_KEY: <BUTTERBASE_API_KEY>
+  http:
+    url: https://api.butterbase.ai/mcp
+    headers:
+      Authorization: Bearer <API_TOKEN>
+origin:
+  list: mcp-registry
+  ref: io.github.butterbase-ai/mcp

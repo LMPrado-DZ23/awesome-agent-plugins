@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: terraform-mcp-server
+name: Terraform
+title: Terraform workflow automation
+url: https://github.com/hashicorp/terraform-mcp-server
+type: mcp-server
+category: cloud
+license: MPL-2.0
+tags:
+  - terraform
+  - iac
+description:
+  en: >-
+    Official Hashicorp server for more accurate Terraform generation and automated workflows for HCP and Terraform
+    Enterprise.
+  pt: >-
+    Servidor oficial da Hashicorp para geração de Terraform mais precisa e workflows automatizados para HCP e Terraform
+    Enterprise.
+mcp:
+  name: terraform-mcp-server
+  stdio:
+    command: docker
+    args:
+      - run
+      - "-i"
+      - "--rm"
+      - docker.io/hashicorp/terraform-mcp-server:1.0.0
+origin:
+  list: mcp-registry
+  ref: io.github.hashicorp/terraform-mcp-server

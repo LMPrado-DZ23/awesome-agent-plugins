@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: flyto-core-mcp
+name: Flyto Core
+title: Execution engine with 412 modules
+url: https://github.com/flytohub/flyto-core
+type: mcp-server
+category: workflow
+license: Apache-2.0
+tags:
+  - automation
+  - execution
+description:
+  en: Execution engine for AI agents with 412 modules covering browser, file, Docker, data, and crypto tasks.
+  pt: Motor de execução para agentes de IA com 412 módulos, cobrindo navegador, arquivos, Docker, dados e cripto.
+mcp:
+  name: flyto-core
+  stdio:
+    command: uvx
+    args:
+      - flyto-core
+origin:
+  list: mcp-registry
+  ref: io.github.flytohub/flyto-core

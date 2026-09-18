@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: deepseek-mcp-server
+name: DeepSeek MCP Server
+title: DeepSeek chat and completion
+url: https://github.com/DMontgomery40/deepseek-mcp-server
+type: mcp-server
+category: models
+license: MIT
+tags:
+  - deepseek
+  - models
+description:
+  en: Official DeepSeek server for chat, completion, model listing, and balance endpoints; needs a DEEPSEEK_API_KEY.
+  pt: Servidor oficial da DeepSeek para chat, completion, listagem de modelos e consulta de saldo; exige DEEPSEEK_API_KEY.
+mcp:
+  name: deepseek
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - deepseek-mcp-server
+    env:
+      DEEPSEEK_API_KEY: <DEEPSEEK_API_KEY>
+origin:
+  list: mcp-registry
+  ref: io.github.DMontgomery40/deepseek

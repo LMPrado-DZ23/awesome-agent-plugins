@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: usertour-mcp
+name: Usertour MCP Server
+title: Usertour onboarding flows
+url: https://github.com/usertour/usertour/tree/main/apps/server/src/mcp
+type: mcp-server
+category: integrations
+license: null
+tags:
+  - onboarding
+description:
+  en: "Official Usertour server for in-app onboarding: flows, checklists, surveys, and analytics."
+  pt: "Servidor oficial do Usertour para onboarding dentro do app: fluxos, checklists, pesquisas e analytics."
+mcp:
+  name: mcp
+  http:
+    url: https://mcp.usertour.io/mcp
+origin:
+  list: mcp-registry
+  ref: io.github.usertour/mcp

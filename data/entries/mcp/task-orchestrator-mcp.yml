@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: task-orchestrator-mcp
+name: MCP Task Orchestrator
+title: Enforced workflow discipline for agents
+url: https://github.com/jpicklyk/task-orchestrator
+type: mcp-server
+category: workflow
+license: MIT
+tags:
+  - workflow
+  - orchestration
+description:
+  en: "Server-enforced workflow discipline for AI agents: work items, dependency graphs, and quality gates."
+  pt: >-
+    Disciplina de workflow imposta pelo servidor para agentes de IA: itens de trabalho, grafos de dependência e portões
+    de qualidade.
+mcp:
+  name: task-orchestrator
+  stdio:
+    command: docker
+    args:
+      - run
+      - "-i"
+      - "--rm"
+      - ghcr.io/jpicklyk/task-orchestrator:3.14.0
+origin:
+  list: mcp-registry
+  ref: io.github.jpicklyk/task-orchestrator

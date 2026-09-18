@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: tradingview-mcp
+name: atilaahmettaner/tradingview-mcp
+title: Market screeners and backtesting
+url: https://github.com/atilaahmettaner/tradingview-mcp
+type: mcp-server
+category: integrations
+license: MIT
+tags:
+  - finance
+  - trading
+description:
+  en: Real-time market data, screeners, technical analysis, and backtesting for stocks, crypto, and forex.
+  pt: Dados de mercado em tempo real, screeners, análise técnica e backtesting para ações, cripto e forex.
+mcp:
+  name: tradingview-mcp
+  http:
+    url: https://mcp.cryptosieve.com/mcp
+origin:
+  list: mcp-registry
+  ref: io.github.atilaahmettaner/tradingview-mcp

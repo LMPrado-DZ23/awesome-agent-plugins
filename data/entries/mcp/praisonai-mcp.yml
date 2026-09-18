@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: praisonai-mcp
+name: PraisonAI
+title: Self-reflecting agent framework
+url: https://github.com/MervinPraison/PraisonAI
+type: mcp-server
+category: workflow
+license: MIT
+tags:
+  - agent-framework
+description:
+  en: AI agents framework with self-reflection and MCP support.
+  pt: Framework de agentes de IA com autorreflexão e suporte a MCP.
+mcp:
+  name: praisonai
+  stdio:
+    command: uvx
+    args:
+      - praisonai
+origin:
+  list: mcp-registry
+  ref: io.github.MervinPraison/praisonai

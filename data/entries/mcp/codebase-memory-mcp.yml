@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: codebase-memory-mcp
+name: Codebase Memory
+title: Codebase knowledge graph
+url: https://github.com/DeusData/codebase-memory-mcp
+type: mcp-server
+category: code-intel
+license: MIT
+tags:
+  - code-intel
+  - knowledge-graph
+description:
+  en: Builds a codebase knowledge graph across 162 languages with sub-millisecond queries and reduced token usage.
+  pt: Constrói um grafo de conhecimento do código em 162 linguagens, com consultas em sub-milissegundos e menos tokens.
+mcp:
+  name: codebase-memory-mcp
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - codebase-memory-mcp
+origin:
+  list: mcp-registry
+  ref: io.github.DeusData/codebase-memory-mcp

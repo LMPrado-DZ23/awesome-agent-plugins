@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: squirrelscan-mcp
+name: squirrelscan
+title: Website QA audits
+url: https://github.com/squirrelscan/squirrelscan
+type: mcp-server
+category: dev
+license: MIT
+tags:
+  - qa
+  - website
+description:
+  en: "Website QA for coding agents: audits SEO, performance, security, and accessibility."
+  pt: "QA de sites para agentes de código: audita SEO, performance, segurança e acessibilidade."
+mcp:
+  name: squirrelscan
+  http:
+    url: https://mcp.squirrelscan.com/mcp
+alternatives:
+  - name: priyankark/lighthouse-mcp
+    url: https://github.com/priyankark/lighthouse-mcp
+    adds:
+      en: Google Lighthouse performance metrics for a page.
+      pt: Métricas de performance do Google Lighthouse para uma página.
+origin:
+  list: mcp-registry
+  ref: com.squirrelscan/squirrelscan

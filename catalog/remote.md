@@ -11,6 +11,9 @@
 - [Full remote server administration](#dsh-dsh-full-remote) — Gives full server-side API access (settings, credentials, host.listDirectory) through a token-gated reverse pr…
 - [LAN access for the Web UI](#dsh-dsh-web-lan-access) — Injects a crypto.randomUUID polyfill so the DSH Web UI keeps working when opened over plain-HTTP LAN or Tailsc…
 - [Session events as MCP progress](#dsh-dsh-streaming-mcp-bridge) — Streams live DeepSeek Harness session events out as MCP progress notifications, with an ACP adapter for bridgi…
+- [Computer-use automation for Windows](#windows-mcp) — A server for computer-use style automation on Windows OS.
+- [Control real Android and iOS devices](#mobilerun-mcp) — Controls real Android and iOS devices with LLM agents: tap, swipe, type, and automate flows; needs an Authoriz…
+- [Policy-gated SSH access](#ssh-mcp) — Policy-gated, audited SSH for Linux and Windows hosts, with roles, approvals, and an audit log; needs SSH pass…
 - [SSH host management panel](#dsh-dsh-web-ui-packages-dsh-ssh) — Adds an SSH operations panel to DSH: a web terminal, SFTP file transfer with progress, local port forwarding, …
 
 <a id="dsh-dsh-ios"></a>
@@ -157,6 +160,626 @@ Streams live DeepSeek Harness session events out as MCP progress notifications, 
 
 ```bash
 dsh plugin --profile web add github:yabolee-kkk/dsh-streaming-mcp-bridge
+```
+
+</details>
+
+<a id="windows-mcp"></a>
+
+### Computer-use automation for Windows
+
+[CursorTouch/Windows-MCP](https://github.com/CursorTouch/Windows-MCP) — `MCP server` · License: MIT · Works with: All clients
+
+A server for computer-use style automation on Windows OS.
+
+**Alternatives:**
+
+- [Ui.Vision MCP](https://github.com/A9T9/RPA/tree/main/mcp) — Browser and desktop RPA automation with OCR, image recognition, and real mouse and keyboard input.
+- [Computer Use](https://github.com/domdomegg/computer-use-mcp) — Generic, cross-platform computer control via screenshots, mouse, and keyboard.
+- [jfarcand/mirroir-mcp](https://github.com/jfarcand/mirroir-mcp) — Controls a real iPhone through macOS iPhone Mirroring: screenshot, tap, swipe, and type.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio windows-mcp -- uvx windows-mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add windows-mcp -- uvx windows-mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add windows-mcp uvx windows-mcp
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "windows-mcp": {
+      "command": "uvx",
+      "args": [
+        "windows-mcp"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "windows-mcp": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "windows-mcp"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "windows-mcp": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "windows-mcp"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "windows-mcp": {
+      "command": "uvx",
+      "args": [
+        "windows-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "windows-mcp": {
+      "command": "uvx",
+      "args": [
+        "windows-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "windows-mcp": {
+      "source": "custom",
+      "command": "uvx",
+      "args": [
+        "windows-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  windows-mcp:
+    type: stdio
+    cmd: uvx
+    args: ["windows-mcp"]
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "windows-mcp": {
+      "command": "uvx",
+      "args": [
+        "windows-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "windows-mcp": {
+      "command": "uvx",
+      "args": [
+        "windows-mcp"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `windows-mcp.cordis.yml  →  dsh web --patch ./windows-mcp.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-windows-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: windows-mcp
+        transport: stdio
+        command: uvx
+        args: ["windows-mcp"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="mobilerun-mcp"></a>
+
+### Control real Android and iOS devices
+
+[droidrun/mobilerun](https://github.com/droidrun/mobilerun) — `MCP server` · License: MIT · Works with: All clients
+
+Controls real Android and iOS devices with LLM agents: tap, swipe, type, and automate flows; needs an Authorization token.
+
+**Alternatives:**
+
+- [mobile-next/mobile-mcp](https://github.com/mobile-next/mobile-mcp) — Server for iOS and Android mobile development, automation, and testing.
+- [agent-device](https://github.com/callstack/agent-device) — Verifies, controls, and debugs real iOS, Android, TV, and desktop apps.
+- [Argent](https://github.com/software-mansion/argent) — Drives iOS simulators, Android emulators, TVs, and Electron/web apps from a coding agent.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport http mobilerun https://api.mobilerun.ai/v1/mcp --header 'Authorization: Bearer <API_TOKEN>'
+```
+
+**Codex CLI** — File: `~/.codex/config.toml`
+
+```toml
+[mcp_servers.mobilerun]
+url = "https://api.mobilerun.ai/v1/mcp"
+bearer_token_env_var = "API_TOKEN"
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add --transport http mobilerun https://api.mobilerun.ai/v1/mcp --header 'Authorization: Bearer <API_TOKEN>'
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "mobilerun": {
+      "url": "https://api.mobilerun.ai/v1/mcp",
+      "headers": {
+        "Authorization": "Bearer <API_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "mobilerun": {
+      "type": "http",
+      "url": "https://api.mobilerun.ai/v1/mcp",
+      "headers": {
+        "Authorization": "Bearer <API_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "mobilerun": {
+      "type": "remote",
+      "url": "https://api.mobilerun.ai/v1/mcp",
+      "enabled": true,
+      "headers": {
+        "Authorization": "Bearer <API_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "mobilerun": {
+      "type": "streamableHttp",
+      "url": "https://api.mobilerun.ai/v1/mcp",
+      "headers": {
+        "Authorization": "Bearer <API_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "mobilerun": {
+      "serverUrl": "https://api.mobilerun.ai/v1/mcp",
+      "headers": {
+        "Authorization": "Bearer <API_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "mobilerun": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://api.mobilerun.ai/v1/mcp",
+        "--header",
+        "Authorization:Bearer <API_TOKEN>"
+      ]
+    }
+  }
+}
+```
+_Remote server bridged through the mcp-remote stdio proxy._
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  mobilerun:
+    type: streamable_http
+    uri: https://api.mobilerun.ai/v1/mcp
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "mobilerun": {
+      "type": "streamable-http",
+      "url": "https://api.mobilerun.ai/v1/mcp",
+      "headers": {
+        "Authorization": "Bearer <API_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "mobilerun": {
+      "type": "streamable-http",
+      "url": "https://api.mobilerun.ai/v1/mcp",
+      "headers": {
+        "Authorization": "Bearer <API_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `mobilerun.cordis.yml  →  dsh web --patch ./mobilerun.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-mobilerun
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: mobilerun
+        transport: streamable-http
+        url: https://api.mobilerun.ai/v1/mcp
+        headers: {"Authorization":"Bearer <API_TOKEN>"}
+```
+
+</details>
+
+<a id="ssh-mcp"></a>
+
+### Policy-gated SSH access
+
+[SSH — policy-gated remote access](https://github.com/tufantunc/ssh-mcp) — `MCP server` · License: MIT · Works with: All clients
+
+Policy-gated, audited SSH for Linux and Windows hosts, with roles, approvals, and an audit log; needs SSH password or passphrase.
+
+**Alternatives:**
+
+- [bvisible/mcp-ssh-manager](https://github.com/bvisible/mcp-ssh-manager) — SSH server management for agents, with per-server read-only and allowlist security modes.
+- [emisar](https://github.com/andrewdryga/emisar) — Lets AI operate servers without SSH, choosing and approving risky changes with a full audit trail.
+- [rhel-lightspeed/linux-mcp-server](https://github.com/rhel-lightspeed/linux-mcp-server) — Read-only Linux system administration and diagnostics.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio ssh-mcp --env SSH_MCP_PASSWORD='<SSH_MCP_PASSWORD>' --env SSH_MCP_PASSPHRASE='<SSH_MCP_PASSPHRASE>' --env SSH_MCP_SUDO_PASSWORD='<SSH_MCP_SUDO_PASSWORD>' -- npx -y ssh-mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add ssh-mcp --env SSH_MCP_PASSWORD='<SSH_MCP_PASSWORD>' --env SSH_MCP_PASSPHRASE='<SSH_MCP_PASSPHRASE>' --env SSH_MCP_SUDO_PASSWORD='<SSH_MCP_SUDO_PASSWORD>' -- npx -y ssh-mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add -e SSH_MCP_PASSWORD='<SSH_MCP_PASSWORD>' -e SSH_MCP_PASSPHRASE='<SSH_MCP_PASSPHRASE>' -e SSH_MCP_SUDO_PASSWORD='<SSH_MCP_SUDO_PASSWORD>' ssh-mcp npx -y ssh-mcp
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "ssh-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "ssh-mcp"
+      ],
+      "env": {
+        "SSH_MCP_PASSWORD": "<SSH_MCP_PASSWORD>",
+        "SSH_MCP_PASSPHRASE": "<SSH_MCP_PASSPHRASE>",
+        "SSH_MCP_SUDO_PASSWORD": "<SSH_MCP_SUDO_PASSWORD>"
+      }
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "ssh-mcp": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "ssh-mcp"
+      ],
+      "env": {
+        "SSH_MCP_PASSWORD": "<SSH_MCP_PASSWORD>",
+        "SSH_MCP_PASSPHRASE": "<SSH_MCP_PASSPHRASE>",
+        "SSH_MCP_SUDO_PASSWORD": "<SSH_MCP_SUDO_PASSWORD>"
+      }
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "ssh-mcp": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "ssh-mcp"
+      ],
+      "enabled": true,
+      "environment": {
+        "SSH_MCP_PASSWORD": "<SSH_MCP_PASSWORD>",
+        "SSH_MCP_PASSPHRASE": "<SSH_MCP_PASSPHRASE>",
+        "SSH_MCP_SUDO_PASSWORD": "<SSH_MCP_SUDO_PASSWORD>"
+      }
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "ssh-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "ssh-mcp"
+      ],
+      "env": {
+        "SSH_MCP_PASSWORD": "<SSH_MCP_PASSWORD>",
+        "SSH_MCP_PASSPHRASE": "<SSH_MCP_PASSPHRASE>",
+        "SSH_MCP_SUDO_PASSWORD": "<SSH_MCP_SUDO_PASSWORD>"
+      }
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "ssh-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "ssh-mcp"
+      ],
+      "env": {
+        "SSH_MCP_PASSWORD": "<SSH_MCP_PASSWORD>",
+        "SSH_MCP_PASSPHRASE": "<SSH_MCP_PASSPHRASE>",
+        "SSH_MCP_SUDO_PASSWORD": "<SSH_MCP_SUDO_PASSWORD>"
+      }
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "ssh-mcp": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "ssh-mcp"
+      ],
+      "env": {
+        "SSH_MCP_PASSWORD": "<SSH_MCP_PASSWORD>",
+        "SSH_MCP_PASSPHRASE": "<SSH_MCP_PASSPHRASE>",
+        "SSH_MCP_SUDO_PASSWORD": "<SSH_MCP_SUDO_PASSWORD>"
+      }
+    }
+  }
+}
+```
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  ssh-mcp:
+    type: stdio
+    cmd: npx
+    args: ["-y","ssh-mcp"]
+    envs:
+      SSH_MCP_PASSWORD: "<SSH_MCP_PASSWORD>"
+      SSH_MCP_PASSPHRASE: "<SSH_MCP_PASSPHRASE>"
+      SSH_MCP_SUDO_PASSWORD: "<SSH_MCP_SUDO_PASSWORD>"
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "ssh-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "ssh-mcp"
+      ],
+      "env": {
+        "SSH_MCP_PASSWORD": "<SSH_MCP_PASSWORD>",
+        "SSH_MCP_PASSPHRASE": "<SSH_MCP_PASSPHRASE>",
+        "SSH_MCP_SUDO_PASSWORD": "<SSH_MCP_SUDO_PASSWORD>"
+      }
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "ssh-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "ssh-mcp"
+      ],
+      "env": {
+        "SSH_MCP_PASSWORD": "<SSH_MCP_PASSWORD>",
+        "SSH_MCP_PASSPHRASE": "<SSH_MCP_PASSPHRASE>",
+        "SSH_MCP_SUDO_PASSWORD": "<SSH_MCP_SUDO_PASSWORD>"
+      }
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `ssh-mcp.cordis.yml  →  dsh web --patch ./ssh-mcp.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-ssh-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: ssh-mcp
+        transport: stdio
+        command: npx
+        args: ["-y","ssh-mcp"]
+        env: {"SSH_MCP_PASSWORD":"<SSH_MCP_PASSWORD>","SSH_MCP_PASSPHRASE":"<SSH_MCP_PASSPHRASE>","SSH_MCP_SUDO_PASSWORD":"<SSH_MCP_SUDO_PASSWORD>"}
+        cwd: !!js process.cwd()
 ```
 
 </details>

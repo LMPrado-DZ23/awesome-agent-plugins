@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: strava-mcp
+name: r-huijts/strava-mcp
+title: Strava activity access
+url: https://github.com/r-huijts/strava-mcp
+type: mcp-server
+category: integrations
+license: MIT
+tags:
+  - fitness
+  - strava
+description:
+  en: Accesses the Strava API for activities and stats; needs Strava client credentials.
+  pt: Acessa a API do Strava para atividades e estatísticas; exige credenciais de cliente do Strava.
+mcp:
+  name: strava-mcp
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - strava-mcp-server
+    env:
+      STRAVA_CLIENT_ID: <STRAVA_CLIENT_ID>
+      STRAVA_CLIENT_SECRET: <STRAVA_CLIENT_SECRET>
+      STRAVA_ACCESS_TOKEN: <STRAVA_ACCESS_TOKEN>
+origin:
+  list: mcp-registry
+  ref: io.github.r-huijts/strava-mcp

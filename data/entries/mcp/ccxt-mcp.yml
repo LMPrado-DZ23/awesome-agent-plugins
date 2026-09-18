@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: ccxt-mcp
+name: CCXT
+title: Market data across 100+ exchanges
+url: https://github.com/ccxt/ccxt/tree/main/mcp
+type: mcp-server
+category: integrations
+license: MIT
+tags:
+  - crypto
+  - trading
+description:
+  en: Official CCXT server for market data and trading across 100+ crypto exchanges and prediction markets.
+  pt: >-
+    Servidor oficial do CCXT para dados de mercado e negociação em mais de 100 exchanges de cripto e mercados de
+    previsão.
+mcp:
+  name: ccxt-mcp
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - ccxt-mcp
+origin:
+  list: mcp-registry
+  ref: io.github.ccxt/ccxt-mcp

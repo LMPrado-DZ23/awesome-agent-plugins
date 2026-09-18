@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: wireshark-mcp
+name: bx33661/Wireshark-MCP
+title: Network analysis with tshark
+url: https://github.com/bx33661/Wireshark-MCP
+type: mcp-server
+category: security
+license: MIT
+tags:
+  - network
+  - wireshark
+description:
+  en: Professional network analysis with tshark for security audits, deep-dives, and threat detection.
+  pt: Análise de rede profissional com tshark para auditorias de segurança, investigações e detecção de ameaças.
+mcp:
+  name: wireshark-mcp
+  stdio:
+    command: uvx
+    args:
+      - wireshark-mcp
+origin:
+  list: mcp-registry
+  ref: io.github.bx33661/wireshark-mcp

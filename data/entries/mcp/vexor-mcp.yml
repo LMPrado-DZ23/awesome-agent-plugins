@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: vexor-mcp
+name: Vexor
+title: Semantic search for files and code
+url: https://github.com/scarletkc/vexor
+type: mcp-server
+category: code-intel
+license: MIT
+tags:
+  - code-intel
+  - semantic-search
+description:
+  en: A semantic search engine for files and code; needs a VEXOR_API_KEY (and optionally a rerank API key).
+  pt: Um motor de busca semântica para arquivos e código; exige VEXOR_API_KEY (e opcionalmente uma chave de rerank).
+mcp:
+  name: vexor
+  stdio:
+    command: uvx
+    args:
+      - vexor
+    env:
+      VEXOR_API_KEY: <VEXOR_API_KEY>
+      VEXOR_REMOTE_RERANK_API_KEY: <VEXOR_REMOTE_RERANK_API_KEY>
+origin:
+  list: mcp-registry
+  ref: io.github.scarletkc/vexor

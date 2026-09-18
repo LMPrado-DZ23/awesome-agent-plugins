@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: atlassian-mcp-server
+name: Atlassian Rovo MCP Server
+title: Atlassian Jira and Confluence
+url: https://github.com/atlassian/atlassian-mcp-server
+type: mcp-server
+category: integrations
+license: Apache-2.0
+tags:
+  - jira
+  - confluence
+description:
+  en: Official Atlassian server connecting to Jira, Confluence, and Loom to search, create, and manage work.
+  pt: Servidor oficial da Atlassian, conectando a Jira, Confluence e Loom para buscar, criar e gerenciar trabalho.
+mcp:
+  name: atlassian-mcp-server
+  http:
+    url: https://mcp.atlassian.com/v2/mcp
+origin:
+  list: mcp-registry
+  ref: com.atlassian/atlassian-mcp-server

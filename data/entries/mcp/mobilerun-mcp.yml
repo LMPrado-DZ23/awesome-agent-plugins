@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: mobilerun-mcp
+name: droidrun/mobilerun
+title: Control real Android and iOS devices
+url: https://github.com/droidrun/mobilerun
+type: mcp-server
+category: remote
+license: MIT
+tags:
+  - mobile
+  - automation
+description:
+  en: >-
+    Controls real Android and iOS devices with LLM agents: tap, swipe, type, and automate flows; needs an Authorization
+    token.
+  pt: >-
+    Controla dispositivos Android e iOS reais com agentes de LLM: tocar, deslizar, digitar e automatizar fluxos; exige
+    token de Authorization.
+mcp:
+  name: mobilerun
+  http:
+    url: https://api.mobilerun.ai/v1/mcp
+    headers:
+      Authorization: Bearer <API_TOKEN>
+alternatives:
+  - name: mobile-next/mobile-mcp
+    url: https://github.com/mobile-next/mobile-mcp
+    adds:
+      en: Server for iOS and Android mobile development, automation, and testing.
+      pt: Servidor para desenvolvimento, automação e testes mobile em iOS e Android.
+  - name: agent-device
+    url: https://github.com/callstack/agent-device
+    adds:
+      en: Verifies, controls, and debugs real iOS, Android, TV, and desktop apps.
+      pt: Verifica, controla e depura apps reais de iOS, Android, TV e desktop.
+  - name: Argent
+    url: https://github.com/software-mansion/argent
+    adds:
+      en: Drives iOS simulators, Android emulators, TVs, and Electron/web apps from a coding agent.
+      pt: Controla simuladores de iOS, emuladores de Android, TVs e apps Electron/web a partir de um agente de código.
+origin:
+  list: mcp-registry
+  ref: io.github.droidrun/mobilerun

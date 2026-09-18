@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: agent-toolkit-mcp
+name: stripe/agent-toolkit
+title: Stripe payments for agents
+url: https://github.com/stripe/agent-toolkit
+type: mcp-server
+category: integrations
+license: MIT
+tags:
+  - payments
+  - stripe
+description:
+  en: Official Stripe server with tools for customers, products, payments, and more.
+  pt: Servidor oficial da Stripe com ferramentas para clientes, produtos, pagamentos e mais.
+mcp:
+  name: mcp
+  http:
+    url: https://mcp.stripe.com
+origin:
+  list: mcp-registry
+  ref: com.stripe/mcp

@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: flutter-skill-mcp
+name: ai-dashboad/flutter-skill
+title: AI-powered E2E testing, 10 platforms
+url: https://github.com/ai-dashboad/flutter-skill
+type: mcp-server
+category: dev
+license: MIT
+tags:
+  - testing
+  - flutter
+description:
+  en: AI-powered end-to-end testing for 10 platforms with 253 tools, requiring no test code.
+  pt: Testes E2E com IA para 10 plataformas, com 253 ferramentas, sem exigir código de teste.
+mcp:
+  name: flutter-skill
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - flutter-skill
+origin:
+  list: mcp-registry
+  ref: io.github.ai-dashboad/flutter-skill

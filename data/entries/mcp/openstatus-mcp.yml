@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: openstatus-mcp
+name: openstatus
+title: Manage status pages and monitors
+url: https://github.com/openstatusHQ/openstatus
+type: mcp-server
+category: cloud
+license: AGPL-3.0
+tags:
+  - status-page
+  - monitoring
+description:
+  en: Manages monitors, status pages, incidents, and maintenance windows in an openstatus workspace.
+  pt: Gerencia monitores, status pages, incidentes e janelas de manutenção em um workspace do openstatus.
+mcp:
+  name: mcp
+  http:
+    url: https://api.openstatus.dev/mcp
+origin:
+  list: mcp-registry
+  ref: dev.openstatus/mcp

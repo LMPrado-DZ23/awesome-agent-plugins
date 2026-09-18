@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: shipswift-mcp
+name: ShipSwift
+title: SwiftUI recipes for iOS apps
+url: https://github.com/signerlabs/ShipSwift
+type: mcp-server
+category: dev
+license: MIT
+tags:
+  - ios
+  - swiftui
+description:
+  en: 40+ production-ready SwiftUI recipes for building full-stack iOS apps.
+  pt: Mais de 40 receitas SwiftUI prontas para produção, para construir apps de iOS full-stack.
+mcp:
+  name: shipswift
+  http:
+    url: https://api.shipswift.app/mcp
+origin:
+  list: mcp-registry
+  ref: io.github.signerlabs/shipswift

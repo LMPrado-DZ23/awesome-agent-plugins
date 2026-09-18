@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: inspo-mcp
+name: Nutlope/inspo
+title: Real website design references
+url: https://github.com/Nutlope/inspo
+type: mcp-server
+category: tools
+license: MIT
+tags:
+  - design
+  - reference
+description:
+  en: >-
+    Real production websites for coding agents: color palettes, fonts, fold layouts, and reference JSX; needs a
+    TOGETHER_API_KEY.
+  pt: >-
+    Sites reais em produção para agentes de código: paletas de cores, fontes, layouts de dobra e JSX de referência;
+    exige TOGETHER_API_KEY.
+mcp:
+  name: inspo
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - inspo-mcp
+    env:
+      TOGETHER_API_KEY: <TOGETHER_API_KEY>
+  http:
+    url: https://inspomcp.dev/api/mcp
+origin:
+  list: mcp-registry
+  ref: io.github.Nutlope/inspo

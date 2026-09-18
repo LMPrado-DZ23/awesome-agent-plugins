@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: coolify-mcp
+name: StuMason/coolify-mcp
+title: Coolify infrastructure management
+url: https://github.com/StuMason/coolify-mcp
+type: mcp-server
+category: cloud
+license: MIT
+tags:
+  - coolify
+  - paas
+description:
+  en: 45 tools for managing Coolify infrastructure, diagnostics, and documentation search; needs a COOLIFY_ACCESS_TOKEN.
+  pt: >-
+    45 ferramentas para gerenciar a infraestrutura Coolify, diagnósticos e busca na documentação; exige
+    COOLIFY_ACCESS_TOKEN.
+mcp:
+  name: coolify
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@masonator/coolify-mcp"
+    env:
+      COOLIFY_ACCESS_TOKEN: <COOLIFY_ACCESS_TOKEN>
+origin:
+  list: mcp-registry
+  ref: io.github.StuMason/coolify

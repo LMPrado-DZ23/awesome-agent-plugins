@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: drawio-mcp
+name: draw.io
+title: Interactive draw.io diagrams
+url: https://github.com/jgraph/drawio-mcp
+type: mcp-server
+category: tools
+license: Apache-2.0
+tags:
+  - diagram
+  - drawio
+description:
+  en: Creates diagrams in chat rendered as live, interactive draw.io diagrams, with over 10,000 searchable shapes.
+  pt: Cria diagramas no chat renderizados como diagramas draw.io interativos, com mais de 10.000 formas pesquisáveis.
+mcp:
+  name: mcp
+  http:
+    url: https://mcp.draw.io/mcp
+alternatives:
+  - name: TerraVision
+    url: https://github.com/patrickchugh/terravision
+    adds:
+      en: Generates cloud architecture diagrams from a terraform plan, with official AWS, Azure, and GCP icons.
+      pt: Gera diagramas de arquitetura de nuvem a partir de um terraform plan, com ícones oficiais de AWS, Azure e GCP.
+  - name: Vrun-design/openflowkit
+    url: https://github.com/Vrun-design/openflowkit
+    adds:
+      en: Local-first node-based flow diagramming tools for MCP clients.
+      pt: Ferramentas locais de diagramação de fluxo baseadas em nós para clientes MCP.
+origin:
+  list: mcp-registry
+  ref: io.draw/mcp

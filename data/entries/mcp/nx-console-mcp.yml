@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: nx-console-mcp
+name: nrwl/nx-console
+title: Nx monorepo tooling
+url: https://github.com/nrwl/nx-console
+type: mcp-server
+category: dev
+license: MIT
+tags:
+  - nx
+  - monorepo
+description:
+  en: Official server implementation for Nx, bringing monorepo tooling context to AI agents.
+  pt: Implementação oficial de servidor para o Nx, trazendo o contexto das ferramentas de monorepo para agentes de IA.
+mcp:
+  name: nx-console
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - nx-mcp
+origin:
+  list: mcp-registry
+  ref: io.github.nrwl/nx-console

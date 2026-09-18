@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: paperbanana-mcp
+name: PaperBanana
+title: Academic diagram generation
+url: https://github.com/llmsresearch/paperbanana
+type: mcp-server
+category: tools
+license: MIT
+tags:
+  - diagram
+  - research
+description:
+  en: Generates academic diagrams and statistical plots from text using multi-agent AI.
+  pt: Gera diagramas acadêmicos e gráficos estatísticos a partir de texto usando IA multiagente.
+mcp:
+  name: paperbanana
+  stdio:
+    command: uvx
+    args:
+      - paperbanana
+origin:
+  list: mcp-registry
+  ref: io.github.llmsresearch/paperbanana

@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: beever-atlas-mcp
+name: Beever-AI/beever-atlas
+title: Team chat to knowledge graph
+url: https://github.com/Beever-AI/beever-atlas
+type: mcp-server
+category: memory
+license: Apache-2.0
+tags:
+  - memory
+  - knowledge-graph
+description:
+  en: Open-source knowledge base that turns team chat into a typed knowledge graph and an auto-generated wiki.
+  pt: >-
+    Base de conhecimento open-source que transforma o chat da equipe em um grafo de conhecimento tipado e um wiki gerado
+    automaticamente.
+mcp:
+  name: beever-atlas
+  stdio:
+    command: docker
+    args:
+      - run
+      - "-i"
+      - "--rm"
+      - ghcr.io/beever-ai/beever-atlas:0.3.0
+origin:
+  list: mcp-registry
+  ref: io.github.Beever-AI/beever-atlas

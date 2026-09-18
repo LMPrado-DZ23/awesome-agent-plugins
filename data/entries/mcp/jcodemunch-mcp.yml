@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: jcodemunch-mcp
+name: jCodemunch MCP
+title: Token-efficient AST code exploration
+url: https://github.com/jgravelle/jcodemunch-mcp
+type: mcp-server
+category: code-intel
+license: null
+tags:
+  - code-intel
+  - ast
+  - tokens
+description:
+  en: Token-efficient code exploration via tree-sitter AST parsing across 70+ languages, cutting tokens 86-99%.
+  pt: >-
+    Exploração de código eficiente em tokens via parsing AST com tree-sitter em 70+ linguagens, reduzindo tokens em
+    86-99%.
+mcp:
+  name: jcodemunch-mcp
+  stdio:
+    command: uvx
+    args:
+      - jcodemunch-mcp
+origin:
+  list: mcp-registry
+  ref: io.github.jgravelle/jcodemunch-mcp

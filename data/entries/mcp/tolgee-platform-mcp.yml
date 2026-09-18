@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: tolgee-platform-mcp
+name: Tolgee
+title: Tolgee translation management
+url: https://github.com/tolgee/tolgee-platform
+type: mcp-server
+category: integrations
+license: null
+tags:
+  - i18n
+  - translation
+description:
+  en: >-
+    Searches keys, creates translations, and triggers machine translation in an app's Tolgee project; needs an
+    X-API-Key.
+  pt: Busca chaves, cria traduções e aciona tradução automática em um projeto Tolgee de um app; exige X-API-Key.
+mcp:
+  name: tolgee
+  http:
+    url: https://app.tolgee.io/mcp/developer
+    headers:
+      X-API-Key: <X_API_KEY>
+origin:
+  list: mcp-registry
+  ref: io.github.tolgee/tolgee

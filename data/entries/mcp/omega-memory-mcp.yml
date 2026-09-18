@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: omega-memory-mcp
+name: OMEGA Memory
+title: Cross-session agent memory
+url: https://github.com/omega-memory/omega-memory
+type: mcp-server
+category: memory
+license: Apache-2.0
+tags:
+  - memory
+  - agent
+description:
+  en: Persistent memory, coordination, and learning for AI agents, local-first, exposed as 25 MCP tools.
+  pt: Memória persistente, coordenação e aprendizado para agentes de IA, local-first, exposta em 25 ferramentas MCP.
+mcp:
+  name: omega-memory
+  stdio:
+    command: uvx
+    args:
+      - omega-memory
+alternatives:
+  - name: Vestige
+    url: https://github.com/samvallad33/vestige
+    adds:
+      en: Local-first agent memory that reaches backward to find a failure's root cause.
+      pt: Memória local-first para agentes que retrocede para encontrar a causa raiz de uma falha.
+  - name: Compartment
+    url: https://github.com/MaxFreedomPollard/Compartment
+    adds:
+      en: Durable agentic memory encrypted at rest, fully offline with no network or API key.
+      pt: Memória agêntica durável, criptografada em repouso, totalmente offline, sem rede nem chave de API.
+  - name: TeleAI-UAGI/telemem
+    url: https://github.com/TeleAI-UAGI/telemem
+    adds:
+      en: >-
+        Long-term multimodal, character-aware memory, mem0-compatible, with a fully-local option; needs an
+        OPENAI_API_KEY.
+      pt: >-
+        Memória multimodal de longo prazo, sensível a personagens, compatível com mem0, com opção totalmente local;
+        exige OPENAI_API_KEY.
+  - name: Lyellr88/marm-memory
+    url: https://github.com/Lyellr88/marm-memory
+    adds:
+      en: Universal server adding AI memory with semantic search.
+      pt: Servidor universal que adiciona memória de IA com busca semântica.
+origin:
+  list: mcp-registry
+  ref: io.github.omega-memory/omega-memory

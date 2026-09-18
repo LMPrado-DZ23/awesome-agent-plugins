@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: reversecore-mcp
+name: Reversecore MCP
+title: Reverse engineering and forensics
+url: https://github.com/sjkim1127/Reversecore_MCP
+type: mcp-server
+category: security
+license: MIT
+tags:
+  - reverse-engineering
+  - malware
+description:
+  en: Security-first server for reverse engineering, malware analysis, forensics, and static analysis (SAST).
+  pt: Servidor voltado a segurança para engenharia reversa, análise de malware, forense e análise estática (SAST).
+mcp:
+  name: reversecore-mcp
+  stdio:
+    command: uvx
+    args:
+      - reversecore-mcp
+origin:
+  list: mcp-registry
+  ref: io.github.sjkim1127/reversecore-mcp

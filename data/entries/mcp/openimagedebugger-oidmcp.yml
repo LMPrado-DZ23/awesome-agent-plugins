@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: openimagedebugger-oidmcp
+name: OpenImageDebugger MCP
+title: Inspect image buffers in debug sessions
+url: https://github.com/OpenImageDebugger/OpenImageDebugger/tree/main/resources/oidmcp
+type: mcp-server
+category: dev
+license: MIT
+tags:
+  - debugging
+  - gdb
+description:
+  en: Gives AI agents visibility into OpenImageDebugger buffers during live gdb/lldb sessions.
+  pt: Dá a agentes de IA visibilidade sobre buffers do OpenImageDebugger durante sessões ao vivo de gdb/lldb.
+mcp:
+  name: oid-mcp
+  stdio:
+    command: uvx
+    args:
+      - oid-mcp
+origin:
+  list: mcp-registry
+  ref: io.github.OpenImageDebugger/oid-mcp

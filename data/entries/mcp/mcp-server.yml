@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: mcp-server
+name: sv-number/mcp-server
+title: Phone numbers for verification
+url: https://github.com/sv-number/mcp-server
+type: mcp-server
+category: integrations
+license: MIT
+tags:
+  - sms
+  - verification
+description:
+  en: Orders a private phone number for an agent and reads back the SMS verification code; needs an SVN_API_KEY.
+  pt: Compra um número de telefone privado para um agente e devolve o código de verificação por SMS; exige SVN_API_KEY.
+mcp:
+  name: mcp-server
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - sv-number-mcp
+    env:
+      SVN_API_KEY: <SVN_API_KEY>
+origin:
+  list: mcp-registry
+  ref: io.github.sv-number/mcp-server

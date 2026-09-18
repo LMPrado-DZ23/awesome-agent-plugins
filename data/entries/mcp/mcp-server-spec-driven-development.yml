@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: mcp-server-spec-driven-development
+name: formulahendry/mcp-server-spec-driven-development
+title: Spec-driven development workflow
+url: https://github.com/formulahendry/mcp-server-spec-driven-development
+type: mcp-server
+category: workflow
+license: MIT
+tags:
+  - spec-driven
+  - workflow
+description:
+  en: Facilitates spec-driven development workflows, as an alternative to unstructured vibe coding.
+  pt: Facilita workflows de desenvolvimento orientado a especificação, como alternativa ao vibe coding sem estrutura.
+mcp:
+  name: spec-driven-development
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - mcp-server-spec-driven-development
+origin:
+  list: mcp-registry
+  ref: io.github.formulahendry/spec-driven-development

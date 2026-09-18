@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: parse-dmarc-mcp
+name: Parse-DMARC MCP Server
+title: DMARC report parsing
+url: https://github.com/meysam81/parse-dmarc
+type: mcp-server
+category: security
+license: Apache-2.0
+tags:
+  - dmarc
+  - email-security
+description:
+  en: Lightweight DMARC parser that auto-fetches email reports and visualizes compliance in one app.
+  pt: Parser leve de DMARC que busca relatórios de e-mail automaticamente e visualiza a conformidade em um único app.
+mcp:
+  name: parse-dmarc
+  stdio:
+    command: docker
+    args:
+      - run
+      - "-i"
+      - "--rm"
+      - ghcr.io/meysam81/parse-dmarc:v1.4.7
+origin:
+  list: mcp-registry
+  ref: io.github.meysam81/parse-dmarc

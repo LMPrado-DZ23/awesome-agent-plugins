@@ -27,10 +27,28 @@
 - [Web-novel writing engine](#dsh-dsh-tool-writing) — A web-novel writing engine for DeepSeek Harness: parallel drafting, outlining, and brainstorming with a separa…
 - [Auxiliary model routing tools](#dsh-dsh-auxiliary) — Provides dedicated model routes, tools, and system guidance for vision, compaction, reviews, subagents, titles…
 - [Deterministic code graph tool](#dsh-dsh-tool-lens) — Deterministic AST code graph and architecture intelligence tool for call hierarchies, blast radius, circular d…
+- [Academic diagram generation](#paperbanana-mcp) — Generates academic diagrams and statistical plots from text using multi-agent AI.
+- [AntV chart generation](#mcp-server-chart) — Generates charts using the AntV visualization library; needs a SERVICE_ID.
+- [Brand asset extraction](#openbrand-mcp) — Extracts brand assets (logos, colors, backdrop images, brand name) from any website URL; needs an OPENBRAND_AP…
+- [Build presentations with Demo Time](#vscode-demo-time-mcp) — Lets AI assistants interact with the Demo Time VS Code extension to help build presentations and demos.
+- [Collaborative drawing canvas](#tldraw-mcp-app) — Draws and visually collaborates with agents on tldraw's shared canvas.
+- [Context-window token optimization](#token-optimizer-mcp) — Context-window optimization with caching, compression, and smart file tools, cutting tokens 60-90%.
+- [Design system prompts for coding agents](#typeui-mcp) — Design systems, UI prompts, and layout variations for AI coding tools.
 - [Export chats as styled notes](#dsh-notes-dsh-plugin) — Exports DSH conversations as Smartisan Notes-style PNGs, or creates and updates Markdown notes in a configured…
+- [Figma design context for agents](#mcp-server-guide) — Official Figma server bringing Figma design context directly into an AI coding workflow.
 - [Filesystem (reference)](#mcp-filesystem) — Reference server for reading, writing, searching and moving files, restricted to the directories you pass as a…
 - [Hacker News feeds and search](#dsh-hn-cli-hacker-news) — Hacker News tools for feeds, discussion threads, search, and user profiles.
+- [Interactive draw.io diagrams](#drawio-mcp) — Creates diagrams in chat rendered as live, interactive draw.io diagrams, with over 10,000 searchable shapes.
+- [Interactive equation graphing](#equation-io-mcp) — Creates interactive 2D and 3D graphs from validated equations, with shareable links and PNG previews.
 - [MCP server config manager](#dsh-dsh-plugin-hub-packages-dsh-mcp-manager) — MCP server manager (stdio / streamable-http) with per-project and global config tiers: project MCP collapses i…
+- [Organize Claude Code configuration](#claude-code-organizer-mcp) — Organizes Claude Code memories, skills, MCP servers, commands, and agents via drag-and-drop.
+- [Progressive MCP tool exposure](#klavis-mcp) — Server for progressive tool usage at scale, exposing large MCP tool sets incrementally to agents.
+- [PyTorch architecture diagrams](#visualtorch-mcp) — Renders PyTorch model architecture diagrams and animated GIF reveals from a trusted model source.
+- [Real website design references](#inspo-mcp) — Real production websites for coding agents: color palettes, fonts, fold layouts, and reference JSX; needs a TO…
+- [shadcn/ui components for Laravel Blade](#blatui-mcp) — shadcn/ui for Laravel Blade: discover, read, and install BlatUI components, blocks, and charts.
+- [Stata regression analysis](#stata-mcp) — Lets an LLM help run regression analysis with Stata.
+- [Study top app screens and paywalls](#appllama-skills-mcp) — Studies screens, flows, and paywalls from top-earning iOS apps to inform new app designs.
+- [Verify agent work from video evidence](#watch-skill-mcp) — Watches video and live sessions, keeps timestamped evidence, and verifies an agent's own work.
 
 <a id="desktop-commander"></a>
 
@@ -649,6 +667,1332 @@ dsh plugin --profile web add github:trench-xinxin/dsh-tool-lens
 
 </details>
 
+<a id="paperbanana-mcp"></a>
+
+### Academic diagram generation
+
+[PaperBanana](https://github.com/llmsresearch/paperbanana) — `MCP server` · License: MIT · Works with: All clients
+
+Generates academic diagrams and statistical plots from text using multi-agent AI.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio paperbanana -- uvx paperbanana
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add paperbanana -- uvx paperbanana
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add paperbanana uvx paperbanana
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "paperbanana": {
+      "command": "uvx",
+      "args": [
+        "paperbanana"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "paperbanana": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "paperbanana"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "paperbanana": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "paperbanana"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "paperbanana": {
+      "command": "uvx",
+      "args": [
+        "paperbanana"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "paperbanana": {
+      "command": "uvx",
+      "args": [
+        "paperbanana"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "paperbanana": {
+      "source": "custom",
+      "command": "uvx",
+      "args": [
+        "paperbanana"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  paperbanana:
+    type: stdio
+    cmd: uvx
+    args: ["paperbanana"]
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "paperbanana": {
+      "command": "uvx",
+      "args": [
+        "paperbanana"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "paperbanana": {
+      "command": "uvx",
+      "args": [
+        "paperbanana"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `paperbanana.cordis.yml  →  dsh web --patch ./paperbanana.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-paperbanana
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: paperbanana
+        transport: stdio
+        command: uvx
+        args: ["paperbanana"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="mcp-server-chart"></a>
+
+### AntV chart generation
+
+[antvis/mcp-server-chart](https://github.com/antvis/mcp-server-chart) — `MCP server` · License: MIT · Works with: All clients
+
+Generates charts using the AntV visualization library; needs a SERVICE_ID.
+
+**Alternatives:**
+
+- [Semiotic](https://github.com/nteract/semiotic) — Verified React chart generation: select, validate, repair, render, and inspect charts.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio mcp-server-chart --env SERVICE_ID='<SERVICE_ID>' -- npx -y @antv/mcp-server-chart
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add mcp-server-chart --env SERVICE_ID='<SERVICE_ID>' -- npx -y @antv/mcp-server-chart
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add -e SERVICE_ID='<SERVICE_ID>' mcp-server-chart npx -y @antv/mcp-server-chart
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "mcp-server-chart": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@antv/mcp-server-chart"
+      ],
+      "env": {
+        "SERVICE_ID": "<SERVICE_ID>"
+      }
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "mcp-server-chart": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@antv/mcp-server-chart"
+      ],
+      "env": {
+        "SERVICE_ID": "<SERVICE_ID>"
+      }
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "mcp-server-chart": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@antv/mcp-server-chart"
+      ],
+      "enabled": true,
+      "environment": {
+        "SERVICE_ID": "<SERVICE_ID>"
+      }
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "mcp-server-chart": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@antv/mcp-server-chart"
+      ],
+      "env": {
+        "SERVICE_ID": "<SERVICE_ID>"
+      }
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "mcp-server-chart": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@antv/mcp-server-chart"
+      ],
+      "env": {
+        "SERVICE_ID": "<SERVICE_ID>"
+      }
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "mcp-server-chart": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@antv/mcp-server-chart"
+      ],
+      "env": {
+        "SERVICE_ID": "<SERVICE_ID>"
+      }
+    }
+  }
+}
+```
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  mcp-server-chart:
+    type: stdio
+    cmd: npx
+    args: ["-y","@antv/mcp-server-chart"]
+    envs:
+      SERVICE_ID: "<SERVICE_ID>"
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "mcp-server-chart": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@antv/mcp-server-chart"
+      ],
+      "env": {
+        "SERVICE_ID": "<SERVICE_ID>"
+      }
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "mcp-server-chart": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@antv/mcp-server-chart"
+      ],
+      "env": {
+        "SERVICE_ID": "<SERVICE_ID>"
+      }
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `mcp-server-chart.cordis.yml  →  dsh web --patch ./mcp-server-chart.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-mcp-server-chart
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: mcp-server-chart
+        transport: stdio
+        command: npx
+        args: ["-y","@antv/mcp-server-chart"]
+        env: {"SERVICE_ID":"<SERVICE_ID>"}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="openbrand-mcp"></a>
+
+### Brand asset extraction
+
+[OpenBrand](https://github.com/ethanjyx/openbrand/tree/main/mcp) — `MCP server` · License: MIT · Works with: All clients
+
+Extracts brand assets (logos, colors, backdrop images, brand name) from any website URL; needs an OPENBRAND_API_KEY.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio openbrand --env OPENBRAND_API_KEY='<OPENBRAND_API_KEY>' -- npx -y openbrand-mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add openbrand --env OPENBRAND_API_KEY='<OPENBRAND_API_KEY>' -- npx -y openbrand-mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add -e OPENBRAND_API_KEY='<OPENBRAND_API_KEY>' openbrand npx -y openbrand-mcp
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "openbrand": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "openbrand-mcp"
+      ],
+      "env": {
+        "OPENBRAND_API_KEY": "<OPENBRAND_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "openbrand": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "openbrand-mcp"
+      ],
+      "env": {
+        "OPENBRAND_API_KEY": "<OPENBRAND_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "openbrand": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "openbrand-mcp"
+      ],
+      "enabled": true,
+      "environment": {
+        "OPENBRAND_API_KEY": "<OPENBRAND_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "openbrand": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "openbrand-mcp"
+      ],
+      "env": {
+        "OPENBRAND_API_KEY": "<OPENBRAND_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "openbrand": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "openbrand-mcp"
+      ],
+      "env": {
+        "OPENBRAND_API_KEY": "<OPENBRAND_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "openbrand": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "openbrand-mcp"
+      ],
+      "env": {
+        "OPENBRAND_API_KEY": "<OPENBRAND_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  openbrand:
+    type: stdio
+    cmd: npx
+    args: ["-y","openbrand-mcp"]
+    envs:
+      OPENBRAND_API_KEY: "<OPENBRAND_API_KEY>"
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "openbrand": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "openbrand-mcp"
+      ],
+      "env": {
+        "OPENBRAND_API_KEY": "<OPENBRAND_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "openbrand": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "openbrand-mcp"
+      ],
+      "env": {
+        "OPENBRAND_API_KEY": "<OPENBRAND_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `openbrand.cordis.yml  →  dsh web --patch ./openbrand.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-openbrand
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: openbrand
+        transport: stdio
+        command: npx
+        args: ["-y","openbrand-mcp"]
+        env: {"OPENBRAND_API_KEY":"<OPENBRAND_API_KEY>"}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="vscode-demo-time-mcp"></a>
+
+### Build presentations with Demo Time
+
+[estruyf/vscode-demo-time](https://github.com/estruyf/vscode-demo-time) — `MCP server` · License: see repo · Works with: All clients
+
+Lets AI assistants interact with the Demo Time VS Code extension to help build presentations and demos.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio vscode-demo-time -- npx -y @demotime/mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add vscode-demo-time -- npx -y @demotime/mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add vscode-demo-time npx -y @demotime/mcp
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "vscode-demo-time": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@demotime/mcp"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "vscode-demo-time": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@demotime/mcp"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "vscode-demo-time": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@demotime/mcp"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "vscode-demo-time": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@demotime/mcp"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "vscode-demo-time": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@demotime/mcp"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "vscode-demo-time": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@demotime/mcp"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  vscode-demo-time:
+    type: stdio
+    cmd: npx
+    args: ["-y","@demotime/mcp"]
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "vscode-demo-time": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@demotime/mcp"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "vscode-demo-time": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@demotime/mcp"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `vscode-demo-time.cordis.yml  →  dsh web --patch ./vscode-demo-time.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-vscode-demo-time
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: vscode-demo-time
+        transport: stdio
+        command: npx
+        args: ["-y","@demotime/mcp"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="tldraw-mcp-app"></a>
+
+### Collaborative drawing canvas
+
+[tldraw/tldraw](https://github.com/tldraw/tldraw/tree/main/apps/mcp-app) — `MCP server` · License: see repo · Works with: All clients
+
+Draws and visually collaborates with agents on tldraw's shared canvas.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport http tldraw https://tldraw-mcp-app.tldraw.workers.dev/mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add tldraw --url https://tldraw-mcp-app.tldraw.workers.dev/mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add --transport http tldraw https://tldraw-mcp-app.tldraw.workers.dev/mcp
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "tldraw": {
+      "url": "https://tldraw-mcp-app.tldraw.workers.dev/mcp"
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "tldraw": {
+      "type": "http",
+      "url": "https://tldraw-mcp-app.tldraw.workers.dev/mcp"
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "tldraw": {
+      "type": "remote",
+      "url": "https://tldraw-mcp-app.tldraw.workers.dev/mcp",
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "tldraw": {
+      "type": "streamableHttp",
+      "url": "https://tldraw-mcp-app.tldraw.workers.dev/mcp"
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "tldraw": {
+      "serverUrl": "https://tldraw-mcp-app.tldraw.workers.dev/mcp"
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "tldraw": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://tldraw-mcp-app.tldraw.workers.dev/mcp"
+      ]
+    }
+  }
+}
+```
+_Remote server bridged through the mcp-remote stdio proxy._
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  tldraw:
+    type: streamable_http
+    uri: https://tldraw-mcp-app.tldraw.workers.dev/mcp
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "tldraw": {
+      "type": "streamable-http",
+      "url": "https://tldraw-mcp-app.tldraw.workers.dev/mcp"
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "tldraw": {
+      "type": "streamable-http",
+      "url": "https://tldraw-mcp-app.tldraw.workers.dev/mcp"
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `tldraw.cordis.yml  →  dsh web --patch ./tldraw.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-tldraw
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: tldraw
+        transport: streamable-http
+        url: https://tldraw-mcp-app.tldraw.workers.dev/mcp
+```
+
+</details>
+
+<a id="token-optimizer-mcp"></a>
+
+### Context-window token optimization
+
+[ooples/token-optimizer-mcp](https://github.com/ooples/token-optimizer-mcp) — `MCP server` · License: MIT · Works with: All clients
+
+Context-window optimization with caching, compression, and smart file tools, cutting tokens 60-90%.
+
+**Alternatives:**
+
+- [llmtrim](https://github.com/fkiene/llmtrim) — Proxy server that compresses LLM prompts, tool output, and replies to cut token cost.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio token-optimizer-mcp -- npx -y @ooples/token-optimizer-mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add token-optimizer-mcp -- npx -y @ooples/token-optimizer-mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add token-optimizer-mcp npx -y @ooples/token-optimizer-mcp
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "token-optimizer-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@ooples/token-optimizer-mcp"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "token-optimizer-mcp": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@ooples/token-optimizer-mcp"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "token-optimizer-mcp": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@ooples/token-optimizer-mcp"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "token-optimizer-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@ooples/token-optimizer-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "token-optimizer-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@ooples/token-optimizer-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "token-optimizer-mcp": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@ooples/token-optimizer-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  token-optimizer-mcp:
+    type: stdio
+    cmd: npx
+    args: ["-y","@ooples/token-optimizer-mcp"]
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "token-optimizer-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@ooples/token-optimizer-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "token-optimizer-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@ooples/token-optimizer-mcp"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `token-optimizer-mcp.cordis.yml  →  dsh web --patch ./token-optimizer-mcp.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-token-optimizer-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: token-optimizer-mcp
+        transport: stdio
+        command: npx
+        args: ["-y","@ooples/token-optimizer-mcp"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="typeui-mcp"></a>
+
+### Design system prompts for coding agents
+
+[TypeUI](https://github.com/bergside/typeui) — `MCP server` · License: see repo · Works with: All clients
+
+Design systems, UI prompts, and layout variations for AI coding tools.
+
+**Alternatives:**
+
+- [StyleKit](https://github.com/AnxForever/stylekit/tree/main/packages/mcp) — Searches 148 curated design styles and pulls tokens, recipes, and shadcn commands.
+- [UI Beats](https://github.com/nikhils4/ui-beats/tree/main/packages/mcp) — Lets an agent search, read, and install animated React components.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport http typeui https://mcp.typeui.sh/mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add typeui --url https://mcp.typeui.sh/mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add --transport http typeui https://mcp.typeui.sh/mcp
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "typeui": {
+      "url": "https://mcp.typeui.sh/mcp"
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "typeui": {
+      "type": "http",
+      "url": "https://mcp.typeui.sh/mcp"
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "typeui": {
+      "type": "remote",
+      "url": "https://mcp.typeui.sh/mcp",
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "typeui": {
+      "type": "streamableHttp",
+      "url": "https://mcp.typeui.sh/mcp"
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "typeui": {
+      "serverUrl": "https://mcp.typeui.sh/mcp"
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "typeui": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://mcp.typeui.sh/mcp"
+      ]
+    }
+  }
+}
+```
+_Remote server bridged through the mcp-remote stdio proxy._
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  typeui:
+    type: streamable_http
+    uri: https://mcp.typeui.sh/mcp
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "typeui": {
+      "type": "streamable-http",
+      "url": "https://mcp.typeui.sh/mcp"
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "typeui": {
+      "type": "streamable-http",
+      "url": "https://mcp.typeui.sh/mcp"
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `typeui.cordis.yml  →  dsh web --patch ./typeui.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-typeui
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: typeui
+        transport: streamable-http
+        url: https://mcp.typeui.sh/mcp
+```
+
+</details>
+
 <a id="dsh-notes-dsh-plugin"></a>
 
 ### Export chats as styled notes
@@ -663,6 +2007,173 @@ Exports DSH conversations as Smartisan Notes-style PNGs, or creates and updates 
 
 ```bash
 dsh plugin --profile web add github:zhaoolee/notes#path:/dsh-plugin
+```
+
+</details>
+
+<a id="mcp-server-guide"></a>
+
+### Figma design context for agents
+
+[Figma MCP Server](https://github.com/figma/mcp-server-guide) — `MCP server` · License: see repo · Works with: All clients
+
+Official Figma server bringing Figma design context directly into an AI coding workflow.
+
+**Alternatives:**
+
+- [GLips/Figma-Context-MCP](https://github.com/GLips/Figma-Context-MCP) — Gives a coding agent access to Figma data to implement designs in any framework in one shot; needs a FIGMA_API_KEY.
+- [TranHoaiHung/figma-ui-mcp](https://github.com/TranHoaiHung/figma-ui-mcp) — Bidirectional Figma server: an agent draws UI on the Figma canvas and reads designs back.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport http mcp https://mcp.figma.com/mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add mcp --url https://mcp.figma.com/mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add --transport http mcp https://mcp.figma.com/mcp
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "mcp": {
+      "url": "https://mcp.figma.com/mcp"
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "mcp": {
+      "type": "http",
+      "url": "https://mcp.figma.com/mcp"
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "mcp": {
+      "type": "remote",
+      "url": "https://mcp.figma.com/mcp",
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "mcp": {
+      "type": "streamableHttp",
+      "url": "https://mcp.figma.com/mcp"
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "mcp": {
+      "serverUrl": "https://mcp.figma.com/mcp"
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "mcp": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://mcp.figma.com/mcp"
+      ]
+    }
+  }
+}
+```
+_Remote server bridged through the mcp-remote stdio proxy._
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  mcp:
+    type: streamable_http
+    uri: https://mcp.figma.com/mcp
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "mcp": {
+      "type": "streamable-http",
+      "url": "https://mcp.figma.com/mcp"
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "mcp": {
+      "type": "streamable-http",
+      "url": "https://mcp.figma.com/mcp"
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `mcp.cordis.yml  →  dsh web --patch ./mcp.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: mcp
+        transport: streamable-http
+        url: https://mcp.figma.com/mcp
 ```
 
 </details>
@@ -882,6 +2393,335 @@ dsh plugin --profile web add github:heartleo/hn-cli#path:/plugins/hacker-news
 
 </details>
 
+<a id="drawio-mcp"></a>
+
+### Interactive draw.io diagrams
+
+[draw.io](https://github.com/jgraph/drawio-mcp) — `MCP server` · License: Apache-2.0 · Works with: All clients
+
+Creates diagrams in chat rendered as live, interactive draw.io diagrams, with over 10,000 searchable shapes.
+
+**Alternatives:**
+
+- [TerraVision](https://github.com/patrickchugh/terravision) — Generates cloud architecture diagrams from a terraform plan, with official AWS, Azure, and GCP icons.
+- [Vrun-design/openflowkit](https://github.com/Vrun-design/openflowkit) — Local-first node-based flow diagramming tools for MCP clients.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport http mcp https://mcp.draw.io/mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add mcp --url https://mcp.draw.io/mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add --transport http mcp https://mcp.draw.io/mcp
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "mcp": {
+      "url": "https://mcp.draw.io/mcp"
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "mcp": {
+      "type": "http",
+      "url": "https://mcp.draw.io/mcp"
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "mcp": {
+      "type": "remote",
+      "url": "https://mcp.draw.io/mcp",
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "mcp": {
+      "type": "streamableHttp",
+      "url": "https://mcp.draw.io/mcp"
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "mcp": {
+      "serverUrl": "https://mcp.draw.io/mcp"
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "mcp": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://mcp.draw.io/mcp"
+      ]
+    }
+  }
+}
+```
+_Remote server bridged through the mcp-remote stdio proxy._
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  mcp:
+    type: streamable_http
+    uri: https://mcp.draw.io/mcp
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "mcp": {
+      "type": "streamable-http",
+      "url": "https://mcp.draw.io/mcp"
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "mcp": {
+      "type": "streamable-http",
+      "url": "https://mcp.draw.io/mcp"
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `mcp.cordis.yml  →  dsh web --patch ./mcp.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: mcp
+        transport: streamable-http
+        url: https://mcp.draw.io/mcp
+```
+
+</details>
+
+<a id="equation-io-mcp"></a>
+
+### Interactive equation graphing
+
+[Equation.io](https://github.com/aantthony/equation.io) — `MCP server` · License: MIT · Works with: All clients
+
+Creates interactive 2D and 3D graphs from validated equations, with shareable links and PNG previews.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport http equation https://equation.io/mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add equation --url https://equation.io/mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add --transport http equation https://equation.io/mcp
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "equation": {
+      "url": "https://equation.io/mcp"
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "equation": {
+      "type": "http",
+      "url": "https://equation.io/mcp"
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "equation": {
+      "type": "remote",
+      "url": "https://equation.io/mcp",
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "equation": {
+      "type": "streamableHttp",
+      "url": "https://equation.io/mcp"
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "equation": {
+      "serverUrl": "https://equation.io/mcp"
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "equation": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://equation.io/mcp"
+      ]
+    }
+  }
+}
+```
+_Remote server bridged through the mcp-remote stdio proxy._
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  equation:
+    type: streamable_http
+    uri: https://equation.io/mcp
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "equation": {
+      "type": "streamable-http",
+      "url": "https://equation.io/mcp"
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "equation": {
+      "type": "streamable-http",
+      "url": "https://equation.io/mcp"
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `equation.cordis.yml  →  dsh web --patch ./equation.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-equation
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: equation
+        transport: streamable-http
+        url: https://equation.io/mcp
+```
+
+</details>
+
 <a id="dsh-dsh-plugin-hub-packages-dsh-mcp-manager"></a>
 
 ### MCP server config manager
@@ -900,6 +2740,1443 @@ MCP server manager (stdio / streamable-http) with per-project and global config 
 
 ```bash
 dsh plugin --profile web add github:wingsky-1/dsh-plugin-hub#path:/packages/dsh-mcp-manager
+```
+
+</details>
+
+<a id="claude-code-organizer-mcp"></a>
+
+### Organize Claude Code configuration
+
+[mcpware/claude-code-organizer](https://github.com/mcpware/claude-code-organizer) — `MCP server` · License: MIT · Works with: All clients
+
+Organizes Claude Code memories, skills, MCP servers, commands, and agents via drag-and-drop.
+
+**Alternatives:**
+
+- [mcptoon](https://github.com/activeing123/mcptoon) — Zero-dependency MCP client keeping one synced config across agents, with compact tool listings.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio claude-code-organizer -- npx -y @mcpware/claude-code-organizer
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add claude-code-organizer -- npx -y @mcpware/claude-code-organizer
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add claude-code-organizer npx -y @mcpware/claude-code-organizer
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "claude-code-organizer": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@mcpware/claude-code-organizer"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "claude-code-organizer": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@mcpware/claude-code-organizer"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "claude-code-organizer": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@mcpware/claude-code-organizer"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "claude-code-organizer": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@mcpware/claude-code-organizer"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "claude-code-organizer": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@mcpware/claude-code-organizer"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "claude-code-organizer": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@mcpware/claude-code-organizer"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  claude-code-organizer:
+    type: stdio
+    cmd: npx
+    args: ["-y","@mcpware/claude-code-organizer"]
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "claude-code-organizer": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@mcpware/claude-code-organizer"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "claude-code-organizer": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@mcpware/claude-code-organizer"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `claude-code-organizer.cordis.yml  →  dsh web --patch ./claude-code-organizer.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-claude-code-organizer
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: claude-code-organizer
+        transport: stdio
+        command: npx
+        args: ["-y","@mcpware/claude-code-organizer"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="klavis-mcp"></a>
+
+### Progressive MCP tool exposure
+
+[Klavis-AI/klavis](https://github.com/Klavis-AI/klavis) — `MCP server` · License: Apache-2.0 · Works with: All clients
+
+Server for progressive tool usage at scale, exposing large MCP tool sets incrementally to agents.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport http strata https://strata.klavis.ai/mcp/
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add strata --url https://strata.klavis.ai/mcp/
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add --transport http strata https://strata.klavis.ai/mcp/
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "strata": {
+      "url": "https://strata.klavis.ai/mcp/"
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "strata": {
+      "type": "http",
+      "url": "https://strata.klavis.ai/mcp/"
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "strata": {
+      "type": "remote",
+      "url": "https://strata.klavis.ai/mcp/",
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "strata": {
+      "type": "streamableHttp",
+      "url": "https://strata.klavis.ai/mcp/"
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "strata": {
+      "serverUrl": "https://strata.klavis.ai/mcp/"
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "strata": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://strata.klavis.ai/mcp/"
+      ]
+    }
+  }
+}
+```
+_Remote server bridged through the mcp-remote stdio proxy._
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  strata:
+    type: streamable_http
+    uri: https://strata.klavis.ai/mcp/
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "strata": {
+      "type": "streamable-http",
+      "url": "https://strata.klavis.ai/mcp/"
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "strata": {
+      "type": "streamable-http",
+      "url": "https://strata.klavis.ai/mcp/"
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `strata.cordis.yml  →  dsh web --patch ./strata.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-strata
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: strata
+        transport: streamable-http
+        url: https://strata.klavis.ai/mcp/
+```
+
+</details>
+
+<a id="visualtorch-mcp"></a>
+
+### PyTorch architecture diagrams
+
+[VisualTorch](https://github.com/willyfh/visualtorch) — `MCP server` · License: MIT · Works with: All clients
+
+Renders PyTorch model architecture diagrams and animated GIF reveals from a trusted model source.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio visualtorch -- uvx visualtorch
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add visualtorch -- uvx visualtorch
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add visualtorch uvx visualtorch
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "visualtorch": {
+      "command": "uvx",
+      "args": [
+        "visualtorch"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "visualtorch": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "visualtorch"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "visualtorch": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "visualtorch"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "visualtorch": {
+      "command": "uvx",
+      "args": [
+        "visualtorch"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "visualtorch": {
+      "command": "uvx",
+      "args": [
+        "visualtorch"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "visualtorch": {
+      "source": "custom",
+      "command": "uvx",
+      "args": [
+        "visualtorch"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  visualtorch:
+    type: stdio
+    cmd: uvx
+    args: ["visualtorch"]
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "visualtorch": {
+      "command": "uvx",
+      "args": [
+        "visualtorch"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "visualtorch": {
+      "command": "uvx",
+      "args": [
+        "visualtorch"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `visualtorch.cordis.yml  →  dsh web --patch ./visualtorch.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-visualtorch
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: visualtorch
+        transport: stdio
+        command: uvx
+        args: ["visualtorch"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="inspo-mcp"></a>
+
+### Real website design references
+
+[Nutlope/inspo](https://github.com/Nutlope/inspo) — `MCP server` · License: MIT · Works with: All clients
+
+Real production websites for coding agents: color palettes, fonts, fold layouts, and reference JSX; needs a TOGETHER_API_KEY.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio inspo --env TOGETHER_API_KEY='<TOGETHER_API_KEY>' -- npx -y inspo-mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add inspo --env TOGETHER_API_KEY='<TOGETHER_API_KEY>' -- npx -y inspo-mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add -e TOGETHER_API_KEY='<TOGETHER_API_KEY>' inspo npx -y inspo-mcp
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "inspo": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "inspo-mcp"
+      ],
+      "env": {
+        "TOGETHER_API_KEY": "<TOGETHER_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "inspo": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "inspo-mcp"
+      ],
+      "env": {
+        "TOGETHER_API_KEY": "<TOGETHER_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "inspo": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "inspo-mcp"
+      ],
+      "enabled": true,
+      "environment": {
+        "TOGETHER_API_KEY": "<TOGETHER_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "inspo": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "inspo-mcp"
+      ],
+      "env": {
+        "TOGETHER_API_KEY": "<TOGETHER_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "inspo": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "inspo-mcp"
+      ],
+      "env": {
+        "TOGETHER_API_KEY": "<TOGETHER_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "inspo": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "inspo-mcp"
+      ],
+      "env": {
+        "TOGETHER_API_KEY": "<TOGETHER_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  inspo:
+    type: stdio
+    cmd: npx
+    args: ["-y","inspo-mcp"]
+    envs:
+      TOGETHER_API_KEY: "<TOGETHER_API_KEY>"
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "inspo": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "inspo-mcp"
+      ],
+      "env": {
+        "TOGETHER_API_KEY": "<TOGETHER_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "inspo": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "inspo-mcp"
+      ],
+      "env": {
+        "TOGETHER_API_KEY": "<TOGETHER_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `inspo.cordis.yml  →  dsh web --patch ./inspo.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-inspo
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: inspo
+        transport: stdio
+        command: npx
+        args: ["-y","inspo-mcp"]
+        env: {"TOGETHER_API_KEY":"<TOGETHER_API_KEY>"}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="blatui-mcp"></a>
+
+### shadcn/ui components for Laravel Blade
+
+[anousss007/blatui](https://github.com/anousss007/blatui) — `MCP server` · License: see repo · Works with: All clients
+
+shadcn/ui for Laravel Blade: discover, read, and install BlatUI components, blocks, and charts.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport http blatui https://blatui.remix-it.com/mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add blatui --url https://blatui.remix-it.com/mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add --transport http blatui https://blatui.remix-it.com/mcp
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "blatui": {
+      "url": "https://blatui.remix-it.com/mcp"
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "blatui": {
+      "type": "http",
+      "url": "https://blatui.remix-it.com/mcp"
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "blatui": {
+      "type": "remote",
+      "url": "https://blatui.remix-it.com/mcp",
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "blatui": {
+      "type": "streamableHttp",
+      "url": "https://blatui.remix-it.com/mcp"
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "blatui": {
+      "serverUrl": "https://blatui.remix-it.com/mcp"
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "blatui": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://blatui.remix-it.com/mcp"
+      ]
+    }
+  }
+}
+```
+_Remote server bridged through the mcp-remote stdio proxy._
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  blatui:
+    type: streamable_http
+    uri: https://blatui.remix-it.com/mcp
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "blatui": {
+      "type": "streamable-http",
+      "url": "https://blatui.remix-it.com/mcp"
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "blatui": {
+      "type": "streamable-http",
+      "url": "https://blatui.remix-it.com/mcp"
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `blatui.cordis.yml  →  dsh web --patch ./blatui.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-blatui
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: blatui
+        transport: streamable-http
+        url: https://blatui.remix-it.com/mcp
+```
+
+</details>
+
+<a id="stata-mcp"></a>
+
+### Stata regression analysis
+
+[SepineTam/stata-mcp](https://github.com/SepineTam/stata-mcp) — `MCP server` · License: AGPL-3.0 · Works with: All clients
+
+Lets an LLM help run regression analysis with Stata.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio stata-mcp -- uvx stata-mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add stata-mcp -- uvx stata-mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add stata-mcp uvx stata-mcp
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "stata-mcp": {
+      "command": "uvx",
+      "args": [
+        "stata-mcp"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "stata-mcp": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "stata-mcp"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "stata-mcp": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "stata-mcp"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "stata-mcp": {
+      "command": "uvx",
+      "args": [
+        "stata-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "stata-mcp": {
+      "command": "uvx",
+      "args": [
+        "stata-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "stata-mcp": {
+      "source": "custom",
+      "command": "uvx",
+      "args": [
+        "stata-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  stata-mcp:
+    type: stdio
+    cmd: uvx
+    args: ["stata-mcp"]
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "stata-mcp": {
+      "command": "uvx",
+      "args": [
+        "stata-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "stata-mcp": {
+      "command": "uvx",
+      "args": [
+        "stata-mcp"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `stata-mcp.cordis.yml  →  dsh web --patch ./stata-mcp.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-stata-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: stata-mcp
+        transport: stdio
+        command: uvx
+        args: ["stata-mcp"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="appllama-skills-mcp"></a>
+
+### Study top app screens and paywalls
+
+[Appllama](https://github.com/Appllama/appllama-skills) — `MCP server` · License: MIT · Works with: All clients
+
+Studies screens, flows, and paywalls from top-earning iOS apps to inform new app designs.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport http appllama https://mcp.appllama.io/mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add appllama --url https://mcp.appllama.io/mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add --transport http appllama https://mcp.appllama.io/mcp
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "appllama": {
+      "url": "https://mcp.appllama.io/mcp"
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "appllama": {
+      "type": "http",
+      "url": "https://mcp.appllama.io/mcp"
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "appllama": {
+      "type": "remote",
+      "url": "https://mcp.appllama.io/mcp",
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "appllama": {
+      "type": "streamableHttp",
+      "url": "https://mcp.appllama.io/mcp"
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "appllama": {
+      "serverUrl": "https://mcp.appllama.io/mcp"
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "appllama": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://mcp.appllama.io/mcp"
+      ]
+    }
+  }
+}
+```
+_Remote server bridged through the mcp-remote stdio proxy._
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  appllama:
+    type: streamable_http
+    uri: https://mcp.appllama.io/mcp
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "appllama": {
+      "type": "streamable-http",
+      "url": "https://mcp.appllama.io/mcp"
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "appllama": {
+      "type": "streamable-http",
+      "url": "https://mcp.appllama.io/mcp"
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `appllama.cordis.yml  →  dsh web --patch ./appllama.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-appllama
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: appllama
+        transport: streamable-http
+        url: https://mcp.appllama.io/mcp
+```
+
+</details>
+
+<a id="watch-skill-mcp"></a>
+
+### Verify agent work from video evidence
+
+[oxbshw/watch-skill](https://github.com/oxbshw/watch-skill) — `MCP server` · License: MIT · Works with: All clients
+
+Watches video and live sessions, keeps timestamped evidence, and verifies an agent's own work.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio watch-skill -- uvx watch-skill
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add watch-skill -- uvx watch-skill
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add watch-skill uvx watch-skill
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "watch-skill": {
+      "command": "uvx",
+      "args": [
+        "watch-skill"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "watch-skill": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "watch-skill"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "watch-skill": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "watch-skill"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "watch-skill": {
+      "command": "uvx",
+      "args": [
+        "watch-skill"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "watch-skill": {
+      "command": "uvx",
+      "args": [
+        "watch-skill"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "watch-skill": {
+      "source": "custom",
+      "command": "uvx",
+      "args": [
+        "watch-skill"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  watch-skill:
+    type: stdio
+    cmd: uvx
+    args: ["watch-skill"]
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "watch-skill": {
+      "command": "uvx",
+      "args": [
+        "watch-skill"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "watch-skill": {
+      "command": "uvx",
+      "args": [
+        "watch-skill"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `watch-skill.cordis.yml  →  dsh web --patch ./watch-skill.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-watch-skill
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: watch-skill
+        transport: stdio
+        command: uvx
+        args: ["watch-skill"]
+        env: {}
+        cwd: !!js process.cwd()
 ```
 
 </details>

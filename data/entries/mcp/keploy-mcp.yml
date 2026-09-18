@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: keploy-mcp
+name: Keploy
+title: Generate API tests from traffic
+url: https://github.com/keploy/keploy
+type: mcp-server
+category: dev
+license: Apache-2.0
+tags:
+  - testing
+  - api
+description:
+  en: >-
+    End-to-end API testing: generates and runs tests from OpenAPI, curl, Postman, or real user traffic; needs an
+    Authorization token.
+  pt: >-
+    Testes de API ponta a ponta: gera e executa testes a partir de OpenAPI, curl, Postman ou tráfego real; exige token
+    de Authorization.
+mcp:
+  name: mcp
+  http:
+    url: https://api.keploy.io/client/v1/mcp
+    headers:
+      Authorization: Bearer <API_TOKEN>
+origin:
+  list: mcp-registry
+  ref: io.github.keploy/mcp

@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: crowdsentinels-ai-mcp
+name: thomasxm/CrowdSentinels-AI-MCP
+title: Threat hunting on Elasticsearch
+url: https://github.com/thomasxm/CrowdSentinels-AI-MCP
+type: mcp-server
+category: security
+license: GPL-3.0
+tags:
+  - threat-hunting
+  - siem
+description:
+  en: >-
+    AI threat hunting and incident response for Elasticsearch/OpenSearch with endpoint and network forensics; needs
+    Elasticsearch credentials.
+  pt: >-
+    Caça a ameaças e resposta a incidentes com IA para Elasticsearch/OpenSearch, com forense de endpoint e rede; exige
+    credenciais do Elasticsearch.
+mcp:
+  name: crowdsentinel-mcp-server
+  stdio:
+    command: uvx
+    args:
+      - crowdsentinel-mcp-server
+    env:
+      ELASTICSEARCH_API_KEY: <ELASTICSEARCH_API_KEY>
+      ELASTICSEARCH_PASSWORD: <ELASTICSEARCH_PASSWORD>
+      ELASTICSEARCH_BEARER_TOKEN: <ELASTICSEARCH_BEARER_TOKEN>
+origin:
+  list: mcp-registry
+  ref: io.github.thomasxm/crowdsentinel-mcp-server

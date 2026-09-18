@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: superserve-mcp
+name: Superserve
+title: Firecracker microVM sandboxes
+url: https://github.com/superserve-ai/superserve/tree/main/packages/mcp
+type: mcp-server
+category: cloud
+license: Apache-2.0
+tags:
+  - sandbox
+  - microvm
+description:
+  en: Creates, executes in, and manages Firecracker microVM sandboxes; needs a SUPERSERVE_API_KEY.
+  pt: Cria, executa em e gerencia sandboxes microVM Firecracker; exige SUPERSERVE_API_KEY.
+mcp:
+  name: mcp
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@superserve/mcp"
+    env:
+      SUPERSERVE_API_KEY: <SUPERSERVE_API_KEY>
+  http:
+    url: https://mcp.superserve.ai
+    headers:
+      Authorization: Bearer <API_TOKEN>
+origin:
+  list: mcp-registry
+  ref: io.github.superserve-ai/mcp

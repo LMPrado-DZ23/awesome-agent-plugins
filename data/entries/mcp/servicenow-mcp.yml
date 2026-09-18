@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: servicenow-mcp
+name: ServiceNow MCP Server (NowAIKit)
+title: ServiceNow platform access
+url: https://github.com/aartiq/servicenow-mcp
+type: mcp-server
+category: integrations
+license: null
+tags:
+  - servicenow
+  - itsm
+description:
+  en: 450+ tools for ServiceNow, read-only by default.
+  pt: Mais de 450 ferramentas para o ServiceNow, somente leitura por padrão.
+mcp:
+  name: nowaikit
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - nowaikit
+origin:
+  list: mcp-registry
+  ref: io.github.aartiq/nowaikit

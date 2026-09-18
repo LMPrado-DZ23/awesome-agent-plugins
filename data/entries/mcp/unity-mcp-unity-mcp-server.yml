@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: unity-mcp-unity-mcp-server
+name: IvanMurzak/Unity-MCP
+title: Unity Engine AI control
+url: https://github.com/IvanMurzak/Unity-MCP/tree/main/Unity-MCP-Server
+type: mcp-server
+category: dev
+license: Apache-2.0
+tags:
+  - unity
+  - game-dev
+description:
+  en: Server and plugin for making 3D games in Unity Engine with AI, covering the Unity Editor and Unity games.
+  pt: Servidor e plugin para criar jogos 3D na Unity Engine com IA, cobrindo o Editor Unity e os jogos.
+mcp:
+  name: unity-mcp
+  stdio:
+    command: docker
+    args:
+      - run
+      - "-i"
+      - "--rm"
+      - docker.io/ivanmurzakdev/unity-mcp-server:0.17.1
+origin:
+  list: mcp-registry
+  ref: io.github.IvanMurzak/Unity-MCP

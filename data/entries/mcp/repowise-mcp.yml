@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: repowise-mcp
+name: Repowise
+title: Codebase intelligence for agents
+url: https://github.com/repowise-dev/repowise
+type: mcp-server
+category: code-intel
+license: AGPL-3.0
+tags:
+  - code-intel
+  - git
+  - docs
+description:
+  en: "Codebase intelligence for coding agents: dependency graph, git history, docs, decisions, and code health."
+  pt: >-
+    Inteligência de código para agentes: grafo de dependências, histórico do git, documentação, decisões e saúde do
+    código.
+mcp:
+  name: repowise
+  stdio:
+    command: uvx
+    args:
+      - repowise
+      - <REPO_PATH>
+origin:
+  list: mcp-registry
+  ref: dev.repowise/repowise

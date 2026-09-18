@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: veritasgraph-mcp
+name: bibinprathap/VeritasGraph
+title: Air-gapped enterprise GraphRAG
+url: https://github.com/bibinprathap/VeritasGraph
+type: mcp-server
+category: memory
+license: null
+tags:
+  - memory
+  - rag
+  - security
+description:
+  en: Zero-trust, air-gapped enterprise GraphRAG server with offline, citation-grounded answers.
+  pt: Servidor GraphRAG empresarial zero-trust e air-gapped, com respostas offline fundamentadas em citações.
+mcp:
+  name: veritasgraph
+  stdio:
+    command: uvx
+    args:
+      - veritasgraph-mcp
+origin:
+  list: mcp-registry
+  ref: io.github.bibinprathap/veritasgraph

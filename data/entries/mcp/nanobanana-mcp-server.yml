@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: nanobanana-mcp-server
+name: zhongweili/nanobanana-mcp-server
+title: Gemini image generation and editing
+url: https://github.com/zhongweili/nanobanana-mcp-server
+type: mcp-server
+category: multimodal
+license: MIT
+tags:
+  - image-generation
+  - gemini
+description:
+  en: Provides image generation and editing capabilities via Gemini; needs a GEMINI_API_KEY.
+  pt: Oferece geração e edição de imagens via Gemini; exige GEMINI_API_KEY.
+mcp:
+  name: nanobanana-mcp-server
+  stdio:
+    command: uvx
+    args:
+      - nanobanana-mcp-server
+    env:
+      GEMINI_API_KEY: <GEMINI_API_KEY>
+alternatives:
+  - name: RLabs-Inc/gemini-mcp
+    url: https://github.com/RLabs-Inc/gemini-mcp
+    adds:
+      en: >-
+        Broader Gemini 3 toolkit with 30+ tools: images, video, research, TTS, and code execution; needs a
+        GEMINI_API_KEY.
+      pt: >-
+        Kit mais amplo do Gemini 3, com mais de 30 ferramentas: imagens, vídeo, pesquisa, TTS e execução de código;
+        exige GEMINI_API_KEY.
+origin:
+  list: mcp-registry
+  ref: io.github.zhongweili/nanobanana-mcp-server

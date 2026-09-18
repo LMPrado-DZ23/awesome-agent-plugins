@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: ha-mcp
+name: homeassistant-ai/ha-mcp
+title: Home Assistant control
+url: https://github.com/homeassistant-ai/ha-mcp
+type: mcp-server
+category: integrations
+license: MIT
+tags:
+  - smart-home
+description:
+  en: Comprehensive server for managing Home Assistant through AI assistants.
+  pt: Servidor abrangente para gerenciar o Home Assistant por meio de assistentes de IA.
+mcp:
+  name: ha-mcp
+  stdio:
+    command: uvx
+    args:
+      - ha-mcp
+origin:
+  list: mcp-registry
+  ref: io.github.homeassistant-ai/ha-mcp

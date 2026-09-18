@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: mcp
+name: Microsoft Learn MCP
+title: Microsoft Learn documentation
+url: https://github.com/MicrosoftDocs/mcp
+type: mcp-server
+category: docs
+license: CC-BY-4.0
+tags:
+  - docs
+  - microsoft
+description:
+  en: Official Microsoft Learn server providing real-time, trusted docs and code samples for AI agents.
+  pt: >-
+    Servidor oficial do Microsoft Learn com documentação confiável em tempo real e exemplos de código para agentes de
+    IA.
+mcp:
+  name: microsoft-learn-mcp
+  http:
+    url: https://learn.microsoft.com/api/mcp
+origin:
+  list: mcp-registry
+  ref: com.microsoft/microsoft-learn-mcp

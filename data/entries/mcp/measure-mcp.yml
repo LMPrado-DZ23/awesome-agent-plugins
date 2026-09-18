@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: measure-mcp
+name: Measure
+title: Mobile crash root-cause analysis
+url: https://github.com/measure-sh/measure/tree/main/backend/agent/mcp
+type: mcp-server
+category: dev
+license: Apache-2.0
+tags:
+  - mobile
+  - observability
+description:
+  en: Helps get to the root cause of mobile app crashes, errors, and slow traces.
+  pt: Ajuda a encontrar a causa raiz de crashes, erros e traces lentos em apps móveis.
+mcp:
+  name: measure
+  http:
+    url: https://agent.measure.sh/mcp
+origin:
+  list: mcp-registry
+  ref: sh.measure/measure

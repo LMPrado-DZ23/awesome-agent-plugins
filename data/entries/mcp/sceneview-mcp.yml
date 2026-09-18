@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: sceneview-mcp
+name: SceneView/sceneview
+title: 3D and AR SDK reference
+url: https://github.com/SceneView/sceneview
+type: mcp-server
+category: docs
+license: Apache-2.0
+tags:
+  - docs
+  - 3d
+  - ar
+description:
+  en: API docs, samples, validation, and code generation for the SceneView 3D and AR SDK on Android, iOS, and Web.
+  pt: Documentação de API, exemplos, validação e geração de código para o SDK 3D e AR SceneView em Android, iOS e Web.
+mcp:
+  name: mcp
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - sceneview-mcp
+origin:
+  list: mcp-registry
+  ref: io.github.SceneView/mcp

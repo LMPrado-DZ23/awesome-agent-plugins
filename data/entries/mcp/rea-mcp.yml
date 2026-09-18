@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: rea-mcp
+name: REA
+title: Reverse engineer from the CLI
+url: https://github.com/morluto/rea
+type: mcp-server
+category: security
+license: MIT
+tags:
+  - reverse-engineering
+description:
+  en: Reverse engineers arbitrary targets from the terminal or an agent, via one CLI and server.
+  pt: Faz engenharia reversa de alvos diversos a partir do terminal ou de um agente, com uma única CLI e servidor.
+mcp:
+  name: rea
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - rea-agents
+origin:
+  list: mcp-registry
+  ref: io.github.morluto/rea

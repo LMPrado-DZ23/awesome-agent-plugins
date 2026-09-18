@@ -24,7 +24,8 @@
     "test": "node --test \"test/*.test.mjs\"",
     "import:dsh:meta": "node scripts/import/dsh-fetch-meta.mjs",
     "import:dsh": "node scripts/import/dsh-select.mjs",
-    "e2e": "node scripts/e2e.mjs"
+    "e2e": "node scripts/e2e.mjs",
+    "check:packages": "node scripts/check-packages.mjs"
   },
   "keywords": [
     "awesome",

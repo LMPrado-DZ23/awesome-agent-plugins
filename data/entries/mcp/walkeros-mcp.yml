@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: walkeros-mcp
+name: walkerOS Flow
+title: Build walkerOS event pipelines
+url: https://github.com/elbwalker/walkerOS/tree/main/packages/mcps/mcp
+type: mcp-server
+category: integrations
+license: MIT
+tags:
+  - analytics
+  - data-pipeline
+description:
+  en: Builds, validates, simulates, and deploys walkerOS event pipelines; needs a WALKEROS_TOKEN.
+  pt: Constrói, valida, simula e implanta pipelines de eventos do walkerOS; exige WALKEROS_TOKEN.
+mcp:
+  name: flow
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@walkeros/mcp"
+    env:
+      WALKEROS_TOKEN: <WALKEROS_TOKEN>
+origin:
+  list: mcp-registry
+  ref: io.walkeros/flow

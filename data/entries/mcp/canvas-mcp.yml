@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: canvas-mcp
+name: vishalsachdev/canvas-mcp
+title: Canvas LMS access
+url: https://github.com/vishalsachdev/canvas-mcp
+type: mcp-server
+category: integrations
+license: MIT
+tags:
+  - education
+  - lms
+description:
+  en: Canvas LMS integration for students and educators, with optional privacy controls.
+  pt: Integração com o Canvas LMS para estudantes e educadores, com controles de privacidade opcionais.
+mcp:
+  name: canvas-mcp
+  stdio:
+    command: uvx
+    args:
+      - canvas-mcp
+origin:
+  list: mcp-registry
+  ref: io.github.vishalsachdev/canvas-mcp

@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: netdata-mcp
+name: Netdata
+title: Real-time infrastructure monitoring
+url: https://github.com/netdata/netdata/tree/main/docs/netdata-ai/mcp
+type: mcp-server
+category: cloud
+license: GPL-3.0
+tags:
+  - monitoring
+  - infra
+description:
+  en: >-
+    Real-time infrastructure monitoring with metrics, logs, alerts, and ML-based anomaly detection; needs an
+    Authorization token.
+  pt: >-
+    Monitoramento de infraestrutura em tempo real com métricas, logs, alertas e detecção de anomalias por ML; exige
+    token de Authorization.
+mcp:
+  name: mcp-server
+  http:
+    url: https://app.netdata.cloud/api/v1/mcp
+    headers:
+      Authorization: Bearer <API_TOKEN>
+origin:
+  list: mcp-registry
+  ref: io.github.netdata/mcp-server

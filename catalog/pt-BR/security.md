@@ -16,6 +16,18 @@
 - [Deterministic commit security review](#dsh-dsh-code-security) — Revisão de segurança de código determinística com mais de 40 regras, detecção de entropia de segredos, revisão…
 - [Runtime prompt-injection defense](#dsh-dsh-security-guard) — Guarda de segurança estática e em runtime: varreduras baseadas em regras para código malicioso, injeção de pro…
 - [Passive risk-scored call blocking](#dsh-dsh-risk-guard) — Registra silenciosamente cada chamada de ferramenta com pontuação de risco determinística e cumulativa e limpe…
+- [CrowdStrike Falcon security analysis](#falcon-mcp) — Servidor oficial da CrowdStrike conectando agentes ao Falcon para análise de segurança e automação; exige cred…
+- [Dead code and secrets detection](#skylos-mcp) — Detecção de código morto, segredos e problemas de qualidade para Python, TypeScript e Go; exige SKYLOS_API_KEY…
+- [DMARC report parsing](#parse-dmarc-mcp) — Parser leve de DMARC que busca relatórios de e-mail automaticamente e visualiza a conformidade em um único app…
+- [EVM bytecode analysis](#evmole-mcp) — Análise local e estruturada de bytecode de runtime EVM já implantado.
+- [Governance layer for agent actions](#bernstein-mcp) — Camada de governança open-source para agentes de IA, com recibos de execução bit a bit, mais de 40 adaptadores…
+- [Network analysis with tshark](#wireshark-mcp) — Análise de rede profissional com tshark para auditorias de segurança, investigações e detecção de ameaças.
+- [OSINT recon agent](#openosint-mcp) — Agente de OSINT com IA e 16 ferramentas: e-mail, vazamentos, IP, WHOIS, DNS, Shodan e GitHub; exige várias cha…
+- [Protect agents from malicious packages](#vet-mcp) — Protege agentes de IA e IDEs contra pacotes open-source maliciosos.
+- [Reverse engineer from the CLI](#rea-mcp) — Faz engenharia reversa de alvos diversos a partir do terminal ou de um agente, com uma única CLI e servidor.
+- [Reverse engineering and forensics](#reversecore-mcp) — Servidor voltado a segurança para engenharia reversa, análise de malware, forense e análise estática (SAST).
+- [SonarQube code quality scans](#sonarqube-mcp-server) — Servidor oficial da SonarSource para analisar qualidade de código e segurança com SonarQube Server ou Cloud; e…
+- [Threat hunting on Elasticsearch](#crowdsentinels-ai-mcp) — Caça a ameaças e resposta a incidentes com IA para Elasticsearch/OpenSearch, com forense de endpoint e rede; e…
 
 <a id="dsh-api-relay-audit"></a>
 
@@ -276,6 +288,2540 @@ Registra silenciosamente cada chamada de ferramenta com pontuação de risco det
 
 ```bash
 dsh plugin --profile web add github:shuxue6662-a11y/dsh-risk-guard
+```
+
+</details>
+
+<a id="falcon-mcp"></a>
+
+### CrowdStrike Falcon security analysis
+
+[CrowdStrike Falcon MCP Server](https://github.com/CrowdStrike/falcon-mcp) — `Servidor MCP` · Licença: MIT · Funciona com: Todos os clientes
+
+Servidor oficial da CrowdStrike conectando agentes ao Falcon para análise de segurança e automação; exige credenciais de cliente do Falcon.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio falcon-mcp --env FALCON_CLIENT_ID='<FALCON_CLIENT_ID>' --env FALCON_CLIENT_SECRET='<FALCON_CLIENT_SECRET>' --env FALCON_MCP_API_KEY='<FALCON_MCP_API_KEY>' -- uvx falcon-mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add falcon-mcp --env FALCON_CLIENT_ID='<FALCON_CLIENT_ID>' --env FALCON_CLIENT_SECRET='<FALCON_CLIENT_SECRET>' --env FALCON_MCP_API_KEY='<FALCON_MCP_API_KEY>' -- uvx falcon-mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add -e FALCON_CLIENT_ID='<FALCON_CLIENT_ID>' -e FALCON_CLIENT_SECRET='<FALCON_CLIENT_SECRET>' -e FALCON_MCP_API_KEY='<FALCON_MCP_API_KEY>' falcon-mcp uvx falcon-mcp
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "falcon-mcp": {
+      "command": "uvx",
+      "args": [
+        "falcon-mcp"
+      ],
+      "env": {
+        "FALCON_CLIENT_ID": "<FALCON_CLIENT_ID>",
+        "FALCON_CLIENT_SECRET": "<FALCON_CLIENT_SECRET>",
+        "FALCON_MCP_API_KEY": "<FALCON_MCP_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "falcon-mcp": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "falcon-mcp"
+      ],
+      "env": {
+        "FALCON_CLIENT_ID": "<FALCON_CLIENT_ID>",
+        "FALCON_CLIENT_SECRET": "<FALCON_CLIENT_SECRET>",
+        "FALCON_MCP_API_KEY": "<FALCON_MCP_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "falcon-mcp": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "falcon-mcp"
+      ],
+      "enabled": true,
+      "environment": {
+        "FALCON_CLIENT_ID": "<FALCON_CLIENT_ID>",
+        "FALCON_CLIENT_SECRET": "<FALCON_CLIENT_SECRET>",
+        "FALCON_MCP_API_KEY": "<FALCON_MCP_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "falcon-mcp": {
+      "command": "uvx",
+      "args": [
+        "falcon-mcp"
+      ],
+      "env": {
+        "FALCON_CLIENT_ID": "<FALCON_CLIENT_ID>",
+        "FALCON_CLIENT_SECRET": "<FALCON_CLIENT_SECRET>",
+        "FALCON_MCP_API_KEY": "<FALCON_MCP_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "falcon-mcp": {
+      "command": "uvx",
+      "args": [
+        "falcon-mcp"
+      ],
+      "env": {
+        "FALCON_CLIENT_ID": "<FALCON_CLIENT_ID>",
+        "FALCON_CLIENT_SECRET": "<FALCON_CLIENT_SECRET>",
+        "FALCON_MCP_API_KEY": "<FALCON_MCP_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "falcon-mcp": {
+      "source": "custom",
+      "command": "uvx",
+      "args": [
+        "falcon-mcp"
+      ],
+      "env": {
+        "FALCON_CLIENT_ID": "<FALCON_CLIENT_ID>",
+        "FALCON_CLIENT_SECRET": "<FALCON_CLIENT_SECRET>",
+        "FALCON_MCP_API_KEY": "<FALCON_MCP_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  falcon-mcp:
+    type: stdio
+    cmd: uvx
+    args: ["falcon-mcp"]
+    envs:
+      FALCON_CLIENT_ID: "<FALCON_CLIENT_ID>"
+      FALCON_CLIENT_SECRET: "<FALCON_CLIENT_SECRET>"
+      FALCON_MCP_API_KEY: "<FALCON_MCP_API_KEY>"
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "falcon-mcp": {
+      "command": "uvx",
+      "args": [
+        "falcon-mcp"
+      ],
+      "env": {
+        "FALCON_CLIENT_ID": "<FALCON_CLIENT_ID>",
+        "FALCON_CLIENT_SECRET": "<FALCON_CLIENT_SECRET>",
+        "FALCON_MCP_API_KEY": "<FALCON_MCP_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "falcon-mcp": {
+      "command": "uvx",
+      "args": [
+        "falcon-mcp"
+      ],
+      "env": {
+        "FALCON_CLIENT_ID": "<FALCON_CLIENT_ID>",
+        "FALCON_CLIENT_SECRET": "<FALCON_CLIENT_SECRET>",
+        "FALCON_MCP_API_KEY": "<FALCON_MCP_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `falcon-mcp.cordis.yml  →  dsh web --patch ./falcon-mcp.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-falcon-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: falcon-mcp
+        transport: stdio
+        command: uvx
+        args: ["falcon-mcp"]
+        env: {"FALCON_CLIENT_ID":"<FALCON_CLIENT_ID>","FALCON_CLIENT_SECRET":"<FALCON_CLIENT_SECRET>","FALCON_MCP_API_KEY":"<FALCON_MCP_API_KEY>"}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="skylos-mcp"></a>
+
+### Dead code and secrets detection
+
+[duriantaco/skylos](https://github.com/duriantaco/skylos) — `Servidor MCP` · Licença: Apache-2.0 · Funciona com: Todos os clientes
+
+Detecção de código morto, segredos e problemas de qualidade para Python, TypeScript e Go; exige SKYLOS_API_KEY.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio skylos --env SKYLOS_API_KEY='<SKYLOS_API_KEY>' -- uvx skylos
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add skylos --env SKYLOS_API_KEY='<SKYLOS_API_KEY>' -- uvx skylos
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add -e SKYLOS_API_KEY='<SKYLOS_API_KEY>' skylos uvx skylos
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "skylos": {
+      "command": "uvx",
+      "args": [
+        "skylos"
+      ],
+      "env": {
+        "SKYLOS_API_KEY": "<SKYLOS_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "skylos": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "skylos"
+      ],
+      "env": {
+        "SKYLOS_API_KEY": "<SKYLOS_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "skylos": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "skylos"
+      ],
+      "enabled": true,
+      "environment": {
+        "SKYLOS_API_KEY": "<SKYLOS_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "skylos": {
+      "command": "uvx",
+      "args": [
+        "skylos"
+      ],
+      "env": {
+        "SKYLOS_API_KEY": "<SKYLOS_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "skylos": {
+      "command": "uvx",
+      "args": [
+        "skylos"
+      ],
+      "env": {
+        "SKYLOS_API_KEY": "<SKYLOS_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "skylos": {
+      "source": "custom",
+      "command": "uvx",
+      "args": [
+        "skylos"
+      ],
+      "env": {
+        "SKYLOS_API_KEY": "<SKYLOS_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  skylos:
+    type: stdio
+    cmd: uvx
+    args: ["skylos"]
+    envs:
+      SKYLOS_API_KEY: "<SKYLOS_API_KEY>"
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "skylos": {
+      "command": "uvx",
+      "args": [
+        "skylos"
+      ],
+      "env": {
+        "SKYLOS_API_KEY": "<SKYLOS_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "skylos": {
+      "command": "uvx",
+      "args": [
+        "skylos"
+      ],
+      "env": {
+        "SKYLOS_API_KEY": "<SKYLOS_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `skylos.cordis.yml  →  dsh web --patch ./skylos.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-skylos
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: skylos
+        transport: stdio
+        command: uvx
+        args: ["skylos"]
+        env: {"SKYLOS_API_KEY":"<SKYLOS_API_KEY>"}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="parse-dmarc-mcp"></a>
+
+### DMARC report parsing
+
+[Parse-DMARC MCP Server](https://github.com/meysam81/parse-dmarc) — `Servidor MCP` · Licença: Apache-2.0 · Funciona com: Todos os clientes
+
+Parser leve de DMARC que busca relatórios de e-mail automaticamente e visualiza a conformidade em um único app.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio parse-dmarc -- docker run -i --rm ghcr.io/meysam81/parse-dmarc:v1.4.7
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add parse-dmarc -- docker run -i --rm ghcr.io/meysam81/parse-dmarc:v1.4.7
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add parse-dmarc docker run -i --rm ghcr.io/meysam81/parse-dmarc:v1.4.7
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "parse-dmarc": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/meysam81/parse-dmarc:v1.4.7"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "parse-dmarc": {
+      "type": "stdio",
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/meysam81/parse-dmarc:v1.4.7"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "parse-dmarc": {
+      "type": "local",
+      "command": [
+        "docker",
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/meysam81/parse-dmarc:v1.4.7"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "parse-dmarc": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/meysam81/parse-dmarc:v1.4.7"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "parse-dmarc": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/meysam81/parse-dmarc:v1.4.7"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "parse-dmarc": {
+      "source": "custom",
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/meysam81/parse-dmarc:v1.4.7"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  parse-dmarc:
+    type: stdio
+    cmd: docker
+    args: ["run","-i","--rm","ghcr.io/meysam81/parse-dmarc:v1.4.7"]
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "parse-dmarc": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/meysam81/parse-dmarc:v1.4.7"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "parse-dmarc": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/meysam81/parse-dmarc:v1.4.7"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `parse-dmarc.cordis.yml  →  dsh web --patch ./parse-dmarc.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-parse-dmarc
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: parse-dmarc
+        transport: stdio
+        command: docker
+        args: ["run","-i","--rm","ghcr.io/meysam81/parse-dmarc:v1.4.7"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="evmole-mcp"></a>
+
+### EVM bytecode analysis
+
+[EVMole](https://github.com/cdump/evmole/tree/main/agent/mcp) — `Servidor MCP` · Licença: MIT · Funciona com: Todos os clientes
+
+Análise local e estruturada de bytecode de runtime EVM já implantado.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio evmole -- npx -y evmole-mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add evmole -- npx -y evmole-mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add evmole npx -y evmole-mcp
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "evmole": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "evmole-mcp"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "evmole": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "evmole-mcp"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "evmole": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "evmole-mcp"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "evmole": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "evmole-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "evmole": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "evmole-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "evmole": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "evmole-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  evmole:
+    type: stdio
+    cmd: npx
+    args: ["-y","evmole-mcp"]
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "evmole": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "evmole-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "evmole": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "evmole-mcp"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `evmole.cordis.yml  →  dsh web --patch ./evmole.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-evmole
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: evmole
+        transport: stdio
+        command: npx
+        args: ["-y","evmole-mcp"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="bernstein-mcp"></a>
+
+### Governance layer for agent actions
+
+[sipyourdrink-ltd/bernstein](https://github.com/sipyourdrink-ltd/bernstein) — `Servidor MCP` · Licença: Apache-2.0 · Funciona com: Todos os clientes
+
+Camada de governança open-source para agentes de IA, com recibos de execução bit a bit, mais de 40 adaptadores e suporte a air-gap.
+
+**Alternativas:**
+
+- [Emilia Protocol](https://github.com/emiliaprotocol/emilia-protocol) — Aprovação de ações exatas para ações relevantes de agentes, com recibos assinados; exige EP_API_KEY.
+- [HOL Guard](https://github.com/hashgraph-online/hol-guard) — Evidências de segurança e workflows de aprovação local-first para as ações de um agente.
+- [ucsandman/DashClaw/tree/main/mcp-server](https://github.com/ucsandman/DashClaw/tree/main/mcp-server) — Verificações de política, aprovações, registros e capacidades de HTTP governadas para agentes não supervisionados.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio bernstein -- uvx bernstein
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add bernstein -- uvx bernstein
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add bernstein uvx bernstein
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "bernstein": {
+      "command": "uvx",
+      "args": [
+        "bernstein"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "bernstein": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "bernstein"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "bernstein": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "bernstein"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "bernstein": {
+      "command": "uvx",
+      "args": [
+        "bernstein"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "bernstein": {
+      "command": "uvx",
+      "args": [
+        "bernstein"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "bernstein": {
+      "source": "custom",
+      "command": "uvx",
+      "args": [
+        "bernstein"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  bernstein:
+    type: stdio
+    cmd: uvx
+    args: ["bernstein"]
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "bernstein": {
+      "command": "uvx",
+      "args": [
+        "bernstein"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "bernstein": {
+      "command": "uvx",
+      "args": [
+        "bernstein"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `bernstein.cordis.yml  →  dsh web --patch ./bernstein.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-bernstein
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: bernstein
+        transport: stdio
+        command: uvx
+        args: ["bernstein"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="wireshark-mcp"></a>
+
+### Network analysis with tshark
+
+[bx33661/Wireshark-MCP](https://github.com/bx33661/Wireshark-MCP) — `Servidor MCP` · Licença: MIT · Funciona com: Todos os clientes
+
+Análise de rede profissional com tshark para auditorias de segurança, investigações e detecção de ameaças.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio wireshark-mcp -- uvx wireshark-mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add wireshark-mcp -- uvx wireshark-mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add wireshark-mcp uvx wireshark-mcp
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "wireshark-mcp": {
+      "command": "uvx",
+      "args": [
+        "wireshark-mcp"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "wireshark-mcp": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "wireshark-mcp"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "wireshark-mcp": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "wireshark-mcp"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "wireshark-mcp": {
+      "command": "uvx",
+      "args": [
+        "wireshark-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "wireshark-mcp": {
+      "command": "uvx",
+      "args": [
+        "wireshark-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "wireshark-mcp": {
+      "source": "custom",
+      "command": "uvx",
+      "args": [
+        "wireshark-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  wireshark-mcp:
+    type: stdio
+    cmd: uvx
+    args: ["wireshark-mcp"]
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "wireshark-mcp": {
+      "command": "uvx",
+      "args": [
+        "wireshark-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "wireshark-mcp": {
+      "command": "uvx",
+      "args": [
+        "wireshark-mcp"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `wireshark-mcp.cordis.yml  →  dsh web --patch ./wireshark-mcp.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-wireshark-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: wireshark-mcp
+        transport: stdio
+        command: uvx
+        args: ["wireshark-mcp"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="openosint-mcp"></a>
+
+### OSINT recon agent
+
+[OpenOSINT](https://github.com/OpenOSINT/OpenOSINT) — `Servidor MCP` · Licença: MIT · Funciona com: Todos os clientes
+
+Agente de OSINT com IA e 16 ferramentas: e-mail, vazamentos, IP, WHOIS, DNS, Shodan e GitHub; exige várias chaves de provedores de OSINT.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio openosint --env ANTHROPIC_API_KEY='<ANTHROPIC_API_KEY>' --env HIBP_API_KEY='<HIBP_API_KEY>' --env IPINFO_TOKEN='<IPINFO_TOKEN>' --env IP2LOCATION_API_KEY='<IP2LOCATION_API_KEY>' --env ABUSEIPDB_API_KEY='<ABUSEIPDB_API_KEY>' -- uvx openosint
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add openosint --env ANTHROPIC_API_KEY='<ANTHROPIC_API_KEY>' --env HIBP_API_KEY='<HIBP_API_KEY>' --env IPINFO_TOKEN='<IPINFO_TOKEN>' --env IP2LOCATION_API_KEY='<IP2LOCATION_API_KEY>' --env ABUSEIPDB_API_KEY='<ABUSEIPDB_API_KEY>' -- uvx openosint
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add -e ANTHROPIC_API_KEY='<ANTHROPIC_API_KEY>' -e HIBP_API_KEY='<HIBP_API_KEY>' -e IPINFO_TOKEN='<IPINFO_TOKEN>' -e IP2LOCATION_API_KEY='<IP2LOCATION_API_KEY>' -e ABUSEIPDB_API_KEY='<ABUSEIPDB_API_KEY>' openosint uvx openosint
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "openosint": {
+      "command": "uvx",
+      "args": [
+        "openosint"
+      ],
+      "env": {
+        "ANTHROPIC_API_KEY": "<ANTHROPIC_API_KEY>",
+        "HIBP_API_KEY": "<HIBP_API_KEY>",
+        "IPINFO_TOKEN": "<IPINFO_TOKEN>",
+        "IP2LOCATION_API_KEY": "<IP2LOCATION_API_KEY>",
+        "ABUSEIPDB_API_KEY": "<ABUSEIPDB_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "openosint": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "openosint"
+      ],
+      "env": {
+        "ANTHROPIC_API_KEY": "<ANTHROPIC_API_KEY>",
+        "HIBP_API_KEY": "<HIBP_API_KEY>",
+        "IPINFO_TOKEN": "<IPINFO_TOKEN>",
+        "IP2LOCATION_API_KEY": "<IP2LOCATION_API_KEY>",
+        "ABUSEIPDB_API_KEY": "<ABUSEIPDB_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "openosint": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "openosint"
+      ],
+      "enabled": true,
+      "environment": {
+        "ANTHROPIC_API_KEY": "<ANTHROPIC_API_KEY>",
+        "HIBP_API_KEY": "<HIBP_API_KEY>",
+        "IPINFO_TOKEN": "<IPINFO_TOKEN>",
+        "IP2LOCATION_API_KEY": "<IP2LOCATION_API_KEY>",
+        "ABUSEIPDB_API_KEY": "<ABUSEIPDB_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "openosint": {
+      "command": "uvx",
+      "args": [
+        "openosint"
+      ],
+      "env": {
+        "ANTHROPIC_API_KEY": "<ANTHROPIC_API_KEY>",
+        "HIBP_API_KEY": "<HIBP_API_KEY>",
+        "IPINFO_TOKEN": "<IPINFO_TOKEN>",
+        "IP2LOCATION_API_KEY": "<IP2LOCATION_API_KEY>",
+        "ABUSEIPDB_API_KEY": "<ABUSEIPDB_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "openosint": {
+      "command": "uvx",
+      "args": [
+        "openosint"
+      ],
+      "env": {
+        "ANTHROPIC_API_KEY": "<ANTHROPIC_API_KEY>",
+        "HIBP_API_KEY": "<HIBP_API_KEY>",
+        "IPINFO_TOKEN": "<IPINFO_TOKEN>",
+        "IP2LOCATION_API_KEY": "<IP2LOCATION_API_KEY>",
+        "ABUSEIPDB_API_KEY": "<ABUSEIPDB_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "openosint": {
+      "source": "custom",
+      "command": "uvx",
+      "args": [
+        "openosint"
+      ],
+      "env": {
+        "ANTHROPIC_API_KEY": "<ANTHROPIC_API_KEY>",
+        "HIBP_API_KEY": "<HIBP_API_KEY>",
+        "IPINFO_TOKEN": "<IPINFO_TOKEN>",
+        "IP2LOCATION_API_KEY": "<IP2LOCATION_API_KEY>",
+        "ABUSEIPDB_API_KEY": "<ABUSEIPDB_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  openosint:
+    type: stdio
+    cmd: uvx
+    args: ["openosint"]
+    envs:
+      ANTHROPIC_API_KEY: "<ANTHROPIC_API_KEY>"
+      HIBP_API_KEY: "<HIBP_API_KEY>"
+      IPINFO_TOKEN: "<IPINFO_TOKEN>"
+      IP2LOCATION_API_KEY: "<IP2LOCATION_API_KEY>"
+      ABUSEIPDB_API_KEY: "<ABUSEIPDB_API_KEY>"
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "openosint": {
+      "command": "uvx",
+      "args": [
+        "openosint"
+      ],
+      "env": {
+        "ANTHROPIC_API_KEY": "<ANTHROPIC_API_KEY>",
+        "HIBP_API_KEY": "<HIBP_API_KEY>",
+        "IPINFO_TOKEN": "<IPINFO_TOKEN>",
+        "IP2LOCATION_API_KEY": "<IP2LOCATION_API_KEY>",
+        "ABUSEIPDB_API_KEY": "<ABUSEIPDB_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "openosint": {
+      "command": "uvx",
+      "args": [
+        "openosint"
+      ],
+      "env": {
+        "ANTHROPIC_API_KEY": "<ANTHROPIC_API_KEY>",
+        "HIBP_API_KEY": "<HIBP_API_KEY>",
+        "IPINFO_TOKEN": "<IPINFO_TOKEN>",
+        "IP2LOCATION_API_KEY": "<IP2LOCATION_API_KEY>",
+        "ABUSEIPDB_API_KEY": "<ABUSEIPDB_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `openosint.cordis.yml  →  dsh web --patch ./openosint.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-openosint
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: openosint
+        transport: stdio
+        command: uvx
+        args: ["openosint"]
+        env: {"ANTHROPIC_API_KEY":"<ANTHROPIC_API_KEY>","HIBP_API_KEY":"<HIBP_API_KEY>","IPINFO_TOKEN":"<IPINFO_TOKEN>","IP2LOCATION_API_KEY":"<IP2LOCATION_API_KEY>","ABUSEIPDB_API_KEY":"<ABUSEIPDB_API_KEY>"}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="vet-mcp"></a>
+
+### Protect agents from malicious packages
+
+[SafeDep Vet MCP](https://github.com/safedep/vet) — `Servidor MCP` · Licença: Apache-2.0 · Funciona com: Todos os clientes
+
+Protege agentes de IA e IDEs contra pacotes open-source maliciosos.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio vet-mcp -- docker run -i --rm ghcr.io/safedep/vet:v1.19.1
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add vet-mcp -- docker run -i --rm ghcr.io/safedep/vet:v1.19.1
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add vet-mcp docker run -i --rm ghcr.io/safedep/vet:v1.19.1
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "vet-mcp": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/safedep/vet:v1.19.1"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "vet-mcp": {
+      "type": "stdio",
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/safedep/vet:v1.19.1"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "vet-mcp": {
+      "type": "local",
+      "command": [
+        "docker",
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/safedep/vet:v1.19.1"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "vet-mcp": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/safedep/vet:v1.19.1"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "vet-mcp": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/safedep/vet:v1.19.1"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "vet-mcp": {
+      "source": "custom",
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/safedep/vet:v1.19.1"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  vet-mcp:
+    type: stdio
+    cmd: docker
+    args: ["run","-i","--rm","ghcr.io/safedep/vet:v1.19.1"]
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "vet-mcp": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/safedep/vet:v1.19.1"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "vet-mcp": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/safedep/vet:v1.19.1"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `vet-mcp.cordis.yml  →  dsh web --patch ./vet-mcp.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-vet-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: vet-mcp
+        transport: stdio
+        command: docker
+        args: ["run","-i","--rm","ghcr.io/safedep/vet:v1.19.1"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="rea-mcp"></a>
+
+### Reverse engineer from the CLI
+
+[REA](https://github.com/morluto/rea) — `Servidor MCP` · Licença: MIT · Funciona com: Todos os clientes
+
+Faz engenharia reversa de alvos diversos a partir do terminal ou de um agente, com uma única CLI e servidor.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio rea -- npx -y rea-agents
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add rea -- npx -y rea-agents
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add rea npx -y rea-agents
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "rea": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "rea-agents"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "rea": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "rea-agents"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "rea": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "rea-agents"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "rea": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "rea-agents"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "rea": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "rea-agents"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "rea": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "rea-agents"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  rea:
+    type: stdio
+    cmd: npx
+    args: ["-y","rea-agents"]
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "rea": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "rea-agents"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "rea": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "rea-agents"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `rea.cordis.yml  →  dsh web --patch ./rea.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-rea
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: rea
+        transport: stdio
+        command: npx
+        args: ["-y","rea-agents"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="reversecore-mcp"></a>
+
+### Reverse engineering and forensics
+
+[Reversecore MCP](https://github.com/sjkim1127/Reversecore_MCP) — `Servidor MCP` · Licença: MIT · Funciona com: Todos os clientes
+
+Servidor voltado a segurança para engenharia reversa, análise de malware, forense e análise estática (SAST).
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio reversecore-mcp -- uvx reversecore-mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add reversecore-mcp -- uvx reversecore-mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add reversecore-mcp uvx reversecore-mcp
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "reversecore-mcp": {
+      "command": "uvx",
+      "args": [
+        "reversecore-mcp"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "reversecore-mcp": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "reversecore-mcp"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "reversecore-mcp": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "reversecore-mcp"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "reversecore-mcp": {
+      "command": "uvx",
+      "args": [
+        "reversecore-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "reversecore-mcp": {
+      "command": "uvx",
+      "args": [
+        "reversecore-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "reversecore-mcp": {
+      "source": "custom",
+      "command": "uvx",
+      "args": [
+        "reversecore-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  reversecore-mcp:
+    type: stdio
+    cmd: uvx
+    args: ["reversecore-mcp"]
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "reversecore-mcp": {
+      "command": "uvx",
+      "args": [
+        "reversecore-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "reversecore-mcp": {
+      "command": "uvx",
+      "args": [
+        "reversecore-mcp"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `reversecore-mcp.cordis.yml  →  dsh web --patch ./reversecore-mcp.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-reversecore-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: reversecore-mcp
+        transport: stdio
+        command: uvx
+        args: ["reversecore-mcp"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="sonarqube-mcp-server"></a>
+
+### SonarQube code quality scans
+
+[SonarQube MCP Server](https://github.com/SonarSource/sonarqube-mcp-server) — `Servidor MCP` · Licença: ver repo · Funciona com: Todos os clientes
+
+Servidor oficial da SonarSource para analisar qualidade de código e segurança com SonarQube Server ou Cloud; exige SONARQUBE_TOKEN.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio sonarqube-mcp-server --env SONARQUBE_TOKEN='<SONARQUBE_TOKEN>' --env SONARQUBE_ORG='<SONARQUBE_ORG>' --env SONARQUBE_URL='<SONARQUBE_URL>' -- docker run -i --rm -e SONARQUBE_TOKEN -e SONARQUBE_ORG -e SONARQUBE_URL docker.io/sonarsource/sonarqube-mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add sonarqube-mcp-server --env SONARQUBE_TOKEN='<SONARQUBE_TOKEN>' --env SONARQUBE_ORG='<SONARQUBE_ORG>' --env SONARQUBE_URL='<SONARQUBE_URL>' -- docker run -i --rm -e SONARQUBE_TOKEN -e SONARQUBE_ORG -e SONARQUBE_URL docker.io/sonarsource/sonarqube-mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add -e SONARQUBE_TOKEN='<SONARQUBE_TOKEN>' -e SONARQUBE_ORG='<SONARQUBE_ORG>' -e SONARQUBE_URL='<SONARQUBE_URL>' sonarqube-mcp-server docker run -i --rm -e SONARQUBE_TOKEN -e SONARQUBE_ORG -e SONARQUBE_URL docker.io/sonarsource/sonarqube-mcp
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "sonarqube-mcp-server": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "SONARQUBE_TOKEN",
+        "-e",
+        "SONARQUBE_ORG",
+        "-e",
+        "SONARQUBE_URL",
+        "docker.io/sonarsource/sonarqube-mcp"
+      ],
+      "env": {
+        "SONARQUBE_TOKEN": "<SONARQUBE_TOKEN>",
+        "SONARQUBE_ORG": "<SONARQUBE_ORG>",
+        "SONARQUBE_URL": "<SONARQUBE_URL>"
+      }
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "sonarqube-mcp-server": {
+      "type": "stdio",
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "SONARQUBE_TOKEN",
+        "-e",
+        "SONARQUBE_ORG",
+        "-e",
+        "SONARQUBE_URL",
+        "docker.io/sonarsource/sonarqube-mcp"
+      ],
+      "env": {
+        "SONARQUBE_TOKEN": "<SONARQUBE_TOKEN>",
+        "SONARQUBE_ORG": "<SONARQUBE_ORG>",
+        "SONARQUBE_URL": "<SONARQUBE_URL>"
+      }
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "sonarqube-mcp-server": {
+      "type": "local",
+      "command": [
+        "docker",
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "SONARQUBE_TOKEN",
+        "-e",
+        "SONARQUBE_ORG",
+        "-e",
+        "SONARQUBE_URL",
+        "docker.io/sonarsource/sonarqube-mcp"
+      ],
+      "enabled": true,
+      "environment": {
+        "SONARQUBE_TOKEN": "<SONARQUBE_TOKEN>",
+        "SONARQUBE_ORG": "<SONARQUBE_ORG>",
+        "SONARQUBE_URL": "<SONARQUBE_URL>"
+      }
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "sonarqube-mcp-server": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "SONARQUBE_TOKEN",
+        "-e",
+        "SONARQUBE_ORG",
+        "-e",
+        "SONARQUBE_URL",
+        "docker.io/sonarsource/sonarqube-mcp"
+      ],
+      "env": {
+        "SONARQUBE_TOKEN": "<SONARQUBE_TOKEN>",
+        "SONARQUBE_ORG": "<SONARQUBE_ORG>",
+        "SONARQUBE_URL": "<SONARQUBE_URL>"
+      }
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "sonarqube-mcp-server": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "SONARQUBE_TOKEN",
+        "-e",
+        "SONARQUBE_ORG",
+        "-e",
+        "SONARQUBE_URL",
+        "docker.io/sonarsource/sonarqube-mcp"
+      ],
+      "env": {
+        "SONARQUBE_TOKEN": "<SONARQUBE_TOKEN>",
+        "SONARQUBE_ORG": "<SONARQUBE_ORG>",
+        "SONARQUBE_URL": "<SONARQUBE_URL>"
+      }
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "sonarqube-mcp-server": {
+      "source": "custom",
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "SONARQUBE_TOKEN",
+        "-e",
+        "SONARQUBE_ORG",
+        "-e",
+        "SONARQUBE_URL",
+        "docker.io/sonarsource/sonarqube-mcp"
+      ],
+      "env": {
+        "SONARQUBE_TOKEN": "<SONARQUBE_TOKEN>",
+        "SONARQUBE_ORG": "<SONARQUBE_ORG>",
+        "SONARQUBE_URL": "<SONARQUBE_URL>"
+      }
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  sonarqube-mcp-server:
+    type: stdio
+    cmd: docker
+    args: ["run","-i","--rm","-e","SONARQUBE_TOKEN","-e","SONARQUBE_ORG","-e","SONARQUBE_URL","docker.io/sonarsource/sonarqube-mcp"]
+    envs:
+      SONARQUBE_TOKEN: "<SONARQUBE_TOKEN>"
+      SONARQUBE_ORG: "<SONARQUBE_ORG>"
+      SONARQUBE_URL: "<SONARQUBE_URL>"
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "sonarqube-mcp-server": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "SONARQUBE_TOKEN",
+        "-e",
+        "SONARQUBE_ORG",
+        "-e",
+        "SONARQUBE_URL",
+        "docker.io/sonarsource/sonarqube-mcp"
+      ],
+      "env": {
+        "SONARQUBE_TOKEN": "<SONARQUBE_TOKEN>",
+        "SONARQUBE_ORG": "<SONARQUBE_ORG>",
+        "SONARQUBE_URL": "<SONARQUBE_URL>"
+      }
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "sonarqube-mcp-server": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "SONARQUBE_TOKEN",
+        "-e",
+        "SONARQUBE_ORG",
+        "-e",
+        "SONARQUBE_URL",
+        "docker.io/sonarsource/sonarqube-mcp"
+      ],
+      "env": {
+        "SONARQUBE_TOKEN": "<SONARQUBE_TOKEN>",
+        "SONARQUBE_ORG": "<SONARQUBE_ORG>",
+        "SONARQUBE_URL": "<SONARQUBE_URL>"
+      }
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `sonarqube-mcp-server.cordis.yml  →  dsh web --patch ./sonarqube-mcp-server.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-sonarqube-mcp-server
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: sonarqube-mcp-server
+        transport: stdio
+        command: docker
+        args: ["run","-i","--rm","-e","SONARQUBE_TOKEN","-e","SONARQUBE_ORG","-e","SONARQUBE_URL","docker.io/sonarsource/sonarqube-mcp"]
+        env: {"SONARQUBE_TOKEN":"<SONARQUBE_TOKEN>","SONARQUBE_ORG":"<SONARQUBE_ORG>","SONARQUBE_URL":"<SONARQUBE_URL>"}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="crowdsentinels-ai-mcp"></a>
+
+### Threat hunting on Elasticsearch
+
+[thomasxm/CrowdSentinels-AI-MCP](https://github.com/thomasxm/CrowdSentinels-AI-MCP) — `Servidor MCP` · Licença: GPL-3.0 · Funciona com: Todos os clientes
+
+Caça a ameaças e resposta a incidentes com IA para Elasticsearch/OpenSearch, com forense de endpoint e rede; exige credenciais do Elasticsearch.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio crowdsentinel-mcp-server --env ELASTICSEARCH_API_KEY='<ELASTICSEARCH_API_KEY>' --env ELASTICSEARCH_PASSWORD='<ELASTICSEARCH_PASSWORD>' --env ELASTICSEARCH_BEARER_TOKEN='<ELASTICSEARCH_BEARER_TOKEN>' -- uvx crowdsentinel-mcp-server
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add crowdsentinel-mcp-server --env ELASTICSEARCH_API_KEY='<ELASTICSEARCH_API_KEY>' --env ELASTICSEARCH_PASSWORD='<ELASTICSEARCH_PASSWORD>' --env ELASTICSEARCH_BEARER_TOKEN='<ELASTICSEARCH_BEARER_TOKEN>' -- uvx crowdsentinel-mcp-server
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add -e ELASTICSEARCH_API_KEY='<ELASTICSEARCH_API_KEY>' -e ELASTICSEARCH_PASSWORD='<ELASTICSEARCH_PASSWORD>' -e ELASTICSEARCH_BEARER_TOKEN='<ELASTICSEARCH_BEARER_TOKEN>' crowdsentinel-mcp-server uvx crowdsentinel-mcp-server
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "crowdsentinel-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "crowdsentinel-mcp-server"
+      ],
+      "env": {
+        "ELASTICSEARCH_API_KEY": "<ELASTICSEARCH_API_KEY>",
+        "ELASTICSEARCH_PASSWORD": "<ELASTICSEARCH_PASSWORD>",
+        "ELASTICSEARCH_BEARER_TOKEN": "<ELASTICSEARCH_BEARER_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "crowdsentinel-mcp-server": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "crowdsentinel-mcp-server"
+      ],
+      "env": {
+        "ELASTICSEARCH_API_KEY": "<ELASTICSEARCH_API_KEY>",
+        "ELASTICSEARCH_PASSWORD": "<ELASTICSEARCH_PASSWORD>",
+        "ELASTICSEARCH_BEARER_TOKEN": "<ELASTICSEARCH_BEARER_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "crowdsentinel-mcp-server": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "crowdsentinel-mcp-server"
+      ],
+      "enabled": true,
+      "environment": {
+        "ELASTICSEARCH_API_KEY": "<ELASTICSEARCH_API_KEY>",
+        "ELASTICSEARCH_PASSWORD": "<ELASTICSEARCH_PASSWORD>",
+        "ELASTICSEARCH_BEARER_TOKEN": "<ELASTICSEARCH_BEARER_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "crowdsentinel-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "crowdsentinel-mcp-server"
+      ],
+      "env": {
+        "ELASTICSEARCH_API_KEY": "<ELASTICSEARCH_API_KEY>",
+        "ELASTICSEARCH_PASSWORD": "<ELASTICSEARCH_PASSWORD>",
+        "ELASTICSEARCH_BEARER_TOKEN": "<ELASTICSEARCH_BEARER_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "crowdsentinel-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "crowdsentinel-mcp-server"
+      ],
+      "env": {
+        "ELASTICSEARCH_API_KEY": "<ELASTICSEARCH_API_KEY>",
+        "ELASTICSEARCH_PASSWORD": "<ELASTICSEARCH_PASSWORD>",
+        "ELASTICSEARCH_BEARER_TOKEN": "<ELASTICSEARCH_BEARER_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "crowdsentinel-mcp-server": {
+      "source": "custom",
+      "command": "uvx",
+      "args": [
+        "crowdsentinel-mcp-server"
+      ],
+      "env": {
+        "ELASTICSEARCH_API_KEY": "<ELASTICSEARCH_API_KEY>",
+        "ELASTICSEARCH_PASSWORD": "<ELASTICSEARCH_PASSWORD>",
+        "ELASTICSEARCH_BEARER_TOKEN": "<ELASTICSEARCH_BEARER_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  crowdsentinel-mcp-server:
+    type: stdio
+    cmd: uvx
+    args: ["crowdsentinel-mcp-server"]
+    envs:
+      ELASTICSEARCH_API_KEY: "<ELASTICSEARCH_API_KEY>"
+      ELASTICSEARCH_PASSWORD: "<ELASTICSEARCH_PASSWORD>"
+      ELASTICSEARCH_BEARER_TOKEN: "<ELASTICSEARCH_BEARER_TOKEN>"
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "crowdsentinel-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "crowdsentinel-mcp-server"
+      ],
+      "env": {
+        "ELASTICSEARCH_API_KEY": "<ELASTICSEARCH_API_KEY>",
+        "ELASTICSEARCH_PASSWORD": "<ELASTICSEARCH_PASSWORD>",
+        "ELASTICSEARCH_BEARER_TOKEN": "<ELASTICSEARCH_BEARER_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "crowdsentinel-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "crowdsentinel-mcp-server"
+      ],
+      "env": {
+        "ELASTICSEARCH_API_KEY": "<ELASTICSEARCH_API_KEY>",
+        "ELASTICSEARCH_PASSWORD": "<ELASTICSEARCH_PASSWORD>",
+        "ELASTICSEARCH_BEARER_TOKEN": "<ELASTICSEARCH_BEARER_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `crowdsentinel-mcp-server.cordis.yml  →  dsh web --patch ./crowdsentinel-mcp-server.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-crowdsentinel-mcp-server
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: crowdsentinel-mcp-server
+        transport: stdio
+        command: uvx
+        args: ["crowdsentinel-mcp-server"]
+        env: {"ELASTICSEARCH_API_KEY":"<ELASTICSEARCH_API_KEY>","ELASTICSEARCH_PASSWORD":"<ELASTICSEARCH_PASSWORD>","ELASTICSEARCH_BEARER_TOKEN":"<ELASTICSEARCH_BEARER_TOKEN>"}
+        cwd: !!js process.cwd()
 ```
 
 </details>

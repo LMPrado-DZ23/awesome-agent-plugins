@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: google-drive-mcp
+name: Google Drive MCP
+title: Google Drive, Docs, and Sheets
+url: https://github.com/piotr-agier/google-drive-mcp
+type: mcp-server
+category: integrations
+license: MIT
+tags:
+  - google-drive
+description:
+  en: Secure access to Google Drive, Docs, Sheets, Slides, and Calendar; needs Google Drive OAuth credentials.
+  pt: Acesso seguro a Google Drive, Docs, Sheets, Slides e Calendar; exige credenciais OAuth do Google Drive.
+mcp:
+  name: google-drive-mcp
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@piotr-agier/google-drive-mcp"
+    env:
+      GOOGLE_DRIVE_OAUTH_CREDENTIALS: <GOOGLE_DRIVE_OAUTH_CREDENTIALS>
+origin:
+  list: mcp-registry
+  ref: io.github.piotr-agier/google-drive-mcp

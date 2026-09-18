@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: blitz-mac-mcp
+name: blitzdotdev/blitz-mac
+title: iOS/macOS dev control from a native app
+url: https://github.com/blitzdotdev/blitz-mac
+type: mcp-server
+category: dev
+license: Apache-2.0
+tags:
+  - macos
+  - ios
+description:
+  en: Gives AI agents control over iOS/macOS development through a native macOS app with 30+ tools.
+  pt: >-
+    Dá a agentes de IA controle sobre o desenvolvimento iOS/macOS por meio de um app nativo de macOS com mais de 30
+    ferramentas.
+mcp:
+  name: blitz
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@blitzdev/blitz-mcp"
+origin:
+  list: mcp-registry
+  ref: io.github.blitzdotdev/blitz

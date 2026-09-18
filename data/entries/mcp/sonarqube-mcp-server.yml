@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: sonarqube-mcp-server
+name: SonarQube MCP Server
+title: SonarQube code quality scans
+url: https://github.com/SonarSource/sonarqube-mcp-server
+type: mcp-server
+category: security
+license: null
+tags:
+  - sonarqube
+  - code-quality
+description:
+  en: >-
+    Official SonarSource server for analyzing code quality and security with SonarQube Server or Cloud; needs a
+    SONARQUBE_TOKEN.
+  pt: >-
+    Servidor oficial da SonarSource para analisar qualidade de código e segurança com SonarQube Server ou Cloud; exige
+    SONARQUBE_TOKEN.
+mcp:
+  name: sonarqube-mcp-server
+  stdio:
+    command: docker
+    args:
+      - run
+      - "-i"
+      - "--rm"
+      - "-e"
+      - SONARQUBE_TOKEN
+      - "-e"
+      - SONARQUBE_ORG
+      - "-e"
+      - SONARQUBE_URL
+      - docker.io/sonarsource/sonarqube-mcp
+    env:
+      SONARQUBE_TOKEN: <SONARQUBE_TOKEN>
+      SONARQUBE_ORG: <SONARQUBE_ORG>
+      SONARQUBE_URL: <SONARQUBE_URL>
+origin:
+  list: mcp-registry
+  ref: io.github.SonarSource/sonarqube-mcp-server

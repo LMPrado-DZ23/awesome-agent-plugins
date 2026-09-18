@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: ssh-mcp
+name: SSH — policy-gated remote access
+title: Policy-gated SSH access
+url: https://github.com/tufantunc/ssh-mcp
+type: mcp-server
+category: remote
+license: MIT
+tags:
+  - ssh
+  - remote-access
+description:
+  en: >-
+    Policy-gated, audited SSH for Linux and Windows hosts, with roles, approvals, and an audit log; needs SSH password
+    or passphrase.
+  pt: >-
+    SSH auditado e controlado por política para hosts Linux e Windows, com papéis, aprovações e log de auditoria; exige
+    senha ou passphrase de SSH.
+mcp:
+  name: ssh-mcp
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - ssh-mcp
+    env:
+      SSH_MCP_PASSWORD: <SSH_MCP_PASSWORD>
+      SSH_MCP_PASSPHRASE: <SSH_MCP_PASSPHRASE>
+      SSH_MCP_SUDO_PASSWORD: <SSH_MCP_SUDO_PASSWORD>
+alternatives:
+  - name: bvisible/mcp-ssh-manager
+    url: https://github.com/bvisible/mcp-ssh-manager
+    adds:
+      en: SSH server management for agents, with per-server read-only and allowlist security modes.
+      pt: Gestão de servidores SSH para agentes, com modos de segurança somente leitura e allowlist por servidor.
+  - name: emisar
+    url: https://github.com/andrewdryga/emisar
+    adds:
+      en: Lets AI operate servers without SSH, choosing and approving risky changes with a full audit trail.
+      pt: >-
+        Permite que a IA opere servidores sem SSH, escolhendo e aprovando mudanças arriscadas com trilha de auditoria
+        completa.
+  - name: rhel-lightspeed/linux-mcp-server
+    url: https://github.com/rhel-lightspeed/linux-mcp-server
+    adds:
+      en: Read-only Linux system administration and diagnostics.
+      pt: Administração e diagnóstico de sistemas Linux, somente leitura.
+origin:
+  list: mcp-registry
+  ref: io.github.tufantunc/ssh-mcp

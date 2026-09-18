@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: nova3d-mcp
+name: Nova3D
+title: Part-aware 3D generation
+url: https://github.com/RareSense/Nova3D/tree/main/mcp
+type: mcp-server
+category: multimodal
+license: MIT
+tags:
+  - 3d-generation
+description:
+  en: >-
+    Structured, part-aware 3D generation for agents: named-part GLB, preview URL, and a Blender script; needs a
+    NOVA3D_TOKEN.
+  pt: >-
+    Geração de 3D estruturada e ciente de partes para agentes: GLB com partes nomeadas, URL de prévia e script de
+    Blender; exige NOVA3D_TOKEN.
+mcp:
+  name: nova3d
+  stdio:
+    command: uvx
+    args:
+      - nova3d-mcp
+    env:
+      NOVA3D_TOKEN: <NOVA3D_TOKEN>
+origin:
+  list: mcp-registry
+  ref: io.github.RareSense/Nova3D

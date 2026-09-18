@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: mcp-arr
+name: aplaceforallmystuff/mcp-arr
+title: Self-hosted media suite control
+url: https://github.com/aplaceforallmystuff/mcp-arr
+type: mcp-server
+category: integrations
+license: MIT
+tags:
+  - media
+  - self-hosted
+description:
+  en: "Server for the *arr media suite: Sonarr, Radarr, Lidarr, Readarr, and Prowlarr."
+  pt: "Servidor para o conjunto *arr de mídia: Sonarr, Radarr, Lidarr, Readarr e Prowlarr."
+mcp:
+  name: mcp-arr
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - mcp-arr-server
+    env:
+      SONARR_API_KEY: <SONARR_API_KEY>
+      RADARR_API_KEY: <RADARR_API_KEY>
+      LIDARR_API_KEY: <LIDARR_API_KEY>
+      READARR_API_KEY: <READARR_API_KEY>
+      PROWLARR_API_KEY: <PROWLARR_API_KEY>
+origin:
+  list: mcp-registry
+  ref: io.github.aplaceforallmystuff/mcp-arr

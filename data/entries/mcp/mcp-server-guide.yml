@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: mcp-server-guide
+name: Figma MCP Server
+title: Figma design context for agents
+url: https://github.com/figma/mcp-server-guide
+type: mcp-server
+category: tools
+license: null
+tags:
+  - figma
+  - design
+description:
+  en: Official Figma server bringing Figma design context directly into an AI coding workflow.
+  pt: >-
+    Servidor oficial do Figma que traz o contexto de design do Figma diretamente para o fluxo de trabalho de um agente
+    de IA.
+mcp:
+  name: mcp
+  http:
+    url: https://mcp.figma.com/mcp
+alternatives:
+  - name: GLips/Figma-Context-MCP
+    url: https://github.com/GLips/Figma-Context-MCP
+    adds:
+      en: >-
+        Gives a coding agent access to Figma data to implement designs in any framework in one shot; needs a
+        FIGMA_API_KEY.
+      pt: >-
+        Dá a um agente de código acesso aos dados do Figma para implementar designs em qualquer framework de uma vez;
+        exige FIGMA_API_KEY.
+  - name: TranHoaiHung/figma-ui-mcp
+    url: https://github.com/TranHoaiHung/figma-ui-mcp
+    adds:
+      en: "Bidirectional Figma server: an agent draws UI on the Figma canvas and reads designs back."
+      pt: "Servidor Figma bidirecional: um agente desenha UI na tela do Figma e também lê os designs de volta."
+origin:
+  list: mcp-registry
+  ref: com.figma.mcp/mcp

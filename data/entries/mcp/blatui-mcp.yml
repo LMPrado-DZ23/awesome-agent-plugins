@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: blatui-mcp
+name: anousss007/blatui
+title: shadcn/ui components for Laravel Blade
+url: https://github.com/anousss007/blatui
+type: mcp-server
+category: tools
+license: null
+tags:
+  - laravel
+  - ui
+description:
+  en: "shadcn/ui for Laravel Blade: discover, read, and install BlatUI components, blocks, and charts."
+  pt: "shadcn/ui para Laravel Blade: descubra, leia e instale componentes, blocos e gráficos do BlatUI."
+mcp:
+  name: blatui
+  http:
+    url: https://blatui.remix-it.com/mcp
+origin:
+  list: mcp-registry
+  ref: io.github.anousss007/blatui

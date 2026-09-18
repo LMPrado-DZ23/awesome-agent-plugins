@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: falcon-mcp
+name: CrowdStrike Falcon MCP Server
+title: CrowdStrike Falcon security analysis
+url: https://github.com/CrowdStrike/falcon-mcp
+type: mcp-server
+category: security
+license: MIT
+tags:
+  - crowdstrike
+  - security
+description:
+  en: >-
+    Official CrowdStrike server connecting agents to Falcon for security analysis and automation; needs Falcon client
+    credentials.
+  pt: >-
+    Servidor oficial da CrowdStrike conectando agentes ao Falcon para análise de segurança e automação; exige
+    credenciais de cliente do Falcon.
+mcp:
+  name: falcon-mcp
+  stdio:
+    command: uvx
+    args:
+      - falcon-mcp
+    env:
+      FALCON_CLIENT_ID: <FALCON_CLIENT_ID>
+      FALCON_CLIENT_SECRET: <FALCON_CLIENT_SECRET>
+      FALCON_MCP_API_KEY: <FALCON_MCP_API_KEY>
+origin:
+  list: mcp-registry
+  ref: io.github.CrowdStrike/falcon-mcp

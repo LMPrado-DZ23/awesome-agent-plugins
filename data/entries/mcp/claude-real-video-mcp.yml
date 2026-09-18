@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: claude-real-video-mcp
+name: HUANGCHIHHUNGLeo/claude-real-video
+title: Local video understanding
+url: https://github.com/HUANGCHIHHUNGLeo/claude-real-video
+type: mcp-server
+category: multimodal
+license: MIT
+tags:
+  - video
+  - search
+description:
+  en: Lets an LLM watch a video locally and search everything it has ever watched.
+  pt: Permite que um LLM assista a um vídeo localmente e busque em tudo que já assistiu.
+mcp:
+  name: claude-real-video
+  stdio:
+    command: uvx
+    args:
+      - claude-real-video
+alternatives:
+  - name: burningion/video-editing-mcp
+    url: https://github.com/burningion/video-editing-mcp
+    adds:
+      en: Analyzes, searches, generates, and edits videos via Video Jungle; needs a VJ_API_KEY.
+      pt: Analisa, busca, gera e edita vídeos via Video Jungle; exige VJ_API_KEY.
+  - name: sonpiaz/watch-cli/tree/main/mcp-server
+    url: https://github.com/sonpiaz/watch-cli/tree/main/mcp-server
+    adds:
+      en: Hands a social video, bundled with frames and transcript, to an agent; needs Kyma and Groq API keys.
+      pt: >-
+        Entrega um vídeo social, com frames e transcrição já preparados, a um agente; exige chaves de API do Kyma e do
+        Groq.
+origin:
+  list: mcp-registry
+  ref: io.github.HUANGCHIHHUNGLeo/claude-real-video

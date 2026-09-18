@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: mcp-fiscal-brasil
+name: MCP Fiscal Brasil
+title: Brazilian tax data tools
+url: https://github.com/DeHor-Labs/mcp-fiscal-brasil
+type: mcp-server
+category: integrations
+license: MIT
+tags:
+  - brazil
+  - tax
+description:
+  en: "Brazilian tax tools: CNPJ, NF-e, IBS/CBS, ICMS, Simples Nacional, and NCM/CFOP lookups, with no API key required."
+  pt: >-
+    Ferramentas fiscais brasileiras: consultas de CNPJ, NF-e, IBS/CBS, ICMS, Simples Nacional e NCM/CFOP, sem exigir
+    chave de API.
+mcp:
+  name: mcp-fiscal-brasil
+  stdio:
+    command: uvx
+    args:
+      - mcp-fiscal-brasil
+origin:
+  list: mcp-registry
+  ref: io.github.DeHor-Labs/mcp-fiscal-brasil

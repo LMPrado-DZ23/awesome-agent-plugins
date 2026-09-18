@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: photoshop-mcp
+name: alisaitteke/photoshop-mcp
+title: Adobe Photoshop automation
+url: https://github.com/alisaitteke/photoshop-mcp
+type: mcp-server
+category: multimodal
+license: MIT
+tags:
+  - photoshop
+  - creative
+description:
+  en: 116 tools for controlling Adobe Photoshop, combining generative AI actions with recipes, plus a standalone web UI.
+  pt: >-
+    116 ferramentas para controlar o Adobe Photoshop, combinando ações de IA generativa com receitas, além de uma
+    interface web própria.
+mcp:
+  name: photoshop-mcp
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@alisaitteke/photoshop-mcp"
+alternatives:
+  - name: MCP for Adobe Premiere Pro
+    url: https://github.com/leancoderkavy/premiere-pro-mcp
+    adds:
+      en: Local-first server for supported Adobe Premiere Pro workflows, starting with a read-only connection check.
+      pt: >-
+        Servidor local-first para workflows suportados do Adobe Premiere Pro, começando com uma verificação de conexão
+        somente leitura.
+origin:
+  list: mcp-registry
+  ref: io.github.alisaitteke/photoshop-mcp

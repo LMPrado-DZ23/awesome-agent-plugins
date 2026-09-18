@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: pgedge-postgres-mcp
+name: pgEdge/pgedge-postgres-mcp
+title: Enterprise PostgreSQL with hybrid search
+url: https://github.com/pgEdge/pgedge-postgres-mcp
+type: mcp-server
+category: cloud
+license: PostgreSQL
+tags:
+  - postgresql
+  - database
+description:
+  en: Enterprise PostgreSQL server with natural-language queries, hybrid search (pgvector plus BM25), and a web UI.
+  pt: >-
+    Servidor PostgreSQL empresarial com consultas em linguagem natural, busca híbrida (pgvector e BM25) e uma interface
+    web.
+mcp:
+  name: postgres-mcp
+  stdio:
+    command: docker
+    args:
+      - run
+      - "-i"
+      - "--rm"
+      - ghcr.io/pgedge/postgres-mcp:latest
+origin:
+  list: mcp-registry
+  ref: io.github.pgEdge/postgres-mcp

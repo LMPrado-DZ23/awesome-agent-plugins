@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: mcp-victoriametrics
+name: VictoriaMetrics/mcp-victoriametrics
+title: VictoriaMetrics integration
+url: https://github.com/VictoriaMetrics/mcp-victoriametrics
+type: mcp-server
+category: cloud
+license: Apache-2.0
+tags:
+  - metrics
+  - monitoring
+description:
+  en: Integrates with the VictoriaMetrics API and documentation; needs a VictoriaMetrics bearer token.
+  pt: Integra com a API e a documentação do VictoriaMetrics; exige um bearer token do VictoriaMetrics.
+mcp:
+  name: mcp-victoriametrics
+  stdio:
+    command: docker
+    args:
+      - run
+      - "-i"
+      - "--rm"
+      - "-e"
+      - VM_INSTANCE_ENTRYPOINT
+      - "-e"
+      - VM_INSTANCE_TYPE
+      - "-e"
+      - VM_INSTANCE_BEARER_TOKEN
+      - "-e"
+      - VMC_API_KEY
+      - ghcr.io/victoriametrics/mcp-victoriametrics:1.120.1
+    env:
+      VM_INSTANCE_ENTRYPOINT: <VM_INSTANCE_ENTRYPOINT>
+      VM_INSTANCE_TYPE: <VM_INSTANCE_TYPE>
+      VM_INSTANCE_BEARER_TOKEN: <VM_INSTANCE_BEARER_TOKEN>
+      VMC_API_KEY: <VMC_API_KEY>
+origin:
+  list: mcp-registry
+  ref: io.github.VictoriaMetrics/mcp-victoriametrics

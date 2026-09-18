@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: mcp-dev-latam-adyen
+name: codespar/mcp-dev-latam
+title: Adyen checkout for LatAm
+url: https://github.com/codespar/mcp-dev-latam/tree/main/packages/payments/adyen
+type: mcp-server
+category: integrations
+license: MIT
+tags:
+  - payments
+  - adyen
+description:
+  en: Adyen Checkout API v71 server for enterprise payments in Latin America; needs an ADYEN_API_KEY.
+  pt: Servidor da API Adyen Checkout v71 para pagamentos corporativos na América Latina; exige ADYEN_API_KEY.
+mcp:
+  name: mcp-adyen
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@codespar/mcp-adyen"
+    env:
+      ADYEN_API_KEY: <ADYEN_API_KEY>
+      ADYEN_MERCHANT_ACCOUNT: <ADYEN_MERCHANT_ACCOUNT>
+origin:
+  list: mcp-registry
+  ref: io.github.codespar/mcp-adyen

@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: mcp-azure-mcp-server
+name: Azure MCP Server
+title: Azure services access
+url: https://github.com/microsoft/mcp/tree/main/servers/Azure.Mcp.Server
+type: mcp-server
+category: cloud
+license: MIT
+tags:
+  - azure
+  - cloud
+description:
+  en: Official Azure server connecting AI agents to Azure services.
+  pt: Servidor oficial do Azure conectando agentes de IA aos serviços do Azure.
+mcp:
+  name: azure
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@azure/mcp"
+origin:
+  list: mcp-registry
+  ref: com.microsoft/azure

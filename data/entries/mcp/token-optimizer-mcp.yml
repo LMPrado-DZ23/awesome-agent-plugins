@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: token-optimizer-mcp
+name: ooples/token-optimizer-mcp
+title: Context-window token optimization
+url: https://github.com/ooples/token-optimizer-mcp
+type: mcp-server
+category: tools
+license: MIT
+tags:
+  - tokens
+  - context
+description:
+  en: Context-window optimization with caching, compression, and smart file tools, cutting tokens 60-90%.
+  pt: >-
+    Otimização da janela de contexto com cache, compressão e ferramentas inteligentes de arquivos, reduzindo tokens em
+    60-90%.
+mcp:
+  name: token-optimizer-mcp
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@ooples/token-optimizer-mcp"
+alternatives:
+  - name: llmtrim
+    url: https://github.com/fkiene/llmtrim
+    adds:
+      en: Proxy server that compresses LLM prompts, tool output, and replies to cut token cost.
+      pt: Servidor proxy que comprime prompts, saídas de ferramentas e respostas de LLM para reduzir o custo em tokens.
+origin:
+  list: mcp-registry
+  ref: io.github.ooples/token-optimizer-mcp

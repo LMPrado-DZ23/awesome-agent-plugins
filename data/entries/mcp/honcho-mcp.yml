@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: honcho-mcp
+name: Honcho
+title: Reasoning memory for agents
+url: https://github.com/plastic-labs/honcho
+type: mcp-server
+category: memory
+license: AGPL-3.0
+tags:
+  - memory
+  - agent
+description:
+  en: >-
+    Memory that reasons: continual learning for stateful agents, aiming for better context with fewer tokens; needs an
+    Authorization token.
+  pt: >-
+    Memória que raciocina: aprendizado contínuo para agentes com estado, buscando mais contexto com menos tokens; exige
+    token de Authorization.
+mcp:
+  name: honcho
+  http:
+    url: https://mcp.honcho.dev
+    headers:
+      Authorization: Bearer <API_TOKEN>
+origin:
+  list: mcp-registry
+  ref: io.github.plastic-labs/honcho

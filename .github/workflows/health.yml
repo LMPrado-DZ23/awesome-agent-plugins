@@ -21,6 +21,8 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: node scripts/refresh-stats.mjs | tee health.txt
+      - name: Check that npm/PyPI packages still exist
+        run: node scripts/check-packages.mjs | tee -a health.txt
       - name: Regenerate READMEs with fresh stars
         run: node scripts/generate.mjs
       - name: Commit refreshed stats

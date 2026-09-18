@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: kubernetes-mcp-server
+name: containers/kubernetes-mcp-server
+title: Kubernetes and OpenShift access
+url: https://github.com/containers/kubernetes-mcp-server
+type: mcp-server
+category: cloud
+license: Apache-2.0
+tags:
+  - kubernetes
+  - openshift
+description:
+  en: Server for interacting with Kubernetes and OpenShift clusters.
+  pt: Servidor para interagir com clusters Kubernetes e OpenShift.
+mcp:
+  name: kubernetes-mcp-server
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - kubernetes-mcp-server
+origin:
+  list: mcp-registry
+  ref: io.github.containers/kubernetes-mcp-server

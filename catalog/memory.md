@@ -16,10 +16,19 @@
 - [Personal Obsidian vault memory](#dsh-dsh-client-ui-obsidian-memory) — Persistent AI memory backed by a local Obsidian/Codex vault, with five read/write/search tools and a sidebar v…
 - [Local/remote knowledge base search](#dsh-dsh-knowledge) — Local and remote knowledge bases with project- and session-scoped recall, controlled write-back, and an embedd…
 - [Multi-layer conversation history recall](#dsh-dsh-recall) — Conversation history recall via three-layer (literal, fuzzy, semantic) retrieval over every past session's ori…
+- [Air-gapped enterprise GraphRAG](#veritasgraph-mcp) — Zero-trust, air-gapped enterprise GraphRAG server with offline, citation-grounded answers.
+- [Anytype encrypted wiki access](#anytype-mcp) — Official server for the Anytype API, an encrypted, local, and collaborative wiki; needs OPENAPI_MCP_HEADERS.
+- [Cross-session agent memory](#omega-memory-mcp) — Persistent memory, coordination, and learning for AI agents, local-first, exposed as 25 MCP tools.
 - [Cross-tool session reader, no export](#dsh-deja-vu-extensions-dsh) — Reads the session files that other coding agents on the same machine already wrote (Claude Code, Codex, Cursor…
+- [Local-first agentic RAG](#haiku-rag-mcp) — Local-first agentic RAG with citations: hybrid search, reranking, and multimodal document retrieval.
+- [Markdown knowledge base for agents](#basic-memory-mcp) — Local-first knowledge management with bi-directional sync between an LLM and Markdown files.
+- [Markdown notes as agent memory](#iwe-mcp) — Runs a Markdown knowledge base as agent memory against the notes directory it is started in.
 - [Memory (reference)](#mcp-memory) — Reference knowledge-graph memory: entities, relations and observations stored in a local JSONL file. No model …
+- [Obsidian notes access](#obsidian-mcp-server) — Reads, writes, searches, and edits Obsidian notes, tags, and frontmatter; needs an OBSIDIAN_API_KEY.
 - [Plaintext one-fact-per-file memory](#dsh-engramory-plugin) — Long-term memory stored as plain markdown, one fact per file. A size-capped MEMORY.md index blocks writes that…
+- [Reasoning memory for agents](#honcho-mcp) — Memory that reasons: continual learning for stateful agents, aiming for better context with fewer tokens; need…
 - [Self-evolving team memory in git](#dsh-co-engram-dsh-plugin) — Self-evolving team memory kept as plain markdown in git: 38 bare-name memory tools plus a prompt-signals secti…
+- [Team chat to knowledge graph](#beever-atlas-mcp) — Open-source knowledge base that turns team chat into a typed knowledge graph and an auto-generated wiki.
 
 <a id="dsh-graph-memory"></a>
 
@@ -264,6 +273,590 @@ dsh plugin --profile web add github:Relistencode/dsh-recall
 
 </details>
 
+<a id="veritasgraph-mcp"></a>
+
+### Air-gapped enterprise GraphRAG
+
+[bibinprathap/VeritasGraph](https://github.com/bibinprathap/VeritasGraph) — `MCP server` · License: see repo · Works with: All clients
+
+Zero-trust, air-gapped enterprise GraphRAG server with offline, citation-grounded answers.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio veritasgraph -- uvx veritasgraph-mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add veritasgraph -- uvx veritasgraph-mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add veritasgraph uvx veritasgraph-mcp
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "veritasgraph": {
+      "command": "uvx",
+      "args": [
+        "veritasgraph-mcp"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "veritasgraph": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "veritasgraph-mcp"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "veritasgraph": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "veritasgraph-mcp"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "veritasgraph": {
+      "command": "uvx",
+      "args": [
+        "veritasgraph-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "veritasgraph": {
+      "command": "uvx",
+      "args": [
+        "veritasgraph-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "veritasgraph": {
+      "source": "custom",
+      "command": "uvx",
+      "args": [
+        "veritasgraph-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  veritasgraph:
+    type: stdio
+    cmd: uvx
+    args: ["veritasgraph-mcp"]
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "veritasgraph": {
+      "command": "uvx",
+      "args": [
+        "veritasgraph-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "veritasgraph": {
+      "command": "uvx",
+      "args": [
+        "veritasgraph-mcp"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `veritasgraph.cordis.yml  →  dsh web --patch ./veritasgraph.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-veritasgraph
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: veritasgraph
+        transport: stdio
+        command: uvx
+        args: ["veritasgraph-mcp"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="anytype-mcp"></a>
+
+### Anytype encrypted wiki access
+
+[anyproto/anytype-mcp](https://github.com/anyproto/anytype-mcp) — `MCP server` · License: MIT · Works with: All clients
+
+Official server for the Anytype API, an encrypted, local, and collaborative wiki; needs OPENAPI_MCP_HEADERS.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio anytype-mcp --env OPENAPI_MCP_HEADERS='<OPENAPI_MCP_HEADERS>' -- npx -y @anyproto/anytype-mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add anytype-mcp --env OPENAPI_MCP_HEADERS='<OPENAPI_MCP_HEADERS>' -- npx -y @anyproto/anytype-mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add -e OPENAPI_MCP_HEADERS='<OPENAPI_MCP_HEADERS>' anytype-mcp npx -y @anyproto/anytype-mcp
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "anytype-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@anyproto/anytype-mcp"
+      ],
+      "env": {
+        "OPENAPI_MCP_HEADERS": "<OPENAPI_MCP_HEADERS>"
+      }
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "anytype-mcp": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@anyproto/anytype-mcp"
+      ],
+      "env": {
+        "OPENAPI_MCP_HEADERS": "<OPENAPI_MCP_HEADERS>"
+      }
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "anytype-mcp": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@anyproto/anytype-mcp"
+      ],
+      "enabled": true,
+      "environment": {
+        "OPENAPI_MCP_HEADERS": "<OPENAPI_MCP_HEADERS>"
+      }
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "anytype-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@anyproto/anytype-mcp"
+      ],
+      "env": {
+        "OPENAPI_MCP_HEADERS": "<OPENAPI_MCP_HEADERS>"
+      }
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "anytype-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@anyproto/anytype-mcp"
+      ],
+      "env": {
+        "OPENAPI_MCP_HEADERS": "<OPENAPI_MCP_HEADERS>"
+      }
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "anytype-mcp": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@anyproto/anytype-mcp"
+      ],
+      "env": {
+        "OPENAPI_MCP_HEADERS": "<OPENAPI_MCP_HEADERS>"
+      }
+    }
+  }
+}
+```
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  anytype-mcp:
+    type: stdio
+    cmd: npx
+    args: ["-y","@anyproto/anytype-mcp"]
+    envs:
+      OPENAPI_MCP_HEADERS: "<OPENAPI_MCP_HEADERS>"
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "anytype-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@anyproto/anytype-mcp"
+      ],
+      "env": {
+        "OPENAPI_MCP_HEADERS": "<OPENAPI_MCP_HEADERS>"
+      }
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "anytype-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@anyproto/anytype-mcp"
+      ],
+      "env": {
+        "OPENAPI_MCP_HEADERS": "<OPENAPI_MCP_HEADERS>"
+      }
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `anytype-mcp.cordis.yml  →  dsh web --patch ./anytype-mcp.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-anytype-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: anytype-mcp
+        transport: stdio
+        command: npx
+        args: ["-y","@anyproto/anytype-mcp"]
+        env: {"OPENAPI_MCP_HEADERS":"<OPENAPI_MCP_HEADERS>"}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="omega-memory-mcp"></a>
+
+### Cross-session agent memory
+
+[OMEGA Memory](https://github.com/omega-memory/omega-memory) — `MCP server` · License: Apache-2.0 · Works with: All clients
+
+Persistent memory, coordination, and learning for AI agents, local-first, exposed as 25 MCP tools.
+
+**Alternatives:**
+
+- [Vestige](https://github.com/samvallad33/vestige) — Local-first agent memory that reaches backward to find a failure's root cause.
+- [Compartment](https://github.com/MaxFreedomPollard/Compartment) — Durable agentic memory encrypted at rest, fully offline with no network or API key.
+- [TeleAI-UAGI/telemem](https://github.com/TeleAI-UAGI/telemem) — Long-term multimodal, character-aware memory, mem0-compatible, with a fully-local option; needs an OPENAI_API_KEY.
+- [Lyellr88/marm-memory](https://github.com/Lyellr88/marm-memory) — Universal server adding AI memory with semantic search.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio omega-memory -- uvx omega-memory
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add omega-memory -- uvx omega-memory
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add omega-memory uvx omega-memory
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "omega-memory": {
+      "command": "uvx",
+      "args": [
+        "omega-memory"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "omega-memory": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "omega-memory"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "omega-memory": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "omega-memory"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "omega-memory": {
+      "command": "uvx",
+      "args": [
+        "omega-memory"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "omega-memory": {
+      "command": "uvx",
+      "args": [
+        "omega-memory"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "omega-memory": {
+      "source": "custom",
+      "command": "uvx",
+      "args": [
+        "omega-memory"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  omega-memory:
+    type: stdio
+    cmd: uvx
+    args: ["omega-memory"]
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "omega-memory": {
+      "command": "uvx",
+      "args": [
+        "omega-memory"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "omega-memory": {
+      "command": "uvx",
+      "args": [
+        "omega-memory"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `omega-memory.cordis.yml  →  dsh web --patch ./omega-memory.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-omega-memory
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: omega-memory
+        transport: stdio
+        command: uvx
+        args: ["omega-memory"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
 <a id="dsh-deja-vu-extensions-dsh"></a>
 
 ### Cross-tool session reader, no export
@@ -278,6 +871,557 @@ Reads the session files that other coding agents on the same machine already wro
 
 ```bash
 dsh plugin --profile web add github:vshulcz/deja-vu#path:/extensions/dsh
+```
+
+</details>
+
+<a id="haiku-rag-mcp"></a>
+
+### Local-first agentic RAG
+
+[haiku.rag](https://github.com/ggozad/haiku.rag) — `MCP server` · License: MIT · Works with: All clients
+
+Local-first agentic RAG with citations: hybrid search, reranking, and multimodal document retrieval.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio haiku-rag -- uvx haiku-rag
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add haiku-rag -- uvx haiku-rag
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add haiku-rag uvx haiku-rag
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "haiku-rag": {
+      "command": "uvx",
+      "args": [
+        "haiku-rag"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "haiku-rag": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "haiku-rag"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "haiku-rag": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "haiku-rag"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "haiku-rag": {
+      "command": "uvx",
+      "args": [
+        "haiku-rag"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "haiku-rag": {
+      "command": "uvx",
+      "args": [
+        "haiku-rag"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "haiku-rag": {
+      "source": "custom",
+      "command": "uvx",
+      "args": [
+        "haiku-rag"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  haiku-rag:
+    type: stdio
+    cmd: uvx
+    args: ["haiku-rag"]
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "haiku-rag": {
+      "command": "uvx",
+      "args": [
+        "haiku-rag"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "haiku-rag": {
+      "command": "uvx",
+      "args": [
+        "haiku-rag"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `haiku-rag.cordis.yml  →  dsh web --patch ./haiku-rag.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-haiku-rag
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: haiku-rag
+        transport: stdio
+        command: uvx
+        args: ["haiku-rag"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="basic-memory-mcp"></a>
+
+### Markdown knowledge base for agents
+
+[basicmachines-co/basic-memory](https://github.com/basicmachines-co/basic-memory) — `MCP server` · License: AGPL-3.0 · Works with: All clients
+
+Local-first knowledge management with bi-directional sync between an LLM and Markdown files.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio basic-memory -- uvx basic-memory
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add basic-memory -- uvx basic-memory
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add basic-memory uvx basic-memory
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "basic-memory": {
+      "command": "uvx",
+      "args": [
+        "basic-memory"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "basic-memory": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "basic-memory"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "basic-memory": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "basic-memory"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "basic-memory": {
+      "command": "uvx",
+      "args": [
+        "basic-memory"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "basic-memory": {
+      "command": "uvx",
+      "args": [
+        "basic-memory"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "basic-memory": {
+      "source": "custom",
+      "command": "uvx",
+      "args": [
+        "basic-memory"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  basic-memory:
+    type: stdio
+    cmd: uvx
+    args: ["basic-memory"]
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "basic-memory": {
+      "command": "uvx",
+      "args": [
+        "basic-memory"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "basic-memory": {
+      "command": "uvx",
+      "args": [
+        "basic-memory"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `basic-memory.cordis.yml  →  dsh web --patch ./basic-memory.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-basic-memory
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: basic-memory
+        transport: stdio
+        command: uvx
+        args: ["basic-memory"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="iwe-mcp"></a>
+
+### Markdown notes as agent memory
+
+[IWE](https://github.com/iwe-org/iwe) — `MCP server` · License: Apache-2.0 · Works with: All clients
+
+Runs a Markdown knowledge base as agent memory against the notes directory it is started in.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio iwe -- npx -y @iwe-org/mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add iwe -- npx -y @iwe-org/mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add iwe npx -y @iwe-org/mcp
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "iwe": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@iwe-org/mcp"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "iwe": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@iwe-org/mcp"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "iwe": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@iwe-org/mcp"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "iwe": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@iwe-org/mcp"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "iwe": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@iwe-org/mcp"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "iwe": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@iwe-org/mcp"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  iwe:
+    type: stdio
+    cmd: npx
+    args: ["-y","@iwe-org/mcp"]
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "iwe": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@iwe-org/mcp"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "iwe": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@iwe-org/mcp"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `iwe.cordis.yml  →  dsh web --patch ./iwe.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-iwe
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: iwe
+        transport: stdio
+        command: npx
+        args: ["-y","@iwe-org/mcp"]
+        env: {}
+        cwd: !!js process.cwd()
 ```
 
 </details>
@@ -471,6 +1615,221 @@ extensions:
 
 </details>
 
+<a id="obsidian-mcp-server"></a>
+
+### Obsidian notes access
+
+[cyanheads/obsidian-mcp-server](https://github.com/cyanheads/obsidian-mcp-server) — `MCP server` · License: Apache-2.0 · Works with: All clients
+
+Reads, writes, searches, and edits Obsidian notes, tags, and frontmatter; needs an OBSIDIAN_API_KEY.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio obsidian-mcp-server --env OBSIDIAN_API_KEY='<OBSIDIAN_API_KEY>' -- npx -y obsidian-mcp-server
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add obsidian-mcp-server --env OBSIDIAN_API_KEY='<OBSIDIAN_API_KEY>' -- npx -y obsidian-mcp-server
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add -e OBSIDIAN_API_KEY='<OBSIDIAN_API_KEY>' obsidian-mcp-server npx -y obsidian-mcp-server
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "obsidian-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "obsidian-mcp-server"
+      ],
+      "env": {
+        "OBSIDIAN_API_KEY": "<OBSIDIAN_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "obsidian-mcp-server": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "obsidian-mcp-server"
+      ],
+      "env": {
+        "OBSIDIAN_API_KEY": "<OBSIDIAN_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "obsidian-mcp-server": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "obsidian-mcp-server"
+      ],
+      "enabled": true,
+      "environment": {
+        "OBSIDIAN_API_KEY": "<OBSIDIAN_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "obsidian-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "obsidian-mcp-server"
+      ],
+      "env": {
+        "OBSIDIAN_API_KEY": "<OBSIDIAN_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "obsidian-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "obsidian-mcp-server"
+      ],
+      "env": {
+        "OBSIDIAN_API_KEY": "<OBSIDIAN_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "obsidian-mcp-server": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "obsidian-mcp-server"
+      ],
+      "env": {
+        "OBSIDIAN_API_KEY": "<OBSIDIAN_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  obsidian-mcp-server:
+    type: stdio
+    cmd: npx
+    args: ["-y","obsidian-mcp-server"]
+    envs:
+      OBSIDIAN_API_KEY: "<OBSIDIAN_API_KEY>"
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "obsidian-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "obsidian-mcp-server"
+      ],
+      "env": {
+        "OBSIDIAN_API_KEY": "<OBSIDIAN_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "obsidian-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "obsidian-mcp-server"
+      ],
+      "env": {
+        "OBSIDIAN_API_KEY": "<OBSIDIAN_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `obsidian-mcp-server.cordis.yml  →  dsh web --patch ./obsidian-mcp-server.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-obsidian-mcp-server
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: obsidian-mcp-server
+        transport: stdio
+        command: npx
+        args: ["-y","obsidian-mcp-server"]
+        env: {"OBSIDIAN_API_KEY":"<OBSIDIAN_API_KEY>"}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
 <a id="dsh-engramory-plugin"></a>
 
 ### Plaintext one-fact-per-file memory
@@ -494,6 +1853,194 @@ dsh plugin --profile web add github:tinqiao-oss/engramory#path:/adapters/dsh/plu
 
 </details>
 
+<a id="honcho-mcp"></a>
+
+### Reasoning memory for agents
+
+[Honcho](https://github.com/plastic-labs/honcho) — `MCP server` · License: AGPL-3.0 · Works with: All clients
+
+Memory that reasons: continual learning for stateful agents, aiming for better context with fewer tokens; needs an Authorization token.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport http honcho https://mcp.honcho.dev --header 'Authorization: Bearer <API_TOKEN>'
+```
+
+**Codex CLI** — File: `~/.codex/config.toml`
+
+```toml
+[mcp_servers.honcho]
+url = "https://mcp.honcho.dev"
+bearer_token_env_var = "API_TOKEN"
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add --transport http honcho https://mcp.honcho.dev --header 'Authorization: Bearer <API_TOKEN>'
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "honcho": {
+      "url": "https://mcp.honcho.dev",
+      "headers": {
+        "Authorization": "Bearer <API_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "honcho": {
+      "type": "http",
+      "url": "https://mcp.honcho.dev",
+      "headers": {
+        "Authorization": "Bearer <API_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "honcho": {
+      "type": "remote",
+      "url": "https://mcp.honcho.dev",
+      "enabled": true,
+      "headers": {
+        "Authorization": "Bearer <API_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "honcho": {
+      "type": "streamableHttp",
+      "url": "https://mcp.honcho.dev",
+      "headers": {
+        "Authorization": "Bearer <API_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "honcho": {
+      "serverUrl": "https://mcp.honcho.dev",
+      "headers": {
+        "Authorization": "Bearer <API_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "honcho": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://mcp.honcho.dev",
+        "--header",
+        "Authorization:Bearer <API_TOKEN>"
+      ]
+    }
+  }
+}
+```
+_Remote server bridged through the mcp-remote stdio proxy._
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  honcho:
+    type: streamable_http
+    uri: https://mcp.honcho.dev
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "honcho": {
+      "type": "streamable-http",
+      "url": "https://mcp.honcho.dev",
+      "headers": {
+        "Authorization": "Bearer <API_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "honcho": {
+      "type": "streamable-http",
+      "url": "https://mcp.honcho.dev",
+      "headers": {
+        "Authorization": "Bearer <API_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `honcho.cordis.yml  →  dsh web --patch ./honcho.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-honcho
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: honcho
+        transport: streamable-http
+        url: https://mcp.honcho.dev
+        headers: {"Authorization":"Bearer <API_TOKEN>"}
+```
+
+</details>
+
 <a id="dsh-co-engram-dsh-plugin"></a>
 
 ### Self-evolving team memory in git
@@ -508,6 +2055,211 @@ Self-evolving team memory kept as plain markdown in git: 38 bare-name memory too
 
 ```bash
 dsh plugin --profile web add github:Co-Engram/Co-Engram#path:/packages/dsh-plugin
+```
+
+</details>
+
+<a id="beever-atlas-mcp"></a>
+
+### Team chat to knowledge graph
+
+[Beever-AI/beever-atlas](https://github.com/Beever-AI/beever-atlas) — `MCP server` · License: Apache-2.0 · Works with: All clients
+
+Open-source knowledge base that turns team chat into a typed knowledge graph and an auto-generated wiki.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio beever-atlas -- docker run -i --rm ghcr.io/beever-ai/beever-atlas:0.3.0
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add beever-atlas -- docker run -i --rm ghcr.io/beever-ai/beever-atlas:0.3.0
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add beever-atlas docker run -i --rm ghcr.io/beever-ai/beever-atlas:0.3.0
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "beever-atlas": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/beever-ai/beever-atlas:0.3.0"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "beever-atlas": {
+      "type": "stdio",
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/beever-ai/beever-atlas:0.3.0"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "beever-atlas": {
+      "type": "local",
+      "command": [
+        "docker",
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/beever-ai/beever-atlas:0.3.0"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "beever-atlas": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/beever-ai/beever-atlas:0.3.0"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "beever-atlas": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/beever-ai/beever-atlas:0.3.0"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "beever-atlas": {
+      "source": "custom",
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/beever-ai/beever-atlas:0.3.0"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  beever-atlas:
+    type: stdio
+    cmd: docker
+    args: ["run","-i","--rm","ghcr.io/beever-ai/beever-atlas:0.3.0"]
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "beever-atlas": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/beever-ai/beever-atlas:0.3.0"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "beever-atlas": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/beever-ai/beever-atlas:0.3.0"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `beever-atlas.cordis.yml  →  dsh web --patch ./beever-atlas.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-beever-atlas
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: beever-atlas
+        transport: stdio
+        command: docker
+        args: ["run","-i","--rm","ghcr.io/beever-ai/beever-atlas:0.3.0"]
+        env: {}
+        cwd: !!js process.cwd()
 ```
 
 </details>

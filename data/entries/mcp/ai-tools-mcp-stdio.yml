@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: ai-tools-mcp-stdio
+name: Svelte MCP
+title: Svelte docs and autofixing
+url: https://github.com/sveltejs/ai-tools/tree/main/packages/mcp-stdio
+type: mcp-server
+category: docs
+license: MIT
+tags:
+  - docs
+  - svelte
+description:
+  en: Official Svelte server providing documentation and autofixing tools for Svelte development.
+  pt: Servidor oficial do Svelte com documentação e ferramentas de correção automática para desenvolvimento em Svelte.
+mcp:
+  name: mcp
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@sveltejs/mcp"
+  http:
+    url: https://mcp.svelte.dev/mcp
+origin:
+  list: mcp-registry
+  ref: dev.svelte/mcp

@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: anki-mcp-server
+name: Anki MCP Server
+title: Anki flashcard management
+url: https://github.com/ankimcp/anki-mcp-server
+type: mcp-server
+category: integrations
+license: MIT
+tags:
+  - anki
+  - flashcards
+description:
+  en: "Manages Anki flashcards: adaptive review, notes, media, and decks via AnkiConnect."
+  pt: "Gerencia flashcards do Anki: revisão adaptativa, notas, mídia e decks via AnkiConnect."
+mcp:
+  name: anki-mcp-server
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@ankimcp/anki-mcp-server"
+origin:
+  list: mcp-registry
+  ref: ai.ankimcp/anki-mcp-server

@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: evmole-mcp
+name: EVMole
+title: EVM bytecode analysis
+url: https://github.com/cdump/evmole/tree/main/agent/mcp
+type: mcp-server
+category: security
+license: MIT
+tags:
+  - evm
+  - reverse-engineering
+description:
+  en: Local structured analysis of deployed EVM runtime bytecode.
+  pt: Análise local e estruturada de bytecode de runtime EVM já implantado.
+mcp:
+  name: evmole
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - evmole-mcp
+origin:
+  list: mcp-registry
+  ref: io.github.cdump/evmole

@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: sessy-mcp
+name: Sessy — Amazon SES observability
+title: Amazon SES observability
+url: https://github.com/marckohlbrugge/sessy
+type: mcp-server
+category: cloud
+license: null
+tags:
+  - aws-ses
+  - email
+description:
+  en: >-
+    Read-only Amazon SES observability: search events, inspect bounces, and pull delivery stats; needs an Authorization
+    token.
+  pt: >-
+    Observabilidade somente leitura do Amazon SES: busca eventos, inspeciona bounces e traz estatísticas de entrega;
+    exige token de Authorization.
+mcp:
+  name: sessy
+  http:
+    url: https://api.sessy.do/mcp
+    headers:
+      Authorization: Bearer <API_TOKEN>
+origin:
+  list: mcp-registry
+  ref: io.github.marckohlbrugge/sessy

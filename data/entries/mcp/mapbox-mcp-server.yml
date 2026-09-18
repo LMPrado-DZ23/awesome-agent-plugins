@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: mapbox-mcp-server
+name: mapbox/mcp-server
+title: Mapbox geospatial APIs
+url: https://github.com/mapbox/mcp-server
+type: mcp-server
+category: integrations
+license: MIT
+tags:
+  - maps
+  - mapbox
+description:
+  en: >-
+    Geospatial intelligence with Mapbox APIs: geocoding, POI search, directions, and isochrones; needs a
+    MAPBOX_ACCESS_TOKEN.
+  pt: "Inteligência geoespacial com APIs do Mapbox: geocoding, busca de POI, rotas e isócronas; exige MAPBOX_ACCESS_TOKEN."
+mcp:
+  name: mcp-server
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@mapbox/mcp-server"
+    env:
+      MAPBOX_ACCESS_TOKEN: <MAPBOX_ACCESS_TOKEN>
+  http:
+    url: https://mcp.mapbox.com/mcp
+origin:
+  list: mcp-registry
+  ref: io.github.mapbox/mcp-server

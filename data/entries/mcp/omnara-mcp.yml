@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: omnara-mcp
+name: Omnara
+title: Deploy durable managed agents
+url: https://github.com/omnara-ai/omnara
+type: mcp-server
+category: workflow
+license: Apache-2.0
+tags:
+  - agent-platform
+description:
+  en: Deploys durable AI agents with Omnara, an open-source managed-agent platform.
+  pt: Implanta agentes de IA duráveis com o Omnara, uma plataforma open-source de agentes gerenciados.
+mcp:
+  name: omnara
+  http:
+    url: https://app.omnara.com/mcp
+origin:
+  list: mcp-registry
+  ref: com.omnara/omnara

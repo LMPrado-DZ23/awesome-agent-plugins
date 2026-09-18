@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: pyscn-mcp
+name: pyscn
+title: Python code health analysis
+url: https://github.com/ludo-technologies/pyscn
+type: mcp-server
+category: code-intel
+license: MIT
+tags:
+  - python
+  - code-intel
+  - quality
+description:
+  en: "Python code analysis for AI agents: complexity, dead code, clones, coupling, and an overall health score."
+  pt: >-
+    Análise de código Python para agentes de IA: complexidade, código morto, clones, acoplamento e um índice geral de
+    saúde.
+mcp:
+  name: pyscn
+  stdio:
+    command: uvx
+    args:
+      - pyscn-mcp
+origin:
+  list: mcp-registry
+  ref: io.github.ludo-technologies/pyscn

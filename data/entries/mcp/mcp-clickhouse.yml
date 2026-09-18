@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: mcp-clickhouse
+name: ClickHouse
+title: Query ClickHouse clusters
+url: https://github.com/ClickHouse/mcp-clickhouse
+type: mcp-server
+category: cloud
+license: Apache-2.0
+tags:
+  - clickhouse
+  - database
+description:
+  en: Official server for querying and exploring ClickHouse clusters and chDB.
+  pt: Servidor oficial para consultar e explorar clusters ClickHouse e o chDB.
+mcp:
+  name: mcp-clickhouse
+  stdio:
+    command: uvx
+    args:
+      - mcp-clickhouse
+    env:
+      CLICKHOUSE_HOST: <CLICKHOUSE_HOST>
+      CLICKHOUSE_USER: <CLICKHOUSE_USER>
+      CLICKHOUSE_PASSWORD: <CLICKHOUSE_PASSWORD>
+origin:
+  list: mcp-registry
+  ref: io.github.ClickHouse/mcp-clickhouse

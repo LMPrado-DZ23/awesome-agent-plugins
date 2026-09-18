@@ -92,13 +92,13 @@ function readme(lang, byCat) {
   L.push(`![entries](https://img.shields.io/badge/${t.entries.replace(/ /g, '%20')}-${entries.length}-blue) ![projects](https://img.shields.io/badge/projects-${total}-blue) ![clients](https://img.shields.io/badge/clients-${CLIENT_IDS.length}-green)`, '');
   L.push(t.why, '');
   L.push(`## ${t.clients}`, '');
-  L.push(`| ${t.client} | ${t.mcp} | ${t.skills} | ${t.native} | ${t.instr} |`, '|---|---|---|---|---|');
+  L.push(`| ${t.client} | ${t.mcp} | ${t.skills} | ${t.native} | ${t.instr} | ${t.tested} |`, '|---|---|---|---|---|---|');
   for (const id of CLIENT_IDS) {
     const c = CLIENTS[id];
     const nat = entries.filter((e) => e.native?.client === id).length;
-    L.push(`| [${c.name}](${c.docs}) | ✅ | ✅ | ${nat ? `✅ ${nat}` : t.no} | \`${c.instructions}\` |`);
+    L.push(`| [${c.name}](${c.docs}) | ✅ | ✅ | ${nat ? `✅ ${nat}` : t.no} | \`${c.instructions}\` | ${c.tested ? t.e2e : t.docsOnly} |`);
   }
-  L.push('');
+  L.push('', t.testedNote, '');
   L.push(`## ${t.quick}`, '', t.quickText, '', '```bash',
     `npx github:${REPO} search browser`,
     `npx github:${REPO} show playwright-mcp`,
@@ -121,10 +121,17 @@ function readme(lang, byCat) {
     const list = byCat.get(cat);
     if (!list?.length) continue;
     const a = list.reduce((n, e) => n + (e.alternatives?.length ?? 0), 0);
-    L.push(`- [${CATEGORIES[cat][lang]}](${t.catDir}/${cat}.md) — ${list.length} ${t.entries}${a ? ` + ${a} ${t.alts}` : ''}`);
+    L.push(`- [${CATEGORIES[cat][lang]}](${t.catDir}/${cat}.md) — ${list.length} ${list.length === 1 ? t.entry : t.entries}${a ? ` + ${a} ${t.alts}` : ''}`);
   }
   L.push('');
-  if (dsh.length) L.push(`## ${t.dshTitle}`, '', t.dshText(dsh.length, dshAlts, DSH_UPSTREAM_TOTAL.toLocaleString(lang === 'en' ? 'en-US' : 'pt-BR')), '');
+  const origin = (list) => entries.filter((e) => (e.origin?.list ?? 'curated') === list).length;
+  L.push(`## ${t.sourcesTitle}`, '', t.sourcesIntro, '',
+    `| ${t.source} | ${t.entriesCol} | ${t.how} |`, '|---|---|---|',
+    `| ${t.srcCurated} | ${origin('curated')} | ${t.srcCuratedHow} |`,
+    `| [MCP Registry](https://registry.modelcontextprotocol.io) | ${origin('mcp-registry')} | ${t.srcRegistryHow} |`,
+    `| ${t.srcGithub} | ${origin('github-discovery')} | ${t.srcGithubHow} |`,
+    `| [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) | ${origin('awesome-dsh-plugin')} | ${t.srcDshHow} |`, '');
+  if (dsh.length) L.push(`### ${t.dshTitle}`, '', t.dshText(dsh.length, dshAlts, DSH_UPSTREAM_TOTAL.toLocaleString(lang === 'en' ? 'en-US' : 'pt-BR')), '');
   L.push(`## ${t.criteria}`, '', ...t.criteriaList.map((c) => `- ${c}`), '');
   L.push(`## ${t.contributing}`, '', t.contribText, '');
   L.push(`## ${t.license}`, '', t.licenseText, '');

@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: uniprof-mcp
+name: indragiek/uniprof
+title: Universal CPU profiler
+url: https://github.com/indragiek/uniprof
+type: mcp-server
+category: dev
+license: MIT
+tags:
+  - profiling
+  - performance
+description:
+  en: A universal CPU profiler designed to be used by both humans and AI agents.
+  pt: Um profiler de CPU universal, pensado tanto para humanos quanto para agentes de IA.
+mcp:
+  name: uniprof
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - uniprof
+origin:
+  list: mcp-registry
+  ref: io.github.indragiek/uniprof

@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: funasr-mcp-server
+name: FunASR
+title: On-device audio transcription
+url: https://github.com/modelscope/FunASR/tree/main/examples/mcp_server
+type: mcp-server
+category: multimodal
+license: MIT
+tags:
+  - transcription
+  - audio
+description:
+  en: Transcribes local audio with FunASR and SenseVoice using private, on-device inference.
+  pt: Transcreve áudio local com FunASR e SenseVoice usando inferência privada, no próprio dispositivo.
+mcp:
+  name: funasr-mcp
+  stdio:
+    command: docker
+    args:
+      - run
+      - "-i"
+      - "--rm"
+      - ghcr.io/modelscope/funasr-mcp:0.1.2
+origin:
+  list: mcp-registry
+  ref: io.github.modelscope/funasr-mcp

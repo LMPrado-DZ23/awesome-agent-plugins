@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: watch-skill-mcp
+name: oxbshw/watch-skill
+title: Verify agent work from video evidence
+url: https://github.com/oxbshw/watch-skill
+type: mcp-server
+category: tools
+license: MIT
+tags:
+  - verification
+  - video
+description:
+  en: Watches video and live sessions, keeps timestamped evidence, and verifies an agent's own work.
+  pt: Assiste a vídeos e sessões ao vivo, guarda evidências com timestamp e verifica o próprio trabalho de um agente.
+mcp:
+  name: watch-skill
+  stdio:
+    command: uvx
+    args:
+      - watch-skill
+origin:
+  list: mcp-registry
+  ref: io.github.oxbshw/watch-skill

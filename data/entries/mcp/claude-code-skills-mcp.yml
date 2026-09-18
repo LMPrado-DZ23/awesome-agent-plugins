@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: claude-code-skills-mcp
+name: Hex Graph
+title: Layered code graph with SCIP
+url: https://github.com/levnikolaevich/claude-code-skills
+type: mcp-server
+category: code-intel
+license: MIT
+tags:
+  - code-intel
+  - graph
+description:
+  en: Deterministic layered code graph server with framework overlays and SCIP interoperability.
+  pt: Servidor de grafo de código determinístico em camadas, com overlays de frameworks e interoperabilidade SCIP.
+mcp:
+  name: hex-graph-mcp
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@levnikolaevich/hex-graph-mcp"
+origin:
+  list: mcp-registry
+  ref: io.github.levnikolaevich/hex-graph-mcp

@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: monitor-mcp
+name: BetterDB-inc/monitor
+title: Valkey observability
+url: https://github.com/BetterDB-inc/monitor/tree/main/packages/mcp
+type: mcp-server
+category: cloud
+license: null
+tags:
+  - valkey
+  - observability
+description:
+  en: BetterDB server for Valkey observability; needs a BETTERDB_TOKEN.
+  pt: Servidor da BetterDB para observabilidade do Valkey; exige BETTERDB_TOKEN.
+mcp:
+  name: monitor
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@betterdb/mcp"
+    env:
+      BETTERDB_TOKEN: <BETTERDB_TOKEN>
+origin:
+  list: mcp-registry
+  ref: io.github.BetterDB-inc/monitor

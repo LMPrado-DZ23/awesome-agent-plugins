@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: claudexor-mcp
+name: Claudexor
+title: Route work across coding agents
+url: https://github.com/razzant/claudexor
+type: mcp-server
+category: workflow
+license: MIT
+tags:
+  - multi-agent
+  - routing
+description:
+  en: Routes coding work across Claude Code, Codex, Cursor, and OpenCode with shared context.
+  pt: Roteia trabalho de codificação entre Claude Code, Codex, Cursor e OpenCode com contexto compartilhado.
+mcp:
+  name: claudexor
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - claudexor
+alternatives:
+  - name: Concord MCP
+    url: https://github.com/Get-Concord-AI/concord-mcp
+    adds:
+      en: Cross-harness communication and shared work-state for coding agents.
+      pt: Comunicação entre harnesses e estado de trabalho compartilhado para agentes de código.
+origin:
+  list: mcp-registry
+  ref: io.github.razzant/claudexor

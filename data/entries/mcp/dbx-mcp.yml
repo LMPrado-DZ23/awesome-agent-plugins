@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dbx-mcp
+name: t8y2/dbx
+title: Query databases via saved connections
+url: https://github.com/t8y2/dbx
+type: mcp-server
+category: cloud
+license: Apache-2.0
+tags:
+  - database
+  - sql
+description:
+  en: Queries databases from AI agents using connections already configured in DBX.
+  pt: Consulta bancos de dados a partir de agentes de IA usando conexões já configuradas no DBX.
+mcp:
+  name: dbx
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@dbx-app/mcp-server"
+alternatives:
+  - name: DBHub
+    url: https://github.com/bytebase/dbhub
+    adds:
+      en: Minimal, token-efficient server for PostgreSQL, MySQL, SQL Server, SQLite, and MariaDB.
+      pt: Servidor mínimo e eficiente em tokens para PostgreSQL, MySQL, SQL Server, SQLite e MariaDB.
+origin:
+  list: mcp-registry
+  ref: io.github.t8y2/dbx

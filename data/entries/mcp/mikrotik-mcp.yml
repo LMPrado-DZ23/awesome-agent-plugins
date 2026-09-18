@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: mikrotik-mcp
+name: jeff-nasseri/mikrotik-mcp
+title: MikroTik router management
+url: https://github.com/jeff-nasseri/mikrotik-mcp
+type: mcp-server
+category: integrations
+license: MIT
+tags:
+  - networking
+  - mikrotik
+description:
+  en: "Manages MikroTik routers over SSH: firewall, NAT, routing, DHCP, DNS, and WireGuard; needs a MikroTik password."
+  pt: "Gerencia roteadores MikroTik via SSH: firewall, NAT, roteamento, DHCP, DNS e WireGuard; exige a senha do MikroTik."
+mcp:
+  name: mikrotik-mcp
+  stdio:
+    command: uvx
+    args:
+      - mcp-server-mikrotik
+    env:
+      MIKROTIK_PASSWORD: <MIKROTIK_PASSWORD>
+      MIKROTIK_INVENTORY: <MIKROTIK_INVENTORY>
+origin:
+  list: mcp-registry
+  ref: io.github.jeff-nasseri/mikrotik-mcp

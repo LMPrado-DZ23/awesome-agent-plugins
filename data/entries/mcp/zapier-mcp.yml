@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: zapier-mcp
+name: Zapier
+title: Zapier apps and actions
+url: https://github.com/zapier/zapier-mcp
+type: mcp-server
+category: integrations
+license: MIT
+tags:
+  - zapier
+  - automation
+description:
+  en: Hosted server connecting AI assistants to over 9,000 apps and 40,000 actions via Zapier.
+  pt: Servidor hospedado que conecta assistentes de IA a mais de 9.000 apps e 40.000 ações via Zapier.
+mcp:
+  name: mcp
+  http:
+    url: https://mcp.zapier.com/api/v1/connect
+origin:
+  list: mcp-registry
+  ref: com.zapier/mcp

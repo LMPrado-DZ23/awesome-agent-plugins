@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: mcp-sap-docs
+name: marianfoo/mcp-sap-docs
+title: Unified SAP documentation search
+url: https://github.com/marianfoo/mcp-sap-docs
+type: mcp-server
+category: docs
+license: Apache-2.0
+tags:
+  - docs
+  - sap
+description:
+  en: Fast unified search across SAP docs (SAPUI5, CAP, OpenUI5, wdi5) using BM25 full-text search.
+  pt: Busca unificada e rápida na documentação SAP (SAPUI5, CAP, OpenUI5, wdi5) usando busca full-text BM25.
+mcp:
+  name: mcp-sap-docs
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - mcp-sap-docs
+origin:
+  list: mcp-registry
+  ref: io.github.marianfoo/mcp-sap-docs

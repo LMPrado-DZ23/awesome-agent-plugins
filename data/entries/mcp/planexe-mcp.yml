@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: planexe-mcp
+name: PlanExe
+title: Generate project plans from prompts
+url: https://github.com/PlanExeOrg/PlanExe
+type: mcp-server
+category: workflow
+license: MIT
+tags:
+  - planning
+  - project
+description:
+  en: Generates rough-draft project plans from natural-language prompts; needs an X-API-Key.
+  pt: Gera rascunhos de planos de projeto a partir de prompts em linguagem natural; exige X-API-Key.
+mcp:
+  name: planexe
+  http:
+    url: https://mcp.planexe.org/mcp
+    headers:
+      X-API-Key: <X_API_KEY>
+origin:
+  list: mcp-registry
+  ref: io.github.PlanExeOrg/planexe

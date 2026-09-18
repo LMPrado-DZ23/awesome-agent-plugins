@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: apple-health-mcp
+name: Apple Health
+title: Query Apple Health exports
+url: https://github.com/neiltron/apple-health-mcp
+type: mcp-server
+category: integrations
+license: MIT
+tags:
+  - health
+  - data
+description:
+  en: Queries and analyzes Apple Health CSV exports using DuckDB; needs a HEALTH_DATA_DIR.
+  pt: Consulta e analisa exportações CSV do Apple Health usando DuckDB; exige HEALTH_DATA_DIR.
+mcp:
+  name: apple-health-mcp
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@neiltron/apple-health-mcp"
+    env:
+      HEALTH_DATA_DIR: <HEALTH_DATA_DIR>
+origin:
+  list: mcp-registry
+  ref: io.github.neiltron/apple-health-mcp

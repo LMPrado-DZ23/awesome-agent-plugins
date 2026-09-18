@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: git-mcp-server
+name: cyanheads/git-mcp-server
+title: Native git operations
+url: https://github.com/cyanheads/git-mcp-server
+type: mcp-server
+category: git
+license: Apache-2.0
+tags:
+  - git
+description:
+  en: Comprehensive git server enabling native git tools including clone, commit, and worktree management.
+  pt: Servidor git abrangente com ferramentas nativas como clone, commit e gestão de worktrees.
+mcp:
+  name: git-mcp-server
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@cyanheads/git-mcp-server"
+origin:
+  list: mcp-registry
+  ref: io.github.cyanheads/git-mcp-server

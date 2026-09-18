@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: gk-cli-mcp
+name: gitkraken/gk-cli
+title: Manage repos across Git hosts
+url: https://github.com/gitkraken/gk-cli
+type: mcp-server
+category: git
+license: null
+tags:
+  - git
+  - gitkraken
+description:
+  en: The GitKraken server for managing repos, pull requests, and issues across GitHub, GitLab, and Bitbucket.
+  pt: Servidor da GitKraken para gerenciar repositórios, pull requests e issues no GitHub, GitLab e Bitbucket.
+mcp:
+  name: gk-cli
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@gitkraken/gk"
+origin:
+  list: mcp-registry
+  ref: com.gitkraken/gk-cli

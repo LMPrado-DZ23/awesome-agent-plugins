@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: mcp-server-chart
+name: antvis/mcp-server-chart
+title: AntV chart generation
+url: https://github.com/antvis/mcp-server-chart
+type: mcp-server
+category: tools
+license: MIT
+tags:
+  - charts
+  - visualization
+description:
+  en: Generates charts using the AntV visualization library; needs a SERVICE_ID.
+  pt: Gera gráficos usando a biblioteca de visualização AntV; exige um SERVICE_ID.
+mcp:
+  name: mcp-server-chart
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@antv/mcp-server-chart"
+    env:
+      SERVICE_ID: <SERVICE_ID>
+alternatives:
+  - name: Semiotic
+    url: https://github.com/nteract/semiotic
+    adds:
+      en: "Verified React chart generation: select, validate, repair, render, and inspect charts."
+      pt: "Geração verificada de gráficos React: seleciona, valida, corrige, renderiza e inspeciona gráficos."
+origin:
+  list: mcp-registry
+  ref: io.github.antvis/mcp-server-chart

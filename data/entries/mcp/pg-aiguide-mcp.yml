@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: pg-aiguide-mcp
+name: timescale/pg-aiguide
+title: PostgreSQL docs and best practices
+url: https://github.com/timescale/pg-aiguide
+type: mcp-server
+category: docs
+license: Apache-2.0
+tags:
+  - postgresql
+  - docs
+description:
+  en: >-
+    Comprehensive PostgreSQL documentation and best practices, including ecosystem tools; needs an OPENAI_API_KEY and PG
+    connection settings.
+  pt: >-
+    Documentação e boas práticas abrangentes de PostgreSQL, incluindo ferramentas do ecossistema; exige OPENAI_API_KEY e
+    parâmetros de conexão PG.
+mcp:
+  name: pg-aiguide
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@tigerdata/pg-aiguide"
+    env:
+      OPENAI_API_KEY: <OPENAI_API_KEY>
+      PGHOST: <PGHOST>
+      PGPORT: <PGPORT>
+      PGUSER: <PGUSER>
+      PGPASSWORD: <PGPASSWORD>
+      PGDATABASE: <PGDATABASE>
+      DB_SCHEMA: <DB_SCHEMA>
+  http:
+    url: https://mcp.tigerdata.com/docs
+origin:
+  list: mcp-registry
+  ref: io.github.timescale/pg-aiguide

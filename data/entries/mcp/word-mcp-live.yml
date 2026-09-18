@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: word-mcp-live
+name: Word MCP Live
+title: Live Microsoft Word editing
+url: https://github.com/ykarapazar/word-mcp-live
+type: mcp-server
+category: integrations
+license: MIT
+tags:
+  - word
+  - office
+description:
+  en: Live Microsoft Word editing with tracked changes, undo, and comments, across 40+ tools.
+  pt: Edição do Microsoft Word ao vivo, com controle de alterações, desfazer e comentários, em mais de 40 ferramentas.
+mcp:
+  name: word-mcp-live
+  stdio:
+    command: uvx
+    args:
+      - word-mcp-live
+origin:
+  list: mcp-registry
+  ref: io.github.ykarapazar/word-mcp-live

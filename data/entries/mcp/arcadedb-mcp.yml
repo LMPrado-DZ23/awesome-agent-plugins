@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: arcadedb-mcp
+name: ArcadeDB MCP Server
+title: Multi-model database access
+url: https://github.com/ArcadeData/arcadedb
+type: mcp-server
+category: cloud
+license: Apache-2.0
+tags:
+  - database
+  - graph
+description:
+  en: "Built-in server for ArcadeDB's multi-model database: graph, document, vector, and time-series."
+  pt: "Servidor embutido do banco multi-modelo ArcadeDB: grafo, documento, vetor e séries temporais."
+mcp:
+  name: mcp-server
+  stdio:
+    command: docker
+    args:
+      - run
+      - "-i"
+      - "--rm"
+      - docker.io/arcadedata/arcadedb:26.4.1-SNAPSHOT
+origin:
+  list: mcp-registry
+  ref: com.arcadedb/mcp-server

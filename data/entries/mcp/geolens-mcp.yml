@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: geolens-mcp
+name: GeoLens
+title: Self-hosted spatial data catalog
+url: https://github.com/geolens-io/geolens/tree/main/mcp
+type: mcp-server
+category: cloud
+license: Apache-2.0
+tags:
+  - geospatial
+  - database
+description:
+  en: >-
+    Read-only access to a self-hosted GeoLens spatial catalog: datasets, features, maps, and sandboxed SQL; needs a
+    GeoLens token.
+  pt: >-
+    Acesso somente leitura a um catálogo espacial GeoLens auto-hospedado: datasets, features, mapas e SQL isolado; exige
+    um token do GeoLens.
+mcp:
+  name: geolens
+  stdio:
+    command: uvx
+    args:
+      - geolens-mcp
+    env:
+      GEOLENS_INSTANCE: <GEOLENS_INSTANCE>
+      GEOLENS_API_KEY: <GEOLENS_API_KEY>
+      GEOLENS_TOKEN: <GEOLENS_TOKEN>
+origin:
+  list: mcp-registry
+  ref: io.github.geolens-io/geolens

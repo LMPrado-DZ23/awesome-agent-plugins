@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: mcp-server-neon
+name: Neon
+title: Neon serverless Postgres management
+url: https://github.com/neondatabase/mcp-server-neon
+type: mcp-server
+category: cloud
+license: MIT
+tags:
+  - postgres
+  - serverless
+description:
+  en: Official server for managing Neon projects and Lakebase Postgres databases; needs an Authorization token.
+  pt: Servidor oficial para gerenciar projetos Neon e bancos Postgres Lakebase; exige token de Authorization.
+mcp:
+  name: mcp
+  http:
+    url: https://mcp.neon.tech/mcp
+    headers:
+      Authorization: Bearer <API_TOKEN>
+origin:
+  list: mcp-registry
+  ref: com.neon/mcp

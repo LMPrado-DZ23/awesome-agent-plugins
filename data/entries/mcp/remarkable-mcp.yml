@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: remarkable-mcp
+name: reMarkable MCP Server
+title: reMarkable document management
+url: https://github.com/SamMorrowDrums/remarkable-mcp
+type: mcp-server
+category: integrations
+license: MIT
+tags:
+  - remarkable
+  - documents
+description:
+  en: Reads, renders, searches, and manages reMarkable tablet documents; needs a REMARKABLE_TOKEN.
+  pt: Lê, renderiza, busca e gerencia documentos do tablet reMarkable; exige REMARKABLE_TOKEN.
+mcp:
+  name: remarkable
+  stdio:
+    command: uvx
+    args:
+      - remarkable-mcp
+    env:
+      REMARKABLE_TOKEN: <REMARKABLE_TOKEN>
+origin:
+  list: mcp-registry
+  ref: io.github.SamMorrowDrums/remarkable

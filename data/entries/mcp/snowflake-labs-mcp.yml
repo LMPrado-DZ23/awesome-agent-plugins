@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: snowflake-labs-mcp
+name: OSS Snowflake MCP Server
+title: Snowflake data platform
+url: https://github.com/Snowflake-Labs/mcp
+type: mcp-server
+category: cloud
+license: Apache-2.0
+tags:
+  - snowflake
+  - data
+description:
+  en: Server for Snowflake from Snowflake Labs.
+  pt: Servidor para o Snowflake, da Snowflake Labs.
+mcp:
+  name: mcp
+  stdio:
+    command: uvx
+    args:
+      - snowflake-labs-mcp
+    env:
+      SNOWFLAKE_PASSWORD: <SNOWFLAKE_PASSWORD>
+      SNOWFLAKE_PRIVATE_KEY: <SNOWFLAKE_PRIVATE_KEY>
+origin:
+  list: mcp-registry
+  ref: io.github.Snowflake-Labs/mcp

@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: muvon-octocode-mcp
+name: Octocode
+title: Local semantic code indexer
+url: https://github.com/muvon/octocode
+type: mcp-server
+category: code-intel
+license: Apache-2.0
+tags:
+  - code-intel
+  - semantic-search
+description:
+  en: AI-powered code indexer for a local repository with semantic search and knowledge graphs.
+  pt: Indexador de código com IA para um repositório local, com busca semântica e grafos de conhecimento.
+mcp:
+  name: octocode
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@muvon/octocode"
+origin:
+  list: mcp-registry
+  ref: io.github.Muvon/octocode

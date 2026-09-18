@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: mcp-mcp-server-supabase
+name: Supabase
+title: Supabase platform management
+url: https://github.com/supabase/mcp/tree/main/packages/mcp-server-supabase
+type: mcp-server
+category: cloud
+license: Apache-2.0
+tags:
+  - supabase
+  - baas
+description:
+  en: Official server for interacting with the Supabase platform; needs a SUPABASE_ACCESS_TOKEN.
+  pt: Servidor oficial para interagir com a plataforma Supabase; exige SUPABASE_ACCESS_TOKEN.
+mcp:
+  name: mcp
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@supabase/mcp-server-supabase"
+    env:
+      SUPABASE_ACCESS_TOKEN: <SUPABASE_ACCESS_TOKEN>
+  http:
+    url: https://mcp.supabase.com/mcp
+origin:
+  list: mcp-registry
+  ref: com.supabase/mcp

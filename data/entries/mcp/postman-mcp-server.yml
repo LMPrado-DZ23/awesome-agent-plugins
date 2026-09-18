@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: postman-mcp-server
+name: Postman MCP Server
+title: Full Postman platform access
+url: https://github.com/postmanlabs/postman-mcp-server
+type: mcp-server
+category: dev
+license: Apache-2.0
+tags:
+  - postman
+  - api
+description:
+  en: Official server giving AI agents trusted access to the full Postman platform; needs a POSTMAN_API_KEY.
+  pt: Servidor oficial que dá a agentes de IA acesso confiável a toda a plataforma Postman; exige POSTMAN_API_KEY.
+mcp:
+  name: postman-mcp-server
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@postman/postman-mcp-server"
+    env:
+      POSTMAN_API_KEY: <POSTMAN_API_KEY>
+  http:
+    url: https://mcp.postman.com/mcp
+    headers:
+      Authorization: Bearer <API_TOKEN>
+origin:
+  list: mcp-registry
+  ref: com.postman/postman-mcp-server

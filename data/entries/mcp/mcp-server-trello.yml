@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: mcp-server-trello
+name: delorenj/mcp-server-trello
+title: Trello board management
+url: https://github.com/delorenj/mcp-server-trello
+type: mcp-server
+category: integrations
+license: MIT
+tags:
+  - trello
+  - project-management
+description:
+  en: Trello server with rate limiting, type safety, and comprehensive API integration; needs a TRELLO_API_KEY and token.
+  pt: >-
+    Servidor para o Trello, com limitação de taxa, tipagem segura e integração completa com a API; exige TRELLO_API_KEY
+    e token.
+mcp:
+  name: mcp-server-trello
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@delorenj/mcp-server-trello"
+    env:
+      TRELLO_API_KEY: <TRELLO_API_KEY>
+      TRELLO_TOKEN: <TRELLO_TOKEN>
+origin:
+  list: mcp-registry
+  ref: io.github.delorenj/mcp-server-trello

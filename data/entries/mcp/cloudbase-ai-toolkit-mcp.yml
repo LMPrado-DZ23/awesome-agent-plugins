@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: cloudbase-ai-toolkit-mcp
+name: CloudBase
+title: Tencent CloudBase management
+url: https://github.com/TencentCloudBase/CloudBase-AI-Toolkit/tree/main/mcp
+type: mcp-server
+category: cloud
+license: MIT
+tags:
+  - tencent
+  - baas
+description:
+  en: Official Tencent CloudBase server for database, functions, storage, and hosting.
+  pt: Servidor oficial do CloudBase da Tencent para banco de dados, funções, storage e hospedagem.
+mcp:
+  name: cloudbase-mcp
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@cloudbase/cloudbase-mcp"
+origin:
+  list: mcp-registry
+  ref: io.github.TencentCloudBase/cloudbase-mcp

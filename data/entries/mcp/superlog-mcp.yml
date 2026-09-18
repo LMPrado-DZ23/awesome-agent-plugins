@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: superlog-mcp
+name: Superlog
+title: Application observability agent
+url: https://github.com/superloglabs/superlog
+type: mcp-server
+category: cloud
+license: Apache-2.0
+tags:
+  - observability
+  - incidents
+description:
+  en: "Open-source agent that observes and helps fix an application: query logs, traces, metrics, and incidents."
+  pt: "Agente open-source que observa e ajuda a corrigir uma aplicação: consulta logs, traces, métricas e incidentes."
+mcp:
+  name: superlog
+  http:
+    url: https://api.superlog.sh/mcp
+origin:
+  list: mcp-registry
+  ref: sh.superlog/superlog

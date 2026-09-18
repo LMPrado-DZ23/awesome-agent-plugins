@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: packmind-mcp-server
+name: PackmindHub/packmind
+title: Org's technical decisions log
+url: https://github.com/PackmindHub/packmind/tree/main/apps/mcp-server
+type: mcp-server
+category: docs
+license: Apache-2.0
+tags:
+  - docs
+  - decisions
+description:
+  en: Captures, scales, and enforces an organization's technical decisions as a searchable reference.
+  pt: Captura, escala e reforça as decisões técnicas de uma organização como referência pesquisável.
+mcp:
+  name: mcp-server
+  http:
+    url: https://app.packmind.ai/mcp
+origin:
+  list: mcp-registry
+  ref: ai.packmind/mcp-server

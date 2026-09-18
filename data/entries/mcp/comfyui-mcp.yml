@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: comfyui-mcp
+name: artokun/comfyui-mcp
+title: ComfyUI workflow control
+url: https://github.com/artokun/comfyui-mcp
+type: mcp-server
+category: multimodal
+license: MIT
+tags:
+  - image-generation
+  - comfyui
+description:
+  en: "Server and Claude Code plugin for ComfyUI: run workflows, generate images, and manage models and VRAM."
+  pt: "Servidor e plugin de Claude Code para ComfyUI: roda workflows, gera imagens e gerencia modelos e VRAM."
+mcp:
+  name: comfyui-mcp
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - comfyui-mcp
+origin:
+  list: mcp-registry
+  ref: io.github.artokun/comfyui-mcp

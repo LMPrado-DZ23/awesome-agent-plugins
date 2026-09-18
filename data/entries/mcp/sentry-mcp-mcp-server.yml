@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: sentry-mcp-mcp-server
+name: getsentry/sentry-mcp
+title: Sentry error monitoring
+url: https://github.com/getsentry/sentry-mcp/tree/main/packages/mcp-server
+type: mcp-server
+category: dev
+license: null
+tags:
+  - sentry
+  - debugging
+description:
+  en: Error monitoring, issue tracking, and debugging for AI assistants via Sentry; needs a SENTRY_ACCESS_TOKEN.
+  pt: >-
+    Monitoramento de erros, rastreamento de issues e depuração para assistentes de IA via Sentry; exige
+    SENTRY_ACCESS_TOKEN.
+mcp:
+  name: sentry-mcp
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@sentry/mcp-server"
+    env:
+      SENTRY_ACCESS_TOKEN: <SENTRY_ACCESS_TOKEN>
+origin:
+  list: mcp-registry
+  ref: io.github.getsentry/sentry-mcp

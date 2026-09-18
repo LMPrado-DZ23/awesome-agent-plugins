@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: apollo-mcp-server
+name: Apollo MCP Server
+title: Expose GraphQL operations as tools
+url: https://github.com/apollographql/apollo-mcp-server
+type: mcp-server
+category: dev
+license: MIT
+tags:
+  - graphql
+  - apollo
+description:
+  en: Official Apollo server that exposes GraphQL operations as tools for AI models.
+  pt: Servidor oficial da Apollo que expõe operações GraphQL como ferramentas para modelos de IA.
+mcp:
+  name: apollo-mcp-server
+  stdio:
+    command: docker
+    args:
+      - run
+      - "-i"
+      - "--rm"
+      - ghcr.io/apollographql/apollo-mcp-server:v1.19.0
+origin:
+  list: mcp-registry
+  ref: io.github.apollographql/apollo-mcp-server

@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: gitlab-mcp
+name: zereight/gitlab-mcp
+title: GitLab projects and merge requests
+url: https://github.com/zereight/gitlab-mcp
+type: mcp-server
+category: git
+license: MIT
+tags:
+  - gitlab
+  - git
+description:
+  en: >-
+    GitLab server for projects, merge requests, issues, pipelines, wikis, and releases; needs a
+    GITLAB_PERSONAL_ACCESS_TOKEN.
+  pt: >-
+    Servidor GitLab para projetos, merge requests, issues, pipelines, wikis e releases; exige
+    GITLAB_PERSONAL_ACCESS_TOKEN.
+mcp:
+  name: gitlab-mcp
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@zereight/mcp-gitlab"
+    env:
+      GITLAB_PERSONAL_ACCESS_TOKEN: <GITLAB_PERSONAL_ACCESS_TOKEN>
+      GITLAB_JOB_TOKEN: <GITLAB_JOB_TOKEN>
+origin:
+  list: mcp-registry
+  ref: io.github.zereight/gitlab-mcp

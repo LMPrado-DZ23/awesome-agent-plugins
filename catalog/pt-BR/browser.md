@@ -14,7 +14,9 @@
 - [Fetch pages as clean readable text](#dsh-dsh-read-url) — Lê qualquer página da web extraindo apenas o conteúdo principal: detecção automática de charset (GBK/GB2312/UT…
 - [Headless browser acceptance testing](#dsh-dsh-verify) — Executa testes de aceitação independentes sobre entregas feitas pelo agente: recebe uma especificação em JSON …
 - [Control the Jiey Browser via MCP](#dsh-dsh-jiey-browser) — Controla o Jiey Browser a partir do DeepSeek Harness via MCP: navegar, capturar snapshots, agir sobre elemento…
+- [AI browser agent for web tasks](#browser-use-mcp) — Controla um navegador Chrome real para completar tarefas como preencher formulários, extrair dados e fazer res…
 - [Fetch (reference)](#mcp-fetch) — Servidor de referência que busca uma URL e converte a página em Markdown para o agente.
+- [Web search for AI agents](#brave-search-mcp-server) — Servidor oficial do Brave Search: resultados web, imagens, vídeos, rich results e resumos de IA; exige BRAVE_A…
 
 <a id="chrome-devtools-mcp"></a>
 
@@ -889,6 +891,194 @@ dsh plugin --profile web add github:jiewaigongxing/dsh-jiey-browser
 
 </details>
 
+<a id="browser-use-mcp"></a>
+
+### AI browser agent for web tasks
+
+[browser-use/browser-use](https://github.com/browser-use/browser-use) — `Servidor MCP` · Licença: MIT · Funciona com: Todos os clientes
+
+Controla um navegador Chrome real para completar tarefas como preencher formulários, extrair dados e fazer reservas.
+
+**Alternativas:**
+
+- [bytedance/UI-TARS-desktop/tree/main/packages/agent-infra/mcp-servers/browser](https://github.com/bytedance/UI-TARS-desktop/tree/main/packages/agent-infra/mcp-servers/browser) — Servidor de navegador do agent-infra UI-TARS (ByteDance) para o mesmo fluxo de clicar/digitar/extrair.
+- [AIHawk](https://github.com/feder-cr/AIHawk) — Navega, clica, digita e lê páginas reais a partir de instruções em linguagem natural.
+- [Skyvern](https://github.com/Skyvern-AI/skyvern) — Automação de navegador via nuvem; exige uma x-api-key.
+- [SeleniumBase MCP](https://github.com/seleniumbase/SeleniumBase) — Framework de automação e testes de navegador baseado em Selenium, com modo CDP.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio browser-use -- uvx browser-use
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add browser-use -- uvx browser-use
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add browser-use uvx browser-use
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "browser-use": {
+      "command": "uvx",
+      "args": [
+        "browser-use"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "browser-use": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "browser-use"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "browser-use": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "browser-use"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "browser-use": {
+      "command": "uvx",
+      "args": [
+        "browser-use"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "browser-use": {
+      "command": "uvx",
+      "args": [
+        "browser-use"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "browser-use": {
+      "source": "custom",
+      "command": "uvx",
+      "args": [
+        "browser-use"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  browser-use:
+    type: stdio
+    cmd: uvx
+    args: ["browser-use"]
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "browser-use": {
+      "command": "uvx",
+      "args": [
+        "browser-use"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "browser-use": {
+      "command": "uvx",
+      "args": [
+        "browser-use"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `browser-use.cordis.yml  →  dsh web --patch ./browser-use.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-browser-use
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: browser-use
+        transport: stdio
+        command: uvx
+        args: ["browser-use"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
 <a id="mcp-fetch"></a>
 
 ### Fetch (reference)
@@ -1091,6 +1281,228 @@ Pré-requisito: `Requires uv (https://docs.astral.sh/uv/).`
         command: uvx
         args: ["mcp-server-fetch"]
         env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="brave-search-mcp-server"></a>
+
+### Web search for AI agents
+
+[brave/brave-search-mcp-server](https://github.com/brave/brave-search-mcp-server) — `Servidor MCP` · Licença: MIT · Funciona com: Todos os clientes
+
+Servidor oficial do Brave Search: resultados web, imagens, vídeos, rich results e resumos de IA; exige BRAVE_API_KEY.
+
+**Alternativas:**
+
+- [tavily-ai/tavily-mcp](https://github.com/tavily-ai/tavily-mcp) — Servidor de busca web voltado a IA; exige TAVILY_API_KEY.
+- [SearXNG Search](https://github.com/ihor-sokoliuk/mcp-searxng) — Busca que preserva privacidade via instância própria do SearXNG, com paginação e leitura de URLs.
+- [spences10/mcp-omnisearch](https://github.com/spences10/mcp-omnisearch) — Combina múltiplos mecanismos de busca em um único servidor MCP.
+- [TinySuiteHQ/TinySearch](https://github.com/TinySuiteHQ/TinySearch) — Busca de descoberta autogerenciada para agentes; suporta cabeçalhos opcionais de exportação OpenTelemetry.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio brave-search-mcp-server --env BRAVE_API_KEY='<BRAVE_API_KEY>' -- npx -y @brave/brave-search-mcp-server
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add brave-search-mcp-server --env BRAVE_API_KEY='<BRAVE_API_KEY>' -- npx -y @brave/brave-search-mcp-server
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add -e BRAVE_API_KEY='<BRAVE_API_KEY>' brave-search-mcp-server npx -y @brave/brave-search-mcp-server
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "brave-search-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@brave/brave-search-mcp-server"
+      ],
+      "env": {
+        "BRAVE_API_KEY": "<BRAVE_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "brave-search-mcp-server": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@brave/brave-search-mcp-server"
+      ],
+      "env": {
+        "BRAVE_API_KEY": "<BRAVE_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "brave-search-mcp-server": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@brave/brave-search-mcp-server"
+      ],
+      "enabled": true,
+      "environment": {
+        "BRAVE_API_KEY": "<BRAVE_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "brave-search-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@brave/brave-search-mcp-server"
+      ],
+      "env": {
+        "BRAVE_API_KEY": "<BRAVE_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "brave-search-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@brave/brave-search-mcp-server"
+      ],
+      "env": {
+        "BRAVE_API_KEY": "<BRAVE_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "brave-search-mcp-server": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@brave/brave-search-mcp-server"
+      ],
+      "env": {
+        "BRAVE_API_KEY": "<BRAVE_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  brave-search-mcp-server:
+    type: stdio
+    cmd: npx
+    args: ["-y","@brave/brave-search-mcp-server"]
+    envs:
+      BRAVE_API_KEY: "<BRAVE_API_KEY>"
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "brave-search-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@brave/brave-search-mcp-server"
+      ],
+      "env": {
+        "BRAVE_API_KEY": "<BRAVE_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "brave-search-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@brave/brave-search-mcp-server"
+      ],
+      "env": {
+        "BRAVE_API_KEY": "<BRAVE_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `brave-search-mcp-server.cordis.yml  →  dsh web --patch ./brave-search-mcp-server.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-brave-search-mcp-server
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: brave-search-mcp-server
+        transport: stdio
+        command: npx
+        args: ["-y","@brave/brave-search-mcp-server"]
+        env: {"BRAVE_API_KEY":"<BRAVE_API_KEY>"}
         cwd: !!js process.cwd()
 ```
 

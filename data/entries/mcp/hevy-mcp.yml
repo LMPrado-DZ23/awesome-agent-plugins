@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: hevy-mcp
+name: Hevy MCP Server
+title: Hevy workout tracking
+url: https://github.com/chrisdoc/hevy-mcp
+type: mcp-server
+category: integrations
+license: MIT
+tags:
+  - fitness
+  - hevy
+description:
+  en: Manages workouts, routines, and exercise data through the Hevy API; needs a HEVY_API_KEY.
+  pt: Gerencia treinos, rotinas e dados de exercícios via a API do Hevy; exige HEVY_API_KEY.
+mcp:
+  name: hevy-mcp
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - hevy-mcp
+    env:
+      HEVY_API_KEY: <HEVY_API_KEY>
+origin:
+  list: mcp-registry
+  ref: io.github.chrisdoc/hevy-mcp

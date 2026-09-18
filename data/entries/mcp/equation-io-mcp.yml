@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: equation-io-mcp
+name: Equation.io
+title: Interactive equation graphing
+url: https://github.com/aantthony/equation.io
+type: mcp-server
+category: tools
+license: MIT
+tags:
+  - math
+  - visualization
+description:
+  en: Creates interactive 2D and 3D graphs from validated equations, with shareable links and PNG previews.
+  pt: Cria gráficos 2D e 3D interativos a partir de equações validadas, com links compartilháveis e prévias em PNG.
+mcp:
+  name: equation
+  http:
+    url: https://equation.io/mcp
+origin:
+  list: mcp-registry
+  ref: io.equation/equation

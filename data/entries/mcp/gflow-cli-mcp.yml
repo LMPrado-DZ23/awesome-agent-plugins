@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: gflow-cli-mcp
+name: gflow-cli
+title: Drive Google Flow video generation
+url: https://github.com/ffroliva/gflow-cli
+type: mcp-server
+category: multimodal
+license: MIT
+tags:
+  - google-flow
+  - video
+description:
+  en: Drives Google Flow from an agent for Veo video and Imagen image generation.
+  pt: Aciona o Google Flow a partir de um agente para gerar vídeos com Veo e imagens com Imagen.
+mcp:
+  name: gflow-cli
+  stdio:
+    command: uvx
+    args:
+      - gflow-cli
+origin:
+  list: mcp-registry
+  ref: io.github.ffroliva/gflow-cli

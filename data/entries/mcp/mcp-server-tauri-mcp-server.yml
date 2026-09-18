@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: mcp-server-tauri-mcp-server
+name: hypothesi/mcp-server-tauri
+title: Tauri v2 app development
+url: https://github.com/hypothesi/mcp-server-tauri/tree/main/packages/mcp-server
+type: mcp-server
+category: dev
+license: MIT
+tags:
+  - tauri
+  - desktop
+description:
+  en: Server for use with Tauri v2 desktop applications.
+  pt: Servidor para uso com aplicações desktop Tauri v2.
+mcp:
+  name: mcp-server-tauri
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@hypothesi/tauri-mcp-server"
+origin:
+  list: mcp-registry
+  ref: io.github.hypothesi/mcp-server-tauri

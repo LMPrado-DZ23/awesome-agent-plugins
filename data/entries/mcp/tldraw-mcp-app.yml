@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: tldraw-mcp-app
+name: tldraw/tldraw
+title: Collaborative drawing canvas
+url: https://github.com/tldraw/tldraw/tree/main/apps/mcp-app
+type: mcp-server
+category: tools
+license: null
+tags:
+  - diagram
+  - canvas
+  - collaboration
+description:
+  en: Draws and visually collaborates with agents on tldraw's shared canvas.
+  pt: Desenha e colabora visualmente com agentes na tela compartilhada do tldraw.
+mcp:
+  name: tldraw
+  http:
+    url: https://tldraw-mcp-app.tldraw.workers.dev/mcp
+origin:
+  list: mcp-registry
+  ref: io.github.tldraw/tldraw

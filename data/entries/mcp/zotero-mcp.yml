@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: zotero-mcp
+name: Zotero MCP
+title: Zotero research library access
+url: https://github.com/54yyyu/zotero-mcp
+type: mcp-server
+category: docs
+license: MIT
+tags:
+  - docs
+  - research
+  - zotero
+description:
+  en: Search, read, annotate, and add to a Zotero research library, local or web; needs a ZOTERO_API_KEY.
+  pt: Busca, leitura, anotação e adição de itens na biblioteca de pesquisa do Zotero, local ou web; exige ZOTERO_API_KEY.
+mcp:
+  name: zotero-mcp
+  stdio:
+    command: uvx
+    args:
+      - zotero-mcp-server
+    env:
+      ZOTERO_API_KEY: <ZOTERO_API_KEY>
+origin:
+  list: mcp-registry
+  ref: io.github.54yyyu/zotero-mcp

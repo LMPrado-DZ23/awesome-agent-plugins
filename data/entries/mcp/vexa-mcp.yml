@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: vexa-mcp
+name: Vexa
+title: Meeting bot and transcripts
+url: https://github.com/Vexa-ai/vexa
+type: mcp-server
+category: multimodal
+license: Apache-2.0
+tags:
+  - meetings
+  - transcription
+description:
+  en: >-
+    Meeting bot and transcripts for Google Meet, Teams, and Zoom, live or after the fact, with speakers labelled; needs
+    an Authorization token.
+  pt: >-
+    Bot de reunião e transcrições para Google Meet, Teams e Zoom, ao vivo ou depois, com falantes identificados; exige
+    token de Authorization.
+mcp:
+  name: vexa
+  http:
+    url: https://api.cloud.vexa.ai/mcp
+    headers:
+      Authorization: Bearer <API_TOKEN>
+alternatives:
+  - name: silverstein/minutes
+    url: https://github.com/silverstein/minutes
+    adds:
+      en: Private, self-owned conversation memory layer that records, transcribes, and searches every meeting.
+      pt: Camada privada e própria de memória de conversas que grava, transcreve e busca todas as reuniões.
+origin:
+  list: mcp-registry
+  ref: ai.vexa/vexa

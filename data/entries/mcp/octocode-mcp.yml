@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: octocode-mcp
+name: Octocode MCP - AI Context Platform
+title: GitHub code research platform
+url: https://github.com/bgauryy/octocode-mcp
+type: mcp-server
+category: code-intel
+license: MIT
+tags:
+  - code-intel
+  - github
+  - search
+description:
+  en: AI code research platform to search, analyze, and extract insights from any GitHub repository; needs a GITHUB_TOKEN.
+  pt: >-
+    Plataforma de pesquisa de código com IA para buscar, analisar e extrair informações de qualquer repositório do
+    GitHub; exige GITHUB_TOKEN.
+mcp:
+  name: octocode-mcp
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - octocode-mcp
+    env:
+      GITHUB_TOKEN: <GITHUB_TOKEN>
+origin:
+  list: mcp-registry
+  ref: io.github.bgauryy/octocode-mcp

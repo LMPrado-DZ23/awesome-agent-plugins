@@ -15,6 +15,9 @@
 - [Connect a GitHub account to DSH](#dsh-dsh-github-connector-github) — GitHub Device Flow connection plus an in-conversation PR workflow: a status bar above the composer for create/…
 - [Git (reference)](#mcp-git) — Reference server to read, search and manipulate local Git repositories (status, diff, log, commit, branch).
 - [Git branch graph in web GUI](#dsh-dsh-web-packages-dsh-git-graph) — Git branch selector and Git graph for the dsh web GUI: switch branches and explore branch-lane and commit hist…
+- [GitLab projects and merge requests](#gitlab-mcp) — GitLab server for projects, merge requests, issues, pipelines, wikis, and releases; needs a GITLAB_PERSONAL_AC…
+- [Manage repos across Git hosts](#gk-cli-mcp) — The GitKraken server for managing repos, pull requests, and issues across GitHub, GitLab, and Bitbucket.
+- [Native git operations](#git-mcp-server) — Comprehensive git server enabling native git tools including clone, commit, and worktree management.
 - [Pre-submit PR hygiene checks](#dsh-codex-guard-dsh) — Pre-submit pull-request hygiene checks inside DeepSeek Harness: scans the current diff for TODO leftovers, har…
 
 <a id="github-mcp-server"></a>
@@ -598,6 +601,608 @@ Git branch selector and Git graph for the dsh web GUI: switch branches and explo
 
 ```bash
 dsh plugin --profile web add github:zhu1090093659/dsh-web#path:/packages/dsh-git-graph
+```
+
+</details>
+
+<a id="gitlab-mcp"></a>
+
+### GitLab projects and merge requests
+
+[zereight/gitlab-mcp](https://github.com/zereight/gitlab-mcp) — `MCP server` · License: MIT · Works with: All clients
+
+GitLab server for projects, merge requests, issues, pipelines, wikis, and releases; needs a GITLAB_PERSONAL_ACCESS_TOKEN.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio gitlab-mcp --env GITLAB_PERSONAL_ACCESS_TOKEN='<GITLAB_PERSONAL_ACCESS_TOKEN>' --env GITLAB_JOB_TOKEN='<GITLAB_JOB_TOKEN>' -- npx -y @zereight/mcp-gitlab
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add gitlab-mcp --env GITLAB_PERSONAL_ACCESS_TOKEN='<GITLAB_PERSONAL_ACCESS_TOKEN>' --env GITLAB_JOB_TOKEN='<GITLAB_JOB_TOKEN>' -- npx -y @zereight/mcp-gitlab
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add -e GITLAB_PERSONAL_ACCESS_TOKEN='<GITLAB_PERSONAL_ACCESS_TOKEN>' -e GITLAB_JOB_TOKEN='<GITLAB_JOB_TOKEN>' gitlab-mcp npx -y @zereight/mcp-gitlab
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "gitlab-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@zereight/mcp-gitlab"
+      ],
+      "env": {
+        "GITLAB_PERSONAL_ACCESS_TOKEN": "<GITLAB_PERSONAL_ACCESS_TOKEN>",
+        "GITLAB_JOB_TOKEN": "<GITLAB_JOB_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "gitlab-mcp": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@zereight/mcp-gitlab"
+      ],
+      "env": {
+        "GITLAB_PERSONAL_ACCESS_TOKEN": "<GITLAB_PERSONAL_ACCESS_TOKEN>",
+        "GITLAB_JOB_TOKEN": "<GITLAB_JOB_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "gitlab-mcp": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@zereight/mcp-gitlab"
+      ],
+      "enabled": true,
+      "environment": {
+        "GITLAB_PERSONAL_ACCESS_TOKEN": "<GITLAB_PERSONAL_ACCESS_TOKEN>",
+        "GITLAB_JOB_TOKEN": "<GITLAB_JOB_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "gitlab-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@zereight/mcp-gitlab"
+      ],
+      "env": {
+        "GITLAB_PERSONAL_ACCESS_TOKEN": "<GITLAB_PERSONAL_ACCESS_TOKEN>",
+        "GITLAB_JOB_TOKEN": "<GITLAB_JOB_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "gitlab-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@zereight/mcp-gitlab"
+      ],
+      "env": {
+        "GITLAB_PERSONAL_ACCESS_TOKEN": "<GITLAB_PERSONAL_ACCESS_TOKEN>",
+        "GITLAB_JOB_TOKEN": "<GITLAB_JOB_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "gitlab-mcp": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@zereight/mcp-gitlab"
+      ],
+      "env": {
+        "GITLAB_PERSONAL_ACCESS_TOKEN": "<GITLAB_PERSONAL_ACCESS_TOKEN>",
+        "GITLAB_JOB_TOKEN": "<GITLAB_JOB_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  gitlab-mcp:
+    type: stdio
+    cmd: npx
+    args: ["-y","@zereight/mcp-gitlab"]
+    envs:
+      GITLAB_PERSONAL_ACCESS_TOKEN: "<GITLAB_PERSONAL_ACCESS_TOKEN>"
+      GITLAB_JOB_TOKEN: "<GITLAB_JOB_TOKEN>"
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "gitlab-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@zereight/mcp-gitlab"
+      ],
+      "env": {
+        "GITLAB_PERSONAL_ACCESS_TOKEN": "<GITLAB_PERSONAL_ACCESS_TOKEN>",
+        "GITLAB_JOB_TOKEN": "<GITLAB_JOB_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "gitlab-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@zereight/mcp-gitlab"
+      ],
+      "env": {
+        "GITLAB_PERSONAL_ACCESS_TOKEN": "<GITLAB_PERSONAL_ACCESS_TOKEN>",
+        "GITLAB_JOB_TOKEN": "<GITLAB_JOB_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `gitlab-mcp.cordis.yml  →  dsh web --patch ./gitlab-mcp.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-gitlab-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: gitlab-mcp
+        transport: stdio
+        command: npx
+        args: ["-y","@zereight/mcp-gitlab"]
+        env: {"GITLAB_PERSONAL_ACCESS_TOKEN":"<GITLAB_PERSONAL_ACCESS_TOKEN>","GITLAB_JOB_TOKEN":"<GITLAB_JOB_TOKEN>"}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="gk-cli-mcp"></a>
+
+### Manage repos across Git hosts
+
+[gitkraken/gk-cli](https://github.com/gitkraken/gk-cli) — `MCP server` · License: see repo · Works with: All clients
+
+The GitKraken server for managing repos, pull requests, and issues across GitHub, GitLab, and Bitbucket.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio gk-cli -- npx -y @gitkraken/gk
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add gk-cli -- npx -y @gitkraken/gk
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add gk-cli npx -y @gitkraken/gk
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "gk-cli": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@gitkraken/gk"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "gk-cli": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@gitkraken/gk"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "gk-cli": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@gitkraken/gk"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "gk-cli": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@gitkraken/gk"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "gk-cli": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@gitkraken/gk"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "gk-cli": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@gitkraken/gk"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  gk-cli:
+    type: stdio
+    cmd: npx
+    args: ["-y","@gitkraken/gk"]
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "gk-cli": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@gitkraken/gk"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "gk-cli": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@gitkraken/gk"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `gk-cli.cordis.yml  →  dsh web --patch ./gk-cli.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-gk-cli
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: gk-cli
+        transport: stdio
+        command: npx
+        args: ["-y","@gitkraken/gk"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="git-mcp-server"></a>
+
+### Native git operations
+
+[cyanheads/git-mcp-server](https://github.com/cyanheads/git-mcp-server) — `MCP server` · License: Apache-2.0 · Works with: All clients
+
+Comprehensive git server enabling native git tools including clone, commit, and worktree management.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio git-mcp-server -- npx -y @cyanheads/git-mcp-server
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add git-mcp-server -- npx -y @cyanheads/git-mcp-server
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add git-mcp-server npx -y @cyanheads/git-mcp-server
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "git-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@cyanheads/git-mcp-server"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "git-mcp-server": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@cyanheads/git-mcp-server"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "git-mcp-server": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@cyanheads/git-mcp-server"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "git-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@cyanheads/git-mcp-server"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "git-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@cyanheads/git-mcp-server"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "git-mcp-server": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@cyanheads/git-mcp-server"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  git-mcp-server:
+    type: stdio
+    cmd: npx
+    args: ["-y","@cyanheads/git-mcp-server"]
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "git-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@cyanheads/git-mcp-server"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "git-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@cyanheads/git-mcp-server"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `git-mcp-server.cordis.yml  →  dsh web --patch ./git-mcp-server.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-git-mcp-server
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: git-mcp-server
+        transport: stdio
+        command: npx
+        args: ["-y","@cyanheads/git-mcp-server"]
+        env: {}
+        cwd: !!js process.cwd()
 ```
 
 </details>

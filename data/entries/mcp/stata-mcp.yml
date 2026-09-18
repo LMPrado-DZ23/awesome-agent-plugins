@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: stata-mcp
+name: SepineTam/stata-mcp
+title: Stata regression analysis
+url: https://github.com/SepineTam/stata-mcp
+type: mcp-server
+category: tools
+license: AGPL-3.0
+tags:
+  - statistics
+  - stata
+description:
+  en: Lets an LLM help run regression analysis with Stata.
+  pt: Permite que um LLM ajude a rodar análises de regressão no Stata.
+mcp:
+  name: stata-mcp
+  stdio:
+    command: uvx
+    args:
+      - stata-mcp
+origin:
+  list: mcp-registry
+  ref: io.github.SepineTam/stata-mcp

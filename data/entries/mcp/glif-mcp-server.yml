@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: glif-mcp-server
+name: Glif
+title: Glif's media-generation agent
+url: https://github.com/glifxyz/glif-mcp-server
+type: mcp-server
+category: multimodal
+license: MIT
+tags:
+  - image-generation
+  - glif
+description:
+  en: Generates images, video, and audio with Glif's media-generation agent.
+  pt: Gera imagens, vídeo e áudio com o agente de geração de mídia do Glif.
+mcp:
+  name: glif
+  http:
+    url: https://glif.app/api/mcp
+origin:
+  list: mcp-registry
+  ref: app.glif/glif

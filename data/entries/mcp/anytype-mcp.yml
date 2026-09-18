@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: anytype-mcp
+name: anyproto/anytype-mcp
+title: Anytype encrypted wiki access
+url: https://github.com/anyproto/anytype-mcp
+type: mcp-server
+category: memory
+license: MIT
+tags:
+  - memory
+  - anytype
+  - notes
+description:
+  en: Official server for the Anytype API, an encrypted, local, and collaborative wiki; needs OPENAPI_MCP_HEADERS.
+  pt: Servidor oficial da API do Anytype, um wiki criptografado, local e colaborativo; exige OPENAPI_MCP_HEADERS.
+mcp:
+  name: anytype-mcp
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@anyproto/anytype-mcp"
+    env:
+      OPENAPI_MCP_HEADERS: <OPENAPI_MCP_HEADERS>
+origin:
+  list: mcp-registry
+  ref: io.github.anyproto/anytype-mcp

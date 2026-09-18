@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: edgartools-mcp
+name: EdgarTools
+title: SEC EDGAR filings toolkit
+url: https://github.com/dgunning/edgartools
+type: mcp-server
+category: integrations
+license: MIT
+tags:
+  - sec
+  - finance
+description:
+  en: Open-source SEC EDGAR toolkit with 11 tools and 7 prompts covering every filing type; no API key required.
+  pt: >-
+    Kit open-source para o SEC EDGAR, com 11 ferramentas e 7 prompts cobrindo todos os tipos de filing; não exige chave
+    de API.
+mcp:
+  name: edgartools
+  stdio:
+    command: uvx
+    args:
+      - edgartools
+    env:
+      EDGAR_IDENTITY: <EDGAR_IDENTITY>
+alternatives:
+  - name: stefanoamorelli/sec-edgar-mcp
+    url: https://github.com/stefanoamorelli/sec-edgar-mcp
+    adds:
+      en: Accesses US public filings through the SEC EDGAR API; needs a SEC_EDGAR_USER_AGENT header.
+      pt: Acessa filings públicos dos EUA via a API do SEC EDGAR; exige um cabeçalho SEC_EDGAR_USER_AGENT.
+origin:
+  list: mcp-registry
+  ref: io.github.dgunning/edgartools

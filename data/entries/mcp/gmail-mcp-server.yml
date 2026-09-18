@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: gmail-mcp-server
+name: ArtyMcLabin/Gmail-MCP-Server
+title: Lean Gmail access
+url: https://github.com/ArtyMcLabin/Gmail-MCP-Server
+type: mcp-server
+category: integrations
+license: MIT
+tags:
+  - gmail
+  - email
+description:
+  en: Lean Gmail server with automatic authentication support.
+  pt: Servidor enxuto para o Gmail, com suporte a autenticação automática.
+mcp:
+  name: gmail-mcp-server
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@artymclabin/gmail-mcp"
+origin:
+  list: mcp-registry
+  ref: io.github.ArtyMcLabin/Gmail-MCP-Server

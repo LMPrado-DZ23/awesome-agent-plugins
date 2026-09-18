@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: bernstein-mcp
+name: sipyourdrink-ltd/bernstein
+title: Governance layer for agent actions
+url: https://github.com/sipyourdrink-ltd/bernstein
+type: mcp-server
+category: security
+license: Apache-2.0
+tags:
+  - governance
+  - audit
+description:
+  en: Open-source governance layer for AI agents with byte-identical run receipts, 40+ adapters, and air-gap support.
+  pt: >-
+    Camada de governança open-source para agentes de IA, com recibos de execução bit a bit, mais de 40 adaptadores e
+    suporte a air-gap.
+mcp:
+  name: bernstein
+  stdio:
+    command: uvx
+    args:
+      - bernstein
+alternatives:
+  - name: Emilia Protocol
+    url: https://github.com/emiliaprotocol/emilia-protocol
+    adds:
+      en: Exact-action approval for consequential agent actions, with signed receipts; needs an EP_API_KEY.
+      pt: Aprovação de ações exatas para ações relevantes de agentes, com recibos assinados; exige EP_API_KEY.
+  - name: HOL Guard
+    url: https://github.com/hashgraph-online/hol-guard
+    adds:
+      en: Local-first security evidence and approval workflows for an agent's actions.
+      pt: Evidências de segurança e workflows de aprovação local-first para as ações de um agente.
+  - name: ucsandman/DashClaw/tree/main/mcp-server
+    url: https://github.com/ucsandman/DashClaw/tree/main/mcp-server
+    adds:
+      en: Policy checks, approvals, records, and governed HTTP capabilities for unattended agents.
+      pt: >-
+        Verificações de política, aprovações, registros e capacidades de HTTP governadas para agentes não
+        supervisionados.
+origin:
+  list: mcp-registry
+  ref: io.github.sipyourdrink-ltd/bernstein

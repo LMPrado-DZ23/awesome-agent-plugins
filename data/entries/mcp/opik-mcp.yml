@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: opik-mcp
+name: Opik MCP Server
+title: LLM app tracing and evaluation
+url: https://github.com/comet-ml/opik-mcp
+type: mcp-server
+category: dev
+license: Apache-2.0
+tags:
+  - observability
+  - llm
+description:
+  en: Interacts with Opik prompts, traces, datasets, and metrics for LLM application debugging; needs an OPIK_API_KEY.
+  pt: Interage com prompts, traces, datasets e métricas do Opik para depurar aplicações de LLM; exige OPIK_API_KEY.
+mcp:
+  name: opik-mcp
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - opik-mcp
+    env:
+      OPIK_API_KEY: <OPIK_API_KEY>
+origin:
+  list: mcp-registry
+  ref: io.github.comet-ml/opik-mcp

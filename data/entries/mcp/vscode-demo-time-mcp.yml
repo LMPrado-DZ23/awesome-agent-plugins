@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: vscode-demo-time-mcp
+name: estruyf/vscode-demo-time
+title: Build presentations with Demo Time
+url: https://github.com/estruyf/vscode-demo-time
+type: mcp-server
+category: tools
+license: null
+tags:
+  - presentations
+  - vscode
+description:
+  en: Lets AI assistants interact with the Demo Time VS Code extension to help build presentations and demos.
+  pt: >-
+    Permite que assistentes de IA interajam com a extensão Demo Time do VS Code para ajudar a montar apresentações e
+    demos.
+mcp:
+  name: vscode-demo-time
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@demotime/mcp"
+origin:
+  list: mcp-registry
+  ref: io.github.estruyf/vscode-demo-time

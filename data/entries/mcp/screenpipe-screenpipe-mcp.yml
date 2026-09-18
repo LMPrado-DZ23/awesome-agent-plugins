@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: screenpipe-screenpipe-mcp
+name: screenpipe
+title: Search local screen recordings
+url: https://github.com/screenpipe/screenpipe/tree/main/packages/screenpipe-mcp
+type: mcp-server
+category: multimodal
+license: null
+tags:
+  - screen-recording
+  - search
+description:
+  en: Searches local screen recordings, audio transcripts, and computer activity captured by screenpipe.
+  pt: Busca em gravações de tela locais, transcrições de áudio e atividade do computador capturadas pelo screenpipe.
+mcp:
+  name: screenpipe-mcp
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - screenpipe-mcp
+origin:
+  list: mcp-registry
+  ref: io.github.screenpipe/screenpipe-mcp

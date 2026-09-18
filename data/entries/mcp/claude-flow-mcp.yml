@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: claude-flow-mcp
+name: ruvnet/claude-flow
+title: Multi-agent orchestration with swarms
+url: https://github.com/ruvnet/claude-flow
+type: mcp-server
+category: workflow
+license: MIT
+tags:
+  - orchestration
+  - swarm
+description:
+  en: >-
+    AI orchestration with hive-mind swarms, neural networks, and 87 tools for enterprise development; needs
+    ANTHROPIC_API_KEY, GITHUB_TOKEN, and FLOW_NEXUS_API_KEY.
+  pt: >-
+    Orquestração de IA com enxames hive-mind, redes neurais e 87 ferramentas para desenvolvimento corporativo; exige
+    ANTHROPIC_API_KEY, GITHUB_TOKEN e FLOW_NEXUS_API_KEY.
+mcp:
+  name: claude-flow
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - claude-flow
+    env:
+      ANTHROPIC_API_KEY: <ANTHROPIC_API_KEY>
+      GITHUB_TOKEN: <GITHUB_TOKEN>
+      FLOW_NEXUS_API_KEY: <FLOW_NEXUS_API_KEY>
+alternatives:
+  - name: ruvnet/ruv-FANN/tree/main/ruv-swarm
+    url: https://github.com/ruvnet/ruv-FANN/tree/main/ruv-swarm
+    adds:
+      en: Neural network swarm orchestration with WebAssembly acceleration.
+      pt: Orquestração de enxames de redes neurais com aceleração WebAssembly.
+origin:
+  list: mcp-registry
+  ref: io.github.ruvnet/claude-flow

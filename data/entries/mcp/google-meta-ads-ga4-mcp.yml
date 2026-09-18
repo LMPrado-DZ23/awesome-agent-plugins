@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: google-meta-ads-ga4-mcp
+name: Google Ads + Meta Ads + GA4 MCP
+title: Google Ads, Meta Ads and GA4
+url: https://github.com/irinabuht12-oss/google-meta-ads-ga4-mcp
+type: mcp-server
+category: integrations
+license: MIT
+tags:
+  - ads
+  - analytics
+description:
+  en: 250+ tools for managing Google Ads, Meta Ads, and GA4 campaigns, creatives, audiences, and reports.
+  pt: Mais de 250 ferramentas para gerenciar campanhas, criativos, audiências e relatórios do Google Ads, Meta Ads e GA4.
+mcp:
+  name: google-meta-ads-ga4-mcp
+  http:
+    url: https://connector.get-ryze.ai/mcp
+alternatives:
+  - name: AdLoop
+    url: https://github.com/kLOsk/adloop
+    adds:
+      en: Manages Google Ads, GA4, and Tag Manager with a preview shown before every change.
+      pt: Gerencia Google Ads, GA4 e Tag Manager com uma prévia mostrada antes de cada alteração.
+  - name: surendranb/google-analytics-mcp
+    url: https://github.com/surendranb/google-analytics-mcp
+    adds:
+      en: GA4-specific server with schema discovery and server-side aggregation; needs GOOGLE_APPLICATION_CREDENTIALS.
+      pt: >-
+        Servidor específico para GA4, com descoberta de schema e agregação no servidor; exige
+        GOOGLE_APPLICATION_CREDENTIALS.
+origin:
+  list: mcp-registry
+  ref: io.github.irinabuht12-oss/google-meta-ads-ga4-mcp

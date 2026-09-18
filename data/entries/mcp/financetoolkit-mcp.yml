@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: financetoolkit-mcp
+name: Finance Toolkit
+title: 200+ financial metrics
+url: https://github.com/JerBouma/FinanceToolkit
+type: mcp-server
+category: integrations
+license: MIT
+tags:
+  - finance
+  - data
+description:
+  en: >-
+    Calculates 200+ transparent financial metrics from raw statements rather than third-party endpoints; needs a
+    FINANCIAL_MODELING_PREP_API_KEY.
+  pt: >-
+    Calcula mais de 200 métricas financeiras transparentes a partir de demonstrações brutas, sem depender de endpoints
+    de terceiros; exige FINANCIAL_MODELING_PREP_API_KEY.
+mcp:
+  name: financetoolkit
+  stdio:
+    command: uvx
+    args:
+      - financetoolkit
+    env:
+      FINANCIAL_MODELING_PREP_API_KEY: <FINANCIAL_MODELING_PREP_API_KEY>
+  http:
+    url: https://financetoolkit.jeroenbouma.com/mcp
+origin:
+  list: mcp-registry
+  ref: io.github.JerBouma/financetoolkit

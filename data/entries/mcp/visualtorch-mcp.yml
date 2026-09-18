@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: visualtorch-mcp
+name: VisualTorch
+title: PyTorch architecture diagrams
+url: https://github.com/willyfh/visualtorch
+type: mcp-server
+category: tools
+license: MIT
+tags:
+  - pytorch
+  - visualization
+description:
+  en: Renders PyTorch model architecture diagrams and animated GIF reveals from a trusted model source.
+  pt: >-
+    Renderiza diagramas de arquitetura de modelos PyTorch e revelações em GIF animado a partir de uma fonte de modelo
+    confiável.
+mcp:
+  name: visualtorch
+  stdio:
+    command: uvx
+    args:
+      - visualtorch
+origin:
+  list: mcp-registry
+  ref: io.github.willyfh/visualtorch

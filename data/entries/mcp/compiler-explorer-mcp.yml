@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: compiler-explorer-mcp
+name: Compiler Explorer
+title: Compile code and inspect assembly
+url: https://github.com/compiler-explorer/compiler-explorer
+type: mcp-server
+category: dev
+license: BSD-2-Clause
+tags:
+  - compiler
+  - assembly
+description:
+  en: Compiles code with thousands of compilers, inspects the generated assembly, and shares godbolt.org links.
+  pt: Compila código com milhares de compiladores, inspeciona o assembly gerado e compartilha links do godbolt.org.
+mcp:
+  name: compiler-explorer
+  http:
+    url: https://godbolt.org/mcp
+origin:
+  list: mcp-registry
+  ref: io.github.compiler-explorer/compiler-explorer

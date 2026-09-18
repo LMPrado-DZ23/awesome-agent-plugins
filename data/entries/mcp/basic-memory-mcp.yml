@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: basic-memory-mcp
+name: basicmachines-co/basic-memory
+title: Markdown knowledge base for agents
+url: https://github.com/basicmachines-co/basic-memory
+type: mcp-server
+category: memory
+license: AGPL-3.0
+tags:
+  - memory
+  - markdown
+description:
+  en: Local-first knowledge management with bi-directional sync between an LLM and Markdown files.
+  pt: Gestão de conhecimento local-first com sincronização bidirecional entre um LLM e arquivos Markdown.
+mcp:
+  name: basic-memory
+  stdio:
+    command: uvx
+    args:
+      - basic-memory
+origin:
+  list: mcp-registry
+  ref: io.github.basicmachines-co/basic-memory

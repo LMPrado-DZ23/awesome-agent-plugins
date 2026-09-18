@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: posthog-mcp
+name: PostHog MCP Server
+title: PostHog product analytics
+url: https://github.com/PostHog/posthog/tree/main/services/mcp
+type: mcp-server
+category: integrations
+license: null
+tags:
+  - analytics
+  - posthog
+description:
+  en: Official PostHog server for product analytics, feature flags, and experiments; needs an Authorization token.
+  pt: Servidor oficial do PostHog para analytics de produto, feature flags e experimentos; exige token de Authorization.
+mcp:
+  name: mcp
+  http:
+    url: https://mcp.posthog.com/mcp
+    headers:
+      Authorization: Bearer <API_TOKEN>
+origin:
+  list: mcp-registry
+  ref: io.github.PostHog/mcp

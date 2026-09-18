@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: atomic-mail-agentic-mcp
+name: Atomic Mail
+title: Programmable inbox for agents
+url: https://github.com/Atomic-Mail/atomic-mail-agentic
+type: mcp-server
+category: integrations
+license: MIT
+tags:
+  - email
+description:
+  en: Programmable email inbox for AI agents over JMAP with proof-of-work authentication; needs an ATOMIC_MAIL_API_KEY.
+  pt: >-
+    Caixa de e-mail programável para agentes de IA via JMAP com autenticação por prova de trabalho; exige
+    ATOMIC_MAIL_API_KEY.
+mcp:
+  name: mcp
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@atomicmail/mcp-modelcontextprotocol"
+    env:
+      ATOMIC_MAIL_API_KEY: <ATOMIC_MAIL_API_KEY>
+  http:
+    url: https://mcp.atomicmail.ai/mcp
+alternatives:
+  - name: agenticmail/agenticmail/tree/main/packages/mcp
+    url: https://github.com/agenticmail/agenticmail/tree/main/packages/mcp
+    adds:
+      en: Real email and SMS for agents, including receiving verification codes; needs an AGENTICMAIL_API_KEY.
+      pt: E-mail e SMS reais para agentes, incluindo o recebimento de códigos de verificação; exige AGENTICMAIL_API_KEY.
+origin:
+  list: mcp-registry
+  ref: io.github.Atomic-Mail/mcp

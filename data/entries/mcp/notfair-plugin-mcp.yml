@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: notfair-plugin-mcp
+name: NotFair
+title: OAuth for many marketing platforms
+url: https://github.com/nowork-studio/notfair-plugin
+type: mcp-server
+category: integrations
+license: MIT
+tags:
+  - oauth
+  - marketing
+description:
+  en: OAuth server for Google, Meta, X, LinkedIn, Reddit, TikTok, Google Search Console, GA4, WordPress, and GoHighLevel.
+  pt: Servidor OAuth para Google, Meta, X, LinkedIn, Reddit, TikTok, Google Search Console, GA4, WordPress e GoHighLevel.
+mcp:
+  name: notfair
+  http:
+    url: https://notfair.co/api/mcp/notfair
+alternatives:
+  - name: NotFair-MetaAds
+    url: https://github.com/nowork-studio/toprank
+    adds:
+      en: Dedicated Meta Ads (Facebook and Instagram) server to analyze performance, manage budgets, and pause campaigns.
+      pt: >-
+        Servidor dedicado ao Meta Ads (Facebook e Instagram) para analisar performance, gerenciar orçamentos e pausar
+        campanhas.
+origin:
+  list: mcp-registry
+  ref: io.github.nowork-studio/notfair

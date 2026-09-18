@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: proxmoxmcp-plus
+name: ProxmoxMCP-Plus
+title: Proxmox VE management
+url: https://github.com/RekklesNA/ProxmoxMCP-Plus
+type: mcp-server
+category: cloud
+license: MIT
+tags:
+  - proxmox
+  - virtualization
+description:
+  en: Manages Proxmox VE VMs, LXCs, snapshots, backups, storage, and cluster operations.
+  pt: Gerencia VMs, LXCs, snapshots, backups, storage e operações de cluster no Proxmox VE.
+mcp:
+  name: proxmox-mcp-plus
+  stdio:
+    command: uvx
+    args:
+      - proxmox-mcp-plus
+    env:
+      PROXMOX_HOST: <PROXMOX_HOST>
+      PROXMOX_USER: <PROXMOX_USER>
+      PROXMOX_TOKEN_NAME: <PROXMOX_TOKEN_NAME>
+      PROXMOX_TOKEN_VALUE: <PROXMOX_TOKEN_VALUE>
+origin:
+  list: mcp-registry
+  ref: io.github.RekklesNA/proxmox-mcp-plus

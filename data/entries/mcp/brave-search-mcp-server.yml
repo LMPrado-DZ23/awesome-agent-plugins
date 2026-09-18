@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: brave-search-mcp-server
+name: brave/brave-search-mcp-server
+title: Web search for AI agents
+url: https://github.com/brave/brave-search-mcp-server
+type: mcp-server
+category: browser
+license: MIT
+tags:
+  - search
+  - web
+  - browser
+description:
+  en: "Brave Search official server: web results, images, videos, rich results, and AI summaries; needs a BRAVE_API_KEY."
+  pt: >-
+    Servidor oficial do Brave Search: resultados web, imagens, vídeos, rich results e resumos de IA; exige
+    BRAVE_API_KEY.
+mcp:
+  name: brave-search-mcp-server
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@brave/brave-search-mcp-server"
+    env:
+      BRAVE_API_KEY: <BRAVE_API_KEY>
+alternatives:
+  - name: tavily-ai/tavily-mcp
+    url: https://github.com/tavily-ai/tavily-mcp
+    adds:
+      en: AI-oriented web search server; needs a TAVILY_API_KEY.
+      pt: Servidor de busca web voltado a IA; exige TAVILY_API_KEY.
+  - name: SearXNG Search
+    url: https://github.com/ihor-sokoliuk/mcp-searxng
+    adds:
+      en: Privacy-respecting search via a self-hosted SearXNG instance, with pagination and URL reading.
+      pt: Busca que preserva privacidade via instância própria do SearXNG, com paginação e leitura de URLs.
+  - name: spences10/mcp-omnisearch
+    url: https://github.com/spences10/mcp-omnisearch
+    adds:
+      en: Combines multiple search backends behind one MCP server.
+      pt: Combina múltiplos mecanismos de busca em um único servidor MCP.
+  - name: TinySuiteHQ/TinySearch
+    url: https://github.com/TinySuiteHQ/TinySearch
+    adds:
+      en: Self-hosted discovery search for agents; supports optional OpenTelemetry export headers.
+      pt: Busca de descoberta autogerenciada para agentes; suporta cabeçalhos opcionais de exportação OpenTelemetry.
+origin:
+  list: mcp-registry
+  ref: io.github.brave/brave-search-mcp-server

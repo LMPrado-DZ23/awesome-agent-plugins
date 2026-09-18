@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: powerbi-modeling-mcp
+name: Power BI Modeling MCP Server
+title: Power BI semantic modeling
+url: https://github.com/microsoft/powerbi-modeling-mcp
+type: mcp-server
+category: integrations
+license: MIT
+tags:
+  - power-bi
+description:
+  en: Official server bringing Power BI semantic modeling capabilities to AI agents.
+  pt: Servidor oficial que traz recursos de modelagem semântica do Power BI para agentes de IA.
+mcp:
+  name: powerbi-modeling-mcp
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@microsoft/powerbi-modeling-mcp"
+alternatives:
+  - name: SemanticOps MCP (for Power BI)
+    url: https://github.com/maxanatsko/mcp-engine-public
+    adds:
+      en: Unofficial Power BI server that also supports macOS.
+      pt: Servidor não oficial para Power BI que também roda em macOS.
+origin:
+  list: mcp-registry
+  ref: com.microsoft/powerbi-modeling-mcp

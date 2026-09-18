@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: openosint-mcp
+name: OpenOSINT
+title: OSINT recon agent
+url: https://github.com/OpenOSINT/OpenOSINT
+type: mcp-server
+category: security
+license: MIT
+tags:
+  - osint
+  - security
+description:
+  en: >-
+    AI-powered OSINT agent with 16 tools: email, breach, IP, WHOIS, DNS, Shodan, and GitHub lookups; needs several OSINT
+    provider keys.
+  pt: >-
+    Agente de OSINT com IA e 16 ferramentas: e-mail, vazamentos, IP, WHOIS, DNS, Shodan e GitHub; exige várias chaves de
+    provedores de OSINT.
+mcp:
+  name: openosint
+  stdio:
+    command: uvx
+    args:
+      - openosint
+    env:
+      ANTHROPIC_API_KEY: <ANTHROPIC_API_KEY>
+      HIBP_API_KEY: <HIBP_API_KEY>
+      IPINFO_TOKEN: <IPINFO_TOKEN>
+      IP2LOCATION_API_KEY: <IP2LOCATION_API_KEY>
+      ABUSEIPDB_API_KEY: <ABUSEIPDB_API_KEY>
+origin:
+  list: mcp-registry
+  ref: io.github.OpenOSINT/openosint

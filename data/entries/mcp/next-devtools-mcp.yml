@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: next-devtools-mcp
+name: vercel/next-devtools-mcp
+title: Next.js development tools
+url: https://github.com/vercel/next-devtools-mcp
+type: mcp-server
+category: dev
+license: null
+tags:
+  - nextjs
+  - devtools
+description:
+  en: Next.js development tools server with stdio transport.
+  pt: Servidor de ferramentas de desenvolvimento do Next.js com transporte stdio.
+mcp:
+  name: next-devtools-mcp
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - next-devtools-mcp
+origin:
+  list: mcp-registry
+  ref: io.github.vercel/next-devtools-mcp

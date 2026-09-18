@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: vet-mcp
+name: SafeDep Vet MCP
+title: Protect agents from malicious packages
+url: https://github.com/safedep/vet
+type: mcp-server
+category: security
+license: Apache-2.0
+tags:
+  - supply-chain
+  - security
+description:
+  en: Protects AI agents and IDEs from malicious open-source packages.
+  pt: Protege agentes de IA e IDEs contra pacotes open-source maliciosos.
+mcp:
+  name: vet-mcp
+  stdio:
+    command: docker
+    args:
+      - run
+      - "-i"
+      - "--rm"
+      - ghcr.io/safedep/vet:v1.19.1
+origin:
+  list: mcp-registry
+  ref: io.github.safedep/vet-mcp

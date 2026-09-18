@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: agent-safe-pipeline-commerce-mcp
+name: Decionis CommerceGate MCP
+title: Commerce preflight checks
+url: https://github.com/decionis/agent-safe-pipeline/tree/main/packages/commerce-mcp
+type: mcp-server
+category: integrations
+license: Apache-2.0
+tags:
+  - commerce
+  - compliance
+description:
+  en: >-
+    Commerce preflights, D365 authorization, and signed evidence and reports, with no marketplace or ERP writes; needs a
+    DECIONIS_API_KEY.
+  pt: >-
+    Verificações prévias de comércio, autorização D365 e evidências e relatórios assinados, sem escritas em marketplace
+    ou ERP; exige DECIONIS_API_KEY.
+mcp:
+  name: commerce-gate
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@decionis/commerce"
+    env:
+      DECIONIS_API_KEY: <DECIONIS_API_KEY>
+origin:
+  list: mcp-registry
+  ref: com.decionis/commerce-gate

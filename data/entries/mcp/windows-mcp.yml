@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: windows-mcp
+name: CursorTouch/Windows-MCP
+title: Computer-use automation for Windows
+url: https://github.com/CursorTouch/Windows-MCP
+type: mcp-server
+category: remote
+license: MIT
+tags:
+  - windows
+  - computer-use
+description:
+  en: A server for computer-use style automation on Windows OS.
+  pt: Um servidor para automação estilo computer-use no Windows.
+mcp:
+  name: windows-mcp
+  stdio:
+    command: uvx
+    args:
+      - windows-mcp
+alternatives:
+  - name: Ui.Vision MCP
+    url: https://github.com/A9T9/RPA/tree/main/mcp
+    adds:
+      en: Browser and desktop RPA automation with OCR, image recognition, and real mouse and keyboard input.
+      pt: Automação RPA de navegador e desktop com OCR, reconhecimento de imagem e controle real de mouse e teclado.
+  - name: Computer Use
+    url: https://github.com/domdomegg/computer-use-mcp
+    adds:
+      en: Generic, cross-platform computer control via screenshots, mouse, and keyboard.
+      pt: Controle de computador genérico e multiplataforma via capturas de tela, mouse e teclado.
+  - name: jfarcand/mirroir-mcp
+    url: https://github.com/jfarcand/mirroir-mcp
+    adds:
+      en: "Controls a real iPhone through macOS iPhone Mirroring: screenshot, tap, swipe, and type."
+      pt: "Controla um iPhone real via o iPhone Mirroring do macOS: captura de tela, toque, deslize e digitação."
+origin:
+  list: mcp-registry
+  ref: io.github.CursorTouch/Windows-MCP

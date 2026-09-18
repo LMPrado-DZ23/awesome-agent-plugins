@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: mcp-flutter-mcp-server-dart
+name: Flutter MCP Toolkit
+title: Inspect and drive Flutter apps
+url: https://github.com/Arenukvern/mcp_flutter/tree/main/mcp_server_dart
+type: mcp-server
+category: dev
+license: MIT
+tags:
+  - flutter
+  - debugging
+description:
+  en: Inspects and drives Flutter debug apps and games with semantic snapshots, search, and custom client tools.
+  pt: Inspeciona e controla apps e jogos Flutter em modo debug com snapshots semânticos, busca e ferramentas customizadas.
+mcp:
+  name: flutter-mcp-toolkit
+  stdio:
+    command: docker
+    args:
+      - run
+      - "-i"
+      - "--rm"
+      - ghcr.io/arenukvern/flutter-mcp-toolkit:5.1.0
+origin:
+  list: mcp-registry
+  ref: io.github.Arenukvern/flutter-mcp-toolkit

@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: haiku-rag-mcp
+name: haiku.rag
+title: Local-first agentic RAG
+url: https://github.com/ggozad/haiku.rag
+type: mcp-server
+category: memory
+license: MIT
+tags:
+  - memory
+  - rag
+description:
+  en: "Local-first agentic RAG with citations: hybrid search, reranking, and multimodal document retrieval."
+  pt: "RAG agêntico local-first com citações: busca híbrida, reranking e recuperação de documentos multimodal."
+mcp:
+  name: haiku-rag
+  stdio:
+    command: uvx
+    args:
+      - haiku-rag
+origin:
+  list: mcp-registry
+  ref: io.github.ggozad/haiku-rag

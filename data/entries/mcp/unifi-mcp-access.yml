@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: unifi-mcp-access
+name: UniFi Access MCP
+title: UniFi Access door control
+url: https://github.com/sirkirby/unifi-mcp/tree/main/apps/access
+type: mcp-server
+category: integrations
+license: MIT
+tags:
+  - unifi
+  - access-control
+description:
+  en: Manages UniFi Access doors, credentials, policies, visitors, and events; needs UniFi host and credentials.
+  pt: Gerencia portas, credenciais, políticas, visitantes e eventos do UniFi Access; exige host e credenciais do UniFi.
+mcp:
+  name: unifi-access-mcp
+  stdio:
+    command: uvx
+    args:
+      - unifi-access-mcp
+    env:
+      UNIFI_HOST: <UNIFI_HOST>
+      UNIFI_USERNAME: <UNIFI_USERNAME>
+      UNIFI_PASSWORD: <UNIFI_PASSWORD>
+      UNIFI_API_KEY: <UNIFI_API_KEY>
+alternatives:
+  - name: enuno/unifi-mcp-server
+    url: https://github.com/enuno/unifi-mcp-server
+    adds:
+      en: General UniFi network management via the official UniFi API.
+      pt: Gestão geral da rede UniFi via a API oficial do UniFi.
+origin:
+  list: mcp-registry
+  ref: io.github.sirkirby/unifi-access-mcp

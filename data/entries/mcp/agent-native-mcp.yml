@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: agent-native-mcp
+name: Agent-Native Analytics
+title: Agent-native product analytics
+url: https://github.com/BuilderIO/agent-native
+type: mcp-server
+category: integrations
+license: null
+tags:
+  - analytics
+description:
+  en: "Agent-native analytics similar to Amplitude/Mixpanel: connects data sources and generates charts from prompts."
+  pt: "Analytics agent-native similar a Amplitude/Mixpanel: conecta fontes de dados e gera gráficos a partir de prompts."
+mcp:
+  name: agent-native-analytics
+  http:
+    url: https://analytics.agent-native.com/mcp
+origin:
+  list: mcp-registry
+  ref: io.github.BuilderIO/agent-native-analytics

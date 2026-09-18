@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: elasticsearch-mcp-server
+name: cr7258/elasticsearch-mcp-server
+title: Elasticsearch queries
+url: https://github.com/cr7258/elasticsearch-mcp-server
+type: mcp-server
+category: cloud
+license: Apache-2.0
+tags:
+  - elasticsearch
+  - search
+description:
+  en: Interacts with Elasticsearch for search and analytics; needs an ELASTICSEARCH_API_KEY or password.
+  pt: Interage com o Elasticsearch para busca e analytics; exige ELASTICSEARCH_API_KEY ou senha.
+mcp:
+  name: elasticsearch-mcp-server
+  stdio:
+    command: uvx
+    args:
+      - elasticsearch-mcp-server
+    env:
+      ELASTICSEARCH_API_KEY: <ELASTICSEARCH_API_KEY>
+      ELASTICSEARCH_PASSWORD: <ELASTICSEARCH_PASSWORD>
+origin:
+  list: mcp-registry
+  ref: io.github.cr7258/elasticsearch-mcp-server

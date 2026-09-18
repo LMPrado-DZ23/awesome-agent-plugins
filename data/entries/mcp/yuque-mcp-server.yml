@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: yuque-mcp-server
+name: yuque/yuque-mcp-server
+title: Yuque knowledge base access
+url: https://github.com/yuque/yuque-mcp-server
+type: mcp-server
+category: docs
+license: MIT
+tags:
+  - docs
+  - knowledge-base
+description:
+  en: Exposes a Yuque knowledge base to AI assistants; needs a Yuque personal, group, or general token.
+  pt: Expõe uma base de conhecimento do Yuque a assistentes de IA; exige um token pessoal, de grupo ou geral do Yuque.
+mcp:
+  name: yuque-mcp
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - yuque-mcp
+    env:
+      YUQUE_PERSONAL_TOKEN: <YUQUE_PERSONAL_TOKEN>
+      YUQUE_GROUP_TOKEN: <YUQUE_GROUP_TOKEN>
+      YUQUE_TOKEN: <YUQUE_TOKEN>
+origin:
+  list: mcp-registry
+  ref: io.github.yuque/yuque-mcp

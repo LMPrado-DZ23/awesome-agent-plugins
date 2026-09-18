@@ -16,6 +16,17 @@
 - [Unified text/vision/image-gen routing](#dsh-dsh-vision-mix) — Roteia cada requisição para a modalidade certa dentro de um único modelo Mix: texto vai para o modelo de chat,…
 - [Voice dictation and read-aloud](#dsh-dsh-chatvoice) — Um ciclo de voz gratuito e completo para a Web UI: reconhecimento de fala do navegador para entrada por microf…
 - [Agent-initiated voice calls](#dsh-dsh-voice-call) — Permite que o agente ligue para o humano com uma ferramenta offer_call; se aceita, sintetiza e reproduz a fala…
+- [Adobe Photoshop automation](#photoshop-mcp) — 116 ferramentas para controlar o Adobe Photoshop, combinando ações de IA generativa com receitas, além de uma …
+- [ComfyUI workflow control](#comfyui-mcp) — Servidor e plugin de Claude Code para ComfyUI: roda workflows, gera imagens e gerencia modelos e VRAM.
+- [Drive Google Flow video generation](#gflow-cli-mcp) — Aciona o Google Flow a partir de um agente para gerar vídeos com Veo e imagens com Imagen.
+- [Gemini image generation and editing](#nanobanana-mcp-server) — Oferece geração e edição de imagens via Gemini; exige GEMINI_API_KEY.
+- [Glif's media-generation agent](#glif-mcp-server) — Gera imagens, vídeo e áudio com o agente de geração de mídia do Glif.
+- [Local video understanding](#claude-real-video-mcp) — Permite que um LLM assista a um vídeo localmente e busque em tudo que já assistiu.
+- [Meeting bot and transcripts](#vexa-mcp) — Bot de reunião e transcrições para Google Meet, Teams e Zoom, ao vivo ou depois, com falantes identificados; e…
+- [Natural voice conversations](#voicemode-mcp) — Conversas de voz naturais para assistentes de IA via speech-to-text e text-to-speech; exige OPENAI_API_KEY.
+- [On-device audio transcription](#funasr-mcp-server) — Transcreve áudio local com FunASR e SenseVoice usando inferência privada, no próprio dispositivo.
+- [Part-aware 3D generation](#nova3d-mcp) — Geração de 3D estruturada e ciente de partes para agentes: GLB com partes nomeadas, URL de prévia e script de …
+- [Search local screen recordings](#screenpipe-screenpipe-mcp) — Busca em gravações de tela locais, transcrições de áudio e atividade do computador capturadas pelo screenpipe.
 
 <a id="hyperframes-skills"></a>
 
@@ -331,6 +342,2128 @@ Permite que o agente ligue para o humano com uma ferramenta offer_call; se aceit
 
 ```bash
 dsh plugin --profile web add github:PandaPolo/dsh-voice-call
+```
+
+</details>
+
+<a id="photoshop-mcp"></a>
+
+### Adobe Photoshop automation
+
+[alisaitteke/photoshop-mcp](https://github.com/alisaitteke/photoshop-mcp) — `Servidor MCP` · Licença: MIT · Funciona com: Todos os clientes
+
+116 ferramentas para controlar o Adobe Photoshop, combinando ações de IA generativa com receitas, além de uma interface web própria.
+
+**Alternativas:**
+
+- [MCP for Adobe Premiere Pro](https://github.com/leancoderkavy/premiere-pro-mcp) — Servidor local-first para workflows suportados do Adobe Premiere Pro, começando com uma verificação de conexão somente leitura.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio photoshop-mcp -- npx -y @alisaitteke/photoshop-mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add photoshop-mcp -- npx -y @alisaitteke/photoshop-mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add photoshop-mcp npx -y @alisaitteke/photoshop-mcp
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "photoshop-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@alisaitteke/photoshop-mcp"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "photoshop-mcp": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@alisaitteke/photoshop-mcp"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "photoshop-mcp": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@alisaitteke/photoshop-mcp"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "photoshop-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@alisaitteke/photoshop-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "photoshop-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@alisaitteke/photoshop-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "photoshop-mcp": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@alisaitteke/photoshop-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  photoshop-mcp:
+    type: stdio
+    cmd: npx
+    args: ["-y","@alisaitteke/photoshop-mcp"]
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "photoshop-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@alisaitteke/photoshop-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "photoshop-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@alisaitteke/photoshop-mcp"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `photoshop-mcp.cordis.yml  →  dsh web --patch ./photoshop-mcp.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-photoshop-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: photoshop-mcp
+        transport: stdio
+        command: npx
+        args: ["-y","@alisaitteke/photoshop-mcp"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="comfyui-mcp"></a>
+
+### ComfyUI workflow control
+
+[artokun/comfyui-mcp](https://github.com/artokun/comfyui-mcp) — `Servidor MCP` · Licença: MIT · Funciona com: Todos os clientes
+
+Servidor e plugin de Claude Code para ComfyUI: roda workflows, gera imagens e gerencia modelos e VRAM.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio comfyui-mcp -- npx -y comfyui-mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add comfyui-mcp -- npx -y comfyui-mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add comfyui-mcp npx -y comfyui-mcp
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "comfyui-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "comfyui-mcp"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "comfyui-mcp": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "comfyui-mcp"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "comfyui-mcp": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "comfyui-mcp"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "comfyui-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "comfyui-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "comfyui-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "comfyui-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "comfyui-mcp": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "comfyui-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  comfyui-mcp:
+    type: stdio
+    cmd: npx
+    args: ["-y","comfyui-mcp"]
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "comfyui-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "comfyui-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "comfyui-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "comfyui-mcp"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `comfyui-mcp.cordis.yml  →  dsh web --patch ./comfyui-mcp.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-comfyui-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: comfyui-mcp
+        transport: stdio
+        command: npx
+        args: ["-y","comfyui-mcp"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="gflow-cli-mcp"></a>
+
+### Drive Google Flow video generation
+
+[gflow-cli](https://github.com/ffroliva/gflow-cli) — `Servidor MCP` · Licença: MIT · Funciona com: Todos os clientes
+
+Aciona o Google Flow a partir de um agente para gerar vídeos com Veo e imagens com Imagen.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio gflow-cli -- uvx gflow-cli
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add gflow-cli -- uvx gflow-cli
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add gflow-cli uvx gflow-cli
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "gflow-cli": {
+      "command": "uvx",
+      "args": [
+        "gflow-cli"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "gflow-cli": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "gflow-cli"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "gflow-cli": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "gflow-cli"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "gflow-cli": {
+      "command": "uvx",
+      "args": [
+        "gflow-cli"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "gflow-cli": {
+      "command": "uvx",
+      "args": [
+        "gflow-cli"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "gflow-cli": {
+      "source": "custom",
+      "command": "uvx",
+      "args": [
+        "gflow-cli"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  gflow-cli:
+    type: stdio
+    cmd: uvx
+    args: ["gflow-cli"]
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "gflow-cli": {
+      "command": "uvx",
+      "args": [
+        "gflow-cli"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "gflow-cli": {
+      "command": "uvx",
+      "args": [
+        "gflow-cli"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `gflow-cli.cordis.yml  →  dsh web --patch ./gflow-cli.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-gflow-cli
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: gflow-cli
+        transport: stdio
+        command: uvx
+        args: ["gflow-cli"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="nanobanana-mcp-server"></a>
+
+### Gemini image generation and editing
+
+[zhongweili/nanobanana-mcp-server](https://github.com/zhongweili/nanobanana-mcp-server) — `Servidor MCP` · Licença: MIT · Funciona com: Todos os clientes
+
+Oferece geração e edição de imagens via Gemini; exige GEMINI_API_KEY.
+
+**Alternativas:**
+
+- [RLabs-Inc/gemini-mcp](https://github.com/RLabs-Inc/gemini-mcp) — Kit mais amplo do Gemini 3, com mais de 30 ferramentas: imagens, vídeo, pesquisa, TTS e execução de código; exige GEMINI_API_KEY.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio nanobanana-mcp-server --env GEMINI_API_KEY='<GEMINI_API_KEY>' -- uvx nanobanana-mcp-server
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add nanobanana-mcp-server --env GEMINI_API_KEY='<GEMINI_API_KEY>' -- uvx nanobanana-mcp-server
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add -e GEMINI_API_KEY='<GEMINI_API_KEY>' nanobanana-mcp-server uvx nanobanana-mcp-server
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "nanobanana-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "nanobanana-mcp-server"
+      ],
+      "env": {
+        "GEMINI_API_KEY": "<GEMINI_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "nanobanana-mcp-server": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "nanobanana-mcp-server"
+      ],
+      "env": {
+        "GEMINI_API_KEY": "<GEMINI_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "nanobanana-mcp-server": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "nanobanana-mcp-server"
+      ],
+      "enabled": true,
+      "environment": {
+        "GEMINI_API_KEY": "<GEMINI_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "nanobanana-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "nanobanana-mcp-server"
+      ],
+      "env": {
+        "GEMINI_API_KEY": "<GEMINI_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "nanobanana-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "nanobanana-mcp-server"
+      ],
+      "env": {
+        "GEMINI_API_KEY": "<GEMINI_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "nanobanana-mcp-server": {
+      "source": "custom",
+      "command": "uvx",
+      "args": [
+        "nanobanana-mcp-server"
+      ],
+      "env": {
+        "GEMINI_API_KEY": "<GEMINI_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  nanobanana-mcp-server:
+    type: stdio
+    cmd: uvx
+    args: ["nanobanana-mcp-server"]
+    envs:
+      GEMINI_API_KEY: "<GEMINI_API_KEY>"
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "nanobanana-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "nanobanana-mcp-server"
+      ],
+      "env": {
+        "GEMINI_API_KEY": "<GEMINI_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "nanobanana-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "nanobanana-mcp-server"
+      ],
+      "env": {
+        "GEMINI_API_KEY": "<GEMINI_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `nanobanana-mcp-server.cordis.yml  →  dsh web --patch ./nanobanana-mcp-server.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-nanobanana-mcp-server
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: nanobanana-mcp-server
+        transport: stdio
+        command: uvx
+        args: ["nanobanana-mcp-server"]
+        env: {"GEMINI_API_KEY":"<GEMINI_API_KEY>"}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="glif-mcp-server"></a>
+
+### Glif's media-generation agent
+
+[Glif](https://github.com/glifxyz/glif-mcp-server) — `Servidor MCP` · Licença: MIT · Funciona com: Todos os clientes
+
+Gera imagens, vídeo e áudio com o agente de geração de mídia do Glif.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport http glif https://glif.app/api/mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add glif --url https://glif.app/api/mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add --transport http glif https://glif.app/api/mcp
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "glif": {
+      "url": "https://glif.app/api/mcp"
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "glif": {
+      "type": "http",
+      "url": "https://glif.app/api/mcp"
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "glif": {
+      "type": "remote",
+      "url": "https://glif.app/api/mcp",
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "glif": {
+      "type": "streamableHttp",
+      "url": "https://glif.app/api/mcp"
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "glif": {
+      "serverUrl": "https://glif.app/api/mcp"
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "glif": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://glif.app/api/mcp"
+      ]
+    }
+  }
+}
+```
+_Remote server bridged through the mcp-remote stdio proxy._
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  glif:
+    type: streamable_http
+    uri: https://glif.app/api/mcp
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "glif": {
+      "type": "streamable-http",
+      "url": "https://glif.app/api/mcp"
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "glif": {
+      "type": "streamable-http",
+      "url": "https://glif.app/api/mcp"
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `glif.cordis.yml  →  dsh web --patch ./glif.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-glif
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: glif
+        transport: streamable-http
+        url: https://glif.app/api/mcp
+```
+
+</details>
+
+<a id="claude-real-video-mcp"></a>
+
+### Local video understanding
+
+[HUANGCHIHHUNGLeo/claude-real-video](https://github.com/HUANGCHIHHUNGLeo/claude-real-video) — `Servidor MCP` · Licença: MIT · Funciona com: Todos os clientes
+
+Permite que um LLM assista a um vídeo localmente e busque em tudo que já assistiu.
+
+**Alternativas:**
+
+- [burningion/video-editing-mcp](https://github.com/burningion/video-editing-mcp) — Analisa, busca, gera e edita vídeos via Video Jungle; exige VJ_API_KEY.
+- [sonpiaz/watch-cli/tree/main/mcp-server](https://github.com/sonpiaz/watch-cli/tree/main/mcp-server) — Entrega um vídeo social, com frames e transcrição já preparados, a um agente; exige chaves de API do Kyma e do Groq.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio claude-real-video -- uvx claude-real-video
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add claude-real-video -- uvx claude-real-video
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add claude-real-video uvx claude-real-video
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "claude-real-video": {
+      "command": "uvx",
+      "args": [
+        "claude-real-video"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "claude-real-video": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "claude-real-video"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "claude-real-video": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "claude-real-video"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "claude-real-video": {
+      "command": "uvx",
+      "args": [
+        "claude-real-video"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "claude-real-video": {
+      "command": "uvx",
+      "args": [
+        "claude-real-video"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "claude-real-video": {
+      "source": "custom",
+      "command": "uvx",
+      "args": [
+        "claude-real-video"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  claude-real-video:
+    type: stdio
+    cmd: uvx
+    args: ["claude-real-video"]
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "claude-real-video": {
+      "command": "uvx",
+      "args": [
+        "claude-real-video"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "claude-real-video": {
+      "command": "uvx",
+      "args": [
+        "claude-real-video"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `claude-real-video.cordis.yml  →  dsh web --patch ./claude-real-video.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-claude-real-video
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: claude-real-video
+        transport: stdio
+        command: uvx
+        args: ["claude-real-video"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="vexa-mcp"></a>
+
+### Meeting bot and transcripts
+
+[Vexa](https://github.com/Vexa-ai/vexa) — `Servidor MCP` · Licença: Apache-2.0 · Funciona com: Todos os clientes
+
+Bot de reunião e transcrições para Google Meet, Teams e Zoom, ao vivo ou depois, com falantes identificados; exige token de Authorization.
+
+**Alternativas:**
+
+- [silverstein/minutes](https://github.com/silverstein/minutes) — Camada privada e própria de memória de conversas que grava, transcreve e busca todas as reuniões.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport http vexa https://api.cloud.vexa.ai/mcp --header 'Authorization: Bearer <API_TOKEN>'
+```
+
+**Codex CLI** — Arquivo: `~/.codex/config.toml`
+
+```toml
+[mcp_servers.vexa]
+url = "https://api.cloud.vexa.ai/mcp"
+bearer_token_env_var = "API_TOKEN"
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add --transport http vexa https://api.cloud.vexa.ai/mcp --header 'Authorization: Bearer <API_TOKEN>'
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "vexa": {
+      "url": "https://api.cloud.vexa.ai/mcp",
+      "headers": {
+        "Authorization": "Bearer <API_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "vexa": {
+      "type": "http",
+      "url": "https://api.cloud.vexa.ai/mcp",
+      "headers": {
+        "Authorization": "Bearer <API_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "vexa": {
+      "type": "remote",
+      "url": "https://api.cloud.vexa.ai/mcp",
+      "enabled": true,
+      "headers": {
+        "Authorization": "Bearer <API_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "vexa": {
+      "type": "streamableHttp",
+      "url": "https://api.cloud.vexa.ai/mcp",
+      "headers": {
+        "Authorization": "Bearer <API_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "vexa": {
+      "serverUrl": "https://api.cloud.vexa.ai/mcp",
+      "headers": {
+        "Authorization": "Bearer <API_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "vexa": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://api.cloud.vexa.ai/mcp",
+        "--header",
+        "Authorization:Bearer <API_TOKEN>"
+      ]
+    }
+  }
+}
+```
+_Remote server bridged through the mcp-remote stdio proxy._
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  vexa:
+    type: streamable_http
+    uri: https://api.cloud.vexa.ai/mcp
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "vexa": {
+      "type": "streamable-http",
+      "url": "https://api.cloud.vexa.ai/mcp",
+      "headers": {
+        "Authorization": "Bearer <API_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "vexa": {
+      "type": "streamable-http",
+      "url": "https://api.cloud.vexa.ai/mcp",
+      "headers": {
+        "Authorization": "Bearer <API_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `vexa.cordis.yml  →  dsh web --patch ./vexa.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-vexa
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: vexa
+        transport: streamable-http
+        url: https://api.cloud.vexa.ai/mcp
+        headers: {"Authorization":"Bearer <API_TOKEN>"}
+```
+
+</details>
+
+<a id="voicemode-mcp"></a>
+
+### Natural voice conversations
+
+[mbailey/voicemode](https://github.com/mbailey/voicemode) — `Servidor MCP` · Licença: MIT · Funciona com: Todos os clientes
+
+Conversas de voz naturais para assistentes de IA via speech-to-text e text-to-speech; exige OPENAI_API_KEY.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio voicemode --env OPENAI_API_KEY='<OPENAI_API_KEY>' -- uvx voice-mode
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add voicemode --env OPENAI_API_KEY='<OPENAI_API_KEY>' -- uvx voice-mode
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add -e OPENAI_API_KEY='<OPENAI_API_KEY>' voicemode uvx voice-mode
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "voicemode": {
+      "command": "uvx",
+      "args": [
+        "voice-mode"
+      ],
+      "env": {
+        "OPENAI_API_KEY": "<OPENAI_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "voicemode": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "voice-mode"
+      ],
+      "env": {
+        "OPENAI_API_KEY": "<OPENAI_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "voicemode": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "voice-mode"
+      ],
+      "enabled": true,
+      "environment": {
+        "OPENAI_API_KEY": "<OPENAI_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "voicemode": {
+      "command": "uvx",
+      "args": [
+        "voice-mode"
+      ],
+      "env": {
+        "OPENAI_API_KEY": "<OPENAI_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "voicemode": {
+      "command": "uvx",
+      "args": [
+        "voice-mode"
+      ],
+      "env": {
+        "OPENAI_API_KEY": "<OPENAI_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "voicemode": {
+      "source": "custom",
+      "command": "uvx",
+      "args": [
+        "voice-mode"
+      ],
+      "env": {
+        "OPENAI_API_KEY": "<OPENAI_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  voicemode:
+    type: stdio
+    cmd: uvx
+    args: ["voice-mode"]
+    envs:
+      OPENAI_API_KEY: "<OPENAI_API_KEY>"
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "voicemode": {
+      "command": "uvx",
+      "args": [
+        "voice-mode"
+      ],
+      "env": {
+        "OPENAI_API_KEY": "<OPENAI_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "voicemode": {
+      "command": "uvx",
+      "args": [
+        "voice-mode"
+      ],
+      "env": {
+        "OPENAI_API_KEY": "<OPENAI_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `voicemode.cordis.yml  →  dsh web --patch ./voicemode.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-voicemode
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: voicemode
+        transport: stdio
+        command: uvx
+        args: ["voice-mode"]
+        env: {"OPENAI_API_KEY":"<OPENAI_API_KEY>"}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="funasr-mcp-server"></a>
+
+### On-device audio transcription
+
+[FunASR](https://github.com/modelscope/FunASR/tree/main/examples/mcp_server) — `Servidor MCP` · Licença: MIT · Funciona com: Todos os clientes
+
+Transcreve áudio local com FunASR e SenseVoice usando inferência privada, no próprio dispositivo.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio funasr-mcp -- docker run -i --rm ghcr.io/modelscope/funasr-mcp:0.1.2
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add funasr-mcp -- docker run -i --rm ghcr.io/modelscope/funasr-mcp:0.1.2
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add funasr-mcp docker run -i --rm ghcr.io/modelscope/funasr-mcp:0.1.2
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "funasr-mcp": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/modelscope/funasr-mcp:0.1.2"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "funasr-mcp": {
+      "type": "stdio",
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/modelscope/funasr-mcp:0.1.2"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "funasr-mcp": {
+      "type": "local",
+      "command": [
+        "docker",
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/modelscope/funasr-mcp:0.1.2"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "funasr-mcp": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/modelscope/funasr-mcp:0.1.2"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "funasr-mcp": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/modelscope/funasr-mcp:0.1.2"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "funasr-mcp": {
+      "source": "custom",
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/modelscope/funasr-mcp:0.1.2"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  funasr-mcp:
+    type: stdio
+    cmd: docker
+    args: ["run","-i","--rm","ghcr.io/modelscope/funasr-mcp:0.1.2"]
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "funasr-mcp": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/modelscope/funasr-mcp:0.1.2"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "funasr-mcp": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/modelscope/funasr-mcp:0.1.2"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `funasr-mcp.cordis.yml  →  dsh web --patch ./funasr-mcp.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-funasr-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: funasr-mcp
+        transport: stdio
+        command: docker
+        args: ["run","-i","--rm","ghcr.io/modelscope/funasr-mcp:0.1.2"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="nova3d-mcp"></a>
+
+### Part-aware 3D generation
+
+[Nova3D](https://github.com/RareSense/Nova3D/tree/main/mcp) — `Servidor MCP` · Licença: MIT · Funciona com: Todos os clientes
+
+Geração de 3D estruturada e ciente de partes para agentes: GLB com partes nomeadas, URL de prévia e script de Blender; exige NOVA3D_TOKEN.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio nova3d --env NOVA3D_TOKEN='<NOVA3D_TOKEN>' -- uvx nova3d-mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add nova3d --env NOVA3D_TOKEN='<NOVA3D_TOKEN>' -- uvx nova3d-mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add -e NOVA3D_TOKEN='<NOVA3D_TOKEN>' nova3d uvx nova3d-mcp
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "nova3d": {
+      "command": "uvx",
+      "args": [
+        "nova3d-mcp"
+      ],
+      "env": {
+        "NOVA3D_TOKEN": "<NOVA3D_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "nova3d": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "nova3d-mcp"
+      ],
+      "env": {
+        "NOVA3D_TOKEN": "<NOVA3D_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "nova3d": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "nova3d-mcp"
+      ],
+      "enabled": true,
+      "environment": {
+        "NOVA3D_TOKEN": "<NOVA3D_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "nova3d": {
+      "command": "uvx",
+      "args": [
+        "nova3d-mcp"
+      ],
+      "env": {
+        "NOVA3D_TOKEN": "<NOVA3D_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "nova3d": {
+      "command": "uvx",
+      "args": [
+        "nova3d-mcp"
+      ],
+      "env": {
+        "NOVA3D_TOKEN": "<NOVA3D_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "nova3d": {
+      "source": "custom",
+      "command": "uvx",
+      "args": [
+        "nova3d-mcp"
+      ],
+      "env": {
+        "NOVA3D_TOKEN": "<NOVA3D_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  nova3d:
+    type: stdio
+    cmd: uvx
+    args: ["nova3d-mcp"]
+    envs:
+      NOVA3D_TOKEN: "<NOVA3D_TOKEN>"
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "nova3d": {
+      "command": "uvx",
+      "args": [
+        "nova3d-mcp"
+      ],
+      "env": {
+        "NOVA3D_TOKEN": "<NOVA3D_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "nova3d": {
+      "command": "uvx",
+      "args": [
+        "nova3d-mcp"
+      ],
+      "env": {
+        "NOVA3D_TOKEN": "<NOVA3D_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `nova3d.cordis.yml  →  dsh web --patch ./nova3d.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-nova3d
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: nova3d
+        transport: stdio
+        command: uvx
+        args: ["nova3d-mcp"]
+        env: {"NOVA3D_TOKEN":"<NOVA3D_TOKEN>"}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="screenpipe-screenpipe-mcp"></a>
+
+### Search local screen recordings
+
+[screenpipe](https://github.com/screenpipe/screenpipe/tree/main/packages/screenpipe-mcp) — `Servidor MCP` · Licença: ver repo · Funciona com: Todos os clientes
+
+Busca em gravações de tela locais, transcrições de áudio e atividade do computador capturadas pelo screenpipe.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio screenpipe-mcp -- npx -y screenpipe-mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add screenpipe-mcp -- npx -y screenpipe-mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add screenpipe-mcp npx -y screenpipe-mcp
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "screenpipe-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "screenpipe-mcp"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "screenpipe-mcp": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "screenpipe-mcp"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "screenpipe-mcp": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "screenpipe-mcp"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "screenpipe-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "screenpipe-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "screenpipe-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "screenpipe-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "screenpipe-mcp": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "screenpipe-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  screenpipe-mcp:
+    type: stdio
+    cmd: npx
+    args: ["-y","screenpipe-mcp"]
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "screenpipe-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "screenpipe-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "screenpipe-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "screenpipe-mcp"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `screenpipe-mcp.cordis.yml  →  dsh web --patch ./screenpipe-mcp.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-screenpipe-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: screenpipe-mcp
+        transport: stdio
+        command: npx
+        args: ["-y","screenpipe-mcp"]
+        env: {}
+        cwd: !!js process.cwd()
 ```
 
 </details>

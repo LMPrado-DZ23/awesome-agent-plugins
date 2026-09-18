@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: godot-mcp
+name: Godot MCP
+title: Godot 4.x engine control
+url: https://github.com/tugcantopaloglu/godot-mcp
+type: mcp-server
+category: dev
+license: MIT
+tags:
+  - godot
+  - game-dev
+description:
+  en: Full Godot 4.x engine control with 165 tools for AI-driven game development.
+  pt: Controle completo do motor Godot 4.x com 165 ferramentas para desenvolvimento de jogos guiado por IA.
+mcp:
+  name: godot-mcp
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@tugcantopaloglu/godot-mcp"
+alternatives:
+  - name: tomyud1/godot-mcp/tree/main/mcp-server
+    url: https://github.com/tomyud1/godot-mcp/tree/main/mcp-server
+    adds:
+      en: Controls the Godot editor from AI for Godot game engine integration.
+      pt: Controla o editor Godot a partir da IA para integração com o motor Godot.
+  - name: HaD0Yun/godot-mcp
+    url: https://github.com/HaD0Yun/godot-mcp
+    adds:
+      en: 95+ Godot Engine tools with LSP, DAP, and screenshot support.
+      pt: Mais de 95 ferramentas para o Godot Engine, com suporte a LSP, DAP e capturas de tela.
+  - name: Glade-tool/glade-mcp
+    url: https://github.com/Glade-tool/glade-mcp
+    adds:
+      en: "Controls both the Unity and Godot editors: scenes, scripts, physics, and materials."
+      pt: "Controla tanto o editor Unity quanto o Godot: cenas, scripts, física e materiais."
+origin:
+  list: mcp-registry
+  ref: io.github.tugcantopaloglu/godot-mcp

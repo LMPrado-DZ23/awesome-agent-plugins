@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: browser-use-mcp
+name: browser-use/browser-use
+title: AI browser agent for web tasks
+url: https://github.com/browser-use/browser-use
+type: mcp-server
+category: browser
+license: MIT
+tags:
+  - browser
+  - automation
+  - agent
+description:
+  en: Controls a real Chrome browser to complete tasks such as filling forms, extracting data, and booking flights.
+  pt: Controla um navegador Chrome real para completar tarefas como preencher formulários, extrair dados e fazer reservas.
+mcp:
+  name: browser-use
+  stdio:
+    command: uvx
+    args:
+      - browser-use
+alternatives:
+  - name: bytedance/UI-TARS-desktop/tree/main/packages/agent-infra/mcp-servers/browser
+    url: https://github.com/bytedance/UI-TARS-desktop/tree/main/packages/agent-infra/mcp-servers/browser
+    adds:
+      en: ByteDance UI-TARS agent-infra browser server for the same click/type/extract workflow.
+      pt: Servidor de navegador do agent-infra UI-TARS (ByteDance) para o mesmo fluxo de clicar/digitar/extrair.
+  - name: AIHawk
+    url: https://github.com/feder-cr/AIHawk
+    adds:
+      en: Browses, clicks, types, and reads real pages from plain-English instructions.
+      pt: Navega, clica, digita e lê páginas reais a partir de instruções em linguagem natural.
+  - name: Skyvern
+    url: https://github.com/Skyvern-AI/skyvern
+    adds:
+      en: Cloud AI browser automation; needs an x-api-key.
+      pt: Automação de navegador via nuvem; exige uma x-api-key.
+  - name: SeleniumBase MCP
+    url: https://github.com/seleniumbase/SeleniumBase
+    adds:
+      en: Selenium-based browser automation and testing framework, with a CDP mode.
+      pt: Framework de automação e testes de navegador baseado em Selenium, com modo CDP.
+origin:
+  list: mcp-registry
+  ref: com.browser-use/browser-use

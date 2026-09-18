@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: claude-code-ultimate-guide-mcp
+name: Claude Code Ultimate Guide
+title: Claude Code reference search
+url: https://github.com/FlorianBruniaux/claude-code-ultimate-guide
+type: mcp-server
+category: docs
+license: CC-BY-SA-4.0
+tags:
+  - docs
+  - claude-code
+  - reference
+description:
+  en: Searches the Claude Code Ultimate Guide and machine-readable references from any MCP client.
+  pt: Busca no Claude Code Ultimate Guide e em referências legíveis por máquina, a partir de qualquer cliente MCP.
+mcp:
+  name: claude-code-guide
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - claude-code-ultimate-guide-mcp
+origin:
+  list: mcp-registry
+  ref: io.github.FlorianBruniaux/claude-code-guide

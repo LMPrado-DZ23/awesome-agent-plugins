@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: stackql-mcp
+name: StackQL MCP Server
+title: SQL-native cloud provisioning
+url: https://github.com/stackql/stackql
+type: mcp-server
+category: cloud
+license: MIT
+tags:
+  - sql
+  - provisioning
+description:
+  en: SQL-native query and provisioning engine for cloud infrastructure.
+  pt: Motor de consulta e provisionamento nativo em SQL para infraestrutura de nuvem.
+mcp:
+  name: stackql-mcp
+  stdio:
+    command: docker
+    args:
+      - run
+      - "-i"
+      - "--rm"
+      - docker.io/stackql/stackql-mcp:0.11.669
+origin:
+  list: mcp-registry
+  ref: io.github.stackql/stackql-mcp

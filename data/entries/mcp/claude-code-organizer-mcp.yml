@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: claude-code-organizer-mcp
+name: mcpware/claude-code-organizer
+title: Organize Claude Code configuration
+url: https://github.com/mcpware/claude-code-organizer
+type: mcp-server
+category: tools
+license: MIT
+tags:
+  - claude-code
+  - organization
+description:
+  en: Organizes Claude Code memories, skills, MCP servers, commands, and agents via drag-and-drop.
+  pt: Organiza memórias, skills, servidores MCP, comandos e agentes do Claude Code por arrastar e soltar.
+mcp:
+  name: claude-code-organizer
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@mcpware/claude-code-organizer"
+alternatives:
+  - name: mcptoon
+    url: https://github.com/activeing123/mcptoon
+    adds:
+      en: Zero-dependency MCP client keeping one synced config across agents, with compact tool listings.
+      pt: >-
+        Cliente MCP sem dependências que mantém uma config sincronizada entre agentes, com listas de ferramentas
+        compactas.
+origin:
+  list: mcp-registry
+  ref: io.github.mcpware/claude-code-organizer

@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: mcp-windbg
+name: MCP Server for WinDbg Crash Analysis
+title: Windows crash dump analysis
+url: https://github.com/svnscha/mcp-windbg
+type: mcp-server
+category: dev
+license: MIT
+tags:
+  - windows
+  - debugging
+description:
+  en: Analyzes Windows crash dumps using WinDbg/CDB.
+  pt: Analisa crash dumps do Windows usando WinDbg/CDB.
+mcp:
+  name: mcp-windbg
+  stdio:
+    command: uvx
+    args:
+      - mcp-windbg
+origin:
+  list: mcp-registry
+  ref: io.github.svnscha/mcp-windbg

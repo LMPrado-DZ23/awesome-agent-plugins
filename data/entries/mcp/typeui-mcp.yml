@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: typeui-mcp
+name: TypeUI
+title: Design system prompts for coding agents
+url: https://github.com/bergside/typeui
+type: mcp-server
+category: tools
+license: null
+tags:
+  - design
+  - ui
+description:
+  en: Design systems, UI prompts, and layout variations for AI coding tools.
+  pt: Sistemas de design, prompts de UI e variações de layout para ferramentas de codificação com IA.
+mcp:
+  name: typeui
+  http:
+    url: https://mcp.typeui.sh/mcp
+alternatives:
+  - name: StyleKit
+    url: https://github.com/AnxForever/stylekit/tree/main/packages/mcp
+    adds:
+      en: Searches 148 curated design styles and pulls tokens, recipes, and shadcn commands.
+      pt: Busca em 148 estilos de design selecionados e traz tokens, receitas e comandos shadcn.
+  - name: UI Beats
+    url: https://github.com/nikhils4/ui-beats/tree/main/packages/mcp
+    adds:
+      en: Lets an agent search, read, and install animated React components.
+      pt: Permite que um agente busque, leia e instale componentes React animados.
+origin:
+  list: mcp-registry
+  ref: io.github.bergside/typeui

@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: medplum-mcp
+name: medplum/medplum
+title: FHIR healthcare data platform
+url: https://github.com/medplum/medplum
+type: mcp-server
+category: cloud
+license: Apache-2.0
+tags:
+  - healthcare
+  - fhir
+description:
+  en: Securely accesses and manages FHIR healthcare data stored in Medplum.
+  pt: Acessa e gerencia com segurança dados de saúde no formato FHIR armazenados no Medplum.
+mcp:
+  name: mcp
+  http:
+    url: https://api.medplum.com/mcp/stream
+origin:
+  list: mcp-registry
+  ref: com.medplum/mcp

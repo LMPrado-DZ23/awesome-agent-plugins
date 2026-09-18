@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: kaneo-mcp
+name: usekaneo/kaneo
+title: Kaneo task and project management
+url: https://github.com/usekaneo/kaneo
+type: mcp-server
+category: integrations
+license: MIT
+tags:
+  - project-management
+description:
+  en: "Official server for Kaneo: manages tasks, projects, and labels; needs a KANEO_API_KEY."
+  pt: "Servidor oficial do Kaneo: gerencia tarefas, projetos e labels; exige KANEO_API_KEY."
+mcp:
+  name: kaneo
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@kaneo/mcp"
+    env:
+      KANEO_API_KEY: <KANEO_API_KEY>
+origin:
+  list: mcp-registry
+  ref: io.github.usekaneo/kaneo

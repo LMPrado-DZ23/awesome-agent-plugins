@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: openbrand-mcp
+name: OpenBrand
+title: Brand asset extraction
+url: https://github.com/ethanjyx/openbrand/tree/main/mcp
+type: mcp-server
+category: tools
+license: MIT
+tags:
+  - design
+  - branding
+description:
+  en: Extracts brand assets (logos, colors, backdrop images, brand name) from any website URL; needs an OPENBRAND_API_KEY.
+  pt: >-
+    Extrai ativos de marca (logos, cores, imagens de fundo, nome da marca) a partir de qualquer URL de site; exige
+    OPENBRAND_API_KEY.
+mcp:
+  name: openbrand
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - openbrand-mcp
+    env:
+      OPENBRAND_API_KEY: <OPENBRAND_API_KEY>
+origin:
+  list: mcp-registry
+  ref: io.github.ethanjyx/openbrand

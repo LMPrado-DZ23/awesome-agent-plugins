@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: ref-tools-mcp
+name: ref-tools/ref-tools-mcp
+title: Token-efficient docs search
+url: https://github.com/ref-tools/ref-tools-mcp
+type: mcp-server
+category: docs
+license: MIT
+tags:
+  - docs
+  - search
+description:
+  en: Token-efficient search for coding agents over public and private documentation; needs a REF_API_KEY.
+  pt: Busca eficiente em tokens para agentes de código sobre documentação pública e privada; exige REF_API_KEY.
+mcp:
+  name: ref-tools-mcp
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - ref-tools-mcp
+    env:
+      REF_API_KEY: <REF_API_KEY>
+alternatives:
+  - name: jDocmunch MCP
+    url: https://github.com/jgravelle/jdocmunch-mcp
+    adds:
+      en: Section-level local search across .md, .rst, .adoc, .ipynb, .html, .yaml, .json, and OpenAPI files.
+      pt: Busca local no nível de seção em arquivos .md, .rst, .adoc, .ipynb, .html, .yaml, .json e OpenAPI.
+origin:
+  list: mcp-registry
+  ref: io.github.ref-tools/ref-tools-mcp

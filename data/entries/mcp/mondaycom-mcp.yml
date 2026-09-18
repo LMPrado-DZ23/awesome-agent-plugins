@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: mondaycom-mcp
+name: mondaycom/mcp
+title: monday.com boards and items
+url: https://github.com/mondaycom/mcp
+type: mcp-server
+category: integrations
+license: MIT
+tags:
+  - project-management
+description:
+  en: Official server for monday.com integration; needs an Authorization token.
+  pt: Servidor oficial de integração com o monday.com; exige token de Authorization.
+mcp:
+  name: monday-com
+  http:
+    url: https://mcp.monday.com/mcp
+    headers:
+      Authorization: Bearer <API_TOKEN>
+origin:
+  list: mcp-registry
+  ref: com.monday/monday.com
