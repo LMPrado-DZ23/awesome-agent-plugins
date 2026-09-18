@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-auto-continue
+name: HsiangNianian/dsh-auto-continue
+title: Auto-resume interrupted requests
+url: https://github.com/HsiangNianian/dsh-auto-continue
+type: native-plugin
+category: ui
+license: MIT
+tags:
+  - reliability
+  - auto-retry
+  - notifications
+description:
+  en: >-
+    Automatically resumes interrupted DSH Web requests by sending a queued continue message after network, timeout, or
+    host-crash failures, with error classification, adaptive backoff, templated continue text, and browser
+    notifications.
+  pt: >-
+    Retoma automaticamente requisições interrompidas do DSH Web enviando uma mensagem de continuação enfileirada após
+    falhas de rede, timeout ou travamento do host, com classificação de erros, backoff adaptativo, texto de continuação
+    personalizável e notificações do navegador.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:HsiangNianian/dsh-auto-continue
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

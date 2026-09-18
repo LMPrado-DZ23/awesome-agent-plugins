@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-modlens
+name: liustack/modlens
+title: Vision bridge for text-only models
+url: https://github.com/liustack/modlens
+type: native-plugin
+category: multimodal
+license: MIT
+tags:
+  - vision
+  - ocr
+  - multimodal
+description:
+  en: >-
+    Turns pasted images into structured JSON evidence — OCR, layout, and semantics — so text-only models can understand
+    and reason about screenshots and pictures.
+  pt: >-
+    Transforma imagens coladas em evidências estruturadas em JSON — OCR, layout e semântica — para que modelos somente
+    texto entendam e raciocinem sobre capturas de tela e imagens.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:liustack/modlens
+alternatives:
+  - name: ysr666/dsh-vision-router
+    url: https://github.com/ysr666/dsh-vision-router
+    adds:
+      en: >-
+        Adds pixel-level tools: Q&A, grounding, cropping, pixel diff, colors, SVG tracing, and background cutout, via a
+        free keyless chain.
+      pt: >-
+        Adiciona ferramentas de pixel: perguntas, grounding, recorte, diff de pixels, cores, SVG e remoção de fundo, via
+        cadeia gratuita sem chave.
+  - name: Anionex/dsh-vision-toolkit
+    url: https://github.com/Anionex/dsh-vision-toolkit
+    adds:
+      en: >-
+        Adds multi-image comparison, long-screenshot OCR, and screenshot-to-UI reproduction, via a free hosted service
+        capped at 100 images/day.
+      pt: >-
+        Adiciona comparação de imagens, OCR de capturas longas e reprodução de screenshot para UI, via serviço gratuito
+        limitado a 100 imagens/dia.
+  - name: FuzzySoul/dsh-free-vision
+    url: https://github.com/FuzzySoul/dsh-free-vision
+    adds:
+      en: Adds a settings GUI to choose between free-tier vision providers (Qwen3-VL-Flash, Doubao, DeepSeek-OCR).
+      pt: >-
+        Adiciona uma GUI de configurações para escolher entre provedores de visão gratuitos (Qwen3-VL-Flash, Doubao,
+        DeepSeek-OCR).
+  - name: 54xkeee/dsh-youreyes
+    url: https://github.com/54xkeee/dsh-youreyes
+    adds:
+      en: Adds evidence memory that survives context compaction, a content-hash cache, and a bilingual client panel.
+      pt: >-
+        Adiciona memória de evidências que sobrevive à compactação de contexto, cache por hash de conteúdo e um painel
+        bilíngue no cliente.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

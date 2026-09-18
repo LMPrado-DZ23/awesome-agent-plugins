@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-meow-memory
+name: Phant0Meow/dsh-meow-memory
+title: Seven-layer SQLite project memory
+url: https://github.com/Phant0Meow/dsh-meow-memory
+type: native-plugin
+category: memory
+license: MIT
+tags:
+  - memory
+  - sqlite
+  - project-scoped
+  - multilingual
+description:
+  en: >-
+    Project-scoped cross-session memory in a seven-layer SQLite store (soul/user/project/fact/lesson/rules/topic), with
+    first-message injection, per-message keyword hits, and idle-window consolidation.
+  pt: >-
+    Memória entre sessões com escopo de projeto em um repositório SQLite de sete camadas
+    (soul/user/project/fact/lesson/rules/topic), com injeção na primeira mensagem, buscas por palavra-chave por mensagem
+    e consolidação em janelas ociosas.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:Phant0Meow/dsh-meow-memory
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

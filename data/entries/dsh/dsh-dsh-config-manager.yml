@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-config-manager
+name: xiajiajun516/dsh-config-manager
+title: Backup and migrate DSH config
+url: https://github.com/xiajiajun516/dsh-config-manager
+type: native-plugin
+category: tools
+license: MIT
+tags:
+  - config
+  - backup
+  - migration
+  - sync
+description:
+  en: >-
+    Backs up, exports, imports, and migrates a whole DSH config: settings, plugins, MCP, skills, workspaces. Secrets are
+    excluded by default or AES-256-GCM encrypted if enabled. Imports preview first with rollback; profiles hold multiple
+    setups; remote sync via a Git repo.
+  pt: >-
+    Faz backup, exporta, importa e migra toda a config do DSH: definições, plugins, MCP, skills, workspaces. Segredos
+    ficam excluídos por padrão ou cifrados em AES-256-GCM se ativado. Importações mostram prévia com rollback; perfis
+    guardam várias config; sync remota via repo Git.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:xiajiajun516/dsh-config-manager
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

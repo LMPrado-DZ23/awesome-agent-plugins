@@ -1,0 +1,8 @@
+id: fullstack-dev
+title:
+  en: Full-stack web development
+  pt: Desenvolvimento web full-stack
+description:
+  en: Up-to-date docs, a real browser for testing, semantic code navigation, GitHub and error tracking.
+  pt: Documentação atualizada, navegador real para testes, navegação semântica de código, GitHub e rastreamento de erros.
+entries: [context7, playwright-mcp, chrome-devtools-mcp, serena, github-mcp-server, sentry-mcp, superpowers, vercel-agent-skills]

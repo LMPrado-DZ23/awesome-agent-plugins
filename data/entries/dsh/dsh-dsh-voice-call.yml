@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-voice-call
+name: PandaPolo/dsh-voice-call
+title: Agent-initiated voice calls
+url: https://github.com/PandaPolo/dsh-voice-call
+type: native-plugin
+category: multimodal
+license: MIT
+tags:
+  - voice-call
+  - tts
+  - asr
+description:
+  en: >-
+    Lets the agent ring the human with an offer_call tool; if accepted, it synthesizes and plays speech locally via
+    CrispASR and Qwen3-TTS (9 speakers, 2 Chinese dialects), and returns the decision if rejected.
+  pt: >-
+    Permite que o agente ligue para o humano com uma ferramenta offer_call; se aceita, sintetiza e reproduz a fala
+    localmente via CrispASR e Qwen3-TTS (9 vozes, 2 dialetos chineses), e retorna a decisão caso seja recusada.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:PandaPolo/dsh-voice-call
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

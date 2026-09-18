@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-science
+name: biociao/dsh-science
+title: Research workbench with provenance
+url: https://github.com/biociao/dsh-science
+type: native-plugin
+category: workflow
+license: MIT
+tags:
+  - workflow
+  - research
+  - provenance
+  - science
+description:
+  en: >-
+    Claude Science-style research workbench: a ReAct research-loop engine, versioned artifacts with provenance tracking,
+    and ten science skills for genomics, pathogens, and bioinformatics.
+  pt: >-
+    Bancada de pesquisa ao estilo Claude Science: um motor de loop de pesquisa ReAct, artefatos versionados com
+    rastreamento de proveniência e dez habilidades científicas para genômica, patógenos e bioinformática.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:biociao/dsh-science
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

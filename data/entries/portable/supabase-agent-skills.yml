@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: supabase-agent-skills
+name: Supabase Agent Skills
+url: https://github.com/supabase/agent-skills
+type: skill-pack
+category: skills
+license: MIT
+tags:
+  - supabase
+  - postgres
+description:
+  en: "Official skills that guide agents through Supabase development: database, auth, RLS and security practices."
+  pt: >-
+    Skills oficiais que guiam agentes no desenvolvimento com Supabase: banco de dados, auth, RLS e práticas de
+    segurança.
+skill:
+  source: supabase/agent-skills

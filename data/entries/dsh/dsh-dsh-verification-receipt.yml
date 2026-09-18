@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-verification-receipt
+name: 030611/dsh-verification-receipt
+title: Privacy-preserving audit receipts
+url: https://github.com/030611/dsh-verification-receipt
+type: native-plugin
+category: security
+license: MIT
+tags:
+  - audit-log
+  - privacy
+  - telemetry
+  - receipts
+description:
+  en: >-
+    Writes local JSONL summaries of per-turn tool counts and coarse verification signals, without storing prompts, tool
+    arguments, or result text.
+  pt: >-
+    Grava resumos locais em JSONL de contagens de ferramentas por turno e sinais de verificação aproximados, sem
+    armazenar prompts, argumentos de ferramentas ou texto de resultado.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:030611/dsh-verification-receipt
+alternatives:
+  - name: 030611/qiushi-dsh-evidence-audit
+    url: https://github.com/030611/qiushi-dsh-evidence-audit
+    adds:
+      en: Hash-chains the JSONL receipts for tool results and session events for tamper-evident evidence.
+      pt: >-
+        Encadeia por hash os recibos JSONL de resultados de ferramentas e eventos de sessão, criando evidência à prova
+        de adulteração.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

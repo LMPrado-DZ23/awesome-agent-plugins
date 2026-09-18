@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-auto-review
+name: PerryLink/dsh-auto-review
+title: Second-model auto-approval review
+url: https://github.com/PerryLink/dsh-auto-review
+type: native-plugin
+category: security
+license: Apache-2.0
+tags:
+  - permissions
+  - approval
+  - auto-review
+  - security
+description:
+  en: >-
+    Adds a read-only reviewer subagent to the approval chain that returns structured allow/deny verdicts with reasons,
+    and fails closed by default when the review is inconclusive.
+  pt: >-
+    Adiciona um subagente revisor somente leitura à cadeia de aprovação, que retorna veredictos estruturados de
+    permitir/negar com justificativas, falhando de forma segura (nega) por padrão quando a revisão é inconclusiva.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:PerryLink/dsh-auto-review
+alternatives:
+  - name: moon09300731/dsh-approval-gate
+    url: https://github.com/moon09300731/dsh-approval-gate
+    adds:
+      en: >-
+        Pre-classifies whether an action is reversible, auto-approves safe ones, escalates dangerous ones, with
+        one-click revert via snapshots.
+      pt: >-
+        Pré-classifica se uma ação é reversível, aprova automaticamente as seguras, escala as perigosas, com reversão em
+        um clique via snapshots.
+  - name: PAKIKNOWLEDGE/dsh-auto-classifier
+    url: https://github.com/PAKIKNOWLEDGE/dsh-auto-classifier
+    adds:
+      en: Adds an LLM semantic judge plus git checkpointing so unattended sessions can be rolled back.
+      pt: Adiciona um juiz semântico via LLM e checkpoints de git para reverter sessões não supervisionadas.
+  - name: NanmiCoder/dsh-auto-mode
+    url: https://github.com/NanmiCoder/dsh-auto-mode
+    adds:
+      en: Denies critical paths outright and grants only one exact wider access per escalation request.
+      pt: Nega diretamente caminhos críticos e concede apenas um acesso ampliado exato por pedido de escalonamento.
+  - name: Alnita-M/dsh-Almost_Full_Access
+    url: https://github.com/Alnita-M/dsh-Almost_Full_Access
+    adds:
+      en: Combines deterministic rule checks with a subagent review before granting near-full access.
+      pt: Combina verificações de regras determinísticas com revisão por subagente antes de conceder acesso quase total.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

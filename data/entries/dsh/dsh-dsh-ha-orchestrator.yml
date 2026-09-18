@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-ha-orchestrator
+name: Saktawdi/dsh-ha-orchestrator
+title: Model failover and agent orchestration
+url: https://github.com/Saktawdi/dsh-ha-orchestrator
+type: native-plugin
+category: workflow
+license: MIT
+tags:
+  - workflow
+  - failover
+  - high-availability
+  - orchestration
+description:
+  en: >-
+    Model high-availability failover (quarantine, circuit breaking, probe recovery) and subagent orchestration (fanout,
+    pipeline, supervisor), with a bilingual settings UI.
+  pt: >-
+    Failover de alta disponibilidade de modelos (quarentena, circuit breaking, recuperação por sondagem) e orquestração
+    de subagentes (fanout, pipeline, supervisor), com UI de configurações bilíngue.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:Saktawdi/dsh-ha-orchestrator
+alternatives:
+  - name: Letter2025/dsh-model-failover
+    url: https://github.com/Letter2025/dsh-model-failover
+    adds:
+      en: >-
+        Simpler two-level circuit breaker that trips a model or provider after repeated failures and routes to a
+        fallback.
+      pt: >-
+        Circuit breaker mais simples de dois níveis que desativa um modelo ou provedor após falhas repetidas e roteia
+        para um fallback configurado.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

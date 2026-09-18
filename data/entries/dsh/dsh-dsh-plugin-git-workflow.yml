@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-plugin-git-workflow
+name: truelove-dreamer/dsh-plugin-git-workflow
+title: First-class git tools for the model
+url: https://github.com/truelove-dreamer/dsh-plugin-git-workflow
+type: native-plugin
+category: git
+license: null
+tags:
+  - git
+  - agent-tools
+  - validation
+description:
+  en: >-
+    Gives the model first-class Git tools for status, diff, log, commit and branch, with validated messages and paths,
+    instead of relying on bare shell git calls.
+  pt: >-
+    Dá ao modelo ferramentas Git de primeira classe para status, diff, log, commit e branch, com mensagens e caminhos
+    validados, em vez de depender de chamadas git de shell puras.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:truelove-dreamer/dsh-plugin-git-workflow
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-status-rotator
+name: 01Virex/dsh-status-rotator
+title: Turn-status indicator widget
+url: https://github.com/01Virex/dsh-status-rotator
+type: native-plugin
+category: ui
+license: MIT
+tags:
+  - status-indicator
+  - widget
+  - animation
+description:
+  en: >-
+    Rotates the turn-status label through 1059 bilingual phrases with typewriter output, an animated rainbow gradient,
+    danmaku, 12 toggleable theme packs, live placeholders, and tab-title rotation.
+  pt: >-
+    Alterna o rótulo de status do turno entre 1059 frases bilíngues com efeito de máquina de escrever, gradiente
+    arco-íris animado, danmaku, 12 pacotes de tema alternáveis, placeholders dinâmicos e rotação do título da aba.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:01Virex/dsh-status-rotator
+alternatives:
+  - name: Yuuhann1999/dsh-bloub-mood
+    url: https://github.com/Yuuhann1999/dsh-bloub-mood
+    adds:
+      en: Swaps the favicon, sidebar wordmark, and hero headline for animated mood-icon shapes that follow session state.
+      pt: >-
+        Substitui o favicon, o logotipo da barra lateral e o título de destaque por formas animadas de ícone de humor
+        que seguem o estado da sessão.
+  - name: Luaphes/dsh-web-attention-badge
+    url: https://github.com/Luaphes/dsh-web-attention-badge
+    adds:
+      en: Flashes a frame badge, tab-title count, and status-colored favicon when a session needs input or just finished.
+      pt: >-
+        Pisca um selo na moldura, uma contagem no título da aba e um favicon colorido conforme o status quando uma
+        sessão precisa de atenção ou acabou de terminar.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

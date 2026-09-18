@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-github-connector-github
+name: kaziii/dsh-github-connector#github
+title: Connect a GitHub account to DSH
+url: https://github.com/kaziii/dsh-github-connector/tree/main/packages/github/github
+type: native-plugin
+category: git
+license: MIT
+tags:
+  - github
+  - authentication
+  - oauth
+description:
+  en: >-
+    GitHub Device Flow connection plus an in-conversation PR workflow: a status bar above the composer for
+    create/AI-review/merge, and github_* tools for search, issue and PR read and write.
+  pt: >-
+    Conexão via GitHub Device Flow mais um fluxo de PR dentro da conversa: uma barra de status acima do campo de
+    composição para criar/revisar com IA/mesclar, e ferramentas github_* para busca, leitura e escrita de issues e PRs.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:kaziii/dsh-github-connector#path:/packages/github/github
+alternatives:
+  - name: Moon-shiyue/dsh-github-connect
+    url: https://github.com/Moon-shiyue/dsh-github-connect
+    adds:
+      en: >-
+        Connects via OAuth device flow or a personal access token and calls the GitHub API directly through a github_api
+        tool
+      pt: >-
+        Conecta via OAuth device flow ou um personal access token e chama a API do GitHub diretamente por uma ferramenta
+        github_api
+  - name: Noob-stupid/dsh-github-login
+    url: https://github.com/Noob-stupid/dsh-github-login
+    adds:
+      en: >-
+        Adds an in-window device-flow login with no terminal needed, syncing the token into the gh CLI plus host status
+        endpoints
+      pt: >-
+        Adiciona login por device flow dentro da janela, sem precisar de terminal, sincronizando o token com a gh CLI e
+        endpoints de status do host
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

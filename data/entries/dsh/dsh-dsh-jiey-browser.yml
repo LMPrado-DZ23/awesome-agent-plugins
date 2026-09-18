@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-jiey-browser
+name: jiewaigongxing/dsh-jiey-browser
+title: Control the Jiey Browser via MCP
+url: https://github.com/jiewaigongxing/dsh-jiey-browser
+type: native-plugin
+category: browser
+license: MIT
+tags:
+  - browser-control
+  - mcp
+  - jiey
+description:
+  en: >-
+    Drives the Jiey Browser from DeepSeek Harness over MCP: navigate, snapshot, act on elements, read content, take
+    screenshots, and manage tabs in a real Chromium profile.
+  pt: >-
+    Controla o Jiey Browser a partir do DeepSeek Harness via MCP: navegar, capturar snapshots, agir sobre elementos, ler
+    conteúdo, tirar screenshots e gerenciar abas em um perfil real do Chromium.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:jiewaigongxing/dsh-jiey-browser
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

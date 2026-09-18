@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: serena
+name: Serena
+url: https://github.com/oraios/serena
+type: mcp-server
+category: code-intel
+featured: true
+license: null
+tags:
+  - lsp
+  - refactoring
+  - semantic-search
+description:
+  en: >-
+    Semantic code retrieval and editing through language servers: find symbols and references, and edit at symbol level
+    instead of by text.
+  pt: >-
+    Busca e edição semântica de código via language servers: encontra símbolos e referências e edita no nível de símbolo
+    em vez de texto.
+mcp:
+  name: serena
+  prereq: uv tool install -p 3.13 serena-agent && serena init
+  stdio:
+    command: serena
+    args:
+      - start-mcp-server
+      - "--project-from-cwd"

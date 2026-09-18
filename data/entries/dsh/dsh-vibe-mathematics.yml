@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-vibe-mathematics
+name: ChongCyrus/Vibe-Mathematics
+title: Multi-agent math verification framework
+url: https://github.com/ChongCyrus/Vibe-Mathematics
+type: native-plugin
+category: workflow
+license: MIT
+tags:
+  - workflow
+  - multi-agent
+  - verification
+  - math
+description:
+  en: >-
+    Multi-agent math problem-solving and verification framework: brainstorm, solver iteration, multi-verifier debate,
+    and a verified knowledge base, with checkpoint resume and manual or automatic intervention.
+  pt: >-
+    Framework multiagente de resolução e verificação de problemas matemáticos: brainstorm, iteração do solver, debate
+    entre múltiplos verificadores e uma base de conhecimento verificada, com retomada por checkpoint e intervenção
+    manual ou automática.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:ChongCyrus/Vibe-Mathematics
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

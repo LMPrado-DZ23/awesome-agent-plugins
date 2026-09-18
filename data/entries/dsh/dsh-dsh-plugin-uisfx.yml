@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-plugin-uisfx
+name: XanthanL/dsh-plugin-uisfx
+title: UI sound effects and alerts
+url: https://github.com/XanthanL/dsh-plugin-uisfx
+type: native-plugin
+category: multimodal
+license: MIT
+tags:
+  - notifications
+  - sound-effects
+description:
+  en: >-
+    Adds semantic UI sound effects for task start, success, and failure, plus per-button cues, with 12 sound packs,
+    host-persisted preferences, and a ctx.uisfx service other plugins can call.
+  pt: >-
+    Adiciona efeitos sonoros semânticos de UI para início, sucesso e falha de tarefas, além de sinais por botão, com 12
+    pacotes de som, preferências persistidas pelo host e um serviço ctx.uisfx que outros plugins podem usar.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:XanthanL/dsh-plugin-uisfx
+alternatives:
+  - name: huguangyu666/dsh-plugin-notify
+    url: https://github.com/huguangyu666/dsh-plugin-notify
+    adds:
+      en: >-
+        Adds a 60-second confirmation window where the agent voice-calls you back if you do not respond, plus Chinese
+        TTS announcements.
+      pt: >-
+        Adiciona janela de confirmação de 60s em que o agente liga de volta por voz se você não responder, além de
+        anúncios em TTS chinês.
+  - name: AI-Galaxy-GPU/dsh-sound
+    url: https://github.com/AI-Galaxy-GPU/dsh-sound
+    adds:
+      en: >-
+        Adds separate configurable sounds for turn completion, approval, question, plan-review, goal-blocked, and
+        task-failure events.
+      pt: >-
+        Adiciona sons configuráveis separados para conclusão de turno, aprovação, pergunta, revisão de plano, meta
+        bloqueada e falha de tarefa.
+  - name: CAOGGL/dsh-ding
+    url: https://github.com/CAOGGL/dsh-ding
+    adds:
+      en: Adds a native Windows notification alongside the completion sound, with debounce/throttle settings.
+      pt: Adiciona uma notificação nativa do Windows junto com o som de conclusão, com configurações de debounce/throttle.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

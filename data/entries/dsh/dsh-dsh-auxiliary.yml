@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-auxiliary
+name: dsh-plugins/dsh-auxiliary
+title: Auxiliary model routing tools
+url: https://github.com/dsh-plugins/dsh-auxiliary
+type: native-plugin
+category: tools
+license: LGPL-3.0
+tags:
+  - model-routing
+  - vision
+  - subagents
+description:
+  en: >-
+    Provides dedicated model routes, tools, and system guidance for vision, compaction, reviews, subagents, titles, and
+    image generation.
+  pt: >-
+    Fornece rotas de modelo dedicadas, ferramentas e orientações de sistema para visão, compactação, revisões,
+    subagentes, títulos e geração de imagens.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:dsh-plugins/dsh-auxiliary
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

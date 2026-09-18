@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-full-remote
+name: JUANWANG-BUAA/dsh-full-remote
+title: Full remote server administration
+url: https://github.com/JUANWANG-BUAA/dsh-full-remote
+type: native-plugin
+category: remote
+license: MIT
+tags:
+  - remote-admin
+  - reverse-proxy
+  - ssh
+  - security
+description:
+  en: >-
+    Gives full server-side API access (settings, credentials, host.listDirectory) through a token-gated reverse proxy,
+    with per-device sessions, QR phone invites, and optional approval, CIDR limits, idle timeout, and local TLS.
+  pt: >-
+    Oferece acesso total à API do servidor (settings, credentials, host.listDirectory) via proxy reverso protegido por
+    token, com sessões por dispositivo, convites por QR, e aprovação, limite de CIDR, timeout de inatividade e TLS local
+    opcionais.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:JUANWANG-BUAA/dsh-full-remote
+alternatives:
+  - name: liguobao/deepseek-harness-remote
+    url: https://github.com/liguobao/deepseek-harness-remote
+    adds:
+      en: >-
+        Uses end-to-end encryption (Noise IK plus WebRTC/relay) and limits clients to read-only file preview, no shell
+        or remote-desktop access.
+      pt: >-
+        Usa criptografia ponta a ponta (Noise IK + WebRTC/relay) e restringe clientes a pré-visualização somente
+        leitura, sem shell ou área remota.
+  - name: Buzzso/dsh-sev
+    url: https://github.com/Buzzso/dsh-sev
+    adds:
+      en: >-
+        Manages your own remote DSH host from the local GUI via auto-healing SSH tunnels and a combined local/remote
+        session list.
+      pt: >-
+        Gerencia seu próprio host DSH remoto pela GUI local via túneis SSH que se autorrecuperam e uma lista combinada
+        de sessões locais e remotas.
+  - name: Linjiangxian0203/dsh-remote-tunnel
+    url: https://github.com/Linjiangxian0203/dsh-remote-tunnel
+    adds:
+      en: >-
+        Runs dsh web on a remote Linux server via systemd (no root) behind an auto-reconnecting SSH tunnel, with port
+        allocation and an audit view.
+      pt: >-
+        Executa o dsh web em servidor Linux remoto via systemd (sem root), atrás de túnel SSH autorreconectável, com
+        portas e auditoria.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

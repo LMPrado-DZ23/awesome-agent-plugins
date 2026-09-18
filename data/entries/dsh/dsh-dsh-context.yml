@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-context
+name: bowenliang123/dsh-context
+title: Context lifecycle dashboard
+url: https://github.com/bowenliang123/dsh-context
+type: native-plugin
+category: usage
+license: Apache-2.0
+tags:
+  - context-window
+  - dashboard
+  - token-usage
+  - observability
+description:
+  en: >-
+    Dashboard, /context command, and browser for one-stop context lifecycle management: categorized composition, content
+    details, evolution trends over time, and compaction and injection events.
+  pt: >-
+    Painel, comando /context e navegador para gerenciar todo o ciclo de vida do contexto: composição categorizada,
+    detalhes de conteúdo, tendências de evolução ao longo do tempo e eventos de compactação e injeção.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:bowenliang123/dsh-context
+alternatives:
+  - name: GooodWei/context-vista
+    url: https://github.com/GooodWei/context-vista
+    adds:
+      en: Shows a live donut chart of context token allocation and estimated cost in a smaller floating panel.
+      pt: >-
+        Mostra um gráfico de rosca ao vivo da alocação de tokens de contexto e custo estimado em um painel flutuante
+        menor.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

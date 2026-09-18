@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: mcp-git
+name: Git (reference)
+url: https://github.com/modelcontextprotocol/servers/tree/main/src/git
+type: mcp-server
+category: git
+license: null
+tags:
+  - git
+  - reference
+description:
+  en: Reference server to read, search and manipulate local Git repositories (status, diff, log, commit, branch).
+  pt: Servidor de referência para ler, buscar e manipular repositórios Git locais (status, diff, log, commit, branch).
+mcp:
+  name: git
+  prereq: Requires uv (https://docs.astral.sh/uv/).
+  stdio:
+    command: uvx
+    args:
+      - mcp-server-git

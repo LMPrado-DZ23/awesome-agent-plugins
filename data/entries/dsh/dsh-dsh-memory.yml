@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-memory
+name: FuRongJun-1999/dsh-memory
+title: Auditable AGI self-improvement loop
+url: https://github.com/FuRongJun-1999/dsh-memory
+type: native-plugin
+category: workflow
+license: MIT
+tags:
+  - agi
+  - metacognition
+  - self-improvement
+  - memory
+description:
+  en: >-
+    Explores a white-box AGI architecture: a metacognitive self-cognition loop, continual learning via a knowledge
+    flywheel, a world model with condition space and spatiotemporal memory graph, bootstrap self-improvement, and
+    auditable trust guardrails, without relying on an LLM.
+  pt: >-
+    Explora uma arquitetura AGI caixa-branca: loop metacognitivo, aprendizado contínuo via flywheel de conhecimento,
+    modelo de mundo com grafo de memória espaço-temporal, auto-aperfeiçoamento bootstrap e guardrails de confiança
+    auditáveis, sem depender de LLM.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:FuRongJun-1999/dsh-memory
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

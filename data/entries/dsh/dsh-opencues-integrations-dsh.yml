@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-opencues-integrations-dsh
+name: opencues/opencues#integrations-dsh
+title: Composer autocomplete and fill-ins
+url: https://github.com/opencues/opencues/tree/master/integrations/dsh
+type: native-plugin
+category: ui
+license: Apache-2.0
+tags:
+  - autocomplete
+  - composer
+  - spellcheck
+description:
+  en: >-
+    Offers word alternatives and underscore-gated fill-ins in the composer: end a line with an underscore to have it
+    filled, and misspellings are flagged as you type. Routes through the model DSH is already configured with, so no
+    separate API key is needed.
+  pt: >-
+    Oferece alternativas de palavras e preenchimentos disparados por sublinhado no compositor: termine uma linha com um
+    sublinhado para que ela seja preenchida, e erros de digitação são sinalizados enquanto você digita. Usa o mesmo
+    modelo já configurado no DSH, sem precisar de uma chave de API separada.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:opencues/opencues#path:/integrations/dsh
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-archify-integrations-deepseek-harness
+name: tt-a1i/archify#integrations/deepseek-harness
+title: Auto-generate architecture diagrams
+url: https://github.com/tt-a1i/archify/tree/main/integrations/deepseek-harness
+type: native-plugin
+category: docs
+license: MIT
+tags:
+  - diagrams
+  - architecture
+  - visualization
+description:
+  en: >-
+    Generates validated, self-contained interactive architecture, workflow, sequence, data-flow and lifecycle diagrams
+    directly from repositories or system descriptions.
+  pt: >-
+    Gera diagramas interativos e autocontidos, validados, de arquitetura, fluxo de trabalho, sequência, fluxo de dados e
+    ciclo de vida diretamente a partir de repositórios ou descrições de sistema.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:tt-a1i/archify#path:/integrations/deepseek-harness
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

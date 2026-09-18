@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-remote-flymysql
+name: flymysql/dsh-remote
+title: Manage multiple SSH workspaces
+url: https://github.com/flymysql/dsh-remote
+type: native-plugin
+category: tools
+license: MIT
+tags:
+  - ssh
+  - remote
+  - workspace
+  - multi-host
+description:
+  en: >-
+    Manages many SSH hosts as workspaces: pick a local or remote workspace from the native Add-workspace flow, mirror a
+    remote workspace to a real local folder, and operate it with rw_* tools; a centered picker modal auto-fills / for
+    remote paths with live directory completion.
+  pt: >-
+    Gerencia vários hosts SSH como workspaces: escolha um workspace local ou remoto no fluxo Add-workspace, espelhe um
+    workspace remoto numa pasta local real e opere-o com ferramentas rw_*; um modal centralizado preenche / para
+    caminhos remotos com autocompletar de diretórios.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:flymysql/dsh-remote
+alternatives:
+  - name: caoyiwei850/dsh-ssh-ops
+    url: https://github.com/caoyiwei850/dsh-ssh-ops
+    adds:
+      en: >-
+        Adds an SSH ops terminal that drives a connected server from the main conversation, with an interactive xterm.js
+        terminal alongside it
+      pt: >-
+        Adiciona um terminal de operações SSH que controla um servidor a partir da conversa, com um terminal xterm.js
+        interativo ao lado
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

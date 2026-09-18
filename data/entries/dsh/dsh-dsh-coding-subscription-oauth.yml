@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-coding-subscription-oauth
+name: lninghaha/dsh-coding-subscription-oauth
+title: Multi-provider coding subscriptions
+url: https://github.com/lninghaha/dsh-coding-subscription-oauth
+type: native-plugin
+category: models
+license: null
+tags:
+  - subscriptions
+  - oauth
+  - multi-provider
+  - model-provider
+description:
+  en: >-
+    Signs in locally to SuperGrok/Grok Build, ChatGPT Plus Codex, Kimi Code, and Claude Code subscriptions without
+    pasting tokens, with an opt-in loopback OpenAI/Anthropic gateway.
+  pt: >-
+    Faz login local nas assinaturas SuperGrok/Grok Build, ChatGPT Plus Codex, Kimi Code e Claude Code sem colar tokens,
+    com um gateway loopback opcional para OpenAI/Anthropic.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:lninghaha/dsh-coding-subscription-oauth
+alternatives:
+  - name: V1ki/dsh-plugin-subscriptions
+    url: https://github.com/V1ki/dsh-plugin-subscriptions
+    adds:
+      en: >-
+        Also exposes image_generate, video_generate, and x_search tools alongside the Claude, Codex, and Grok
+        subscription routes.
+      pt: >-
+        Também expõe as ferramentas image_generate, video_generate e x_search junto das rotas de assinatura Claude,
+        Codex e Grok.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

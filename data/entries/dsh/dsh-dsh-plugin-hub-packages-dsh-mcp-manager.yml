@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-plugin-hub-packages-dsh-mcp-manager
+name: wingsky-1/dsh-plugin-hub#packages/dsh-mcp-manager
+title: MCP server config manager
+url: https://github.com/wingsky-1/dsh-plugin-hub/tree/main/packages/dsh-mcp-manager
+type: native-plugin
+category: tools
+license: MIT
+tags:
+  - mcp
+  - server-management
+  - configuration
+description:
+  en: >-
+    MCP server manager (stdio / streamable-http) with per-project and global config tiers: project MCP collapses into 4
+    atomic tools by default, workspace isolation prevents cross-project interference, configs keep only ${ENV} refs, and
+    a runtime API lets plugins register servers.
+  pt: >-
+    Gerenciador de servidores MCP (stdio / streamable-http) com níveis de config por projeto e global: o MCP do projeto
+    vira 4 ferramentas atômicas por padrão, isolamento evita interferência entre projetos, configs guardam só ${ENV} e
+    uma API deixa plugins registrarem servidores.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:wingsky-1/dsh-plugin-hub#path:/packages/dsh-mcp-manager
+alternatives:
+  - name: Edge-Echo/dsh-mcp-bridge
+    url: https://github.com/Edge-Echo/dsh-mcp-bridge
+    adds:
+      en: >-
+        Ships a ready-made bundle of demo, memory, filesystem, GitHub, Playwright, and remote HTTP MCP servers with a
+        connectivity verifier
+      pt: >-
+        Traz um pacote pronto com servidores MCP de demo, memória, arquivos, GitHub, Playwright e HTTP remoto, com um
+        verificador de conectividade
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

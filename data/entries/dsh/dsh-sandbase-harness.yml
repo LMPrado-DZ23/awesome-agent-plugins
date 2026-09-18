@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-sandbase-harness
+name: sandbaseai/sandbase-harness
+title: External agent runtime connector
+url: https://github.com/sandbaseai/sandbase-harness
+type: native-plugin
+category: workflow
+license: Apache-2.0
+tags:
+  - workflow
+  - runtime
+  - mcp
+  - agent-management
+description:
+  en: >-
+    Connects DSH to a local SandBase Harness runtime over stdio MCP for managing agents and sessions, streaming turns,
+    inspecting artifacts, and cancelling work.
+  pt: >-
+    Conecta o DSH a um runtime local do SandBase Harness via MCP por stdio para gerenciar agentes e sessões, transmitir
+    turnos, inspecionar artefatos e cancelar trabalhos.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:sandbaseai/sandbase-harness
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

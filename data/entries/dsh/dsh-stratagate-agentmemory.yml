@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-stratagate-agentmemory
+name: diqierjia/StrataGate-AgentMemory
+title: Six-layer time-decaying memory
+url: https://github.com/diqierjia/StrataGate-AgentMemory
+type: native-plugin
+category: memory
+license: MIT
+tags:
+  - memory
+  - knowledge-graph
+  - time-decay
+  - import
+description:
+  en: >-
+    Six-layer, time-decaying memory: recent conversations stay vivid while older ones fade into summaries, and lasting
+    events and relationships settle into a knowledge graph. Supports bringing memories in from other AI tools.
+  pt: >-
+    Memória de seis camadas com decaimento no tempo: conversas recentes permanecem vívidas enquanto as antigas se
+    transformam em resumos, e eventos e relacionamentos duradouros se consolidam em um grafo de conhecimento. Suporta
+    trazer memórias de outras ferramentas de IA.
+native:
+  client: dsh
+  install: >-
+    dsh plugin --profile web add
+    "https://github.com/diqierjia/StrataGate-AgentMemory/releases/latest/download/stratagate-dsh.tgz"
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

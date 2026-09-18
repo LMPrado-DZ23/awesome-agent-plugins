@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: skills-cli
+name: skills (npx skills)
+url: https://github.com/vercel-labs/skills
+type: tool
+category: meta
+featured: true
+license: MIT
+tags:
+  - skills
+  - installer
+  - cli
+description:
+  en: >-
+    CLI that installs, updates, lists and removes Agent Skills from any Git source into 75+ agents (Claude Code, Codex,
+    Cursor, Gemini CLI, OpenCode…). Used by this catalog for skill installs.
+  pt: >-
+    CLI que instala, atualiza, lista e remove Agent Skills de qualquer fonte Git em mais de 75 agentes (Claude Code,
+    Codex, Cursor, Gemini CLI, OpenCode…). Usado por este catálogo para instalar skills.

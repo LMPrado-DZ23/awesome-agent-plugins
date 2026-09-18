@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-design-qa
+name: sunxin-ai/dsh-design-qa
+title: Design-fidelity visual QA
+url: https://github.com/sunxin-ai/dsh-design-qa
+type: native-plugin
+category: multimodal
+license: MIT
+tags:
+  - design-qa
+  - visual-testing
+description:
+  en: >-
+    Lets a text-only model judge whether an implementation matches its design mock, via a deepseek_vision tool that
+    borrows any OpenAI-compatible vision route, shipped with a benchmark of fixtures and injected defects.
+  pt: >-
+    Permite que um modelo somente texto julgue se uma implementação corresponde ao mock de design, via uma ferramenta
+    deepseek_vision que usa qualquer rota de visão compatível com OpenAI, acompanhada de um benchmark com fixtures e
+    defeitos injetados.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:sunxin-ai/dsh-design-qa
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

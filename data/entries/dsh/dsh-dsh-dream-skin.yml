@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-dream-skin
+name: RevolutionLA/dsh-dream-skin
+title: All-in-one skin and wallpaper suite
+url: https://github.com/RevolutionLA/dsh-dream-skin
+type: native-plugin
+category: themes
+license: MIT
+tags:
+  - skins
+  - wallpaper
+  - themes
+  - customization
+description:
+  en: >-
+    Adds 8 built-in themes plus a translucent wallpaper with adjustable opacity and blur, a per-user accent color, and
+    shareable theme-pack import/export with favorites and a random surprise-me picker, native to DSH's own theme system.
+  pt: >-
+    Adiciona 8 temas nativos, um papel de parede translúcido com opacidade e desfoque ajustáveis, uma cor de destaque
+    por usuário e importação/exportação de pacotes de tema com favoritos e um seletor aleatório surpreenda-me, tudo
+    nativo no sistema de temas do DSH.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:RevolutionLA/dsh-dream-skin
+alternatives:
+  - name: NoNameLeGo/dsh-catppuccin-theme
+    url: https://github.com/NoNameLeGo/dsh-catppuccin-theme
+    adds:
+      en: Adds the official 4-variant Catppuccin palette with adjustable frosted glass across 5 UI regions.
+      pt: Adiciona a paleta oficial Catppuccin em 4 variantes com vidro fosco ajustável em 5 regiões da interface.
+  - name: Tkingxiao/dsh-any-background
+    url: https://github.com/Tkingxiao/dsh-any-background
+    adds:
+      en: Auto-switches text to light or dark based on extracted wallpaper colors, with per-area blur across 6 regions.
+      pt: >-
+        Alterna automaticamente o texto entre claro e escuro conforme as cores extraídas do papel de parede, com
+        desfoque por área em 6 regiões.
+  - name: TQSY114514/dsh-ui-appearance
+    url: https://github.com/TQSY114514/dsh-ui-appearance
+    adds:
+      en: Bundles full color-palette theming together with video wallpaper backgrounds in one appearance panel.
+      pt: Reúne temas de paleta de cores completos e papéis de parede em vídeo em um único painel de aparência.
+  - name: mux9056-bot/dsh-theme
+    url: https://github.com/mux9056-bot/dsh-theme
+    adds:
+      en: Ships 30 drop-in CSS theme packs with light/dark variants, manageable through a programmatic API.
+      pt: Traz 30 pacotes de temas CSS prontos com variantes claro/escuro, gerenciáveis por uma API programática.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

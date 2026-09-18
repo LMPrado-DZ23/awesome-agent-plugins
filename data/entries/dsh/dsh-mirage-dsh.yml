@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-mirage-dsh
+name: strukto-ai/mirage#dsh
+title: Virtual sandboxed workspace mounts
+url: https://github.com/strukto-ai/mirage/tree/main/typescript/packages/dsh
+type: native-plugin
+category: dev
+license: Apache-2.0
+tags:
+  - sandbox
+  - virtual-filesystem
+  - mounts
+  - workspace
+description:
+  en: >-
+    Swaps the filesystem and shell providers for virtual mounts (RAM, S3, Redis, Slack, Gmail, Notion, Postgres) with
+    per-mount read/write/exec permissions, routes commands to sandboxes (in-process or remote), and exposes installed
+    CLIs like git and gh in the terminal.
+  pt: >-
+    Substitui os provedores de sistema de arquivos e shell por mounts virtuais (RAM, S3, Redis, Slack, Gmail, Notion,
+    Postgres) com permissões de leitura/escrita/execução por mount, roteia comandos para sandboxes e expõe CLIs como git
+    e gh no terminal.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:strukto-ai/mirage#path:/typescript/packages/dsh
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

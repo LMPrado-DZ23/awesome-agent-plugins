@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-client-ui-theme-xp
+name: SamizuHM/dsh-client-ui-theme-xp
+title: Windows XP Luna desktop skin
+url: https://github.com/SamizuHM/dsh-client-ui-theme-xp
+type: native-plugin
+category: themes
+license: MIT
+tags:
+  - retro
+  - desktop
+  - windows-xp
+description:
+  en: >-
+    Recreates the Windows XP Luna desktop inside the DSH Web UI, with a floating window manager, taskbar, desktop icons,
+    and the era-accurate Luna skin.
+  pt: >-
+    Recria a área de trabalho Luna do Windows XP dentro da interface web do DSH, com um gerenciador de janelas
+    flutuantes, barra de tarefas, ícones de área de trabalho e o skin Luna fiel à época.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:SamizuHM/dsh-client-ui-theme-xp
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-pet-dsh-pet
+name: PC2005-cloud/dsh-pet#dsh-pet
+title: Animated desktop pet
+url: https://github.com/PC2005-cloud/dsh-pet/tree/main/dsh-pet
+type: native-plugin
+category: fun
+license: MIT
+tags:
+  - desktop-pet
+  - animation
+  - fun
+description:
+  en: >-
+    A desktop pet for the DSH Web UI with 25 transparent animations, screen wandering, click reactions, dragging, and a
+    reproducible asset-generation pipeline.
+  pt: >-
+    Um pet de desktop para a interface web do DSH com 25 animações transparentes, deslocamento pela tela, reações a
+    cliques, arrastar e um pipeline reproduzível de geração de assets.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:PC2005-cloud/dsh-pet#path:/dsh-pet
+alternatives:
+  - name: cyanfish-x/dsh-live2d-pets
+    url: https://github.com/cyanfish-x/dsh-live2d-pets
+    adds:
+      en: >-
+        Uses Live2D models that mirror agent state (thinking, idle, error, done, awaiting approval) with speech bubbles
+        and switchable personas.
+      pt: >-
+        Usa modelos Live2D que espelham o estado do agente (pensando, ocioso, erro, concluído, aguardando aprovação) com
+        balões de fala e personas alternáveis.
+  - name: hellosz/dsh-pets
+    url: https://github.com/hellosz/dsh-pets
+    adds:
+      en: >-
+        Ships 10 Petdex-compatible pets with a 9-state agent-status engine and a pet_say tool the agent can use to speak
+        through the pet.
+      pt: >-
+        Traz 10 pets compatíveis com o Petdex, um motor de status do agente com 9 estados e uma ferramenta pet_say para
+        o agente falar através do pet.
+  - name: vlln/whale-girl
+    url: https://github.com/vlln/whale-girl
+    adds:
+      en: Adds feeding and play interactions on top of dragging, QQ-pet style.
+      pt: Adiciona interações de alimentar e brincar além de arrastar, no estilo QQ-pet.
+  - name: nzl153/dsh-pet-whale
+    url: https://github.com/nzl153/dsh-pet-whale
+    adds:
+      en: Draws a pure-SVG pet from the official whale outline, with 7 color palettes and light/dark theme sync.
+      pt: >-
+        Desenha um pet em SVG puro a partir do contorno oficial da baleia, com 7 paletas de cores e sincronização com o
+        tema claro/escuro.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

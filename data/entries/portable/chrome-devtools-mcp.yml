@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: chrome-devtools-mcp
+name: Chrome DevTools MCP
+url: https://github.com/ChromeDevTools/chrome-devtools-mcp
+type: mcp-server
+category: browser
+featured: true
+license: Apache-2.0
+tags:
+  - browser
+  - debugging
+  - performance
+description:
+  en: >-
+    Gives agents Chrome DevTools: drive a live Chrome, inspect network and console, record performance traces and debug
+    pages.
+  pt: >-
+    Dá ao agente o Chrome DevTools: controla um Chrome real, inspeciona rede e console, grava traces de performance e
+    depura páginas.
+mcp:
+  name: chrome-devtools
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - chrome-devtools-mcp@latest

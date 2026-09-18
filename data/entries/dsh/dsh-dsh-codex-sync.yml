@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-codex-sync
+name: Walvez/dsh-codex-sync
+title: Two-way Codex-DSH skill sync
+url: https://github.com/Walvez/dsh-codex-sync
+type: native-plugin
+category: tools
+license: MIT
+tags:
+  - codex
+  - sync
+  - skills
+  - mcp
+description:
+  en: >-
+    Two-way Codex to DSH bridge: imports skills from ~/.codex/skills, imports sessions with workspace attach,
+    live-mirrors MCP servers (mcp_servers), and installs a Codex-side reverse MCP installer for the other direction.
+  pt: >-
+    Ponte bidirecional entre Codex e DSH: importa skills de ~/.codex/skills, importa sessões com anexo de workspace,
+    espelha em tempo real os servidores MCP (mcp_servers) e instala um instalador MCP reverso do lado do Codex para a
+    outra direção.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:Walvez/dsh-codex-sync
+alternatives:
+  - name: STARDUSTLC666/dsh-codex-port
+    url: https://github.com/STARDUSTLC666/dsh-codex-port
+    adds:
+      en: >-
+        Batch-ports official Codex plugins into DSH skills once (186 plugins, 583 skills, 577 succeeded) instead of live
+        sync
+      pt: >-
+        Porta em lote os plugins oficiais do Codex para skills do DSH (186 plugins, 583 skills, 577 com sucesso) em vez
+        de sync ao vivo
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

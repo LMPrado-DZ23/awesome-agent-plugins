@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-automation
+name: MichengAI/dsh-automation
+title: Scheduled headless coding runs
+url: https://github.com/MichengAI/dsh-automation
+type: native-plugin
+category: workflow
+license: Apache-2.0
+tags:
+  - workflow
+  - scheduling
+  - automation
+  - headless
+description:
+  en: Runs scheduled coding tasks in isolated DeepSeek Harness sessions, managed from Settings or the agent.
+  pt: >-
+    Executa tarefas de codificação agendadas em sessões isoladas do DeepSeek Harness, gerenciadas pelo Settings ou pelo
+    próprio agente.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:MichengAI/dsh-automation
+alternatives:
+  - name: Ceelog/dsh-plugins#dsh-plugin-scheduled-tasks
+    url: https://github.com/Ceelog/dsh-plugins/tree/main/src/plugins/dsh-plugin-scheduled-tasks
+    adds:
+      en: Adds one-time, interval, and cron schedules per project with durable run history.
+      pt: Adiciona agendamentos únicos, por intervalo e cron por projeto, com histórico de execução durável.
+  - name: KelaoHu/dsh-lowtide#dsh-lowtide
+    url: https://github.com/KelaoHu/dsh-lowtide/tree/main/packages/dsh-lowtide
+    adds:
+      en: Runs task batches automatically in off-peak hours with four execution strategies and L1-L3 adjudication.
+      pt: >-
+        Executa lotes de tarefas automaticamente em horários de baixo uso, com quatro estratégias de execução e
+        adjudicação L1-L3.
+  - name: titanwings/dsh-automation
+    url: https://github.com/titanwings/dsh-automation
+    adds:
+      en: Simpler scheduled runs in fresh agent sessions with an auditable history.
+      pt: Execuções agendadas mais simples em sessões novas do agente, com histórico auditável.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

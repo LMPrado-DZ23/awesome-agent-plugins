@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-chat-import
+name: Nwflower/dsh-chat-import
+title: Cross-tool session import and export
+url: https://github.com/Nwflower/dsh-chat-import
+type: native-plugin
+category: sessions
+license: MIT
+tags:
+  - session
+  - import-export
+  - cross-tool
+  - migration
+description:
+  en: >-
+    Import full-fidelity chat histories from 13 coding agents (Claude Code, Codex, ChatGPT, Cursor, Gemini, opencode,
+    and more) as resumable DeepSeek Harness sessions, with reverse export back to Claude Code.
+  pt: >-
+    Importa históricos de chat com fidelidade total de 13 agentes de codificação (Claude Code, Codex, ChatGPT, Cursor,
+    Gemini, opencode e outros) como sessões retomáveis do DeepSeek Harness, com exportação reversa de volta ao Claude
+    Code.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:Nwflower/dsh-chat-import
+alternatives:
+  - name: PerryLink/dsh-claude-move
+    url: https://github.com/PerryLink/dsh-claude-move
+    adds:
+      en: Also migrates memories, skills, instructions, and slash commands from four sources, with an approval gate.
+      pt: Também migra memórias, habilidades, instruções e comandos de barra de quatro fontes, com um portão de aprovação.
+  - name: huguangyu666/dsh-plugin-session-import
+    url: https://github.com/huguangyu666/dsh-plugin-session-import
+    adds:
+      en: Preserves tool calls and adds oversized-session protection plus zcode compaction restore.
+      pt: >-
+        Preserva chamadas de ferramentas e adiciona proteção contra sessões grandes demais e restauração de compactação
+        do zcode.
+  - name: kirkchinese/claude2dsh
+    url: https://github.com/kirkchinese/claude2dsh
+    adds:
+      en: Also imports skills and plugin assets, with bidirectional sync back to Claude Code JSONL.
+      pt: >-
+        Também importa habilidades e ativos de plugin, com sincronização bidirecional de volta para o JSONL do Claude
+        Code.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

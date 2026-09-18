@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-dracula-theme
+name: ossFrankFrank/dsh-dracula-theme
+title: Dracula theme
+url: https://github.com/ossFrankFrank/dsh-dracula-theme
+type: native-plugin
+category: themes
+license: MIT
+tags:
+  - dracula
+  - color-palette
+  - dark-theme
+description:
+  en: >-
+    The classic Dracula dark palette plus a Soft variant, registered into the native DSH theme runtime with one-click
+    switching and a persisted choice.
+  pt: >-
+    A clássica paleta escura Dracula, mais uma variante Soft, registrada no sistema nativo de temas do DSH, com troca em
+    um clique e escolha persistida.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:ossFrankFrank/dsh-dracula-theme
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

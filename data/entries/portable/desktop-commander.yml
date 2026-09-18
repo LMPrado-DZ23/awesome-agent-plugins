@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: desktop-commander
+name: Desktop Commander
+url: https://github.com/wonderwhy-er/DesktopCommanderMCP
+type: mcp-server
+category: tools
+license: MIT
+tags:
+  - terminal
+  - filesystem
+description:
+  en: Terminal control, long-running process management, file-system search and diff-based file editing for agents.
+  pt: >-
+    Controle de terminal, gestão de processos longos, busca no sistema de arquivos e edição de arquivos por diff para
+    agentes.
+mcp:
+  name: desktop-commander
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@wonderwhy-er/desktop-commander@latest"

@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-engramory-plugin
+name: tinqiao-oss/engramory#plugin
+title: Plaintext one-fact-per-file memory
+url: https://github.com/tinqiao-oss/engramory/tree/master/adapters/dsh/plugin
+type: native-plugin
+category: memory
+license: MIT
+tags:
+  - memory
+  - markdown
+  - cross-tool
+  - plaintext
+description:
+  en: >-
+    Long-term memory stored as plain markdown, one fact per file. A size-capped MEMORY.md index blocks writes that would
+    grow it past the limit; shrinking rewrites always pass. The same store is shared with Claude Code, Codex, Kiro and
+    OpenClaw.
+  pt: >-
+    Memória de longo prazo guardada em markdown puro, um fato por arquivo. Um índice MEMORY.md com limite de tamanho
+    bloqueia gravações que o fariam crescer além do limite; reescritas que o reduzem sempre passam. O mesmo repositório
+    é compartilhado com Claude Code, Codex, Kiro e OpenClaw.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:tinqiao-oss/engramory#path:/adapters/dsh/plugin
+alternatives:
+  - name: gezi-wen/sage-mem
+    url: https://github.com/gezi-wen/sage-mem
+    adds:
+      en: Uses a file format compatible with Claude Code's CLAUDE.md, so migrating is a manual file copy.
+      pt: >-
+        Usa formato de arquivo compatível com o CLAUDE.md do Claude Code, tornando a migração uma simples cópia de
+        arquivo.
+  - name: Max-Null/dsh-memory
+    url: https://github.com/Max-Null/dsh-memory
+    adds:
+      en: Adds a human-confirm gate before saving and global plus git-tracked project-scoped JSON stores.
+      pt: Adiciona uma confirmação humana antes de salvar e repositórios JSON globais e por projeto rastreados pelo git.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

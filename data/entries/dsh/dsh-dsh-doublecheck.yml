@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-doublecheck
+name: PerryLink/dsh-doublecheck
+title: Requirements and test-evidence guard
+url: https://github.com/PerryLink/dsh-doublecheck
+type: native-plugin
+category: workflow
+license: Apache-2.0
+tags:
+  - workflow
+  - quality-gate
+  - verification
+  - review
+description:
+  en: >-
+    Engineering-discipline guard: a requirements grill before the first edit, red/green test-evidence gates, a forked
+    adversary review, and a delivery report with per-dimension verification.
+  pt: >-
+    Guarda de disciplina de engenharia: um interrogatório de requisitos antes da primeira edição, portões de evidência
+    de teste red/green, uma revisão adversária bifurcada e um relatório de entrega com verificação por dimensão.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:PerryLink/dsh-doublecheck
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

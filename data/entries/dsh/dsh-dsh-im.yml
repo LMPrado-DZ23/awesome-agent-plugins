@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-im
+name: xmanrui/dsh-im
+title: Multi-channel IM bot bridge
+url: https://github.com/xmanrui/dsh-im
+type: native-plugin
+category: integrations
+license: MIT
+tags:
+  - messaging
+  - im-bridge
+  - multi-channel
+  - remote-control
+description:
+  en: >-
+    Connects IM bots to the harness via QR codes or bot credentials, across nine channels: Feishu, WeChat, DingTalk,
+    WeCom, QQ, Slack, Telegram, Discord, and WhatsApp.
+  pt: >-
+    Conecta bots de mensageria ao harness via QR codes ou credenciais de bot, em nove canais: Feishu, WeChat, DingTalk,
+    WeCom, QQ, Slack, Telegram, Discord e WhatsApp.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:xmanrui/dsh-im
+alternatives:
+  - name: MichengAI/dsh-im-connect
+    url: https://github.com/MichengAI/dsh-im-connect
+    adds:
+      en: Gives each IM chat its own workspace as a separate channel.
+      pt: Dá a cada conversa de mensageria seu próprio workspace como canal separado.
+  - name: AbcdefgXW/dsh-msg-hub
+    url: https://github.com/AbcdefgXW/dsh-msg-hub
+    adds:
+      en: Wakes the channel bot from scheduled tasks to proactively push AI replies to your phone.
+      pt: Acorda o bot do canal a partir de tarefas agendadas para enviar respostas da IA proativamente ao seu celular.
+  - name: ThreeBody6666/dsh-im-hub
+    url: https://github.com/ThreeBody6666/dsh-im-hub
+    adds:
+      en: Uses WeCom AES-encrypted callbacks and Telegram long polling without needing a public URL.
+      pt: Usa callbacks criptografados com AES no WeCom e long polling no Telegram, sem precisar de URL pública.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

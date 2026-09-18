@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: sequential-thinking
+name: Sequential Thinking (reference)
+url: https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking
+type: mcp-server
+category: workflow
+license: null
+tags:
+  - reasoning
+  - reference
+description:
+  en: "Structured step-by-step thinking tool: the agent records, revises and branches thoughts while solving a problem."
+  pt: >-
+    Ferramenta de raciocínio passo a passo: o agente registra, revisa e ramifica pensamentos enquanto resolve um
+    problema.
+mcp:
+  name: sequential-thinking
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@modelcontextprotocol/server-sequential-thinking"

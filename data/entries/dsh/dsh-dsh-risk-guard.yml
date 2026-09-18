@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-risk-guard
+name: shuxue6662-a11y/dsh-risk-guard
+title: Passive risk-scored call blocking
+url: https://github.com/shuxue6662-a11y/dsh-risk-guard
+type: native-plugin
+category: security
+license: MIT
+tags:
+  - risk-scoring
+  - audit-trail
+  - fuse-blocking
+  - irreversible-actions
+description:
+  en: >-
+    Silently records every tool call with deterministic, cumulative risk scoring and retention-based cleanup, blocking
+    irreversible actions like protected-path deletion, disk wipes, and force-pushes to protected branches.
+  pt: >-
+    Registra silenciosamente cada chamada de ferramenta com pontuação de risco determinística e cumulativa e limpeza
+    baseada em retenção, bloqueando ações irreversíveis como exclusão de caminhos protegidos, apagamento de disco e
+    force-push em branches protegidos.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:shuxue6662-a11y/dsh-risk-guard
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

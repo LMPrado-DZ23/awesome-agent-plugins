@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-smooth-stream
+name: Laplace-bit/dsh-smooth-stream
+title: Smooth streaming text rendering
+url: https://github.com/Laplace-bit/dsh-smooth-stream
+type: native-plugin
+category: ui
+license: MIT
+tags:
+  - streaming
+  - rendering
+  - scrolling
+description:
+  en: Fluid streaming rendering and smooth scrolling for the DeepSeek Harness Web UI.
+  pt: Renderização de streaming fluida e rolagem suave para a interface web do DeepSeek Harness.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:Laplace-bit/dsh-smooth-stream
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: claude-plugins-official
+name: Claude Code official plugin directory
+url: https://github.com/anthropics/claude-plugins-official
+type: marketplace
+category: meta
+featured: true
+license: Apache-2.0
+tags:
+  - claude-code
+  - plugins
+description:
+  en: >-
+    Anthropic-managed directory of Claude Code plugins (commands, agents, skills, hooks, MCP servers) installable with
+    /plugin.
+  pt: >-
+    Diretório de plugins do Claude Code mantido pela Anthropic (comandos, agentes, skills, hooks, servidores MCP)
+    instaláveis com /plugin.
+native:
+  client: claude-code
+  install: /plugin install <plugin-name>@claude-plugins-official
+  lang: text

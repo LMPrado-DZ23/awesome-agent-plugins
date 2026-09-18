@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: awesome-mcp-servers
+name: awesome-mcp-servers
+url: https://github.com/punkpeye/awesome-mcp-servers
+type: list
+category: meta
+license: MIT
+tags:
+  - mcp
+  - awesome-list
+description:
+  en: Large community list of MCP servers grouped by domain. Broader than this catalog; no per-client install data.
+  pt: >-
+    Grande lista comunitária de servidores MCP agrupados por domínio. Mais ampla que este catálogo; sem instruções de
+    instalação por cliente.

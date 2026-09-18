@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: sentry-mcp
+name: Sentry MCP
+url: https://github.com/getsentry/sentry-mcp
+type: mcp-server
+category: dev
+license: null
+tags:
+  - errors
+  - observability
+description:
+  en: Query Sentry issues, events, traces and releases from the agent; OAuth sign-in on the remote endpoint.
+  pt: Consulte issues, eventos, traces e releases do Sentry pelo agente; login OAuth no endpoint remoto.
+mcp:
+  name: sentry
+  http:
+    url: https://mcp.sentry.dev/mcp

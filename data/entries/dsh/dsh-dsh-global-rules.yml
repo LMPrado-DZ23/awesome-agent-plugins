@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-global-rules
+name: badai147/dsh-global-rules
+title: Edit global AGENTS.md from settings
+url: https://github.com/badai147/dsh-global-rules
+type: native-plugin
+category: dev
+license: MIT
+tags:
+  - configuration
+  - global-rules
+  - settings
+description:
+  en: >-
+    Edits the global ~/.dsh/AGENTS.md rules file directly from the web settings panel, saving live so every session on
+    the machine picks up the change immediately.
+  pt: >-
+    Edita o arquivo global de regras ~/.dsh/AGENTS.md diretamente pelo painel de configurações web, salvando ao vivo
+    para que toda sessão na máquina receba a mudança imediatamente.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:badai147/dsh-global-rules
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

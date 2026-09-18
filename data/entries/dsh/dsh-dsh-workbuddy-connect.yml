@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-workbuddy-connect
+name: corrinehu/dsh-workbuddy-connect
+title: WorkBuddy model bridge
+url: https://github.com/corrinehu/dsh-workbuddy-connect
+type: native-plugin
+category: models
+license: MIT
+tags:
+  - workbuddy
+  - model-provider
+  - account-pooling
+  - desktop-bridge
+description:
+  en: Brings models from the locally signed-in WorkBuddy desktop app into the harness with zero extra configuration.
+  pt: Traz os modelos do aplicativo desktop WorkBuddy, já logado localmente, para o harness sem configuração adicional.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:corrinehu/dsh-workbuddy-connect
+alternatives:
+  - name: dingminhua/dsh-connect-workbuddy
+    url: https://github.com/dingminhua/dsh-connect-workbuddy
+    adds:
+      en: Adds per-model image-input opt-in, account switching, and a read-only credits overview with daily check-in.
+      pt: >-
+        Adiciona entrada de imagem opcional por modelo, troca de conta e uma visão geral de créditos somente leitura com
+        check-in diário.
+  - name: aosi526/dsh-workbuddy-xdpool
+    url: https://github.com/aosi526/dsh-workbuddy-xdpool
+    adds:
+      en: Merges every signed-in WorkBuddy account into one auto-failover pool with per-model credit multipliers shown.
+      pt: >-
+        Mescla todas as contas WorkBuddy logadas em um único pool com failover automático, mostrando multiplicadores de
+        crédito por modelo.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

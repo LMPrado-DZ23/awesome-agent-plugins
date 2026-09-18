@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-session-review
+name: sunshaobei/dsh-session-review
+title: Review files changed this session
+url: https://github.com/sunshaobei/dsh-session-review
+type: native-plugin
+category: git
+license: null
+tags:
+  - code-review
+  - sessions
+  - diffs
+description:
+  en: >-
+    A strip above the composer lists files modified in the current session (collapsed by default), with a Review button
+    opening a panel showing before/after hunks from the session's own edit/write results; no git required.
+  pt: >-
+    Uma faixa acima do campo de composição lista os arquivos modificados na sessão atual (recolhida por padrão), com um
+    botão Revisar que abre um painel mostrando trechos antes/depois dos resultados de edit/write da sessão; não requer
+    git.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:sunshaobei/dsh-session-review
+alternatives:
+  - name: cirelir/dsh-change-review
+    url: https://github.com/cirelir/dsh-change-review
+    adds:
+      en: >-
+        Tracks write/edit calls with session isolation, subagent aggregation and SSE live updates, also without needing
+        git
+      pt: >-
+        Rastreia write/edit com isolamento por sessão, agregação de subagentes e atualizações ao vivo via SSE, sem
+        precisar de git
+  - name: 9087/dsh-diff-approval
+    url: https://github.com/9087/dsh-diff-approval
+    adds:
+      en: >-
+        Lets each change block be kept or reverted individually, supports undo/redo, and persists the review across
+        restarts
+      pt: >-
+        Permite manter ou reverter cada bloco de mudança individualmente, oferece desfazer/refazer e mantém a revisão
+        persistente entre reinícios
+  - name: Tlyer233/dsh-vscode-review#dsh-review
+    url: https://github.com/Tlyer233/dsh-vscode-review/tree/main/dsh-review
+    adds:
+      en: >-
+        Records every write, edit and shell rm into a shadow git repo, reviewable hunk-by-hunk inside a companion VS
+        Code extension
+      pt: >-
+        Registra write, edit e rm de shell num repositório git sombra, revisável trecho a trecho numa extensão
+        companheira do VS Code
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: aws-mcp
+name: AWS MCP servers
+url: https://github.com/awslabs/mcp
+type: list
+category: cloud
+license: Apache-2.0
+tags:
+  - aws
+description:
+  en: >-
+    Open-source MCP servers for AWS (documentation, CDK, cost analysis, databases, Lambda and more), each with its own
+    install instructions.
+  pt: >-
+    Servidores MCP open source para AWS (documentação, CDK, análise de custo, bancos de dados, Lambda e mais), cada um
+    com suas instruções de instalação.

@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-tool-writing
+name: x2802490130-prog/dsh-tool-writing
+title: Web-novel writing engine
+url: https://github.com/x2802490130-prog/dsh-tool-writing
+type: native-plugin
+category: tools
+license: MIT
+tags:
+  - writing
+  - fiction
+  - novel
+description:
+  en: >-
+    A web-novel writing engine for DeepSeek Harness: parallel drafting, outlining, and brainstorming with a separate
+    DeepSeek key, lore and foreshadowing management, semantic vector retrieval, a corpus library, a usage ledger,
+    mechanical proofreading, and a local serialization plan.
+  pt: >-
+    Motor de escrita de web-novels para o DeepSeek Harness: rascunho, esboço e brainstorming em paralelo com chave
+    DeepSeek separada, gestão de lore e pistas, recuperação vetorial semântica, biblioteca de corpus, livro-razão de
+    uso, revisão mecânica e plano de serialização.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:x2802490130-prog/dsh-tool-writing
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

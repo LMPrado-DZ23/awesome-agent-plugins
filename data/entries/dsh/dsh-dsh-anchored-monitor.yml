@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-anchored-monitor
+name: Aik358/dsh-anchored-monitor
+title: Reasoning-drift watchdog
+url: https://github.com/Aik358/dsh-anchored-monitor
+type: native-plugin
+category: ui
+license: MIT
+tags:
+  - reasoning
+  - monitoring
+  - focus
+description:
+  en: >-
+    Watches the reasoning fingerprint of every thinking block and pulls the model back when it slips from focused 'We
+    will / I will' mode into scattered 'let me' mode.
+  pt: >-
+    Observa a impressão digital do raciocínio em cada bloco de pensamento e traz o modelo de volta ao foco quando ele
+    escorrega do modo concentrado 'Nós vamos / eu vou' para o modo disperso 'deixa eu'.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:Aik358/dsh-anchored-monitor
+alternatives:
+  - name: Yuer6327/NoLetMe
+    url: https://github.com/Yuer6327/NoLetMe
+    adds:
+      en: Shows live 'we need' versus 'let me' keyword frequency stats instead of automatically intervening on the model.
+      pt: >-
+        Mostra estatísticas ao vivo da frequência das palavras-chave 'we need' e 'let me', em vez de intervir
+        automaticamente no modelo.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

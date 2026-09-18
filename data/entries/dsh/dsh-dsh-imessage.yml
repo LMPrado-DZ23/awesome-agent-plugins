@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-imessage
+name: photon-hq/dsh-imessage
+title: Two-way iMessage channel
+url: https://github.com/photon-hq/dsh-imessage
+type: native-plugin
+category: integrations
+license: MIT
+tags:
+  - imessage
+  - messaging
+  - approvals
+  - remote-control
+description:
+  en: >-
+    Two-way iMessage channel over Photon: sender allowlisting, session commands, in-chat approvals and questions, and a
+    settings page for device authorization and hosted-line setup.
+  pt: >-
+    Canal bidirecional de iMessage via Photon: lista de permissão de remetentes, comandos de sessão, aprovações e
+    perguntas dentro do chat, e uma página de configurações para autorização de dispositivo e configuração de linha
+    hospedada.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:photon-hq/dsh-imessage
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

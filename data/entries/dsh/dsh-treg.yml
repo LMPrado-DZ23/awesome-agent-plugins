@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-treg
+name: superdesigndev/treg
+title: Paid API catalog for agents
+url: https://github.com/superdesigndev/treg
+type: native-plugin
+category: tools
+license: null
+tags:
+  - api-catalog
+  - integrations
+  - search
+description:
+  en: >-
+    Tool catalog for agents: searches about 2,600 external endpoints (SEO/SERP, backlinks, social, people/company
+    enrichment, ad libraries, scraping) by task, reads each one's parameters and price, then calls it with the
+    credential injected server-side.
+  pt: >-
+    Catálogo de ferramentas para agentes: pesquisa cerca de 2.600 endpoints externos (SEO/SERP, backlinks, social,
+    enriquecimento de pessoas/empresas, anúncios, scraping) pela tarefa, lê parâmetros e preço, e chama com a credencial
+    injetada no servidor.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:superdesigndev/treg
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

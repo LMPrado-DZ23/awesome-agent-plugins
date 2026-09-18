@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-gongwen-skill
+name: linhut/gongwen-skill
+title: Chinese official document toolkit
+url: https://github.com/linhut/gongwen-skill
+type: native-plugin
+category: skills
+license: MIT
+tags:
+  - documents
+  - chinese
+  - compliance
+  - docx
+description:
+  en: >-
+    Chinese government document processing toolkit: GB/T 9704 format checking and auto-fix, revision markup (red
+    annotation and strikethrough), template generation, Markdown-to-docx conversion, and header/footer/page-number
+    injection for 24 official document types.
+  pt: >-
+    Kit de documentos oficiais chineses: verificação e correção automática do formato GB/T 9704, marcação de revisão
+    (vermelho e tachado), geração de modelos, conversão de Markdown para docx e inserção de cabeçalho/rodapé/número de
+    página para 24 tipos de documento.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:linhut/gongwen-skill
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

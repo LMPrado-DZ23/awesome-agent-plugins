@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-vision-mix
+name: haiziyao/dsh-vision-mix
+title: Unified text/vision/image-gen routing
+url: https://github.com/haiziyao/dsh-vision-mix
+type: native-plugin
+category: multimodal
+license: MIT
+tags:
+  - multimodal
+  - routing
+description:
+  en: >-
+    Routes each request to the right modality inside one Mix model: text-only goes to the chat model, images go to the
+    vision model, and the agent can also generate or edit images, all with session-scoped call history.
+  pt: >-
+    Roteia cada requisição para a modalidade certa dentro de um único modelo Mix: texto vai para o modelo de chat,
+    imagens vão para o modelo de visão, e o agente também pode gerar ou editar imagens, tudo com histórico de chamadas
+    por sessão.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:haiziyao/dsh-vision-mix
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: awesome-claude-code
+name: awesome-claude-code
+url: https://github.com/hesreallyhim/awesome-claude-code
+type: list
+category: meta
+license: null
+tags:
+  - claude-code
+  - awesome-list
+description:
+  en: "Curated resources for Claude Code: slash commands, CLAUDE.md files, hooks, workflows and tooling."
+  pt: "Recursos curados para Claude Code: slash commands, arquivos CLAUDE.md, hooks, fluxos e ferramentas."

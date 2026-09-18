@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-memento
+name: PerryLink/dsh-memento
+title: Approval-gated auditable memory
+url: https://github.com/PerryLink/dsh-memento
+type: native-plugin
+category: memory
+license: Apache-2.0
+tags:
+  - memory
+  - audit-trail
+  - sqlite
+  - approval-gated
+description:
+  en: >-
+    Bounded, layered, approval-gated cross-session memory: a typed memory seam with a zero-dependency SQLite provider,
+    frozen snapshot injection, and a conformance suite for adapter compatibility.
+  pt: >-
+    Memória entre sessões limitada, em camadas e sujeita a aprovação: uma interface de memória tipada com um provedor
+    SQLite sem dependências, injeção de snapshots congelados e um conjunto de testes de conformidade para adaptadores.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:PerryLink/dsh-memento
+alternatives:
+  - name: GIT121995/dsh-memory-gate
+    url: https://github.com/GIT121995/dsh-memory-gate
+    adds:
+      en: Adds explainable use/verify/ignore decisions with a full audit trail and a per-call injection limit.
+      pt: >-
+        Adiciona decisões explicáveis de usar/verificar/ignorar com trilha de auditoria completa e limite de injeção por
+        chamada.
+  - name: highland0971/dsh-native-memory
+    url: https://github.com/highland0971/dsh-native-memory
+    adds:
+      en: Runs on the harness's own storage seam with no external server, citing session and sequence for each fact.
+      pt: >-
+        Roda na própria camada de armazenamento do harness, sem servidor externo, citando sessão e sequência de cada
+        fato.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

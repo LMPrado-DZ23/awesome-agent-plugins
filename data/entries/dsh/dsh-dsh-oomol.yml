@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-oomol
+name: oomol-lab/dsh-oomol
+title: Connect DSH to OOMOL apps
+url: https://github.com/oomol-lab/dsh-oomol
+type: native-plugin
+category: tools
+license: MIT
+tags:
+  - oomol
+  - integration
+  - connectors
+description:
+  en: >-
+    Connects DeepSeek Harness to OOMOL-managed apps and services, with progressive Connector Action discovery and
+    execution plus an in-app panel for managing Provider connections.
+  pt: >-
+    Conecta o DeepSeek Harness a aplicativos e serviços gerenciados pela OOMOL, com descoberta e execução progressiva de
+    Connector Actions, além de um painel no próprio app para gerenciar conexões de Provider.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:oomol-lab/dsh-oomol
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

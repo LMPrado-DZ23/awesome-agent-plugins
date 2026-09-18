@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-hyperframes
+name: STARDUSTLC666/dsh-hyperframes
+title: HyperFrames HTML video skills
+url: https://github.com/STARDUSTLC666/dsh-hyperframes
+type: native-plugin
+category: skills
+license: MIT
+tags:
+  - video
+  - hyperframes
+  - html
+description:
+  en: >-
+    Twenty HyperFrames-by-HeyGen skills synced from upstream: HTML video authoring, animation, keyframes,
+    audio/music-to-video, a CLI, a registry, slideshows, talking-head recuts and website/product/PR-to-video, plus a
+    health check.
+  pt: >-
+    Vinte skills HyperFrames da HeyGen sincronizadas do projeto original: criação de vídeo em HTML, animação, keyframes,
+    áudio/música para vídeo, uma CLI, um registro, slideshows, recortes de talking-head e conversão de site/produto/PR
+    em vídeo, além de checagem de saúde.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:STARDUSTLC666/dsh-hyperframes
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

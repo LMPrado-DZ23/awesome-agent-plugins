@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-tool-lens
+name: trench-xinxin/dsh-tool-lens
+title: Deterministic code graph tool
+url: https://github.com/trench-xinxin/dsh-tool-lens
+type: native-plugin
+category: tools
+license: MIT
+tags:
+  - code-graph
+  - architecture
+  - static-analysis
+description:
+  en: >-
+    Deterministic AST code graph and architecture intelligence tool for call hierarchies, blast radius, circular
+    dependencies, domain slices, and full-stack API contracts.
+  pt: >-
+    Ferramenta determinística de grafo de código AST e inteligência de arquitetura para hierarquias de chamadas, raio de
+    impacto, dependências circulares, fatias de domínio e contratos de API full-stack.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:trench-xinxin/dsh-tool-lens
+alternatives:
+  - name: wulun811/LiuHe#bundle
+    url: https://github.com/wulun811/LiuHe/tree/master/malong/dsh/bundle
+    adds:
+      en: >-
+        Adds a 44-tool edit surface (repo_map, symbol search, edit_batch with a transactional undo journal) on top of
+        code graph analysis
+      pt: >-
+        Adiciona 44 ferramentas de edição (repo_map, busca de símbolos, edit_batch com jornal de undo) além da análise
+        de grafo de código
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

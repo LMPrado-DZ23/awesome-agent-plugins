@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-find-plugin
+name: awesome-dsh-plugin/dsh-find-plugin
+title: Chat-based plugin discovery
+url: https://github.com/awesome-dsh-plugin/dsh-find-plugin
+type: native-plugin
+category: meta
+license: MIT
+tags:
+  - plugin-search
+  - registry
+  - discovery
+description:
+  en: >-
+    Searches a curated plugin registry by keyword or category from inside the agent conversation and returns
+    ready-to-run install commands, without opening the Settings UI.
+  pt: >-
+    Pesquisa um registro curado de plugins por palavra-chave ou categoria diretamente na conversa com o agente e retorna
+    comandos de instalação prontos, sem abrir a interface de Configurações.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:awesome-dsh-plugin/dsh-find-plugin
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

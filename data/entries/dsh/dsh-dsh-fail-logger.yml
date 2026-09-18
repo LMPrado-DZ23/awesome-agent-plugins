@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-fail-logger
+name: Areium/dsh-fail-logger
+title: Auto-log and dedupe failed calls
+url: https://github.com/Areium/dsh-fail-logger
+type: native-plugin
+category: dev
+license: MIT
+tags:
+  - logging
+  - debugging
+  - skills
+description:
+  en: >-
+    Automatically logs failed tool calls across native tools, PTC run_code and inline invocations, deduplicating and
+    counting root causes into a skill so repeated mistakes fade over time.
+  pt: >-
+    Registra automaticamente chamadas de ferramentas que falharam em ferramentas nativas, PTC run_code e invocações
+    inline, deduplicando e contando as causas-raiz em uma skill para que erros repetidos diminuam com o tempo.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:Areium/dsh-fail-logger
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

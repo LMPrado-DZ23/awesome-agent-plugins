@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-upstream-radar
+name: MicroMilo/upstream-radar
+title: Upstream compatibility monitoring
+url: https://github.com/MicroMilo/upstream-radar
+type: native-plugin
+category: security
+license: Apache-2.0
+tags:
+  - compatibility
+  - ci
+  - monitoring
+  - releases
+description:
+  en: >-
+    Watches harness core and plugin releases, retests the exact published artifacts in disposable runners, publishes
+    machine-readable compatibility evidence, and reconciles tracked issues once fixes land.
+  pt: >-
+    Monitora lançamentos do núcleo do harness e de plugins, reteste os artefatos publicados exatos em runners
+    descartáveis, publica evidências de compatibilidade legíveis por máquina e reconcilia issues rastreadas após
+    correções.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:MicroMilo/upstream-radar
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-reverse-skill
+name: dhicoc/dsh-reverse-skill
+title: Reverse engineering & pentest skills
+url: https://github.com/dhicoc/dsh-reverse-skill
+type: native-plugin
+category: skills
+license: MIT
+tags:
+  - security
+  - reverse-engineering
+  - pentesting
+description:
+  en: >-
+    Complete reverse-engineering pack of 85 SKILL.md files for DeepSeek Harness Cordis: reverse engineering, authorized
+    penetration testing and a security-research skill router.
+  pt: >-
+    Pacote completo de engenharia reversa com 85 arquivos SKILL.md para o DeepSeek Harness Cordis: engenharia reversa,
+    testes de invasão autorizados e um roteador de skills de pesquisa em segurança.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:dhicoc/dsh-reverse-skill
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

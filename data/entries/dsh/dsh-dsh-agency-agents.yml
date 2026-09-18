@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-agency-agents
+name: MichengAI/dsh-agency-agents
+title: Summonable domain-expert subagents
+url: https://github.com/MichengAI/dsh-agency-agents
+type: native-plugin
+category: skills
+license: Apache-2.0
+tags:
+  - subagents
+  - specialists
+  - delegation
+description:
+  en: >-
+    Adds a roster of domain-expert subagents that can be summoned on demand while the parent session keeps the task and
+    produces the final answer.
+  pt: >-
+    Adiciona um elenco de subagentes especialistas em domínios que podem ser convocados sob demanda, enquanto a sessão
+    principal mantém a tarefa e produz a resposta final.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:MichengAI/dsh-agency-agents
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

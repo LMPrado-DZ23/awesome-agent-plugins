@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-github
+name: PerryLink/dsh-github
+title: GitHub CI and PR review bot
+url: https://github.com/PerryLink/dsh-github
+type: native-plugin
+category: git
+license: Apache-2.0
+tags:
+  - github
+  - ci
+  - pull-requests
+description:
+  en: >-
+    Official-grade GitHub CI integration: a composite action.yml, a polling PR review bot with idempotent inline
+    comments and a status-check gate, plus PR and issue tools where every write is gated by human approval.
+  pt: >-
+    Integração de CI com o GitHub de nível oficial: um action.yml composto, um bot de revisão de PR por polling com
+    comentários inline idempotentes e um gate de status-check, além de ferramentas de PR e issues em que toda escrita é
+    aprovada por um humano.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:PerryLink/dsh-github
+alternatives:
+  - name: Starfie1d1272/dsh-github-skills
+    url: https://github.com/Starfie1d1272/dsh-github-skills
+    adds:
+      en: >-
+        Packages the workflow as four skills: PR triage, review feedback, Actions diagnosis and safe draft-PR
+        publishing, via gh/git fallbacks
+      pt: >-
+        Empacota o fluxo em quatro skills: triagem de PR, feedback de revisão, diagnóstico de Actions e publicação
+        segura de draft-PR, via gh/git
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-deepseek-harness-zh-pro
+name: magian1127/deepseek-harness-zh_pro
+title: Web UI localization and tweaks
+url: https://github.com/magian1127/deepseek-harness-zh_pro
+type: native-plugin
+category: ui
+license: MIT
+tags:
+  - localization
+  - ui-tweaks
+  - settings
+description:
+  en: >-
+    UI enhancement suite for the DSH web client: completed Chinese locale, one-row usage stats, auto-expanded thinking,
+    adjustable chat width, session archiving and deletion, plus an optional prompt-injection switch that is off by
+    default.
+  pt: >-
+    Suíte de melhorias de interface para o cliente web do DSH: locale chinês completo, estatísticas de uso em uma linha,
+    expansão automática do raciocínio, largura de chat ajustável, arquivamento e exclusão de sessões, além de um
+    interruptor opcional de injeção de prompt desativado por padrão.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:magian1127/deepseek-harness-zh_pro
+alternatives:
+  - name: wlj521/dsh-ui-tweaks
+    url: https://github.com/wlj521/dsh-ui-tweaks
+    adds:
+      en: Adds a GitBar with branch management, per-file diffs, and commit-and-push directly from the conversation UI.
+      pt: >-
+        Adiciona uma GitBar com gerenciamento de branches, diffs por arquivo e commit-e-push direto da interface de
+        conversa.
+  - name: AcidGr/dsh-web-mobile-fix
+    url: https://github.com/AcidGr/dsh-web-mobile-fix
+    adds:
+      en: >-
+        Fixes the layout for narrow screens: full-screen settings and sidebar, one-row plugin navigation, centered
+        popups.
+      pt: >-
+        Corrige o layout para telas estreitas: configurações e barra lateral em tela cheia, navegação de plugins em uma
+        linha, popups centralizados.
+  - name: dsh-niao/dsh-niao-quick-open
+    url: https://github.com/dsh-niao/dsh-niao-quick-open
+    adds:
+      en: >-
+        Adds one-click workspace opening (copy path, reveal in Finder, open in an auto-detected editor) and a
+        hard-restart button.
+      pt: >-
+        Adiciona abertura do workspace em um clique (copiar caminho, revelar no Finder, abrir em um editor detectado
+        automaticamente) e um botão de reinício forçado.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

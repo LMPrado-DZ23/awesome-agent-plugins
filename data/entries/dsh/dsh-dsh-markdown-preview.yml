@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-markdown-preview
+name: GitHubJiKe/dsh-markdown-preview
+title: In-chat preview for produced files
+url: https://github.com/GitHubJiKe/dsh-markdown-preview
+type: native-plugin
+category: docs
+license: MIT
+tags:
+  - markdown
+  - preview
+  - chat
+description:
+  en: >-
+    In-chat preview for produced files: click a file chip to render Markdown (server-side markdown-it plus
+    highlight.js), images or plain text right in the conversation, with system-app open and reveal-in-folder one click
+    away.
+  pt: >-
+    Pré-visualização no chat para arquivos produzidos: clique em um chip de arquivo para renderizar Markdown
+    (markdown-it mais highlight.js no servidor), imagens ou texto simples direto na conversa, com abrir no app do
+    sistema e mostrar na pasta a um clique.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:GitHubJiKe/dsh-markdown-preview
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

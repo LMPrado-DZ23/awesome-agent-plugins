@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-git-worktree
+name: wloops/dsh-git-worktree
+title: Git worktree session targets
+url: https://github.com/wloops/dsh-git-worktree
+type: native-plugin
+category: git
+license: MIT
+tags:
+  - git-worktree
+  - sessions
+  - workspace
+description:
+  en: >-
+    Git-worktree Session Targets with isolated task sessions, ready-for-review status, reversible local preview,
+    human-confirmed delivery, environment retention and recovery, and same-session iteration.
+  pt: >-
+    Session Targets baseados em git worktree com sessões de tarefa isoladas, status pronto-para-revisão, preview local
+    reversível, entrega confirmada por humano, retenção e recuperação de ambiente, e iteração na mesma sessão.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:wloops/dsh-git-worktree
+alternatives:
+  - name: Cerbur/clutch-dsh#clutch-dsh-worktree
+    url: https://github.com/Cerbur/clutch-dsh/tree/main/packages/clutch-dsh-worktree
+    adds:
+      en: >-
+        Adds a Worktree view in the Web UI that groups existing Sessions by git worktree while keeping DSH as the source
+        of truth
+      pt: >-
+        Adiciona uma visão de Worktree na Web UI que agrupa as Sessions existentes por worktree git, mantendo o DSH como
+        fonte da verdade
+  - name: HeathHe/dsh-worktree-panel
+    url: https://github.com/HeathHe/dsh-worktree-panel
+    adds:
+      en: >-
+        Replaces the workspace sidebar with a project-worktree-session hierarchy, with worktree create/remove and
+        storage-migration safeguards
+      pt: >-
+        Substitui a barra lateral por uma hierarquia projeto-worktree-sessão, com criação/remoção de worktree e proteção
+        de migração
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

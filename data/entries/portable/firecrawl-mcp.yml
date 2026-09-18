@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: firecrawl-mcp
+name: Firecrawl MCP
+url: https://github.com/firecrawl/firecrawl-mcp-server
+type: mcp-server
+category: browser
+license: MIT
+tags:
+  - scraping
+  - search
+  - crawl
+description:
+  en: Web scraping, crawling, search and structured extraction for agents via the Firecrawl API (API key required).
+  pt: Scraping, crawling, busca e extração estruturada da web para agentes via API Firecrawl (requer chave de API).
+mcp:
+  name: firecrawl
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - firecrawl-mcp
+    env:
+      FIRECRAWL_API_KEY: <FIRECRAWL_API_KEY>

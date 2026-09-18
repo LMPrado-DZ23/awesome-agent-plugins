@@ -1,0 +1,8 @@
+id: deepseek-harness-starter
+title:
+  en: DeepSeek Harness starter kit
+  pt: Kit inicial do DeepSeek Harness
+description:
+  en: The plugin market, the most-used native dsh plugins (sidebar, context dashboard, agent teams, memory, auto-review) and portable MCP servers and skills that also work in dsh.
+  pt: A loja de plugins, os plugins nativos mais usados do dsh (sidebar, painel de contexto, times de agentes, memória, auto-revisão) e servidores MCP e skills portáveis que também funcionam no dsh.
+entries: [dsh-market, dsh-dsh-better-sidebar, dsh-dsh-context, dsh-dsh-agent-teams, dsh-graph-memory, dsh-dsh-auto-review, context7, playwright-mcp, github-mcp-server, anthropic-skills, superpowers]

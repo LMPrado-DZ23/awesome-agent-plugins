@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-skin-market
+name: kingOfSoySauce/dsh-skin-market
+title: Native skin marketplace
+url: https://github.com/kingOfSoySauce/dsh-skin-market
+type: native-plugin
+category: meta
+license: MIT
+tags:
+  - skins
+  - marketplace
+  - themes
+description:
+  en: >-
+    Discovers community skins, shows previews and compatibility status, and provides verified one-click or manual
+    installation paths.
+  pt: >-
+    Descobre skins da comunidade, mostra pré-visualizações e status de compatibilidade, e oferece caminhos de instalação
+    verificados, com um clique ou manuais.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:kingOfSoySauce/dsh-skin-market
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

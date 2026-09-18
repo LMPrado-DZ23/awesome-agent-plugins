@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-agy-link
+name: amlyczz/dsh-agy-link
+title: Google Antigravity model provider
+url: https://github.com/amlyczz/dsh-agy-link
+type: native-plugin
+category: models
+license: MIT
+tags:
+  - google-antigravity
+  - model-provider
+  - oauth
+  - streaming
+description:
+  en: >-
+    Connects Google Antigravity (agy CLI) models with streaming chat for Gemini, Claude, and GPT-OSS subscriptions,
+    native tool cards, thinking turns, and in-GUI Google OAuth login.
+  pt: >-
+    Conecta os modelos do Google Antigravity (agy CLI) com chat em streaming para assinaturas Gemini, Claude e GPT-OSS,
+    cartões nativos de ferramentas, turnos de raciocínio e login OAuth do Google direto na interface.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:amlyczz/dsh-agy-link
+alternatives:
+  - name: LiZhenNet/dsh-antigravity
+    url: https://github.com/LiZhenNet/dsh-antigravity
+    adds:
+      en: Adds explicit quota management and a dedicated model-selector UI.
+      pt: Adiciona gestão explícita de cota e uma interface dedicada para seleção de modelos.
+  - name: suntianc/dsh-antigravity-auth
+    url: https://github.com/suntianc/dsh-antigravity-auth
+    adds:
+      en: Adds image generation/editing, video understanding, and web search to the Antigravity route.
+      pt: Adiciona geração/edição de imagens, compreensão de vídeo e busca web à rota do Antigravity.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

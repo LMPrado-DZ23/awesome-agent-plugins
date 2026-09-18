@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: notion-mcp
+name: Notion MCP
+url: https://github.com/makenotion/notion-mcp-server
+type: mcp-server
+category: integrations
+license: MIT
+tags:
+  - notion
+  - docs
+description:
+  en: "Official Notion server: search, read, create and update pages and databases with an integration token."
+  pt: "Servidor oficial do Notion: busca, lê, cria e atualiza páginas e bancos de dados com um token de integração."
+mcp:
+  name: notion
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@notionhq/notion-mcp-server"
+    env:
+      NOTION_TOKEN: <NOTION_TOKEN>

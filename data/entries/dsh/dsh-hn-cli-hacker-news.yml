@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-hn-cli-hacker-news
+name: heartleo/hn-cli#hacker-news
+title: Hacker News feeds and search
+url: https://github.com/heartleo/hn-cli/tree/main/plugins/hacker-news
+type: native-plugin
+category: tools
+license: MIT
+tags:
+  - hacker-news
+  - search
+  - feeds
+description:
+  en: Hacker News tools for feeds, discussion threads, search, and user profiles.
+  pt: Ferramentas do Hacker News para feeds, threads de discussão, busca e perfis de usuário.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:heartleo/hn-cli#path:/plugins/hacker-news
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

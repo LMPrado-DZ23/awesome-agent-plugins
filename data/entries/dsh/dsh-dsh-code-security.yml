@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-code-security
+name: STARDUSTLC666/dsh-code-security
+title: Deterministic commit security review
+url: https://github.com/STARDUSTLC666/dsh-code-security
+type: native-plugin
+category: security
+license: MIT
+tags:
+  - code-review
+  - secrets
+  - sarif
+  - commit-audit
+description:
+  en: >-
+    Deterministic code security review with 40+ rules, secret entropy detection, staged-diff review, SARIF export,
+    baseline acceptance, and a lightweight SBOM dependency inventory.
+  pt: >-
+    Revisão de segurança de código determinística com mais de 40 regras, detecção de entropia de segredos, revisão do
+    diff staged, exportação SARIF, aceitação de baseline e um inventário SBOM leve de dependências.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:STARDUSTLC666/dsh-code-security
+alternatives:
+  - name: KongFangXun/sofagent#cordis-plugin-sofagent-audit
+    url: https://github.com/KongFangXun/sofagent/tree/main/engine/dsh-plugins/cordis-plugin-sofagent-audit
+    adds:
+      en: Adds an HMAC-signed audit trail, snapshot rollback, and an MCP server with 84 tools for commit-time review.
+      pt: >-
+        Adiciona uma trilha de auditoria assinada com HMAC, reversão por snapshot e um servidor MCP com 84 ferramentas
+        para revisão no momento do commit.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

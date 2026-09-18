@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-layered-memory
+name: JunNanLYS/dsh-layered-memory
+title: Auto-distilled hybrid-retrieval memory
+url: https://github.com/JunNanLYS/dsh-layered-memory
+type: native-plugin
+category: memory
+license: MIT
+tags:
+  - memory
+  - hybrid-search
+  - auto-distill
+  - retrieval
+description:
+  en: >-
+    Conversations auto-distilled into atomic facts, scene summaries, and a persona profile, injected before every model
+    step via hybrid BM25 plus vector retrieval. Zero-config, with optional offline local embeddings and chat/work
+    separation.
+  pt: >-
+    Conversas destiladas automaticamente em fatos atômicos, resumos de cena e um perfil de persona, injetados antes de
+    cada passo do modelo via recuperação híbrida BM25 mais vetorial. Sem configuração, com embeddings locais offline
+    opcionais e separação entre chat e trabalho.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:JunNanLYS/dsh-layered-memory
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

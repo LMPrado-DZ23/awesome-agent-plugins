@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: github-mcp-server
+name: GitHub MCP Server
+url: https://github.com/github/github-mcp-server
+type: mcp-server
+category: git
+featured: true
+license: MIT
+tags:
+  - github
+  - issues
+  - pull-requests
+description:
+  en: >-
+    GitHub's official server: repositories, issues, pull requests, Actions, code scanning and more. Remote endpoint
+    shown; a Docker image (ghcr.io/github/github-mcp-server) runs it locally.
+  pt: >-
+    Servidor oficial do GitHub: repositórios, issues, pull requests, Actions, code scanning e mais. Mostrado o endpoint
+    remoto; a imagem Docker (ghcr.io/github/github-mcp-server) roda localmente.
+mcp:
+  name: github
+  http:
+    url: https://api.githubcopilot.com/mcp/
+    headers:
+      Authorization: Bearer <GITHUB_PAT>

@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-neu-theme
+name: Lhy723/dsh-neu-theme
+title: Neumorphic theme
+url: https://github.com/Lhy723/dsh-neu-theme
+type: native-plugin
+category: themes
+license: MIT
+tags:
+  - neumorphism
+  - color-palette
+  - dark-theme
+description:
+  en: >-
+    Neumorphic light and dark palettes with ambient lighting, material shadows, grain texture, frosted-glass surfaces,
+    and micro-interactions.
+  pt: >-
+    Paletas neumórficas claras e escuras com iluminação ambiente, sombras materiais, textura granulada, superfícies em
+    vidro fosco e microinterações.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:Lhy723/dsh-neu-theme
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: mcp-registry
+name: MCP Registry
+url: https://github.com/modelcontextprotocol/registry
+type: list
+category: meta
+featured: true
+license: null
+tags:
+  - mcp
+  - registry
+description:
+  en: >-
+    Official community-driven registry service for MCP servers, with a public API for discovering published servers and
+    their install metadata.
+  pt: >-
+    Serviço de registro oficial e comunitário de servidores MCP, com API pública para descobrir servidores publicados e
+    seus metadados de instalação.

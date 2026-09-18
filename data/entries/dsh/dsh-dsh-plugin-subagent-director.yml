@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-plugin-subagent-director
+name: SeverusZh/dsh-plugin-subagent-director
+title: Per-subagent model routing
+url: https://github.com/SeverusZh/dsh-plugin-subagent-director
+type: native-plugin
+category: models
+license: MIT
+tags:
+  - subagents
+  - model-routing
+  - reasoning-effort
+  - configuration
+description:
+  en: Lets each subagent use its own LLM provider and model through configurable role templates.
+  pt: Permite que cada subagente use seu próprio provedor e modelo de LLM por meio de modelos de papel configuráveis.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:SeverusZh/dsh-plugin-subagent-director
+alternatives:
+  - name: SnowAmberX/dsh-role-router
+    url: https://github.com/SnowAmberX/dsh-role-router
+    adds:
+      en: Automatically switches to a planner model in plan mode and exposes per-role reasoning effort in the Web UI.
+      pt: >-
+        Alterna automaticamente para um modelo planejador no modo de plano e expõe o esforço de raciocínio por papel na
+        Web UI.
+  - name: hytime/dsh-thinking-effort
+    url: https://github.com/hytime/dsh-thinking-effort
+    adds:
+      en: Sets reasoning-effort levels and sub-agent defaults specifically for custom or third-party models.
+      pt: >-
+        Define níveis de esforço de raciocínio e padrões de subagente especificamente para modelos customizados ou de
+        terceiros.
+  - name: HaoyueQin/dsh-better-reasoning-effort
+    url: https://github.com/HaoyueQin/dsh-better-reasoning-effort
+    adds:
+      en: >-
+        Suggests reasoning-effort and input-modality settings per model, fused from a knowledge base with confidence
+        labels.
+      pt: >-
+        Sugere configurações de esforço de raciocínio e modalidade de entrada por modelo, combinadas de uma base de
+        conhecimento com rótulos de confiança.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

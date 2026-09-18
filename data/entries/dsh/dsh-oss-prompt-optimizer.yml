@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-oss-prompt-optimizer
+name: seven282/oss-prompt-optimizer
+title: One-click prompt optimizer
+url: https://github.com/seven282/oss-prompt-optimizer
+type: native-plugin
+category: tools
+license: MIT
+tags:
+  - prompt-engineering
+  - optimization
+description:
+  en: >-
+    Optimizes a raw instruction into a professional prompt in one click: three output styles, situation-aware
+    role/task/goal profiling, self-iterating learning via session memory, a /template command for 21 sub-scenes with
+    zero model calls, and a one-click optimize/undo control.
+  pt: >-
+    Otimiza uma instrução bruta em um prompt profissional com um clique: três estilos de saída, perfil de
+    papel/tarefa/objetivo, aprendizado auto-iterativo via memória de sessão, um comando /template para 21 subcenários
+    sem modelo, e um controle de otimizar/desfazer.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:seven282/oss-prompt-optimizer
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

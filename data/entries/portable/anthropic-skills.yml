@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: anthropic-skills
+name: Anthropic Skills
+url: https://github.com/anthropics/skills
+type: skill-pack
+category: skills
+featured: true
+license: null
+tags:
+  - documents
+  - office
+description:
+  en: >-
+    Reference Agent Skills from Anthropic: PDF, DOCX, XLSX and PPTX handling, skill-creator, MCP builder, frontend
+    design, web-app testing and more.
+  pt: >-
+    Agent Skills de referência da Anthropic: PDF, DOCX, XLSX e PPTX, skill-creator, construtor de MCP, design de
+    frontend, testes de web app e mais.
+skill:
+  source: anthropics/skills

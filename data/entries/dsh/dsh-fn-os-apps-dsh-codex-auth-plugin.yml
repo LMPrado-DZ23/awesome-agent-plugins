@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-fn-os-apps-dsh-codex-auth-plugin
+name: tnnevol/fn-os-apps#dsh-codex-auth-plugin
+title: ChatGPT account sign-in for DSH
+url: https://github.com/tnnevol/fn-os-apps/tree/main/plugins/dsh-codex-auth-plugin
+type: native-plugin
+category: workflow
+license: AGPL-3.0
+tags:
+  - oauth
+  - authentication
+  - chatgpt
+  - account
+description:
+  en: >-
+    Signs DSH in with a ChatGPT account via Codex browser OAuth, no API key needed. Subscribes the login to the Codex
+    provider, sets a default model and reasoning effort, refreshes the model list from the account catalog, and shows
+    usage windows in the composer.
+  pt: >-
+    Autentica o DSH com uma conta ChatGPT via OAuth do Codex, sem chave de API. Associa o login ao provedor Codex,
+    define modelo padrão e esforço de raciocínio, atualiza a lista de modelos do catálogo da conta e mostra janelas de
+    uso no compositor.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:tnnevol/fn-os-apps#path:/plugins/dsh-codex-auth-plugin
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

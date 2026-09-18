@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-message-edit
+name: Moeblack/dsh-message-edit
+title: Branch-based message editing and reroll
+url: https://github.com/Moeblack/dsh-message-edit
+type: native-plugin
+category: sessions
+license: null
+tags:
+  - session
+  - message-editing
+  - branching
+  - versioning
+description:
+  en: Branch-based message editing, reroll, retry, and a version timeline.
+  pt: Edição de mensagens baseada em ramificações, reroll, retry e uma linha do tempo de versões.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:Moeblack/dsh-message-edit
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

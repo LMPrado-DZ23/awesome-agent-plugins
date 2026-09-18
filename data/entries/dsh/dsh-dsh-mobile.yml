@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-mobile
+name: saya-ch/dsh-mobile
+title: Remote/mobile access to DSH
+url: https://github.com/saya-ch/dsh-mobile
+type: native-plugin
+category: remote
+license: Apache-2.0
+tags:
+  - remote-access
+  - mobile
+  - pairing
+  - android
+description:
+  en: >-
+    Access and control a DeepSeek Harness session from an Android app or mobile browser, over LAN or a secure remote
+    connection, with persistent device pairing and a customizable mobile interface.
+  pt: >-
+    Acesse e controle uma sessão do DeepSeek Harness a partir de um app Android ou navegador móvel, via LAN ou conexão
+    remota segura, com pareamento persistente de dispositivo e interface móvel personalizável.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:saya-ch/dsh-mobile
+alternatives:
+  - name: Blank-not-black/dsh-Remote#plugin
+    url: https://github.com/Blank-not-black/dsh-Remote/tree/main/packages/plugin
+    adds:
+      en: >-
+        Adds a native sidebar/admin drawer, a self-healing token gateway, resumable /fs transfer up to 2GB, and
+        latency-based server auto-switching.
+      pt: >-
+        Adiciona barra lateral/admin, gateway com token autorrecuperável, transferência /fs até 2GB e troca automática
+        de servidor por latência.
+  - name: Z-6354/dsh-mobile-hanui
+    url: https://github.com/Z-6354/dsh-mobile-hanui
+    adds:
+      en: >-
+        Adds an installable PWA with offline support, push notifications, and touch gestures like pull-to-refresh and
+        edge-swipe back.
+      pt: >-
+        Adiciona PWA instalável com suporte offline, notificações push e gestos de toque como puxar para atualizar e
+        deslizar da borda para voltar.
+  - name: zhu1090093659/dsh-web#packages/dsh-remote-web-ui
+    url: https://github.com/zhu1090093659/dsh-web/tree/main/packages/dsh-remote-web-ui
+    adds:
+      en: >-
+        Adds QR-code pairing over a token-gated channel with SSE real-time sync between separate mobile and desktop GUI
+        modes.
+      pt: >-
+        Adiciona pareamento por QR code em canal com token, com sync em tempo real via SSE entre os modos de interface
+        móvel e desktop.
+  - name: zexadev/dsh-tether
+    url: https://github.com/zexadev/dsh-tether
+    adds:
+      en: >-
+        Adds pure peer-to-peer connection via iroh with no server to set up, falling back to a relay that only carries
+        ciphertext.
+      pt: >-
+        Adiciona conexão ponto a ponto via iroh, sem necessidade de servidor, com fallback para um relay que só
+        transporta dados cifrados.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

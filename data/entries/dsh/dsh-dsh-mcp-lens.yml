@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-mcp-lens
+name: labmimors/dsh-mcp-lens
+title: Search large MCP catalogs on demand
+url: https://github.com/labmimors/dsh-mcp-lens
+type: native-plugin
+category: dev
+license: MIT
+tags:
+  - mcp
+  - gateway
+  - search
+description:
+  en: >-
+    Progressive-disclosure MCP gateway that searches large remote tool catalogs through mcp_search, then invokes the
+    exact schema through mcp_call, using lazy connections and bounded caches to avoid loading every tool upfront.
+  pt: >-
+    Gateway MCP de divulgação progressiva que busca em grandes catálogos remotos de ferramentas via mcp_search, depois
+    invoca o schema exato via mcp_call, usando conexões preguiçosas e caches limitados para evitar carregar todas as
+    ferramentas de uma vez.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:labmimors/dsh-mcp-lens
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

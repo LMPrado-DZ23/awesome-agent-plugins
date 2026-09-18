@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-plugin-appshot
+name: TaurusWood/dsh-plugin-appshot
+title: Screenshot capture into composer
+url: https://github.com/TaurusWood/dsh-plugin-appshot
+type: native-plugin
+category: multimodal
+license: MIT
+tags:
+  - screenshot
+  - productivity
+description:
+  en: >-
+    Captures the frontmost active window via a global shortcut and mounts it directly into the composer for agent
+    queries, similar to Codex Appshots.
+  pt: >-
+    Captura a janela ativa em primeiro plano por um atalho global e a insere diretamente no composer para consultas ao
+    agente, de forma semelhante aos Appshots do Codex.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:TaurusWood/dsh-plugin-appshot
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

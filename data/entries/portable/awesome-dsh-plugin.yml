@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: awesome-dsh-plugin
+name: awesome-dsh-plugin
+url: https://github.com/awesome-dsh-plugin/awesome-dsh-plugin
+type: list
+category: meta
+license: CC0-1.0
+tags:
+  - dsh
+  - awesome-list
+description:
+  en: >-
+    The full list of ~3,900 DeepSeek Harness plugins. This catalog imports its best entries and folds near-duplicates;
+    browse the original for everything else.
+  pt: >-
+    A lista completa de ~3.900 plugins do DeepSeek Harness. Este catálogo importa os melhores e junta os quase
+    duplicados; consulte a original para o restante.

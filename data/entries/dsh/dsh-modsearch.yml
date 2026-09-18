@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-modsearch
+name: liustack/modsearch
+title: Web search for text-only agents
+url: https://github.com/liustack/modsearch
+type: native-plugin
+category: browser
+license: MIT
+tags:
+  - web-search
+  - citations
+  - fetch
+description:
+  en: >-
+    Bridges live web and X (Twitter) search into text-only agents, returning structured JSON evidence with search
+    results, page fetches, and citations.
+  pt: >-
+    Conecta buscas ao vivo na web e no X (Twitter) a agentes somente texto, retornando evidências estruturadas em JSON
+    com resultados de busca, conteúdo de páginas e citações.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:liustack/modsearch
+alternatives:
+  - name: DDDMUC/dsh-free-search
+    url: https://github.com/DDDMUC/dsh-free-search
+    adds:
+      en: >-
+        Adds 7 free/paid search engines (DuckDuckGo, Bing, SearXNG, Exa, Perplexity, DeepSeek) with auto failover and a
+        settings UI for API keys.
+      pt: >-
+        Adiciona 7 motores gratuitos/pagos (DuckDuckGo, Bing, SearXNG, Exa, Perplexity, DeepSeek) com failover
+        automático e UI para chaves de API.
+  - name: anweat/dsh-web-search-pro
+    url: https://github.com/anweat/dsh-web-search-pro
+    adds:
+      en: >-
+        Adds SQLite+LRU result caching and routes searches to site-specific engines like GitHub, Bilibili, YouTube, and
+        Reddit.
+      pt: >-
+        Adiciona cache de resultados SQLite+LRU e roteia buscas para mecanismos específicos de sites como GitHub,
+        Bilibili, YouTube e Reddit.
+  - name: A3Boy/dsh-web-tools
+    url: https://github.com/A3Boy/dsh-web-tools
+    adds:
+      en: >-
+        Adds bring-your-own-key pools across multiple search providers with health monitoring and deterministic
+        fallback.
+      pt: >-
+        Adiciona pools de chaves próprias (BYOK) entre múltiplos provedores de busca, com monitoramento de saúde e
+        fallback determinístico.
+  - name: yinnho/aginxbrowser#dsh-aginxbrowser
+    url: https://github.com/yinnho/aginxbrowser/tree/main/dsh-aginxbrowser
+    adds:
+      en: Adds aggregated search across 14 engines and a live view URL so a human can watch and take over browsing.
+      pt: >-
+        Adiciona busca agregada em 14 motores e uma URL de visualização ao vivo para que um humano acompanhe e assuma a
+        navegação.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

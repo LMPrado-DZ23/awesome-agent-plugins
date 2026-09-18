@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-mcp-market
+name: LKMeng2001/dsh-mcp-market
+title: MCP server marketplace
+url: https://github.com/LKMeng2001/dsh-mcp-market
+type: native-plugin
+category: meta
+license: MIT
+tags:
+  - mcp
+  - marketplace
+  - install
+description:
+  en: >-
+    Browses a curated, npm-verified catalog of MCP servers and installs them into the current profile with one click,
+    live, without restarting.
+  pt: >-
+    Navega por um catálogo curado e verificado via npm de servidores MCP e os instala no perfil atual com um clique, ao
+    vivo, sem reiniciar.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:LKMeng2001/dsh-mcp-market
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-emoji
+name: hellodigua/dsh-emoji
+title: Auto-emoji replies
+url: https://github.com/hellodigua/dsh-emoji
+type: native-plugin
+category: fun
+license: MIT
+tags:
+  - emoji
+  - chat
+  - fun
+description:
+  en: Automatically adds emojis to AI replies.
+  pt: Adiciona emojis automaticamente às respostas da IA.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:hellodigua/dsh-emoji
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

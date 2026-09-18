@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-lsp-actions
+name: PerryLink/dsh-lsp-actions
+title: Language server actions
+url: https://github.com/PerryLink/dsh-lsp-actions
+type: native-plugin
+category: tools
+license: Apache-2.0
+tags:
+  - lsp
+  - code-intelligence
+  - refactoring
+description:
+  en: >-
+    LSP action surface for DSH: diagnostics, formatting, completion, code actions, symbols, signature help, inlay hints,
+    and rename, all backed by real language servers.
+  pt: >-
+    Superfície de ações LSP para o DSH: diagnósticos, formatação, autocompletar, ações de código, símbolos, ajuda de
+    assinatura, inlay hints e renomeação, todos apoiados por language servers reais.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:PerryLink/dsh-lsp-actions
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

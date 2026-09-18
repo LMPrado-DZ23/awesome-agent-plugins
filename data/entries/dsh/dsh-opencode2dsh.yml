@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-opencode2dsh
+name: FishBottle7/opencode2dsh
+title: Free OpenCode model access
+url: https://github.com/FishBottle7/opencode2dsh/tree/master/packages/plugin
+type: native-plugin
+category: models
+license: MIT
+tags:
+  - opencode
+  - free-models
+  - model-provider
+  - no-api-key
+description:
+  en: Exposes OpenCode Zen's free models to the harness with no API key required.
+  pt: Expõe os modelos gratuitos do OpenCode Zen para o harness, sem necessidade de chave de API.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:FishBottle7/opencode2dsh#path:/packages/plugin
+alternatives:
+  - name: xiaozhe7772222/dsh-opencode-zen
+    url: https://github.com/xiaozhe7772222/dsh-opencode-zen
+    adds:
+      en: Bundles 6 free models with multi-key rotation and automatic rate-limit backoff.
+      pt: Reúne 6 modelos gratuitos com rotação de múltiplas chaves e recuo automático em limites de taxa.
+  - name: Duskriver/dsh-opencode-go
+    url: https://github.com/Duskriver/dsh-opencode-go
+    adds:
+      en: Adds live gateway model discovery, online capability metadata, and session-aware routing for OpenCode Go.
+      pt: >-
+        Adiciona descoberta ao vivo de modelos no gateway, metadados de capacidade online e roteamento ciente de sessão
+        para o OpenCode Go.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

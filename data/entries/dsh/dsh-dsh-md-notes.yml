@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-md-notes
+name: XieZongChen/dsh-md-notes
+title: Markdown notes capture and sync
+url: https://github.com/XieZongChen/dsh-md-notes
+type: native-plugin
+category: memory
+license: MIT
+tags:
+  - memory
+  - markdown
+  - notes
+  - git-sync
+description:
+  en: >-
+    Markdown notes manager and editor for DSH: quickly capture conversations into notes, keep them synced to Git
+    repositories, and bring notes back into the conversation context.
+  pt: >-
+    Gerenciador e editor de notas em markdown para o DSH: captura rápida de conversas em notas, sincronização com
+    repositórios Git e reinserção das notas no contexto da conversa.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:XieZongChen/dsh-md-notes
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-multi-chat
+name: daetz-coder/dsh-multi-chat
+title: Multi-window conversation wall
+url: https://github.com/daetz-coder/dsh-multi-chat
+type: native-plugin
+category: ui
+license: MIT
+tags:
+  - multi-window
+  - dashboard
+  - lan
+description:
+  en: >-
+    A multi-window wall for the DSH Web UI: run and monitor several conversations side by side in one screen, with
+    auto-discovery, per-window controls, and an authenticated LAN gateway for phone or tablet access.
+  pt: >-
+    Um painel de múltiplas janelas para a interface web do DSH: execute e monitore várias conversas lado a lado em uma
+    única tela, com descoberta automática, controles por janela e um gateway LAN autenticado para acesso via celular ou
+    tablet.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:daetz-coder/dsh-multi-chat
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

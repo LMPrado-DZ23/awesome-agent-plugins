@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: supabase-mcp
+name: Supabase MCP
+url: https://github.com/supabase/mcp
+type: mcp-server
+category: cloud
+license: Apache-2.0
+tags:
+  - postgres
+  - database
+description:
+  en: >-
+    Manage Supabase projects from the agent: tables, SQL, migrations, edge functions, logs and docs. Supports read-only
+    and project-scoped modes via URL parameters.
+  pt: >-
+    Gerencie projetos Supabase pelo agente: tabelas, SQL, migrations, edge functions, logs e docs. Modos somente leitura
+    e por projeto via parâmetros na URL.
+mcp:
+  name: supabase
+  http:
+    url: https://mcp.supabase.com/mcp

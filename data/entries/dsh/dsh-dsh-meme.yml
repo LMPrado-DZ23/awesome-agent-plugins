@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-meme
+name: yyh-001/dsh-meme
+title: Chat meme stickers
+url: https://github.com/yyh-001/dsh-meme
+type: native-plugin
+category: fun
+license: MIT
+tags:
+  - stickers
+  - memes
+  - chat
+description:
+  en: >-
+    Chat meme stickers with text-only sending, mood-based auto-send, a QQ/WeChat-style picker, auto-learning, and custom
+    packs.
+  pt: >-
+    Figurinhas de meme para o chat, com envio somente por texto, envio automático baseado em humor, um seletor no estilo
+    QQ/WeChat, aprendizado automático e pacotes personalizados.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:yyh-001/dsh-meme
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

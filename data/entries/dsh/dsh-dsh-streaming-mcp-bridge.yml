@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-streaming-mcp-bridge
+name: yabolee-kkk/dsh-streaming-mcp-bridge
+title: Session events as MCP progress
+url: https://github.com/yabolee-kkk/dsh-streaming-mcp-bridge
+type: native-plugin
+category: remote
+license: MIT
+tags:
+  - mcp
+  - streaming
+  - integration
+description:
+  en: >-
+    Streams live DeepSeek Harness session events out as MCP progress notifications, with an ACP adapter for bridging
+    into cc-connect and Feishu.
+  pt: >-
+    Transmite eventos ao vivo de uma sessão do DeepSeek Harness como notificações de progresso MCP, com um adaptador ACP
+    para integração com cc-connect e Feishu.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:yabolee-kkk/dsh-streaming-mcp-bridge
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: cloudflare-mcp
+name: Cloudflare MCP servers
+url: https://github.com/cloudflare/mcp-server-cloudflare
+type: mcp-server
+category: cloud
+license: Apache-2.0
+tags:
+  - workers
+  - infra
+description:
+  en: >-
+    Cloudflare's remote MCP servers (Workers bindings, builds, browser rendering, DNS analytics, audit logs…). The
+    config shown connects the Workers Bindings server.
+  pt: >-
+    Servidores MCP remotos da Cloudflare (bindings de Workers, builds, renderização de navegador, DNS analytics, audit
+    logs…). A configuração mostrada conecta o servidor de Workers Bindings.
+mcp:
+  name: cloudflare-bindings
+  http:
+    url: https://bindings.mcp.cloudflare.com/mcp

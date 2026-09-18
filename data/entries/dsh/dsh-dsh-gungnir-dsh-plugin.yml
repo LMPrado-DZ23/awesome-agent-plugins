@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-gungnir-dsh-plugin
+name: Jonah-Wu23/dsh-gungnir#dsh-plugin
+title: Goal completion verification
+url: https://github.com/Jonah-Wu23/dsh-gungnir/tree/main/packages/dsh-plugin
+type: native-plugin
+category: workflow
+license: Apache-2.0
+tags:
+  - verification
+  - goals
+  - anti-hallucination
+  - audit
+description:
+  en: >-
+    Locks a goal via /ultragoal and verifies its completion against command exit codes and generated artifacts,
+    preventing the agent from falsely reporting a task as done.
+  pt: >-
+    Trava um objetivo via /ultragoal e verifica sua conclusão com base nos códigos de saída dos comandos e nos artefatos
+    gerados, impedindo que o agente reporte falsamente uma tarefa como concluída.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:Jonah-Wu23/dsh-gungnir#path:/packages/dsh-plugin
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

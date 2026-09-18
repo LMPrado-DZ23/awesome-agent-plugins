@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-diagram
+name: hanzhangzzz/dsh-diagram
+title: Editable diagrams in conversations
+url: https://github.com/hanzhangzzz/dsh-diagram
+type: native-plugin
+category: docs
+license: MIT
+tags:
+  - diagrams
+  - excalidraw
+  - mermaid
+description:
+  en: Editable Excalidraw diagrams rendered directly inside DeepSeek Harness conversations.
+  pt: Diagramas editáveis do Excalidraw renderizados diretamente dentro das conversas do DeepSeek Harness.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:hanzhangzzz/dsh-diagram
+alternatives:
+  - name: MrmoLabs/dsh-mermaid
+    url: https://github.com/MrmoLabs/dsh-mermaid
+    adds:
+      en: Renders Mermaid code fences as SVG instead, with streaming, fullscreen zoom/pan and SVG export
+      pt: Renderiza blocos de código Mermaid como SVG, com streaming, zoom/pan em tela cheia e exportação SVG
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

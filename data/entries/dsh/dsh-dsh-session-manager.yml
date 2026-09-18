@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-session-manager
+name: hkkz9522/dsh-session-manager
+title: Cross-workspace session manager
+url: https://github.com/hkkz9522/dsh-session-manager
+type: native-plugin
+category: sessions
+license: MIT
+tags:
+  - session
+  - workspace
+  - management
+  - migration
+description:
+  en: >-
+    Session manager for the DeepSeek Harness Web UI: delete sessions, archive sessions, move sessions across workspaces,
+    and migrate a session's agent preset.
+  pt: >-
+    Gerenciador de sessões para a Web UI do DeepSeek Harness: exclui sessões, arquiva sessões, move sessões entre
+    workspaces e migra o preset de agente de uma sessão.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:hkkz9522/dsh-session-manager
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

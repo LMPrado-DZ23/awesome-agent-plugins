@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-awiki
+name: AgentConnect/dsh-awiki
+title: Agent network identity (ANP)
+url: https://github.com/AgentConnect/dsh-awiki
+type: native-plugin
+category: workflow
+license: MIT
+tags:
+  - identity
+  - anp
+  - agent-to-agent
+  - messaging
+description:
+  en: >-
+    Gives DSH agents native identities based on the open Agent Network Protocol (ANP), enabling identity-based direct,
+    group, mail, and agent-to-agent communication.
+  pt: >-
+    Dá aos agentes do DSH identidades nativas baseadas no protocolo aberto Agent Network Protocol (ANP), permitindo
+    comunicação direta, em grupo, por mensagem e agente-a-agente baseada em identidade.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:AgentConnect/dsh-awiki
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

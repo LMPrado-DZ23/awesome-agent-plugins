@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-notifier
+name: THEWOLFWALKER/dsh-notifier
+title: Multi-channel notify API and phone control
+url: https://github.com/THEWOLFWALKER/dsh-notifier
+type: native-plugin
+category: integrations
+license: MIT
+tags:
+  - notifications
+  - multi-channel
+  - phone-control
+  - approvals
+description:
+  en: >-
+    One notify() API across 27 channels with event-driven pushes, phone approvals and questions, phone task takeover,
+    images sent into the session, six inbound control channels, a loopback web console, and bilingual messages, with
+    zero runtime dependencies.
+  pt: >-
+    Uma única API notify() para 27 canais com envios orientados por evento, aprovações e perguntas pelo celular,
+    retomada de tarefas pelo celular, imagens enviadas para a sessão, seis canais de controle de entrada, um console web
+    loopback e mensagens bilíngues, sem dependências em runtime.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:THEWOLFWALKER/dsh-notifier
+alternatives:
+  - name: wingsky-1/dsh-plugin-hub#packages/dsh-notifier
+    url: https://github.com/wingsky-1/dsh-plugin-hub/tree/main/packages/dsh-notifier
+    adds:
+      en: Adds quiet hours with urgent exceptions, approval-timeout re-reminders, and completion-storm aggregation.
+      pt: >-
+        Adiciona horário silencioso com exceções urgentes, novos lembretes por timeout de aprovação e agregação de
+        rajadas de conclusão.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

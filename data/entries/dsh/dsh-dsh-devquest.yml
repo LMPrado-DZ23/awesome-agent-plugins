@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-devquest
+name: lucky8197/dsh-devquest
+title: Coding-as-RPG gamification
+url: https://github.com/lucky8197/dsh-devquest
+type: native-plugin
+category: fun
+license: BSD-3-Clause
+tags:
+  - gamification
+  - rpg
+  - achievements
+description:
+  en: >-
+    Turns coding into an RPG: finished turns, tool calls, and completed todos earn XP, with 27+ achievement badges,
+    levels, titles, and seasons, scored by an event-driven, pure-function engine.
+  pt: >-
+    Transforma programar em um RPG: turnos concluídos, chamadas de ferramentas e tarefas finalizadas rendem XP, com mais
+    de 27 emblemas de conquista, níveis, títulos e temporadas, pontuados por um motor orientado a eventos e de funções
+    puras.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:lucky8197/dsh-devquest
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

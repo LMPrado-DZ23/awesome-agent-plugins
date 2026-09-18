@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-knowledge
+name: lemoncat7/dsh-knowledge
+title: Local/remote knowledge base search
+url: https://github.com/lemoncat7/dsh-knowledge
+type: native-plugin
+category: memory
+license: MIT
+tags:
+  - memory
+  - knowledge-base
+  - search
+  - web-console
+description:
+  en: >-
+    Local and remote knowledge bases with project- and session-scoped recall, controlled write-back, and an embedded web
+    management console.
+  pt: >-
+    Bases de conhecimento locais e remotas com recall por projeto e por sessão, escrita controlada e um console web de
+    gerenciamento embutido.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:lemoncat7/dsh-knowledge
+alternatives:
+  - name: htcqp802/dsh-knowledge-base
+    url: https://github.com/htcqp802/dsh-knowledge-base
+    adds:
+      en: Imports md/txt/json/yml/docx/pdf, adds folder management and FTS5 full-text search.
+      pt: Importa md/txt/json/yml/docx/pdf, com gerenciamento de pastas e busca full-text FTS5.
+  - name: PerryLink/dsh-library
+    url: https://github.com/PerryLink/dsh-library
+    adds:
+      en: Turns local documents into a queryable base with citation verification and source injection.
+      pt: Transforma documentos locais em uma base consultável com verificação de citações e injeção de fontes.
+  - name: melandlabs/opencontext#dsh-opencontext
+    url: https://github.com/melandlabs/opencontext/tree/main/plugins/dsh-opencontext
+    adds:
+      en: Adds automatic prompt capture, session summaries, and structured insights alongside document retrieval.
+      pt: >-
+        Adiciona captura automática de prompts, resumos de sessão e insights estruturados junto com a recuperação de
+        documentos.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-odai-odai-dsh-plugin
+name: orziz/odai#odai-dsh-plugin
+title: Profile-wide governance and routing
+url: https://github.com/orziz/odai/tree/main/dsh/plugin
+type: native-plugin
+category: workflow
+license: MIT
+tags:
+  - workflow
+  - governance
+  - routing
+  - control-center
+description:
+  en: >-
+    Profile-wide governance and routing with a web control center for responsibility and evidence inspection, plus
+    compaction, scoped semantic memory, safety continuity, and verified delivery.
+  pt: >-
+    Governança e roteamento em todo o perfil com um centro de controle web para inspecionar responsabilidade e
+    evidências, além de compactação, memória semântica com escopo, continuidade de segurança e entrega verificada.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:orziz/odai#path:/dsh/plugin
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

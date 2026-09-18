@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-openwrite
+name: LiPu-jpg/Openwrite
+title: Novel-writing production workbench
+url: https://github.com/LiPu-jpg/Openwrite
+type: native-plugin
+category: workflow
+license: Apache-2.0
+tags:
+  - workflow
+  - creative-writing
+  - authoring
+  - review
+description:
+  en: >-
+    Novel-writing workbench for DSH with an authoring preset, outline and character management, manuscript annotations,
+    review workflows, and a managed local Python backend.
+  pt: >-
+    Bancada de escrita de romances para o DSH com um preset de autoria, gerenciamento de esboço e personagens, anotações
+    no manuscrito, fluxos de revisão e um backend Python local gerenciado.
+native:
+  client: dsh
+  install: >-
+    dsh plugin --profile web add
+    "https://github.com/LiPu-jpg/Openwrite/releases/download/v0.2.8/dsh-openwrite-0.2.8.tgz"
+alternatives:
+  - name: EthanYoQ/AI-Novel-Writer#dsh-ai-novel-writer
+    url: https://github.com/EthanYoQ/AI-Novel-Writer/tree/master/plugins/dsh-ai-novel-writer
+    adds:
+      en: Adds a compact side drawer and native approval-gated single-file changes to revisioned project assets.
+      pt: >-
+        Adiciona uma gaveta lateral compacta e alterações em arquivo único sujeitas a aprovação sobre ativos de projeto
+        versionados.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-checkpoint-rewind
+name: PerryLink/dsh-checkpoint-rewind
+title: Git-based session rewind
+url: https://github.com/PerryLink/dsh-checkpoint-rewind
+type: native-plugin
+category: tools
+license: Apache-2.0
+tags:
+  - rewind
+  - checkpoints
+  - git
+  - undo
+description:
+  en: >-
+    Claude Code style /rewind for DeepSeek Harness: takes git-first workspace snapshots before every mutating tool
+    execution, forks the session at each turn boundary, and restores files while forking the session back to a chosen
+    checkpoint with one command.
+  pt: >-
+    Um /rewind ao estilo Claude Code para o DeepSeek Harness: tira snapshots do workspace via git antes de cada
+    ferramenta que altera arquivos, bifurca a sessão a cada turno e restaura arquivos ao bifurcar de volta a um
+    checkpoint com um comando.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:PerryLink/dsh-checkpoint-rewind
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-android
+name: ZSeven-W/dsh-android
+title: Live Android device control
+url: https://github.com/ZSeven-W/dsh-android
+type: native-plugin
+category: remote
+license: MIT
+tags:
+  - android
+  - mobile-testing
+  - adb
+description:
+  en: >-
+    Puts a live Android emulator or USB phone inside the conversation, driven via adb, with 20 agent tools for
+    streaming, Gradle build/run, UI-tree or OCR interaction, logcat, and process/memory inspection.
+  pt: >-
+    Coloca um emulador Android ativo ou um telefone via USB dentro da conversa, controlado via adb, com 20 ferramentas
+    para streaming, build/run com Gradle, interação por árvore de UI ou OCR, logcat e inspeção de processos/memória.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:ZSeven-W/dsh-android
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

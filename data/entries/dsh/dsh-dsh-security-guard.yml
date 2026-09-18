@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-security-guard
+name: bigclawd/dsh-security-guard
+title: Runtime prompt-injection defense
+url: https://github.com/bigclawd/dsh-security-guard
+type: native-plugin
+category: security
+license: MIT
+tags:
+  - prompt-injection
+  - runtime-defense
+  - malicious-code
+  - security-guard
+description:
+  en: >-
+    Static and runtime security guard: rule-based scans for malicious code, prompt injection, and token waste, runtime
+    interception of dangerous tool calls, a /scan command, a plugin_scan tool, a web panel, and an allowlist.
+  pt: >-
+    Guarda de segurança estática e em runtime: varreduras baseadas em regras para código malicioso, injeção de prompt e
+    desperdício de tokens, interceptação em runtime de chamadas de ferramentas perigosas, comando /scan, ferramenta
+    plugin_scan, painel web e lista de permissão.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:bigclawd/dsh-security-guard
+alternatives:
+  - name: PerryLink/dsh-defend
+    url: https://github.com/PerryLink/dsh-defend
+    adds:
+      en: >-
+        Detects prompt-injection, jailbreak and secret-leak patterns at three pipeline seams with allow/ask/block tiers
+        and a destructive-delete guard.
+      pt: >-
+        Detecta padrões de injeção de prompt, jailbreak e vazamento de segredos em três pontos do pipeline com níveis de
+        permitir/perguntar/bloquear e proteção contra exclusão destrutiva.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

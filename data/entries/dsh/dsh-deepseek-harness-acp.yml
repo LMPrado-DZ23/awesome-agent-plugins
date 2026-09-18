@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-deepseek-harness-acp
+name: openma-ai/deepseek-harness-acp
+title: ACP bridge for editor clients
+url: https://github.com/openma-ai/deepseek-harness-acp
+type: native-plugin
+category: integrations
+license: null
+tags:
+  - acp
+  - editor-integration
+  - zed
+  - sessions
+description:
+  en: >-
+    ACP profile plugin and standalone stdio server for using the full harness agent from Zed and other ACP clients,
+    sharing the harness's credentials and sessions.
+  pt: >-
+    Plugin de perfil ACP e servidor stdio independente para usar o agente completo do harness a partir do Zed e de
+    outros clientes ACP, compartilhando credenciais e sessões do harness.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:openma-ai/deepseek-harness-acp
+alternatives:
+  - name: grunmin/dsh-acp-enhanced
+    url: https://github.com/grunmin/dsh-acp-enhanced
+    adds:
+      en: >-
+        Adds block-level reasoning streaming, usage telemetry, permission presets, session resume/archive, and Zed
+        file/terminal forwarding.
+      pt: >-
+        Adiciona streaming de raciocínio por bloco, telemetria de uso, predefinições de permissão, retomada/arquivamento
+        de sessão e encaminhamento de arquivo/terminal do Zed.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

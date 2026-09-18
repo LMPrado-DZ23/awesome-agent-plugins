@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-synapse
+name: liangmianya/dsh-synapse
+title: Visual non-linear conversation map
+url: https://github.com/liangmianya/dsh-synapse
+type: native-plugin
+category: sessions
+license: MIT
+tags:
+  - session
+  - visualization
+  - branching
+  - conversation-map
+description:
+  en: >-
+    Visual, non-linear conversation workspace for DeepSeek Harness: sessions, follow-ups, and branches become a
+    browsable conversation map.
+  pt: >-
+    Espaço de conversa visual e não linear para o DeepSeek Harness: sessões, continuações e ramificações viram um mapa
+    de conversa navegável.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:liangmianya/dsh-synapse
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

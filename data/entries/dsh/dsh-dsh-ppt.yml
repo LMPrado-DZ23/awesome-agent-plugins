@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-ppt
+name: STARDUSTLC666/dsh-ppt
+title: Text-to-slideshow presentation skill
+url: https://github.com/STARDUSTLC666/dsh-ppt
+type: native-plugin
+category: docs
+license: MIT
+tags:
+  - presentations
+  - pptx
+  - slides
+description:
+  en: >-
+    Turns one sentence or a document into an HTML slideshow plus an editable PPTX, with seven layouts (including quotes
+    and native PPTX tables), speaker notes, five built-in themes and bilingual support.
+  pt: >-
+    Transforma uma frase ou um documento em uma apresentação HTML mais um PPTX editável, com sete layouts (incluindo
+    citações e tabelas PPTX nativas), notas do apresentador, cinco temas embutidos e suporte bilíngue.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:STARDUSTLC666/dsh-ppt
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

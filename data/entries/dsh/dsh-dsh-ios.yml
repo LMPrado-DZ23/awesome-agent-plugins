@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-ios
+name: ZSeven-W/dsh-ios
+title: Live iOS device control
+url: https://github.com/ZSeven-W/dsh-ios
+type: native-plugin
+category: remote
+license: MIT
+tags:
+  - ios
+  - mobile-testing
+  - swiftui
+description:
+  en: >-
+    Puts a live iOS Simulator or USB-connected iPhone inside the conversation, with 22 agent tools to boot, build, drive
+    the UI by accessibility identity or OCR text, and hot-reload SwiftUI previews.
+  pt: >-
+    Coloca um Simulador iOS ativo ou um iPhone conectado por USB dentro da conversa, com 22 ferramentas para
+    inicializar, compilar, controlar a interface por identidade de acessibilidade ou texto via OCR, e hot-reload de
+    previews SwiftUI.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:ZSeven-W/dsh-ios
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

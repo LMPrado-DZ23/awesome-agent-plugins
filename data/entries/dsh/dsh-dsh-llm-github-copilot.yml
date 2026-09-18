@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-llm-github-copilot
+name: lujianjun19/dsh-llm-github-copilot
+title: GitHub Copilot model adapter
+url: https://github.com/lujianjun19/dsh-llm-github-copilot
+type: native-plugin
+category: models
+license: MIT
+tags:
+  - github-copilot
+  - model-provider
+  - oauth
+  - vision
+description:
+  en: >-
+    Adds GitHub Copilot as a model provider: OAuth device-flow sign-in, live model discovery from the Copilot API,
+    vision support for image-capable models, and automatic routing between the Chat Completions and Responses API
+    protocols.
+  pt: >-
+    Adiciona o GitHub Copilot como provedor de modelos: login via OAuth device-flow, descoberta ao vivo de modelos pela
+    API do Copilot, suporte a visão para modelos com capacidade de imagem, e roteamento automático entre os protocolos
+    Chat Completions e Responses API.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:lujianjun19/dsh-llm-github-copilot
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

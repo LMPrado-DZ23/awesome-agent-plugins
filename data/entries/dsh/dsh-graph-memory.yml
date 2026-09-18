@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-graph-memory
+name: adoresever/graph-memory
+title: Typed knowledge-graph memory
+url: https://github.com/adoresever/graph-memory
+type: native-plugin
+category: memory
+license: MIT
+tags:
+  - memory
+  - knowledge-graph
+  - traceable
+  - search
+description:
+  en: >-
+    Traceable, searchable cross-session memory that stores conversation knowledge as typed graph nodes
+    (task/skill/event) connected by typed edges.
+  pt: >-
+    Memória entre sessões rastreável e pesquisável que guarda o conhecimento das conversas como nós de grafo tipados
+    (tarefa/habilidade/evento) conectados por arestas tipadas.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:adoresever/graph-memory
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

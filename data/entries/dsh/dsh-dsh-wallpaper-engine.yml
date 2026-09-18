@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-wallpaper-engine
+name: elysia395/dsh-wallpaper-engine
+title: Wallpaper Engine background player
+url: https://github.com/elysia395/dsh-wallpaper-engine
+type: native-plugin
+category: themes
+license: MIT
+tags:
+  - wallpaper
+  - background
+  - customization
+description:
+  en: >-
+    Plays local Wallpaper Engine Video and Web wallpapers behind the chat (Scene wallpapers render as static frames),
+    with content-rating and type filters, custom uploads, and an iOS-style liquid-glass settings window. Requires DSH
+    0.1.5-rc.1+ and dsh-better-sidebar 0.19.0+.
+  pt: >-
+    Reproduz papéis de parede de Vídeo e Web do Wallpaper Engine local atrás do chat (papéis de parede de Cena viram
+    quadros estáticos), com filtros de classificação e tipo, uploads personalizados e uma janela de configurações em
+    vidro líquido estilo iOS. Requer DSH 0.1.5-rc.1+ e dsh-better-sidebar 0.19.0+.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:elysia395/dsh-wallpaper-engine
+alternatives:
+  - name: d-dev0101/open-sea-skin
+    url: https://github.com/d-dev0101/open-sea-skin
+    adds:
+      en: >-
+        Renders a real-time WebGPU animated ocean scene with wave, daylight, and glass controls instead of pre-recorded
+        wallpaper files.
+      pt: >-
+        Renderiza uma cena de oceano animada em tempo real via WebGPU, com controles de ondas, luz do dia e vidro, em
+        vez de arquivos de papel de parede pré-gravados.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

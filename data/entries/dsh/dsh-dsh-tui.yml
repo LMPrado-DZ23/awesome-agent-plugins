@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-tui
+name: ccch1mneyyy/dsh-TUI
+title: Full-screen terminal UI
+url: https://github.com/ccch1mneyyy/dsh-TUI
+type: native-plugin
+category: ui
+license: MIT
+tags:
+  - terminal
+  - tui
+  - cli
+description:
+  en: >-
+    A Claude Code-style full-screen terminal UI for DeepSeek Harness, with a pixel-whale header, a live status line, and
+    streaming thought expansion.
+  pt: >-
+    Uma interface de terminal em tela cheia no estilo Claude Code para o DeepSeek Harness, com cabeçalho pixelizado de
+    baleia, linha de status ao vivo e expansão de pensamento em streaming.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:ccch1mneyyy/dsh-TUI
+alternatives:
+  - name: lk251066/dsh-tui-pro
+    url: https://github.com/lk251066/dsh-tui-pro
+    adds:
+      en: >-
+        Groups sessions by workspace project and adds a durable assistant panel plus structured thinking, tool, diff,
+        and plan views.
+      pt: >-
+        Agrupa sessões por projeto de workspace e adiciona um painel de assistente persistente, além de visões
+        estruturadas de raciocínio, ferramentas, diffs e planos.
+  - name: Hilbert-beinghappy/seektty
+    url: https://github.com/Hilbert-beinghappy/seektty
+    adds:
+      en: Imports local VS Code JSON/JSONC color themes and adds mouse text selection plus Skill/MCP browser panels.
+      pt: >-
+        Importa temas de cores JSON/JSONC do VS Code local e adiciona seleção de texto com o mouse, além de painéis de
+        navegação de Skills/MCP.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

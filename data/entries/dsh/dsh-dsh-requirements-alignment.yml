@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-requirements-alignment
+name: jiezeng2004-design/dsh-requirements-alignment
+title: Requirements-drift runtime guard
+url: https://github.com/jiezeng2004-design/dsh-requirements-alignment
+type: native-plugin
+category: workflow
+license: MIT
+tags:
+  - workflow
+  - alignment
+  - guardrail
+  - long-running
+description:
+  en: >-
+    Runtime requirement drift guard that keeps long-running DSH agents aligned with the user's approved goal,
+    constraints, and decisions.
+  pt: >-
+    Guarda de desvio de requisitos em tempo de execução que mantém agentes DSH de longa duração alinhados com o
+    objetivo, as restrições e as decisões aprovados pelo usuário.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:jiezeng2004-design/dsh-requirements-alignment
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

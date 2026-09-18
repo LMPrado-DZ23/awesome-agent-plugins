@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-whale-meter
+name: Shiye-10Pages/dsh-whale-meter
+title: Gamified usage tier ranking
+url: https://github.com/Shiye-10Pages/dsh-whale-meter
+type: native-plugin
+category: usage
+license: MIT
+tags:
+  - gamification
+  - token-usage
+  - pricing
+  - local-only
+description:
+  en: >-
+    Ranks monthly token burn into shareable emoji tiers with a locally computed percentile estimate, precise pricing for
+    46 models across 6 vendors, backfilled pre-install sessions, and old-vs-new pricing comparison. Local-only, no
+    telemetry.
+  pt: >-
+    Classifica o consumo mensal de tokens em níveis compartilháveis com emojis, com estimativa de percentil calculada
+    localmente, preços precisos para 46 modelos de 6 fornecedores, preenchimento de sessões anteriores à instalação e
+    comparação de preços antigo versus novo. Somente local, sem telemetria.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:Shiye-10Pages/dsh-whale-meter
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

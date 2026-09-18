@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: playwright-mcp
+name: Playwright MCP
+url: https://github.com/microsoft/playwright-mcp
+type: mcp-server
+category: browser
+featured: true
+license: Apache-2.0
+tags:
+  - browser
+  - automation
+  - testing
+description:
+  en: >-
+    Browser automation for agents via Playwright accessibility snapshots: navigate, click, fill forms, take screenshots,
+    without needing a vision model.
+  pt: >-
+    Automação de navegador para agentes via snapshots de acessibilidade do Playwright: navegar, clicar, preencher
+    formulários e capturar telas sem modelo de visão.
+mcp:
+  name: playwright
+  stdio:
+    command: npx
+    args:
+      - "@playwright/mcp@latest"

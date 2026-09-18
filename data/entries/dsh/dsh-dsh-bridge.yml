@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-bridge
+name: wenbin-wb/dsh-bridge
+title: Drive DSH from chat apps
+url: https://github.com/wenbin-wb/dsh-bridge
+type: native-plugin
+category: remote
+license: MIT
+tags:
+  - im-integration
+  - chat-bots
+  - remote-access
+description:
+  en: >-
+    Adds remote and mobile access via LAN QR codes and Cloudflare or custom tunnels, plus bot integrations for WeChat,
+    QQ, Feishu, and Telegram, with built-in authentication.
+  pt: >-
+    Adiciona acesso remoto e móvel via QR code na LAN e túneis Cloudflare ou personalizados, além de integrações de bot
+    com WeChat, QQ, Feishu e Telegram, com autenticação embutida.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:wenbin-wb/dsh-bridge
+alternatives:
+  - name: zhuiyueya/dsh-im-gateway
+    url: https://github.com/zhuiyueya/dsh-im-gateway
+    adds:
+      en: >-
+        Aggregates 20+ chat platforms, including Discord and WhatsApp, into unified sessions with remote approvals and
+        an allowedUserIds list.
+      pt: >-
+        Agrega mais de 20 plataformas de chat, incluindo Discord e WhatsApp, em sessões unificadas com aprovações
+        remotas e lista allowedUserIds.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

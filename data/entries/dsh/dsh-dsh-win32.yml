@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-win32
+name: sjh9714/dsh-win32
+title: Diagnose and repair DSH installs
+url: https://github.com/sjh9714/dsh-win32
+type: native-plugin
+category: dev
+license: MIT
+tags:
+  - diagnostics
+  - repair
+  - windows
+  - self-healing
+description:
+  en: >-
+    Diagnoses and repairs DeepSeek Harness on native Windows around the official PowerShell and Workspace Write stack,
+    creates a desktop shortcut, and keeps legacy Git Bash/BusyBox presets behind an explicit opt-in. No WSL required.
+  pt: >-
+    Diagnostica e repara o DeepSeek Harness no Windows nativo em torno da stack oficial de PowerShell e Workspace Write,
+    cria um atalho na área de trabalho e mantém os presets legados de Git Bash/BusyBox atrás de uma ativação explícita.
+    Sem WSL.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:sjh9714/dsh-win32
+alternatives:
+  - name: moonquake2004/dsh-doctor#plugin
+    url: https://github.com/moonquake2004/dsh-doctor/tree/main/plugin
+    adds:
+      en: Offline, read-only diagnostic with 19 checks across env, profile and session state plus a JSON API
+      pt: >-
+        Diagnóstico offline e somente leitura com 19 verificações de ambiente, perfil e estado de sessão, além de uma
+        API JSON
+  - name: jorinyang/dsh-doctor
+    url: https://github.com/jorinyang/dsh-doctor
+    adds:
+      en: Graded automatic repair with one-click rollback and a runtime self-healing service
+      pt: Reparo automático graduado com rollback de um clique e um serviço de autocorreção em tempo de execução
+  - name: SaiSenBox/dsh-boot-guard
+    url: https://github.com/SaiSenBox/dsh-boot-guard
+    adds:
+      en: Detects broken plugins at boot, skips them temporarily, and restores only its own managed changes
+      pt: >-
+        Detecta plugins quebrados na inicialização, os ignora temporariamente e restaura apenas as mudanças que ele
+        mesmo gerencia
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

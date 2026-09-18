@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-blender
+name: CheshireJCat/blender
+title: Blender 3D production plugin
+url: https://github.com/CheshireJCat/blender
+type: native-plugin
+category: tools
+license: MIT
+tags:
+  - blender
+  - 3d
+  - modeling
+description:
+  en: >-
+    Blender 3D production plugin with 30 modeling/reconstruction skills, 13 runtime tools, and 26 deterministic helpers
+    for reference fitting, rendering, validation, animation, and portable export; installable as dsh-blender.
+  pt: >-
+    Plugin de produção 3D para Blender com 30 skills de modelagem/reconstrução, 13 ferramentas em tempo de execução e 26
+    auxiliares determinísticos para ajuste de referência, renderização, validação, animação e exportação portável;
+    instalável como dsh-blender.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:CheshireJCat/blender
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

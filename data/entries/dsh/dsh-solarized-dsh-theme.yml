@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-solarized-dsh-theme
+name: zhijun-dai/Solarized-dsh-theme
+title: Solarized and Selenized theme
+url: https://github.com/zhijun-dai/Solarized-dsh-theme
+type: native-plugin
+category: themes
+license: null
+tags:
+  - solarized
+  - color-palette
+  - low-contrast
+description:
+  en: >-
+    The classic low-contrast Solarized palette plus Selenized, its refined take, each with dark and light variants built
+    for long sessions with canonical syntax colors.
+  pt: >-
+    A clássica paleta de baixo contraste Solarized, além do Selenized, sua versão refinada, cada uma com variantes
+    escura e clara, feitas para sessões longas com cores de sintaxe canônicas.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:zhijun-dai/Solarized-dsh-theme
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-chat-timeline
+name: jjxjjjjiik-bot/dsh-chat-timeline
+title: Conversation navigation rail
+url: https://github.com/jjxjjjjiik-bot/dsh-chat-timeline
+type: native-plugin
+category: ui
+license: MIT
+tags:
+  - navigation
+  - conversation
+  - sidebar
+description:
+  en: >-
+    A 1:1 port of DeepSeek's official web right-side chat navigation rail: a hover-expandable rail with reading-position
+    highlight and click-to-jump between turns.
+  pt: >-
+    Uma portagem fiel (1:1) da barra oficial de navegação lateral direita do chat web do DeepSeek: uma barra expansível
+    ao passar o mouse, com destaque da posição de leitura e clique para saltar entre turnos.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:jjxjjjjiik-bot/dsh-chat-timeline
+alternatives:
+  - name: Wine-Red/dsh-codex-timeline
+    url: https://github.com/Wine-Red/dsh-codex-timeline
+    adds:
+      en: Adds hover previews of per-turn metrics and model-answer excerpts, plus local conversation search.
+      pt: >-
+        Adiciona pré-visualizações ao passar o mouse com métricas por turno e trechos das respostas do modelo, além de
+        busca local na conversa.
+  - name: liliuCourier/dsh-chat-outline
+    url: https://github.com/liliuCourier/dsh-chat-outline
+    adds:
+      en: Adds a keyword filter across turns and can jump the same position into the Trajectory view.
+      pt: Adiciona um filtro por palavra-chave entre turnos e permite saltar a mesma posição para a visão de Trajetória.
+  - name: kelearns/dsh-navigation-bar
+    url: https://github.com/kelearns/dsh-navigation-bar
+    adds:
+      en: Uses a piano-key layout with a hover ladder and message-preview tooltip instead of a plain rail.
+      pt: >-
+        Usa um layout em teclas de piano com uma escada ao passar o mouse e um tooltip de pré-visualização da mensagem,
+        em vez de uma barra simples.
+  - name: houyanchao/dsh-timeline
+    url: https://github.com/houyanchao/dsh-timeline
+    adds:
+      en: Bundles the timeline rail together with a prompt library, conversation export, and quick notes.
+      pt: Reúne a barra de linha do tempo com uma biblioteca de prompts, exportação de conversas e notas rápidas.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

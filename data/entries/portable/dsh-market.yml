@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-market
+name: dsh-market
+url: https://github.com/dsh-market/dsh-market
+type: marketplace
+category: meta
+featured: true
+license: MIT
+tags:
+  - dsh
+  - plugins
+description:
+  en: >-
+    Plugin market inside DeepSeek Harness Settings: search, one-click install/upgrade and theme switching for every
+    plugin in awesome-dsh-plugin.
+  pt: >-
+    Loja de plugins dentro das Configurações do DeepSeek Harness: busca, instalação/atualização em um clique e troca de
+    temas para todos os plugins do awesome-dsh-plugin.
+native:
+  client: dsh
+  install: dsh plugin --profile web add dshmarket
+alternatives:
+  - name: Relistencode/dsh-extension-hub
+    url: https://github.com/Relistencode/dsh-extension-hub
+    adds:
+      en: >-
+        Also manages skills and MCP servers alongside plugins, plus curated and GitHub-based search with npm one-click
+        install.
+      pt: >-
+        Também gerencia skills e servidores MCP junto com plugins, além de busca curada e via GitHub com instalação npm
+        em um clique.
+  - name: 1e0zj/dsh-plugin-mall
+    url: https://github.com/1e0zj/dsh-plugin-mall
+    adds:
+      en: >-
+        Verifies plugins via package.json manifest checks and anti-squatting protection, plus five tools for headless
+        agent use.
+      pt: >-
+        Verifica plugins por checagens de manifesto no package.json e proteção antissquatting, além de cinco ferramentas
+        para uso headless por agentes.
+  - name: DshMarketPlace/dsh-plugins-store
+    url: https://github.com/DshMarketPlace/dsh-plugins-store
+    adds:
+      en: Shows an approval gate listing each plugin's detected risk flags before installing.
+      pt: Mostra uma etapa de aprovação listando os sinais de risco detectados de cada plugin antes de instalar.
+  - name: zhu1090093659/dsh-web#packages/dsh-plugin-manager
+    url: https://github.com/zhu1090093659/dsh-web/tree/main/packages/dsh-plugin-manager
+    adds:
+      en: Installs from npm or git with conflict reconciliation, undo, and hand-off to a fix session.
+      pt: >-
+        Instala a partir de npm ou git com reconciliação de conflitos, desfazer e transferência para uma sessão de
+        correção.

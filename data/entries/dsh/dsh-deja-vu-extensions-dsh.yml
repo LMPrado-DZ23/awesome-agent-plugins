@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-deja-vu-extensions-dsh
+name: vshulcz/deja-vu#extensions/dsh
+title: Cross-tool session reader, no export
+url: https://github.com/vshulcz/deja-vu/tree/main/extensions/dsh
+type: native-plugin
+category: memory
+license: MIT
+tags:
+  - memory
+  - cross-tool
+  - session-history
+  - offline
+description:
+  en: >-
+    Reads the session files that other coding agents on the same machine already wrote (Claude Code, Codex, Cursor, VS
+    Code Copilot Chat, opencode, and more), including sessions from before it was installed. Local BM25 index, no LLM,
+    no embeddings, no network.
+  pt: >-
+    Lê os arquivos de sessão que outros agentes de codificação na mesma máquina já escreveram (Claude Code, Codex,
+    Cursor, VS Code Copilot Chat, opencode e outros), incluindo sessões anteriores à sua instalação. Índice BM25 local,
+    sem LLM, sem embeddings, sem rede.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:vshulcz/deja-vu#path:/extensions/dsh
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

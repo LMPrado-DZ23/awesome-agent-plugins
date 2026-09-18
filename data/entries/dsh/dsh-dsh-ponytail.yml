@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-ponytail
+name: gongyijie85/dsh-ponytail
+title: Lazy senior dev mode skills
+url: https://github.com/gongyijie85/dsh-ponytail
+type: native-plugin
+category: skills
+license: MIT
+tags:
+  - productivity
+  - code-review
+  - minimalism
+description:
+  en: "Ponytail lazy-senior-dev mode for DeepSeek Harness: six skills adapted from DietrichGebert/ponytail."
+  pt: "Modo dev sênior preguiçoso Ponytail para o DeepSeek Harness: seis skills adaptadas de DietrichGebert/ponytail."
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:gongyijie85/dsh-ponytail
+alternatives:
+  - name: Wenaixi/dsh-ponytail
+    url: https://github.com/Wenaixi/dsh-ponytail
+    adds:
+      en: Adds a 7-rung YAGNI-to-minimal-code ladder and guarantees no empty tools among its six skills
+      pt: >-
+        Adiciona uma escada de 7 degraus de YAGNI até código mínimo e garante que nenhuma das seis skills tenha
+        ferramentas vazias
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

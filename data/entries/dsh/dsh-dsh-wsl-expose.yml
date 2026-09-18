@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-wsl-expose
+name: jack-ranbo/dsh-wsl-expose
+title: Expose WSL web GUI over network
+url: https://github.com/jack-ranbo/dsh-wsl-expose
+type: native-plugin
+category: dev
+license: MIT
+tags:
+  - wsl
+  - networking
+  - reverse-proxy
+  - remote-access
+description:
+  en: >-
+    Exposes the DSH Web GUI over IPv6 or IPv4 from WSL2 through a reverse proxy (Lucky). The /wan up command sets up a
+    socat relay, Windows portproxy, a firewall rule, and a trusted-host fence, with a Settings card and commands to
+    configure the domain and ports.
+  pt: >-
+    Expõe a interface web do DSH via IPv6 ou IPv4 a partir do WSL2 por um proxy reverso (Lucky). O comando /wan up
+    configura relay socat, portproxy do Windows, regra de firewall e barreira de hosts confiáveis, com cartão de
+    Configurações e comandos para domínio e portas.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:jack-ranbo/dsh-wsl-expose
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

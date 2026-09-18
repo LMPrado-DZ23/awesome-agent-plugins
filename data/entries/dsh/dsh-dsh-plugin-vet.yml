@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-plugin-vet
+name: wulun811/dsh-plugin-vet
+title: Third-party plugin vetting pipeline
+url: https://github.com/wulun811/dsh-plugin-vet
+type: native-plugin
+category: security
+license: MIT
+tags:
+  - plugins
+  - supply-chain
+  - vetting
+  - static-analysis
+description:
+  en: >-
+    Trust pipeline for third-party plugins: a deterministic static scan with verdicts, an opt-in runtime guard with
+    honeypot lures, an agent audit-protocol skill, and a browser shield status light. Alarm-only, never an enforcer.
+  pt: >-
+    Pipeline de confiança para plugins de terceiros: varredura estática determinística com veredictos, guarda de runtime
+    opcional com iscas honeypot, skill de protocolo de auditoria para agentes e um indicador de status de escudo no
+    navegador. Apenas alerta, nunca bloqueia.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:wulun811/dsh-plugin-vet
+alternatives:
+  - name: truelove-dreamer/dsh-plugin-vetting
+    url: https://github.com/truelove-dreamer/dsh-plugin-vetting
+    adds:
+      en: Adds transitive-dependency coverage and an official-package hash baseline to catch supply-chain tampering.
+      pt: >-
+        Adiciona cobertura de dependências transitivas e uma base de hash de pacotes oficiais para detectar adulteração
+        na cadeia de suprimentos.
+  - name: zoahdev/dsh-poison-guard
+    url: https://github.com/zoahdev/dsh-poison-guard
+    adds:
+      en: Runs an AST and deobfuscation scan before install and exits non-zero on findings for CI gating.
+      pt: >-
+        Executa uma varredura de AST e desofuscação antes da instalação e retorna código de saída diferente de zero em
+        achados, para bloqueio em CI.
+  - name: Darren-Tang/dsh-provenance
+    url: https://github.com/Darren-Tang/dsh-provenance
+    adds:
+      en: Verifies the plugin tarball matches the source you reviewed before any of its code runs.
+      pt: Verifica se o tarball do plugin corresponde ao código-fonte revisado antes que qualquer código seja executado.
+  - name: pengxuding/dsh-plugin-judge
+    url: https://github.com/pengxuding/dsh-plugin-judge
+    adds:
+      en: Combines a source scan with an LLM judge and reminds you to re-audit installed plugins after a model switch.
+      pt: >-
+        Combina varredura de código-fonte com um juiz LLM e lembra de reauditar plugins instalados após trocar de
+        modelo.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-pocket
+name: shaobeichen/dsh-pocket
+title: Remote phone access to Web UI
+url: https://github.com/shaobeichen/dsh-pocket
+type: native-plugin
+category: integrations
+license: GPL-2.0
+tags:
+  - remote-access
+  - mobile
+  - web-ui
+  - qr-code
+description:
+  en: >-
+    Remote phone access to the Web UI: scan a QR code for LAN or public (cloudflared tunnel) access, with real-time
+    sync, a mobile-adaptive layout, and a settings tab.
+  pt: >-
+    Acesso remoto pelo celular à Web UI: escaneie um QR code para acesso via LAN ou público (túnel cloudflared), com
+    sincronização em tempo real, layout adaptado a celular e uma aba de configurações.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:shaobeichen/dsh-pocket
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-paperlab
+name: maple-pwn/paperlab
+title: LaTeX paper workbench with review
+url: https://github.com/maple-pwn/paperlab
+type: native-plugin
+category: docs
+license: MIT
+tags:
+  - latex
+  - overleaf
+  - research-writing
+description:
+  en: >-
+    Overleaf-style LaTeX paper workbench: annotate any text in the rendered PDF and have a DSH agent revise the sources,
+    with compile checks and git history.
+  pt: >-
+    Bancada de trabalho LaTeX estilo Overleaf: anote qualquer texto no PDF renderizado e deixe um agente do DSH revisar
+    as fontes, com checagem de compilação e histórico git.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:maple-pwn/paperlab
+alternatives:
+  - name: fly233338/dsh-overleaf
+    url: https://github.com/fly233338/dsh-overleaf
+    adds:
+      en: >-
+        Connects multiple existing Overleaf cloud projects via OverleafMCP for browsing, analysis and Git-based file
+        updates
+      pt: >-
+        Conecta múltiplos projetos existentes no Overleaf via OverleafMCP para navegação, análise e atualizações de
+        arquivo via Git
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-at-file
+name: omdsh-dev/dsh-at-file
+title: At-file composer mentions
+url: https://github.com/omdsh-dev/dsh-at-file
+type: native-plugin
+category: ui
+license: MIT
+tags:
+  - file-mentions
+  - composer
+  - search
+description:
+  en: "Codex-style @file mentions: search workspace files from the composer and attach their contents to prompts."
+  pt: "Menções @arquivo estilo Codex: busque arquivos do workspace direto do compositor e anexe seu conteúdo aos prompts."
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:omdsh-dev/dsh-at-file
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

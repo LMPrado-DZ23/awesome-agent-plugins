@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-routing-suite
+name: yjh051108/dsh-routing-suite
+title: Hot-reload plugins without restart
+url: https://github.com/yjh051108/dsh-routing-suite
+type: native-plugin
+category: dev
+license: MIT
+tags:
+  - plugins
+  - hot-reload
+  - runtime
+  - router
+description:
+  en: >-
+    Runtime injector for DSH plugin packages: inject, hot-reload, unload, promote and self-heal routes, plus a
+    settings-page plugin manager, a reasoning-mode router preset, and a six-tool graded task-state protocol.
+  pt: >-
+    Injetor em runtime para pacotes de plugins DSH: injeta, recarrega a quente, descarrega, promove e autocorrige rotas,
+    com um gerenciador de plugins nas configurações, um preset de roteador por modo de raciocínio e um protocolo de
+    estado de tarefa com seis ferramentas.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:yjh051108/dsh-routing-suite
+alternatives:
+  - name: stuarthu/dsh-hot-reload
+    url: https://github.com/stuarthu/dsh-hot-reload
+    adds:
+      en: Reloads an upgraded plugin inside the running process and rolls back automatically if the reload fails
+      pt: Recarrega um plugin atualizado dentro do processo em execução e reverte automaticamente se a recarga falhar
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

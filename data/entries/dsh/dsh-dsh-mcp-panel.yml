@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-mcp-panel
+name: PerryLink/dsh-mcp-panel
+title: MCP client runtime status panel
+url: https://github.com/PerryLink/dsh-mcp-panel
+type: native-plugin
+category: dev
+license: Apache-2.0
+tags:
+  - mcp
+  - monitoring
+  - settings
+description:
+  en: >-
+    Read-only runtime panel for the official DSH MCP client: shows connection status, registered tools, errors and
+    reconnect counts through the /mcp command and a Settings tab, with sanitized display and enable/disable patch
+    suggestions.
+  pt: >-
+    Painel de runtime somente leitura para o cliente MCP oficial do DSH: mostra status de conexão, ferramentas
+    registradas, erros e contagem de reconexões pelo comando /mcp e por uma aba de Configurações, com exibição
+    sanitizada e sugestões de patch para ativar/desativar.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:PerryLink/dsh-mcp-panel
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

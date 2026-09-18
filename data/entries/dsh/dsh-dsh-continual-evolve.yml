@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-continual-evolve
+name: ZK-Andy/dsh-continual-evolve
+title: Continual harness self-evolution
+url: https://github.com/ZK-Andy/dsh-continual-evolve
+type: native-plugin
+category: dev
+license: MIT
+tags:
+  - self-improvement
+  - memory
+  - rollback
+  - skills
+description:
+  en: >-
+    Refines prompts, memory, skills and subagent specs from session trajectories into versioned, auditable,
+    rollback-safe harness state, with review gates and hot-reloaded skills.
+  pt: >-
+    Refina prompts, memória, skills e especificações de subagentes a partir das trajetórias de sessão, gerando um estado
+    do harness versionado, auditável e seguro para rollback, com portões de revisão e skills recarregadas a quente.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:ZK-Andy/dsh-continual-evolve
+alternatives:
+  - name: jasen215/dsh-continual-harness
+    url: https://github.com/jasen215/dsh-continual-harness
+    adds:
+      en: Runs the refinement loop periodically and exposes it as a model-callable harness_refine tool
+      pt: Executa o loop de refinamento periodicamente e o expõe como uma ferramenta harness_refine chamável pelo modelo
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

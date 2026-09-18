@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-rate-limiter
+name: Xidong-AI/dsh-rate-limiter
+title: Proactive per-provider rate limiting
+url: https://github.com/Xidong-AI/dsh-rate-limiter
+type: native-plugin
+category: usage
+license: MIT
+tags:
+  - rate-limiting
+  - reliability
+  - throttling
+  - providers
+description:
+  en: >-
+    Queues requests that would exceed a per-provider token-bucket rate limit before they are sent, preventing upstream
+    429 errors.
+  pt: >-
+    Enfileira requisições que excederiam um limite de taxa por token-bucket de cada provedor antes de serem enviadas,
+    evitando erros 429 do provedor.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:Xidong-AI/dsh-rate-limiter
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

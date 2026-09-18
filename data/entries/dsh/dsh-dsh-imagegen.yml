@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-imagegen
+name: dickpy/dsh-imagegen
+title: AI image generation
+url: https://github.com/dickpy/dsh-imagegen
+type: native-plugin
+category: multimodal
+license: Apache-2.0
+tags:
+  - image-generation
+  - text-to-image
+description:
+  en: >-
+    Adds text-to-image and image-to-image generation to the DSH Web GUI through a configurable OpenAI-compatible
+    endpoint (gpt-image or dall-e-3), with a settings card and a sidebar generation studio.
+  pt: >-
+    Adiciona geração de imagem a partir de texto e imagem para imagem à Web GUI do DSH via um endpoint compatível com
+    OpenAI configurável (gpt-image ou dall-e-3), com um cartão de configurações e um estúdio de geração na barra
+    lateral.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:dickpy/dsh-imagegen
+alternatives:
+  - name: lsjspl/dsh-plugin-grok2api-media-tool
+    url: https://github.com/lsjspl/dsh-plugin-grok2api-media-tool
+    adds:
+      en: Generates images and videos through the grok2api API instead of an OpenAI-compatible endpoint.
+      pt: Gera imagens e vídeos através da API grok2api, em vez de um endpoint compatível com OpenAI.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

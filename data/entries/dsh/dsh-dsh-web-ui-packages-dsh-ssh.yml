@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-web-ui-packages-dsh-ssh
+name: zhu1090093659/dsh-web-ui#packages/dsh-ssh
+title: SSH host management panel
+url: https://github.com/zhu1090093659/dsh-web-ui/tree/main/packages/dsh-ssh
+type: native-plugin
+category: remote
+license: Apache-2.0
+tags:
+  - ssh
+  - ops
+  - terminal
+description:
+  en: >-
+    Adds an SSH operations panel to DSH: a web terminal, SFTP file transfer with progress, local port forwarding, and
+    one-command execution across a cluster of hosts sharing the same config.
+  pt: >-
+    Adiciona um painel de operações SSH ao DSH: terminal web, transferência de arquivos SFTP com progresso,
+    encaminhamento de porta local e execução de um comando em um cluster de hosts com a mesma configuração.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:zhu1090093659/dsh-web-ui#path:/packages/dsh-ssh
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

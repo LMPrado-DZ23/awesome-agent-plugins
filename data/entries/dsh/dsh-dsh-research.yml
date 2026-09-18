@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-research
+name: dsh-research/dsh-research
+title: Curated research plugin store
+url: https://github.com/dsh-research/dsh-research
+type: native-plugin
+category: meta
+license: MIT
+tags:
+  - research
+  - curated
+  - plugins
+description:
+  en: >-
+    Adds a Research plugins page to Settings with hand-reviewed plugins for literature search, reference management,
+    writing, and workbenches; installs pinned versions with one click and makes exactly one network request to its own
+    catalog.
+  pt: >-
+    Adiciona uma página de plugins de Pesquisa às Configurações com plugins revisados manualmente para busca de
+    literatura, gerenciamento de referências, escrita e workbenches; instala versões fixadas em um clique e faz
+    exatamente uma requisição de rede ao próprio catálogo.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:dsh-research/dsh-research
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

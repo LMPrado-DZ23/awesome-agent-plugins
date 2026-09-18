@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-skill-hub
+name: cheshireez/dsh-skill-hub
+title: Browse and manage skills in-GUI
+url: https://github.com/cheshireez/dsh-skill-hub
+type: native-plugin
+category: skills
+license: MIT
+tags:
+  - skills
+  - gui
+  - marketplace
+description:
+  en: >-
+    In-GUI skill hub for DeepSeek Harness: browse, search, toggle, inspect, diagnose and scaffold local skills from the
+    official ctx.skills registry, plus a skill market with tracked source sync and one-click update-all.
+  pt: >-
+    Hub de skills integrado à interface do DeepSeek Harness: navega, busca, ativa/desativa, inspeciona, diagnostica e
+    cria a partir do registro oficial ctx.skills, além de um mercado de skills com sincronização de fontes rastreadas e
+    atualização em um clique.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:cheshireez/dsh-skill-hub
+alternatives:
+  - name: zhu1090093659/dsh-web#packages/dsh-skill-explorer
+    url: https://github.com/zhu1090093659/dsh-web/tree/main/packages/dsh-skill-explorer
+    adds:
+      en: Also creates new skills and deletes them into a recoverable trash directly from the dsh web GUI
+      pt: Também cria novas skills e as exclui para uma lixeira recuperável diretamente pela interface web do dsh
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

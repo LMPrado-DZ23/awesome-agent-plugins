@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-humanizer-ru-dsh
+name: Vladimir-Human/humanizer-ru#dsh
+title: Clean AI traces from Russian text
+url: https://github.com/Vladimir-Human/humanizer-ru/tree/main/dsh
+type: native-plugin
+category: skills
+license: MIT
+tags:
+  - text-cleaning
+  - russian
+  - ai-detection
+description:
+  en: >-
+    Cleans AI traces from Russian text: finds chatbot copy-paste artefacts from major AI tools, strips hidden zero-width
+    and invisible-layout marks, and rewrites text into natural prose on request; offline, text-only, backed by regex
+    markers and tests.
+  pt: >-
+    Remove marcas de IA de textos em russo: encontra artefatos de copiar-colar de ferramentas de IA populares, remove
+    marcas ocultas de largura zero e de layout invisível, e reescreve o texto em prosa natural quando solicitado;
+    offline, somente texto, com marcadores regex e testes.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:Vladimir-Human/humanizer-ru#path:/dsh
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

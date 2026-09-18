@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-deepseek-harness-genui
+name: pengyue-polaron/deepseek-harness-genui
+title: Inline generative UI apps
+url: https://github.com/pengyue-polaron/deepseek-harness-genui
+type: native-plugin
+category: ui
+license: MIT
+tags:
+  - generative-ui
+  - react
+  - canvas
+description:
+  en: >-
+    Renders code-first React and TypeScript task apps inline, in Canvas, full screen, or on localhost, keeping
+    interaction state available to later agent turns, with approval-gated MCP and API access.
+  pt: >-
+    Renderiza aplicativos de tarefa em React e TypeScript baseados em código, inline, no Canvas, em tela cheia ou em
+    localhost, mantendo o estado de interação disponível para turnos posteriores do agente, com acesso a MCP e API
+    sujeito a aprovação.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:pengyue-polaron/deepseek-harness-genui
+alternatives:
+  - name: omdsh-dev/dsh-genui
+    url: https://github.com/omdsh-dev/dsh-genui
+    adds:
+      en: >-
+        Renders built-in widget types — layout, charts, forms, quizzes, mermaid diagrams, 3D scenes — with an action
+        event loop back to the model.
+      pt: >-
+        Renderiza tipos de widgets prontos — layout, gráficos, formulários, quizzes, diagramas mermaid, cenas 3D — com
+        um loop de eventos de ação de volta ao modelo.
+  - name: Nagi-ovo/dsh-visualize
+    url: https://github.com/Nagi-ovo/dsh-visualize
+    adds:
+      en: >-
+        Streams sandboxed interactive HTML cards directly into the chat with a live streaming preview, instead of full
+        React apps.
+      pt: >-
+        Transmite cartões HTML interativos em sandbox diretamente no chat com pré-visualização em streaming, em vez de
+        aplicativos React completos.
+  - name: jiuyuechuwuhao/dsh-canvas-preview
+    url: https://github.com/jiuyuechuwuhao/dsh-canvas-preview
+    adds:
+      en: Adds a Canvas tab that live-previews workspace HTML artifacts and exports them locally as PNG, JPG, or SVG.
+      pt: >-
+        Adiciona uma aba Canvas que pré-visualiza ao vivo artefatos HTML do workspace e os exporta localmente como PNG,
+        JPG ou SVG.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

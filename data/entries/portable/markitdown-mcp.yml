@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: markitdown-mcp
+name: MarkItDown MCP
+url: https://github.com/microsoft/markitdown/tree/main/packages/markitdown-mcp
+type: mcp-server
+category: docs
+license: MIT
+tags:
+  - pdf
+  - office
+  - markdown
+description:
+  en: Converts PDF, Office documents, images, audio, HTML and more to Markdown for the agent, using Microsoft MarkItDown.
+  pt: >-
+    Converte PDF, documentos Office, imagens, áudio, HTML e mais em Markdown para o agente, usando o Microsoft
+    MarkItDown.
+mcp:
+  name: markitdown
+  prereq: pip install markitdown-mcp
+  stdio:
+    command: markitdown-mcp
+    args: []

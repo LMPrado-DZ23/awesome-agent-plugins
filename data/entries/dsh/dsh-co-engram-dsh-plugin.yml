@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-co-engram-dsh-plugin
+name: Co-Engram/Co-Engram#dsh-plugin
+title: Self-evolving team memory in git
+url: https://github.com/Co-Engram/Co-Engram/tree/main/packages/dsh-plugin
+type: native-plugin
+category: memory
+license: MIT
+tags:
+  - memory
+  - team
+  - git
+  - reinforcement
+description:
+  en: >-
+    Self-evolving team memory kept as plain markdown in git: 38 bare-name memory tools plus a prompt-signals section
+    re-evaluated at every assembly, with reinforcement, decay, and sleep consolidation. Shares one data repo with Claude
+    Code and OpenClaw hosts.
+  pt: >-
+    Memória de equipe autoevolutiva mantida como markdown puro no git: 38 ferramentas de memória sem prefixo, além de
+    uma seção de sinais de prompt reavaliada a cada montagem, com reforço, decaimento e consolidação durante
+    inatividade. Compartilha um único repositório de dados com Claude Code e OpenClaw.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:Co-Engram/Co-Engram#path:/packages/dsh-plugin
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

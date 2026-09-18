@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: git-mcp
+name: GitMCP
+url: https://github.com/idosal/git-mcp
+type: mcp-server
+category: docs
+license: Apache-2.0
+tags:
+  - docs
+  - github
+description:
+  en: >-
+    Free remote server that turns any GitHub repository or Pages site into a documentation source (use
+    https://gitmcp.io/OWNER/REPO for one repo).
+  pt: >-
+    Servidor remoto gratuito que transforma qualquer repositório ou site Pages do GitHub em fonte de documentação (use
+    https://gitmcp.io/OWNER/REPO para um repo).
+mcp:
+  name: gitmcp
+  http:
+    url: https://gitmcp.io/docs

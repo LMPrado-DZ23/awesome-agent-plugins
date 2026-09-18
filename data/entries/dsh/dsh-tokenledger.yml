@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-tokenledger
+name: zh667/TokenLedger
+title: Relay-attributed usage tracking
+url: https://github.com/zh667/TokenLedger
+type: native-plugin
+category: usage
+license: MIT
+tags:
+  - cost-tracking
+  - relay
+  - token-usage
+  - dashboard
+description:
+  en: >-
+    Sidebar panel that attributes tokens to the relay site that served each request, read from your existing provider
+    config: today/month/all-time totals, per-site and per-model breakdowns, a year activity heatmap, and New
+    API/Sub2API/DeepSeek balances.
+  pt: >-
+    Painel lateral que atribui tokens ao site de relay que atendeu cada requisição, lido da sua configuração de provedor
+    existente: totais de hoje/mês/geral, detalhamento por site e por modelo, um mapa de calor anual de atividade e
+    saldos de New API/Sub2API/DeepSeek.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:zh667/TokenLedger
+alternatives:
+  - name: Jannchie/dsh-bill
+    url: https://github.com/Jannchie/dsh-bill
+    adds:
+      en: >-
+        Prices every call from an online catalogue of 8000+ models and attributes spend by tool output, model output, or
+        system prompt.
+      pt: >-
+        Precifica cada chamada a partir de um catálogo online com mais de 8000 modelos e atribui o gasto por saída de
+        ferramenta, saída de modelo ou prompt de sistema.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

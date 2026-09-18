@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-background-agents
+name: PerryLink/dsh-background-agents
+title: Durable background child agents
+url: https://github.com/PerryLink/dsh-background-agents
+type: native-plugin
+category: workflow
+license: Apache-2.0
+tags:
+  - workflow
+  - subagents
+  - background-tasks
+  - orchestration
+description:
+  en: >-
+    Durable background child agents on the official subagent seam: start from any session, watch progress in the web UI
+    sidebar, message and interrupt at any time, with per-child tool scoping and delegation-depth caps.
+  pt: >-
+    Agentes-filho de fundo duráveis sobre a interface oficial de subagentes: iniciam a partir de qualquer sessão, com
+    progresso visível na barra lateral, mensagens e interrupção a qualquer momento, escopo de ferramentas por filho e
+    limites de profundidade de delegação.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:PerryLink/dsh-background-agents
+alternatives:
+  - name: ZSeven-W/dsh-crew
+    url: https://github.com/ZSeven-W/dsh-crew
+    adds:
+      en: Adds dispatching work to DSH agents directly from Claude Code or Codex, plus a multimodal bridge.
+      pt: Adiciona o despacho de trabalho para agentes DSH direto do Claude Code ou Codex, além de uma ponte multimodal.
+  - name: hongyue0721/dsh-kimicode-swarm
+    url: https://github.com/hongyue0721/dsh-kimicode-swarm
+    adds:
+      en: Adds batch-parallel subagent dispatch with adaptive scheduling and a /swarm command.
+      pt: Adiciona despacho de subagentes em lote paralelo com agendamento adaptativo e um comando /swarm.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

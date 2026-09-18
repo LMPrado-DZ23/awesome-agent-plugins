@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-bash-terminal
+name: MAXeaglet/dsh-bash-terminal
+title: Cross-shell terminal tool
+url: https://github.com/MAXeaglet/dsh-bash-terminal
+type: native-plugin
+category: tools
+license: MIT
+tags:
+  - terminal
+  - shell
+  - windows
+  - wsl
+description:
+  en: >-
+    One shell tool covering PowerShell, Git Bash, and WSL on Windows, plus an interactive PTY terminal; the default
+    terminal is chosen in DSH settings.
+  pt: >-
+    Uma única ferramenta de shell cobrindo PowerShell, Git Bash e WSL no Windows, além de um terminal PTY interativo; o
+    terminal padrão é escolhido nas configurações do DSH.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:MAXeaglet/dsh-bash-terminal
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

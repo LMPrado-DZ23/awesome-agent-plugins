@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-read-url
+name: 2672243194/dsh-read-url
+title: Fetch pages as clean readable text
+url: https://github.com/2672243194/dsh-read-url
+type: native-plugin
+category: browser
+license: MIT
+tags:
+  - web-scraping
+  - content-extraction
+description:
+  en: >-
+    Reads any web page as clean main content: automatic charset detection (GBK/GB2312/UTF-8/Big5), noise stripping,
+    offset continuation, optional SPA rendering, batch reads, and site crawling.
+  pt: >-
+    Lê qualquer página da web extraindo apenas o conteúdo principal: detecção automática de charset
+    (GBK/GB2312/UTF-8/Big5), remoção de ruído, continuação por offset, renderização opcional de SPA, leituras em lote e
+    rastreamento de sites.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:2672243194/dsh-read-url
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

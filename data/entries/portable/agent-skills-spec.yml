@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: agent-skills-spec
+name: Agent Skills
+url: https://github.com/agentskills/agentskills
+type: standard
+category: standards
+featured: true
+license: Apache-2.0
+tags:
+  - skills
+  - spec
+description:
+  en: >-
+    Specification for Agent Skills: a folder with a SKILL.md (name, description, instructions) plus optional scripts and
+    resources that an agent loads on demand.
+  pt: >-
+    Especificação das Agent Skills: uma pasta com SKILL.md (nome, descrição, instruções) e scripts/recursos opcionais
+    que o agente carrega sob demanda.

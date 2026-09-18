@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-ark-cli-ark-plan-api
+name: volcengine/ark-cli#ark-plan-api
+title: Volcengine Ark plan routes
+url: https://github.com/volcengine/ark-cli/tree/main/dsh-plugins/ark-plan-api
+type: native-plugin
+category: models
+license: Apache-2.0
+tags:
+  - volcengine
+  - ark
+  - model-provider
+  - billing-plans
+description:
+  en: Registers Volcengine Ark Agent Plan, Coding Plan, and postpaid model routes directly in the native model picker.
+  pt: >-
+    Registra as rotas do Volcengine Ark Agent Plan, Coding Plan e modelos pós-pagos diretamente no seletor de modelos
+    nativo.
+native:
+  client: dsh
+  install: >-
+    dsh plugin --profile web add
+    "https://github.com/volcengine/ark-cli/releases/download/dsh-plugins%2Fv0.1.0/ark-plan-api.tgz"
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

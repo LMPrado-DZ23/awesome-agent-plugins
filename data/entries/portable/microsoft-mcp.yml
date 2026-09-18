@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: microsoft-mcp
+name: Microsoft MCP catalog
+url: https://github.com/microsoft/mcp
+type: list
+category: cloud
+license: MIT
+tags:
+  - azure
+  - microsoft
+description:
+  en: Catalog of official Microsoft MCP servers (Azure, Microsoft 365, dev tools) with links to each implementation.
+  pt: >-
+    Catálogo dos servidores MCP oficiais da Microsoft (Azure, Microsoft 365, ferramentas de dev) com links para cada
+    implementação.

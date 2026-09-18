@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-speak
+name: Alan2Z/dsh-speak
+title: Read replies aloud (TTS)
+url: https://github.com/Alan2Z/dsh-speak
+type: native-plugin
+category: multimodal
+license: MIT
+tags:
+  - tts
+  - read-aloud
+  - notifications
+description:
+  en: >-
+    Announces final replies, approvals, and questions with the system's built-in natural voice on Windows and macOS, at
+    zero extra model or token cost, with optional event announcements and a bilingual settings page.
+  pt: >-
+    Anuncia respostas finais, aprovações e perguntas com a voz natural nativa do sistema no Windows e macOS, sem custo
+    extra de modelo ou tokens, com anúncios de eventos opcionais e uma página de configurações bilíngue.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:Alan2Z/dsh-speak
+alternatives:
+  - name: PolinniZhong/dsh-omi-voice
+    url: https://github.com/PolinniZhong/dsh-omi-voice
+    adds:
+      en: >-
+        Adds tap-to-read-aloud with natural Doubao TTS voices (bring your own key), filtering out code, tables, and
+        diagrams from what gets read.
+      pt: >-
+        Adiciona leitura em voz alta ao toque com vozes naturais Doubao TTS (chave própria), filtrando código, tabelas e
+        diagramas do que é lido.
+  - name: 1624318455/dsh-plugin-tts
+    url: https://github.com/1624318455/dsh-plugin-tts
+    adds:
+      en: Adds RVC custom voice models with one-click voice-pack installs from a registry, alongside free Edge TTS.
+      pt: >-
+        Adiciona modelos de voz personalizados RVC com instalação de pacotes de voz em um clique a partir de um
+        registro, além do Edge TTS gratuito.
+  - name: ppy-web/dsh-plugin-xiaomi-mimo-tts
+    url: https://github.com/ppy-web/dsh-plugin-xiaomi-mimo-tts
+    adds:
+      en: Adds Xiaomi MiMo text-to-speech with preset voices and custom voice design.
+      pt: Adiciona texto para fala Xiaomi MiMo com vozes predefinidas e design de voz personalizado.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

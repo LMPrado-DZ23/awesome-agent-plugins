@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-taskboard
+name: cloader/dsh-taskboard
+title: Cron-scheduled task board
+url: https://github.com/cloader/dsh-taskboard
+type: native-plugin
+category: workflow
+license: Apache-2.0
+tags:
+  - workflow
+  - task-board
+  - scheduling
+  - kanban
+description:
+  en: >-
+    Task board for DSH: create tasks with project and model assignment, run them manually or on cron schedules; new
+    sessions in a project automatically pick up its todo tasks and move them to in-review when done.
+  pt: >-
+    Quadro de tarefas para o DSH: cria tarefas com atribuição de projeto e modelo, executando manualmente ou em cron;
+    novas sessões em um projeto pegam automaticamente as tarefas pendentes e as movem para em-revisão ao concluir.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:cloader/dsh-taskboard
+alternatives:
+  - name: whyihaveyou/dsh-suite#plugin-team-board
+    url: https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-team-board
+    adds:
+      en: Adds a shared multi-agent board with explicit create/claim/transition/query operations over a service key.
+      pt: >-
+        Adiciona um quadro multiagente compartilhado com operações explícitas de
+        criar/reivindicar/transicionar/consultar sobre uma chave de serviço.
+  - name: StruggleYang/dsh-project-kanban
+    url: https://github.com/StruggleYang/dsh-project-kanban
+    adds:
+      en: Adds a browser kanban board with undo, templates, and archiving, plus nine model-facing planning tools.
+      pt: >-
+        Adiciona um quadro kanban no navegador com desfazer, modelos e arquivamento, além de nove ferramentas de
+        planejamento para o modelo.
+  - name: shengsheng90/DSH-taskboard
+    url: https://github.com/shengsheng90/DSH-taskboard
+    adds:
+      en: Adds a SQLite backlog-to-done pipeline where agent tools can only submit work to in-review, plus a headless CLI.
+      pt: >-
+        Adiciona um pipeline SQLite de backlog até concluído em que ferramentas do agente só podem submeter trabalho
+        para revisão, além de uma CLI headless.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

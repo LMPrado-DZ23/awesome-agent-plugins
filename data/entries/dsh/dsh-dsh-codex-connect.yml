@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-codex-connect
+name: franksong2702/dsh-codex-connect
+title: ChatGPT/Codex OAuth model bridge
+url: https://github.com/franksong2702/dsh-codex-connect
+type: native-plugin
+category: models
+license: Apache-2.0
+tags:
+  - openai
+  - codex
+  - oauth
+  - model-provider
+description:
+  en: Connects a ChatGPT account and OpenAI Codex models to the harness via OAuth, with opt-in search and image tools.
+  pt: >-
+    Conecta uma conta ChatGPT e os modelos Codex da OpenAI ao harness via OAuth, com ferramentas opcionais de busca e
+    imagem.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:franksong2702/dsh-codex-connect
+alternatives:
+  - name: WSL043/dsh-codex-subscription
+    url: https://github.com/WSL043/dsh-codex-subscription
+    adds:
+      en: >-
+        Adds subscription web search, quota tracking with a safe reset, image tools, and a Fast mode, with no API key or
+        Codex CLI needed.
+      pt: >-
+        Adiciona busca web por assinatura, controle de cota com reset seguro, ferramentas de imagem e um modo rápido,
+        sem precisar de chave de API ou do Codex CLI.
+  - name: WNJXYK/dsh-codex-oauth
+    url: https://github.com/WNJXYK/dsh-codex-oauth
+    adds:
+      en: Adds image generation, subscription quota reporting, and both browser and device-code OAuth sign-in.
+      pt: >-
+        Adiciona geração de imagens, relatório de cota da assinatura e login OAuth via navegador ou código de
+        dispositivo.
+  - name: suntianc/dsh-codex-auth
+    url: https://github.com/suntianc/dsh-codex-auth
+    adds:
+      en: Reuses an existing Codex CLI ChatGPT login instead of running a separate OAuth flow.
+      pt: Reaproveita um login ChatGPT já feito no Codex CLI, em vez de rodar um fluxo OAuth separado.
+  - name: stoneface10/dsh-codex-connect-plus
+    url: https://github.com/stoneface10/dsh-codex-connect-plus
+    adds:
+      en: Adds gpt-image-2 image generation and editing alongside Codex model access.
+      pt: Adiciona geração e edição de imagens com gpt-image-2 junto do acesso aos modelos Codex.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

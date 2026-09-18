@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-ecc
+name: gongyijie85/dsh-ecc
+title: 273 ECC operator skills ported
+url: https://github.com/gongyijie85/dsh-ecc
+type: native-plugin
+category: skills
+license: MIT
+tags:
+  - skills-pack
+  - operator
+  - porting
+description:
+  en: Ports 273 ECC skills, 95.8% of the original 227k-star operator system, to DSH across four release batches.
+  pt: >-
+    Porta 273 skills do ECC, 95,8% do sistema operador original de 227 mil estrelas, para o DSH em quatro lotes de
+    lançamento.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:gongyijie85/dsh-ecc
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-purge
+name: YuJunZhiXue/dsh-purge
+title: Manage agent instruction rule files
+url: https://github.com/YuJunZhiXue/dsh-purge
+type: native-plugin
+category: workflow
+license: MIT
+tags:
+  - agent-rules
+  - prompt-injection
+  - plugin-updates
+description:
+  en: >-
+    Adds a Settings UI to edit prompt-inject.md and manage AGENTS.md or CLAUDE.md rule sets, check for plugin updates,
+    and apply or restore reversible local package updates.
+  pt: >-
+    Adiciona uma interface em Configurações para editar o prompt-inject.md e gerenciar conjuntos de regras AGENTS.md ou
+    CLAUDE.md, verificar atualizações de plugins e aplicar ou restaurar atualizações locais reversíveis de pacotes.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:YuJunZhiXue/dsh-purge
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

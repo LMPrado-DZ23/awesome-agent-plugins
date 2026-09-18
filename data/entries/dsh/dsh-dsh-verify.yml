@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-verify
+name: 263311487-ux/dsh-verify
+title: Headless browser acceptance testing
+url: https://github.com/263311487-ux/dsh-verify
+type: native-plugin
+category: browser
+license: MIT
+tags:
+  - testing
+  - qa
+  - chromium
+description:
+  en: >-
+    Runs independent acceptance tests on agent-built deliverables: takes a JSON spec and returns a pass/fail verdict
+    from a real Chromium instance.
+  pt: >-
+    Executa testes de aceitação independentes sobre entregas feitas pelo agente: recebe uma especificação em JSON e
+    retorna um veredito de aprovação/reprovação a partir de uma instância real do Chromium.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:263311487-ux/dsh-verify
+alternatives:
+  - name: Viger1/dsh-preview
+    url: https://github.com/Viger1/dsh-preview
+    adds:
+      en: >-
+        Opens the page the agent just built and reads the rendered DOM, computed styles, console output, and a
+        screenshot, via a bundled skill.
+      pt: >-
+        Abre a página recém-construída e lê o DOM renderizado, estilos computados, saída do console e uma captura de
+        tela, via skill inclusa.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

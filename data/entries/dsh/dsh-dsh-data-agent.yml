@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-data-agent
+name: omdsh-dev/dsh-data-agent
+title: AI database connection and SQL
+url: https://github.com/omdsh-dev/dsh-data-agent
+type: native-plugin
+category: tools
+license: MIT
+tags:
+  - database
+  - sql
+  - agent-tools
+description:
+  en: Lets the agent connect to databases and write SQL queries on your behalf.
+  pt: Permite que o agente se conecte a bancos de dados e escreva consultas SQL em seu nome.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:omdsh-dev/dsh-data-agent
+alternatives:
+  - name: STARDUSTLC666/dsh-sql
+    url: https://github.com/STARDUSTLC666/dsh-sql
+    adds:
+      en: >-
+        Adds read-only protection, row caps, CSV/JSON output, and an approval-gated write path across SQLite, MySQL, and
+        PostgreSQL
+      pt: >-
+        Adiciona proteção somente leitura, limites de linhas, saída CSV/JSON e escrita com aprovação para SQLite, MySQL
+        e PostgreSQL
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

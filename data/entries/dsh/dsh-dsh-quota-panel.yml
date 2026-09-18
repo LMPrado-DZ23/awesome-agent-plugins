@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-quota-panel
+name: wenzetan/dsh-quota-panel
+title: Multi-provider quota auto-discovery
+url: https://github.com/wenzetan/dsh-quota-panel
+type: native-plugin
+category: usage
+license: MIT
+tags:
+  - quota
+  - multi-provider
+  - balance
+  - dashboard
+description:
+  en: >-
+    Bottom-right capsule that auto-discovers every configured provider (DeepSeek, OpenRouter, SiliconFlow, GLM,
+    one-api/new-api, coding plans) and shows balance or rolling 5-hour and weekly usage, with alert thresholds and proxy
+    support.
+  pt: >-
+    Cápsula no canto inferior direito que descobre automaticamente cada provedor configurado (DeepSeek, OpenRouter,
+    SiliconFlow, GLM, one-api/new-api, planos de codificação) e mostra saldo ou uso rolante de 5 horas e semanal, com
+    limiares de alerta e suporte a proxy.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:wenzetan/dsh-quota-panel
+alternatives:
+  - name: FengHuoLinShan/dsh-plugin-llm-balance
+    url: https://github.com/FengHuoLinShan/dsh-plugin-llm-balance
+    adds:
+      en: Shows up to 3 recently used providers with color-coded quota windows and reset times in a draggable card.
+      pt: >-
+        Mostra até 3 provedores usados recentemente com janelas de cota coloridas e horários de reset em um cartão
+        arrastável.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

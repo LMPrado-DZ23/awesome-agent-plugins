@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-notes-dsh-plugin
+name: zhaoolee/notes#dsh-plugin
+title: Export chats as styled notes
+url: https://github.com/zhaoolee/notes/tree/main/dsh-plugin
+type: native-plugin
+category: tools
+license: Apache-2.0
+tags:
+  - notes
+  - export
+  - markdown
+description:
+  en: >-
+    Exports DSH conversations as Smartisan Notes-style PNGs, or creates and updates Markdown notes in a configured
+    account-scoped workspace.
+  pt: >-
+    Exporta conversas do DSH como imagens PNG no estilo Smartisan Notes, ou cria e atualiza notas em Markdown em um
+    workspace configurado por conta.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:zhaoolee/notes#path:/dsh-plugin
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

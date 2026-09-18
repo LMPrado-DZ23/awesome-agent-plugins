@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-review
+name: Viger1/dsh-review
+title: Adversarial multi-lens code review
+url: https://github.com/Viger1/dsh-review
+type: native-plugin
+category: git
+license: MIT
+tags:
+  - code-review
+  - diff
+  - verification
+description:
+  en: >-
+    Adversarial code review: parallel finders inspect a diff through separate lenses (correctness, lifecycle, contract,
+    security), then independent verifiers try to refute each finding, and one refutation drops it.
+  pt: >-
+    Revisão de código adversarial: buscadores paralelos inspecionam um diff por lentes separadas (correção, ciclo de
+    vida, contrato, segurança) e verificadores independentes tentam refutar cada achado; uma refutação já o descarta.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:Viger1/dsh-review
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-harmony-next-skills
+name: linhay/harmony-next.skills
+title: HarmonyOS NEXT development skills
+url: https://github.com/linhay/harmony-next.skills
+type: native-plugin
+category: skills
+license: null
+tags:
+  - harmonyos
+  - mobile-development
+  - offline-docs
+description:
+  en: >-
+    HarmonyOS NEXT skill bundle for DeepSeek Harness with offline API references and guidance for DevEco, HDC and
+    emulator automation.
+  pt: >-
+    Pacote de skills HarmonyOS NEXT para o DeepSeek Harness com referências de API offline e orientação para automação
+    de DevEco, HDC e emulador.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:linhay/harmony-next.skills
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: agents-md
+name: AGENTS.md
+url: https://github.com/agentsmd/agents.md
+type: standard
+category: standards
+featured: true
+license: MIT
+tags:
+  - instructions
+  - spec
+description:
+  en: >-
+    Open Markdown format for project instructions to coding agents (setup, build, test, conventions). Read by Codex,
+    Cursor, OpenCode, Zed, Windsurf, DeepSeek Harness and others.
+  pt: >-
+    Formato Markdown aberto para instruções de projeto a agentes de código (setup, build, testes, convenções). Lido por
+    Codex, Cursor, OpenCode, Zed, Windsurf, DeepSeek Harness e outros.

@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: model-context-protocol
+name: Model Context Protocol
+url: https://github.com/modelcontextprotocol/modelcontextprotocol
+type: standard
+category: standards
+featured: true
+license: null
+tags:
+  - mcp
+  - spec
+description:
+  en: >-
+    Specification and documentation for MCP, the open protocol every client in this list uses to connect agents to
+    tools, data and prompts.
+  pt: >-
+    Especificação e documentação do MCP, o protocolo aberto que todos os clientes desta lista usam para conectar agentes
+    a ferramentas, dados e prompts.

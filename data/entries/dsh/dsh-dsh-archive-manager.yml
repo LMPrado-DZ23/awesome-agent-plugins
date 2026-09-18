@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-archive-manager
+name: MichengAI/dsh-archive-manager
+title: Archived-session management panel
+url: https://github.com/MichengAI/dsh-archive-manager
+type: native-plugin
+category: sessions
+license: Apache-2.0
+tags:
+  - session
+  - archive
+  - settings-page
+  - backup
+description:
+  en: >-
+    Adds an archived-sessions page in Settings to search, restore, and delete archived DeepSeek Harness sessions by
+    workspace.
+  pt: >-
+    Adiciona uma página de sessões arquivadas em Settings para buscar, restaurar e excluir sessões arquivadas do
+    DeepSeek Harness por workspace.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:MichengAI/dsh-archive-manager
+alternatives:
+  - name: Ultronen/dsh-archived-chats
+    url: https://github.com/Ultronen/dsh-archived-chats
+    adds:
+      en: Adds ZIP backup and restore, a snapshot-protected recycle bin, storage accounting, and tags/notes.
+      pt: >-
+        Adiciona backup e restauração em ZIP, lixeira protegida por snapshot, contabilidade de armazenamento e
+        tags/notas.
+  - name: jasonrale/dsh-archive-manager
+    url: https://github.com/jasonrale/dsh-archive-manager
+    adds:
+      en: Lets you reopen an archived session and keep chatting, or hard-delete it, with message search.
+      pt: >-
+        Permite reabrir uma sessão arquivada e continuar conversando, ou excluí-la definitivamente, com busca de
+        mensagens.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

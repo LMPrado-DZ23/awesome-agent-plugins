@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-better-sidebar
+name: omdsh-dev/DSH-better-sidebar
+title: Extensible sidebar workbench
+url: https://github.com/omdsh-dev/DSH-better-sidebar
+type: native-plugin
+category: ui
+license: MIT
+tags:
+  - sidebar
+  - workbench
+  - git
+  - file-explorer
+description:
+  en: >-
+    A full sidebar workbench for DeepSeek Harness with file rendering and editing, an embedded terminal, Git
+    integration, and a subagents view; third-party plugins can register their own tabs into it.
+  pt: >-
+    Um workbench completo na barra lateral do DeepSeek Harness com renderização e edição de arquivos, terminal embutido,
+    integração com Git e uma visão de subagentes; plugins de terceiros podem registrar suas próprias abas nele.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:omdsh-dev/DSH-better-sidebar
+alternatives:
+  - name: MichengAI/dsh-codex-ui
+    url: https://github.com/MichengAI/dsh-codex-ui
+    adds:
+      en: >-
+        Rebuilds the sidebar, workspace tree, search, and turn navigation in a Codex-style layout instead of a tabbed
+        workbench.
+      pt: >-
+        Reconstrói a barra lateral, a árvore do workspace, a busca e a navegação de turnos em um layout estilo Codex, em
+        vez de um workbench com abas.
+  - name: Jiyr0119/dsh-workspace-explorer
+    url: https://github.com/Jiyr0119/dsh-workspace-explorer
+    adds:
+      en: >-
+        Adds a single-purpose animated workspace file-tree popup you can search and drag files from directly into the
+        composer.
+      pt: >-
+        Adiciona um popup animado e de propósito único com a árvore de arquivos do workspace, com busca e arrastar
+        arquivos direto para o compositor.
+  - name: openAGFS/dsh-agfs
+    url: https://github.com/openAGFS/dsh-agfs
+    adds:
+      en: Serves a standalone React file-browser web app plus a browse_files tool the model can call.
+      pt: >-
+        Serve um aplicativo web independente de navegador de arquivos em React, além de uma ferramenta browse_files que
+        o modelo pode chamar.
+  - name: 2nd1st/dsh-plugin-open-app
+    url: https://github.com/2nd1st/dsh-plugin-open-app
+    adds:
+      en: >-
+        Gives each installed MCP app its own sidebar container with a separate workspace and session, plus inline
+        rendering in chats.
+      pt: >-
+        Dá a cada aplicativo MCP instalado seu próprio container na barra lateral com workspace e sessão separados, além
+        de renderização inline nos chats.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-file-upload
+name: HongMing-Huang/dsh-file-upload
+title: Drag-and-drop file upload
+url: https://github.com/HongMing-Huang/dsh-file-upload
+type: native-plugin
+category: ui
+license: MIT
+tags:
+  - file-upload
+  - documents
+  - markdown
+description:
+  en: >-
+    Claude-style drag-and-drop and paperclip file upload with content sniffing, document-to-Markdown conversion via
+    Microsoft MarkItDown (with a built-in JS fallback), text inlining, and a read_document tool for agents.
+  pt: >-
+    Upload de arquivos por arrastar-e-soltar ou clipe, no estilo Claude, com detecção de conteúdo, conversão de
+    documentos para Markdown via Microsoft MarkItDown (com fallback em JS embutido), inserção de texto e uma ferramenta
+    read_document para agentes.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:HongMing-Huang/dsh-file-upload
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

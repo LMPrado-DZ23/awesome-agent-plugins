@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-subagent-monitor
+name: Mombrane/dsh-subagent-monitor
+title: Live subagent run monitor
+url: https://github.com/Mombrane/dsh-subagent-monitor
+type: native-plugin
+category: ui
+license: MIT
+tags:
+  - subagents
+  - monitoring
+  - sidebar
+description:
+  en: >-
+    A live subagent run monitor for the Web UI: a sidebar footer trigger and a fixed top-right panel show each subagent
+    of the current session in real time (running/elapsed, terminal outcomes, tree indent), with one-click jump into the
+    child conversation.
+  pt: >-
+    Um monitor ao vivo de execuções de subagentes para a interface web: um gatilho no rodapé da barra lateral e um
+    painel fixo no canto superior direito mostram cada subagente da sessão atual em tempo real (em execução/tempo
+    decorrido, resultados finais, indentação em árvore), com salto em um clique para a conversa filha.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:Mombrane/dsh-subagent-monitor
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

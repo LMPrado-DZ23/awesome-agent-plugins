@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-plugin-terminal
+name: siberiah2o/dsh-plugin-terminal
+title: Embedded terminal panel
+url: https://github.com/siberiah2o/dsh-plugin-terminal
+type: native-plugin
+category: ui
+license: MIT
+tags:
+  - terminal
+  - embedded
+  - xterm
+description:
+  en: >-
+    A bottom multi-tab terminal panel built with node-pty and xterm.js, pinned to the viewport bottom and always shown
+    below the composer input box.
+  pt: >-
+    Um painel de terminal multi-abas na parte inferior, construído com node-pty e xterm.js, fixado no rodapé da viewport
+    e sempre exibido abaixo da caixa de entrada do compositor.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:siberiah2o/dsh-plugin-terminal
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-comfyui
+name: fandc520/dsh-comfyui
+title: Drive ComfyUI image/video workflows
+url: https://github.com/fandc520/dsh-comfyui
+type: native-plugin
+category: multimodal
+license: MIT
+tags:
+  - comfyui
+  - image-generation
+  - workflows
+description:
+  en: >-
+    Drives a local or remote ComfyUI server: tools to run workflows, inspect nodes, and edit graphs, with a template
+    library, live queue, SDXL and Wan 2.1 templates, and a same-origin media proxy.
+  pt: >-
+    Controla um servidor ComfyUI local ou remoto: ferramentas para executar workflows, inspecionar nós e editar grafos,
+    com biblioteca de templates, fila ao vivo, templates SDXL e Wan 2.1, e um proxy de mídia de mesma origem.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:fandc520/dsh-comfyui
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

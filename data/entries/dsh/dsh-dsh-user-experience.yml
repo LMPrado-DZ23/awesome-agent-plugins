@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-user-experience
+name: DietCokewithSugar/dsh-user-experience
+title: Find UX issues in React code
+url: https://github.com/DietCokewithSugar/dsh-user-experience
+type: native-plugin
+category: git
+license: MIT
+tags:
+  - ux
+  - react
+  - code-review
+description:
+  en: >-
+    Finds potential UX issues in a project by automatically reviewing React/TypeScript code, pinpointing each problem
+    and giving concrete suggestions.
+  pt: >-
+    Encontra possíveis problemas de UX em um projeto revisando automaticamente código React/TypeScript, apontando cada
+    problema e dando sugestões concretas.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:DietCokewithSugar/dsh-user-experience
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

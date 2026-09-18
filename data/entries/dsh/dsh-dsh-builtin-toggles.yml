@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-builtin-toggles
+name: Starfie1d1272/dsh-builtin-toggles
+title: Inspect and gate builtin features
+url: https://github.com/Starfie1d1272/dsh-builtin-toggles
+type: native-plugin
+category: dev
+license: MIT
+tags:
+  - inspection
+  - capabilities
+  - security
+description:
+  en: >-
+    Evidence-backed inspector for DSH Web's built-in capabilities: reports runtime and config provenance, flags
+    compatibility and drift issues, and applies fail-closed controls for nine reviewed UI features.
+  pt: >-
+    Inspetor baseado em evidências para os recursos embutidos do DSH Web: relata a proveniência de runtime e
+    configuração, sinaliza problemas de compatibilidade e desvio, e aplica controles fail-closed para nove recursos de
+    UI revisados.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:Starfie1d1272/dsh-builtin-toggles
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: context7
+name: Context7
+url: https://github.com/upstash/context7
+type: mcp-server
+category: docs
+featured: true
+license: MIT
+tags:
+  - docs
+  - libraries
+description:
+  en: >-
+    Up-to-date, version-specific library documentation and code examples pulled into the agent context on demand. Local
+    alternative: `npx -y @upstash/context7-mcp`.
+  pt: >-
+    Documentação de bibliotecas atualizada e por versão, com exemplos de código, trazida ao contexto do agente sob
+    demanda. Alternativa local: `npx -y @upstash/context7-mcp`.
+mcp:
+  name: context7
+  http:
+    url: https://mcp.context7.com/mcp

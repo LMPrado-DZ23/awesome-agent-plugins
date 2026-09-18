@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-sub2api
+name: GodD6366/dsh-sub2api
+title: OpenAI-compatible gateway bridge
+url: https://github.com/GodD6366/dsh-sub2api
+type: native-plugin
+category: models
+license: MIT
+tags:
+  - gateway
+  - multi-provider
+  - model-provider
+  - vision
+description:
+  en: >-
+    Connects a sub2api gateway so OpenAI, Claude, Grok, and Gemini all route through one base URL, with per-key model
+    discovery, usage lookup, and vision/image tools.
+  pt: >-
+    Conecta um gateway sub2api para que OpenAI, Claude, Grok e Gemini sejam roteados por uma única base URL, com
+    descoberta de modelos por chave, consulta de uso e ferramentas de visão/imagem.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:GodD6366/dsh-sub2api
+alternatives:
+  - name: cuboteam/dsh-plugin-dit
+    url: https://github.com/cuboteam/dsh-plugin-dit
+    adds:
+      en: Installs 29 OpenAI Chat Completions and 10 Anthropic Messages models from a single DIT_API_KEY.
+      pt: Instala 29 modelos OpenAI Chat Completions e 10 modelos Anthropic Messages a partir de uma única DIT_API_KEY.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

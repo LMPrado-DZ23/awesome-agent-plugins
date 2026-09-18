@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-openpencil
+name: ZSeven-W/dsh-openpencil
+title: Design preview and editing
+url: https://github.com/ZSeven-W/dsh-openpencil
+type: native-plugin
+category: ui
+license: MIT
+tags:
+  - design
+  - preview
+  - editing
+description:
+  en: OpenPencil design preview and editing plugin for DeepSeek Harness.
+  pt: Plugin de pré-visualização e edição de designs OpenPencil para o DeepSeek Harness.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:ZSeven-W/dsh-openpencil
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

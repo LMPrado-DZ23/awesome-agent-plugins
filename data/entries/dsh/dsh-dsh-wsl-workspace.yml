@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-wsl-workspace
+name: 6Mikao9/dsh-wsl-workspace
+title: Add WSL workspace from web GUI
+url: https://github.com/6Mikao9/dsh-wsl-workspace
+type: native-plugin
+category: dev
+license: MIT
+tags:
+  - wsl
+  - workspace
+  - bash
+  - filesystem
+description:
+  en: >-
+    Adds a WSL workspace from the web GUI without needing to install DSH or related tools again inside WSL. Bash
+    commands and file read/write operations run inside the local WSL distribution on the host machine, while Windows
+    files stay accessible.
+  pt: >-
+    Adiciona um workspace WSL pela interface web sem precisar reinstalar o DSH ou ferramentas relacionadas dentro do
+    WSL. Comandos bash e operações de leitura/escrita de arquivos rodam na distribuição WSL local da máquina host,
+    enquanto os arquivos do Windows continuam acessíveis.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:6Mikao9/dsh-wsl-workspace
+alternatives:
+  - name: WilliamShi666/dsh-wsl-workspace-picker
+    url: https://github.com/WilliamShi666/dsh-wsl-workspace-picker
+    adds:
+      en: >-
+        Adds one-click access to /mnt Windows drives, full breadcrumb ancestry, and an always-visible path input in the
+        workspace picker
+      pt: >-
+        Adiciona acesso em um clique às unidades Windows em /mnt, breadcrumbs completos e um campo de caminho sempre
+        visível no seletor
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

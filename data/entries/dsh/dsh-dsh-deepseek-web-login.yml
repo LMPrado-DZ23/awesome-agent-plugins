@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-deepseek-web-login
+name: cv-superding/dsh-deepseek-web-login
+title: DeepSeek web session models
+url: https://github.com/cv-superding/dsh-deepseek-web-login
+type: native-plugin
+category: models
+license: Apache-2.0
+tags:
+  - deepseek
+  - web-login
+  - model-provider
+  - streaming
+description:
+  en: >-
+    Adds a provider that uses chat.deepseek.com web models directly, with browser login capture, proof-of-work request
+    signing, SSE streaming, and prompting-based tool calls.
+  pt: >-
+    Adiciona um provedor que usa diretamente os modelos web de chat.deepseek.com, com captura de login pelo navegador,
+    assinatura de requisições por prova de trabalho, streaming SSE e chamadas de ferramenta baseadas em prompt.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:cv-superding/dsh-deepseek-web-login
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

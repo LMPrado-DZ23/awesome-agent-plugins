@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-usage-dashboard-plus
+name: 1HelloMan1/dsh-usage-dashboard-plus
+title: Per-session usage and cost dashboard
+url: https://github.com/1HelloMan1/dsh-usage-dashboard-plus
+type: native-plugin
+category: usage
+license: MIT
+tags:
+  - usage-stats
+  - cost-tracking
+  - dashboard
+  - export
+description:
+  en: >-
+    Shows DeepSeek balance and estimated daily spend, merges external vision-call records, and adds a per-session
+    dashboard with model statistics, time-to-first-token, cache rate, call logs, cost estimates, filters, and CSV
+    export.
+  pt: >-
+    Mostra o saldo do DeepSeek e o gasto diário estimado, mescla registros externos de chamadas de visão e adiciona um
+    painel por sessão com estatísticas de modelo, tempo até o primeiro token, taxa de cache, logs de chamadas,
+    estimativas de custo, filtros e exportação CSV.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:1HelloMan1/dsh-usage-dashboard-plus
+alternatives:
+  - name: yokesky/dsh-usage-lens
+    url: https://github.com/yokesky/dsh-usage-lens
+    adds:
+      en: Adds a 280-day GitHub-style activity heatmap and a model-usage donut chart.
+      pt: Adiciona um mapa de calor de atividade de 280 dias no estilo GitHub e um gráfico de rosca de uso por modelo.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

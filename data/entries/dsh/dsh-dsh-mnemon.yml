@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-mnemon
+name: omdsh-dev/dsh-mnemon
+title: Cross-agent shared long-term memory
+url: https://github.com/omdsh-dev/dsh-mnemon
+type: native-plugin
+category: memory
+license: MIT
+tags:
+  - memory
+  - cross-agent
+  - knowledge-graph
+  - persistent
+description:
+  en: >-
+    Local-first persistent memory shared across Mnemon-enabled agents: runtime memory, searchable project documents,
+    semantic recall, a knowledge graph, and a sidebar UI.
+  pt: >-
+    Memória persistente local, compartilhada entre agentes habilitados para Mnemon: memória de runtime, documentos de
+    projeto pesquisáveis, recall semântico, grafo de conhecimento e UI lateral.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:omdsh-dev/dsh-mnemon
+alternatives:
+  - name: vectorize-io/hindsight#coding-agents
+    url: https://github.com/vectorize-io/hindsight/tree/main/hindsight-integrations/coding-agents
+    adds:
+      en: Adds automatic recall/retain with deep reflection, knowledge pages, and per-repo memory banks.
+      pt: >-
+        Adiciona recall/retenção automáticos com reflexão profunda, páginas de conhecimento e bancos de memória por
+        repositório.
+  - name: ZSeven-W/dsh-noema
+    url: https://github.com/ZSeven-W/dsh-noema
+    adds:
+      en: Adds import of memories from ten other AI coding tools plus a settings page.
+      pt: Adiciona importação de memórias de dez outras ferramentas de IA, além de página de configurações.
+  - name: modusensus/dsh-mneme
+    url: https://github.com/modusensus/dsh-mneme
+    adds:
+      en: Adds sleep-time auto-consolidation, freezing of conflicting memories for review, and a replayable audit trail.
+      pt: >-
+        Adiciona auto-consolidação durante inatividade, congelamento de memórias conflitantes para revisão e trilha de
+        auditoria reproduzível.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

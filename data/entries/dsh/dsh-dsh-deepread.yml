@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-deepread
+name: xiehuan123/dsh-deepread
+title: Deep-read books and articles
+url: https://github.com/xiehuan123/dsh-deepread
+type: native-plugin
+category: tools
+license: MIT
+tags:
+  - reading
+  - research
+  - summarization
+description:
+  en: >-
+    Deep-reads books and articles in five modes (quick, deep, knowledge map, Feynman, full book), producing
+    claim-evidence-data reports and Mermaid/XMind mindmaps, with batch comparison, budget preflight, background-job
+    progress, and MD/HTML export from URLs, files, or pasted text.
+  pt: >-
+    Lê livros e artigos em profundidade em cinco modos (rápido, profundo, mapa de conhecimento, Feynman, livro
+    completo), com relatórios de afirmação-evidência-dado, mapas Mermaid/XMind, comparação em lote, pré-checagem de
+    orçamento e exportação MD/HTML de URLs, arquivos ou texto.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:xiehuan123/dsh-deepread
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

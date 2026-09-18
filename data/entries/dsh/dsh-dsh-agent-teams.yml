@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-agent-teams
+name: NanmiCoder/dsh-agent-teams
+title: Multi-agent team orchestration
+url: https://github.com/NanmiCoder/dsh-agent-teams
+type: native-plugin
+category: workflow
+license: MIT
+tags:
+  - workflow
+  - multi-agent
+  - orchestration
+  - teams
+description:
+  en: "AgentTeams: coordinates multiple agents working together as a team on a shared task."
+  pt: "AgentTeams: coordena vários agentes trabalhando juntos como uma equipe em uma tarefa compartilhada."
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:NanmiCoder/dsh-agent-teams
+alternatives:
+  - name: stuarthu/dsh-crew
+    url: https://github.com/stuarthu/dsh-crew
+    adds:
+      en: Adds a PM-authored PRD gate, then locked per-role tool sets for architect, engineer, QA and reviewers.
+      pt: >-
+        Adiciona um portão de PRD escrito pelo PM, seguido por conjuntos de ferramentas fixos por papel para arquiteto,
+        engenheiro, QA e revisores.
+  - name: toolclub/dsh-agent-team-gui
+    url: https://github.com/toolclub/dsh-agent-team-gui
+    adds:
+      en: Adds Settings-configured persistent squads with per-member model policies and a bounded DAG planner.
+      pt: >-
+        Adiciona esquadrões persistentes configurados em Settings, com políticas de modelo por membro e um planejador
+        DAG limitado.
+  - name: limuyang2/agent-team
+    url: https://github.com/limuyang2/agent-team
+    adds:
+      en: Adds independent contexts and shared workspaces per assistant, with per-assistant models and skills.
+      pt: >-
+        Adiciona contextos independentes e workspaces compartilhados por assistente, com modelos e habilidades por
+        assistente.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

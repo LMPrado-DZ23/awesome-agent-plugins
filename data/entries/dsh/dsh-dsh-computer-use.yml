@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-computer-use
+name: Anionex/dsh-computer-use
+title: Accessibility-first computer use
+url: https://github.com/Anionex/dsh-computer-use
+type: native-plugin
+category: tools
+license: MIT
+tags:
+  - computer-use
+  - macos
+  - automation
+description:
+  en: >-
+    Accessibility-first macOS computer use: takes fresh observations before acting, rejects stale state, scopes
+    permissions, and enforces safe input.
+  pt: >-
+    Uso de computador para macOS baseado em acessibilidade: faz observações atualizadas antes de agir, rejeita estados
+    desatualizados, restringe permissões e garante entradas seguras.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:Anionex/dsh-computer-use
+alternatives:
+  - name: mrpulor-gh/dsh-nuphus-mcp
+    url: https://github.com/mrpulor-gh/dsh-nuphus-mcp
+    adds:
+      en: >-
+        Covers desktop and browser automation (38 tools) with PaddleOCR element perception and Chrome CDP browsing, not
+        limited to macOS
+      pt: >-
+        Cobre automação de desktop e navegador (38 ferramentas) com PaddleOCR e navegação Chrome CDP, sem se limitar ao
+        macOS
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

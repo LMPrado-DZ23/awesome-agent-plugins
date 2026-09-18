@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-auto-memory
+name: Aik358/dsh-auto-memory
+title: Zero-prompt proactive memory recall
+url: https://github.com/Aik358/dsh-auto-memory
+type: native-plugin
+category: memory
+license: BSD-3-Clause
+tags:
+  - memory
+  - auto-recall
+  - context-management
+  - markdown
+description:
+  en: >-
+    Proactive associative memory: zero-prompt recall injected at a fixed boundary, three-layer auto-consolidation, skill
+    crystallization, and handoff ledgers that survive context-window switches. Local markdown storage, model-agnostic,
+    zero dependencies.
+  pt: >-
+    Memória associativa proativa: recall sem prompt injetado em um ponto fixo, auto-consolidação em três camadas,
+    cristalização de habilidades e registros de handoff que sobrevivem a trocas de janela de contexto. Armazenamento
+    local em markdown, agnóstico de modelo, sem dependências.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:Aik358/dsh-auto-memory
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: stripe-mcp
+name: Stripe MCP
+url: https://github.com/stripe/ai
+type: mcp-server
+category: integrations
+license: MIT
+tags:
+  - payments
+description:
+  en: "Stripe API and knowledge-base access for agents: customers, payments, subscriptions and docs search."
+  pt: >-
+    Acesso à API e à base de conhecimento da Stripe para agentes: clientes, pagamentos, assinaturas e busca na
+    documentação.
+mcp:
+  name: stripe
+  http:
+    url: https://mcp.stripe.com

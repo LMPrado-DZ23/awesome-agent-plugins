@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-hdc-bridge
+name: 1na-ko/dsh-hdc-bridge
+title: HarmonyOS device automation
+url: https://github.com/1na-ko/dsh-hdc-bridge
+type: native-plugin
+category: tools
+license: MIT
+tags:
+  - harmonyos
+  - device-automation
+  - mobile
+description:
+  en: >-
+    HarmonyOS device bridge: an hdc screenshot/install/log/crash/UI automation loop with a read_image tool,
+    official-first versioned API knowledge (bundled SDK .d.ts and docs), and a DevEco CLI build/sign/lint lane.
+  pt: >-
+    Ponte para dispositivos HarmonyOS: um loop de automação hdc para captura de tela/instalação/log/crash/UI com uma
+    ferramenta read_image, conhecimento de API versionado com prioridade oficial (SDK .d.ts e docs empacotados) e uma
+    esteira de build/assinatura/lint via DevEco CLI.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:1na-ko/dsh-hdc-bridge
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: exa-mcp
+name: Exa MCP
+url: https://github.com/exa-labs/exa-mcp-server
+type: mcp-server
+category: browser
+license: MIT
+tags:
+  - search
+  - research
+description:
+  en: Web search and crawling through the Exa search engine, including code-context search.
+  pt: Busca e crawling na web pelo mecanismo Exa, incluindo busca de contexto de código.
+mcp:
+  name: exa
+  http:
+    url: https://mcp.exa.ai/mcp

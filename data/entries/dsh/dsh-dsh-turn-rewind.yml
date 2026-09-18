@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-turn-rewind
+name: Anionex/dsh-turn-rewind
+title: Conversation rewind via change ledger
+url: https://github.com/Anionex/dsh-turn-rewind
+type: native-plugin
+category: sessions
+license: BSD-3-Clause
+tags:
+  - session
+  - rewind
+  - undo
+  - versioning
+description:
+  en: Rewind conversation and workspace state, powered by a persistent Change Ledger.
+  pt: Retrocede o estado da conversa e do workspace, com base em um Change Ledger persistente.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:Anionex/dsh-turn-rewind
+alternatives:
+  - name: SiriLee/dsh-rewind
+    url: https://github.com/SiriLee/dsh-rewind
+    adds:
+      en: Rewinds in place without forking the session, with an optional disk-backed file restore.
+      pt: Retrocede no próprio lugar sem bifurcar a sessão, com restauração opcional de arquivos a partir do disco.
+  - name: limbo947/dsh-recall-plugin
+    url: https://github.com/limbo947/dsh-recall-plugin
+    adds:
+      en: Adds a diff-preview confirmation panel before rolling back the conversation and workspace files.
+      pt: Adiciona um painel de confirmação com prévia de diff antes de reverter a conversa e os arquivos do workspace.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

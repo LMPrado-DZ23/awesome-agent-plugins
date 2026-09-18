@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-lark-bot
+name: PlutoKeating/dsh-lark-bot
+title: Feishu/Lark agent bridge
+url: https://github.com/PlutoKeating/dsh-lark-bot
+type: native-plugin
+category: integrations
+license: AGPL-3.0
+tags:
+  - feishu
+  - lark
+  - chat-bot
+  - approvals
+description:
+  en: >-
+    Feishu/Lark bridge with scan-to-connect agent binding, streaming cards, git-worktree project workspaces, parallel
+    per-scope tasks, multi-role agents, cross-session notify, in-chat model and key management, and a guardian that
+    keeps answering in Feishu after a crash.
+  pt: >-
+    Ponte para Feishu/Lark com vinculação de agente por escaneamento, cartões em streaming, workspaces de projeto via
+    git-worktree, tarefas paralelas por escopo, agentes multi-papel, notificação entre sessões, gestão de modelo e
+    chaves pelo chat, e um guardião que continua respondendo no Feishu após uma falha.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:PlutoKeating/dsh-lark-bot
+alternatives:
+  - name: omdsh-dev/dsh-lark
+    url: https://github.com/omdsh-dev/dsh-lark
+    adds:
+      en: Runs several bots that keep separate sessions and can hand turns to each other within one group chat.
+      pt: Executa vários bots que mantêm sessões separadas e podem passar a vez entre si dentro de um mesmo grupo.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

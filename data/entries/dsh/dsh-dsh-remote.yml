@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-remote
+name: xgone/dsh-remote
+title: Web UI login and auth gate
+url: https://github.com/xgone/dsh-remote
+type: native-plugin
+category: security
+license: MIT
+tags:
+  - web-ui
+  - authentication
+  - login
+  - access-control
+description:
+  en: >-
+    Secures the harness Web UI behind a login gate: MFA/TOTP, signed session cookies, optional admin, user and guest
+    roles, in-browser workspace selection, and allowlisted remote file previews.
+  pt: >-
+    Protege a Web UI do harness atrás de um login: MFA/TOTP, cookies de sessão assinados, papéis opcionais de admin,
+    usuário e convidado, seleção de workspace no navegador e previews de arquivos remotos com lista de permissão.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:xgone/dsh-remote
+alternatives:
+  - name: TecFancy/dsh-auth-gate
+    url: https://github.com/TecFancy/dsh-auth-gate
+    adds:
+      en: Supports shared-token authentication, request rate limiting, and a CLI for user management.
+      pt: >-
+        Suporta autenticação por token compartilhado, limitação de taxa de requisições e uma CLI para gestão de
+        usuários.
+  - name: hxy91819/dsh-auth
+    url: https://github.com/hxy91819/dsh-auth
+    adds:
+      en: Uses Caddy forward_auth with Argon2id password hashing, revocable sessions, and a bilingual UI.
+      pt: Usa Caddy forward_auth com hashing de senha Argon2id, sessões revogáveis e interface bilíngue.
+  - name: SummerSec/dsh-web-auth
+    url: https://github.com/SummerSec/dsh-web-auth
+    adds:
+      en: Adds IP-based login throttling and an scrypt password-hashing CLI.
+      pt: Adiciona limitação de login por IP e uma CLI de hashing de senha com scrypt.
+  - name: GDWhisper/dsh-web-startup-auth
+    url: https://github.com/GDWhisper/dsh-web-startup-auth
+    adds:
+      en: Lets the Web UI bind to 0.0.0.0 safely and includes a CLI to rotate the signing key and invalidate all sessions.
+      pt: >-
+        Permite vincular a Web UI a 0.0.0.0 com segurança e inclui uma CLI para rotacionar a chave de assinatura e
+        invalidar todas as sessões.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

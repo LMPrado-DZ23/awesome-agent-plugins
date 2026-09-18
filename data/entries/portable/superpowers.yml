@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: superpowers
+name: Superpowers
+url: https://github.com/obra/superpowers
+type: skill-pack
+category: skills
+featured: true
+license: MIT
+tags:
+  - methodology
+  - tdd
+  - planning
+description:
+  en: >-
+    Skills library and development methodology: brainstorming, planning, TDD, systematic debugging, code review and
+    subagent-driven execution.
+  pt: >-
+    Biblioteca de skills e metodologia de desenvolvimento: brainstorming, planejamento, TDD, depuração sistemática, code
+    review e execução com subagentes.
+skill:
+  source: obra/superpowers

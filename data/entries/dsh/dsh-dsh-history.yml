@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-history
+name: chenproton/dsh-history
+title: Full-session message history browser
+url: https://github.com/chenproton/dsh-history
+type: native-plugin
+category: sessions
+license: MIT
+tags:
+  - session
+  - history
+  - search
+  - navigation
+description:
+  en: >-
+    Browse every message you sent in the current session: full-history listing with newest-first sort, text filter,
+    one-click copy, and jump to a message.
+  pt: >-
+    Navega por todas as mensagens enviadas na sessão atual: listagem completa do histórico ordenada do mais novo, filtro
+    de texto, cópia com um clique e salto para uma mensagem.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:chenproton/dsh-history
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

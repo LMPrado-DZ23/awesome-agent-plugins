@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-task-passport
+name: dongsheng123132/task-passport
+title: Durable task state across tools
+url: https://github.com/dongsheng123132/task-passport
+type: native-plugin
+category: sessions
+license: MIT
+tags:
+  - session
+  - task-state
+  - cross-tool
+  - checkpoints
+description:
+  en: >-
+    Carry durable task state across DeepSeek Harness, WorkBuddy, Claude Code, and Codex with machine-readable
+    checkpoints and optimistic locking.
+  pt: >-
+    Carrega estado durável de tarefas entre DeepSeek Harness, WorkBuddy, Claude Code e Codex com checkpoints legíveis
+    por máquina e bloqueio otimista.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:dongsheng123132/task-passport
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

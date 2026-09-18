@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-personal-center
+name: PolinniZhong/dsh-personal-center
+title: Cross-session personal usage center
+url: https://github.com/PolinniZhong/dsh-personal-center
+type: native-plugin
+category: usage
+license: MIT
+tags:
+  - usage-stats
+  - personalization
+  - offline
+  - dashboard
+description:
+  en: >-
+    Local, offline personal center: cross-session usage statistics, per-model cost estimation, global custom
+    instructions, a font-size adjuster, a data-driven desktop pet, and a conversation status overview.
+  pt: >-
+    Central pessoal local e offline: estatísticas de uso entre sessões, estimativa de custo por modelo, instruções
+    globais personalizadas, ajuste de tamanho de fonte, um bichinho de estimação de desktop orientado a dados e uma
+    visão geral do status das conversas.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:PolinniZhong/dsh-personal-center
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

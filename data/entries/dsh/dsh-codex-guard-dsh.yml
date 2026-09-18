@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-codex-guard-dsh
+name: Akimiya-z/codex-guard#dsh
+title: Pre-submit PR hygiene checks
+url: https://github.com/Akimiya-z/codex-guard/tree/main/dsh
+type: native-plugin
+category: git
+license: MIT
+tags:
+  - pull-requests
+  - code-quality
+  - secrets
+description:
+  en: >-
+    Pre-submit pull-request hygiene checks inside DeepSeek Harness: scans the current diff for TODO leftovers, hardcoded
+    secrets and non-conventional commit subjects.
+  pt: >-
+    Verificações de higiene pré-envio de pull request dentro do DeepSeek Harness: varre o diff atual em busca de TODOs
+    esquecidos, segredos hardcoded e assuntos de commit fora do padrão convencional.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:Akimiya-z/codex-guard#path:/dsh
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

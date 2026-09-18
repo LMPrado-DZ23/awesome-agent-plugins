@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-email
+name: STARDUSTLC666/dsh-email
+title: Email inbox tools and alerts
+url: https://github.com/STARDUSTLC666/dsh-email
+type: native-plugin
+category: integrations
+license: MIT
+tags:
+  - email
+  - imap-smtp
+  - notifications
+  - approvals
+description:
+  en: >-
+    IMAP/SMTP email tools to list, read, search, send, and reply with threading, date-range filters, multi-account and
+    common provider presets, a send-approval gate, a settings page, and a popup on new mail.
+  pt: >-
+    Ferramentas de email IMAP/SMTP para listar, ler, buscar, enviar e responder com threading, filtros de intervalo de
+    data, múltiplas contas e predefinições de provedores comuns, um portão de aprovação de envio, uma página de
+    configurações e um popup ao chegar novo email.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:STARDUSTLC666/dsh-email
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

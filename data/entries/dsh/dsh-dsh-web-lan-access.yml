@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-web-lan-access
+name: AcidGr/dsh-web-lan-access
+title: LAN access for the Web UI
+url: https://github.com/AcidGr/dsh-web-lan-access
+type: native-plugin
+category: remote
+license: MIT
+tags:
+  - lan
+  - web-ui
+  - networking
+description:
+  en: >-
+    Injects a crypto.randomUUID polyfill so the DSH Web UI keeps working when opened over plain-HTTP LAN or Tailscale IP
+    addresses, which browsers otherwise treat as insecure origins.
+  pt: >-
+    Injeta um polyfill de crypto.randomUUID para que a Web UI do DSH continue funcionando ao ser aberta por endereços
+    LAN ou Tailscale em HTTP puro, que os navegadores tratam como origens inseguras.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:AcidGr/dsh-web-lan-access
+alternatives:
+  - name: wingsky-1/dsh-plugin-hub#packages/dsh-lan-proxy
+    url: https://github.com/wingsky-1/dsh-plugin-hub/tree/main/packages/dsh-lan-proxy
+    adds:
+      en: >-
+        Adds full HTTP/HTTPS/WS forwarding with TLS, adaptive compression, DNS-rebinding protection, and auto
+        launch-token injection for LAN.
+      pt: >-
+        Adiciona encaminhamento HTTP/HTTPS/WS com TLS, compressão adaptativa, proteção DNS rebinding e injeção
+        automática do token para a LAN.
+  - name: Leon0555/dsh-lan-access
+    url: https://github.com/Leon0555/dsh-lan-access
+    adds:
+      en: Adds a 0.0.0.0 bind option alongside the same randomUUID polyfill.
+      pt: Adiciona uma opção de bind em 0.0.0.0 junto com o mesmo polyfill de randomUUID.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

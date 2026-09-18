@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-deepseek-balance-whale-widget
+name: MeteorNOX/DeepSeek-Balance-Whale-Widget
+title: Balance and cost widget
+url: https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget
+type: native-plugin
+category: ui
+license: MIT
+tags:
+  - balance
+  - cost-tracking
+  - widget
+description:
+  en: >-
+    A fixed-corner widget for the DSH web GUI showing balance, today's usage, and per-turn cost with peak/off-peak
+    pricing, editable alert bubbles, over 30 vendor templates with per-model balance and quota, and task-end sounds.
+    Local-only, no telemetry.
+  pt: >-
+    Um widget fixo no canto da interface web do DSH mostrando saldo, uso do dia e custo por turno com preços de
+    pico/fora de pico, bolhas de alerta editáveis, mais de 30 templates de provedores com saldo e cota por modelo, e
+    sons ao fim das tarefas. Somente local, sem telemetria.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:MeteorNOX/DeepSeek-Balance-Whale-Widget
+alternatives:
+  - name: future007s/dsh-peak-indicator
+    url: https://github.com/future007s/dsh-peak-indicator
+    adds:
+      en: Shows peak/off-peak status directly in the session header, with per-model token prices on hover.
+      pt: >-
+        Mostra o status de pico/fora de pico diretamente no cabeçalho da sessão, com preços de tokens por modelo ao
+        passar o mouse.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

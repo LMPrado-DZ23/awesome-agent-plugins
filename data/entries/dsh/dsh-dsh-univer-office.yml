@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-univer-office
+name: dream-num/dsh-univer-office
+title: Full office suite inside DSH
+url: https://github.com/dream-num/dsh-univer-office
+type: native-plugin
+category: docs
+license: Apache-2.0
+tags:
+  - office
+  - documents
+  - spreadsheets
+description:
+  en: >-
+    Brings spreadsheets, docs, slides, canvases and relational tables into one runtime inside DeepSeek Harness, with
+    connected data, validation, versioned changes and isolated worktrees for multi-agent collaboration.
+  pt: >-
+    Traz planilhas, documentos, slides, canvases e tabelas relacionais para um único runtime dentro do DeepSeek Harness,
+    com dados conectados, validação, mudanças versionadas e worktrees isolados para colaboração multiagente.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:dream-num/dsh-univer-office
+alternatives:
+  - name: kw78/dsh-office-tools
+    url: https://github.com/kw78/dsh-office-tools
+    adds:
+      en: >-
+        Offers simpler standalone tools to create/read Word, create/read/update Excel, and create/read PowerPoint with
+        image placement
+      pt: >-
+        Oferece ferramentas mais simples para criar/ler Word, criar/ler/atualizar Excel e criar/ler PowerPoint com
+        posicionamento de imagens
+  - name: didclawapp-ai/DSH-Office
+    url: https://github.com/didclawapp-ai/DSH-Office
+    adds:
+      en: Also handles PDF, exposed as office_schema/office_write/office_edit/office_read tools through a local CLI
+      pt: >-
+        Também lida com PDF, exposto como ferramentas office_schema/office_write/office_edit/office_read por uma CLI
+        local
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

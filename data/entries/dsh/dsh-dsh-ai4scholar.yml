@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-ai4scholar
+name: literaf/dsh-ai4scholar
+title: Cross-platform academic search
+url: https://github.com/literaf/dsh-ai4scholar
+type: native-plugin
+category: tools
+license: MIT
+tags:
+  - academic-search
+  - citations
+  - research
+description:
+  en: >-
+    AI4Scholar academic search: 38 tools over Semantic Scholar, PubMed, Google Scholar, arXiv, bioRxiv/medRxiv, and DOI
+    resolution, covering search, citation graphs, recommendations, sliced PDF text, auto-cite, and figures, with
+    de-duplicated search and per-call credit accounting.
+  pt: >-
+    Busca acadêmica AI4Scholar: 38 ferramentas sobre Semantic Scholar, PubMed, Google Scholar, arXiv, bioRxiv/medRxiv e
+    DOI, cobrindo busca, grafos de citação, autores, recomendações, PDF em fatias, auto-citação e figuras, com busca sem
+    duplicatas e créditos por chamada.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:literaf/dsh-ai4scholar
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

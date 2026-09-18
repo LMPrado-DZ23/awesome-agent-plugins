@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-recall
+name: Relistencode/dsh-recall
+title: Multi-layer conversation history recall
+url: https://github.com/Relistencode/dsh-recall
+type: native-plugin
+category: memory
+license: MIT
+tags:
+  - memory
+  - conversation-history
+  - offline
+  - retrieval
+description:
+  en: >-
+    Conversation history recall via three-layer (literal, fuzzy, semantic) retrieval over every past session's original
+    text, fully local and offline. One-command install, with the semantic layer running in a worker thread.
+  pt: >-
+    Recall do histórico de conversas via recuperação em três camadas (literal, aproximada, semântica) sobre o texto
+    original de cada sessão anterior, totalmente local e offline. Instalação em um comando, com a camada semântica
+    rodando em thread separada.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:Relistencode/dsh-recall
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

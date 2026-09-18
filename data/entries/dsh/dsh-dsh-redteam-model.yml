@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-redteam-model
+name: SeaOf0/dsh-redteam-model
+title: Authorized pentest and redteam toolkit
+url: https://github.com/SeaOf0/dsh-redteam-model
+type: native-plugin
+category: security
+license: MIT
+tags:
+  - pentest
+  - redteam
+  - security-toolkit
+  - offensive-security
+description:
+  en: >-
+    Authorized-security toolkit with nine work modes (redteam coordination, pentest, code audit, binary analysis,
+    attack-defense, AV evasion, incident response, cloud security, CTF) and fifteen runtime plugins, managed from one
+    settings page.
+  pt: >-
+    Kit de segurança autorizada com nove modos de trabalho (coordenação de redteam, pentest, auditoria de código,
+    análise binária, ataque-defesa, evasão de AV, resposta a incidentes, segurança em nuvem, CTF) e quinze plugins em
+    runtime, gerenciados por uma única página de configurações.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:SeaOf0/dsh-redteam-model
+alternatives:
+  - name: howmp/dsh-pentest
+    url: https://github.com/howmp/dsh-pentest
+    adds:
+      en: Adds an exploration chain that tracks assets and findings through a dedicated web view.
+      pt: Adiciona uma cadeia de exploração que rastreia ativos e achados por meio de uma visualização web dedicada.
+  - name: ADWMC/helm-d#helmd
+    url: https://github.com/ADWMC/helm-d/tree/main/packages/helmd
+    adds:
+      en: >-
+        Adds 33 reverse-engineering tools for APK, native binary, protocol and malware samples, plus an on-disk case
+        workflow with evidence chains.
+      pt: >-
+        Adiciona 33 ferramentas de engenharia reversa para APK, binários nativos, protocolos e amostras de malware, além
+        de um fluxo de casos em disco com cadeias de evidência.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

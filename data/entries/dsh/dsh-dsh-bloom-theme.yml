@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-bloom-theme
+name: webkubor/dsh-bloom-theme
+title: Bloom Morandi OKLCH theme
+url: https://github.com/webkubor/dsh-bloom-theme
+type: native-plugin
+category: themes
+license: MIT
+tags:
+  - color-palette
+  - oklch
+  - accessibility
+description:
+  en: >-
+    Ten Morandi-toned color variants (mist, cinnabar, petal, ripple, sage, stone, lapis, amber, aurora, lavender) built
+    on the OKLCH color space so light and dark stay perceptually even, switchable from the top bar, with every
+    foreground/background pair meeting WCAG AA or better.
+  pt: >-
+    Dez variantes de cor em tons Morandi (névoa, cinábrio, pétala, ondulação, sálvia, pedra, lápis, âmbar, aurora,
+    lavanda) construídas no espaço de cor OKLCH para manter claro e escuro perceptualmente equilibrados, alternáveis
+    pela barra superior, com todos os pares de frente/fundo atendendo ao WCAG AA ou melhor.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:webkubor/dsh-bloom-theme
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

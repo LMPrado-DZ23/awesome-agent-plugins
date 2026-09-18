@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-plugin-writing-guard
+name: xmutfyh/dsh-plugin-writing-guard
+title: Academic writing polish guard
+url: https://github.com/xmutfyh/dsh-plugin-writing-guard
+type: native-plugin
+category: tools
+license: MIT
+tags:
+  - academic-writing
+  - editing
+  - citations
+description:
+  en: >-
+    Bilingual (EN/ZH) academic writing guard: removes AI-style defensive writing, protects scientific evidence (numbers,
+    citations, claim strength, scope) while polishing, and calibrates toward a target journal profile. Deterministic
+    local regex, no network or LLM, with auto-audit.
+  pt: >-
+    Guarda de escrita acadêmica bilíngue (EN/ZH): remove escrita defensiva de estilo IA, protege evidências científicas
+    (números, citações, força das afirmações, escopo) ao polir, e calibra para uma revista alvo. Regex local
+    determinístico, sem rede ou LLM, com auditoria automática.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:xmutfyh/dsh-plugin-writing-guard
+alternatives:
+  - name: 863683348/dsh-plugin-academic-writing
+    url: https://github.com/863683348/dsh-plugin-academic-writing
+    adds:
+      en: >-
+        Adds paper outline, title, and abstract skeleton generation, multi-style citation formatting, and a
+        pre-submission checklist
+      pt: >-
+        Adiciona geração de esqueleto de artigo, título e resumo, formatação de citações em vários estilos e uma
+        checklist pré-submissão
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

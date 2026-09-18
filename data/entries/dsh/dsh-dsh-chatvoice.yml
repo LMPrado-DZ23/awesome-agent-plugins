@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-chatvoice
+name: FuzzySoul/dsh-chatvoice
+title: Voice dictation and read-aloud
+url: https://github.com/FuzzySoul/dsh-chatvoice
+type: native-plugin
+category: multimodal
+license: MIT
+tags:
+  - voice-input
+  - dictation
+  - asr
+description:
+  en: >-
+    A free voice closed loop for the Web UI: browser speech recognition for mic input with live interim results, plus
+    read-aloud speaker buttons and auto-read for assistant replies, with zero configuration and no API key.
+  pt: >-
+    Um ciclo de voz gratuito e completo para a Web UI: reconhecimento de fala do navegador para entrada por microfone
+    com resultados parciais ao vivo, além de botões de leitura em voz alta e leitura automática das respostas, sem
+    configuração e sem chave de API.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:FuzzySoul/dsh-chatvoice
+alternatives:
+  - name: Zhangbo-cn/dsh-voice-input-plugin
+    url: https://github.com/Zhangbo-cn/dsh-voice-input-plugin
+    adds:
+      en: >-
+        Adds hold-to-talk dictation and Edge TTS reply reading that streams while the model generates, with echo-pause
+        during playback.
+      pt: >-
+        Adiciona ditado por pressionar-e-falar e leitura via Edge TTS que transmite enquanto o modelo gera, com pausa de
+        eco na reprodução.
+  - name: qishuilalala/dsh-voice-mode#dsh-voice-mode
+    url: https://github.com/qishuilalala/dsh-voice-mode/tree/main/plugin/dsh-voice-mode
+    adds:
+      en: >-
+        Adds full-duplex, on-device streaming ASR with wake-word detection and true barge-in that interrupts playback
+        when you start speaking.
+      pt: >-
+        Adiciona ASR full-duplex no dispositivo, com palavra de ativação e barge-in real que interrompe a reprodução ao
+        começar a falar.
+  - name: PensiveFei/dsh-voice-scribe
+    url: https://github.com/PensiveFei/dsh-voice-scribe
+    adds:
+      en: Adds a hotkey (Alt or Alt+Space) to start and stop dictation, with optional LLM polish of the transcript.
+      pt: >-
+        Adiciona um atalho (Alt ou Alt+Espaço) para iniciar e parar o ditado, com polimento opcional da transcrição por
+        LLM.
+  - name: WizisCool/dsh-ears
+    url: https://github.com/WizisCool/dsh-ears
+    adds:
+      en: >-
+        Adds a choice of speech-recognition backends with a native settings page and optional polish through dsh's own
+        LLM routes.
+      pt: >-
+        Adiciona escolha entre back-ends de reconhecimento de fala, com página de configurações nativa e polimento
+        opcional via LLM do dsh.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

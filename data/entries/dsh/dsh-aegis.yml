@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-aegis
+name: GanyuanRan/Aegis
+title: Software-engineering method pack
+url: https://github.com/GanyuanRan/Aegis
+type: native-plugin
+category: skills
+license: MIT
+tags:
+  - methodology
+  - planning
+  - debugging
+  - verification
+description:
+  en: >-
+    Method pack for coding agents covering baseline-first planning, systematic debugging, prompt hygiene, pre-completion
+    verification, and tracking of repairs and skill retirement.
+  pt: >-
+    Pacote de métodos para agentes de codificação cobrindo planejamento com baseline primeiro, depuração sistemática,
+    higiene de prompts, verificação antes da conclusão e rastreamento de reparos e desativação de skills.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:GanyuanRan/Aegis
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

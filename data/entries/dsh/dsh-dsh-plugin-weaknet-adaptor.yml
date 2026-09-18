@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-plugin-weaknet-adaptor
+name: jiay98528-dev/dsh-plugin-weaknet-adaptor
+title: Weak-network model retries
+url: https://github.com/jiay98528-dev/dsh-plugin-weaknet-adaptor
+type: native-plugin
+category: models
+license: MIT
+tags:
+  - reliability
+  - retries
+  - failover
+  - network
+description:
+  en: >-
+    Keeps model calls alive over unreliable connections with long-backoff stream retries, a local response replay cache,
+    heartbeat auto-reconnect, and a degraded-mode token economy.
+  pt: >-
+    Mantém as chamadas de modelo funcionando em conexões instáveis com retentativas de stream com backoff longo, cache
+    local de resposta para replay, reconexão automática por heartbeat e uma economia de tokens em modo degradado.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:jiay98528-dev/dsh-plugin-weaknet-adaptor
+alternatives:
+  - name: HB00/dsh-llm-failover
+    url: https://github.com/HB00/dsh-llm-failover
+    adds:
+      en: >-
+        Automatically switches providers on rate limits or quota exhaustion, with a cooldown and a permanent last-resort
+        fallback.
+      pt: >-
+        Troca automaticamente de provedor em limites de taxa ou esgotamento de cota, com um cooldown e um fallback
+        permanente de último recurso.
+  - name: btspoony/dsh-llm-fallbacks
+    url: https://github.com/btspoony/dsh-llm-fallbacks
+    adds:
+      en: Applies separate retry and fallback strategies per agent role.
+      pt: Aplica estratégias separadas de retentativa e fallback por papel de agente.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

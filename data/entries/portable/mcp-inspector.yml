@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: mcp-inspector
+name: MCP Inspector
+url: https://github.com/modelcontextprotocol/inspector
+type: tool
+category: dev
+license: null
+tags:
+  - mcp
+  - debugging
+description:
+  en: >-
+    Visual testing tool for MCP servers: connect over stdio or HTTP, list and call tools, resources and prompts. Run
+    with `npx @modelcontextprotocol/inspector`.
+  pt: >-
+    Ferramenta visual para testar servidores MCP: conecta via stdio ou HTTP, lista e chama tools, resources e prompts.
+    Rode com `npx @modelcontextprotocol/inspector`.

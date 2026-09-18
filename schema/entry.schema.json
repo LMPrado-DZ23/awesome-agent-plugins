@@ -1,0 +1,268 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/LMPrado-DZ23/awesome-agent-plugins/schema/entry.schema.json",
+  "title": "Awesome Agent Plugins entry",
+  "description": "One catalog entry (data/entries/**/*.yml). lib/validate.mjs is the enforcing validator; this schema is for editor autocompletion.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "name",
+    "url",
+    "type",
+    "category",
+    "description"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]{1,63}$"
+    },
+    "name": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "maxLength": 60
+    },
+    "url": {
+      "type": "string",
+      "pattern": "^https://"
+    },
+    "type": {
+      "enum": [
+        "mcp-server",
+        "skill-pack",
+        "standard",
+        "tool",
+        "list",
+        "native-plugin",
+        "marketplace"
+      ]
+    },
+    "category": {
+      "enum": [
+        "standards",
+        "meta",
+        "skills",
+        "code-intel",
+        "browser",
+        "docs",
+        "memory",
+        "tools",
+        "dev",
+        "git",
+        "cloud",
+        "workflow",
+        "integrations",
+        "security",
+        "models",
+        "usage",
+        "sessions",
+        "multimodal",
+        "remote",
+        "ui",
+        "themes",
+        "fun"
+      ]
+    },
+    "featured": {
+      "type": "boolean"
+    },
+    "license": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "tags": {
+      "type": "array",
+      "maxItems": 6,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9][a-z0-9-]{0,31}$"
+      }
+    },
+    "description": {
+      "type": "object",
+      "required": [
+        "en",
+        "pt"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "en": {
+          "type": "string",
+          "maxLength": 320
+        },
+        "pt": {
+          "type": "string",
+          "maxLength": 320
+        }
+      }
+    },
+    "mcp": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "prereq": {
+          "type": "string"
+        },
+        "stdio": {
+          "type": "object",
+          "required": [
+            "command"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "command": {
+              "type": "string"
+            },
+            "args": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "env": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string",
+                "pattern": "^(<[A-Z0-9_ -]+>|\\$\\{?[A-Z0-9_]+\\}?|Bearer <[A-Z0-9_]+>)$"
+              }
+            }
+          }
+        },
+        "http": {
+          "type": "object",
+          "required": [
+            "url"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "url": {
+              "type": "string",
+              "pattern": "^https://"
+            },
+            "headers": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string",
+                "pattern": "^(<[A-Z0-9_ -]+>|\\$\\{?[A-Z0-9_]+\\}?|Bearer <[A-Z0-9_]+>)$"
+              }
+            }
+          }
+        }
+      }
+    },
+    "skill": {
+      "type": "object",
+      "required": [
+        "source"
+      ],
+      "properties": {
+        "source": {
+          "type": "string"
+        },
+        "skills": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "native": {
+      "type": "object",
+      "required": [
+        "client",
+        "install"
+      ],
+      "properties": {
+        "client": {
+          "enum": [
+            "claude-code",
+            "codex",
+            "gemini-cli",
+            "cursor",
+            "vscode",
+            "opencode",
+            "cline",
+            "windsurf",
+            "zed",
+            "goose",
+            "kiro",
+            "roo",
+            "dsh"
+          ]
+        },
+        "install": {
+          "type": "string"
+        },
+        "lang": {
+          "type": "string"
+        }
+      }
+    },
+    "alternatives": {
+      "type": "array",
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "url",
+          "adds"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "pattern": "^https://"
+          },
+          "adds": {
+            "type": "object",
+            "required": [
+              "en",
+              "pt"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "en": {
+                "type": "string",
+                "maxLength": 180
+              },
+              "pt": {
+                "type": "string",
+                "maxLength": 180
+              }
+            }
+          }
+        }
+      }
+    },
+    "origin": {
+      "type": "object",
+      "required": [
+        "list"
+      ],
+      "properties": {
+        "list": {
+          "type": "string"
+        },
+        "ref": {
+          "type": "string"
+        }
+      }
+    },
+    "stats": {
+      "type": "object"
+    }
+  }
+}

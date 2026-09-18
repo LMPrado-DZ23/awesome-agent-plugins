@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-update-checker
+name: Airmetro/dsh-update-checker
+title: Update DSH core and plugins safely
+url: https://github.com/Airmetro/dsh-update-checker
+type: native-plugin
+category: dev
+license: MIT
+tags:
+  - updates
+  - plugins
+  - rollback
+description:
+  en: >-
+    Semver-aware update checks for DeepSeek Harness and every installed plugin from npm and GitHub, with a locale-aware
+    banner, one-click updates that back up and integrity-check the main program with rollback on failure, and a
+    watchdog-guarded restart.
+  pt: >-
+    Verificações de atualização com semver para o DeepSeek Harness e cada plugin, via npm e GitHub, com banner por
+    idioma, atualizações de um clique com backup e checagem de integridade, rollback em falha, e reinício protegido por
+    watchdog.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:Airmetro/dsh-update-checker
+alternatives:
+  - name: hezhongtang/dsh-update-copilot
+    url: https://github.com/hezhongtang/dsh-update-copilot
+    adds:
+      en: Explains what changed and how risky each update is before applying only the updates you confirm
+      pt: Explica o que mudou e o risco de cada atualização antes de aplicar somente as que você confirmar
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

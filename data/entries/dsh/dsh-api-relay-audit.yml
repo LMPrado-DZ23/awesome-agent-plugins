@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-api-relay-audit
+name: toby-bridges/api-relay-audit
+title: Read-only relay and config security audit
+url: https://github.com/toby-bridges/api-relay-audit
+type: native-plugin
+category: security
+license: AGPL-3.0
+tags:
+  - audit
+  - reporting
+  - prompt-injection
+  - compliance
+description:
+  en: >-
+    Runs local security audits of AI API relays and LLM proxies, producing Markdown reports on prompt injection, model
+    substitution signals, tool-call rewriting, error leakage, stream integrity, and Web3 risks.
+  pt: >-
+    Executa auditorias locais de segurança em relays de API de IA e proxies de LLM, gerando relatórios em Markdown sobre
+    injeção de prompt, sinais de substituição de modelo, reescrita de chamadas de ferramenta, vazamento de erros,
+    integridade de stream e riscos Web3.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:toby-bridges/api-relay-audit
+alternatives:
+  - name: PensiveFei/dsh-secure-audit
+    url: https://github.com/PensiveFei/dsh-secure-audit
+    adds:
+      en: >-
+        Also audits the local configuration and redacts Chinese PII, producing reproducible reports without touching
+        relay traffic.
+      pt: >-
+        Também audita a configuração local e redige PII em chinês, gerando relatórios reprodutíveis sem tocar no tráfego
+        do relay.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

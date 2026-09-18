@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: vercel-agent-skills
+name: Vercel Agent Skills
+url: https://github.com/vercel-labs/agent-skills
+type: skill-pack
+category: skills
+license: null
+tags:
+  - react
+  - frontend
+  - design
+description:
+  en: Vercel's collection of agent skills for web development, including React best practices and web design guidelines.
+  pt: Coleção de skills da Vercel para desenvolvimento web, incluindo boas práticas de React e diretrizes de design web.
+skill:
+  source: vercel-labs/agent-skills

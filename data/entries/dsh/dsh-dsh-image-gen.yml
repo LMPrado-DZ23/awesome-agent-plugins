@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-image-gen
+name: shanliuling/dsh-image-gen
+title: Native conversational image generation
+url: https://github.com/shanliuling/dsh-image-gen
+type: native-plugin
+category: workflow
+license: Apache-2.0
+tags:
+  - workflow
+  - image-generation
+  - multimodal
+  - tooling
+description:
+  en: >-
+    Native conversational image generation for DeepSeek Harness: ask the agent to create an image, and it handles
+    generation and keeps the result directly in the conversation.
+  pt: >-
+    Geração nativa de imagens por conversa no DeepSeek Harness: peça ao agente para criar uma imagem e ele cuida da
+    geração, mantendo o resultado direto na conversa.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:shanliuling/dsh-image-gen
+alternatives:
+  - name: zclDragon/dsh-tool-generate-image
+    url: https://github.com/zclDragon/dsh-tool-generate-image
+    adds:
+      en: Adds a generate_image tool for text-only models, drawing via Gemini through the Antigravity CLI.
+      pt: Adiciona uma ferramenta generate_image para modelos apenas de texto, desenhando via Gemini pela Antigravity CLI.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

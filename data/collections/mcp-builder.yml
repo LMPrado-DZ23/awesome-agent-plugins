@@ -1,0 +1,8 @@
+id: mcp-builder
+title:
+  en: Building your own MCP servers and skills
+  pt: Criando seus próprios servidores MCP e skills
+description:
+  en: The specs, an inspector to debug servers, a Python framework, and the CLI to publish/install skills.
+  pt: As especificações, um inspetor para depurar servidores, um framework Python e o CLI para publicar/instalar skills.
+entries: [model-context-protocol, agent-skills-spec, agents-md, mcp-inspector, fastmcp, skills-cli, mcp-registry]

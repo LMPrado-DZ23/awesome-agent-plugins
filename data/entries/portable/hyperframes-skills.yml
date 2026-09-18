@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: hyperframes-skills
+name: HyperFrames
+url: https://github.com/heygen-com/hyperframes
+type: skill-pack
+category: multimodal
+license: Apache-2.0
+tags:
+  - video
+  - html
+description:
+  en: Skills and CLI for writing videos as HTML compositions and rendering them to MP4/WebM, built for agents.
+  pt: Skills e CLI para escrever vídeos como composições HTML e renderizá-los em MP4/WebM, feitos para agentes.
+skill:
+  source: heygen-com/hyperframes

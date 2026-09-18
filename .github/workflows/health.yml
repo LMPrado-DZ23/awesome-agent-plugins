@@ -1,0 +1,39 @@
+name: Weekly health check
+on:
+  schedule:
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: write
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Refresh GitHub stats
+        id: stats
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/refresh-stats.mjs | tee health.txt
+      - name: Regenerate READMEs with fresh stars
+        run: node scripts/generate.mjs
+      - name: Commit refreshed stats
+        run: |
+          if git diff --quiet; then echo "no changes"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "chore: refresh stats"
+          git push
+      - name: Open an issue for missing or archived repos
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if grep -qE 'MISSING|ARCHIVED' health.txt; then
+            gh issue create --title "Health check: missing or archived repositories" --body "$(grep -E 'MISSING|ARCHIVED' health.txt)" --label health || true
+          fi

@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-browser
+name: wqty123/dsh-browser
+title: Real browser automation and control
+url: https://github.com/wqty123/dsh-browser
+type: native-plugin
+category: browser
+license: MIT
+tags:
+  - browser-automation
+  - cdp
+  - playwright
+description:
+  en: >-
+    Gives the agent a shared, native Electron browser window driven over CDP with 20 tools for opening pages,
+    snapshotting, filling forms, screenshots, downloads, and CAPTCHA detection, while a human can watch and take over.
+  pt: >-
+    Dá ao agente uma janela Electron nativa e compartilhada, controlada via CDP com 20 ferramentas (abrir páginas,
+    snapshots, formulários, screenshots, downloads, detecção de CAPTCHA), enquanto um humano pode acompanhar e assumir o
+    controle.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:wqty123/dsh-browser
+alternatives:
+  - name: anweat/dsh-browser
+    url: https://github.com/anweat/dsh-browser
+    adds:
+      en: Bundles Playwright and Chromium as plugin-local dependencies with a global-reuse fallback and 9 browser tools.
+      pt: >-
+        Empacota Playwright e Chromium como dependências locais do plugin, com fallback de reuso global e 9 ferramentas
+        de navegador.
+  - name: stuarthu/dsh-chrome
+    url: https://github.com/stuarthu/dsh-chrome
+    adds:
+      en: Adds a Chrome side panel that lets the agent read the current page and capture HTTP traffic.
+      pt: Adiciona um painel lateral no Chrome que permite ao agente ler a página atual e capturar tráfego HTTP.
+  - name: Tencent/BrowserSkill#dsh-plugin-browserskill
+    url: https://github.com/Tencent/BrowserSkill/tree/main/packages/dsh-plugin-browserskill
+    adds:
+      en: >-
+        Controls visible Chrome/Edge windows with accessibility and VOM observations plus a live Web UI overlay for
+        multi-session control.
+      pt: >-
+        Controla janelas do Chrome/Edge com observações de acessibilidade e VOM, e sobreposição ao vivo na Web UI para
+        controlar várias sessões.
+  - name: Viger1/dsh-pilot
+    url: https://github.com/Viger1/dsh-pilot
+    adds:
+      en: >-
+        Navigates and acts on elements using accessibility refs, enforcing the origin policy via the session's approval
+        stance.
+      pt: >-
+        Navega e age sobre elementos usando referências de acessibilidade, aplicando a política de origem conforme a
+        postura de aprovação da sessão.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

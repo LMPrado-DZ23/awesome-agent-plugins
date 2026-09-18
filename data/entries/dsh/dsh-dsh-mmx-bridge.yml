@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-mmx-bridge
+name: welsione/dsh-mmx-bridge
+title: MiniMax multimodal bridge
+url: https://github.com/welsione/dsh-mmx-bridge
+type: native-plugin
+category: tools
+license: MIT
+tags:
+  - multimodal
+  - image-generation
+  - search
+description:
+  en: >-
+    One mmx_bridge tool covering MiniMax image understanding/generation, video, TTS, music, cover art, web search, and
+    quota, with optional web_search/read_image takeover and inline players and image previews in the Web GUI.
+  pt: >-
+    Uma única ferramenta mmx_bridge cobrindo compreensão/geração de imagens da MiniMax, vídeo, TTS, música, capas, busca
+    na web e cota, com substituição opcional de web_search/read_image e players e prévias de imagem embutidos na
+    interface web.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:welsione/dsh-mmx-bridge
+alternatives:
+  - name: SPYQWER1/dsh-codex-tools
+    url: https://github.com/SPYQWER1/dsh-codex-tools
+    adds:
+      en: >-
+        Reuses your existing ChatGPT OAuth login instead of a MiniMax key, for web_search, image_gen, and image_vision
+        tools
+      pt: >-
+        Reaproveita seu login OAuth existente do ChatGPT em vez de uma chave MiniMax, para as ferramentas web_search,
+        image_gen e image_vision
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

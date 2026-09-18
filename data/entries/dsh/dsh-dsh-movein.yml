@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-movein
+name: sjh9714/dsh-movein
+title: Import Claude Code setup into DSH
+url: https://github.com/sjh9714/dsh-movein
+type: native-plugin
+category: dev
+license: MIT
+tags:
+  - migration
+  - claude-code
+  - import
+  - mcp
+description:
+  en: >-
+    Imports a Claude Code setup into DeepSeek Harness via a settings screen or CLI, with dry-run previews for skills,
+    commands, agents, hooks, permissions and MCP config. Codex and OpenCode are supported as secondary sources with
+    collision-safe apply.
+  pt: >-
+    Importa uma configuração do Claude Code para o DeepSeek Harness via tela de configurações ou CLI, com preview
+    dry-run de skills, comandos, agentes, hooks, permissões e config MCP. Codex e OpenCode são fontes secundárias, com
+    aplicação segura contra colisões.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:sjh9714/dsh-movein
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

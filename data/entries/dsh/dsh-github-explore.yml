@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-github-explore
+name: Fectivnfy112357/github-explore
+title: Explore and audit GitHub via gh CLI
+url: https://github.com/Fectivnfy112357/github-explore
+type: native-plugin
+category: git
+license: MIT
+tags:
+  - github
+  - discovery
+  - audit
+description:
+  en: >-
+    GitHub search, discovery and audit scripts wrapped as a SKILL.md pack around the gh CLI: repo search, multi-axis
+    exploration, trending, repo summaries, similar projects, code search, and issue/PR search and org audits.
+  pt: >-
+    Scripts de busca, descoberta e auditoria do GitHub empacotados como uma skill em torno da gh CLI: busca de
+    repositórios, exploração multieixo, trending, resumos de repositório, projetos similares, busca de código e
+    auditorias de issues/PRs e organizações.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:Fectivnfy112357/github-explore
+alternatives:
+  - name: zoahdev/dsh-github-intelligence
+    url: https://github.com/zoahdev/dsh-github-intelligence
+    adds:
+      en: >-
+        Adds repo releases, issues, pull requests and contributor data plus a deep repo report with TTL caching, no API
+        key needed
+      pt: >-
+        Adiciona releases, issues, PRs e dados de contribuidores, além de um relatório detalhado com cache TTL, sem
+        chave de API
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

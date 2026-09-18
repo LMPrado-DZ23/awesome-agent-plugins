@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-plugin
+name: Tabbit-Browser/dsh-plugin
+title: Control the Tabbit Browser
+url: https://github.com/Tabbit-Browser/dsh-plugin
+type: native-plugin
+category: browser
+license: MIT
+tags:
+  - browser-control
+  - tabbit
+description:
+  en: >-
+    Gives the agent control of the Tabbit Browser: auto-loads a companion skill, detects qualifying Tabbit releases
+    (1.9.0+), checks the tabbit-cli runtime, and downloads the matching official installer when needed.
+  pt: >-
+    Dá ao agente controle do Tabbit Browser: carrega automaticamente uma skill complementar, detecta versões
+    qualificadas do Tabbit (1.9.0+), verifica o runtime tabbit-cli e baixa o instalador oficial correspondente quando
+    necessário.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:Tabbit-Browser/dsh-plugin
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

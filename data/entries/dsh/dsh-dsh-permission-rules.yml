@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-permission-rules
+name: PerryLink/dsh-permission-rules
+title: Declarative permission rules engine
+url: https://github.com/PerryLink/dsh-permission-rules
+type: native-plugin
+category: security
+license: Apache-2.0
+tags:
+  - permissions
+  - rules
+  - audit
+  - access-control
+description:
+  en: >-
+    Declarative, ordered allow/deny/ask rules matching tool names, arguments, workspace paths, and agent identity at the
+    pre-execute stage, with full session-log audit, dry-run mode, and hot reload.
+  pt: >-
+    Regras declarativas e ordenadas de permitir/negar/perguntar que combinam nomes de ferramentas, argumentos, caminhos
+    do workspace e identidade do agente antes da execução, com auditoria completa de log de sessão, modo dry-run e
+    recarga a quente.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:PerryLink/dsh-permission-rules
+alternatives:
+  - name: sjh9714/dsh-movein-permissions
+    url: https://github.com/sjh9714/dsh-movein/tree/main/plugin
+    adds:
+      en: >-
+        Uses Claude Code rule syntax directly (e.g. Bash(rm -rf:*), Read(_secrets_)) and works standalone without
+        migration.
+      pt: >-
+        Usa diretamente a sintaxe de regras do Claude Code (ex.: Bash(rm -rf:*), Read(_secrets_)) e funciona sozinho,
+        sem migração.
+  - name: jilian-dsh/dsh-rule-engine
+    url: https://github.com/jilian-dsh/dsh-rule-engine
+    adds:
+      en: >-
+        Parses rules from AGENTS.md and adds a /guard command, version-guard for tracked files, and free-zone
+        exemptions.
+      pt: >-
+        Interpreta regras a partir do AGENTS.md e adiciona o comando /guard, proteção de versão para arquivos rastreados
+        e isenções de zona livre.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

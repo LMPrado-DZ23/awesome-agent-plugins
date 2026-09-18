@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-cost-meter
+name: Han-1413141/dsh-cost-meter
+title: Session and daily cost dashboard
+url: https://github.com/Han-1413141/dsh-cost-meter
+type: native-plugin
+category: usage
+license: MIT
+tags:
+  - cost-tracking
+  - budget
+  - balance
+  - dashboard
+description:
+  en: >-
+    Tracks per-session and daily API cost against a budget with usage percentage, shows the official account balance,
+    keeps a history dashboard, and syncs official peak/off-peak pricing with one click.
+  pt: >-
+    Acompanha o custo de API por sessão e diário contra um orçamento com percentual de uso, mostra o saldo oficial da
+    conta, mantém um painel de histórico e sincroniza preços oficiais de horário de pico/fora de pico com um clique.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:Han-1413141/dsh-cost-meter
+alternatives:
+  - name: feibi-mochi/deepseek-harness-control-center
+    url: https://github.com/feibi-mochi/deepseek-harness-control-center
+    adds:
+      en: Adds official recharge, completion alerts, flexible layouts, and agent-assisted session controls.
+      pt: Adiciona recarga oficial, alertas de conclusão, layouts flexíveis e controles de sessão assistidos por agente.
+  - name: kenz1117/dsh-ui-usage-billing
+    url: https://github.com/kenz1117/dsh-ui-usage-billing
+    adds:
+      en: >-
+        Estimates cost in CNY from a current multi-provider pricing catalog and exempts subscription-plan routes from
+        the total.
+      pt: >-
+        Estima o custo em CNY a partir de um catálogo de preços multi-provedor atualizado e isenta rotas de planos por
+        assinatura do total.
+  - name: nonewind/dsh-spend
+    url: https://github.com/nonewind/dsh-spend
+    adds:
+      en: Shows a floating panel with per-model, per-day, and per-session token stats.
+      pt: Mostra um painel flutuante com estatísticas de tokens por modelo, por dia e por sessão.
+  - name: Max-Samson/dsh-usage-chart
+    url: https://github.com/Max-Samson/dsh-usage-chart
+    adds:
+      en: Adds zero-dependency SVG charts for per-turn usage and cost directly under the composer.
+      pt: Adiciona gráficos SVG sem dependências para uso e custo por turno, direto abaixo do campo de composição.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

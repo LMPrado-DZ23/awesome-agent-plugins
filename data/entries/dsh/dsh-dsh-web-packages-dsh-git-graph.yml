@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-web-packages-dsh-git-graph
+name: zhu1090093659/dsh-web#packages/dsh-git-graph
+title: Git branch graph in web GUI
+url: https://github.com/zhu1090093659/dsh-web/tree/main/packages/dsh-git-graph
+type: native-plugin
+category: git
+license: Apache-2.0
+tags:
+  - git
+  - branches
+  - web-ui
+description:
+  en: >-
+    Git branch selector and Git graph for the dsh web GUI: switch branches and explore branch-lane and commit history
+    from the conversation header.
+  pt: >-
+    Seletor de branch e grafo Git para a GUI web do dsh: troca de branches e exploração do histórico de commits e faixas
+    de branch pelo cabeçalho da conversa.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:zhu1090093659/dsh-web#path:/packages/dsh-git-graph
+alternatives:
+  - name: Wongzexu/dsh-git-status
+    url: https://github.com/Wongzexu/dsh-git-status
+    adds:
+      en: >-
+        Adds a full status drawer with a commit DAG lane graph, uncommitted/stash rows, inline diffs, and fetch from all
+        remotes
+      pt: >-
+        Adiciona uma gaveta de status com grafo DAG de commits, linhas de stash/alterações não commitadas, diffs inline
+        e fetch de todos os remotes
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

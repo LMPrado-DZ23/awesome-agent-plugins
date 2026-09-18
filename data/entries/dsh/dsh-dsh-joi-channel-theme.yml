@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-joi-channel-theme
+name: tpmoonchefryan/dsh-joi-channel-theme
+title: VTuber companion theme
+url: https://github.com/tpmoonchefryan/dsh-joi-channel-theme
+type: native-plugin
+category: themes
+license: MIT
+tags:
+  - character-skin
+  - vtuber
+  - companion
+description:
+  en: >-
+    A two-suit VTuber theme built around the Joi character: separate light/dark token sets, a standing portrait, chibi
+    companions above the composer that follow turn state, a duo sidebar mark, and a mandarin-shaped context meter. A
+    third card restores the stock look.
+  pt: >-
+    Um tema VTuber de dois conjuntos construído em torno da personagem Joi: temas claro/escuro separados, um retrato em
+    pé, companheiros chibi acima do compositor que seguem o estado do turno, uma marca dupla na barra lateral e um
+    medidor de contexto em formato de tangerina. Um terceiro cartão restaura o visual padrão.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:tpmoonchefryan/dsh-joi-channel-theme
+alternatives:
+  - name: Small-tailqwq/dsh-deep-whale#maid-atelier
+    url: https://github.com/Small-tailqwq/dsh-deep-whale/tree/main/maid-atelier
+    adds:
+      en: Offers a generic whale-girl skin series instead of the fixed Joi character pair.
+      pt: Oferece uma série genérica de skins de garota-baleia em vez do par fixo da personagem Joi.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

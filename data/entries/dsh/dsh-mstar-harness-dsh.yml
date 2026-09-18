@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-mstar-harness-dsh
+name: btspoony/mstar-harness#dsh
+title: Skill-driven loop engineering agent
+url: https://github.com/btspoony/mstar-harness/tree/main/packages/dsh
+type: native-plugin
+category: workflow
+license: MIT
+tags:
+  - workflow
+  - skills
+  - loop-engineering
+  - agent
+description:
+  en: Skill-driven harness and loop-engineering workflow agent plugin.
+  pt: Plugin de agente de workflow orientado a habilidades e engenharia de loops para o harness.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:btspoony/mstar-harness#path:/packages/dsh
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

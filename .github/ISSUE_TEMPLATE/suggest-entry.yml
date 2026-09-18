@@ -1,0 +1,37 @@
+name: Suggest an entry
+description: Propose an MCP server, skill pack or plugin for the catalog
+labels: [suggestion]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Repository URL
+      placeholder: https://github.com/owner/repo
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options: [mcp-server, skill-pack, native-plugin, marketplace, standard, tool, list]
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What does it do? (one factual sentence)
+    validations:
+      required: true
+  - type: textarea
+    id: install
+    attributes:
+      label: How is it installed / started? (command, URL, or plugin install command)
+  - type: input
+    id: tested
+    attributes:
+      label: Which clients did you test it on?
+      placeholder: Claude Code, Codex, DeepSeek Harness…
+  - type: textarea
+    id: overlap
+    attributes:
+      label: Does an existing entry already cover this? What does it add?

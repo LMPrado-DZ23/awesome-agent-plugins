@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-mattpocock-skills-dsh
+name: gongyijie85/mattpocock-skills-dsh
+title: Matt Pocock's engineering skills
+url: https://github.com/gongyijie85/mattpocock-skills-dsh
+type: native-plugin
+category: skills
+license: MIT
+tags:
+  - skills-pack
+  - engineering
+  - productivity
+description:
+  en: >-
+    Matt Pocock's full promoted skill set ported to DSH: 25 SKILL.md files covering grilling, writing-for-agents,
+    wait-what, TDD, code review, wayfinder and an ask-matt router.
+  pt: >-
+    Conjunto completo de skills promovidas de Matt Pocock portado para o DSH: 25 arquivos SKILL.md cobrindo grilling,
+    writing-for-agents, wait-what, TDD, revisão de código, wayfinder e um roteador ask-matt.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:gongyijie85/mattpocock-skills-dsh
+alternatives:
+  - name: gongyijie85/mattpocock-skills-dsh-zh
+    url: https://github.com/gongyijie85/mattpocock-skills-dsh-zh
+    adds:
+      en: Fully translated to Chinese, keeping technical terms in English with glosses
+      pt: Totalmente traduzido para o chinês, mantendo termos técnicos em inglês com glossário
+  - name: jeremy9682/dsh-skill-pack
+    url: https://github.com/jeremy9682/dsh-skill-pack
+    adds:
+      en: >-
+        Packs a different subset of 11 workflow skills, including handoff, triage, to-spec, to-tickets and
+        overnight-execution
+      pt: >-
+        Empacota um subconjunto diferente de 11 skills de fluxo de trabalho, incluindo handoff, triage, to-spec,
+        to-tickets e overnight-execution
+  - name: FeatherHunter/dsh-mattpocock-skills-deck
+    url: https://github.com/FeatherHunter/dsh-mattpocock-skills-deck
+    adds:
+      en: Displays the same 25-skill set in a right-side details panel with zero manual setup
+      pt: Exibe o mesmo conjunto de 25 skills em um painel de detalhes lateral, sem configuração manual
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

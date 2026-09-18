@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-composer-history
+name: PerryLink/dsh-composer-history
+title: Composer input history
+url: https://github.com/PerryLink/dsh-composer-history
+type: native-plugin
+category: ui
+license: Apache-2.0
+tags:
+  - composer
+  - history
+  - productivity
+description:
+  en: >-
+    Terminal-style input history for the web composer: edge-first arrow-key recall with exact draft and caret restore,
+    browser-local persisted history, Ctrl+R reverse search, cross-session snippets, and prompt templates with variables.
+  pt: >-
+    Histórico de entrada estilo terminal para o compositor web: recall com as setas priorizando as bordas, restauração
+    exata do rascunho e do cursor, histórico persistido localmente no navegador, busca reversa com Ctrl+R, trechos entre
+    sessões e templates de prompt com variáveis.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:PerryLink/dsh-composer-history
+alternatives:
+  - name: 13071301808/dsh-composer-expand
+    url: https://github.com/13071301808/dsh-composer-expand
+    adds:
+      en: Adds an expand/collapse toggle that grows the composer into a tall 70vh writing view for long drafts.
+      pt: >-
+        Adiciona um alternador de expandir/recolher que aumenta o compositor para uma visão de escrita alta (70vh) para
+        rascunhos longos.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

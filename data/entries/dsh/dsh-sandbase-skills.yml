@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-sandbase-skills
+name: sandbaseai/sandbase-skills
+title: 88 research and business skills
+url: https://github.com/sandbaseai/sandbase-skills
+type: native-plugin
+category: skills
+license: Apache-2.0
+tags:
+  - research
+  - marketing
+  - business
+  - skills-pack
+description:
+  en: >-
+    Mounts 88 packaged research, social-intelligence, marketing and business Agent Skills into DSH through the
+    filesystem Skill provider.
+  pt: >-
+    Monta 88 Agent Skills empacotadas de pesquisa, inteligência social, marketing e negócios no DSH através do provedor
+    de Skill do sistema de arquivos.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:sandbaseai/sandbase-skills
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

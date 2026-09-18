@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-bookmarks
+name: penguin-oo/dsh-bookmarks
+title: Bookmark and tag assistant replies
+url: https://github.com/penguin-oo/dsh-bookmarks
+type: native-plugin
+category: sessions
+license: MIT
+tags:
+  - session
+  - bookmarks
+  - tagging
+  - export
+description:
+  en: >-
+    Bookmark assistant replies with notes and tags; browse every bookmark in one cross-session center and export to
+    Markdown.
+  pt: >-
+    Marca respostas do assistente com notas e tags; navega por todos os marcadores em um centro entre sessões e exporta
+    para Markdown.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:penguin-oo/dsh-bookmarks
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

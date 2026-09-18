@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-graphlint-integrations-dsh
+name: AngelosZou/graphlint#integrations/dsh
+title: Find dead code in AI-written repos
+url: https://github.com/AngelosZou/graphlint/tree/main/integrations/dsh
+type: native-plugin
+category: dev
+license: MIT
+tags:
+  - dead-code
+  - dependency-graph
+  - code-quality
+description:
+  en: >-
+    Builds a dependency graph of the codebase and finds code unreachable from any entry point, helping clean up
+    AI-generated repositories; exposes graphlint_query, graphlint_build and graphlint_config tools plus a graphlint
+    skill.
+  pt: >-
+    Constrói um grafo de dependências do código e encontra trechos inalcançáveis a partir de qualquer ponto de entrada,
+    ajudando a limpar repositórios gerados por IA; expõe as ferramentas graphlint_query, graphlint_build e
+    graphlint_config, além de uma skill graphlint.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:AngelosZou/graphlint#path:/integrations/dsh
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

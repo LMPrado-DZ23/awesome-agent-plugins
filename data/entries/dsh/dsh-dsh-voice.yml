@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-voice
+name: STARDUSTLC666/dsh-voice
+title: TTS/ASR utility toolkit
+url: https://github.com/STARDUSTLC666/dsh-voice
+type: native-plugin
+category: multimodal
+license: MIT
+tags:
+  - tts
+  - asr
+  - toolkit
+description:
+  en: >-
+    A voice utility toolkit: free edge-tts speech synthesis, OpenAI-compatible ASR transcription, a voice list, batch
+    voice preview, and a health self-check.
+  pt: >-
+    Um kit de ferramentas de voz: síntese de fala gratuita via edge-tts, transcrição ASR compatível com OpenAI, lista de
+    vozes, pré-visualização de vozes em lote e autoverificação de saúde.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:STARDUSTLC666/dsh-voice
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

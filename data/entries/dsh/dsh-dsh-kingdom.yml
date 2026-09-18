@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-kingdom
+name: lusblead/dsh-Kingdom
+title: Agent governance and role bindings
+url: https://github.com/lusblead/dsh-Kingdom
+type: native-plugin
+category: workflow
+license: AGPL-3.0
+tags:
+  - workflow
+  - governance
+  - roles
+  - task-loop
+description:
+  en: >-
+    Agent governance for DeepSeek Harness: territories, role bindings with model or agent identity, and a
+    plan-assign-execute-review task loop where worker claims never auto-complete, plus a local GUI operations console.
+  pt: >-
+    Governança de agentes para o DeepSeek Harness: territórios, vínculos de papel com identidade de modelo ou agente, e
+    um loop de tarefas planejar-atribuir-executar-revisar em que reivindicações do worker nunca se concluem sozinhas,
+    além de um console de operações GUI local.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:lusblead/dsh-Kingdom
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

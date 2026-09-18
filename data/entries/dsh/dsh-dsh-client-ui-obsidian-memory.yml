@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-client-ui-obsidian-memory
+name: detongz/dsh-client-ui-obsidian-memory
+title: Personal Obsidian vault memory
+url: https://github.com/detongz/dsh-client-ui-obsidian-memory
+type: native-plugin
+category: memory
+license: MIT
+tags:
+  - memory
+  - obsidian
+  - notes
+  - vault
+description:
+  en: >-
+    Persistent AI memory backed by a local Obsidian/Codex vault, with five read/write/search tools and a sidebar vault
+    browser.
+  pt: >-
+    Memória de IA persistente apoiada em um vault local do Obsidian/Codex, com cinco ferramentas de
+    leitura/escrita/busca e um navegador de vault na barra lateral.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:detongz/dsh-client-ui-obsidian-memory
+alternatives:
+  - name: mingzeng21/dsh-obsidian
+    url: https://github.com/mingzeng21/dsh-obsidian
+    adds:
+      en: Simpler tool set covering search, read, write, move, and trash on the vault.
+      pt: Conjunto de ferramentas mais simples cobrindo busca, leitura, escrita, mover e lixeira no vault.
+  - name: Noelune/unified-agent-memory
+    url: https://github.com/Noelune/unified-agent-memory
+    adds:
+      en: Shares one Obsidian vault across every agent, with a dependency-free promote/adjudicate/forget core.
+      pt: >-
+        Compartilha um único vault do Obsidian entre todos os agentes, com núcleo sem dependências para
+        promover/julgar/esquecer.
+  - name: 398894496-arch/runtime36
+    url: https://github.com/398894496-arch/runtime36
+    adds:
+      en: Read-only tools that route status, preference, and correction queries to the matching vault page.
+      pt: >-
+        Ferramentas somente leitura que roteiam consultas de status, preferência e correção para a página correspondente
+        do vault.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

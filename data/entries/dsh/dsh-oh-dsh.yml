@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-oh-dsh
+name: hust-open-atom-club/oh-dsh
+title: All-in-one DSH distribution bundle
+url: https://github.com/hust-open-atom-club/oh-dsh
+type: native-plugin
+category: dev
+license: MIT
+tags:
+  - distribution
+  - tui
+  - desktop
+  - bundle
+description:
+  en: >-
+    Community distribution that bundles the TUI, desktop app and Web UI together as one package with layered
+    installation.
+  pt: >-
+    Distribuição da comunidade que empacota o TUI, o app desktop e a Web UI juntos em um único pacote com instalação em
+    camadas.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:hust-open-atom-club/oh-dsh
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

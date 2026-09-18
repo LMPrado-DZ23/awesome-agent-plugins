@@ -1,0 +1,8 @@
+id: research-docs
+title:
+  en: Research and documents
+  pt: Pesquisa e documentos
+description:
+  en: Web search and scraping, converting files to Markdown, and skills for PDF/Office documents.
+  pt: Busca e scraping na web, conversão de arquivos para Markdown e skills para PDF/Office.
+entries: [exa-mcp, firecrawl-mcp, mcp-fetch, markitdown-mcp, anthropic-skills, git-mcp]

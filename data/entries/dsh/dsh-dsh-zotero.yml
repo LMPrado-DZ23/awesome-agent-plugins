@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-zotero
+name: Vncntvx/dsh-zotero
+title: Zotero evidence store for agents
+url: https://github.com/Vncntvx/dsh-zotero
+type: native-plugin
+category: tools
+license: MIT
+tags:
+  - zotero
+  - citations
+  - research
+description:
+  en: >-
+    Uses Zotero as an evidence store for agents: searches your library, inspects metadata and notes, retrieves evidence
+    passages, opens source PDFs, and generates citations and bibliographies.
+  pt: >-
+    Usa o Zotero como repositório de evidências para agentes: pesquisa sua biblioteca, inspeciona metadados e notas,
+    recupera trechos de evidência, abre os PDFs de origem e gera citações e bibliografias.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:Vncntvx/dsh-zotero
+alternatives:
+  - name: STARDUSTLC666/dsh-cite
+    url: https://github.com/STARDUSTLC666/dsh-cite
+    adds:
+      en: >-
+        Works without a Zotero library: exact DOI lookup, Crossref search, multi-style citation formatting, BibTeX
+        generation, and DOI validation
+      pt: >-
+        Funciona sem biblioteca Zotero: busca exata por DOI, pesquisa no Crossref, citações em vários estilos, BibTeX e
+        validação de DOI
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

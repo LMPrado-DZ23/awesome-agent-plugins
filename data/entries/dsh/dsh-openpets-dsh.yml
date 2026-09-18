@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-openpets-dsh
+name: alvinunreal/openpets#dsh
+title: Desktop pet status bridge
+url: https://github.com/alvinunreal/openpets/tree/main/packages/dsh
+type: native-plugin
+category: integrations
+license: MIT
+tags:
+  - desktop-companion
+  - status
+  - approvals
+  - local
+description:
+  en: Bridges harness lifecycle status, errors, and approval requests to a locally running OpenPets desktop companion.
+  pt: >-
+    Conecta o status do ciclo de vida do harness, erros e pedidos de aprovação a um companheiro de desktop OpenPets
+    rodando localmente.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:alvinunreal/openpets#path:/packages/dsh
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

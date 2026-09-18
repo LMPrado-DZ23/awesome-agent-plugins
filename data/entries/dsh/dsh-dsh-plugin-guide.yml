@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-plugin-guide
+name: PerryLink/dsh-plugin-guide
+title: On-demand DSH plugin-dev knowledge
+url: https://github.com/PerryLink/dsh-plugin-guide
+type: native-plugin
+category: skills
+license: Apache-2.0
+tags:
+  - documentation
+  - plugin-development
+  - reference
+description:
+  en: >-
+    The DSH plugin-development knowledge base packaged as an on-demand agent skill: official constraints, task
+    workflows, API reference and community gotchas, so an agent can look things up while building a plugin.
+  pt: >-
+    A base de conhecimento de desenvolvimento de plugins DSH empacotada como uma skill sob demanda: restrições oficiais,
+    fluxos de tarefas, referência de API e armadilhas da comunidade, para o agente consultar enquanto constrói um
+    plugin.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:PerryLink/dsh-plugin-guide
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

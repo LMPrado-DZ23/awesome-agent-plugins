@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: mcp-filesystem
+name: Filesystem (reference)
+url: https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem
+type: mcp-server
+category: tools
+license: null
+tags:
+  - filesystem
+  - reference
+description:
+  en: >-
+    Reference server for reading, writing, searching and moving files, restricted to the directories you pass as
+    arguments.
+  pt: Servidor de referência para ler, escrever, buscar e mover arquivos, restrito aos diretórios passados como argumento.
+mcp:
+  name: filesystem
+  stdio:
+    command: npx
+    args:
+      - "-y"
+      - "@modelcontextprotocol/server-filesystem"
+      - <ALLOWED_DIR>

@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-plugin-loongsuite
+name: loongsuite/dsh-plugin
+title: Export session traces to OTel
+url: https://github.com/loongsuite/dsh-plugin
+type: native-plugin
+category: dev
+license: Apache-2.0
+tags:
+  - observability
+  - opentelemetry
+  - tracing
+  - metrics
+description:
+  en: >-
+    Converts session, agent-loop, LLM and tool lifecycle events into OpenTelemetry GenAI traces and metrics, exported
+    over OTLP/HTTP to any compatible backend, with content capture off by default.
+  pt: >-
+    Converte eventos de sessão, loop do agente, LLM e ciclo de vida de ferramentas em traces e métricas OpenTelemetry
+    GenAI, exportados via OTLP/HTTP para qualquer backend compatível, com captura de conteúdo desativada por padrão.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:loongsuite/dsh-plugin
+alternatives:
+  - name: PerryLink/dsh-observe
+    url: https://github.com/PerryLink/dsh-observe
+    adds:
+      en: Also exports sanitized, buffered traces and metrics directly to Langfuse
+      pt: Também exporta traces e métricas sanitizados e bufferizados diretamente para o Langfuse
+  - name: xxiaoxiong/dsh-prometheus
+    url: https://github.com/xxiaoxiong/dsh-prometheus
+    adds:
+      en: Exposes Prometheus metrics with a Grafana dashboard on a loopback-only endpoint by default
+      pt: Expõe métricas Prometheus com um dashboard Grafana em um endpoint restrito a loopback por padrão
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

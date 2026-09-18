@@ -1,0 +1,20 @@
+{
+  "name": "awesome-agent-plugins",
+  "version": "0.1.0",
+  "description": "Curated, cross-harness catalog of MCP servers, Agent Skills and native plugins for AI coding agents (Claude Code, Codex, Gemini CLI, Cursor, OpenCode, DeepSeek Harness and more).",
+  "type": "module",
+  "license": "MIT",
+  "bin": { "aap": "bin/aap.mjs" },
+  "engines": { "node": ">=20" },
+  "files": ["bin", "lib", "catalog.json", "LICENSE", "LICENSE-DATA"],
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "generate": "node scripts/generate.mjs",
+    "build": "npm run validate && npm run generate",
+    "test": "node --test \"test/*.test.mjs\"",
+    "import:dsh:meta": "node scripts/import/dsh-fetch-meta.mjs",
+    "import:dsh": "node scripts/import/dsh-select.mjs"
+  },
+  "keywords": ["awesome", "awesome-list", "mcp", "agent-skills", "claude-code", "codex", "gemini-cli", "cursor", "opencode", "deepseek-harness", "dsh-plugin"],
+  "dependencies": { "js-yaml": "^4.1.0" }
+}

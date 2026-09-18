@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-superdesign-skill
+name: superdesigndev/superdesign-skill
+title: Generate UI designs from a brief
+url: https://github.com/superdesigndev/superdesign-skill
+type: native-plugin
+category: skills
+license: MIT
+tags:
+  - design
+  - ui
+  - artifacts
+description:
+  en: >-
+    Design skill for UI and marketing graphics on the Superdesign canvas: reads the repository for context, extracts its
+    design system, then generates and iterates branchable design drafts, flow pages and reusable components through the
+    Superdesign CLI.
+  pt: >-
+    Skill de design para UI e materiais de marketing no canvas do Superdesign: lê o repositório para obter contexto,
+    extrai o design system e gera e itera rascunhos de design ramificáveis, páginas de fluxo e componentes reutilizáveis
+    pela CLI do Superdesign.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:superdesigndev/superdesign-skill
+alternatives:
+  - name: xulelenlp/dsh-web-artifact-designer
+    url: https://github.com/xulelenlp/dsh-web-artifact-designer
+    adds:
+      en: >-
+        Produces self-contained HTML/SVG artifacts (posters, infographics, landing pages) with an anti-AI-look
+        checklist, no canvas tool needed
+      pt: >-
+        Produz artefatos HTML/SVG autocontidos (pôsteres, infográficos, landing pages) com checklist anti-IA, sem
+        ferramenta de canvas externa
+  - name: zhaiyateng/dsh-design-skills
+    url: https://github.com/zhaiyateng/dsh-design-skills
+    adds:
+      en: >-
+        Provides 10 named aesthetic style packs (dark SaaS, brutalism, glassmorphism) with tokens and acceptance
+        checklists
+      pt: >-
+        Fornece 10 pacotes de estilo estético (dark SaaS, brutalismo, glassmorphism) com tokens e checklists de
+        aceitação
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

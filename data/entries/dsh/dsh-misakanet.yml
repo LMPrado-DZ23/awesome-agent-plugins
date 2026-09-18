@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-misakanet
+name: Ikalus1988/MisakaNet
+title: Failure-recovery lessons knowledge base
+url: https://github.com/Ikalus1988/MisakaNet
+type: native-plugin
+category: memory
+license: Apache-2.0
+tags:
+  - memory
+  - lessons-learned
+  - rag
+  - failure-recovery
+description:
+  en: >-
+    Search and record failure-recovery lessons from real engineering sessions, with BM25 plus semantic RAG retrieval
+    over a lessons knowledge base.
+  pt: >-
+    Busca e registra lições de recuperação de falhas extraídas de sessões reais de engenharia, com recuperação BM25 mais
+    RAG semântico sobre uma base de lições.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:Ikalus1988/MisakaNet
+alternatives:
+  - name: akslcw/dsh-negative-ledger
+    url: https://github.com/akslcw/dsh-negative-ledger
+    adds:
+      en: Persists disproven paths with outcome evidence and blocks repeat attempts until that evidence changes.
+      pt: >-
+        Persiste caminhos já refutados com evidências do resultado e bloqueia tentativas repetidas até que essa
+        evidência mude.
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

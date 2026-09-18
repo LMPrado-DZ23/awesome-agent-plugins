@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dsh-dsh-skills-manager
+name: MichengAI/dsh-skills-manager
+title: Manage skills from a settings panel
+url: https://github.com/MichengAI/dsh-skills-manager
+type: native-plugin
+category: dev
+license: Apache-2.0
+tags:
+  - skills
+  - settings
+  - mcp
+  - management
+description:
+  en: >-
+    Manages local DeepSeek Harness skills from the Settings screen and shows Agent skills shared by the team as
+    read-only entries.
+  pt: >-
+    Gerencia skills locais do DeepSeek Harness pela tela de Configurações e exibe as skills de Agente compartilhadas
+    pela equipe como itens somente leitura.
+native:
+  client: dsh
+  install: dsh plugin --profile web add github:MichengAI/dsh-skills-manager
+alternatives:
+  - name: minivv/dsh-agent-skills
+    url: https://github.com/minivv/dsh-agent-skills
+    adds:
+      en: Also browses and toggles skills sourced from Codex, OpenCode, Gemini and custom directories
+      pt: Também navega e ativa/desativa skills vindas de Codex, OpenCode, Gemini e diretórios personalizados
+  - name: Fishquito7/dsh-skill-mcp-panel
+    url: https://github.com/Fishquito7/dsh-skill-mcp-panel
+    adds:
+      en: Adds MCP server CRUD (stdio/HTTP) with connection tests, secret redaction and batch migration
+      pt: Adiciona CRUD de servidores MCP (stdio/HTTP) com testes de conexão, ocultação de segredos e migração em lote
+origin:
+  list: awesome-dsh-plugin
+  ref: 5ae6a947031d065690e872a6d1d42d84c481b52d

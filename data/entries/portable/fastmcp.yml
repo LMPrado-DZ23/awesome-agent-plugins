@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: fastmcp
+name: FastMCP
+url: https://github.com/PrefectHQ/fastmcp
+type: tool
+category: dev
+license: Apache-2.0
+tags:
+  - mcp
+  - python
+  - sdk
+description:
+  en: Pythonic framework for building MCP servers and clients with decorators, auth, proxying and testing utilities.
+  pt: Framework Python para criar servidores e clientes MCP com decorators, autenticação, proxy e utilitários de teste.
