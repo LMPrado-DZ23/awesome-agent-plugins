@@ -28,7 +28,7 @@ Servidor oficial do Notion: busca, lê, cria e atualiza páginas e bancos de dad
 **Claude Code**
 
 ```bash
-claude mcp add --transport stdio --env NOTION_TOKEN='<NOTION_TOKEN>' notion -- npx -y @notionhq/notion-mcp-server
+claude mcp add --transport stdio notion --env NOTION_TOKEN='<NOTION_TOKEN>' -- npx -y @notionhq/notion-mcp-server
 ```
 
 **Codex CLI**
@@ -37,23 +37,10 @@ claude mcp add --transport stdio --env NOTION_TOKEN='<NOTION_TOKEN>' notion -- n
 codex mcp add notion --env NOTION_TOKEN='<NOTION_TOKEN>' -- npx -y @notionhq/notion-mcp-server
 ```
 
-**Gemini CLI** — Arquivo: `~/.gemini/settings.json (or .gemini/settings.json)`
+**Gemini CLI**
 
-```json
-{
-  "mcpServers": {
-    "notion": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@notionhq/notion-mcp-server"
-      ],
-      "env": {
-        "NOTION_TOKEN": "<NOTION_TOKEN>"
-      }
-    }
-  }
-}
+```bash
+gemini mcp add -e NOTION_TOKEN='<NOTION_TOKEN>' notion npx -y @notionhq/notion-mcp-server
 ```
 
 **Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`

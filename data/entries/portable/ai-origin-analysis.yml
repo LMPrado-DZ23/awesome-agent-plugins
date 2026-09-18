@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: ai-origin-analysis
+name: AI Origin Analysis
+url: https://github.com/LMPrado-DZ23/awesome-agent-plugins/tree/main/skills/ai-origin-analysis
+type: skill-pack
+category: skills
+license: MIT
+tags:
+  - provenance
+  - review
+  - forensics
+description:
+  en: >-
+    Skill for assessing whether text, code or a repository may have been AI-generated without treating style as proof:
+    evidence hierarchy, independent signals, alternative explanations, confidence levels and remediation-first
+    reporting.
+  pt: >-
+    Skill para avaliar se texto, código ou repositório pode ter sido gerado por IA sem tratar estilo como prova:
+    hierarquia de evidências, sinais independentes, explicações alternativas, níveis de confiança e relatório focado em
+    correção.
+skill:
+  source: LMPrado-DZ23/awesome-agent-plugins
+  skills:
+    - ai-origin-analysis

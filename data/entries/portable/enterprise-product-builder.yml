@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: enterprise-product-builder
+name: Enterprise Product Builder
+url: https://github.com/LMPrado-DZ23/awesome-agent-plugins/tree/main/skills/enterprise-product-builder
+type: skill-pack
+category: skills
+featured: true
+license: MIT
+tags:
+  - product
+  - fullstack
+  - security
+  - accessibility
+description:
+  en: >-
+    Skill for building web products to mature-company standards: discovery and metrics, ADRs, API/data contracts,
+    design system, OWASP ASVS security, LGPD/GDPR privacy, WCAG 2.2 AA, i18n, SLOs, CI/CD with rollback and release
+    review, plus templates.
+  pt: >-
+    Skill para construir produtos web com padrão de empresa madura: discovery e métricas, ADRs, contratos de API/dados,
+    design system, segurança OWASP ASVS, privacidade LGPD/GDPR, WCAG 2.2 AA, i18n, SLOs, CI/CD com rollback e revisão de
+    release, com templates.
+skill:
+  source: LMPrado-DZ23/awesome-agent-plugins
+  skills:
+    - enterprise-product-builder

@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "count": 259,
+ "count": 264,
  "clients": {
   "claude-code": {
    "name": "Claude Code",
@@ -88,6 +88,29 @@
    "description": {
     "en": "Open Markdown format for project instructions to coding agents (setup, build, test, conventions). Read by Codex, Cursor, OpenCode, Zed, Windsurf, DeepSeek Harness and others.",
     "pt": "Formato Markdown aberto para instruções de projeto a agentes de código (setup, build, testes, convenções). Lido por Codex, Cursor, OpenCode, Zed, Windsurf, DeepSeek Harness e outros."
+   }
+  },
+  {
+   "id": "ai-origin-analysis",
+   "name": "AI Origin Analysis",
+   "url": "https://github.com/LMPrado-DZ23/awesome-agent-plugins/tree/main/skills/ai-origin-analysis",
+   "type": "skill-pack",
+   "category": "skills",
+   "license": "MIT",
+   "tags": [
+    "provenance",
+    "review",
+    "forensics"
+   ],
+   "description": {
+    "en": "Skill for assessing whether text, code or a repository may have been AI-generated without treating style as proof: evidence hierarchy, independent signals, alternative explanations, confidence levels and remediation-first reporting.",
+    "pt": "Skill para avaliar se texto, código ou repositório pode ter sido gerado por IA sem tratar estilo como prova: hierarquia de evidências, sinais independentes, explicações alternativas, níveis de confiança e relatório focado em correção."
+   },
+   "skill": {
+    "source": "LMPrado-DZ23/awesome-agent-plugins",
+    "skills": [
+     "ai-origin-analysis"
+    ]
    }
   },
   {
@@ -7905,6 +7928,61 @@
    }
   },
   {
+   "id": "dz23-subagents",
+   "name": "DZ23 Subagents Universal MCP",
+   "url": "https://github.com/LMPrado-DZ23/dz23-subagents-universal-mcp",
+   "type": "mcp-server",
+   "category": "workflow",
+   "featured": true,
+   "license": "MIT",
+   "tags": [
+    "subagents",
+    "multi-model",
+    "mission-memory",
+    "failover"
+   ],
+   "description": {
+    "en": "Self-hosted MCP router that delegates text/code tasks to many models with automatic failover, parallel role-based subagents (architect, backend, security, QA…), consensus and mission memory shared across harnesses. Node.js 22+, no runtime dependencies.",
+    "pt": "Roteador MCP self-hosted que delega tarefas de texto/código a vários modelos com failover automático, subagentes paralelos por papel (architect, backend, security, QA…), consenso e memória de missão compartilhada entre harnesses. Node.js 22+, sem dependências de runtime."
+   },
+   "mcp": {
+    "name": "dz23-subagents",
+    "prereq": "git clone https://github.com/LMPrado-DZ23/dz23-subagents-universal-mcp <DZ23_DIR> && cd <DZ23_DIR> && cp .env.example .env (add your provider keys) && node src/index.js doctor",
+    "stdio": {
+     "command": "node",
+     "args": [
+      "<DZ23_DIR>/src/index.js",
+      "--stdio"
+     ]
+    }
+   }
+  },
+  {
+   "id": "enterprise-product-builder",
+   "name": "Enterprise Product Builder",
+   "url": "https://github.com/LMPrado-DZ23/awesome-agent-plugins/tree/main/skills/enterprise-product-builder",
+   "type": "skill-pack",
+   "category": "skills",
+   "featured": true,
+   "license": "MIT",
+   "tags": [
+    "product",
+    "fullstack",
+    "security",
+    "accessibility"
+   ],
+   "description": {
+    "en": "Skill for building web products to mature-company standards: discovery and metrics, ADRs, API/data contracts, design system, OWASP ASVS security, LGPD/GDPR privacy, WCAG 2.2 AA, i18n, SLOs, CI/CD with rollback and release review, plus templates.",
+    "pt": "Skill para construir produtos web com padrão de empresa madura: discovery e métricas, ADRs, contratos de API/dados, design system, segurança OWASP ASVS, privacidade LGPD/GDPR, WCAG 2.2 AA, i18n, SLOs, CI/CD com rollback e revisão de release, com templates."
+   },
+   "skill": {
+    "source": "LMPrado-DZ23/awesome-agent-plugins",
+    "skills": [
+     "enterprise-product-builder"
+    ]
+   }
+  },
+  {
    "id": "exa-mcp",
    "name": "Exa MCP",
    "url": "https://github.com/exa-labs/exa-mcp-server",
@@ -8294,6 +8372,27 @@
    }
   },
   {
+   "id": "responsible-ai-origin-analysis",
+   "name": "Responsible AI-origin analysis (permanent instruction, pt-BR)",
+   "title": "Responsible AI-origin analysis rules",
+   "url": "https://github.com/LMPrado-DZ23/awesome-agent-plugins/blob/main/instructions/responsible-ai-origin-analysis.pt-BR.md",
+   "type": "instructions",
+   "category": "skills",
+   "license": "MIT",
+   "tags": [
+    "provenance",
+    "instructions",
+    "review"
+   ],
+   "description": {
+    "en": "Permanent project instruction (Portuguese) for any agent: never treat one pattern as proof of AI authorship, separate four evidence levels, require converging signals, protect people from unfounded accusations and fix the concrete defect. Pairs with the ai-origin-analysis skill.",
+    "pt": "Instrução permanente de projeto para qualquer agente: nunca tratar um padrão isolado como prova de autoria por IA, separar quatro níveis de evidência, exigir sinais convergentes, proteger pessoas de acusações sem base e corrigir o defeito concreto. Complementa a skill ai-origin-analysis."
+   },
+   "instructions": {
+    "url": "https://raw.githubusercontent.com/LMPrado-DZ23/awesome-agent-plugins/main/instructions/responsible-ai-origin-analysis.pt-BR.md"
+   }
+  },
+  {
    "id": "sentry-mcp",
    "name": "Sentry MCP",
    "url": "https://github.com/getsentry/sentry-mcp",
@@ -8451,6 +8550,31 @@
    }
   },
   {
+   "id": "super-autonomous-mission-loop",
+   "name": "Super Autonomous Mission Loop",
+   "url": "https://github.com/LMPrado-DZ23/awesome-agent-plugins/tree/main/skills/super-autonomous-mission-loop",
+   "type": "skill-pack",
+   "category": "skills",
+   "featured": true,
+   "license": "MIT",
+   "tags": [
+    "autonomy",
+    "long-running",
+    "checkpoints",
+    "quality-gates"
+   ],
+   "description": {
+    "en": "Skill for long engineering missions that run until objective completion criteria: bounded autonomy, on-disk checkpoints, recovery after crash or context compaction, anti-loop rules, Git discipline, three independent audits and verified release.",
+    "pt": "Skill para missões longas de engenharia que rodam até critérios objetivos de conclusão: autonomia delimitada, checkpoint em disco, recuperação após crash ou compactação de contexto, anti-loop, disciplina de Git, três auditorias independentes e release verificado."
+   },
+   "skill": {
+    "source": "LMPrado-DZ23/awesome-agent-plugins",
+    "skills": [
+     "super-autonomous-mission-loop"
+    ]
+   }
+  },
+  {
    "id": "superpowers",
    "name": "Superpowers",
    "url": "https://github.com/obra/superpowers",
@@ -8493,6 +8617,26 @@
   }
  ],
  "collections": [
+  {
+   "id": "autonomous-engineering",
+   "title": {
+    "en": "Autonomous engineering (DZ23 stack)",
+    "pt": "Engenharia autônoma (stack DZ23)"
+   },
+   "description": {
+    "en": "Multi-model subagents with shared mission memory, long-mission and product-quality skills, responsible AI-origin review, and GitHub access.",
+    "pt": "Subagentes multi-modelo com memória de missão compartilhada, skills de missão longa e de qualidade de produto, revisão responsável de origem por IA e acesso ao GitHub."
+   },
+   "entries": [
+    "dz23-subagents",
+    "super-autonomous-mission-loop",
+    "enterprise-product-builder",
+    "ai-origin-analysis",
+    "responsible-ai-origin-analysis",
+    "superpowers",
+    "github-mcp-server"
+   ]
+  },
   {
    "id": "deepseek-harness-starter",
    "title": {

@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dz23-subagents
+name: DZ23 Subagents Universal MCP
+url: https://github.com/LMPrado-DZ23/dz23-subagents-universal-mcp
+type: mcp-server
+category: workflow
+featured: true
+license: MIT
+tags:
+  - subagents
+  - multi-model
+  - mission-memory
+  - failover
+description:
+  en: >-
+    Self-hosted MCP router that delegates text/code tasks to many models with automatic failover, parallel role-based
+    subagents (architect, backend, security, QA…), consensus and mission memory shared across harnesses. Node.js 22+,
+    no runtime dependencies.
+  pt: >-
+    Roteador MCP self-hosted que delega tarefas de texto/código a vários modelos com failover automático, subagentes
+    paralelos por papel (architect, backend, security, QA…), consenso e memória de missão compartilhada entre harnesses.
+    Node.js 22+, sem dependências de runtime.
+mcp:
+  name: dz23-subagents
+  prereq: >-
+    git clone https://github.com/LMPrado-DZ23/dz23-subagents-universal-mcp <DZ23_DIR> && cd <DZ23_DIR> && cp
+    .env.example .env (add your provider keys) && node src/index.js doctor
+  stdio:
+    command: node
+    args:
+      - <DZ23_DIR>/src/index.js
+      - --stdio

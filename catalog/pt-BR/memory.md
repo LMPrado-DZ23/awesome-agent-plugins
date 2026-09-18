@@ -304,20 +304,10 @@ claude mcp add --transport stdio memory -- npx -y @modelcontextprotocol/server-m
 codex mcp add memory -- npx -y @modelcontextprotocol/server-memory
 ```
 
-**Gemini CLI** — Arquivo: `~/.gemini/settings.json (or .gemini/settings.json)`
+**Gemini CLI**
 
-```json
-{
-  "mcpServers": {
-    "memory": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-memory"
-      ]
-    }
-  }
-}
+```bash
+gemini mcp add memory npx -y @modelcontextprotocol/server-memory
 ```
 
 **Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`

@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: super-autonomous-mission-loop
+name: Super Autonomous Mission Loop
+url: https://github.com/LMPrado-DZ23/awesome-agent-plugins/tree/main/skills/super-autonomous-mission-loop
+type: skill-pack
+category: skills
+featured: true
+license: MIT
+tags:
+  - autonomy
+  - long-running
+  - checkpoints
+  - quality-gates
+description:
+  en: >-
+    Skill for long engineering missions that run until objective completion criteria: bounded autonomy, on-disk
+    checkpoints, recovery after crash or context compaction, anti-loop rules, Git discipline, three independent audits
+    and verified release.
+  pt: >-
+    Skill para missões longas de engenharia que rodam até critérios objetivos de conclusão: autonomia delimitada,
+    checkpoint em disco, recuperação após crash ou compactação de contexto, anti-loop, disciplina de Git, três auditorias
+    independentes e release verificado.
+skill:
+  source: LMPrado-DZ23/awesome-agent-plugins
+  skills:
+    - super-autonomous-mission-loop

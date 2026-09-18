@@ -4,7 +4,7 @@
 
 > Um catálogo de **servidores MCP, Agent Skills e plugins nativos** para agentes de IA de programação — com o comando de instalação exato para o *seu* cliente.
 
-![entries](https://img.shields.io/badge/itens-259-blue) ![projects](https://img.shields.io/badge/projects-456-blue) ![clients](https://img.shields.io/badge/clients-13-green)
+![entries](https://img.shields.io/badge/itens-264-blue) ![projects](https://img.shields.io/badge/projects-461-blue) ![clients](https://img.shields.io/badge/clients-13-green)
 
 A maioria das listas é presa a um cliente. Aqui cada item diz com quais agentes funciona, e as instruções de instalação são geradas por cliente a partir de uma única especificação, então ficam consistentes. Plugins quase duplicados são juntados numa entrada que aponta a melhor opção e lista o que cada alternativa acrescenta.
 
@@ -55,11 +55,15 @@ npx github:LMPrado-DZ23/awesome-agent-plugins install anthropic-skills --client 
 | [Model Context Protocol](catalog/pt-BR/standards.md#model-context-protocol) ★9.3k | Padrão / especificação | Especificação e documentação do MCP, o protocolo aberto que todos os clientes desta lista usam para conectar agentes a ferramentas, dados e prompts. | — |
 | [MCP Registry](catalog/pt-BR/meta.md#mcp-registry) ★7.3k | Lista / registro | Serviço de registro oficial e comunitário de servidores MCP, com API pública para descobrir servidores publicados e seus metadados de instalação. | — |
 | [dsh-market](catalog/pt-BR/meta.md#dsh-market) ★4.1k | Marketplace de plugins | Loja de plugins dentro das Configurações do DeepSeek Harness: busca, instalação/atualização em um clique e troca de temas para todos os plugins do awesome-dsh-plugin. | DeepSeek Harness apenas |
+| [DZ23 Subagents Universal MCP](catalog/pt-BR/workflow.md#dz23-subagents) | Servidor MCP | Roteador MCP self-hosted que delega tarefas de texto/código a vários modelos com failover automático, subagentes paralelos por papel (architect, backend, security, QA…), consenso e memória de missão compartilhada entre harnesses. Node.js 22+, sem dependências de runtime. | Todos os clientes |
+| [Enterprise Product Builder](catalog/pt-BR/skills.md#enterprise-product-builder) | Agent Skills | Skill para construir produtos web com padrão de empresa madura: discovery e métricas, ADRs, contratos de API/dados, design system, segurança OWASP ASVS, privacidade LGPD/GDPR, WCAG 2.2 AA, i18n, SLOs, CI/CD com rollback e revisão de release, com templates. | Todos os clientes |
+| [Super Autonomous Mission Loop](catalog/pt-BR/skills.md#super-autonomous-mission-loop) | Agent Skills | Skill para missões longas de engenharia que rodam até critérios objetivos de conclusão: autonomia delimitada, checkpoint em disco, recuperação após crash ou compactação de contexto, anti-loop, disciplina de Git, três auditorias independentes e release verificado. | Todos os clientes |
 
 ## Coleções
 
 Kits prontos para cenários comuns — instale o kit inteiro em um cliente com um único comando.
 
+- [Engenharia autônoma (stack DZ23)](collections/autonomous-engineering.md) — Subagentes multi-modelo com memória de missão compartilhada, skills de missão longa e de qualidade de produto, revisão responsável de origem por IA e acesso ao GitHub. (`aap collection autonomous-engineering --client <id>`)
 - [Kit inicial do DeepSeek Harness](collections/deepseek-harness-starter.md) — A loja de plugins, os plugins nativos mais usados do dsh (sidebar, painel de contexto, times de agentes, memória, auto-revisão) e servidores MCP e skills portáveis que também funcionam no dsh. (`aap collection deepseek-harness-starter --client <id>`)
 - [Desenvolvimento web full-stack](collections/fullstack-dev.md) — Documentação atualizada, navegador real para testes, navegação semântica de código, GitHub e rastreamento de erros. (`aap collection fullstack-dev --client <id>`)
 - [Criando seus próprios servidores MCP e skills](collections/mcp-builder.md) — As especificações, um inspetor para depurar servidores, um framework Python e o CLI para publicar/instalar skills. (`aap collection mcp-builder --client <id>`)
@@ -69,7 +73,7 @@ Kits prontos para cenários comuns — instale o kit inteiro em um cliente com u
 
 - [Padrões e especificações](catalog/pt-BR/standards.md) — 3 itens
 - [Registros, listas e gerenciadores](catalog/pt-BR/meta.md) — 11 itens + 4 alternativas incorporadas
-- [Skills](catalog/pt-BR/skills.md) — 19 itens + 7 alternativas incorporadas
+- [Skills e instruções](catalog/pt-BR/skills.md) — 23 itens + 7 alternativas incorporadas
 - [Inteligência de código](catalog/pt-BR/code-intel.md) — 1 itens
 - [Navegador e web](catalog/pt-BR/browser.md) — 11 itens + 9 alternativas incorporadas
 - [Documentação e conhecimento](catalog/pt-BR/docs.md) — 9 itens + 4 alternativas incorporadas
@@ -78,7 +82,7 @@ Kits prontos para cenários comuns — instale o kit inteiro em um cliente com u
 - [Desenvolvimento e runtime](catalog/pt-BR/dev.md) — 20 itens + 11 alternativas incorporadas
 - [Git e revisão de código](catalog/pt-BR/git.md) — 12 itens + 10 alternativas incorporadas
 - [Nuvem, dados e infra](catalog/pt-BR/cloud.md) — 4 itens
-- [Fluxo de trabalho e agentes](catalog/pt-BR/workflow.md) — 21 itens + 14 alternativas incorporadas
+- [Fluxo de trabalho e agentes](catalog/pt-BR/workflow.md) — 22 itens + 14 alternativas incorporadas
 - [Integrações e notificações](catalog/pt-BR/integrations.md) — 10 itens + 6 alternativas incorporadas
 - [Segurança e permissões](catalog/pt-BR/security.md) — 12 itens + 20 alternativas incorporadas
 - [Modelos e provedores](catalog/pt-BR/models.md) — 12 itens + 18 alternativas incorporadas
@@ -108,4 +112,4 @@ Adicione um arquivo YAML em `data/entries/` e abra um PR — os READMEs e as pá
 
 ## Licença
 
-Dados do catálogo: [CC0-1.0](LICENSE-DATA). Código (CLI e scripts): [MIT](LICENSE). Cada projeto listado mantém a própria licença.
+Dados do catálogo: [CC0-1.0](LICENSE-DATA). Código (CLI e scripts) e as skills/instruções hospedadas em [`skills/`](skills) e [`instructions/`](instructions): [MIT](LICENSE). Cada projeto listado mantém a própria licença.

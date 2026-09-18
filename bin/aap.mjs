@@ -36,11 +36,11 @@ export function parse(argv) {
 
 // --run only executes commands for known installers whose every token is free of
 // shell metacharacters, so catalog text can never smuggle extra shell syntax.
-const RUNNABLE = [/^claude mcp add /, /^codex mcp add /, /^gemini mcp add /, /^kiro-cli mcp add /, /^npx skills add /, /^dsh plugin /];
+const RUNNABLE = [/^claude mcp add /, /^codex mcp add /, /^gemini mcp add /, /^kiro-cli mcp add /, /^npx skills add /, /^dsh plugin /, /^gemini extensions install /];
 const SAFE_TOKEN = /^[\w@%+=:,./#-]+$/;
 export function unsafeToRun(text) {
   if (/[\r\n]/.test(text)) return 'multi-line commands are never run';
-  if (!RUNNABLE.some((re) => re.test(text))) return 'only claude/codex/gemini/kiro-cli "mcp add", "npx skills add" and "dsh plugin" commands can be run';
+  if (!RUNNABLE.some((re) => re.test(text))) return 'only claude/codex/gemini/kiro-cli "mcp add", "npx skills add", "gemini extensions install" and "dsh plugin" commands can be run';
   const bad = text.split(/ +/).find((t) => !SAFE_TOKEN.test(t));
   return bad ? `token ${JSON.stringify(bad)} contains characters that need shell quoting` : null;
 }
@@ -125,6 +125,8 @@ export function main(argv, { out = console.log, err = console.error, exec = spaw
       if (!a.run) return 0;
       if (r.kind !== 'cli' || r.lang === 'text') { err('\n--run only executes shell commands; merge the snippet above into the file shown.'); return 1; }
       if (/<[A-Z0-9_ -]+>/.test(r.text)) { err('\n--run refused: fill in the <PLACEHOLDERS> first and run the command yourself.'); return 1; }
+      const why = unsafeToRun(r.text);
+      if (why) { err(`\n--run refused: ${why}. Review the command above and run it yourself.`); return 1; }
       out('');
       const res = exec(r.text, { shell: true, stdio: 'inherit' });
       return res.status ?? 1;

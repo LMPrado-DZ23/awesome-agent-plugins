@@ -52,15 +52,14 @@ test('every client renders every MCP entry', () => {
 });
 
 test('client renderers match documented shapes', () => {
-  assert.equal(installFor(stdio, 'claude-code').text, "claude mcp add --transport stdio --env DEMO_KEY='<DEMO_KEY>' demo-mcp -- npx -y demo-mcp");
+  assert.equal(installFor(stdio, 'claude-code').text, "claude mcp add --transport stdio demo-mcp --env DEMO_KEY='<DEMO_KEY>' -- npx -y demo-mcp");
   assert.equal(installFor(stdio, 'codex').text, "codex mcp add demo-mcp --env DEMO_KEY='<DEMO_KEY>' -- npx -y demo-mcp");
   assert.match(installFor(http, 'codex').text, /bearer_token_env_var = "DEMO_TOKEN"/);
   assert.deepEqual(JSON.parse(installFor(stdio, 'cursor').text).mcpServers['demo-mcp'].args, ['-y', 'demo-mcp']);
   assert.equal(JSON.parse(installFor(http, 'windsurf').text).mcpServers['demo-http'].serverUrl, 'https://mcp.example.com/mcp');
   assert.deepEqual(JSON.parse(installFor(stdio, 'opencode').text).mcp['demo-mcp'].command, ['npx', '-y', 'demo-mcp']);
   assert.match(installFor(http, 'zed').text, /mcp-remote/);
-  // '-y' would be taken as a gemini flag → settings.json instead of CLI
-  assert.equal(installFor(stdio, 'gemini-cli').kind, 'config');
+  assert.equal(installFor(stdio, 'gemini-cli').text, "gemini mcp add -e DEMO_KEY='<DEMO_KEY>' demo-mcp npx -y demo-mcp");
   assert.equal(installFor({ ...stdio, mcp: { stdio: { command: 'uvx', args: ['srv'] } } }, 'gemini-cli').text, 'gemini mcp add demo-mcp uvx srv');
   assert.match(installFor(stdio, 'dsh').text, /@deepseek-ai\/dsh-mcp-client/);
   assert.equal(serverName({ id: 'x', mcp: { name: 'a b.c' } }), 'a-b-c');
@@ -126,6 +125,17 @@ test('--run only executes known installers with metacharacter-free tokens', () =
   assert.match(unsafeToRun('claude mcp add x -- sh -c "rm -rf ~"'), /quoting/);
   assert.match(unsafeToRun('npx skills add o/r; rm -rf ~'), /quoting/);
   assert.match(unsafeToRun('dsh plugin add x\nrm -rf ~'), /multi-line/);
+});
+
+test('install --run goes through the allowlist (curl-based installs are printed, never run)', () => {
+  const ran = [], err = [];
+  const io = { out: () => {}, err: (s) => err.push(s), exec: (cmd) => { ran.push(cmd); return { status: 0 }; } };
+  // instructions render as `curl … >> CLAUDE.md`: not an allowlisted installer
+  assert.equal(main(['install', 'responsible-ai-origin-analysis', '--client', 'claude-code', '--run'], io), 1);
+  assert.match(err.join('\n'), /only claude\/codex/);
+  // an allowlisted, placeholder-free command does run
+  assert.equal(main(['install', 'mcp-memory', '--client', 'claude-code', '--run'], io), 0);
+  assert.deepEqual(ran, ['claude mcp add --transport stdio memory -- npx -y @modelcontextprotocol/server-memory']);
 });
 
 test('validator blocks shell syntax in URLs, skill sources and native installs', () => {

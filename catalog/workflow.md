@@ -4,6 +4,7 @@
 
 > This page is generated from `data/entries/` — do not edit by hand.
 
+- [DZ23 Subagents Universal MCP](#dz23-subagents) — Self-hosted MCP router that delegates text/code tasks to many models with automatic failover, parallel role-ba…
 - [Multi-agent team orchestration](#dsh-dsh-agent-teams) — AgentTeams: coordinates multiple agents working together as a team on a shared task.
 - [Manage agent instruction rule files](#dsh-dsh-purge) — Adds a Settings UI to edit prompt-inject.md and manage AGENTS.md or CLAUDE.md rule sets, check for plugin upda…
 - [Novel-writing production workbench](#dsh-openwrite) — Novel-writing workbench for DSH with an authoring preset, outline and character management, manuscript annotat…
@@ -25,6 +26,221 @@
 - [Profile-wide governance and routing](#dsh-odai-odai-dsh-plugin) — Profile-wide governance and routing with a web control center for responsibility and evidence inspection, plus…
 - [Sequential Thinking (reference)](#sequential-thinking) — Structured step-by-step thinking tool: the agent records, revises and branches thoughts while solving a proble…
 - [Skill-driven loop engineering agent](#dsh-mstar-harness-dsh) — Skill-driven harness and loop-engineering workflow agent plugin.
+
+<a id="dz23-subagents"></a>
+
+### DZ23 Subagents Universal MCP
+
+[DZ23 Subagents Universal MCP](https://github.com/LMPrado-DZ23/dz23-subagents-universal-mcp) — `MCP server` · License: MIT · Works with: All clients
+
+Self-hosted MCP router that delegates text/code tasks to many models with automatic failover, parallel role-based subagents (architect, backend, security, QA…), consensus and mission memory shared across harnesses. Node.js 22+, no runtime dependencies.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+Prerequisite: `git clone https://github.com/LMPrado-DZ23/dz23-subagents-universal-mcp <DZ23_DIR> && cd <DZ23_DIR> && cp .env.example .env (add your provider keys) && node src/index.js doctor`
+
+```bash
+claude mcp add --transport stdio dz23-subagents -- node '<DZ23_DIR>/src/index.js' --stdio
+```
+
+**Codex CLI**
+
+Prerequisite: `git clone https://github.com/LMPrado-DZ23/dz23-subagents-universal-mcp <DZ23_DIR> && cd <DZ23_DIR> && cp .env.example .env (add your provider keys) && node src/index.js doctor`
+
+```bash
+codex mcp add dz23-subagents -- node '<DZ23_DIR>/src/index.js' --stdio
+```
+
+**Gemini CLI**
+
+Prerequisite: `git clone https://github.com/LMPrado-DZ23/dz23-subagents-universal-mcp <DZ23_DIR> && cd <DZ23_DIR> && cp .env.example .env (add your provider keys) && node src/index.js doctor`
+
+```bash
+gemini mcp add dz23-subagents node '<DZ23_DIR>/src/index.js' --stdio
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+Prerequisite: `git clone https://github.com/LMPrado-DZ23/dz23-subagents-universal-mcp <DZ23_DIR> && cd <DZ23_DIR> && cp .env.example .env (add your provider keys) && node src/index.js doctor`
+
+```json
+{
+  "mcpServers": {
+    "dz23-subagents": {
+      "command": "node",
+      "args": [
+        "<DZ23_DIR>/src/index.js",
+        "--stdio"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+Prerequisite: `git clone https://github.com/LMPrado-DZ23/dz23-subagents-universal-mcp <DZ23_DIR> && cd <DZ23_DIR> && cp .env.example .env (add your provider keys) && node src/index.js doctor`
+
+```json
+{
+  "servers": {
+    "dz23-subagents": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "<DZ23_DIR>/src/index.js",
+        "--stdio"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+Prerequisite: `git clone https://github.com/LMPrado-DZ23/dz23-subagents-universal-mcp <DZ23_DIR> && cd <DZ23_DIR> && cp .env.example .env (add your provider keys) && node src/index.js doctor`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "dz23-subagents": {
+      "type": "local",
+      "command": [
+        "node",
+        "<DZ23_DIR>/src/index.js",
+        "--stdio"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+Prerequisite: `git clone https://github.com/LMPrado-DZ23/dz23-subagents-universal-mcp <DZ23_DIR> && cd <DZ23_DIR> && cp .env.example .env (add your provider keys) && node src/index.js doctor`
+
+```json
+{
+  "mcpServers": {
+    "dz23-subagents": {
+      "command": "node",
+      "args": [
+        "<DZ23_DIR>/src/index.js",
+        "--stdio"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+Prerequisite: `git clone https://github.com/LMPrado-DZ23/dz23-subagents-universal-mcp <DZ23_DIR> && cd <DZ23_DIR> && cp .env.example .env (add your provider keys) && node src/index.js doctor`
+
+```json
+{
+  "mcpServers": {
+    "dz23-subagents": {
+      "command": "node",
+      "args": [
+        "<DZ23_DIR>/src/index.js",
+        "--stdio"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+Prerequisite: `git clone https://github.com/LMPrado-DZ23/dz23-subagents-universal-mcp <DZ23_DIR> && cd <DZ23_DIR> && cp .env.example .env (add your provider keys) && node src/index.js doctor`
+
+```json
+{
+  "context_servers": {
+    "dz23-subagents": {
+      "source": "custom",
+      "command": "node",
+      "args": [
+        "<DZ23_DIR>/src/index.js",
+        "--stdio"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+Prerequisite: `git clone https://github.com/LMPrado-DZ23/dz23-subagents-universal-mcp <DZ23_DIR> && cd <DZ23_DIR> && cp .env.example .env (add your provider keys) && node src/index.js doctor`
+
+```yaml
+extensions:
+  dz23-subagents:
+    type: stdio
+    cmd: node
+    args: ["<DZ23_DIR>/src/index.js","--stdio"]
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+Prerequisite: `git clone https://github.com/LMPrado-DZ23/dz23-subagents-universal-mcp <DZ23_DIR> && cd <DZ23_DIR> && cp .env.example .env (add your provider keys) && node src/index.js doctor`
+
+```json
+{
+  "mcpServers": {
+    "dz23-subagents": {
+      "command": "node",
+      "args": [
+        "<DZ23_DIR>/src/index.js",
+        "--stdio"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+Prerequisite: `git clone https://github.com/LMPrado-DZ23/dz23-subagents-universal-mcp <DZ23_DIR> && cd <DZ23_DIR> && cp .env.example .env (add your provider keys) && node src/index.js doctor`
+
+```json
+{
+  "mcpServers": {
+    "dz23-subagents": {
+      "command": "node",
+      "args": [
+        "<DZ23_DIR>/src/index.js",
+        "--stdio"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `dz23-subagents.cordis.yml  →  dsh web --patch ./dz23-subagents.cordis.yml`
+
+Prerequisite: `git clone https://github.com/LMPrado-DZ23/dz23-subagents-universal-mcp <DZ23_DIR> && cd <DZ23_DIR> && cp .env.example .env (add your provider keys) && node src/index.js doctor`
+
+```yaml
+- insert:
+    - id: mcp-dz23-subagents
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: dz23-subagents
+        transport: stdio
+        command: node
+        args: ["<DZ23_DIR>/src/index.js","--stdio"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
 
 <a id="dsh-dsh-agent-teams"></a>
 
@@ -425,20 +641,10 @@ claude mcp add --transport stdio sequential-thinking -- npx -y @modelcontextprot
 codex mcp add sequential-thinking -- npx -y @modelcontextprotocol/server-sequential-thinking
 ```
 
-**Gemini CLI** — File: `~/.gemini/settings.json (or .gemini/settings.json)`
+**Gemini CLI**
 
-```json
-{
-  "mcpServers": {
-    "sequential-thinking": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-sequential-thinking"
-      ]
-    }
-  }
-}
+```bash
+gemini mcp add sequential-thinking npx -y @modelcontextprotocol/server-sequential-thinking
 ```
 
 **Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`

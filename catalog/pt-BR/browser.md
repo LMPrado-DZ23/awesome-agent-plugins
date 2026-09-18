@@ -38,20 +38,10 @@ claude mcp add --transport stdio chrome-devtools -- npx -y chrome-devtools-mcp@l
 codex mcp add chrome-devtools -- npx -y chrome-devtools-mcp@latest
 ```
 
-**Gemini CLI** — Arquivo: `~/.gemini/settings.json (or .gemini/settings.json)`
+**Gemini CLI**
 
-```json
-{
-  "mcpServers": {
-    "chrome-devtools": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "chrome-devtools-mcp@latest"
-      ]
-    }
-  }
-}
+```bash
+gemini mcp add chrome-devtools npx -y chrome-devtools-mcp@latest
 ```
 
 **Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
@@ -409,7 +399,7 @@ Scraping, crawling, busca e extração estruturada da web para agentes via API F
 **Claude Code**
 
 ```bash
-claude mcp add --transport stdio --env FIRECRAWL_API_KEY='<FIRECRAWL_API_KEY>' firecrawl -- npx -y firecrawl-mcp
+claude mcp add --transport stdio firecrawl --env FIRECRAWL_API_KEY='<FIRECRAWL_API_KEY>' -- npx -y firecrawl-mcp
 ```
 
 **Codex CLI**
@@ -418,23 +408,10 @@ claude mcp add --transport stdio --env FIRECRAWL_API_KEY='<FIRECRAWL_API_KEY>' f
 codex mcp add firecrawl --env FIRECRAWL_API_KEY='<FIRECRAWL_API_KEY>' -- npx -y firecrawl-mcp
 ```
 
-**Gemini CLI** — Arquivo: `~/.gemini/settings.json (or .gemini/settings.json)`
+**Gemini CLI**
 
-```json
-{
-  "mcpServers": {
-    "firecrawl": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "firecrawl-mcp"
-      ],
-      "env": {
-        "FIRECRAWL_API_KEY": "<FIRECRAWL_API_KEY>"
-      }
-    }
-  }
-}
+```bash
+gemini mcp add -e FIRECRAWL_API_KEY='<FIRECRAWL_API_KEY>' firecrawl npx -y firecrawl-mcp
 ```
 
 **Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`

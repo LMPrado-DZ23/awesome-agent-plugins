@@ -1,4 +1,4 @@
-# Skills
+# Skills e instruções
 
 [← Voltar ao índice](../../README.pt-BR.md)
 
@@ -6,6 +6,8 @@
 
 - [Superpowers](#superpowers) — Biblioteca de skills e metodologia de desenvolvimento: brainstorming, planejamento, TDD, depuração sistemática…
 - [Anthropic Skills](#anthropic-skills) — Agent Skills de referência da Anthropic: PDF, DOCX, XLSX e PPTX, skill-creator, construtor de MCP, design de f…
+- [Enterprise Product Builder](#enterprise-product-builder) — Skill para construir produtos web com padrão de empresa madura: discovery e métricas, ADRs, contratos de API/d…
+- [Super Autonomous Mission Loop](#super-autonomous-mission-loop) — Skill para missões longas de engenharia que rodam até critérios objetivos de conclusão: autonomia delimitada, …
 - [Vercel Agent Skills](#vercel-agent-skills) — Coleção de skills da Vercel para desenvolvimento web, incluindo boas práticas de React e diretrizes de design …
 - [Supabase Agent Skills](#supabase-agent-skills) — Skills oficiais que guiam agentes no desenvolvimento com Supabase: banco de dados, auth, RLS e práticas de seg…
 - [Software-engineering method pack](#dsh-aegis) — Pacote de métodos para agentes de codificação cobrindo planejamento com baseline primeiro, depuração sistemáti…
@@ -22,7 +24,9 @@
 - [Programmatic video with React](#dsh-dsh-remotion) — Skill oficial do Remotion portada para o DSH: vídeo programático com React cobrindo animação, áudio, legendas,…
 - [273 ECC operator skills ported](#dsh-dsh-ecc) — Porta 273 skills do ECC, 95,8% do sistema operador original de 227 mil estrelas, para o DSH em quatro lotes de…
 - [HyperFrames HTML video skills](#dsh-dsh-hyperframes) — Vinte skills HyperFrames da HeyGen sincronizadas do projeto original: criação de vídeo em HTML, animação, keyf…
+- [AI Origin Analysis](#ai-origin-analysis) — Skill para avaliar se texto, código ou repositório pode ter sido gerado por IA sem tratar estilo como prova: h…
 - [Clean AI traces from Russian text](#dsh-humanizer-ru-dsh) — Remove marcas de IA de textos em russo: encontra artefatos de copiar-colar de ferramentas de IA populares, rem…
+- [Responsible AI-origin analysis rules](#responsible-ai-origin-analysis) — Instrução permanente de projeto para qualquer agente: nunca tratar um padrão isolado como prova de autoria por…
 
 <a id="superpowers"></a>
 
@@ -200,6 +204,186 @@ npx skills add anthropics/skills -a roo -g
 
 ```bash
 npx skills add anthropics/skills -a universal
+```
+
+</details>
+
+<a id="enterprise-product-builder"></a>
+
+### Enterprise Product Builder
+
+[Enterprise Product Builder](https://github.com/LMPrado-DZ23/awesome-agent-plugins/tree/main/skills/enterprise-product-builder) — `Agent Skills` · Licença: MIT · Funciona com: Todos os clientes
+
+Skill para construir produtos web com padrão de empresa madura: discovery e métricas, ADRs, contratos de API/dados, design system, segurança OWASP ASVS, privacidade LGPD/GDPR, WCAG 2.2 AA, i18n, SLOs, CI/CD com rollback e revisão de release, com templates.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill enterprise-product-builder -a claude-code -g
+```
+
+**Codex CLI**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill enterprise-product-builder -a codex -g
+```
+
+**Gemini CLI**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill enterprise-product-builder -a gemini-cli -g
+```
+
+**Cursor**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill enterprise-product-builder -a cursor -g
+```
+
+**VS Code (Copilot)**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill enterprise-product-builder -a github-copilot -g
+```
+
+**OpenCode**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill enterprise-product-builder -a opencode -g
+```
+
+**Cline**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill enterprise-product-builder -a cline -g
+```
+
+**Windsurf**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill enterprise-product-builder -a windsurf -g
+```
+
+**Zed**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill enterprise-product-builder -a zed -g
+```
+
+**Goose**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill enterprise-product-builder -a goose -g
+```
+
+**Kiro**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill enterprise-product-builder -a kiro-cli -g
+```
+
+**Roo Code**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill enterprise-product-builder -a roo -g
+```
+
+**DeepSeek Harness**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill enterprise-product-builder -a universal
+```
+
+</details>
+
+<a id="super-autonomous-mission-loop"></a>
+
+### Super Autonomous Mission Loop
+
+[Super Autonomous Mission Loop](https://github.com/LMPrado-DZ23/awesome-agent-plugins/tree/main/skills/super-autonomous-mission-loop) — `Agent Skills` · Licença: MIT · Funciona com: Todos os clientes
+
+Skill para missões longas de engenharia que rodam até critérios objetivos de conclusão: autonomia delimitada, checkpoint em disco, recuperação após crash ou compactação de contexto, anti-loop, disciplina de Git, três auditorias independentes e release verificado.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill super-autonomous-mission-loop -a claude-code -g
+```
+
+**Codex CLI**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill super-autonomous-mission-loop -a codex -g
+```
+
+**Gemini CLI**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill super-autonomous-mission-loop -a gemini-cli -g
+```
+
+**Cursor**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill super-autonomous-mission-loop -a cursor -g
+```
+
+**VS Code (Copilot)**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill super-autonomous-mission-loop -a github-copilot -g
+```
+
+**OpenCode**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill super-autonomous-mission-loop -a opencode -g
+```
+
+**Cline**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill super-autonomous-mission-loop -a cline -g
+```
+
+**Windsurf**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill super-autonomous-mission-loop -a windsurf -g
+```
+
+**Zed**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill super-autonomous-mission-loop -a zed -g
+```
+
+**Goose**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill super-autonomous-mission-loop -a goose -g
+```
+
+**Kiro**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill super-autonomous-mission-loop -a kiro-cli -g
+```
+
+**Roo Code**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill super-autonomous-mission-loop -a roo -g
+```
+
+**DeepSeek Harness**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill super-autonomous-mission-loop -a universal
 ```
 
 </details>
@@ -655,6 +839,96 @@ dsh plugin --profile web add github:STARDUSTLC666/dsh-hyperframes
 
 </details>
 
+<a id="ai-origin-analysis"></a>
+
+### AI Origin Analysis
+
+[AI Origin Analysis](https://github.com/LMPrado-DZ23/awesome-agent-plugins/tree/main/skills/ai-origin-analysis) — `Agent Skills` · Licença: MIT · Funciona com: Todos os clientes
+
+Skill para avaliar se texto, código ou repositório pode ter sido gerado por IA sem tratar estilo como prova: hierarquia de evidências, sinais independentes, explicações alternativas, níveis de confiança e relatório focado em correção.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill ai-origin-analysis -a claude-code -g
+```
+
+**Codex CLI**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill ai-origin-analysis -a codex -g
+```
+
+**Gemini CLI**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill ai-origin-analysis -a gemini-cli -g
+```
+
+**Cursor**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill ai-origin-analysis -a cursor -g
+```
+
+**VS Code (Copilot)**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill ai-origin-analysis -a github-copilot -g
+```
+
+**OpenCode**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill ai-origin-analysis -a opencode -g
+```
+
+**Cline**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill ai-origin-analysis -a cline -g
+```
+
+**Windsurf**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill ai-origin-analysis -a windsurf -g
+```
+
+**Zed**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill ai-origin-analysis -a zed -g
+```
+
+**Goose**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill ai-origin-analysis -a goose -g
+```
+
+**Kiro**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill ai-origin-analysis -a kiro-cli -g
+```
+
+**Roo Code**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill ai-origin-analysis -a roo -g
+```
+
+**DeepSeek Harness**
+
+```bash
+npx skills add LMPrado-DZ23/awesome-agent-plugins --skill ai-origin-analysis -a universal
+```
+
+</details>
+
 <a id="dsh-humanizer-ru-dsh"></a>
 
 ### Clean AI traces from Russian text
@@ -669,6 +943,96 @@ Remove marcas de IA de textos em russo: encontra artefatos de copiar-colar de fe
 
 ```bash
 dsh plugin --profile web add github:Vladimir-Human/humanizer-ru#path:/dsh
+```
+
+</details>
+
+<a id="responsible-ai-origin-analysis"></a>
+
+### Responsible AI-origin analysis rules
+
+[Responsible AI-origin analysis (permanent instruction, pt-BR)](https://github.com/LMPrado-DZ23/awesome-agent-plugins/blob/main/instructions/responsible-ai-origin-analysis.pt-BR.md) — `Instruções para agentes` · Licença: MIT · Funciona com: Todos os clientes
+
+Instrução permanente de projeto para qualquer agente: nunca tratar um padrão isolado como prova de autoria por IA, separar quatro níveis de evidência, exigir sinais convergentes, proteger pessoas de acusações sem base e corrigir o defeito concreto. Complementa a skill ai-origin-analysis.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/LMPrado-DZ23/awesome-agent-plugins/main/instructions/responsible-ai-origin-analysis.pt-BR.md >> CLAUDE.md
+```
+
+**Codex CLI**
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/LMPrado-DZ23/awesome-agent-plugins/main/instructions/responsible-ai-origin-analysis.pt-BR.md >> AGENTS.md
+```
+
+**Gemini CLI**
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/LMPrado-DZ23/awesome-agent-plugins/main/instructions/responsible-ai-origin-analysis.pt-BR.md >> GEMINI.md
+```
+
+**Cursor**
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/LMPrado-DZ23/awesome-agent-plugins/main/instructions/responsible-ai-origin-analysis.pt-BR.md >> AGENTS.md
+```
+
+**VS Code (Copilot)**
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/LMPrado-DZ23/awesome-agent-plugins/main/instructions/responsible-ai-origin-analysis.pt-BR.md >> .github/copilot-instructions.md
+```
+
+**OpenCode**
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/LMPrado-DZ23/awesome-agent-plugins/main/instructions/responsible-ai-origin-analysis.pt-BR.md >> AGENTS.md
+```
+
+**Cline**
+
+```bash
+mkdir -p .clinerules && curl -fsSL https://raw.githubusercontent.com/LMPrado-DZ23/awesome-agent-plugins/main/instructions/responsible-ai-origin-analysis.pt-BR.md -o .clinerules/responsible-ai-origin-analysis.md
+```
+
+**Windsurf**
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/LMPrado-DZ23/awesome-agent-plugins/main/instructions/responsible-ai-origin-analysis.pt-BR.md >> AGENTS.md
+```
+
+**Zed**
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/LMPrado-DZ23/awesome-agent-plugins/main/instructions/responsible-ai-origin-analysis.pt-BR.md >> AGENTS.md
+```
+
+**Goose**
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/LMPrado-DZ23/awesome-agent-plugins/main/instructions/responsible-ai-origin-analysis.pt-BR.md >> .goosehints
+```
+
+**Kiro**
+
+```bash
+mkdir -p .kiro/steering && curl -fsSL https://raw.githubusercontent.com/LMPrado-DZ23/awesome-agent-plugins/main/instructions/responsible-ai-origin-analysis.pt-BR.md -o .kiro/steering/responsible-ai-origin-analysis.md
+```
+
+**Roo Code**
+
+```bash
+mkdir -p .roo/rules && curl -fsSL https://raw.githubusercontent.com/LMPrado-DZ23/awesome-agent-plugins/main/instructions/responsible-ai-origin-analysis.pt-BR.md -o .roo/rules/responsible-ai-origin-analysis.md
+```
+
+**DeepSeek Harness**
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/LMPrado-DZ23/awesome-agent-plugins/main/instructions/responsible-ai-origin-analysis.pt-BR.md >> AGENTS.md
 ```
 
 </details>

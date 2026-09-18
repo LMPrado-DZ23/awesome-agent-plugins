@@ -1,0 +1,8 @@
+id: autonomous-engineering
+title:
+  en: Autonomous engineering (DZ23 stack)
+  pt: Engenharia autônoma (stack DZ23)
+description:
+  en: Multi-model subagents with shared mission memory, long-mission and product-quality skills, responsible AI-origin review, and GitHub access.
+  pt: Subagentes multi-modelo com memória de missão compartilhada, skills de missão longa e de qualidade de produto, revisão responsável de origem por IA e acesso ao GitHub.
+entries: [dz23-subagents, super-autonomous-mission-loop, enterprise-product-builder, ai-origin-analysis, responsible-ai-origin-analysis, superpowers, github-mcp-server]

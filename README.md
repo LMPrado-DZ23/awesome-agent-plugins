@@ -4,7 +4,7 @@
 
 > One catalog of **MCP servers, Agent Skills and native plugins** for AI coding agents — with the exact install command for *your* client.
 
-![entries](https://img.shields.io/badge/entries-259-blue) ![projects](https://img.shields.io/badge/projects-456-blue) ![clients](https://img.shields.io/badge/clients-13-green)
+![entries](https://img.shields.io/badge/entries-264-blue) ![projects](https://img.shields.io/badge/projects-461-blue) ![clients](https://img.shields.io/badge/clients-13-green)
 
 Most lists are tied to one client. Here every entry says which agents it works with, and install instructions are generated per client from a single canonical spec, so they stay consistent. Near-duplicate plugins are folded into one entry that points to the best option and lists what each alternative adds.
 
@@ -55,11 +55,15 @@ npx github:LMPrado-DZ23/awesome-agent-plugins install anthropic-skills --client 
 | [Model Context Protocol](catalog/standards.md#model-context-protocol) ★9.3k | Standard / spec | Specification and documentation for MCP, the open protocol every client in this list uses to connect agents to tools, data and prompts. | — |
 | [MCP Registry](catalog/meta.md#mcp-registry) ★7.3k | Curated list / registry | Official community-driven registry service for MCP servers, with a public API for discovering published servers and their install metadata. | — |
 | [dsh-market](catalog/meta.md#dsh-market) ★4.1k | Plugin marketplace | Plugin market inside DeepSeek Harness Settings: search, one-click install/upgrade and theme switching for every plugin in awesome-dsh-plugin. | DeepSeek Harness only |
+| [DZ23 Subagents Universal MCP](catalog/workflow.md#dz23-subagents) | MCP server | Self-hosted MCP router that delegates text/code tasks to many models with automatic failover, parallel role-based subagents (architect, backend, security, QA…), consensus and mission memory shared across harnesses. Node.js 22+, no runtime dependencies. | All clients |
+| [Enterprise Product Builder](catalog/skills.md#enterprise-product-builder) | Agent Skills | Skill for building web products to mature-company standards: discovery and metrics, ADRs, API/data contracts, design system, OWASP ASVS security, LGPD/GDPR privacy, WCAG 2.2 AA, i18n, SLOs, CI/CD with rollback and release review, plus templates. | All clients |
+| [Super Autonomous Mission Loop](catalog/skills.md#super-autonomous-mission-loop) | Agent Skills | Skill for long engineering missions that run until objective completion criteria: bounded autonomy, on-disk checkpoints, recovery after crash or context compaction, anti-loop rules, Git discipline, three independent audits and verified release. | All clients |
 
 ## Collections
 
 Ready-made kits for common setups — install a whole kit on one client with a single command.
 
+- [Autonomous engineering (DZ23 stack)](collections/autonomous-engineering.md) — Multi-model subagents with shared mission memory, long-mission and product-quality skills, responsible AI-origin review, and GitHub access. (`aap collection autonomous-engineering --client <id>`)
 - [DeepSeek Harness starter kit](collections/deepseek-harness-starter.md) — The plugin market, the most-used native dsh plugins (sidebar, context dashboard, agent teams, memory, auto-review) and portable MCP servers and skills that also work in dsh. (`aap collection deepseek-harness-starter --client <id>`)
 - [Full-stack web development](collections/fullstack-dev.md) — Up-to-date docs, a real browser for testing, semantic code navigation, GitHub and error tracking. (`aap collection fullstack-dev --client <id>`)
 - [Building your own MCP servers and skills](collections/mcp-builder.md) — The specs, an inspector to debug servers, a Python framework, and the CLI to publish/install skills. (`aap collection mcp-builder --client <id>`)
@@ -69,7 +73,7 @@ Ready-made kits for common setups — install a whole kit on one client with a s
 
 - [Standards & Specs](catalog/standards.md) — 3 entries
 - [Registries, Lists & Plugin Managers](catalog/meta.md) — 11 entries + 4 alternatives folded in
-- [Skills](catalog/skills.md) — 19 entries + 7 alternatives folded in
+- [Skills & Instructions](catalog/skills.md) — 23 entries + 7 alternatives folded in
 - [Code Intelligence](catalog/code-intel.md) — 1 entries
 - [Browser & Web](catalog/browser.md) — 11 entries + 9 alternatives folded in
 - [Docs & Knowledge](catalog/docs.md) — 9 entries + 4 alternatives folded in
@@ -78,7 +82,7 @@ Ready-made kits for common setups — install a whole kit on one client with a s
 - [Development & Runtime](catalog/dev.md) — 20 entries + 11 alternatives folded in
 - [Git & Code Review](catalog/git.md) — 12 entries + 10 alternatives folded in
 - [Cloud, Data & Infra](catalog/cloud.md) — 4 entries
-- [Workflow & Agents](catalog/workflow.md) — 21 entries + 14 alternatives folded in
+- [Workflow & Agents](catalog/workflow.md) — 22 entries + 14 alternatives folded in
 - [Integrations & Notifications](catalog/integrations.md) — 10 entries + 6 alternatives folded in
 - [Security & Permissions](catalog/security.md) — 12 entries + 20 alternatives folded in
 - [Models & Providers](catalog/models.md) — 12 entries + 18 alternatives folded in
@@ -108,4 +112,4 @@ Add one YAML file under `data/entries/` and open a PR — READMEs and catalog pa
 
 ## License
 
-Catalog data: [CC0-1.0](LICENSE-DATA). Code (CLI and scripts): [MIT](LICENSE). Each listed project keeps its own license.
+Catalog data: [CC0-1.0](LICENSE-DATA). Code (CLI and scripts) and the skills/instructions hosted in [`skills/`](skills) and [`instructions/`](instructions): [MIT](LICENSE). Each listed project keeps its own license.

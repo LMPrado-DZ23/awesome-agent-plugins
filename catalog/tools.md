@@ -54,20 +54,10 @@ claude mcp add --transport stdio desktop-commander -- npx -y @wonderwhy-er/deskt
 codex mcp add desktop-commander -- npx -y @wonderwhy-er/desktop-commander@latest
 ```
 
-**Gemini CLI** — File: `~/.gemini/settings.json (or .gemini/settings.json)`
+**Gemini CLI**
 
-```json
-{
-  "mcpServers": {
-    "desktop-commander": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@wonderwhy-er/desktop-commander@latest"
-      ]
-    }
-  }
-}
+```bash
+gemini mcp add desktop-commander npx -y @wonderwhy-er/desktop-commander@latest
 ```
 
 **Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
@@ -699,21 +689,10 @@ claude mcp add --transport stdio filesystem -- npx -y @modelcontextprotocol/serv
 codex mcp add filesystem -- npx -y @modelcontextprotocol/server-filesystem '<ALLOWED_DIR>'
 ```
 
-**Gemini CLI** — File: `~/.gemini/settings.json (or .gemini/settings.json)`
+**Gemini CLI**
 
-```json
-{
-  "mcpServers": {
-    "filesystem": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-filesystem",
-        "<ALLOWED_DIR>"
-      ]
-    }
-  }
-}
+```bash
+gemini mcp add filesystem npx -y @modelcontextprotocol/server-filesystem '<ALLOWED_DIR>'
 ```
 
 **Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`

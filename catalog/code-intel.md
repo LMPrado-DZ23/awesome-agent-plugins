@@ -32,22 +32,12 @@ Prerequisite: `uv tool install -p 3.13 serena-agent && serena init`
 codex mcp add serena -- serena start-mcp-server --project-from-cwd
 ```
 
-**Gemini CLI** — File: `~/.gemini/settings.json (or .gemini/settings.json)`
+**Gemini CLI**
 
 Prerequisite: `uv tool install -p 3.13 serena-agent && serena init`
 
-```json
-{
-  "mcpServers": {
-    "serena": {
-      "command": "serena",
-      "args": [
-        "start-mcp-server",
-        "--project-from-cwd"
-      ]
-    }
-  }
-}
+```bash
+gemini mcp add serena serena start-mcp-server --project-from-cwd
 ```
 
 **Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
