@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: ktx
+name: Kaelio/ktx
+title: Analytics context layer skills
+url: https://github.com/Kaelio/ktx
+type: skill-pack
+category: integrations
+license: Apache-2.0
+tags:
+  - data-analytics
+  - dbt
+  - business-intelligence
+description:
+  en: >-
+    Executable context skills that let data and analytics agents query dbt, Looker, LookML, Metabase and MetricFlow
+    accurately by ingesting each tool's real semantic layer.
+  pt: >-
+    Skills de contexto executável que permitem a agentes de dados e analytics consultar dbt, Looker, LookML, Metabase e
+    MetricFlow com precisão, ingerindo a camada semântica real de cada ferramenta.
+skill:
+  source: Kaelio/ktx
+origin:
+  list: github-discovery
+  ref: skill-pack

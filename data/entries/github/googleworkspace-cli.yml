@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: googleworkspace-cli
+name: googleworkspace/cli
+title: Google Workspace CLI
+url: https://github.com/googleworkspace/cli
+type: native-plugin
+category: integrations
+license: Apache-2.0
+tags:
+  - integrations
+  - google-workspace
+  - cli
+description:
+  en: >-
+    One command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat and Admin, generated dynamically from the
+    Google Discovery Service and bundled with AI agent skills.
+  pt: >-
+    Ferramenta de linha de comando única para Drive, Gmail, Calendar, Sheets, Docs, Chat e Admin, gerada dinamicamente a
+    partir do Google Discovery Service e acompanhada de agent skills.
+native:
+  client: gemini-cli
+  install: gemini extensions install https://github.com/googleworkspace/cli
+origin:
+  list: github-discovery
+  ref: gemini-extension

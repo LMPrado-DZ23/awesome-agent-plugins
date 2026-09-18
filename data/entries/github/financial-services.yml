@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: financial-services
+name: anthropics/financial-services
+title: Anthropic financial services skills
+url: https://github.com/anthropics/financial-services
+type: skill-pack
+category: skills
+license: Apache-2.0
+tags:
+  - finance
+  - skills
+  - official
+description:
+  en: Official Anthropic skill pack for financial services workflows, bundling 120 skills, 16 agents and 50 commands.
+  pt: >-
+    Pacote oficial de skills da Anthropic para fluxos de serviços financeiros, reunindo 120 skills, 16 agentes e 50
+    comandos.
+skill:
+  source: anthropics/financial-services
+alternatives:
+  - name: himself65/finance-skills
+    url: https://github.com/himself65/finance-skills
+    adds:
+      en: >-
+        Smaller, community-made collection of skills focused on personal AI financial analysis rather than enterprise
+        services.
+      pt: >-
+        Coleção menor, feita pela comunidade, focada em análise financeira pessoal por IA em vez de serviços
+        corporativos.
+origin:
+  list: github-discovery
+  ref: claude-marketplace

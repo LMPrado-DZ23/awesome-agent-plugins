@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: heroui
+name: heroui-inc/heroui
+title: HeroUI React component skills
+url: https://github.com/heroui-inc/heroui
+type: skill-pack
+category: dev
+license: Apache-2.0
+tags:
+  - react
+  - ui-components
+  - design-system
+description:
+  en: >-
+    Official skills from the HeroUI (formerly NextUI) React component library covering migration, React Native usage and
+    general React integration.
+  pt: >-
+    Skills oficiais da biblioteca de componentes React HeroUI (antes NextUI) cobrindo migração, uso em React Native e
+    integração geral com React.
+skill:
+  source: heroui-inc/heroui
+origin:
+  list: github-discovery
+  ref: skill-pack

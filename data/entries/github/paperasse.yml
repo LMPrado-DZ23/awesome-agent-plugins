@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: paperasse
+name: romainsimon/paperasse
+title: French bureaucracy skills
+url: https://github.com/romainsimon/paperasse
+type: skill-pack
+category: skills
+license: MIT
+tags:
+  - legal
+  - accounting
+  - france
+description:
+  en: >-
+    Skills for AI agents specialized in French administrative and accounting paperwork: accountant, notary, tax auditor,
+    tax specialist and condominium syndic roles.
+  pt: >-
+    Skills para agentes de IA especializados em burocracia administrativa e contábil francesa: papéis de contador,
+    notário, auditor fiscal, especialista tributário e síndico predial.
+skill:
+  source: romainsimon/paperasse
+origin:
+  list: github-discovery
+  ref: skill-pack

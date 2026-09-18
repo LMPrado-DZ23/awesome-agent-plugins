@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: drama-skills
+name: zenstory-ai/drama-skills
+title: Short-drama production skills
+url: https://github.com/zenstory-ai/drama-skills
+type: skill-pack
+category: multimodal
+license: MIT
+tags:
+  - short-drama
+  - video-production
+  - storytelling
+description:
+  en: >-
+    Open-source skill collection for AI short-drama and comic-drama creation: scripts, character assets, storyboards,
+    image/video prompts and review, for Claude Code and Codex.
+  pt: >-
+    Coleção open-source de skills para criação de curtas dramas e drama em quadrinhos por IA: roteiros, assets de
+    personagens, storyboards, prompts de imagem/vídeo e revisão, para Claude Code e Codex.
+skill:
+  source: zenstory-ai/drama-skills
+alternatives:
+  - name: eternityspring/shuohao-skills
+    url: https://github.com/eternityspring/shuohao-skills
+    adds:
+      en: Smaller, similarly scoped skill set for character breakdown, outlining and shot lists.
+      pt: Conjunto menor e com escopo parecido para quebra de personagens, roteiro e lista de planos.
+origin:
+  list: github-discovery
+  ref: skill-pack

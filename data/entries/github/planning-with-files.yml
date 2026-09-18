@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: planning-with-files
+name: OthmanAdi/planning-with-files
+title: Crash-proof file-based planning
+url: https://github.com/OthmanAdi/planning-with-files
+type: skill-pack
+category: workflow
+license: MIT
+tags:
+  - planning
+  - workflow
+  - context
+description:
+  en: >-
+    Persistent, file-based planning for AI coding agents and long-running tasks: crash-proof markdown plans, session
+    recovery after /clear or compaction, and a deterministic completion gate.
+  pt: >-
+    Planejamento persistente e baseado em arquivos para agentes de código em tarefas longas: planos em markdown
+    resistentes a falhas, recuperação de sessão após /clear ou compactação e um portão determinístico de conclusão.
+skill:
+  source: OthmanAdi/planning-with-files
+origin:
+  list: github-discovery
+  ref: claude-marketplace

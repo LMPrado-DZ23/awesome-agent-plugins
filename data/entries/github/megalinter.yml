@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: megalinter
+name: oxsecurity/megalinter
+title: MegaLinter
+url: https://github.com/oxsecurity/megalinter
+type: skill-pack
+category: security
+license: AGPL-3.0
+tags:
+  - security
+  - linting
+  - ci
+description:
+  en: >-
+    Analyzes 50 languages and 22 formats for excessive copy-paste, spelling mistakes and security issues, usable as a
+    GitHub Action, other CI or locally.
+  pt: >-
+    Analisa 50 linguagens e 22 formatos em busca de copy-paste excessivo, erros ortográficos e problemas de segurança,
+    utilizável como GitHub Action, em outra CI ou localmente.
+skill:
+  source: oxsecurity/megalinter
+origin:
+  list: github-discovery
+  ref: claude-marketplace

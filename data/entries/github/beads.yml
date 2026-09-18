@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: beads
+name: gastownhall/beads
+title: Beads agent memory & task tracking
+url: https://github.com/gastownhall/beads
+type: skill-pack
+category: workflow
+license: MIT
+tags:
+  - memory
+  - workflow
+  - task-tracking
+description:
+  en: A combined memory and task-tracking upgrade for coding agents, giving them durable state across long-running work.
+  pt: >-
+    Um upgrade combinado de memória e rastreamento de tarefas para agentes de código, dando a eles estado durável ao
+    longo de trabalhos longos.
+skill:
+  source: gastownhall/beads
+origin:
+  list: github-discovery
+  ref: claude-marketplace

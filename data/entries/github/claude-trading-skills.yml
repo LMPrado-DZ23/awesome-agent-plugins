@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: claude-trading-skills
+name: tradermonty/claude-trading-skills
+title: Equity trading skills suite
+url: https://github.com/tradermonty/claude-trading-skills
+type: skill-pack
+category: skills
+license: MIT
+tags:
+  - finance
+  - trading
+  - market-analysis
+description:
+  en: >-
+    Nearly 100 skills for equity investors and traders: technical charting, earnings and economic calendars, sector
+    screeners, market breadth and strategy development.
+  pt: >-
+    Quase 100 skills para investidores e traders de ações: análise técnica gráfica, calendários de resultados e
+    econômicos, screeners setoriais, amplitude de mercado e desenvolvimento de estratégias.
+skill:
+  source: tradermonty/claude-trading-skills
+alternatives:
+  - name: HKUDS/Vibe-Trading
+    url: https://github.com/HKUDS/Vibe-Trading
+    adds:
+      en: Adds algorithmic backtesting, multi-asset data feeds and behavioral-finance skills.
+      pt: Adiciona backtesting algorítmico, feeds de dados multiativos e skills de finanças comportamentais.
+  - name: xbtlin/ai-berkshire
+    url: https://github.com/xbtlin/ai-berkshire
+    adds:
+      en: Value-investing research framework modeled on Buffett, Munger and other value investors.
+      pt: Framework de pesquisa em value investing inspirado em Buffett, Munger e outros investidores de valor.
+  - name: questflowai/investorskills
+    url: https://github.com/questflowai/investorskills
+    adds:
+      en: Persona-based skills distilling how specific well-known investors think and decide.
+      pt: Skills baseadas em personas que destilam como investidores conhecidos específicos pensam e decidem.
+  - name: RKiding/Awesome-finance-skills
+    url: https://github.com/RKiding/Awesome-finance-skills
+    adds:
+      en: Smaller free finance skill set focused on news, sentiment and signal tracking.
+      pt: Conjunto menor e gratuito de skills financeiras focado em notícias, sentimento e rastreamento de sinais.
+origin:
+  list: github-discovery
+  ref: skill-pack

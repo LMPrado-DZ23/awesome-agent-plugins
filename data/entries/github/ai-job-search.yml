@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: ai-job-search
+name: MadsLorentzen/ai-job-search
+title: AI job search toolkit
+url: https://github.com/MadsLorentzen/ai-job-search
+type: skill-pack
+category: workflow
+license: MIT
+tags:
+  - job-search
+  - career
+  - cv-writing
+description:
+  en: >-
+    Job-search skill pack built on Claude Code: evaluates postings, tailors CVs and cover letters, searches multiple job
+    boards, and preps for interviews, all running locally.
+  pt: >-
+    Pacote de skills de busca de emprego construído sobre o Claude Code: avalia vagas, adapta currículos e cartas de
+    apresentação, pesquisa em vários portais de vagas e prepara entrevistas, tudo local.
+skill:
+  source: MadsLorentzen/ai-job-search
+alternatives:
+  - name: Paramchoudhary/ResumeSkills
+    url: https://github.com/Paramchoudhary/ResumeSkills
+    adds:
+      en: Adds dedicated skills for resume writing, LinkedIn optimization and offer comparison.
+      pt: Adiciona skills dedicadas para redação de currículo, otimização de LinkedIn e comparação de propostas.
+origin:
+  list: github-discovery
+  ref: skill-pack

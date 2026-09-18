@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: architecture-decision-record
+name: architecture-decision-record/architecture-decision-record
+title: ADR authoring skills
+url: https://github.com/architecture-decision-record/architecture-decision-record
+type: skill-pack
+category: docs
+license: null
+tags:
+  - adr
+  - documentation
+  - architecture
+description:
+  en: >-
+    Small skill pack that teaches an agent to write and maintain Architecture Decision Records for software planning and
+    IT leadership documentation.
+  pt: >-
+    Pequeno pacote de skills que ensina um agente a escrever e manter Architecture Decision Records para planejamento de
+    software e documentação de liderança de TI.
+skill:
+  source: architecture-decision-record/architecture-decision-record
+origin:
+  list: github-discovery
+  ref: skill-pack

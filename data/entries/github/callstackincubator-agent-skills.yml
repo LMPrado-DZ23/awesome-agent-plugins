@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: callstackincubator-agent-skills
+name: callstackincubator/agent-skills
+title: React Native agent skills
+url: https://github.com/callstackincubator/agent-skills
+type: skill-pack
+category: dev
+license: MIT
+tags:
+  - skills
+  - react-native
+  - mobile
+description:
+  en: Collection of agent-optimized React Native skills for AI coding assistants, maintained by Callstack.
+  pt: Coleção de skills de React Native otimizadas para agentes de IA, mantida pela Callstack.
+skill:
+  source: callstackincubator/agent-skills
+origin:
+  list: github-discovery
+  ref: claude-marketplace

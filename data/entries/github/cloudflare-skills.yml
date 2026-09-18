@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: cloudflare-skills
+name: cloudflare/skills
+title: Cloudflare agent skills
+url: https://github.com/cloudflare/skills
+type: skill-pack
+category: cloud
+license: Apache-2.0
+tags:
+  - skills
+  - cloudflare
+  - cloud
+description:
+  en: Skills that teach coding agents how to build applications and infrastructure on Cloudflare's platform.
+  pt: Skills que ensinam agentes de código a construir aplicações e infraestrutura na plataforma da Cloudflare.
+skill:
+  source: cloudflare/skills
+origin:
+  list: github-discovery
+  ref: claude-marketplace

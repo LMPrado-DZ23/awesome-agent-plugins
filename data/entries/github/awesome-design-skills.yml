@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: awesome-design-skills
+name: bergside/awesome-design-skills
+title: Awesome design style skills
+url: https://github.com/bergside/awesome-design-skills
+type: skill-pack
+category: dev
+license: MIT
+tags:
+  - design-systems
+  - ui
+  - visual-style
+description:
+  en: >-
+    67 DESIGN.md/SKILL.md files, each encoding a distinct visual design style (brutalism, claymorphism, cyberpunk,
+    corporate, and more), for agentic UI generation tools.
+  pt: >-
+    67 arquivos DESIGN.md/SKILL.md, cada um codificando um estilo visual distinto (brutalismo, claymorphism, cyberpunk,
+    corporativo e mais), para ferramentas agentic de geração de UI.
+skill:
+  source: bergside/awesome-design-skills
+alternatives:
+  - name: MengTo/Skills
+    url: https://github.com/MengTo/Skills
+    adds:
+      en: Broader designer/builder skill set adding 3D asset and procedural-graphics skills.
+      pt: Conjunto mais amplo de skills para designers/builders, incluindo assets 3D e gráficos procedurais.
+  - name: Nutlope/hallmark
+    url: https://github.com/Nutlope/hallmark
+    adds:
+      en: Single opinionated skill specifically aimed at rejecting generic 'AI slop' visual design.
+      pt: Skill única e opinativa voltada especificamente a rejeitar o visual genérico de 'AI slop'.
+  - name: JimLiu/baoyu-design
+    url: https://github.com/JimLiu/baoyu-design
+    adds:
+      en: Runs a Claude-Design-like flow locally to produce polished mockups, decks and wireframes.
+      pt: Executa um fluxo local semelhante ao Claude Design para gerar mockups, decks e wireframes refinados.
+origin:
+  list: github-discovery
+  ref: skill-pack

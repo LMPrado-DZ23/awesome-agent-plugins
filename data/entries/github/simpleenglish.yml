@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: simpleenglish
+name: AminBlg/SimpleEnglish
+title: Simplified Technical English skill
+url: https://github.com/AminBlg/SimpleEnglish
+type: skill-pack
+category: docs
+license: MIT
+tags:
+  - docs
+  - writing
+  - standard
+description:
+  en: >-
+    Agent skill that makes an LLM write documentation following ASD-STE100 Simplified Technical English, a
+    controlled-language standard.
+  pt: >-
+    Agent skill que faz um LLM escrever documentação seguindo o ASD-STE100 Simplified Technical English, um padrão de
+    linguagem controlada.
+skill:
+  source: AminBlg/SimpleEnglish
+origin:
+  list: github-discovery
+  ref: claude-marketplace

@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: buildwithclaude
+name: davepoon/buildwithclaude
+title: Claude ecosystem discovery hub
+url: https://github.com/davepoon/buildwithclaude
+type: skill-pack
+category: meta
+license: MIT
+tags:
+  - meta
+  - discovery
+  - marketplace
+description:
+  en: Single hub for finding Claude skills, agents, commands, hooks, plugins and marketplace collections in one place.
+  pt: >-
+    Hub único para encontrar skills, agentes, comandos, hooks, plugins e coleções de marketplace do ecossistema Claude
+    em um só lugar.
+skill:
+  source: davepoon/buildwithclaude
+alternatives:
+  - name: rohitg00/awesome-claude-code-toolkit
+    url: https://github.com/rohitg00/awesome-claude-code-toolkit
+    adds:
+      en: Comprehensive index claiming 135 agents, 35 skills, 42 commands, 176+ plugins, 20 hooks and more in one toolkit.
+      pt: >-
+        Índice abrangente reunindo 135 agentes, 35 skills, 42 comandos, mais de 176 plugins, 20 hooks e outros itens em
+        um só toolkit.
+  - name: jeremylongshore/tons-of-skills-marketplace
+    url: https://github.com/jeremylongshore/tons-of-skills-marketplace
+    adds:
+      en: Model-agnostic skills platform with its own package manager (ccpi) and a canonical layer over 6,000+ skills.
+      pt: >-
+        Plataforma de skills agnóstica a modelo, com gerenciador de pacotes próprio (ccpi) e uma camada canônica sobre
+        mais de 6.000 skills.
+  - name: composio-community/awesome-claude-plugins
+    url: https://github.com/composio-community/awesome-claude-plugins
+    adds:
+      en: Curated list of plugins that extend Claude Code with custom commands, agents, hooks and MCP servers.
+      pt: Lista curada de plugins que estendem o Claude Code com comandos, agentes, hooks e servidores MCP personalizados.
+  - name: VoltAgent/awesome-claude-code-subagents
+    url: https://github.com/VoltAgent/awesome-claude-code-subagents
+    adds:
+      en: Focused collection of 100+ specialized Claude Code subagents covering a wide range of development use cases.
+      pt: >-
+        Coleção focada com mais de 100 subagentes especializados para o Claude Code, cobrindo uma ampla gama de casos de
+        uso de desenvolvimento.
+origin:
+  list: github-discovery
+  ref: claude-marketplace

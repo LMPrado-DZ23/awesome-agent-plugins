@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: open-code-review
+name: alibaba/open-code-review
+title: Alibaba open code review
+url: https://github.com/alibaba/open-code-review
+type: skill-pack
+category: git
+license: Apache-2.0
+tags:
+  - git
+  - code-review
+  - security
+description:
+  en: >-
+    Hybrid code-review tool battle-tested at Alibaba's scale, combining deterministic pipelines with an LLM agent for
+    precise, line-level comments and a built-in multi-language security ruleset.
+  pt: >-
+    Ferramenta híbrida de revisão de código testada em produção na escala da Alibaba, combinando pipelines
+    determinísticos com um agente LLM para comentários precisos linha a linha e um conjunto de regras de segurança
+    multilíngue.
+skill:
+  source: alibaba/open-code-review
+alternatives:
+  - name: hyhmrright/brooks-lint
+    url: https://github.com/hyhmrright/brooks-lint
+    adds:
+      en: >-
+        Smaller AI code-review skill grounded in 12 classic software-engineering books, with severity labels and book
+        citations.
+      pt: >-
+        Skill menor de revisão de código com IA, fundamentada em 12 livros clássicos de engenharia, com rótulos de
+        severidade e citações.
+origin:
+  list: github-discovery
+  ref: claude-marketplace

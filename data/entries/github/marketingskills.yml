@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: marketingskills
+name: coreyhaines31/marketingskills
+title: Marketing skills for agents
+url: https://github.com/coreyhaines31/marketingskills
+type: skill-pack
+category: skills
+license: MIT
+tags:
+  - marketing
+  - skills
+  - seo
+description:
+  en: Marketing skills for Claude Code and AI agents covering CRO, copywriting, SEO, analytics and growth engineering.
+  pt: >-
+    Skills de marketing para Claude Code e agentes de IA, cobrindo CRO, copywriting, SEO, analytics e growth
+    engineering.
+skill:
+  source: coreyhaines31/marketingskills
+alternatives:
+  - name: aaron-he-zhu/aaron-marketing-skills
+    url: https://github.com/aaron-he-zhu/aaron-marketing-skills
+    adds:
+      en: 120 marketing skills organized as an 8-discipline AI marketing team, with built-in auditor gates for quality.
+      pt: >-
+        120 skills de marketing organizadas como uma equipe de marketing com IA em 8 disciplinas, com portões de
+        auditoria embutidos.
+  - name: AgriciDaniel/claude-ads
+    url: https://github.com/AgriciDaniel/claude-ads
+    adds:
+      en: >-
+        Narrower pack for paid-media operations across 12 ad platforms, with source-grounded audits and deterministic
+        scoring.
+      pt: >-
+        Pacote focado em operações de mídia paga em 12 plataformas de anúncios, com auditorias por fontes e pontuação
+        determinística.
+  - name: AgriciDaniel/claude-blog
+    url: https://github.com/AgriciDaniel/claude-blog
+    adds:
+      en: >-
+        Blog-specific suite of sub-skills and agents built around a versioned content-delivery contract for SEO and AI
+        citations.
+      pt: >-
+        Conjunto de sub-skills e agentes para blogs, construído sobre um contrato de entrega de conteúdo para SEO e
+        citações por IA.
+  - name: irinabuht12-oss/marketing-skills
+    url: https://github.com/irinabuht12-oss/marketing-skills
+    adds:
+      en: >-
+        Free 48-skill pack for Google Ads, Meta Ads, SEO and AI-visibility, paired with an optional hosted MCP
+        connector.
+      pt: >-
+        Pacote gratuito de 48 skills para Google Ads, Meta Ads, SEO e visibilidade em IA, com conector MCP hospedado
+        opcional.
+origin:
+  list: github-discovery
+  ref: claude-marketplace

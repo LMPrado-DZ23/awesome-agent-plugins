@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: officecli
+name: iOfficeAI/OfficeCLI
+title: OfficeCLI agent office suite
+url: https://github.com/iOfficeAI/OfficeCLI
+type: skill-pack
+category: docs
+license: Apache-2.0
+tags:
+  - office-documents
+  - docx
+  - pptx
+description:
+  en: >-
+    Office suite purpose-built for AI agents to read, edit and automate Word, Excel and PowerPoint files, with dedicated
+    skills for financial models, pitch decks and dashboards.
+  pt: >-
+    Suíte de escritório feita para agentes de IA lerem, editarem e automatizarem arquivos Word, Excel e PowerPoint, com
+    skills dedicadas para modelos financeiros, pitch decks e dashboards.
+skill:
+  source: iOfficeAI/OfficeCLI
+alternatives:
+  - name: genspark-ai/genoffice
+    url: https://github.com/genspark-ai/genoffice
+    adds:
+      en: Free open-source alternative office suite (docs, sheets, slides, PDF) with its own CLI and skill.
+      pt: Suíte de escritório alternativa e gratuita (docs, planilhas, slides, PDF) com CLI e skill próprios.
+  - name: OpenSenseNova/SenseNova-Skills
+    url: https://github.com/OpenSenseNova/SenseNova-Skills
+    adds:
+      en: "Modular office-automation skills for Excel workflows: formatting, coloring and KPI reporting."
+      pt: "Skills modulares de automação de escritório para fluxos de Excel: formatação, coloração e relatórios de KPI."
+origin:
+  list: github-discovery
+  ref: skill-pack

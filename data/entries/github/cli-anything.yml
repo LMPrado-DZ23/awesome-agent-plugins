@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: cli-anything
+name: HKUDS/CLI-Anything
+title: CLI-Anything agent-native CLIs
+url: https://github.com/HKUDS/CLI-Anything
+type: skill-pack
+category: tools
+license: Apache-2.0
+tags:
+  - cli
+  - tools
+  - skills
+description:
+  en: >-
+    Makes any command-line software agent-native, via a CLI hub and a large library of skills that describe how to drive
+    each tool.
+  pt: >-
+    Torna qualquer software de linha de comando nativo para agentes, por meio de um hub de CLIs e uma grande biblioteca
+    de skills que descrevem como operar cada ferramenta.
+skill:
+  source: HKUDS/CLI-Anything
+origin:
+  list: github-discovery
+  ref: claude-marketplace

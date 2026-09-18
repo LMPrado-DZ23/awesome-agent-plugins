@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: agent-rules-books
+name: ciembor/agent-rules-books
+title: Software design classics skills
+url: https://github.com/ciembor/agent-rules-books
+type: skill-pack
+category: dev
+license: MIT
+tags:
+  - software-design
+  - best-practices
+  - architecture
+description:
+  en: >-
+    Skills distilling classic software engineering books into agent guidance: Clean Code, Clean Architecture,
+    Refactoring, Domain-Driven Design and Designing Data-Intensive Applications.
+  pt: >-
+    Skills que destilam clássicos da engenharia de software em orientações para agentes: Clean Code, Clean Architecture,
+    Refactoring, Domain-Driven Design e Designing Data-Intensive Applications.
+skill:
+  source: ciembor/agent-rules-books
+origin:
+  list: github-discovery
+  ref: skill-pack

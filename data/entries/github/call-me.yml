@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: call-me
+name: ZeframLou/call-me
+title: Phone call notifications
+url: https://github.com/ZeframLou/call-me
+type: skill-pack
+category: integrations
+license: null
+tags:
+  - integrations
+  - notifications
+  - fun
+description:
+  en: >-
+    Minimal plugin that lets Claude Code call your phone, useful as a notification channel when a long task finishes or
+    needs input.
+  pt: >-
+    Plugin minimalista que permite ao Claude Code ligar para o seu telefone, útil como canal de notificação quando uma
+    tarefa longa termina ou precisa de atenção.
+skill:
+  source: ZeframLou/call-me
+origin:
+  list: github-discovery
+  ref: claude-marketplace

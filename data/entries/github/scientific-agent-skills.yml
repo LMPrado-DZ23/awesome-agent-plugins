@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: scientific-agent-skills
+name: K-Dense-AI/scientific-agent-skills
+title: Scientific Agent Skills library
+url: https://github.com/K-Dense-AI/scientific-agent-skills
+type: skill-pack
+category: skills
+license: MIT
+tags:
+  - science
+  - bioinformatics
+  - research
+  - skill-library
+description:
+  en: >-
+    Library of validated skills that turn an AI agent into a research assistant across bioinformatics, chemoinformatics,
+    astronomy and clinical research, used by a large scientist community.
+  pt: >-
+    Biblioteca de skills validadas que transformam um agente de IA em assistente de pesquisa em bioinformática,
+    quimioinformática, astronomia e pesquisa clínica, usada por uma grande comunidade de cientistas.
+skill:
+  source: K-Dense-AI/scientific-agent-skills
+alternatives:
+  - name: google-deepmind/science-skills
+    url: https://github.com/google-deepmind/science-skills
+    adds:
+      en: Google DeepMind's own science skills built around AlphaFold and AlphaGenome workflows.
+      pt: Skills científicas oficiais do Google DeepMind construídas em torno dos fluxos do AlphaFold e AlphaGenome.
+  - name: aiming-lab/AutoResearchClaw
+    url: https://github.com/aiming-lab/AutoResearchClaw
+    adds:
+      en: Adds a full idea-to-paper autonomous research pipeline with citation verification.
+      pt: Adiciona um pipeline autônomo completo de ideia a artigo, com verificação de citações.
+  - name: foryourhealth111-pixel/Vibe-Skills
+    url: https://github.com/foryourhealth111-pixel/Vibe-Skills
+    adds:
+      en: Adds intelligent skill routing on top of a similar science skill set to cut token usage.
+      pt: Adiciona roteamento inteligente de skills sobre um conjunto científico semelhante para reduzir uso de tokens.
+origin:
+  list: github-discovery
+  ref: skill-pack

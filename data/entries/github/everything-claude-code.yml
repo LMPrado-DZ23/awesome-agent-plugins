@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: everything-claude-code
+name: WorldFlowAI/everything-claude-code
+title: Everything Claude Code toolkit
+url: https://github.com/WorldFlowAI/everything-claude-code
+type: skill-pack
+category: meta
+license: null
+tags:
+  - meta
+  - toolkit
+description:
+  en: >-
+    Single-repo Claude Code toolkit bundling agents, commands, skills, rules and hooks for productive AI-assisted
+    development.
+  pt: >-
+    Toolkit para Claude Code em um único repositório, reunindo agentes, comandos, skills, regras e hooks para
+    desenvolvimento produtivo assistido por IA.
+skill:
+  source: WorldFlowAI/everything-claude-code
+origin:
+  list: github-discovery
+  ref: claude-marketplace

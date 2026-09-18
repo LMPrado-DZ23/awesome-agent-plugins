@@ -5,15 +5,15 @@
 > This page is generated from `data/entries/` — do not edit by hand.
 
 - [Serena](#serena) — Semantic code retrieval and editing through language servers: find symbols and references, and edit at symbol …
-- [Codebase intelligence for agents](#repowise-mcp) — Codebase intelligence for coding agents: dependency graph, git history, docs, decisions, and code health.
 - [Codebase knowledge graph](#codebase-memory-mcp) — Builds a codebase knowledge graph across 162 languages with sub-millisecond queries and reduced token usage.
+- [Codebase intelligence for agents](#repowise-mcp) — Codebase intelligence for coding agents: dependency graph, git history, docs, decisions, and code health.
 - [Entity-level semantic code diff](#sem-mcp) — Entity-level code intelligence: semantic diff, impact analysis, blame, and context for AI agents.
+- [Token-efficient AST code exploration](#jcodemunch-mcp) — Token-efficient code exploration via tree-sitter AST parsing across 70+ languages, cutting tokens 86-99%.
+- [Python code health analysis](#pyscn-mcp) — Python code analysis for AI agents: complexity, dead code, clones, coupling, and an overall health score.
 - [GitHub code research platform](#octocode-mcp) — AI code research platform to search, analyze, and extract insights from any GitHub repository; needs a GITHUB_…
 - [Layered code graph with SCIP](#claude-code-skills-mcp) — Deterministic layered code graph server with framework overlays and SCIP interoperability.
 - [Local semantic code indexer](#muvon-octocode-mcp) — AI-powered code indexer for a local repository with semantic search and knowledge graphs.
-- [Python code health analysis](#pyscn-mcp) — Python code analysis for AI agents: complexity, dead code, clones, coupling, and an overall health score.
 - [Semantic search for files and code](#vexor-mcp) — A semantic search engine for files and code; needs a VEXOR_API_KEY (and optionally a rerank API key).
-- [Token-efficient AST code exploration](#jcodemunch-mcp) — Token-efficient code exploration via tree-sitter AST parsing across 70+ languages, cutting tokens 86-99%.
 
 <a id="serena"></a>
 
@@ -230,200 +230,11 @@ Prerequisite: `uv tool install -p 3.13 serena-agent && serena init`
 
 </details>
 
-<a id="repowise-mcp"></a>
-
-### Codebase intelligence for agents
-
-[Repowise](https://github.com/repowise-dev/repowise) — `MCP server` · License: AGPL-3.0 · Works with: All clients
-
-Codebase intelligence for coding agents: dependency graph, git history, docs, decisions, and code health.
-
-<details><summary>Install</summary>
-
-**Claude Code**
-
-```bash
-claude mcp add --transport stdio repowise -- uvx repowise '<REPO_PATH>'
-```
-
-**Codex CLI**
-
-```bash
-codex mcp add repowise -- uvx repowise '<REPO_PATH>'
-```
-
-**Gemini CLI**
-
-```bash
-gemini mcp add repowise uvx repowise '<REPO_PATH>'
-```
-
-**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "repowise": {
-      "command": "uvx",
-      "args": [
-        "repowise",
-        "<REPO_PATH>"
-      ]
-    }
-  }
-}
-```
-
-**VS Code (Copilot)** — File: `.vscode/mcp.json`
-
-```json
-{
-  "servers": {
-    "repowise": {
-      "type": "stdio",
-      "command": "uvx",
-      "args": [
-        "repowise",
-        "<REPO_PATH>"
-      ]
-    }
-  }
-}
-```
-
-**OpenCode** — File: `opencode.json`
-
-```json
-{
-  "$schema": "https://opencode.ai/config.json",
-  "mcp": {
-    "repowise": {
-      "type": "local",
-      "command": [
-        "uvx",
-        "repowise",
-        "<REPO_PATH>"
-      ],
-      "enabled": true
-    }
-  }
-}
-```
-
-**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
-
-```json
-{
-  "mcpServers": {
-    "repowise": {
-      "command": "uvx",
-      "args": [
-        "repowise",
-        "<REPO_PATH>"
-      ]
-    }
-  }
-}
-```
-
-**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
-
-```json
-{
-  "mcpServers": {
-    "repowise": {
-      "command": "uvx",
-      "args": [
-        "repowise",
-        "<REPO_PATH>"
-      ]
-    }
-  }
-}
-```
-
-**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
-
-```json
-{
-  "context_servers": {
-    "repowise": {
-      "source": "custom",
-      "command": "uvx",
-      "args": [
-        "repowise",
-        "<REPO_PATH>"
-      ]
-    }
-  }
-}
-```
-
-**Goose** — File: `~/.config/goose/config.yaml`
-
-```yaml
-extensions:
-  repowise:
-    type: stdio
-    cmd: uvx
-    args: ["repowise","<REPO_PATH>"]
-    enabled: true
-```
-
-**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "repowise": {
-      "command": "uvx",
-      "args": [
-        "repowise",
-        "<REPO_PATH>"
-      ]
-    }
-  }
-}
-```
-
-**Roo Code** — File: `.roo/mcp.json`
-
-```json
-{
-  "mcpServers": {
-    "repowise": {
-      "command": "uvx",
-      "args": [
-        "repowise",
-        "<REPO_PATH>"
-      ]
-    }
-  }
-}
-```
-
-**DeepSeek Harness** — File: `repowise.cordis.yml  →  dsh web --patch ./repowise.cordis.yml`
-
-```yaml
-- insert:
-    - id: mcp-repowise
-      name: '@deepseek-ai/dsh-mcp-client'
-      config:
-        serverName: repowise
-        transport: stdio
-        command: uvx
-        args: ["repowise","<REPO_PATH>"]
-        env: {}
-        cwd: !!js process.cwd()
-```
-
-</details>
-
 <a id="codebase-memory-mcp"></a>
 
 ### Codebase knowledge graph
 
-[Codebase Memory](https://github.com/DeusData/codebase-memory-mcp) — `MCP server` · License: MIT · Works with: All clients
+[Codebase Memory](https://github.com/DeusData/codebase-memory-mcp) — `MCP server` · ★ 44k · License: MIT · Works with: All clients
 
 Builds a codebase knowledge graph across 162 languages with sub-millisecond queries and reduced token usage.
 
@@ -608,11 +419,200 @@ extensions:
 
 </details>
 
+<a id="repowise-mcp"></a>
+
+### Codebase intelligence for agents
+
+[Repowise](https://github.com/repowise-dev/repowise) — `MCP server` · ★ 6.7k · License: AGPL-3.0 · Works with: All clients
+
+Codebase intelligence for coding agents: dependency graph, git history, docs, decisions, and code health.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio repowise -- uvx repowise '<REPO_PATH>'
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add repowise -- uvx repowise '<REPO_PATH>'
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add repowise uvx repowise '<REPO_PATH>'
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "repowise": {
+      "command": "uvx",
+      "args": [
+        "repowise",
+        "<REPO_PATH>"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "repowise": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "repowise",
+        "<REPO_PATH>"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "repowise": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "repowise",
+        "<REPO_PATH>"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "repowise": {
+      "command": "uvx",
+      "args": [
+        "repowise",
+        "<REPO_PATH>"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "repowise": {
+      "command": "uvx",
+      "args": [
+        "repowise",
+        "<REPO_PATH>"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "repowise": {
+      "source": "custom",
+      "command": "uvx",
+      "args": [
+        "repowise",
+        "<REPO_PATH>"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  repowise:
+    type: stdio
+    cmd: uvx
+    args: ["repowise","<REPO_PATH>"]
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "repowise": {
+      "command": "uvx",
+      "args": [
+        "repowise",
+        "<REPO_PATH>"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "repowise": {
+      "command": "uvx",
+      "args": [
+        "repowise",
+        "<REPO_PATH>"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `repowise.cordis.yml  →  dsh web --patch ./repowise.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-repowise
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: repowise
+        transport: stdio
+        command: uvx
+        args: ["repowise","<REPO_PATH>"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
 <a id="sem-mcp"></a>
 
 ### Entity-level semantic code diff
 
-[Ataraxy-Labs/sem](https://github.com/Ataraxy-Labs/sem) — `MCP server` · License: Apache-2.0 · Works with: All clients
+[Ataraxy-Labs/sem](https://github.com/Ataraxy-Labs/sem) — `MCP server` · ★ 3.4k · License: Apache-2.0 · Works with: All clients
 
 Entity-level code intelligence: semantic diff, impact analysis, blame, and context for AI agents.
 
@@ -797,11 +797,373 @@ extensions:
 
 </details>
 
+<a id="jcodemunch-mcp"></a>
+
+### Token-efficient AST code exploration
+
+[jCodemunch MCP](https://github.com/jgravelle/jcodemunch-mcp) — `MCP server` · ★ 2.7k · License: see repo · Works with: All clients
+
+Token-efficient code exploration via tree-sitter AST parsing across 70+ languages, cutting tokens 86-99%.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio jcodemunch-mcp -- uvx jcodemunch-mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add jcodemunch-mcp -- uvx jcodemunch-mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add jcodemunch-mcp uvx jcodemunch-mcp
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "jcodemunch-mcp": {
+      "command": "uvx",
+      "args": [
+        "jcodemunch-mcp"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "jcodemunch-mcp": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "jcodemunch-mcp"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "jcodemunch-mcp": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "jcodemunch-mcp"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "jcodemunch-mcp": {
+      "command": "uvx",
+      "args": [
+        "jcodemunch-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "jcodemunch-mcp": {
+      "command": "uvx",
+      "args": [
+        "jcodemunch-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "jcodemunch-mcp": {
+      "source": "custom",
+      "command": "uvx",
+      "args": [
+        "jcodemunch-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  jcodemunch-mcp:
+    type: stdio
+    cmd: uvx
+    args: ["jcodemunch-mcp"]
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "jcodemunch-mcp": {
+      "command": "uvx",
+      "args": [
+        "jcodemunch-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "jcodemunch-mcp": {
+      "command": "uvx",
+      "args": [
+        "jcodemunch-mcp"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `jcodemunch-mcp.cordis.yml  →  dsh web --patch ./jcodemunch-mcp.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-jcodemunch-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: jcodemunch-mcp
+        transport: stdio
+        command: uvx
+        args: ["jcodemunch-mcp"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="pyscn-mcp"></a>
+
+### Python code health analysis
+
+[pyscn](https://github.com/ludo-technologies/pyscn) — `MCP server` · ★ 1.1k · License: MIT · Works with: All clients
+
+Python code analysis for AI agents: complexity, dead code, clones, coupling, and an overall health score.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio pyscn -- uvx pyscn-mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add pyscn -- uvx pyscn-mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add pyscn uvx pyscn-mcp
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "pyscn": {
+      "command": "uvx",
+      "args": [
+        "pyscn-mcp"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "pyscn": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "pyscn-mcp"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "pyscn": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "pyscn-mcp"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "pyscn": {
+      "command": "uvx",
+      "args": [
+        "pyscn-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "pyscn": {
+      "command": "uvx",
+      "args": [
+        "pyscn-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "pyscn": {
+      "source": "custom",
+      "command": "uvx",
+      "args": [
+        "pyscn-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  pyscn:
+    type: stdio
+    cmd: uvx
+    args: ["pyscn-mcp"]
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "pyscn": {
+      "command": "uvx",
+      "args": [
+        "pyscn-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "pyscn": {
+      "command": "uvx",
+      "args": [
+        "pyscn-mcp"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `pyscn.cordis.yml  →  dsh web --patch ./pyscn.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-pyscn
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: pyscn
+        transport: stdio
+        command: uvx
+        args: ["pyscn-mcp"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
 <a id="octocode-mcp"></a>
 
 ### GitHub code research platform
 
-[Octocode MCP - AI Context Platform](https://github.com/bgauryy/octocode-mcp) — `MCP server` · License: MIT · Works with: All clients
+[Octocode MCP - AI Context Platform](https://github.com/bgauryy/octocode-mcp) — `MCP server` · ★ 941 · License: MIT · Works with: All clients
 
 AI code research platform to search, analyze, and extract insights from any GitHub repository; needs a GITHUB_TOKEN.
 
@@ -1016,7 +1378,7 @@ extensions:
 
 ### Layered code graph with SCIP
 
-[Hex Graph](https://github.com/levnikolaevich/claude-code-skills) — `MCP server` · License: MIT · Works with: All clients
+[Hex Graph](https://github.com/levnikolaevich/claude-code-skills) — `MCP server` · ★ 565 · License: MIT · Works with: All clients
 
 Deterministic layered code graph server with framework overlays and SCIP interoperability.
 
@@ -1205,7 +1567,7 @@ extensions:
 
 ### Local semantic code indexer
 
-[Octocode](https://github.com/muvon/octocode) — `MCP server` · License: Apache-2.0 · Works with: All clients
+[Octocode](https://github.com/muvon/octocode) — `MCP server` · ★ 475 · License: Apache-2.0 · Works with: All clients
 
 AI-powered code indexer for a local repository with semantic search and knowledge graphs.
 
@@ -1390,192 +1752,11 @@ extensions:
 
 </details>
 
-<a id="pyscn-mcp"></a>
-
-### Python code health analysis
-
-[pyscn](https://github.com/ludo-technologies/pyscn) — `MCP server` · License: MIT · Works with: All clients
-
-Python code analysis for AI agents: complexity, dead code, clones, coupling, and an overall health score.
-
-<details><summary>Install</summary>
-
-**Claude Code**
-
-```bash
-claude mcp add --transport stdio pyscn -- uvx pyscn-mcp
-```
-
-**Codex CLI**
-
-```bash
-codex mcp add pyscn -- uvx pyscn-mcp
-```
-
-**Gemini CLI**
-
-```bash
-gemini mcp add pyscn uvx pyscn-mcp
-```
-
-**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "pyscn": {
-      "command": "uvx",
-      "args": [
-        "pyscn-mcp"
-      ]
-    }
-  }
-}
-```
-
-**VS Code (Copilot)** — File: `.vscode/mcp.json`
-
-```json
-{
-  "servers": {
-    "pyscn": {
-      "type": "stdio",
-      "command": "uvx",
-      "args": [
-        "pyscn-mcp"
-      ]
-    }
-  }
-}
-```
-
-**OpenCode** — File: `opencode.json`
-
-```json
-{
-  "$schema": "https://opencode.ai/config.json",
-  "mcp": {
-    "pyscn": {
-      "type": "local",
-      "command": [
-        "uvx",
-        "pyscn-mcp"
-      ],
-      "enabled": true
-    }
-  }
-}
-```
-
-**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
-
-```json
-{
-  "mcpServers": {
-    "pyscn": {
-      "command": "uvx",
-      "args": [
-        "pyscn-mcp"
-      ]
-    }
-  }
-}
-```
-
-**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
-
-```json
-{
-  "mcpServers": {
-    "pyscn": {
-      "command": "uvx",
-      "args": [
-        "pyscn-mcp"
-      ]
-    }
-  }
-}
-```
-
-**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
-
-```json
-{
-  "context_servers": {
-    "pyscn": {
-      "source": "custom",
-      "command": "uvx",
-      "args": [
-        "pyscn-mcp"
-      ]
-    }
-  }
-}
-```
-
-**Goose** — File: `~/.config/goose/config.yaml`
-
-```yaml
-extensions:
-  pyscn:
-    type: stdio
-    cmd: uvx
-    args: ["pyscn-mcp"]
-    enabled: true
-```
-
-**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "pyscn": {
-      "command": "uvx",
-      "args": [
-        "pyscn-mcp"
-      ]
-    }
-  }
-}
-```
-
-**Roo Code** — File: `.roo/mcp.json`
-
-```json
-{
-  "mcpServers": {
-    "pyscn": {
-      "command": "uvx",
-      "args": [
-        "pyscn-mcp"
-      ]
-    }
-  }
-}
-```
-
-**DeepSeek Harness** — File: `pyscn.cordis.yml  →  dsh web --patch ./pyscn.cordis.yml`
-
-```yaml
-- insert:
-    - id: mcp-pyscn
-      name: '@deepseek-ai/dsh-mcp-client'
-      config:
-        serverName: pyscn
-        transport: stdio
-        command: uvx
-        args: ["pyscn-mcp"]
-        env: {}
-        cwd: !!js process.cwd()
-```
-
-</details>
-
 <a id="vexor-mcp"></a>
 
 ### Semantic search for files and code
 
-[Vexor](https://github.com/scarletkc/vexor) — `MCP server` · License: MIT · Works with: All clients
+[Vexor](https://github.com/scarletkc/vexor) — `MCP server` · ★ 241 · License: MIT · Works with: All clients
 
 A semantic search engine for files and code; needs a VEXOR_API_KEY (and optionally a rerank API key).
 
@@ -1782,187 +1963,6 @@ extensions:
         command: uvx
         args: ["vexor"]
         env: {"VEXOR_API_KEY":"<VEXOR_API_KEY>","VEXOR_REMOTE_RERANK_API_KEY":"<VEXOR_REMOTE_RERANK_API_KEY>"}
-        cwd: !!js process.cwd()
-```
-
-</details>
-
-<a id="jcodemunch-mcp"></a>
-
-### Token-efficient AST code exploration
-
-[jCodemunch MCP](https://github.com/jgravelle/jcodemunch-mcp) — `MCP server` · License: see repo · Works with: All clients
-
-Token-efficient code exploration via tree-sitter AST parsing across 70+ languages, cutting tokens 86-99%.
-
-<details><summary>Install</summary>
-
-**Claude Code**
-
-```bash
-claude mcp add --transport stdio jcodemunch-mcp -- uvx jcodemunch-mcp
-```
-
-**Codex CLI**
-
-```bash
-codex mcp add jcodemunch-mcp -- uvx jcodemunch-mcp
-```
-
-**Gemini CLI**
-
-```bash
-gemini mcp add jcodemunch-mcp uvx jcodemunch-mcp
-```
-
-**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "jcodemunch-mcp": {
-      "command": "uvx",
-      "args": [
-        "jcodemunch-mcp"
-      ]
-    }
-  }
-}
-```
-
-**VS Code (Copilot)** — File: `.vscode/mcp.json`
-
-```json
-{
-  "servers": {
-    "jcodemunch-mcp": {
-      "type": "stdio",
-      "command": "uvx",
-      "args": [
-        "jcodemunch-mcp"
-      ]
-    }
-  }
-}
-```
-
-**OpenCode** — File: `opencode.json`
-
-```json
-{
-  "$schema": "https://opencode.ai/config.json",
-  "mcp": {
-    "jcodemunch-mcp": {
-      "type": "local",
-      "command": [
-        "uvx",
-        "jcodemunch-mcp"
-      ],
-      "enabled": true
-    }
-  }
-}
-```
-
-**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
-
-```json
-{
-  "mcpServers": {
-    "jcodemunch-mcp": {
-      "command": "uvx",
-      "args": [
-        "jcodemunch-mcp"
-      ]
-    }
-  }
-}
-```
-
-**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
-
-```json
-{
-  "mcpServers": {
-    "jcodemunch-mcp": {
-      "command": "uvx",
-      "args": [
-        "jcodemunch-mcp"
-      ]
-    }
-  }
-}
-```
-
-**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
-
-```json
-{
-  "context_servers": {
-    "jcodemunch-mcp": {
-      "source": "custom",
-      "command": "uvx",
-      "args": [
-        "jcodemunch-mcp"
-      ]
-    }
-  }
-}
-```
-
-**Goose** — File: `~/.config/goose/config.yaml`
-
-```yaml
-extensions:
-  jcodemunch-mcp:
-    type: stdio
-    cmd: uvx
-    args: ["jcodemunch-mcp"]
-    enabled: true
-```
-
-**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "jcodemunch-mcp": {
-      "command": "uvx",
-      "args": [
-        "jcodemunch-mcp"
-      ]
-    }
-  }
-}
-```
-
-**Roo Code** — File: `.roo/mcp.json`
-
-```json
-{
-  "mcpServers": {
-    "jcodemunch-mcp": {
-      "command": "uvx",
-      "args": [
-        "jcodemunch-mcp"
-      ]
-    }
-  }
-}
-```
-
-**DeepSeek Harness** — File: `jcodemunch-mcp.cordis.yml  →  dsh web --patch ./jcodemunch-mcp.cordis.yml`
-
-```yaml
-- insert:
-    - id: mcp-jcodemunch-mcp
-      name: '@deepseek-ai/dsh-mcp-client'
-      config:
-        serverName: jcodemunch-mcp
-        transport: stdio
-        command: uvx
-        args: ["jcodemunch-mcp"]
-        env: {}
         cwd: !!js process.cwd()
 ```
 

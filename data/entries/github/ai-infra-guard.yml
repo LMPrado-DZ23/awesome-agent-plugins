@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: ai-infra-guard
+name: Tencent/AI-Infra-Guard
+title: AI infrastructure red-teaming skills
+url: https://github.com/Tencent/AI-Infra-Guard
+type: skill-pack
+category: security
+license: Apache-2.0
+tags:
+  - ai-security
+  - red-teaming
+  - mcp-security
+  - authorized-use
+description:
+  en: >-
+    Full-stack AI red-teaming skill set detecting agentic supply-chain risk, authorization bypass, cascading failures,
+    data leakage and prompt injection across agents, skills and MCP servers. For authorized security testing only.
+  pt: >-
+    Conjunto de skills de red teaming full-stack para IA que detecta riscos de supply chain agentic, bypass de
+    autorização, falhas em cascata, vazamento de dados e prompt injection em agentes, skills e servidores MCP. Apenas
+    para testes de segurança autorizados.
+skill:
+  source: Tencent/AI-Infra-Guard
+origin:
+  list: github-discovery
+  ref: skill-pack

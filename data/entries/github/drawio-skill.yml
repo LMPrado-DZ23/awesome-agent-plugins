@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: drawio-skill
+name: Agents365-ai/drawio-skill
+title: Diagrams-as-code (draw.io) skill
+url: https://github.com/Agents365-ai/drawio-skill
+type: skill-pack
+category: tools
+license: MIT
+tags:
+  - diagramming
+  - architecture
+  - drawio
+description:
+  en: >-
+    Skill that turns natural language, code, Terraform/Kubernetes manifests, SQL, OpenAPI, AsyncAPI, Protobuf and
+    GraphQL into editable, tested draw.io architecture diagrams.
+  pt: >-
+    Skill que transforma linguagem natural, código, manifestos Terraform/Kubernetes, SQL, OpenAPI, AsyncAPI, Protobuf e
+    GraphQL em diagramas de arquitetura draw.io editáveis e testados.
+skill:
+  source: Agents365-ai/drawio-skill
+alternatives:
+  - name: markdown-viewer/skills
+    url: https://github.com/markdown-viewer/skills
+    adds:
+      en: Generates architecture, network, BPMN, UML and mindmap diagrams natively inside Markdown.
+      pt: Gera diagramas de arquitetura, rede, BPMN, UML e mapas mentais nativamente dentro do Markdown.
+  - name: yctimlin/mcp_excalidraw
+    url: https://github.com/yctimlin/mcp_excalidraw
+    adds:
+      en: MCP server plus skill for programmatic, real-time Excalidraw canvas diagrams.
+      pt: Servidor MCP e skill para diagramas programáticos em tempo real no canvas do Excalidraw.
+origin:
+  list: github-discovery
+  ref: skill-pack

@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: human-writing
+name: KKKKhazix/human-writing
+title: Human-sounding Chinese writing skill
+url: https://github.com/KKKKhazix/human-writing
+type: skill-pack
+category: skills
+license: MIT
+tags:
+  - writing
+  - chinese
+  - style-transfer
+description:
+  en: >-
+    Popular general-purpose writing and rewriting skill that makes AI-generated Chinese text read like a specific person
+    speaking, rather than generic AI prose.
+  pt: >-
+    Skill popular e de uso geral de escrita e reescrita que faz texto em chinês gerado por IA soar como uma pessoa
+    específica falando, em vez de prosa genérica de IA.
+skill:
+  source: KKKKhazix/human-writing
+alternatives:
+  - name: larashero3-dotcom/writing-dna-skill
+    url: https://github.com/larashero3-dotcom/writing-dna-skill
+    adds:
+      en: Distills and recreates any given writing style as a reusable agent skill.
+      pt: Destila e recria qualquer estilo de escrita dado como uma skill de agente reutilizável.
+origin:
+  list: github-discovery
+  ref: skill-pack

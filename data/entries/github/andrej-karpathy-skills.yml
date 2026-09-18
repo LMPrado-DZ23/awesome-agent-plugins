@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: andrej-karpathy-skills
+name: multica-ai/andrej-karpathy-skills
+title: Karpathy-inspired coding discipline
+url: https://github.com/multica-ai/andrej-karpathy-skills
+type: skill-pack
+category: skills
+license: null
+tags:
+  - skills
+  - best-practices
+  - senior-engineer
+description:
+  en: >-
+    A single CLAUDE.md distilled from Andrej Karpathy's observations on common LLM coding pitfalls, to keep agents from
+    over-engineering.
+  pt: >-
+    Um único CLAUDE.md destilado das observações de Andrej Karpathy sobre erros comuns de codificação de LLMs, para
+    evitar que agentes criem soluções complicadas demais.
+skill:
+  source: multica-ai/andrej-karpathy-skills
+alternatives:
+  - name: DietrichGebert/ponytail
+    url: https://github.com/DietrichGebert/ponytail
+    adds:
+      en: "Same spirit taken further: 12 skills that make the agent think like 'the laziest senior dev in the room'."
+      pt: "Mesmo espírito levado adiante: 12 skills que fazem o agente pensar como 'o dev sênior mais preguiçoso da sala'."
+origin:
+  list: github-discovery
+  ref: claude-marketplace

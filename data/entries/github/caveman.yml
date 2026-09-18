@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: caveman
+name: JuliusBrussee/caveman
+title: Caveman token-saving skill
+url: https://github.com/JuliusBrussee/caveman
+type: skill-pack
+category: skills
+license: null
+tags:
+  - tokens
+  - skills
+  - efficiency
+description:
+  en: >-
+    Coding-agent skill and proxy that cuts roughly 65% of tokens by having the agent communicate in terse 'caveman
+    speak'.
+  pt: >-
+    Skill e proxy para agentes de código que corta cerca de 65% dos tokens fazendo o agente se comunicar em uma 'fala de
+    homem das cavernas' bem enxuta.
+skill:
+  source: JuliusBrussee/caveman
+alternatives:
+  - name: ayghri/i-have-adhd
+    url: https://github.com/ayghri/i-have-adhd
+    adds:
+      en: >-
+        Different approach to terse output: an ADHD-friendly style skill that stops the agent from burying the answer in
+        preamble.
+      pt: >-
+        Abordagem diferente para saída enxuta: skill em estilo ADHD-friendly que impede o agente de enterrar a resposta
+        em rodeios.
+  - name: tamaratran/fast-jev-compaction
+    url: https://github.com/tamaratran/fast-jev-compaction
+    adds:
+      en: >-
+        Replaces the context-compaction summary itself: every tool call is scored, stale ones dropped, kept ones stay
+        verbatim.
+      pt: >-
+        Substitui o próprio resumo de compactação de contexto: cada chamada é pontuada, as obsoletas descartadas, as
+        mantidas ficam literais.
+origin:
+  list: github-discovery
+  ref: claude-marketplace

@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: openspec
+name: Fission-AI/OpenSpec
+title: OpenSpec spec-driven dev
+url: https://github.com/Fission-AI/OpenSpec
+type: skill-pack
+category: workflow
+license: MIT
+tags:
+  - spec-driven-development
+  - planning
+  - sdlc
+description:
+  en: >-
+    Spec-driven development skill set for AI coding assistants: draft, verify, apply and archive change specs so
+    implementation always follows an approved written spec.
+  pt: >-
+    Conjunto de skills de desenvolvimento orientado a especificação para assistentes de IA: rascunhar, verificar,
+    aplicar e arquivar specs de mudança, garantindo que a implementação siga sempre uma especificação aprovada.
+skill:
+  source: Fission-AI/OpenSpec
+alternatives:
+  - name: bmad-code-org/BMAD-METHOD
+    url: https://github.com/bmad-code-org/BMAD-METHOD
+    adds:
+      en: Broader agile-flavored methodology with role-based agents (analyst, architect, PM, dev, UX).
+      pt: Metodologia mais ampla de cunho ágil com agentes por papel (analista, arquiteto, PM, dev, UX).
+  - name: gotalab/cc-sdd
+    url: https://github.com/gotalab/cc-sdd
+    adds:
+      en: Minimal SDD harness with per-phase skills (spec, design, tasks, review) across multiple CLI agents.
+      pt: Harness SDD minimalista com skills por fase (spec, design, tarefas, revisão) em vários agentes de CLI.
+  - name: Gentleman-Programming/gentle-ai
+    url: https://github.com/Gentleman-Programming/gentle-ai
+    adds:
+      en: Bundles SDD alongside persistent-memory and code-review skills for several coding agents at once.
+      pt: Combina SDD com skills de memória persistente e revisão de código para vários agentes de código ao mesmo tempo.
+origin:
+  list: github-discovery
+  ref: skill-pack

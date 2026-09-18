@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: open-seo
+name: every-app/open-seo
+title: Open-source SEO skills
+url: https://github.com/every-app/open-seo
+type: skill-pack
+category: skills
+license: MIT
+tags:
+  - seo
+  - skills
+  - marketing
+description:
+  en: Open-source alternative to Semrush and Ahrefs, packaged as agent skills for SEO analysis and optimization.
+  pt: Alternativa open-source ao Semrush e Ahrefs, empacotada como agent skills para análise e otimização de SEO.
+skill:
+  source: every-app/open-seo
+alternatives:
+  - name: AgriciDaniel/claude-seo
+    url: https://github.com/AgriciDaniel/claude-seo
+    adds:
+      en: >-
+        Much larger universal SEO pack: 25 sub-skills and 18 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO
+        and local SEO.
+      pt: >-
+        Pacote de SEO universal bem maior: 25 sub-skills e 18 sub-agentes cobrindo SEO técnico, E-E-A-T, schema, GEO/AEO
+        e SEO local.
+  - name: appeeky/aso-skills
+    url: https://github.com/appeeky/aso-skills
+    adds:
+      en: >-
+        Same idea applied to app stores: keyword research, metadata optimization and competitor analysis for App Store
+        Optimization.
+      pt: >-
+        Mesma ideia aplicada a lojas de aplicativos: pesquisa de palavras-chave, otimização de metadados e análise de
+        concorrentes para ASO.
+origin:
+  list: github-discovery
+  ref: claude-marketplace

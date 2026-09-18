@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: ecc
+name: affaan-m/ECC
+title: ECC agent harness optimizer
+url: https://github.com/affaan-m/ECC
+type: skill-pack
+category: meta
+license: MIT
+tags:
+  - meta
+  - harness
+  - performance
+description:
+  en: >-
+    Performance-optimization system for coding-agent harnesses bundling skills, instincts, memory, security and
+    research-first development across Claude Code, Codex, OpenCode and Cursor.
+  pt: >-
+    Sistema de otimização de performance para harnesses de agentes de código, reunindo skills, instintos, memória,
+    segurança e desenvolvimento orientado a pesquisa, para Claude Code, Codex, OpenCode e Cursor.
+skill:
+  source: affaan-m/ECC
+alternatives:
+  - name: ruvnet/ruflo
+    url: https://github.com/ruvnet/ruflo
+    adds:
+      en: >-
+        Long-running multi-agent harness that deploys swarms, coordinates autonomous workflows and adds adaptive memory
+        and vector RAG.
+      pt: >-
+        Harness multiagente de longa duração que implanta enxames, coordena fluxos autônomos e adiciona memória
+        adaptativa e RAG vetorial.
+  - name: alirezarezvani/claude-skills
+    url: https://github.com/alirezarezvani/claude-skills
+    adds:
+      en: >-
+        Very large bundle of 846 skills, 198 agents and 282 commands spanning engineering, marketing, product,
+        compliance and research.
+      pt: >-
+        Pacote muito grande com 846 skills, 198 agentes e 282 comandos, cobrindo engenharia, marketing, produto,
+        compliance e pesquisa.
+  - name: sickn33/agentic-awesome-skills
+    url: https://github.com/sickn33/agentic-awesome-skills
+    adds:
+      en: >-
+        Local, agent-first control plane over a catalog of 2,000+ skills, with its own CLI, MCP server and validation
+        workbench.
+      pt: >-
+        Plano de controle local e agent-first sobre um catálogo com mais de 2.000 skills, com CLI, servidor MCP e
+        workbench de validação próprios.
+  - name: wshobson/agents
+    url: https://github.com/wshobson/agents
+    adds:
+      en: >-
+        Multi-harness plugin marketplace bundling 183 skills, 202 agents and 105 commands for Claude Code, Codex, Cursor
+        and more.
+      pt: >-
+        Marketplace de plugins multi-harness reunindo 183 skills, 202 agentes e 105 comandos para Claude Code, Codex,
+        Cursor e outros.
+origin:
+  list: github-discovery
+  ref: claude-marketplace

@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: raptor
+name: gadievron/raptor
+title: Offensive/defensive debugging skills
+url: https://github.com/gadievron/raptor
+type: skill-pack
+category: security
+license: null
+tags:
+  - exploit-development
+  - debugging
+  - security
+  - authorized-use
+description:
+  en: >-
+    Security-focused skills for exploit development and debugging: function tracing, coverage analysis, Frida
+    instrumentation, exploitability validation and GitHub evidence archiving. For authorized security testing only.
+  pt: >-
+    Skills focadas em segurança para desenvolvimento de exploits e depuração: rastreamento de funções, análise de
+    cobertura, instrumentação com Frida, validação de exploitability e arquivamento de evidências no GitHub. Apenas para
+    testes de segurança autorizados.
+skill:
+  source: gadievron/raptor
+origin:
+  list: github-discovery
+  ref: skill-pack

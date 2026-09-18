@@ -4,6 +4,7 @@
 
 > Esta página é gerada a partir de `data/entries/` — não edite à mão.
 
+- [DeepSeek chat and completion](#deepseek-mcp-server) — Servidor oficial da DeepSeek para chat, completion, listagem de modelos e consulta de saldo; exige DEEPSEEK_AP…
 - [WorkBuddy model bridge](#dsh-dsh-workbuddy-connect) — Traz os modelos do aplicativo desktop WorkBuddy, já logado localmente, para o harness sem configuração adicion…
 - [ChatGPT/Codex OAuth model bridge](#dsh-dsh-codex-connect) — Conecta uma conta ChatGPT e os modelos Codex da OpenAI ao harness via OAuth, com ferramentas opcionais de busc…
 - [DeepSeek web session models](#dsh-dsh-deepseek-web-login) — Adiciona um provedor que usa diretamente os modelos web de chat.deepseek.com, com captura de login pelo navega…
@@ -14,15 +15,229 @@
 - [Live model catalog and plan usage](#dsh-dsh-model-sync) — Grava listas de modelos dos provedores ao vivo nas configurações e mostra a janela de plano de 5h/7d ou o sald…
 - [Weak-network model retries](#dsh-dsh-plugin-weaknet-adaptor) — Mantém as chamadas de modelo funcionando em conexões instáveis com retentativas de stream com backoff longo, c…
 - [OpenAI-compatible gateway bridge](#dsh-dsh-sub2api) — Conecta um gateway sub2api para que OpenAI, Claude, Grok e Gemini sejam roteados por uma única base URL, com d…
-- [DeepSeek chat and completion](#deepseek-mcp-server) — Servidor oficial da DeepSeek para chat, completion, listagem de modelos e consulta de saldo; exige DEEPSEEK_AP…
 - [Free OpenCode model access](#dsh-opencode2dsh) — Expõe os modelos gratuitos do OpenCode Zen para o harness, sem necessidade de chave de API.
 - [Volcengine Ark plan routes](#dsh-ark-cli-ark-plan-api) — Registra as rotas do Volcengine Ark Agent Plan, Coding Plan e modelos pós-pagos diretamente no seletor de mode…
+
+<a id="deepseek-mcp-server"></a>
+
+### DeepSeek chat and completion
+
+[DeepSeek MCP Server](https://github.com/DMontgomery40/deepseek-mcp-server) — `Servidor MCP` · ★ 352 · Licença: MIT · Funciona com: Todos os clientes
+
+Servidor oficial da DeepSeek para chat, completion, listagem de modelos e consulta de saldo; exige DEEPSEEK_API_KEY.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio deepseek --env DEEPSEEK_API_KEY='<DEEPSEEK_API_KEY>' -- npx -y deepseek-mcp-server
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add deepseek --env DEEPSEEK_API_KEY='<DEEPSEEK_API_KEY>' -- npx -y deepseek-mcp-server
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add -e DEEPSEEK_API_KEY='<DEEPSEEK_API_KEY>' deepseek npx -y deepseek-mcp-server
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "deepseek": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "deepseek-mcp-server"
+      ],
+      "env": {
+        "DEEPSEEK_API_KEY": "<DEEPSEEK_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "deepseek": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "deepseek-mcp-server"
+      ],
+      "env": {
+        "DEEPSEEK_API_KEY": "<DEEPSEEK_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "deepseek": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "deepseek-mcp-server"
+      ],
+      "enabled": true,
+      "environment": {
+        "DEEPSEEK_API_KEY": "<DEEPSEEK_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "deepseek": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "deepseek-mcp-server"
+      ],
+      "env": {
+        "DEEPSEEK_API_KEY": "<DEEPSEEK_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "deepseek": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "deepseek-mcp-server"
+      ],
+      "env": {
+        "DEEPSEEK_API_KEY": "<DEEPSEEK_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "deepseek": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "deepseek-mcp-server"
+      ],
+      "env": {
+        "DEEPSEEK_API_KEY": "<DEEPSEEK_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  deepseek:
+    type: stdio
+    cmd: npx
+    args: ["-y","deepseek-mcp-server"]
+    envs:
+      DEEPSEEK_API_KEY: "<DEEPSEEK_API_KEY>"
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "deepseek": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "deepseek-mcp-server"
+      ],
+      "env": {
+        "DEEPSEEK_API_KEY": "<DEEPSEEK_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "deepseek": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "deepseek-mcp-server"
+      ],
+      "env": {
+        "DEEPSEEK_API_KEY": "<DEEPSEEK_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `deepseek.cordis.yml  →  dsh web --patch ./deepseek.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-deepseek
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: deepseek
+        transport: stdio
+        command: npx
+        args: ["-y","deepseek-mcp-server"]
+        env: {"DEEPSEEK_API_KEY":"<DEEPSEEK_API_KEY>"}
+        cwd: !!js process.cwd()
+```
+
+</details>
 
 <a id="dsh-dsh-workbuddy-connect"></a>
 
 ### WorkBuddy model bridge
 
-[corrinehu/dsh-workbuddy-connect](https://github.com/corrinehu/dsh-workbuddy-connect) — `Plugin nativo` · ★ 130 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[corrinehu/dsh-workbuddy-connect](https://github.com/corrinehu/dsh-workbuddy-connect) — `Plugin nativo` · ★ 131 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Traz os modelos do aplicativo desktop WorkBuddy, já logado localmente, para o harness sem configuração adicional.
 
@@ -234,221 +449,6 @@ Conecta um gateway sub2api para que OpenAI, Claude, Grok e Gemini sejam roteados
 
 ```bash
 dsh plugin --profile web add github:GodD6366/dsh-sub2api
-```
-
-</details>
-
-<a id="deepseek-mcp-server"></a>
-
-### DeepSeek chat and completion
-
-[DeepSeek MCP Server](https://github.com/DMontgomery40/deepseek-mcp-server) — `Servidor MCP` · Licença: MIT · Funciona com: Todos os clientes
-
-Servidor oficial da DeepSeek para chat, completion, listagem de modelos e consulta de saldo; exige DEEPSEEK_API_KEY.
-
-<details><summary>Instalar</summary>
-
-**Claude Code**
-
-```bash
-claude mcp add --transport stdio deepseek --env DEEPSEEK_API_KEY='<DEEPSEEK_API_KEY>' -- npx -y deepseek-mcp-server
-```
-
-**Codex CLI**
-
-```bash
-codex mcp add deepseek --env DEEPSEEK_API_KEY='<DEEPSEEK_API_KEY>' -- npx -y deepseek-mcp-server
-```
-
-**Gemini CLI**
-
-```bash
-gemini mcp add -e DEEPSEEK_API_KEY='<DEEPSEEK_API_KEY>' deepseek npx -y deepseek-mcp-server
-```
-
-**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "deepseek": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "deepseek-mcp-server"
-      ],
-      "env": {
-        "DEEPSEEK_API_KEY": "<DEEPSEEK_API_KEY>"
-      }
-    }
-  }
-}
-```
-
-**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
-
-```json
-{
-  "servers": {
-    "deepseek": {
-      "type": "stdio",
-      "command": "npx",
-      "args": [
-        "-y",
-        "deepseek-mcp-server"
-      ],
-      "env": {
-        "DEEPSEEK_API_KEY": "<DEEPSEEK_API_KEY>"
-      }
-    }
-  }
-}
-```
-
-**OpenCode** — Arquivo: `opencode.json`
-
-```json
-{
-  "$schema": "https://opencode.ai/config.json",
-  "mcp": {
-    "deepseek": {
-      "type": "local",
-      "command": [
-        "npx",
-        "-y",
-        "deepseek-mcp-server"
-      ],
-      "enabled": true,
-      "environment": {
-        "DEEPSEEK_API_KEY": "<DEEPSEEK_API_KEY>"
-      }
-    }
-  }
-}
-```
-
-**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
-
-```json
-{
-  "mcpServers": {
-    "deepseek": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "deepseek-mcp-server"
-      ],
-      "env": {
-        "DEEPSEEK_API_KEY": "<DEEPSEEK_API_KEY>"
-      }
-    }
-  }
-}
-```
-
-**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
-
-```json
-{
-  "mcpServers": {
-    "deepseek": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "deepseek-mcp-server"
-      ],
-      "env": {
-        "DEEPSEEK_API_KEY": "<DEEPSEEK_API_KEY>"
-      }
-    }
-  }
-}
-```
-
-**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
-
-```json
-{
-  "context_servers": {
-    "deepseek": {
-      "source": "custom",
-      "command": "npx",
-      "args": [
-        "-y",
-        "deepseek-mcp-server"
-      ],
-      "env": {
-        "DEEPSEEK_API_KEY": "<DEEPSEEK_API_KEY>"
-      }
-    }
-  }
-}
-```
-
-**Goose** — Arquivo: `~/.config/goose/config.yaml`
-
-```yaml
-extensions:
-  deepseek:
-    type: stdio
-    cmd: npx
-    args: ["-y","deepseek-mcp-server"]
-    envs:
-      DEEPSEEK_API_KEY: "<DEEPSEEK_API_KEY>"
-    enabled: true
-```
-
-**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "deepseek": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "deepseek-mcp-server"
-      ],
-      "env": {
-        "DEEPSEEK_API_KEY": "<DEEPSEEK_API_KEY>"
-      }
-    }
-  }
-}
-```
-
-**Roo Code** — Arquivo: `.roo/mcp.json`
-
-```json
-{
-  "mcpServers": {
-    "deepseek": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "deepseek-mcp-server"
-      ],
-      "env": {
-        "DEEPSEEK_API_KEY": "<DEEPSEEK_API_KEY>"
-      }
-    }
-  }
-}
-```
-
-**DeepSeek Harness** — Arquivo: `deepseek.cordis.yml  →  dsh web --patch ./deepseek.cordis.yml`
-
-```yaml
-- insert:
-    - id: mcp-deepseek
-      name: '@deepseek-ai/dsh-mcp-client'
-      config:
-        serverName: deepseek
-        transport: stdio
-        command: npx
-        args: ["-y","deepseek-mcp-server"]
-        env: {"DEEPSEEK_API_KEY":"<DEEPSEEK_API_KEY>"}
-        cwd: !!js process.cwd()
 ```
 
 </details>

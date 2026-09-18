@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: lightweight-charts
+name: tradingview/lightweight-charts
+title: Lightweight Charts skills
+url: https://github.com/tradingview/lightweight-charts
+type: skill-pack
+category: dev
+license: Apache-2.0
+tags:
+  - charting
+  - finance
+  - data-visualization
+description:
+  en: >-
+    Official skills for TradingView's HTML5-canvas financial charting library, covering core chart usage and authoring
+    custom chart plugins.
+  pt: >-
+    Skills oficiais da biblioteca de gráficos financeiros em canvas HTML5 da TradingView, cobrindo uso principal de
+    gráficos e criação de plugins de gráfico customizados.
+skill:
+  source: tradingview/lightweight-charts
+origin:
+  list: github-discovery
+  ref: skill-pack

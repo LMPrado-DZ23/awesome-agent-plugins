@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: nvidia-skills
+name: NVIDIA/skills
+title: NVIDIA agent skills
+url: https://github.com/NVIDIA/skills
+type: skill-pack
+category: dev
+license: Apache-2.0
+tags:
+  - skills
+  - nvidia
+  - cuda
+  - robotics
+description:
+  en: >-
+    Official NVIDIA Agent Skills for coding agents covering physical AI, robotics, simulation, CUDA and RAG workflows
+    end to end.
+  pt: >-
+    Agent Skills oficiais da NVIDIA para agentes de código, cobrindo IA física, robótica, simulação, CUDA e fluxos de
+    RAG de ponta a ponta.
+skill:
+  source: NVIDIA/skills
+origin:
+  list: github-discovery
+  ref: claude-marketplace

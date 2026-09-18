@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: oh-my-claudecode
+name: Yeachan-Heo/oh-my-claudecode
+title: Teams-first multi-agent orchestration
+url: https://github.com/Yeachan-Heo/oh-my-claudecode
+type: skill-pack
+category: workflow
+license: MIT
+tags:
+  - orchestration
+  - multi-agent
+  - workflow
+description:
+  en: Teams-first multi-agent orchestration layer for Claude Code, coordinating groups of agents on a shared task.
+  pt: >-
+    Camada de orquestração multiagente com foco em times para o Claude Code, coordenando grupos de agentes em uma tarefa
+    compartilhada.
+skill:
+  source: Yeachan-Heo/oh-my-claudecode
+alternatives:
+  - name: superset-sh/superset
+    url: https://github.com/superset-sh/superset
+    adds:
+      en: Agentic IDE that orchestrates 100+ coding agents in parallel, each running under your own subscriptions.
+      pt: >-
+        IDE agêntica que orquestra mais de 100 agentes de código em paralelo, cada um rodando com suas próprias
+        assinaturas.
+  - name: a5c-ai/babysitter
+    url: https://github.com/a5c-ai/babysitter
+    adds:
+      en: >-
+        Enforces deterministic, hallucination-resistant self-orchestration so agent workforces can manage very complex,
+        long workflows.
+      pt: >-
+        Aplica autoorquestração determinística e resistente a alucinações para que equipes de agentes gerenciem fluxos
+        longos e complexos.
+origin:
+  list: github-discovery
+  ref: claude-marketplace

@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: diagram-design
+name: cathrynlavery/diagram-design
+title: Editorial diagram design skill
+url: https://github.com/cathrynlavery/diagram-design
+type: skill-pack
+category: tools
+license: MIT
+tags:
+  - diagrams
+  - svg
+  - tools
+description:
+  en: >-
+    Skill for generating clean, editorial-style diagrams as self-contained HTML and SVG, without shadows or generic
+    Mermaid output.
+  pt: >-
+    Skill para gerar diagramas limpos em estilo editorial, como HTML e SVG autocontidos, sem sombras nem a aparência
+    genérica do Mermaid.
+skill:
+  source: cathrynlavery/diagram-design
+alternatives:
+  - name: nicobailon/visual-explainer
+    url: https://github.com/nicobailon/visual-explainer
+    adds:
+      en: >-
+        Generates rich HTML pages or slide decks for diagrams, diff reviews, plan audits, data tables and project
+        recaps.
+      pt: >-
+        Gera páginas HTML ricas ou apresentações para diagramas, revisões de diff, auditorias de plano, tabelas de dados
+        e resumos de projeto.
+  - name: plannotator/effective-html
+    url: https://github.com/plannotator/effective-html
+    adds:
+      en: "Broader set of skills for HTML artifacts: wireframes, interactive prototypes, plans and diagrams."
+      pt: "Conjunto mais amplo de skills para artefatos HTML: wireframes, protótipos interativos, planos e diagramas."
+origin:
+  list: github-discovery
+  ref: claude-marketplace

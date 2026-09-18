@@ -153,3 +153,12 @@ test('repository data: all entries valid and generated files up to date', () => 
   assert.deepEqual(validateCatalog(loadEntries()), []);
   execFileSync(process.execPath, ['scripts/generate.mjs', '--check'], { cwd: ROOT, stdio: 'pipe' });
 });
+
+test('discovery: install derived from detected files; marketplaces with SKILL.md become portable skill packs', async () => {
+  const { kindToEntry } = await import('../scripts/import/discover-write.mjs');
+  assert.deepEqual(kindToEntry('skill-pack', 'o/r'), { type: 'skill-pack', skill: { source: 'o/r' } });
+  assert.equal(kindToEntry('claude-marketplace', 'o/r').native.install, '/plugin marketplace add o/r');
+  assert.equal(kindToEntry('claude-marketplace', 'o/r', { skills: ['a'] }).type, 'skill-pack');
+  assert.equal(kindToEntry('gemini-extension', 'o/r').native.install, 'gemini extensions install https://github.com/o/r');
+  assert.throws(() => kindToEntry('skill-pack', 'o/r; rm -rf ~'), /unsafe/);
+});

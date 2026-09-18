@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: gpt-image2-skill
+name: wuyoscar/GPT-Image2-Skill
+title: GPT Image prompt library & CLI
+url: https://github.com/wuyoscar/GPT-Image2-Skill
+type: skill-pack
+category: multimodal
+license: MIT
+tags:
+  - image-generation
+  - multimodal
+  - cli
+description:
+  en: Prompt gallery, image prompt library, agentic skill and CLI for OpenAI's GPT Image 2/2.5 generation and editing.
+  pt: >-
+    Galeria de prompts, biblioteca de prompts de imagem, skill agêntica e CLI para geração e edição de imagens com o GPT
+    Image 2/2.5 da OpenAI.
+skill:
+  source: wuyoscar/GPT-Image2-Skill
+origin:
+  list: github-discovery
+  ref: claude-marketplace

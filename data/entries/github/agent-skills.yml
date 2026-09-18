@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: agent-skills
+name: WordPress/agent-skills
+title: WordPress official agent skills
+url: https://github.com/WordPress/agent-skills
+type: skill-pack
+category: dev
+license: null
+tags:
+  - wordpress
+  - cms
+  - plugin-development
+description:
+  en: >-
+    Official WordPress skills giving AI coding assistants expert-level knowledge of blocks, themes, plugins, the
+    Abilities API and WordPress performance/security best practices.
+  pt: >-
+    Skills oficiais do WordPress que dão a assistentes de IA conhecimento em nível de especialista sobre blocos, temas,
+    plugins, a Abilities API e boas práticas de performance/segurança do WordPress.
+skill:
+  source: WordPress/agent-skills
+origin:
+  list: github-discovery
+  ref: skill-pack

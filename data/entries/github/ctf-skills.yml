@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: ctf-skills
+name: ljagiello/ctf-skills
+title: CTF challenge-solving skills
+url: https://github.com/ljagiello/ctf-skills
+type: skill-pack
+category: security
+license: MIT
+tags:
+  - ctf
+  - security
+  - reverse-engineering
+  - authorized-use
+description:
+  en: >-
+    Focused skill set for solving Capture-The-Flag challenges: web exploitation, binary pwn, cryptography, reverse
+    engineering, forensics and OSINT. For authorized security testing only.
+  pt: >-
+    Conjunto de skills focado em resolver desafios de Capture-The-Flag: exploração web, pwn binário, criptografia,
+    engenharia reversa, forense e OSINT. Apenas para testes de segurança autorizados.
+skill:
+  source: ljagiello/ctf-skills
+origin:
+  list: github-discovery
+  ref: skill-pack

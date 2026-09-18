@@ -4,7 +4,7 @@
 
 > Um catálogo de **servidores MCP, Agent Skills e plugins nativos** para agentes de IA de programação — com o comando de instalação exato para o *seu* cliente.
 
-![entries](https://img.shields.io/badge/itens-462-blue) ![projects](https://img.shields.io/badge/projects-717-blue) ![clients](https://img.shields.io/badge/clients-13-green)
+![entries](https://img.shields.io/badge/itens-589-blue) ![projects](https://img.shields.io/badge/projects-945-blue) ![clients](https://img.shields.io/badge/clients-13-green)
 
 A maioria das listas é presa a um cliente. Aqui cada item diz com quais agentes funciona, e as instruções de instalação são geradas por cliente a partir de uma única especificação, então ficam consistentes. Plugins quase duplicados são juntados numa entrada que aponta a melhor opção e lista o que cada alternativa acrescenta.
 
@@ -12,9 +12,9 @@ A maioria das listas é presa a um cliente. Aqui cada item diz com quais agentes
 
 | Cliente | MCP | Skills | Plugins nativos | Instruções de projeto | Comandos de instalação |
 |---|---|---|---|---|---|
-| [Claude Code](https://code.claude.com/docs/en/mcp) | ✅ | ✅ | ✅ 1 | `CLAUDE.md` | ✅ testados de ponta a ponta |
+| [Claude Code](https://code.claude.com/docs/en/mcp) | ✅ | ✅ | ✅ 3 | `CLAUDE.md` | ✅ testados de ponta a ponta |
 | [Codex CLI](https://developers.openai.com/codex/mcp) | ✅ | ✅ | — | `AGENTS.md` | ✅ testados de ponta a ponta |
-| [Gemini CLI](https://github.com/google-gemini/gemini-cli/blob/main/docs/tools/mcp-server.md) | ✅ | ✅ | — | `GEMINI.md` | ✅ testados de ponta a ponta |
+| [Gemini CLI](https://github.com/google-gemini/gemini-cli/blob/main/docs/tools/mcp-server.md) | ✅ | ✅ | ✅ 3 | `GEMINI.md` | ✅ testados de ponta a ponta |
 | [Cursor](https://cursor.com/docs/context/mcp) | ✅ | ✅ | — | `AGENTS.md / .cursor/rules` | da documentação oficial |
 | [VS Code (Copilot)](https://code.visualstudio.com/docs/copilot/customization/mcp-servers) | ✅ | ✅ | — | `.github/copilot-instructions.md` | da documentação oficial |
 | [OpenCode](https://opencode.ai/docs/mcp-servers/) | ✅ | ✅ | — | `AGENTS.md` | da documentação oficial |
@@ -57,7 +57,7 @@ npx github:LMPrado-DZ23/awesome-agent-plugins install anthropic-skills --client 
 | [Model Context Protocol](catalog/pt-BR/standards.md#model-context-protocol) ★9.3k | Padrão / especificação | Especificação e documentação do MCP, o protocolo aberto que todos os clientes desta lista usam para conectar agentes a ferramentas, dados e prompts. | — |
 | [MCP Registry](catalog/pt-BR/meta.md#mcp-registry) ★7.3k | Lista / registro | Serviço de registro oficial e comunitário de servidores MCP, com API pública para descobrir servidores publicados e seus metadados de instalação. | — |
 | [dsh-market](catalog/pt-BR/meta.md#dsh-market) ★4.1k | Marketplace de plugins | Loja de plugins dentro das Configurações do DeepSeek Harness: busca, instalação/atualização em um clique e troca de temas para todos os plugins do awesome-dsh-plugin. | DeepSeek Harness apenas |
-| [DZ23 Subagents Universal MCP](catalog/pt-BR/workflow.md#dz23-subagents) | Servidor MCP | Roteador MCP self-hosted que delega tarefas de texto/código a vários modelos com failover automático, subagentes paralelos por papel (architect, backend, security, QA…), consenso e memória de missão compartilhada entre harnesses. Node.js 22+, sem dependências de runtime. | Todos os clientes |
+| [DZ23 Subagents Universal MCP](catalog/pt-BR/workflow.md#dz23-subagents) ★0 | Servidor MCP | Roteador MCP self-hosted que delega tarefas de texto/código a vários modelos com failover automático, subagentes paralelos por papel (architect, backend, security, QA…), consenso e memória de missão compartilhada entre harnesses. Node.js 22+, sem dependências de runtime. | Todos os clientes |
 | [Enterprise Product Builder](catalog/pt-BR/skills.md#enterprise-product-builder) | Agent Skills | Skill para construir produtos web com padrão de empresa madura: discovery e métricas, ADRs, contratos de API/dados, design system, segurança OWASP ASVS, privacidade LGPD/GDPR, WCAG 2.2 AA, i18n, SLOs, CI/CD com rollback e revisão de release, com templates. | Todos os clientes |
 | [Super Autonomous Mission Loop](catalog/pt-BR/skills.md#super-autonomous-mission-loop) | Agent Skills | Skill para missões longas de engenharia que rodam até critérios objetivos de conclusão: autonomia delimitada, checkpoint em disco, recuperação após crash ou compactação de contexto, anti-loop, disciplina de Git, três auditorias independentes e release verificado. | Todos os clientes |
 
@@ -74,23 +74,23 @@ Kits prontos para cenários comuns — instale o kit inteiro em um cliente com u
 ## Conteúdo
 
 - [Padrões e especificações](catalog/pt-BR/standards.md) — 3 itens
-- [Registros, listas e gerenciadores](catalog/pt-BR/meta.md) — 11 itens + 4 alternativas incorporadas
-- [Skills e instruções](catalog/pt-BR/skills.md) — 23 itens + 7 alternativas incorporadas
+- [Registros, listas e gerenciadores](catalog/pt-BR/meta.md) — 18 itens + 17 alternativas incorporadas
+- [Skills e instruções](catalog/pt-BR/skills.md) — 46 itens + 49 alternativas incorporadas
 - [Inteligência de código](catalog/pt-BR/code-intel.md) — 10 itens
-- [Navegador e web](catalog/pt-BR/browser.md) — 13 itens + 17 alternativas incorporadas
-- [Documentação e conhecimento](catalog/pt-BR/docs.md) — 23 itens + 8 alternativas incorporadas
+- [Navegador e web](catalog/pt-BR/browser.md) — 17 itens + 22 alternativas incorporadas
+- [Documentação e conhecimento](catalog/pt-BR/docs.md) — 29 itens + 12 alternativas incorporadas
 - [Memória](catalog/pt-BR/memory.md) — 25 itens + 18 alternativas incorporadas
-- [Ferramentas e capacidades](catalog/pt-BR/tools.md) — 45 itens + 18 alternativas incorporadas
-- [Desenvolvimento e runtime](catalog/pt-BR/dev.md) — 49 itens + 17 alternativas incorporadas
-- [Git e revisão de código](catalog/pt-BR/git.md) — 15 itens + 10 alternativas incorporadas
-- [Nuvem, dados e infra](catalog/pt-BR/cloud.md) — 36 itens + 1 alternativas incorporadas
-- [Fluxo de trabalho e agentes](catalog/pt-BR/workflow.md) — 32 itens + 16 alternativas incorporadas
-- [Integrações e notificações](catalog/pt-BR/integrations.md) — 55 itens + 13 alternativas incorporadas
-- [Segurança e permissões](catalog/pt-BR/security.md) — 24 itens + 23 alternativas incorporadas
+- [Ferramentas e capacidades](catalog/pt-BR/tools.md) — 61 itens + 33 alternativas incorporadas
+- [Desenvolvimento e runtime](catalog/pt-BR/dev.md) — 78 itens + 24 alternativas incorporadas
+- [Git e revisão de código](catalog/pt-BR/git.md) — 16 itens + 11 alternativas incorporadas
+- [Nuvem, dados e infra](catalog/pt-BR/cloud.md) — 40 itens + 1 alternativas incorporadas
+- [Fluxo de trabalho e agentes](catalog/pt-BR/workflow.md) — 46 itens + 24 alternativas incorporadas
+- [Integrações e notificações](catalog/pt-BR/integrations.md) — 61 itens + 13 alternativas incorporadas
+- [Segurança e permissões](catalog/pt-BR/security.md) — 33 itens + 28 alternativas incorporadas
 - [Modelos e provedores](catalog/pt-BR/models.md) — 13 itens + 18 alternativas incorporadas
 - [Uso e custo](catalog/pt-BR/usage.md) — 8 itens + 8 alternativas incorporadas
 - [Sessões e mensagens](catalog/pt-BR/sessions.md) — 10 itens + 7 alternativas incorporadas
-- [Visão e voz](catalog/pt-BR/multimodal.md) — 23 itens + 20 alternativas incorporadas
+- [Visão e voz](catalog/pt-BR/multimodal.md) — 31 itens + 21 alternativas incorporadas
 - [Remoto e mobile](catalog/pt-BR/remote.md) — 11 itens + 19 alternativas incorporadas
 - [Melhorias de interface](catalog/pt-BR/ui.md) — 20 itens + 21 alternativas incorporadas
 - [Temas e aparência](catalog/pt-BR/themes.md) — 8 itens + 6 alternativas incorporadas
@@ -104,7 +104,7 @@ Toda importação é reproduzível (`scripts/import/`) e todo item passa pelo me
 |---|---|---|
 | Curadoria manual | 44 | Servidores oficiais, especificações e pacotes de skills conferidos nos READMEs. |
 | [MCP Registry](https://registry.modelcontextprotocol.io) | 198 | Servidores do registro oficial com ≥200★ cujo namespace no registro bate com o dono no GitHub (contra falsificação); instalação vinda dos dados de pacote do registro. |
-| Busca no GitHub | 0 | Busca por topics e palavras-chave, classificada pelos arquivos que existem de fato (SKILL.md, marketplace de plugins, manifesto de extensão do Gemini). |
+| Busca no GitHub | 127 | Busca por topics e palavras-chave, classificada pelos arquivos que existem de fato (SKILL.md, marketplace de plugins, manifesto de extensão do Gemini). |
 | [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) | 220 | Os melhores plugins por estrelas e downloads no npm; quase duplicados viram alternativas. |
 
 ### Plugins do DeepSeek Harness
@@ -121,7 +121,7 @@ Importados do [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome
 
 ## Como contribuir
 
-Adicione um arquivo YAML em `data/entries/` e abra um PR — os READMEs e as páginas do catálogo são gerados. Veja o [CONTRIBUTING.md](CONTRIBUTING.md).
+Qualquer pessoa pode contribuir — não precisa de permissão. Adicione um arquivo YAML em `data/entries/` e abra um PR (os READMEs e as páginas do catálogo são gerados; veja o [CONTRIBUTING.md](CONTRIBUTING.md)), pegue uma [good first issue](../../issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) ou pergunte e sugira nas [Discussions](../../discussions).
 
 ## Licença
 

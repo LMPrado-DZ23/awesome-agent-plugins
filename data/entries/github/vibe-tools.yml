@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: vibe-tools
+name: eastlondoner/vibe-tools
+title: Vibe Tools CLI for Cursor Agent
+url: https://github.com/eastlondoner/vibe-tools
+type: list
+category: tools
+license: MIT
+tags:
+  - cursor
+  - cli
+  - tools
+description:
+  en: >-
+    Command-line toolkit that gives Cursor Agent an extended AI team and advanced skills through external tool
+    integrations.
+  pt: >-
+    Toolkit de linha de comando que dá ao Cursor Agent uma equipe de IA estendida e skills avançadas por meio de
+    integrações com ferramentas externas.
+origin:
+  list: github-discovery
+  ref: rules-collection

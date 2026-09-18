@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: motion-design-skill
+name: LottieFiles/motion-design-skill
+title: Universal motion design skill
+url: https://github.com/LottieFiles/motion-design-skill
+type: skill-pack
+category: dev
+license: MIT
+tags:
+  - motion-design
+  - animation
+  - ui
+description:
+  en: >-
+    Official LottieFiles skill encoding universal motion design principles - timing, easing and choreography adapted
+    from Disney animation principles - for UI animation work.
+  pt: >-
+    Skill oficial da LottieFiles que codifica princípios universais de motion design - timing, easing e coreografia
+    adaptados dos princípios de animação da Disney - para animações de UI.
+skill:
+  source: LottieFiles/motion-design-skill
+alternatives:
+  - name: Jakubantalik/transitions.dev
+    url: https://github.com/Jakubantalik/transitions.dev
+    adds:
+      en: Focused collection of ready-made page and component transitions for web apps.
+      pt: Coleção focada de transições prontas de página e componente para aplicações web.
+origin:
+  list: github-discovery
+  ref: skill-pack

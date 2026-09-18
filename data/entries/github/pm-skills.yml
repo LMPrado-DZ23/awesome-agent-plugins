@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: pm-skills
+name: phuryn/pm-skills
+title: Product management skill marketplace
+url: https://github.com/phuryn/pm-skills
+type: skill-pack
+category: skills
+license: MIT
+tags:
+  - product-management
+  - skills
+description:
+  en: >-
+    Marketplace of 100+ agentic skills, commands and plugins for product managers, spanning discovery, strategy,
+    execution, launch and growth.
+  pt: >-
+    Marketplace com mais de 100 skills, comandos e plugins agênticos para gerentes de produto, cobrindo descoberta,
+    estratégia, execução, lançamento e crescimento.
+skill:
+  source: phuryn/pm-skills
+alternatives:
+  - name: deanpeters/Product-Manager-Skills
+    url: https://github.com/deanpeters/Product-Manager-Skills
+    adds:
+      en: Smaller product-management skill framework built on established PM methods.
+      pt: Framework de skills de gestão de produto menor, construído sobre métodos consolidados de PM.
+origin:
+  list: github-discovery
+  ref: claude-marketplace

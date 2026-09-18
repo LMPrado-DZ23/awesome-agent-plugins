@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: browserbase-skills
+name: browserbase/skills
+title: Browserbase web access skills
+url: https://github.com/browserbase/skills
+type: skill-pack
+category: browser
+license: null
+tags:
+  - browser
+  - skills
+  - automation
+description:
+  en: >-
+    Browserbase's official collection of agent skills for accessing and interacting with the web through its hosted
+    browser infrastructure.
+  pt: >-
+    Coleção oficial da Browserbase de agent skills para acessar e interagir com a web por meio de sua infraestrutura de
+    navegador hospedada.
+skill:
+  source: browserbase/skills
+origin:
+  list: github-discovery
+  ref: claude-marketplace

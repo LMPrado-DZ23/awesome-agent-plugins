@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: anthropic-cybersecurity-skills
+name: mukul975/Anthropic-Cybersecurity-Skills
+title: Cybersecurity skill library
+url: https://github.com/mukul975/Anthropic-Cybersecurity-Skills
+type: skill-pack
+category: security
+license: Apache-2.0
+tags:
+  - security
+  - skills
+  - cybersecurity
+description:
+  en: >-
+    818 structured cybersecurity skills for AI agents mapped to MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND and
+    other frameworks across 29 security domains.
+  pt: >-
+    818 skills estruturadas de cibersegurança para agentes de IA, mapeadas para MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS,
+    D3FEND e outros frameworks, em 29 domínios de segurança.
+skill:
+  source: mukul975/Anthropic-Cybersecurity-Skills
+alternatives:
+  - name: trailofbits/skills
+    url: https://github.com/trailofbits/skills
+    adds:
+      en: Trail of Bits' own Claude Code skills for security research, vulnerability detection and audit workflows.
+      pt: Skills próprias da Trail of Bits para pesquisa de segurança, detecção de vulnerabilidades e fluxos de auditoria.
+  - name: elementalsouls/Claude-BugHunter
+    url: https://github.com/elementalsouls/Claude-BugHunter
+    adds:
+      en: >-
+        Bug-hunting and external red-team skill bundle with 82 skills and disclosed-report patterns across 24
+        vulnerability classes.
+      pt: >-
+        Pacote de skills para caça de bugs e red team externo, com 82 skills e padrões de relatórios divulgados em 24
+        classes de vulnerabilidade.
+origin:
+  list: github-discovery
+  ref: claude-marketplace

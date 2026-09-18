@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: storybook
+name: storybookjs/storybook
+title: Storybook agent skills
+url: https://github.com/storybookjs/storybook
+type: skill-pack
+category: dev
+license: MIT
+tags:
+  - skills
+  - storybook
+  - ui
+  - testing
+description:
+  en: >-
+    Storybook, the industry-standard workshop for building and testing UI components in isolation, ships Agent Skills
+    that teach coding agents to use it.
+  pt: >-
+    O Storybook, workshop padrão da indústria para construir e testar componentes de UI isoladamente, inclui Agent
+    Skills que ensinam agentes de código a usá-lo.
+skill:
+  source: storybookjs/storybook
+origin:
+  list: github-discovery
+  ref: claude-marketplace

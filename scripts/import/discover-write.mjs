@@ -11,8 +11,11 @@ const OUT = 'data/entries/github';
 const SLUG = /^[A-Za-z0-9][\w.-]*\/[\w.-]+$/;
 const slug = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 60);
 
-export function kindToEntry(kind, key) {
+// A Claude Code marketplace that also ships SKILL.md files is installed as a
+// portable skill pack (works on every client via npx skills).
+export function kindToEntry(kind, key, contents = null) {
   if (!SLUG.test(key)) throw new Error(`unsafe repo slug ${key}`);
+  if (kind === 'claude-marketplace' && contents?.skills?.length) kind = 'skill-pack';
   switch (kind) {
     case 'skill-pack': return { type: 'skill-pack', skill: { source: key } };
     case 'claude-marketplace': return { type: 'marketplace', native: { client: 'claude-code', install: `/plugin marketplace add ${key}`, lang: 'text' } };
@@ -42,7 +45,7 @@ export function toDiscoverEntries(merged, found, curated = new Set(), log = () =
     });
     out.push({
       id, name: r.key, title: m.title, url: r.url, category: m.category, license: r.license ?? null,
-      tags: m.tags, description: m.description, ...kindToEntry(r.kind, r.key),
+      tags: m.tags, description: m.description, ...kindToEntry(r.kind, r.key, r.contents),
       ...(alternatives.length ? { alternatives } : {}),
       origin: { list: 'github-discovery', ref: r.kind },
     });
@@ -51,7 +54,7 @@ export function toDiscoverEntries(merged, found, curated = new Set(), log = () =
 }
 
 if (process.argv[1]?.endsWith('discover-write.mjs')) {
-  const merged = JSON.parse(readFileSync('data/cache/discover-merged.json', 'utf8'));
+  const merged = ['skills', 'other'].flatMap((p) => JSON.parse(readFileSync(`data/cache/discover-merged-${p}.json`, 'utf8')));
   const found = JSON.parse(readFileSync('data/cache/gh-discover.json', 'utf8'));
   const curated = new Set(loadEntries().filter((x) => !x.file.startsWith(`${OUT}/`))
     .flatMap((x) => [x.entry.url, ...(x.entry.alternatives ?? []).map((a) => a.url)]));

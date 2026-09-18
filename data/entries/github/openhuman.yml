@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: openhuman
+name: tinyhumansai/openhuman
+title: OpenHuman agent harness
+url: https://github.com/tinyhumansai/openhuman
+type: list
+category: workflow
+license: GPL-3.0
+tags:
+  - agents
+  - orchestration
+  - local-first
+description:
+  en: >-
+    Open-source agent harness with local-first memory, multi-agent orchestration and workflow tooling for personal AI
+    assistants.
+  pt: >-
+    Harness de agentes open-source com memória local-first, orquestração multiagente e ferramentas de fluxo de trabalho
+    para assistentes pessoais de IA.
+origin:
+  list: github-discovery
+  ref: agents-collection

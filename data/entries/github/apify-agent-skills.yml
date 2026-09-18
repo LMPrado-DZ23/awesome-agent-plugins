@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: apify-agent-skills
+name: apify/agent-skills
+title: Apify agent skills
+url: https://github.com/apify/agent-skills
+type: skill-pack
+category: dev
+license: null
+tags:
+  - skills
+  - apify
+  - scraping
+description:
+  en: Official collection of Apify agent skills for building and running web scraping and automation actors.
+  pt: Coleção oficial de agent skills da Apify para construir e executar actors de coleta de dados e automação web.
+skill:
+  source: apify/agent-skills
+origin:
+  list: github-discovery
+  ref: claude-marketplace

@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: skills
+name: browser-act/skills
+title: Browser-Act automation skills
+url: https://github.com/browser-act/skills
+type: skill-pack
+category: browser
+license: MIT
+tags:
+  - browser-automation
+  - web-scraping
+  - cli
+description:
+  en: >-
+    Skill library for a browser-automation CLI aimed at AI agents, with over 100 skills covering anti-bot handling,
+    human handoff, and site-specific data extraction (e-commerce, travel, social).
+  pt: >-
+    Biblioteca de skills para um CLI de automação de navegador voltado a agentes de IA, com mais de 100 skills cobrindo
+    bypass de anti-bot, handoff para humanos e extração de dados de sites específicos (e-commerce, viagens, redes
+    sociais).
+skill:
+  source: browser-act/skills
+alternatives:
+  - name: D4Vinci/Scrapling
+    url: https://github.com/D4Vinci/Scrapling
+    adds:
+      en: Adds a Python adaptive scraping framework skill for code-level, request-to-full-crawl extraction.
+      pt: >-
+        Adiciona skill de framework Python de scraping adaptativo para extração em código, de requisições simples a
+        crawls completos.
+origin:
+  list: github-discovery
+  ref: skill-pack

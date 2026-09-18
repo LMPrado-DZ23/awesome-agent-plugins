@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: vuejs-ai-skills
+name: vuejs-ai/skills
+title: Vue 3 agent skills
+url: https://github.com/vuejs-ai/skills
+type: skill-pack
+category: dev
+license: MIT
+tags:
+  - skills
+  - vue
+  - frontend
+description:
+  en: Official agent skills for Vue 3 development, maintained under the Vue.js organization.
+  pt: Agent skills oficiais para desenvolvimento em Vue 3, mantidas sob a organização do Vue.js.
+skill:
+  source: vuejs-ai/skills
+origin:
+  list: github-discovery
+  ref: claude-marketplace

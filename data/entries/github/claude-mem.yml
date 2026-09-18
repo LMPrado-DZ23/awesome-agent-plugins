@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: claude-mem
+name: thedotmack/claude-mem
+title: Claude Mem persistent context
+url: https://github.com/thedotmack/claude-mem
+type: skill-pack
+category: tools
+license: Apache-2.0
+tags:
+  - memory
+  - context
+  - tools
+description:
+  en: >-
+    Captures what an agent does during a session, compresses it with AI, and injects the relevant memories back into
+    future sessions across Claude Code, Codex, Gemini and more.
+  pt: >-
+    Captura o que um agente faz durante a sessão, comprime com IA e reinjeta as memórias relevantes em sessões futuras,
+    funcionando com Claude Code, Codex, Gemini e outros.
+skill:
+  source: thedotmack/claude-mem
+alternatives:
+  - name: MemPalace/mempalace
+    url: https://github.com/MemPalace/mempalace
+    adds:
+      en: Alternative persistent AI memory system marketed as the best-benchmarked open-source option, and free.
+      pt: >-
+        Sistema alternativo de memória persistente para IA, divulgado como a opção open-source mais avaliada em
+        benchmarks, e gratuita.
+  - name: rohitg00/agentmemory
+    url: https://github.com/rohitg00/agentmemory
+    adds:
+      en: Persistent memory layer for coding agents built around published real-world benchmarks.
+      pt: Camada de memória persistente para agentes de código construída com base em benchmarks reais publicados.
+  - name: volcengine/OpenViking
+    url: https://github.com/volcengine/OpenViking
+    adds:
+      en: Self-evolving context database that unifies agent memory, knowledge RAG and skills in one store.
+      pt: >-
+        Banco de contexto autoevolutivo que unifica memória de agente, RAG de conhecimento e skills em um só
+        repositório.
+  - name: memodb-io/Acontext
+    url: https://github.com/memodb-io/Acontext
+    adds:
+      en: Treats Agent Skills themselves as the memory layer, rather than a separate database.
+      pt: Trata as próprias Agent Skills como a camada de memória, em vez de usar um banco de dados separado.
+origin:
+  list: github-discovery
+  ref: claude-marketplace

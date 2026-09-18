@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: expo-skills
+name: expo/skills
+title: Expo agent skills
+url: https://github.com/expo/skills
+type: skill-pack
+category: dev
+license: MIT
+tags:
+  - skills
+  - expo
+  - react-native
+description:
+  en: Official collection of AI agent skills for working with Expo projects and Expo Application Services (EAS).
+  pt: Coleção oficial de agent skills para trabalhar com projetos Expo e o Expo Application Services (EAS).
+skill:
+  source: expo/skills
+origin:
+  list: github-discovery
+  ref: claude-marketplace

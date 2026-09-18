@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: anydoc
+name: firecrawl/anydoc
+title: AnyDoc document to Markdown
+url: https://github.com/firecrawl/anydoc
+type: skill-pack
+category: docs
+license: MIT
+tags:
+  - document-conversion
+  - markdown
+  - pdf
+  - office-files
+description:
+  en: >-
+    Single skill that converts Word, PowerPoint, Excel, OpenDocument, RTF, EPUB, CSV and PDF files into clean Markdown,
+    built on a Rust converter with Node.js and Python bindings.
+  pt: >-
+    Skill único que converte arquivos Word, PowerPoint, Excel, OpenDocument, RTF, EPUB, CSV e PDF em Markdown limpo,
+    usando um conversor em Rust com bindings para Node.js e Python.
+skill:
+  source: firecrawl/anydoc
+alternatives:
+  - name: opendatalab/MinerU
+    url: https://github.com/opendatalab/MinerU
+    adds:
+      en: Adds OCR-heavy layout analysis for scanned PDFs and complex documents.
+      pt: Adiciona análise de layout com OCR para PDFs escaneados e documentos complexos.
+origin:
+  list: github-discovery
+  ref: skill-pack

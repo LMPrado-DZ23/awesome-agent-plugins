@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: hve-core
+name: microsoft/hve-core
+title: Microsoft Hypervelocity Engineering
+url: https://github.com/microsoft/hve-core
+type: skill-pack
+category: dev
+license: MIT
+tags:
+  - engineering
+  - microsoft
+  - best-practices
+description:
+  en: >-
+    Microsoft's own collection of engineering skills, prompts and agents covering accessibility, code review, data
+    science foundations, DataOps and evaluation design.
+  pt: >-
+    Coleção oficial da Microsoft de skills, prompts e agentes de engenharia cobrindo acessibilidade, revisão de código,
+    fundamentos de ciência de dados, DataOps e design de avaliação.
+skill:
+  source: microsoft/hve-core
+origin:
+  list: github-discovery
+  ref: skill-pack

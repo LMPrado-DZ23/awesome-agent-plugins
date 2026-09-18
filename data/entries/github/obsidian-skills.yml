@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: obsidian-skills
+name: kepano/obsidian-skills
+title: Obsidian agent skills
+url: https://github.com/kepano/obsidian-skills
+type: skill-pack
+category: tools
+license: MIT
+tags:
+  - skills
+  - obsidian
+  - pkm
+description:
+  en: >-
+    Agent skills that teach a coding agent to use the Obsidian CLI and open formats such as Markdown, Bases and JSON
+    Canvas.
+  pt: Agent skills que ensinam um agente a usar o CLI do Obsidian e formatos abertos como Markdown, Bases e JSON Canvas.
+skill:
+  source: kepano/obsidian-skills
+alternatives:
+  - name: AgriciDaniel/claude-obsidian
+    url: https://github.com/AgriciDaniel/claude-obsidian
+    adds:
+      en: >-
+        Turns Obsidian plus Claude Code into a self-organizing second brain, filing any dropped source into a connected
+        knowledge graph.
+      pt: >-
+        Transforma Obsidian mais Claude Code em um segundo cérebro autoorganizável, arquivando qualquer fonte em um
+        grafo de conhecimento conectado.
+  - name: eugeniughelbur/obsidian-second-brain
+    url: https://github.com/eugeniughelbur/obsidian-second-brain
+    adds:
+      en: >-
+        Persistent memory for Claude Code and 6 other CLI agents, stored as markdown in an Obsidian vault, with 45+
+        commands.
+      pt: >-
+        Memória persistente para Claude Code e outros 6 agentes de CLI, guardada como markdown num cofre do Obsidian,
+        com mais de 45 comandos.
+origin:
+  list: github-discovery
+  ref: claude-marketplace

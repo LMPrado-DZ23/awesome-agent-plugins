@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: ppt-master
+name: hugohe3/ppt-master
+title: AI PowerPoint generation skill
+url: https://github.com/hugohe3/ppt-master
+type: skill-pack
+category: tools
+license: MIT
+tags:
+  - presentations
+  - tools
+  - pptx
+description:
+  en: >-
+    Turns documents or topics into native, editable PowerPoint decks with real shapes, transitions, data-backed charts,
+    tables and optional narration.
+  pt: >-
+    Transforma documentos ou temas em apresentações PowerPoint nativas e editáveis, com formas reais, transições,
+    gráficos e tabelas com dados e narração opcional.
+skill:
+  source: hugohe3/ppt-master
+alternatives:
+  - name: zarazhangrui/frontend-slides
+    url: https://github.com/zarazhangrui/frontend-slides
+    adds:
+      en: Creates web-based slide decks using the coding agent's own frontend skills instead of native PowerPoint files.
+      pt: >-
+        Cria apresentações baseadas na web usando as próprias skills de frontend do agente de código, em vez de arquivos
+        PowerPoint nativos.
+  - name: chuspeeism/dashi-ppt-skill
+    url: https://github.com/chuspeeism/dashi-ppt-skill
+    adds:
+      en: Generates browser-editable presentations from multiple visual themes, exportable to HTML, PDF and PPTX.
+      pt: Gera apresentações editáveis no navegador a partir de vários temas visuais, exportáveis para HTML, PDF e PPTX.
+origin:
+  list: github-discovery
+  ref: claude-marketplace

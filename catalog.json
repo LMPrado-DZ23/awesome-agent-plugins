@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "count": 462,
+ "count": 589,
  "clients": {
   "claude-code": {
    "name": "Claude Code",
@@ -57,6 +57,158 @@
  },
  "entries": [
   {
+   "id": "academic-research-skills",
+   "name": "Imbad0202/academic-research-skills",
+   "title": "Academic research skill pipeline",
+   "url": "https://github.com/Imbad0202/academic-research-skills",
+   "type": "skill-pack",
+   "category": "skills",
+   "license": null,
+   "tags": [
+    "research",
+    "academic",
+    "skills"
+   ],
+   "description": {
+    "en": "Skills covering the full academic research pipeline for Claude Code: research, write, review, revise and finalize.",
+    "pt": "Skills que cobrem todo o pipeline de pesquisa acadêmica para o Claude Code: pesquisar, escrever, revisar, corrigir e finalizar."
+   },
+   "skill": {
+    "source": "Imbad0202/academic-research-skills"
+   },
+   "alternatives": [
+    {
+     "name": "Orchestra-Research/AI-Research-SKILLs",
+     "url": "https://github.com/Orchestra-Research/AI-Research-SKILLs",
+     "adds": {
+      "en": "Broader open-source library of AI research and engineering skills, aimed at turning any agent into a research assistant.",
+      "pt": "Biblioteca open-source mais ampla de skills de pesquisa e engenharia de IA, voltada a transformar qualquer agente em assistente de pesquisa."
+     }
+    },
+    {
+     "name": "brycewang-stanford/Auto-Empirical-Research-Skills",
+     "url": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills",
+     "adds": {
+      "en": "Very large curated library of skills for empirical research across eight social-science disciplines.",
+      "pt": "Biblioteca curada e bem maior de skills para pesquisa empírica em oito disciplinas das ciências sociais."
+     }
+    },
+    {
+     "name": "wanshuiyin/Auto-claude-code-research-in-sleep",
+     "url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
+     "adds": {
+      "en": "Lightweight markdown-only skills for autonomous ML research: cross-model review loops, idea discovery and experiment automation.",
+      "pt": "Skills leves, só em markdown, para pesquisa autônoma em ML: revisão entre modelos, descoberta de ideias e automação de experimentos."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
+   "id": "addyosmani-agent-skills",
+   "name": "addyosmani/agent-skills",
+   "title": "Production-grade engineering skills",
+   "url": "https://github.com/addyosmani/agent-skills",
+   "type": "skill-pack",
+   "category": "skills",
+   "license": "MIT",
+   "tags": [
+    "skills",
+    "engineering"
+   ],
+   "description": {
+    "en": "Production-grade engineering skills for AI coding agents by Addy Osmani, covering day-to-day software craftsmanship.",
+    "pt": "Skills de engenharia de nível de produção para agentes de código, criadas por Addy Osmani, cobrindo o ofício do dia a dia de desenvolvimento."
+   },
+   "skill": {
+    "source": "addyosmani/agent-skills"
+   },
+   "alternatives": [
+    {
+     "name": "addyosmani/web-quality-skills",
+     "url": "https://github.com/addyosmani/web-quality-skills",
+     "adds": {
+      "en": "Companion pack from the same author narrowed to web performance: skills based on Lighthouse and Core Web Vitals.",
+      "pt": "Pacote complementar do mesmo autor focado em performance web: skills baseadas em Lighthouse e Core Web Vitals."
+     }
+    },
+    {
+     "name": "Jeffallan/claude-skills",
+     "url": "https://github.com/Jeffallan/claude-skills",
+     "adds": {
+      "en": "67 specialized skills aimed at turning Claude Code into a full-stack pair programmer.",
+      "pt": "67 skills especializadas voltadas a transformar o Claude Code em um par de programação full-stack."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
+   "id": "agent-browser",
+   "name": "vercel-labs/agent-browser",
+   "title": "Agent browser automation CLI",
+   "url": "https://github.com/vercel-labs/agent-browser",
+   "type": "skill-pack",
+   "category": "browser",
+   "license": "Apache-2.0",
+   "tags": [
+    "browser",
+    "automation",
+    "cli"
+   ],
+   "description": {
+    "en": "Browser automation CLI built for AI agents to drive a real browser: navigate, click, fill forms and read pages.",
+    "pt": "CLI de automação de navegador feita para agentes de IA controlarem um navegador real: navegar, clicar, preencher formulários e ler páginas."
+   },
+   "skill": {
+    "source": "vercel-labs/agent-browser"
+   },
+   "alternatives": [
+    {
+     "name": "browser-use/browser-harness",
+     "url": "https://github.com/browser-use/browser-harness",
+     "adds": {
+      "en": "Self-healing browser harness that lets an LLM complete open-ended browsing tasks even when the page layout changes.",
+      "pt": "Harness de navegador autorreparável que permite a um LLM completar tarefas abertas de navegação mesmo quando o layout da página muda."
+     }
+    },
+    {
+     "name": "citrolabs/ego-lite",
+     "url": "https://github.com/citrolabs/ego-lite",
+     "adds": {
+      "en": "Lets an agent share your already logged-in browser session instead of automating a fresh, unauthenticated browser.",
+      "pt": "Permite que um agente compartilhe sua sessão de navegador já autenticada, em vez de automatizar um navegador novo e sem login."
+     }
+    },
+    {
+     "name": "SawyerHood/dev-browser",
+     "url": "https://github.com/SawyerHood/dev-browser",
+     "adds": {
+      "en": "Minimal Claude Skill that simply gives an agent the ability to open and use a web browser.",
+      "pt": "Claude Skill minimalista que apenas dá a um agente a capacidade de abrir e usar um navegador web."
+     }
+    },
+    {
+     "name": "lackeyjb/playwright-skill",
+     "url": "https://github.com/lackeyjb/playwright-skill",
+     "adds": {
+      "en": "General-purpose browser automation skill built specifically on top of Playwright.",
+      "pt": "Skill de automação de navegador de propósito geral construída especificamente sobre o Playwright."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
    "id": "agent-native-mcp",
    "name": "Agent-Native Analytics",
    "title": "Agent-native product analytics",
@@ -80,6 +232,31 @@
    "origin": {
     "list": "mcp-registry",
     "ref": "io.github.BuilderIO/agent-native-analytics"
+   }
+  },
+  {
+   "id": "agent-rules-books",
+   "name": "ciembor/agent-rules-books",
+   "title": "Software design classics skills",
+   "url": "https://github.com/ciembor/agent-rules-books",
+   "type": "skill-pack",
+   "category": "dev",
+   "license": "MIT",
+   "tags": [
+    "software-design",
+    "best-practices",
+    "architecture"
+   ],
+   "description": {
+    "en": "Skills distilling classic software engineering books into agent guidance: Clean Code, Clean Architecture, Refactoring, Domain-Driven Design and Designing Data-Intensive Applications.",
+    "pt": "Skills que destilam clássicos da engenharia de software em orientações para agentes: Clean Code, Clean Architecture, Refactoring, Domain-Driven Design e Designing Data-Intensive Applications."
+   },
+   "skill": {
+    "source": "ciembor/agent-rules-books"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
    }
   },
   {
@@ -117,6 +294,82 @@
    }
   },
   {
+   "id": "agent-skills",
+   "name": "WordPress/agent-skills",
+   "title": "WordPress official agent skills",
+   "url": "https://github.com/WordPress/agent-skills",
+   "type": "skill-pack",
+   "category": "dev",
+   "license": null,
+   "tags": [
+    "wordpress",
+    "cms",
+    "plugin-development"
+   ],
+   "description": {
+    "en": "Official WordPress skills giving AI coding assistants expert-level knowledge of blocks, themes, plugins, the Abilities API and WordPress performance/security best practices.",
+    "pt": "Skills oficiais do WordPress que dão a assistentes de IA conhecimento em nível de especialista sobre blocos, temas, plugins, a Abilities API e boas práticas de performance/segurança do WordPress."
+   },
+   "skill": {
+    "source": "WordPress/agent-skills"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
+   }
+  },
+  {
+   "id": "agent-skills-for-context-engineering",
+   "name": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+   "title": "Context engineering skills",
+   "url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering",
+   "type": "skill-pack",
+   "category": "skills",
+   "license": "MIT",
+   "tags": [
+    "context",
+    "skills",
+    "architecture"
+   ],
+   "description": {
+    "en": "Collection of Agent Skills for context engineering and multi-agent architectures, aimed at debugging and optimizing production agent systems.",
+    "pt": "Coleção de Agent Skills para engenharia de contexto e arquiteturas multiagente, voltada a depurar e otimizar sistemas de agentes em produção."
+   },
+   "skill": {
+    "source": "muratcankoylan/Agent-Skills-for-Context-Engineering"
+   },
+   "alternatives": [
+    {
+     "name": "NeoLabHQ/context-engineering-kit",
+     "url": "https://github.com/NeoLabHQ/context-engineering-kit",
+     "adds": {
+      "en": "Hand-crafted skills aimed specifically at improving agent result quality, including a CodeRabbit-style open alternative.",
+      "pt": "Skills feitas à mão com foco em melhorar a qualidade dos resultados do agente, incluindo alternativa aberta ao estilo CodeRabbit."
+     }
+    },
+    {
+     "name": "mksglu/context-mode",
+     "url": "https://github.com/mksglu/context-mode",
+     "adds": {
+      "en": "Context-window optimizer that sandboxes tool output (up to 98% reduction) and persists session memory across 17 platforms.",
+      "pt": "Otimizador de janela de contexto que isola a saída de ferramentas (até 98% de redução) e mantém memória de sessão em 17 plataformas."
+     }
+    },
+    {
+     "name": "rohitg00/pro-workflow",
+     "url": "https://github.com/rohitg00/pro-workflow",
+     "adds": {
+      "en": "Self-correcting memory that compounds over 50+ sessions, paired with parallel worktrees and agent-team workflows.",
+      "pt": "Memória autocorretiva que se acumula ao longo de mais de 50 sessões, combinada com worktrees paralelas e fluxos de equipes de agentes."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
    "id": "agent-skills-spec",
    "name": "Agent Skills",
    "url": "https://github.com/agentskills/agentskills",
@@ -131,6 +384,32 @@
    "description": {
     "en": "Specification for Agent Skills: a folder with a SKILL.md (name, description, instructions) plus optional scripts and resources that an agent loads on demand.",
     "pt": "Especificação das Agent Skills: uma pasta com SKILL.md (nome, descrição, instruções) e scripts/recursos opcionais que o agente carrega sob demanda."
+   }
+  },
+  {
+   "id": "agent-toolkit-for-aws",
+   "name": "aws/agent-toolkit-for-aws",
+   "title": "AWS agent toolkit",
+   "url": "https://github.com/aws/agent-toolkit-for-aws",
+   "type": "skill-pack",
+   "category": "cloud",
+   "license": "Apache-2.0",
+   "tags": [
+    "skills",
+    "mcp",
+    "aws",
+    "cloud"
+   ],
+   "description": {
+    "en": "Official AWS-supported MCP servers, skills and plugins that help AI agents build and operate on AWS.",
+    "pt": "Servidores MCP, skills e plugins com suporte oficial da AWS para ajudar agentes de IA a construir e operar na AWS."
+   },
+   "skill": {
+    "source": "aws/agent-toolkit-for-aws"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
    }
   },
   {
@@ -161,6 +440,32 @@
    }
   },
   {
+   "id": "agents-cli",
+   "name": "google/agents-cli",
+   "title": "Google Cloud agent development CLI",
+   "url": "https://github.com/google/agents-cli",
+   "type": "native-plugin",
+   "category": "cloud",
+   "license": "Apache-2.0",
+   "tags": [
+    "cloud",
+    "google-cloud",
+    "agents"
+   ],
+   "description": {
+    "en": "CLI and skills that turn any coding assistant into an expert at creating, evaluating and deploying AI agents on Google Cloud's Agent Development Kit.",
+    "pt": "CLI e skills que transformam qualquer assistente de código em especialista em criar, avaliar e implantar agentes de IA no Agent Development Kit do Google Cloud."
+   },
+   "native": {
+    "client": "gemini-cli",
+    "install": "gemini extensions install https://github.com/google/agents-cli"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "gemini-extension"
+   }
+  },
+  {
    "id": "agents-md",
    "name": "AGENTS.md",
    "url": "https://github.com/agentsmd/agents.md",
@@ -175,6 +480,92 @@
    "description": {
     "en": "Open Markdown format for project instructions to coding agents (setup, build, test, conventions). Read by Codex, Cursor, OpenCode, Zed, Windsurf, DeepSeek Harness and others.",
     "pt": "Formato Markdown aberto para instruções de projeto a agentes de código (setup, build, testes, convenções). Lido por Codex, Cursor, OpenCode, Zed, Windsurf, DeepSeek Harness e outros."
+   }
+  },
+  {
+   "id": "ai-infra-guard",
+   "name": "Tencent/AI-Infra-Guard",
+   "title": "AI infrastructure red-teaming skills",
+   "url": "https://github.com/Tencent/AI-Infra-Guard",
+   "type": "skill-pack",
+   "category": "security",
+   "license": "Apache-2.0",
+   "tags": [
+    "ai-security",
+    "red-teaming",
+    "mcp-security",
+    "authorized-use"
+   ],
+   "description": {
+    "en": "Full-stack AI red-teaming skill set detecting agentic supply-chain risk, authorization bypass, cascading failures, data leakage and prompt injection across agents, skills and MCP servers. For authorized security testing only.",
+    "pt": "Conjunto de skills de red teaming full-stack para IA que detecta riscos de supply chain agentic, bypass de autorização, falhas em cascata, vazamento de dados e prompt injection em agentes, skills e servidores MCP. Apenas para testes de segurança autorizados."
+   },
+   "skill": {
+    "source": "Tencent/AI-Infra-Guard"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
+   }
+  },
+  {
+   "id": "ai-job-search",
+   "name": "MadsLorentzen/ai-job-search",
+   "title": "AI job search toolkit",
+   "url": "https://github.com/MadsLorentzen/ai-job-search",
+   "type": "skill-pack",
+   "category": "workflow",
+   "license": "MIT",
+   "tags": [
+    "job-search",
+    "career",
+    "cv-writing"
+   ],
+   "description": {
+    "en": "Job-search skill pack built on Claude Code: evaluates postings, tailors CVs and cover letters, searches multiple job boards, and preps for interviews, all running locally.",
+    "pt": "Pacote de skills de busca de emprego construído sobre o Claude Code: avalia vagas, adapta currículos e cartas de apresentação, pesquisa em vários portais de vagas e prepara entrevistas, tudo local."
+   },
+   "skill": {
+    "source": "MadsLorentzen/ai-job-search"
+   },
+   "alternatives": [
+    {
+     "name": "Paramchoudhary/ResumeSkills",
+     "url": "https://github.com/Paramchoudhary/ResumeSkills",
+     "adds": {
+      "en": "Adds dedicated skills for resume writing, LinkedIn optimization and offer comparison.",
+      "pt": "Adiciona skills dedicadas para redação de currículo, otimização de LinkedIn e comparação de propostas."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
+   }
+  },
+  {
+   "id": "ai-legal-claude",
+   "name": "zubair-trabzada/ai-legal-claude",
+   "title": "AI legal assistant skills",
+   "url": "https://github.com/zubair-trabzada/ai-legal-claude",
+   "type": "skill-pack",
+   "category": "skills",
+   "license": null,
+   "tags": [
+    "legal",
+    "contracts",
+    "compliance"
+   ],
+   "description": {
+    "en": "Legal-assistant skill pack for Claude Code covering contract review, risk analysis, NDA generation, compliance auditing, negotiation strategy and PDF report output.",
+    "pt": "Pacote de skills de assistente jurídico para o Claude Code cobrindo revisão de contratos, análise de risco, geração de NDA, auditoria de conformidade, estratégia de negociação e relatórios em PDF."
+   },
+   "skill": {
+    "source": "zubair-trabzada/ai-legal-claude"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
    }
   },
   {
@@ -269,6 +660,41 @@
    }
   },
   {
+   "id": "andrej-karpathy-skills",
+   "name": "multica-ai/andrej-karpathy-skills",
+   "title": "Karpathy-inspired coding discipline",
+   "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+   "type": "skill-pack",
+   "category": "skills",
+   "license": null,
+   "tags": [
+    "skills",
+    "best-practices",
+    "senior-engineer"
+   ],
+   "description": {
+    "en": "A single CLAUDE.md distilled from Andrej Karpathy's observations on common LLM coding pitfalls, to keep agents from over-engineering.",
+    "pt": "Um único CLAUDE.md destilado das observações de Andrej Karpathy sobre erros comuns de codificação de LLMs, para evitar que agentes criem soluções complicadas demais."
+   },
+   "skill": {
+    "source": "multica-ai/andrej-karpathy-skills"
+   },
+   "alternatives": [
+    {
+     "name": "DietrichGebert/ponytail",
+     "url": "https://github.com/DietrichGebert/ponytail",
+     "adds": {
+      "en": "Same spirit taken further: 12 skills that make the agent think like 'the laziest senior dev in the room'.",
+      "pt": "Mesmo espírito levado adiante: 12 skills que fazem o agente pensar como 'o dev sênior mais preguiçoso da sala'."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
    "id": "anki-mcp-server",
    "name": "Anki MCP Server",
    "title": "Anki flashcard management",
@@ -300,6 +726,74 @@
    }
   },
   {
+   "id": "antfu-skills",
+   "name": "antfu/skills",
+   "title": "Anthony Fu's JS ecosystem skills",
+   "url": "https://github.com/antfu/skills",
+   "type": "skill-pack",
+   "category": "dev",
+   "license": "MIT",
+   "tags": [
+    "javascript",
+    "vue",
+    "tooling"
+   ],
+   "description": {
+    "en": "Curated skill collection from a well-known open-source maintainer covering Vite, Vue, Nuxt, Pinia, Vitest, VueUse, UnoCSS, pnpm and other modern JS tooling.",
+    "pt": "Coleção curada de skills de um mantenedor open-source conhecido, cobrindo Vite, Vue, Nuxt, Pinia, Vitest, VueUse, UnoCSS, pnpm e outras ferramentas JS modernas."
+   },
+   "skill": {
+    "source": "antfu/skills"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
+   }
+  },
+  {
+   "id": "anthropic-cybersecurity-skills",
+   "name": "mukul975/Anthropic-Cybersecurity-Skills",
+   "title": "Cybersecurity skill library",
+   "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+   "type": "skill-pack",
+   "category": "security",
+   "license": "Apache-2.0",
+   "tags": [
+    "security",
+    "skills",
+    "cybersecurity"
+   ],
+   "description": {
+    "en": "818 structured cybersecurity skills for AI agents mapped to MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND and other frameworks across 29 security domains.",
+    "pt": "818 skills estruturadas de cibersegurança para agentes de IA, mapeadas para MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND e outros frameworks, em 29 domínios de segurança."
+   },
+   "skill": {
+    "source": "mukul975/Anthropic-Cybersecurity-Skills"
+   },
+   "alternatives": [
+    {
+     "name": "trailofbits/skills",
+     "url": "https://github.com/trailofbits/skills",
+     "adds": {
+      "en": "Trail of Bits' own Claude Code skills for security research, vulnerability detection and audit workflows.",
+      "pt": "Skills próprias da Trail of Bits para pesquisa de segurança, detecção de vulnerabilidades e fluxos de auditoria."
+     }
+    },
+    {
+     "name": "elementalsouls/Claude-BugHunter",
+     "url": "https://github.com/elementalsouls/Claude-BugHunter",
+     "adds": {
+      "en": "Bug-hunting and external red-team skill bundle with 82 skills and disclosed-report patterns across 24 vulnerability classes.",
+      "pt": "Pacote de skills para caça de bugs e red team externo, com 82 skills e padrões de relatórios divulgados em 24 classes de vulnerabilidade."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
    "id": "anthropic-skills",
    "name": "Anthropic Skills",
    "url": "https://github.com/anthropics/skills",
@@ -317,6 +811,67 @@
    },
    "skill": {
     "source": "anthropics/skills"
+   }
+  },
+  {
+   "id": "anti-slop",
+   "name": "dmmulroy/anti-slop",
+   "title": "Anti-Slop TypeScript lint rules",
+   "url": "https://github.com/dmmulroy/anti-slop",
+   "type": "skill-pack",
+   "category": "dev",
+   "license": "MIT",
+   "tags": [
+    "typescript",
+    "linting",
+    "code-quality"
+   ],
+   "description": {
+    "en": "Single skill installing opinionated Oxlint rules that reject low-evidence, low-quality TypeScript and JavaScript patterns commonly produced by AI code generation.",
+    "pt": "Skill único que instala regras opinativas do Oxlint para rejeitar padrões de baixa qualidade em TypeScript e JavaScript, comuns em código gerado por IA."
+   },
+   "skill": {
+    "source": "dmmulroy/anti-slop"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
+   }
+  },
+  {
+   "id": "anydoc",
+   "name": "firecrawl/anydoc",
+   "title": "AnyDoc document to Markdown",
+   "url": "https://github.com/firecrawl/anydoc",
+   "type": "skill-pack",
+   "category": "docs",
+   "license": "MIT",
+   "tags": [
+    "document-conversion",
+    "markdown",
+    "pdf",
+    "office-files"
+   ],
+   "description": {
+    "en": "Single skill that converts Word, PowerPoint, Excel, OpenDocument, RTF, EPUB, CSV and PDF files into clean Markdown, built on a Rust converter with Node.js and Python bindings.",
+    "pt": "Skill único que converte arquivos Word, PowerPoint, Excel, OpenDocument, RTF, EPUB, CSV e PDF em Markdown limpo, usando um conversor em Rust com bindings para Node.js e Python."
+   },
+   "skill": {
+    "source": "firecrawl/anydoc"
+   },
+   "alternatives": [
+    {
+     "name": "opendatalab/MinerU",
+     "url": "https://github.com/opendatalab/MinerU",
+     "adds": {
+      "en": "Adds OCR-heavy layout analysis for scanned PDFs and complex documents.",
+      "pt": "Adiciona análise de layout com OCR para PDFs escaneados e documentos complexos."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
    }
   },
   {
@@ -352,6 +907,31 @@
    "origin": {
     "list": "mcp-registry",
     "ref": "io.github.anyproto/anytype-mcp"
+   }
+  },
+  {
+   "id": "apify-agent-skills",
+   "name": "apify/agent-skills",
+   "title": "Apify agent skills",
+   "url": "https://github.com/apify/agent-skills",
+   "type": "skill-pack",
+   "category": "dev",
+   "license": null,
+   "tags": [
+    "skills",
+    "apify",
+    "scraping"
+   ],
+   "description": {
+    "en": "Official collection of Apify agent skills for building and running web scraping and automation actors.",
+    "pt": "Coleção oficial de agent skills da Apify para construir e executar actors de coleta de dados e automação web."
+   },
+   "skill": {
+    "source": "apify/agent-skills"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
    }
   },
   {
@@ -482,6 +1062,56 @@
    }
   },
   {
+   "id": "arcads-claude-code",
+   "name": "krusemediallc/arcads-claude-code",
+   "title": "Arcads ad-video generation skills",
+   "url": "https://github.com/krusemediallc/arcads-claude-code",
+   "type": "skill-pack",
+   "category": "multimodal",
+   "license": "MIT",
+   "tags": [
+    "advertising",
+    "video-generation",
+    "marketing"
+   ],
+   "description": {
+    "en": "Official Arcads API skill pack for AI-generated ad creatives: cloning ads, building thumbnails, image ads and short marketing videos from a prompting library.",
+    "pt": "Pacote oficial de skills da API Arcads para criativos de anúncio gerados por IA: clonar anúncios, criar thumbnails, anúncios em imagem e vídeos curtos de marketing a partir de uma biblioteca de prompts."
+   },
+   "skill": {
+    "source": "krusemediallc/arcads-claude-code"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
+   }
+  },
+  {
+   "id": "architecture-decision-record",
+   "name": "architecture-decision-record/architecture-decision-record",
+   "title": "ADR authoring skills",
+   "url": "https://github.com/architecture-decision-record/architecture-decision-record",
+   "type": "skill-pack",
+   "category": "docs",
+   "license": null,
+   "tags": [
+    "adr",
+    "documentation",
+    "architecture"
+   ],
+   "description": {
+    "en": "Small skill pack that teaches an agent to write and maintain Architecture Decision Records for software planning and IT leadership documentation.",
+    "pt": "Pequeno pacote de skills que ensina um agente a escrever e manter Architecture Decision Records para planejamento de software e documentação de liderança de TI."
+   },
+   "skill": {
+    "source": "architecture-decision-record/architecture-decision-record"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
+   }
+  },
+  {
    "id": "arxiv-mcp-server",
    "name": "blazickjp/arxiv-mcp-server",
    "title": "arXiv paper search and analysis",
@@ -602,6 +1232,148 @@
    }
   },
   {
+   "id": "awesome-claude-skills",
+   "name": "ComposioHQ/awesome-claude-skills",
+   "title": "Awesome Claude Skills catalog",
+   "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+   "type": "skill-pack",
+   "category": "skills",
+   "license": null,
+   "tags": [
+    "skill-library",
+    "claude-code",
+    "automation"
+   ],
+   "description": {
+    "en": "Community-curated catalog of hundreds of ready-to-install Claude Agent Skills spanning design, document handling, DevOps automations and per-service integrations.",
+    "pt": "Catálogo curado pela comunidade com centenas de Agent Skills prontas para instalar no Claude, cobrindo design, manipulação de documentos, automações de DevOps e integrações por serviço."
+   },
+   "skill": {
+    "source": "ComposioHQ/awesome-claude-skills"
+   },
+   "alternatives": [
+    {
+     "name": "composio-community/awesome-codex-skills",
+     "url": "https://github.com/composio-community/awesome-codex-skills",
+     "adds": {
+      "en": "Same catalog concept retargeted at the Codex CLI and API.",
+      "pt": "Mesmo conceito de catálogo, direcionado ao Codex CLI e à API."
+     }
+    },
+    {
+     "name": "github/awesome-copilot",
+     "url": "https://github.com/github/awesome-copilot",
+     "adds": {
+      "en": "Community-contributed instructions, agents and skills specifically for GitHub Copilot.",
+      "pt": "Instruções, agentes e skills contribuídos pela comunidade especificamente para o GitHub Copilot."
+     }
+    },
+    {
+     "name": "rmyndharis/antigravity-skills",
+     "url": "https://github.com/rmyndharis/antigravity-skills",
+     "adds": {
+      "en": "Equivalent curated collection targeted at Google Antigravity.",
+      "pt": "Coleção curada equivalente, voltada ao Google Antigravity."
+     }
+    },
+    {
+     "name": "anbeime/skill",
+     "url": "https://github.com/anbeime/skill",
+     "adds": {
+      "en": "Chinese-language skill store that also auto-indexes and categorizes skills scraped from GitHub.",
+      "pt": "Loja de skills em chinês que também indexa e categoriza automaticamente skills coletadas do GitHub."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
+   }
+  },
+  {
+   "id": "awesome-cursorrules",
+   "name": "PatrickJS/awesome-cursorrules",
+   "title": "Awesome Cursor rules",
+   "url": "https://github.com/PatrickJS/awesome-cursorrules",
+   "type": "list",
+   "category": "skills",
+   "license": "CC0-1.0",
+   "tags": [
+    "cursor",
+    "rules",
+    "skills"
+   ],
+   "description": {
+    "en": "Large curated collection of .cursorrules configuration files that customize Cursor's AI behavior for many languages and frameworks.",
+    "pt": "Grande coleção curada de arquivos de configuração .cursorrules que personalizam o comportamento de IA do Cursor para várias linguagens e frameworks."
+   },
+   "alternatives": [
+    {
+     "name": "flyeric0212/cursor-rules",
+     "url": "https://github.com/flyeric0212/cursor-rules",
+     "adds": {
+      "en": "Similar curated collection of Cursor rule files, organized by the maintainer with Chinese-language notes.",
+      "pt": "Coleção curada semelhante de arquivos de regras do Cursor, organizada pelo mantenedor com notas em chinês."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "rules-collection"
+   }
+  },
+  {
+   "id": "awesome-design-skills",
+   "name": "bergside/awesome-design-skills",
+   "title": "Awesome design style skills",
+   "url": "https://github.com/bergside/awesome-design-skills",
+   "type": "skill-pack",
+   "category": "dev",
+   "license": "MIT",
+   "tags": [
+    "design-systems",
+    "ui",
+    "visual-style"
+   ],
+   "description": {
+    "en": "67 DESIGN.md/SKILL.md files, each encoding a distinct visual design style (brutalism, claymorphism, cyberpunk, corporate, and more), for agentic UI generation tools.",
+    "pt": "67 arquivos DESIGN.md/SKILL.md, cada um codificando um estilo visual distinto (brutalismo, claymorphism, cyberpunk, corporativo e mais), para ferramentas agentic de geração de UI."
+   },
+   "skill": {
+    "source": "bergside/awesome-design-skills"
+   },
+   "alternatives": [
+    {
+     "name": "MengTo/Skills",
+     "url": "https://github.com/MengTo/Skills",
+     "adds": {
+      "en": "Broader designer/builder skill set adding 3D asset and procedural-graphics skills.",
+      "pt": "Conjunto mais amplo de skills para designers/builders, incluindo assets 3D e gráficos procedurais."
+     }
+    },
+    {
+     "name": "Nutlope/hallmark",
+     "url": "https://github.com/Nutlope/hallmark",
+     "adds": {
+      "en": "Single opinionated skill specifically aimed at rejecting generic 'AI slop' visual design.",
+      "pt": "Skill única e opinativa voltada especificamente a rejeitar o visual genérico de 'AI slop'."
+     }
+    },
+    {
+     "name": "JimLiu/baoyu-design",
+     "url": "https://github.com/JimLiu/baoyu-design",
+     "adds": {
+      "en": "Runs a Claude-Design-like flow locally to produce polished mockups, decks and wireframes.",
+      "pt": "Executa um fluxo local semelhante ao Claude Design para gerar mockups, decks e wireframes refinados."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
+   }
+  },
+  {
    "id": "awesome-dsh-plugin",
    "name": "awesome-dsh-plugin",
    "url": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
@@ -676,6 +1448,31 @@
    "origin": {
     "list": "mcp-registry",
     "ref": "io.github.basicmachines-co/basic-memory"
+   }
+  },
+  {
+   "id": "beads",
+   "name": "gastownhall/beads",
+   "title": "Beads agent memory & task tracking",
+   "url": "https://github.com/gastownhall/beads",
+   "type": "skill-pack",
+   "category": "workflow",
+   "license": "MIT",
+   "tags": [
+    "memory",
+    "workflow",
+    "task-tracking"
+   ],
+   "description": {
+    "en": "A combined memory and task-tracking upgrade for coding agents, giving them durable state across long-running work.",
+    "pt": "Um upgrade combinado de memória e rastreamento de tarefas para agentes de código, dando a eles estado durável ao longo de trabalhos longos."
+   },
+   "skill": {
+    "source": "gastownhall/beads"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
    }
   },
   {
@@ -960,6 +1757,115 @@
    }
   },
   {
+   "id": "browserbase-skills",
+   "name": "browserbase/skills",
+   "title": "Browserbase web access skills",
+   "url": "https://github.com/browserbase/skills",
+   "type": "skill-pack",
+   "category": "browser",
+   "license": null,
+   "tags": [
+    "browser",
+    "skills",
+    "automation"
+   ],
+   "description": {
+    "en": "Browserbase's official collection of agent skills for accessing and interacting with the web through its hosted browser infrastructure.",
+    "pt": "Coleção oficial da Browserbase de agent skills para acessar e interagir com a web por meio de sua infraestrutura de navegador hospedada."
+   },
+   "skill": {
+    "source": "browserbase/skills"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
+   "id": "builderio-skills",
+   "name": "BuilderIO/skills",
+   "title": "Builder.io agent skills",
+   "url": "https://github.com/BuilderIO/skills",
+   "type": "skill-pack",
+   "category": "dev",
+   "license": "MIT",
+   "tags": [
+    "skills",
+    "builder-io",
+    "cms"
+   ],
+   "description": {
+    "en": "Official Agent Skills published by Builder.io for driving its visual headless CMS and site-building platform from a coding agent.",
+    "pt": "Agent Skills oficiais publicadas pela Builder.io para operar sua plataforma visual de CMS headless e construção de sites a partir de um agente de código."
+   },
+   "skill": {
+    "source": "BuilderIO/skills"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
+   "id": "buildwithclaude",
+   "name": "davepoon/buildwithclaude",
+   "title": "Claude ecosystem discovery hub",
+   "url": "https://github.com/davepoon/buildwithclaude",
+   "type": "skill-pack",
+   "category": "meta",
+   "license": "MIT",
+   "tags": [
+    "meta",
+    "discovery",
+    "marketplace"
+   ],
+   "description": {
+    "en": "Single hub for finding Claude skills, agents, commands, hooks, plugins and marketplace collections in one place.",
+    "pt": "Hub único para encontrar skills, agentes, comandos, hooks, plugins e coleções de marketplace do ecossistema Claude em um só lugar."
+   },
+   "skill": {
+    "source": "davepoon/buildwithclaude"
+   },
+   "alternatives": [
+    {
+     "name": "rohitg00/awesome-claude-code-toolkit",
+     "url": "https://github.com/rohitg00/awesome-claude-code-toolkit",
+     "adds": {
+      "en": "Comprehensive index claiming 135 agents, 35 skills, 42 commands, 176+ plugins, 20 hooks and more in one toolkit.",
+      "pt": "Índice abrangente reunindo 135 agentes, 35 skills, 42 comandos, mais de 176 plugins, 20 hooks e outros itens em um só toolkit."
+     }
+    },
+    {
+     "name": "jeremylongshore/tons-of-skills-marketplace",
+     "url": "https://github.com/jeremylongshore/tons-of-skills-marketplace",
+     "adds": {
+      "en": "Model-agnostic skills platform with its own package manager (ccpi) and a canonical layer over 6,000+ skills.",
+      "pt": "Plataforma de skills agnóstica a modelo, com gerenciador de pacotes próprio (ccpi) e uma camada canônica sobre mais de 6.000 skills."
+     }
+    },
+    {
+     "name": "composio-community/awesome-claude-plugins",
+     "url": "https://github.com/composio-community/awesome-claude-plugins",
+     "adds": {
+      "en": "Curated list of plugins that extend Claude Code with custom commands, agents, hooks and MCP servers.",
+      "pt": "Lista curada de plugins que estendem o Claude Code com comandos, agentes, hooks e servidores MCP personalizados."
+     }
+    },
+    {
+     "name": "VoltAgent/awesome-claude-code-subagents",
+     "url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+     "adds": {
+      "en": "Focused collection of 100+ specialized Claude Code subagents covering a wide range of development use cases.",
+      "pt": "Coleção focada com mais de 100 subagentes especializados para o Claude Code, cobrindo uma ampla gama de casos de uso de desenvolvimento."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
    "id": "butterbase-oss-mcp-server",
    "name": "butterbase-ai/butterbase-oss",
    "title": "Backend platform management",
@@ -1000,6 +1906,56 @@
    }
   },
   {
+   "id": "call-me",
+   "name": "ZeframLou/call-me",
+   "title": "Phone call notifications",
+   "url": "https://github.com/ZeframLou/call-me",
+   "type": "skill-pack",
+   "category": "integrations",
+   "license": null,
+   "tags": [
+    "integrations",
+    "notifications",
+    "fun"
+   ],
+   "description": {
+    "en": "Minimal plugin that lets Claude Code call your phone, useful as a notification channel when a long task finishes or needs input.",
+    "pt": "Plugin minimalista que permite ao Claude Code ligar para o seu telefone, útil como canal de notificação quando uma tarefa longa termina ou precisa de atenção."
+   },
+   "skill": {
+    "source": "ZeframLou/call-me"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
+   "id": "callstackincubator-agent-skills",
+   "name": "callstackincubator/agent-skills",
+   "title": "React Native agent skills",
+   "url": "https://github.com/callstackincubator/agent-skills",
+   "type": "skill-pack",
+   "category": "dev",
+   "license": "MIT",
+   "tags": [
+    "skills",
+    "react-native",
+    "mobile"
+   ],
+   "description": {
+    "en": "Collection of agent-optimized React Native skills for AI coding assistants, maintained by Callstack.",
+    "pt": "Coleção de skills de React Native otimizadas para agentes de IA, mantida pela Callstack."
+   },
+   "skill": {
+    "source": "callstackincubator/agent-skills"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
    "id": "canvas-mcp",
    "name": "vishalsachdev/canvas-mcp",
    "title": "Canvas LMS access",
@@ -1027,6 +1983,150 @@
    "origin": {
     "list": "mcp-registry",
     "ref": "io.github.vishalsachdev/canvas-mcp"
+   }
+  },
+  {
+   "id": "career-ops",
+   "name": "career-ops-hq/career-ops",
+   "title": "AI job search operations",
+   "url": "https://github.com/career-ops-hq/career-ops",
+   "type": "skill-pack",
+   "category": "workflow",
+   "license": "MIT",
+   "tags": [
+    "career",
+    "workflow",
+    "skills"
+   ],
+   "description": {
+    "en": "Open-source AI job search skill: scans job portals, scores listings into a structured A-H report, tailors your CV and tracks applications from your coding CLI.",
+    "pt": "Skill open-source de busca de emprego com IA: varre portais de vagas, pontua os anúncios em um relatório estruturado de A a H, ajusta seu currículo e acompanha as candidaturas."
+   },
+   "skill": {
+    "source": "career-ops-hq/career-ops"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
+   "id": "caveman",
+   "name": "JuliusBrussee/caveman",
+   "title": "Caveman token-saving skill",
+   "url": "https://github.com/JuliusBrussee/caveman",
+   "type": "skill-pack",
+   "category": "skills",
+   "license": null,
+   "tags": [
+    "tokens",
+    "skills",
+    "efficiency"
+   ],
+   "description": {
+    "en": "Coding-agent skill and proxy that cuts roughly 65% of tokens by having the agent communicate in terse 'caveman speak'.",
+    "pt": "Skill e proxy para agentes de código que corta cerca de 65% dos tokens fazendo o agente se comunicar em uma 'fala de homem das cavernas' bem enxuta."
+   },
+   "skill": {
+    "source": "JuliusBrussee/caveman"
+   },
+   "alternatives": [
+    {
+     "name": "ayghri/i-have-adhd",
+     "url": "https://github.com/ayghri/i-have-adhd",
+     "adds": {
+      "en": "Different approach to terse output: an ADHD-friendly style skill that stops the agent from burying the answer in preamble.",
+      "pt": "Abordagem diferente para saída enxuta: skill em estilo ADHD-friendly que impede o agente de enterrar a resposta em rodeios."
+     }
+    },
+    {
+     "name": "tamaratran/fast-jev-compaction",
+     "url": "https://github.com/tamaratran/fast-jev-compaction",
+     "adds": {
+      "en": "Replaces the context-compaction summary itself: every tool call is scored, stale ones dropped, kept ones stay verbatim.",
+      "pt": "Substitui o próprio resumo de compactação de contexto: cada chamada é pontuada, as obsoletas descartadas, as mantidas ficam literais."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
+   "id": "cc-safety-net",
+   "name": "kenryu42/cc-safety-net",
+   "title": "Pre-execution command guard",
+   "url": "https://github.com/kenryu42/cc-safety-net",
+   "type": "skill-pack",
+   "category": "security",
+   "license": "MIT",
+   "tags": [
+    "security",
+    "guardrails",
+    "tools"
+   ],
+   "description": {
+    "en": "Pre-execution guard for AI coding agents that blocks destructive Git and filesystem commands and attempts to access sensitive files before a tool call runs.",
+    "pt": "Guarda de pré-execução para agentes de código que bloqueia comandos destrutivos de Git e sistema de arquivos, além de tentativas de acessar arquivos sensíveis, antes de a chamada rodar."
+   },
+   "skill": {
+    "source": "kenryu42/cc-safety-net"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
+   "id": "cc-skills-golang",
+   "name": "samber/cc-skills-golang",
+   "title": "Go agentic skills collection",
+   "url": "https://github.com/samber/cc-skills-golang",
+   "type": "native-plugin",
+   "category": "dev",
+   "license": "MIT",
+   "tags": [
+    "go",
+    "skills",
+    "dev"
+   ],
+   "description": {
+    "en": "Collection of Golang-focused agentic skills for coding agents, packaged as a Gemini CLI extension.",
+    "pt": "Coleção de skills agênticas focadas em Golang para agentes de código, empacotada como extensão do Gemini CLI."
+   },
+   "native": {
+    "client": "gemini-cli",
+    "install": "gemini extensions install https://github.com/samber/cc-skills-golang"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "gemini-extension"
+   }
+  },
+  {
+   "id": "ccpm",
+   "name": "automazeio/ccpm",
+   "title": "CCPM project management skill",
+   "url": "https://github.com/automazeio/ccpm",
+   "type": "skill-pack",
+   "category": "workflow",
+   "license": "MIT",
+   "tags": [
+    "project-management",
+    "github-issues",
+    "git-worktrees"
+   ],
+   "description": {
+    "en": "Well-known project-management skill system for coding agents that uses GitHub Issues and Git worktrees to coordinate parallel agent execution.",
+    "pt": "Conhecido sistema de skill de gestão de projetos para agentes de código que usa GitHub Issues e Git worktrees para coordenar execução paralela de agentes."
+   },
+   "skill": {
+    "source": "automazeio/ccpm"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
    }
   },
   {
@@ -1089,6 +2189,49 @@
    }
   },
   {
+   "id": "claude-code-game-studios",
+   "name": "Donchitos/Claude-Code-Game-Studios",
+   "title": "Claude game dev studio skills",
+   "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+   "type": "skill-pack",
+   "category": "workflow",
+   "license": "MIT",
+   "tags": [
+    "game-development",
+    "workflow",
+    "studio-pipeline"
+   ],
+   "description": {
+    "en": "Turns Claude Code into a full game-development studio with 72 workflow skills covering design, balance checks, asset specs, art bibles and QA, mirroring a real studio's hierarchy.",
+    "pt": "Transforma o Claude Code num estúdio completo de desenvolvimento de jogos com 72 skills de workflow cobrindo design, balanceamento, specs de assets, art bibles e QA, espelhando a hierarquia de um estúdio real."
+   },
+   "skill": {
+    "source": "Donchitos/Claude-Code-Game-Studios"
+   },
+   "alternatives": [
+    {
+     "name": "majidmanzarpour/threejs-game-skills",
+     "url": "https://github.com/majidmanzarpour/threejs-game-skills",
+     "adds": {
+      "en": "Focused specifically on building playable Three.js browser games with AAA-style graphics.",
+      "pt": "Focado especificamente em construir jogos de navegador jogáveis em Three.js com gráficos estilo AAA."
+     }
+    },
+    {
+     "name": "0x0funky/agent-sprite-forge",
+     "url": "https://github.com/0x0funky/agent-sprite-forge",
+     "adds": {
+      "en": "Narrow skill for generating 2D sprite sheets, tile maps and animated GIFs from prompts.",
+      "pt": "Skill específica para gerar sprite sheets 2D, mapas de tiles e GIFs animados a partir de prompts."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
+   }
+  },
+  {
    "id": "claude-code-mcp-server",
    "name": "Claude Code Explorer MCP",
    "title": "Explore Claude Code source",
@@ -1117,6 +2260,31 @@
    "origin": {
     "list": "mcp-registry",
     "ref": "io.github.nirholas/claude-code-explorer-mcp"
+   }
+  },
+  {
+   "id": "claude-code-my-workflow",
+   "name": "pedrohcgs/claude-code-my-workflow",
+   "title": "Academic econometrics research skills",
+   "url": "https://github.com/pedrohcgs/claude-code-my-workflow",
+   "type": "skill-pack",
+   "category": "docs",
+   "license": "MIT",
+   "tags": [
+    "academic-research",
+    "econometrics",
+    "latex"
+   ],
+   "description": {
+    "en": "Fork-ready Claude Code template for academic researchers using LaTeX/Beamer and R, with multi-agent review, quality gates, adversarial QA and replication-protocol skills.",
+    "pt": "Template pronto para fork do Claude Code para pesquisadores acadêmicos usando LaTeX/Beamer e R, com revisão multi-agente, gates de qualidade, QA adversarial e skills de protocolo de replicação."
+   },
+   "skill": {
+    "source": "pedrohcgs/claude-code-my-workflow"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
    }
   },
   {
@@ -1270,6 +2438,142 @@
    }
   },
   {
+   "id": "claude-hud",
+   "name": "jarrodwatts/claude-hud",
+   "title": "Claude Code HUD",
+   "url": "https://github.com/jarrodwatts/claude-hud",
+   "type": "marketplace",
+   "category": "tools",
+   "license": "MIT",
+   "tags": [
+    "tools",
+    "observability",
+    "claude-code"
+   ],
+   "description": {
+    "en": "Claude Code plugin that shows a live heads-up display of context usage, active tools, running agents and todo progress.",
+    "pt": "Plugin de Claude Code que mostra um painel ao vivo com uso de contexto, ferramentas ativas, agentes em execução e progresso das tarefas."
+   },
+   "native": {
+    "client": "claude-code",
+    "install": "/plugin marketplace add jarrodwatts/claude-hud",
+    "lang": "text"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
+   "id": "claude-mem",
+   "name": "thedotmack/claude-mem",
+   "title": "Claude Mem persistent context",
+   "url": "https://github.com/thedotmack/claude-mem",
+   "type": "skill-pack",
+   "category": "tools",
+   "license": "Apache-2.0",
+   "tags": [
+    "memory",
+    "context",
+    "tools"
+   ],
+   "description": {
+    "en": "Captures what an agent does during a session, compresses it with AI, and injects the relevant memories back into future sessions across Claude Code, Codex, Gemini and more.",
+    "pt": "Captura o que um agente faz durante a sessão, comprime com IA e reinjeta as memórias relevantes em sessões futuras, funcionando com Claude Code, Codex, Gemini e outros."
+   },
+   "skill": {
+    "source": "thedotmack/claude-mem"
+   },
+   "alternatives": [
+    {
+     "name": "MemPalace/mempalace",
+     "url": "https://github.com/MemPalace/mempalace",
+     "adds": {
+      "en": "Alternative persistent AI memory system marketed as the best-benchmarked open-source option, and free.",
+      "pt": "Sistema alternativo de memória persistente para IA, divulgado como a opção open-source mais avaliada em benchmarks, e gratuita."
+     }
+    },
+    {
+     "name": "rohitg00/agentmemory",
+     "url": "https://github.com/rohitg00/agentmemory",
+     "adds": {
+      "en": "Persistent memory layer for coding agents built around published real-world benchmarks.",
+      "pt": "Camada de memória persistente para agentes de código construída com base em benchmarks reais publicados."
+     }
+    },
+    {
+     "name": "volcengine/OpenViking",
+     "url": "https://github.com/volcengine/OpenViking",
+     "adds": {
+      "en": "Self-evolving context database that unifies agent memory, knowledge RAG and skills in one store.",
+      "pt": "Banco de contexto autoevolutivo que unifica memória de agente, RAG de conhecimento e skills em um só repositório."
+     }
+    },
+    {
+     "name": "memodb-io/Acontext",
+     "url": "https://github.com/memodb-io/Acontext",
+     "adds": {
+      "en": "Treats Agent Skills themselves as the memory layer, rather than a separate database.",
+      "pt": "Trata as próprias Agent Skills como a camada de memória, em vez de usar um banco de dados separado."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
+   "id": "claude-octopus",
+   "name": "nyldn/claude-octopus",
+   "title": "Multi-model consensus runner",
+   "url": "https://github.com/nyldn/claude-octopus",
+   "type": "skill-pack",
+   "category": "tools",
+   "license": "MIT",
+   "tags": [
+    "tools",
+    "multi-model",
+    "review"
+   ],
+   "description": {
+    "en": "Runs the same research, design or coding task against multiple AI models in parallel and surfaces where they disagree before you ship.",
+    "pt": "Executa a mesma tarefa de pesquisa, design ou código em paralelo em vários modelos de IA e evidencia onde eles discordam antes de você publicar."
+   },
+   "skill": {
+    "source": "nyldn/claude-octopus"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
+   "id": "claude-plugins-community",
+   "name": "anthropics/claude-plugins-community",
+   "title": "Official community plugin mirror",
+   "url": "https://github.com/anthropics/claude-plugins-community",
+   "type": "skill-pack",
+   "category": "meta",
+   "license": "Apache-2.0",
+   "tags": [
+    "meta",
+    "official",
+    "marketplace"
+   ],
+   "description": {
+    "en": "Read-only mirror of the official community plugin marketplace for Claude Cowork and Claude Code, maintained by Anthropic.",
+    "pt": "Espelho somente leitura do marketplace oficial de plugins da comunidade para Claude Cowork e Claude Code, mantido pela Anthropic."
+   },
+   "skill": {
+    "source": "anthropics/claude-plugins-community"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
    "id": "claude-plugins-official",
    "name": "Claude Code official plugin directory",
    "url": "https://github.com/anthropics/claude-plugins-official",
@@ -1337,6 +2641,90 @@
    "origin": {
     "list": "mcp-registry",
     "ref": "io.github.HUANGCHIHHUNGLeo/claude-real-video"
+   }
+  },
+  {
+   "id": "claude-trading-skills",
+   "name": "tradermonty/claude-trading-skills",
+   "title": "Equity trading skills suite",
+   "url": "https://github.com/tradermonty/claude-trading-skills",
+   "type": "skill-pack",
+   "category": "skills",
+   "license": "MIT",
+   "tags": [
+    "finance",
+    "trading",
+    "market-analysis"
+   ],
+   "description": {
+    "en": "Nearly 100 skills for equity investors and traders: technical charting, earnings and economic calendars, sector screeners, market breadth and strategy development.",
+    "pt": "Quase 100 skills para investidores e traders de ações: análise técnica gráfica, calendários de resultados e econômicos, screeners setoriais, amplitude de mercado e desenvolvimento de estratégias."
+   },
+   "skill": {
+    "source": "tradermonty/claude-trading-skills"
+   },
+   "alternatives": [
+    {
+     "name": "HKUDS/Vibe-Trading",
+     "url": "https://github.com/HKUDS/Vibe-Trading",
+     "adds": {
+      "en": "Adds algorithmic backtesting, multi-asset data feeds and behavioral-finance skills.",
+      "pt": "Adiciona backtesting algorítmico, feeds de dados multiativos e skills de finanças comportamentais."
+     }
+    },
+    {
+     "name": "xbtlin/ai-berkshire",
+     "url": "https://github.com/xbtlin/ai-berkshire",
+     "adds": {
+      "en": "Value-investing research framework modeled on Buffett, Munger and other value investors.",
+      "pt": "Framework de pesquisa em value investing inspirado em Buffett, Munger e outros investidores de valor."
+     }
+    },
+    {
+     "name": "questflowai/investorskills",
+     "url": "https://github.com/questflowai/investorskills",
+     "adds": {
+      "en": "Persona-based skills distilling how specific well-known investors think and decide.",
+      "pt": "Skills baseadas em personas que destilam como investidores conhecidos específicos pensam e decidem."
+     }
+    },
+    {
+     "name": "RKiding/Awesome-finance-skills",
+     "url": "https://github.com/RKiding/Awesome-finance-skills",
+     "adds": {
+      "en": "Smaller free finance skill set focused on news, sentiment and signal tracking.",
+      "pt": "Conjunto menor e gratuito de skills financeiras focado em notícias, sentimento e rastreamento de sinais."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
+   }
+  },
+  {
+   "id": "claude-video",
+   "name": "bradautomates/claude-video",
+   "title": "Give Claude the ability to watch video",
+   "url": "https://github.com/bradautomates/claude-video",
+   "type": "skill-pack",
+   "category": "multimodal",
+   "license": "MIT",
+   "tags": [
+    "video",
+    "multimodal",
+    "skills"
+   ],
+   "description": {
+    "en": "Skill that lets Claude watch any video: it downloads it, extracts frames, transcribes the audio, and hands it all back for analysis.",
+    "pt": "Skill que permite ao Claude assistir a qualquer vídeo: baixa o arquivo, extrai quadros, transcreve o áudio e devolve tudo para análise."
+   },
+   "skill": {
+    "source": "bradautomates/claude-video"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
    }
   },
   {
@@ -1411,6 +2799,56 @@
    }
   },
   {
+   "id": "cli",
+   "name": "larksuite/cli",
+   "title": "Lark/Feishu official CLI skills",
+   "url": "https://github.com/larksuite/cli",
+   "type": "skill-pack",
+   "category": "integrations",
+   "license": "MIT",
+   "tags": [
+    "lark",
+    "feishu",
+    "enterprise-integration"
+   ],
+   "description": {
+    "en": "Official Lark/Feishu CLI and skill set covering messenger, docs, base, attendance, approval and other core Lark business domains, built for humans and AI agents alike.",
+    "pt": "CLI e conjunto de skills oficiais do Lark/Feishu cobrindo mensageria, documentos, base, ponto, aprovações e outros domínios centrais do Lark, feito tanto para humanos quanto para agentes de IA."
+   },
+   "skill": {
+    "source": "larksuite/cli"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
+   }
+  },
+  {
+   "id": "cli-anything",
+   "name": "HKUDS/CLI-Anything",
+   "title": "CLI-Anything agent-native CLIs",
+   "url": "https://github.com/HKUDS/CLI-Anything",
+   "type": "skill-pack",
+   "category": "tools",
+   "license": "Apache-2.0",
+   "tags": [
+    "cli",
+    "tools",
+    "skills"
+   ],
+   "description": {
+    "en": "Makes any command-line software agent-native, via a CLI hub and a large library of skills that describe how to drive each tool.",
+    "pt": "Torna qualquer software de linha de comando nativo para agentes, por meio de um hub de CLIs e uma grande biblioteca de skills que descrevem como operar cada ferramenta."
+   },
+   "skill": {
+    "source": "HKUDS/CLI-Anything"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
    "id": "cloudbase-ai-toolkit-mcp",
    "name": "CloudBase",
    "title": "Tencent CloudBase management",
@@ -1461,6 +2899,31 @@
     "http": {
      "url": "https://bindings.mcp.cloudflare.com/mcp"
     }
+   }
+  },
+  {
+   "id": "cloudflare-skills",
+   "name": "cloudflare/skills",
+   "title": "Cloudflare agent skills",
+   "url": "https://github.com/cloudflare/skills",
+   "type": "skill-pack",
+   "category": "cloud",
+   "license": "Apache-2.0",
+   "tags": [
+    "skills",
+    "cloudflare",
+    "cloud"
+   ],
+   "description": {
+    "en": "Skills that teach coding agents how to build applications and infrastructure on Cloudflare's platform.",
+    "pt": "Skills que ensinam agentes de código a construir aplicações e infraestrutura na plataforma da Cloudflare."
+   },
+   "skill": {
+    "source": "cloudflare/skills"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
    }
   },
   {
@@ -1553,6 +3016,54 @@
    }
   },
   {
+   "id": "compound-engineering-plugin",
+   "name": "EveryInc/compound-engineering-plugin",
+   "title": "Compound Engineering plugin",
+   "url": "https://github.com/EveryInc/compound-engineering-plugin",
+   "type": "skill-pack",
+   "category": "workflow",
+   "license": "MIT",
+   "tags": [
+    "methodology",
+    "workflow"
+   ],
+   "description": {
+    "en": "Official Compound Engineering plugin for Claude Code, Codex and Cursor: a methodology for agent work that compounds gains across sessions.",
+    "pt": "Plugin oficial de Compound Engineering para Claude Code, Codex e Cursor: uma metodologia de trabalho com agentes que acumula ganhos entre sessões."
+   },
+   "skill": {
+    "source": "EveryInc/compound-engineering-plugin"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
+   "id": "conductor",
+   "name": "gemini-cli-extensions/conductor",
+   "title": "Spec-driven development plugin",
+   "url": "https://github.com/gemini-cli-extensions/conductor",
+   "type": "skill-pack",
+   "category": "workflow",
+   "license": "Apache-2.0",
+   "tags": [
+    "spec-driven",
+    "workflow"
+   ],
+   "description": {
+    "en": "Plugin for coding agents (Antigravity, Claude Code) that enables spec-driven development: specify, plan and implement a feature in structured steps.",
+    "pt": "Plugin para agentes de código (Antigravity, Claude Code) que viabiliza o desenvolvimento orientado por especificação: especificar, planejar e implementar uma funcionalidade em etapas estruturadas."
+   },
+   "skill": {
+    "source": "gemini-cli-extensions/conductor"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
    "id": "context7",
    "name": "Context7",
    "url": "https://github.com/upstash/context7",
@@ -1610,6 +3121,56 @@
    }
   },
   {
+   "id": "copilotkit",
+   "name": "CopilotKit/CopilotKit",
+   "title": "CopilotKit frontend agent stack",
+   "url": "https://github.com/CopilotKit/CopilotKit",
+   "type": "skill-pack",
+   "category": "dev",
+   "license": "MIT",
+   "tags": [
+    "skills",
+    "frontend",
+    "generative-ui"
+   ],
+   "description": {
+    "en": "Frontend framework for building agent-facing UIs and generative UI across React, Angular, mobile and Slack, maker of the AG-UI protocol; ships with agent skills.",
+    "pt": "Framework de frontend para construir interfaces voltadas a agentes e UI generativa em React, Angular, mobile e Slack, criador do protocolo AG-UI; inclui agent skills."
+   },
+   "skill": {
+    "source": "CopilotKit/CopilotKit"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
+   "id": "creator-buddy",
+   "name": "SpaceZephyr/creator-buddy",
+   "title": "Creator growth research skills",
+   "url": "https://github.com/SpaceZephyr/creator-buddy",
+   "type": "skill-pack",
+   "category": "skills",
+   "license": null,
+   "tags": [
+    "content-creation",
+    "social-media",
+    "trend-research"
+   ],
+   "description": {
+    "en": "32 orchestrated skills for cross-platform content search, creator analysis and viral trend research, with dedicated coverage of Chinese platforms like WeChat official accounts.",
+    "pt": "32 skills orquestradas para busca de conteúdo multiplataforma, análise de criadores e pesquisa de tendências virais, com cobertura dedicada a plataformas chinesas como contas oficiais do WeChat."
+   },
+   "skill": {
+    "source": "SpaceZephyr/creator-buddy"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
+   }
+  },
+  {
    "id": "crowdsentinels-ai-mcp",
    "name": "thomasxm/CrowdSentinels-AI-MCP",
    "title": "Threat hunting on Elasticsearch",
@@ -1642,6 +3203,32 @@
    "origin": {
     "list": "mcp-registry",
     "ref": "io.github.thomasxm/crowdsentinel-mcp-server"
+   }
+  },
+  {
+   "id": "ctf-skills",
+   "name": "ljagiello/ctf-skills",
+   "title": "CTF challenge-solving skills",
+   "url": "https://github.com/ljagiello/ctf-skills",
+   "type": "skill-pack",
+   "category": "security",
+   "license": "MIT",
+   "tags": [
+    "ctf",
+    "security",
+    "reverse-engineering",
+    "authorized-use"
+   ],
+   "description": {
+    "en": "Focused skill set for solving Capture-The-Flag challenges: web exploitation, binary pwn, cryptography, reverse engineering, forensics and OSINT. For authorized security testing only.",
+    "pt": "Conjunto de skills focado em resolver desafios de Capture-The-Flag: exploração web, pwn binário, criptografia, engenharia reversa, forense e OSINT. Apenas para testes de segurança autorizados."
+   },
+   "skill": {
+    "source": "ljagiello/ctf-skills"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
    }
   },
   {
@@ -1686,6 +3273,56 @@
    }
   },
   {
+   "id": "deep-research-skills",
+   "name": "Weizhena/Deep-Research-skills",
+   "title": "Structured deep research skill",
+   "url": "https://github.com/Weizhena/Deep-Research-skills",
+   "type": "skill-pack",
+   "category": "workflow",
+   "license": "MIT",
+   "tags": [
+    "deep-research",
+    "human-in-the-loop",
+    "reporting"
+   ],
+   "description": {
+    "en": "Structured deep-research skill for Claude Code, OpenCode and Codex with explicit human-in-the-loop control over adding fields, adding items and generating the final report.",
+    "pt": "Skill estruturada de pesquisa profunda para Claude Code, OpenCode e Codex com controle explícito humano-no-loop sobre adicionar campos, adicionar itens e gerar o relatório final."
+   },
+   "skill": {
+    "source": "Weizhena/Deep-Research-skills"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
+   }
+  },
+  {
+   "id": "deepeval",
+   "name": "confident-ai/deepeval",
+   "title": "DeepEval LLM evaluation",
+   "url": "https://github.com/confident-ai/deepeval",
+   "type": "skill-pack",
+   "category": "tools",
+   "license": "Apache-2.0",
+   "tags": [
+    "tools",
+    "eval",
+    "testing"
+   ],
+   "description": {
+    "en": "Open-source LLM evaluation framework for testing and scoring the outputs of language models and agent pipelines.",
+    "pt": "Framework open-source de avaliação de LLMs para testar e pontuar as saídas de modelos de linguagem e pipelines de agentes."
+   },
+   "skill": {
+    "source": "confident-ai/deepeval"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
    "id": "deepseek-mcp-server",
    "name": "DeepSeek MCP Server",
    "title": "DeepSeek chat and completion",
@@ -1720,6 +3357,56 @@
    }
   },
   {
+   "id": "delegate-skills",
+   "name": "amElnagdy/delegate-skills",
+   "title": "Multi-agent delegation skills",
+   "url": "https://github.com/amElnagdy/delegate-skills",
+   "type": "skill-pack",
+   "category": "workflow",
+   "license": "MIT",
+   "tags": [
+    "multi-agent",
+    "code-review",
+    "delegation"
+   ],
+   "description": {
+    "en": "Skill set for delegating a coding task to a separate coding-agent CLI (Aider, Cline, Codex, Cursor, Copilot and more), then reviewing the diff and landing the commit yourself.",
+    "pt": "Conjunto de skills para delegar uma tarefa de código a um CLI de agente separado (Aider, Cline, Codex, Cursor, Copilot e outros), revisando o diff e aplicando o commit você mesmo."
+   },
+   "skill": {
+    "source": "amElnagdy/delegate-skills"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
+   }
+  },
+  {
+   "id": "design-extract",
+   "name": "Manavarya09/design-extract",
+   "title": "Website design-system extractor",
+   "url": "https://github.com/Manavarya09/design-extract",
+   "type": "skill-pack",
+   "category": "tools",
+   "license": "MIT",
+   "tags": [
+    "design",
+    "tokens",
+    "tools"
+   ],
+   "description": {
+    "en": "Extracts a website's full design system into DTCG design tokens, with emitters for iOS SwiftUI, Android Compose, Flutter, Tailwind v4 and Figma variables, plus a CSS/accessibility audit.",
+    "pt": "Extrai o sistema de design completo de um site em tokens DTCG, com geradores para iOS SwiftUI, Android Compose, Flutter, Tailwind v4 e variáveis do Figma, além de auditoria de CSS e acessibilidade."
+   },
+   "skill": {
+    "source": "Manavarya09/design-extract"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
    "id": "desktop-commander",
    "name": "Desktop Commander",
    "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
@@ -1743,6 +3430,49 @@
       "@wonderwhy-er/desktop-commander@latest"
      ]
     }
+   }
+  },
+  {
+   "id": "diagram-design",
+   "name": "cathrynlavery/diagram-design",
+   "title": "Editorial diagram design skill",
+   "url": "https://github.com/cathrynlavery/diagram-design",
+   "type": "skill-pack",
+   "category": "tools",
+   "license": "MIT",
+   "tags": [
+    "diagrams",
+    "svg",
+    "tools"
+   ],
+   "description": {
+    "en": "Skill for generating clean, editorial-style diagrams as self-contained HTML and SVG, without shadows or generic Mermaid output.",
+    "pt": "Skill para gerar diagramas limpos em estilo editorial, como HTML e SVG autocontidos, sem sombras nem a aparência genérica do Mermaid."
+   },
+   "skill": {
+    "source": "cathrynlavery/diagram-design"
+   },
+   "alternatives": [
+    {
+     "name": "nicobailon/visual-explainer",
+     "url": "https://github.com/nicobailon/visual-explainer",
+     "adds": {
+      "en": "Generates rich HTML pages or slide decks for diagrams, diff reviews, plan audits, data tables and project recaps.",
+      "pt": "Gera páginas HTML ricas ou apresentações para diagramas, revisões de diff, auditorias de plano, tabelas de dados e resumos de projeto."
+     }
+    },
+    {
+     "name": "plannotator/effective-html",
+     "url": "https://github.com/plannotator/effective-html",
+     "adds": {
+      "en": "Broader set of skills for HTML artifacts: wireframes, interactive prototypes, plans and diagrams.",
+      "pt": "Conjunto mais amplo de skills para artefatos HTML: wireframes, protótipos interativos, planos e diagramas."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
    }
   },
   {
@@ -1774,6 +3504,66 @@
    "origin": {
     "list": "mcp-registry",
     "ref": "io.github.vfarcic/dot-ai"
+   }
+  },
+  {
+   "id": "dotnet-skills",
+   "name": "dotnet/skills",
+   "title": ".NET / C# agent skills",
+   "url": "https://github.com/dotnet/skills",
+   "type": "skill-pack",
+   "category": "dev",
+   "license": "MIT",
+   "tags": [
+    "skills",
+    "dotnet",
+    "csharp"
+   ],
+   "description": {
+    "en": "Official skills repository to assist AI coding agents with .NET and C# development conventions and tooling.",
+    "pt": "Repositório oficial de skills para ajudar agentes de código com convenções e ferramentas de desenvolvimento em .NET e C#."
+   },
+   "skill": {
+    "source": "dotnet/skills"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
+   "id": "drama-skills",
+   "name": "zenstory-ai/drama-skills",
+   "title": "Short-drama production skills",
+   "url": "https://github.com/zenstory-ai/drama-skills",
+   "type": "skill-pack",
+   "category": "multimodal",
+   "license": "MIT",
+   "tags": [
+    "short-drama",
+    "video-production",
+    "storytelling"
+   ],
+   "description": {
+    "en": "Open-source skill collection for AI short-drama and comic-drama creation: scripts, character assets, storyboards, image/video prompts and review, for Claude Code and Codex.",
+    "pt": "Coleção open-source de skills para criação de curtas dramas e drama em quadrinhos por IA: roteiros, assets de personagens, storyboards, prompts de imagem/vídeo e revisão, para Claude Code e Codex."
+   },
+   "skill": {
+    "source": "zenstory-ai/drama-skills"
+   },
+   "alternatives": [
+    {
+     "name": "eternityspring/shuohao-skills",
+     "url": "https://github.com/eternityspring/shuohao-skills",
+     "adds": {
+      "en": "Smaller, similarly scoped skill set for character breakdown, outlining and shot lists.",
+      "pt": "Conjunto menor e com escopo parecido para quebra de personagens, roteiro e lista de planos."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
    }
   },
   {
@@ -1819,6 +3609,49 @@
    "origin": {
     "list": "mcp-registry",
     "ref": "io.draw/mcp"
+   }
+  },
+  {
+   "id": "drawio-skill",
+   "name": "Agents365-ai/drawio-skill",
+   "title": "Diagrams-as-code (draw.io) skill",
+   "url": "https://github.com/Agents365-ai/drawio-skill",
+   "type": "skill-pack",
+   "category": "tools",
+   "license": "MIT",
+   "tags": [
+    "diagramming",
+    "architecture",
+    "drawio"
+   ],
+   "description": {
+    "en": "Skill that turns natural language, code, Terraform/Kubernetes manifests, SQL, OpenAPI, AsyncAPI, Protobuf and GraphQL into editable, tested draw.io architecture diagrams.",
+    "pt": "Skill que transforma linguagem natural, código, manifestos Terraform/Kubernetes, SQL, OpenAPI, AsyncAPI, Protobuf e GraphQL em diagramas de arquitetura draw.io editáveis e testados."
+   },
+   "skill": {
+    "source": "Agents365-ai/drawio-skill"
+   },
+   "alternatives": [
+    {
+     "name": "markdown-viewer/skills",
+     "url": "https://github.com/markdown-viewer/skills",
+     "adds": {
+      "en": "Generates architecture, network, BPMN, UML and mindmap diagrams natively inside Markdown.",
+      "pt": "Gera diagramas de arquitetura, rede, BPMN, UML e mapas mentais nativamente dentro do Markdown."
+     }
+    },
+    {
+     "name": "yctimlin/mcp_excalidraw",
+     "url": "https://github.com/yctimlin/mcp_excalidraw",
+     "adds": {
+      "en": "MCP server plus skill for programmatic, real-time Excalidraw canvas diagrams.",
+      "pt": "Servidor MCP e skill para diagramas programáticos em tempo real no canvas do Excalidraw."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
    }
   },
   {
@@ -9462,6 +11295,65 @@
    }
   },
   {
+   "id": "ecc",
+   "name": "affaan-m/ECC",
+   "title": "ECC agent harness optimizer",
+   "url": "https://github.com/affaan-m/ECC",
+   "type": "skill-pack",
+   "category": "meta",
+   "license": "MIT",
+   "tags": [
+    "meta",
+    "harness",
+    "performance"
+   ],
+   "description": {
+    "en": "Performance-optimization system for coding-agent harnesses bundling skills, instincts, memory, security and research-first development across Claude Code, Codex, OpenCode and Cursor.",
+    "pt": "Sistema de otimização de performance para harnesses de agentes de código, reunindo skills, instintos, memória, segurança e desenvolvimento orientado a pesquisa, para Claude Code, Codex, OpenCode e Cursor."
+   },
+   "skill": {
+    "source": "affaan-m/ECC"
+   },
+   "alternatives": [
+    {
+     "name": "ruvnet/ruflo",
+     "url": "https://github.com/ruvnet/ruflo",
+     "adds": {
+      "en": "Long-running multi-agent harness that deploys swarms, coordinates autonomous workflows and adds adaptive memory and vector RAG.",
+      "pt": "Harness multiagente de longa duração que implanta enxames, coordena fluxos autônomos e adiciona memória adaptativa e RAG vetorial."
+     }
+    },
+    {
+     "name": "alirezarezvani/claude-skills",
+     "url": "https://github.com/alirezarezvani/claude-skills",
+     "adds": {
+      "en": "Very large bundle of 846 skills, 198 agents and 282 commands spanning engineering, marketing, product, compliance and research.",
+      "pt": "Pacote muito grande com 846 skills, 198 agentes e 282 comandos, cobrindo engenharia, marketing, produto, compliance e pesquisa."
+     }
+    },
+    {
+     "name": "sickn33/agentic-awesome-skills",
+     "url": "https://github.com/sickn33/agentic-awesome-skills",
+     "adds": {
+      "en": "Local, agent-first control plane over a catalog of 2,000+ skills, with its own CLI, MCP server and validation workbench.",
+      "pt": "Plano de controle local e agent-first sobre um catálogo com mais de 2.000 skills, com CLI, servidor MCP e workbench de validação próprios."
+     }
+    },
+    {
+     "name": "wshobson/agents",
+     "url": "https://github.com/wshobson/agents",
+     "adds": {
+      "en": "Multi-harness plugin marketplace bundling 183 skills, 202 agents and 105 commands for Claude Code, Codex, Cursor and more.",
+      "pt": "Marketplace de plugins multi-harness reunindo 183 skills, 202 agentes e 105 comandos para Claude Code, Codex, Cursor e outros."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
    "id": "edgartools-mcp",
    "name": "EdgarTools",
    "title": "SEC EDGAR filings toolkit",
@@ -9591,6 +11483,30 @@
    }
   },
   {
+   "id": "everything-claude-code",
+   "name": "WorldFlowAI/everything-claude-code",
+   "title": "Everything Claude Code toolkit",
+   "url": "https://github.com/WorldFlowAI/everything-claude-code",
+   "type": "skill-pack",
+   "category": "meta",
+   "license": null,
+   "tags": [
+    "meta",
+    "toolkit"
+   ],
+   "description": {
+    "en": "Single-repo Claude Code toolkit bundling agents, commands, skills, rules and hooks for productive AI-assisted development.",
+    "pt": "Toolkit para Claude Code em um único repositório, reunindo agentes, comandos, skills, regras e hooks para desenvolvimento produtivo assistido por IA."
+   },
+   "skill": {
+    "source": "WorldFlowAI/everything-claude-code"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
    "id": "evmole-mcp",
    "name": "EVMole",
    "title": "EVM bytecode analysis",
@@ -9641,6 +11557,31 @@
     "http": {
      "url": "https://mcp.exa.ai/mcp"
     }
+   }
+  },
+  {
+   "id": "expo-skills",
+   "name": "expo/skills",
+   "title": "Expo agent skills",
+   "url": "https://github.com/expo/skills",
+   "type": "skill-pack",
+   "category": "dev",
+   "license": "MIT",
+   "tags": [
+    "skills",
+    "expo",
+    "react-native"
+   ],
+   "description": {
+    "en": "Official collection of AI agent skills for working with Expo projects and Expo Application Services (EAS).",
+    "pt": "Coleção oficial de agent skills para trabalhar com projetos Expo e o Expo Application Services (EAS)."
+   },
+   "skill": {
+    "source": "expo/skills"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
    }
   },
   {
@@ -9729,6 +11670,67 @@
    "origin": {
     "list": "mcp-registry",
     "ref": "io.github.JerBouma/financetoolkit"
+   }
+  },
+  {
+   "id": "financial-services",
+   "name": "anthropics/financial-services",
+   "title": "Anthropic financial services skills",
+   "url": "https://github.com/anthropics/financial-services",
+   "type": "skill-pack",
+   "category": "skills",
+   "license": "Apache-2.0",
+   "tags": [
+    "finance",
+    "skills",
+    "official"
+   ],
+   "description": {
+    "en": "Official Anthropic skill pack for financial services workflows, bundling 120 skills, 16 agents and 50 commands.",
+    "pt": "Pacote oficial de skills da Anthropic para fluxos de serviços financeiros, reunindo 120 skills, 16 agentes e 50 comandos."
+   },
+   "skill": {
+    "source": "anthropics/financial-services"
+   },
+   "alternatives": [
+    {
+     "name": "himself65/finance-skills",
+     "url": "https://github.com/himself65/finance-skills",
+     "adds": {
+      "en": "Smaller, community-made collection of skills focused on personal AI financial analysis rather than enterprise services.",
+      "pt": "Coleção menor, feita pela comunidade, focada em análise financeira pessoal por IA em vez de serviços corporativos."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
+   "id": "firecrawl",
+   "name": "firecrawl/firecrawl",
+   "title": "Firecrawl web data skills",
+   "url": "https://github.com/firecrawl/firecrawl",
+   "type": "skill-pack",
+   "category": "browser",
+   "license": "AGPL-3.0",
+   "tags": [
+    "web-scraping",
+    "search",
+    "api-integration",
+    "browser-automation"
+   ],
+   "description": {
+    "en": "Firecrawl's official skills for its web scraping/search API: onboarding, single-page scrape, multi-page search, and browser interaction, for integrating live web data into agent code.",
+    "pt": "Skills oficiais do Firecrawl para sua API de scraping e busca na web: onboarding, scraping de página única, busca multi-página e interação no navegador, para integrar dados da web ao vivo em agentes."
+   },
+   "skill": {
+    "source": "firecrawl/firecrawl"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
    }
   },
   {
@@ -9823,6 +11825,32 @@
    }
   },
   {
+   "id": "front-end-checklist",
+   "name": "thedaviddias/Front-End-Checklist",
+   "title": "Front-End Checklist skills",
+   "url": "https://github.com/thedaviddias/Front-End-Checklist",
+   "type": "skill-pack",
+   "category": "dev",
+   "license": null,
+   "tags": [
+    "frontend",
+    "accessibility",
+    "checklist",
+    "web-development"
+   ],
+   "description": {
+    "en": "Hundreds of granular front-end best-practice checks (accessibility, performance, SEO, security) packaged as individual skills for humans and AI coding agents.",
+    "pt": "Centenas de verificações granulares de boas práticas front-end (acessibilidade, performance, SEO, segurança) empacotadas como skills individuais para humanos e agentes de IA."
+   },
+   "skill": {
+    "source": "thedaviddias/Front-End-Checklist"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
+   }
+  },
+  {
    "id": "funasr-mcp-server",
    "name": "FunASR",
    "title": "On-device audio transcription",
@@ -9853,6 +11881,56 @@
    "origin": {
     "list": "mcp-registry",
     "ref": "io.github.modelscope/funasr-mcp"
+   }
+  },
+  {
+   "id": "gemini-skills",
+   "name": "google-gemini/gemini-skills",
+   "title": "Gemini API & SDK skills",
+   "url": "https://github.com/google-gemini/gemini-skills",
+   "type": "skill-pack",
+   "category": "dev",
+   "license": "Apache-2.0",
+   "tags": [
+    "skills",
+    "gemini",
+    "google"
+   ],
+   "description": {
+    "en": "Official skills for the Gemini API, SDK and model/agent interactions, maintained under the Google Gemini organization.",
+    "pt": "Skills oficiais para a API do Gemini, o SDK e interações com modelos e agentes, mantidas sob a organização Google Gemini."
+   },
+   "skill": {
+    "source": "google-gemini/gemini-skills"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
+   "id": "generative-media-skills",
+   "name": "SamurAIGPT/Generative-Media-Skills",
+   "title": "muapi generative media skills",
+   "url": "https://github.com/SamurAIGPT/Generative-Media-Skills",
+   "type": "skill-pack",
+   "category": "multimodal",
+   "license": "MIT",
+   "tags": [
+    "generative-media",
+    "video-generation",
+    "image-generation"
+   ],
+   "description": {
+    "en": "73 skills for high-quality multi-modal image, video and audio generation through the muapi API, covering ad creatives, social video, product ads and cinematic direction.",
+    "pt": "73 skills para geração multimodal de imagem, vídeo e áudio de alta qualidade via API muapi, cobrindo criativos de anúncio, vídeo social, anúncios de produto e direção cinematográfica."
+   },
+   "skill": {
+    "source": "SamurAIGPT/Generative-Media-Skills"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
    }
   },
   {
@@ -10259,6 +12337,108 @@
    }
   },
   {
+   "id": "google-skills",
+   "name": "google/skills",
+   "title": "Google product skills",
+   "url": "https://github.com/google/skills",
+   "type": "skill-pack",
+   "category": "dev",
+   "license": "Apache-2.0",
+   "tags": [
+    "skills",
+    "google",
+    "dev"
+   ],
+   "description": {
+    "en": "Marketplace of Agent Skills covering Google products and technologies, for grounding coding agents in Google-specific APIs and workflows.",
+    "pt": "Marketplace de Agent Skills sobre produtos e tecnologias do Google, para orientar agentes de código em APIs e fluxos específicos do Google."
+   },
+   "skill": {
+    "source": "google/skills"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
+   "id": "googleworkspace-cli",
+   "name": "googleworkspace/cli",
+   "title": "Google Workspace CLI",
+   "url": "https://github.com/googleworkspace/cli",
+   "type": "native-plugin",
+   "category": "integrations",
+   "license": "Apache-2.0",
+   "tags": [
+    "integrations",
+    "google-workspace",
+    "cli"
+   ],
+   "description": {
+    "en": "One command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat and Admin, generated dynamically from the Google Discovery Service and bundled with AI agent skills.",
+    "pt": "Ferramenta de linha de comando única para Drive, Gmail, Calendar, Sheets, Docs, Chat e Admin, gerada dinamicamente a partir do Google Discovery Service e acompanhada de agent skills."
+   },
+   "native": {
+    "client": "gemini-cli",
+    "install": "gemini extensions install https://github.com/googleworkspace/cli"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "gemini-extension"
+   }
+  },
+  {
+   "id": "gpt-image2-skill",
+   "name": "wuyoscar/GPT-Image2-Skill",
+   "title": "GPT Image prompt library & CLI",
+   "url": "https://github.com/wuyoscar/GPT-Image2-Skill",
+   "type": "skill-pack",
+   "category": "multimodal",
+   "license": "MIT",
+   "tags": [
+    "image-generation",
+    "multimodal",
+    "cli"
+   ],
+   "description": {
+    "en": "Prompt gallery, image prompt library, agentic skill and CLI for OpenAI's GPT Image 2/2.5 generation and editing.",
+    "pt": "Galeria de prompts, biblioteca de prompts de imagem, skill agêntica e CLI para geração e edição de imagens com o GPT Image 2/2.5 da OpenAI."
+   },
+   "skill": {
+    "source": "wuyoscar/GPT-Image2-Skill"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
+   "id": "gsap-skills",
+   "name": "greensock/gsap-skills",
+   "title": "GSAP animation skills",
+   "url": "https://github.com/greensock/gsap-skills",
+   "type": "skill-pack",
+   "category": "dev",
+   "license": "MIT",
+   "tags": [
+    "skills",
+    "animation",
+    "gsap",
+    "frontend"
+   ],
+   "description": {
+    "en": "Official AI skills for GSAP (GreenSock Animation Platform) teaching coding agents correct animation patterns, plugin usage and best practices.",
+    "pt": "Skills oficiais de IA para o GSAP (GreenSock Animation Platform), ensinando agentes de código padrões corretos de animação, uso de plugins e boas práticas."
+   },
+   "skill": {
+    "source": "greensock/gsap-skills"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
    "id": "ha-mcp",
    "name": "homeassistant-ai/ha-mcp",
    "title": "Home Assistant control",
@@ -10285,6 +12465,58 @@
    "origin": {
     "list": "mcp-registry",
     "ref": "io.github.homeassistant-ai/ha-mcp"
+   }
+  },
+  {
+   "id": "hack-skills",
+   "name": "yaklang/hack-skills",
+   "title": "Practical hacker skills library",
+   "url": "https://github.com/yaklang/hack-skills",
+   "type": "skill-pack",
+   "category": "security",
+   "license": "MIT",
+   "tags": [
+    "security",
+    "penetration-testing",
+    "red-team",
+    "authorized-use"
+   ],
+   "description": {
+    "en": "Over a hundred offensive-security skills (web, network, Active Directory, mobile, cloud) for AI-assisted penetration testing. For authorized security testing only.",
+    "pt": "Mais de cem skills de segurança ofensiva (web, rede, Active Directory, mobile, nuvem) para pentest assistido por IA. Apenas para testes de segurança autorizados."
+   },
+   "skill": {
+    "source": "yaklang/hack-skills"
+   },
+   "alternatives": [
+    {
+     "name": "SnailSploit/Claude-Red",
+     "url": "https://github.com/SnailSploit/Claude-Red",
+     "adds": {
+      "en": "Curated red-team skill library organized by attack surface: AD, API, JWT, OAuth, CI/CD, cloud.",
+      "pt": "Biblioteca de skills de red team organizada por superfície de ataque: AD, API, JWT, OAuth, CI/CD, nuvem."
+     }
+    },
+    {
+     "name": "zhaoxuya520/reverse-skill",
+     "url": "https://github.com/zhaoxuya520/reverse-skill",
+     "adds": {
+      "en": "Adds AI-routed toolchain bootstrapping for reverse engineering and authorized pentesting.",
+      "pt": "Adiciona bootstrapping de ferramentas roteado por IA para engenharia reversa e pentest autorizado."
+     }
+    },
+    {
+     "name": "Netw0rkNoob/VulnClaw",
+     "url": "https://github.com/Netw0rkNoob/VulnClaw",
+     "adds": {
+      "en": "Adds an end-to-end recon-to-report pipeline driven by natural language.",
+      "pt": "Adiciona um pipeline completo de reconhecimento a relatório, guiado por linguagem natural."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
    }
   },
   {
@@ -10315,6 +12547,31 @@
    "origin": {
     "list": "mcp-registry",
     "ref": "io.github.ggozad/haiku-rag"
+   }
+  },
+  {
+   "id": "heroui",
+   "name": "heroui-inc/heroui",
+   "title": "HeroUI React component skills",
+   "url": "https://github.com/heroui-inc/heroui",
+   "type": "skill-pack",
+   "category": "dev",
+   "license": "Apache-2.0",
+   "tags": [
+    "react",
+    "ui-components",
+    "design-system"
+   ],
+   "description": {
+    "en": "Official skills from the HeroUI (formerly NextUI) React component library covering migration, React Native usage and general React integration.",
+    "pt": "Skills oficiais da biblioteca de componentes React HeroUI (antes NextUI) cobrindo migração, uso em React Native e integração geral com React."
+   },
+   "skill": {
+    "source": "heroui-inc/heroui"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
    }
   },
   {
@@ -10382,6 +12639,143 @@
    }
   },
   {
+   "id": "huggingface-skills",
+   "name": "huggingface/skills",
+   "title": "Hugging Face ecosystem skills",
+   "url": "https://github.com/huggingface/skills",
+   "type": "skill-pack",
+   "category": "dev",
+   "license": "Apache-2.0",
+   "tags": [
+    "skills",
+    "huggingface",
+    "ml"
+   ],
+   "description": {
+    "en": "Agent Skills that give coding agents access to the Hugging Face ecosystem: models, datasets and Hub workflows.",
+    "pt": "Agent Skills que dão a agentes de código acesso ao ecossistema Hugging Face: modelos, datasets e fluxos do Hub."
+   },
+   "skill": {
+    "source": "huggingface/skills"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
+   "id": "human-writing",
+   "name": "KKKKhazix/human-writing",
+   "title": "Human-sounding Chinese writing skill",
+   "url": "https://github.com/KKKKhazix/human-writing",
+   "type": "skill-pack",
+   "category": "skills",
+   "license": "MIT",
+   "tags": [
+    "writing",
+    "chinese",
+    "style-transfer"
+   ],
+   "description": {
+    "en": "Popular general-purpose writing and rewriting skill that makes AI-generated Chinese text read like a specific person speaking, rather than generic AI prose.",
+    "pt": "Skill popular e de uso geral de escrita e reescrita que faz texto em chinês gerado por IA soar como uma pessoa específica falando, em vez de prosa genérica de IA."
+   },
+   "skill": {
+    "source": "KKKKhazix/human-writing"
+   },
+   "alternatives": [
+    {
+     "name": "larashero3-dotcom/writing-dna-skill",
+     "url": "https://github.com/larashero3-dotcom/writing-dna-skill",
+     "adds": {
+      "en": "Distills and recreates any given writing style as a reusable agent skill.",
+      "pt": "Destila e recria qualquer estilo de escrita dado como uma skill de agente reutilizável."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
+   }
+  },
+  {
+   "id": "humanizer",
+   "name": "blader/humanizer",
+   "title": "AI-writing humanizer skill",
+   "url": "https://github.com/blader/humanizer",
+   "type": "marketplace",
+   "category": "skills",
+   "license": "MIT",
+   "tags": [
+    "writing",
+    "skills"
+   ],
+   "description": {
+    "en": "Agent skill that removes common signs of AI-generated writing from text, making it read more naturally.",
+    "pt": "Agent skill que remove sinais comuns de texto gerado por IA, deixando a escrita com leitura mais natural."
+   },
+   "native": {
+    "client": "claude-code",
+    "install": "/plugin marketplace add blader/humanizer",
+    "lang": "text"
+   },
+   "alternatives": [
+    {
+     "name": "conorbronsdon/avoid-ai-writing",
+     "url": "https://github.com/conorbronsdon/avoid-ai-writing",
+     "adds": {
+      "en": "Similar skill that audits and rewrites content to remove AI writing patterns.",
+      "pt": "Skill semelhante que audita e reescreve conteúdo para remover padrões de escrita de IA."
+     }
+    },
+    {
+     "name": "Nanako0129/sepia",
+     "url": "https://github.com/Nanako0129/sepia",
+     "adds": {
+      "en": "De-AI-writing skill aimed at fiction specifically, repairing narrative architecture based on published research.",
+      "pt": "Skill de remoção de escrita de IA voltada especificamente à ficção, corrigindo a arquitetura narrativa com base em pesquisa publicada."
+     }
+    },
+    {
+     "name": "epoko77-ai/im-not-ai",
+     "url": "https://github.com/epoko77-ai/im-not-ai",
+     "adds": {
+      "en": "Same idea for Korean text: detects and rewrites translationese and other tells specific to Korean AI writing.",
+      "pt": "Mesma ideia para textos em coreano: detecta e reescreve marcas de tradução e outros sinais típicos de escrita de IA em coreano."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
+   "id": "hve-core",
+   "name": "microsoft/hve-core",
+   "title": "Microsoft Hypervelocity Engineering",
+   "url": "https://github.com/microsoft/hve-core",
+   "type": "skill-pack",
+   "category": "dev",
+   "license": "MIT",
+   "tags": [
+    "engineering",
+    "microsoft",
+    "best-practices"
+   ],
+   "description": {
+    "en": "Microsoft's own collection of engineering skills, prompts and agents covering accessibility, code review, data science foundations, DataOps and evaluation design.",
+    "pt": "Coleção oficial da Microsoft de skills, prompts e agentes de engenharia cobrindo acessibilidade, revisão de código, fundamentos de ciência de dados, DataOps e design de avaliação."
+   },
+   "skill": {
+    "source": "microsoft/hve-core"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
+   }
+  },
+  {
    "id": "hyperframes-skills",
    "name": "HyperFrames",
    "url": "https://github.com/heygen-com/hyperframes",
@@ -10435,6 +12829,31 @@
    "origin": {
     "list": "mcp-registry",
     "ref": "io.github.Nutlope/inspo"
+   }
+  },
+  {
+   "id": "internet-court-skill",
+   "name": "internet-court/internet-court-skill",
+   "title": "Agent-to-agent commerce trust layer",
+   "url": "https://github.com/internet-court/internet-court-skill",
+   "type": "skill-pack",
+   "category": "integrations",
+   "license": null,
+   "tags": [
+    "integrations",
+    "payments",
+    "agent-commerce"
+   ],
+   "description": {
+    "en": "Trust layer for agent-to-agent commerce: natural-language mandates, delegated on-chain permissions, payments, escrow and dispute resolution as one open skill.",
+    "pt": "Camada de confiança para comércio entre agentes: mandatos em linguagem natural, permissões delegadas on-chain, pagamentos, escrow e resolução de disputas em uma única skill aberta."
+   },
+   "skill": {
+    "source": "internet-court/internet-court-skill"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
    }
   },
   {
@@ -10591,6 +13010,31 @@
    }
   },
   {
+   "id": "ktx",
+   "name": "Kaelio/ktx",
+   "title": "Analytics context layer skills",
+   "url": "https://github.com/Kaelio/ktx",
+   "type": "skill-pack",
+   "category": "integrations",
+   "license": "Apache-2.0",
+   "tags": [
+    "data-analytics",
+    "dbt",
+    "business-intelligence"
+   ],
+   "description": {
+    "en": "Executable context skills that let data and analytics agents query dbt, Looker, LookML, Metabase and MetricFlow accurately by ingesting each tool's real semantic layer.",
+    "pt": "Skills de contexto executável que permitem a agentes de dados e analytics consultar dbt, Looker, LookML, Metabase e MetricFlow com precisão, ingerindo a camada semântica real de cada ferramenta."
+   },
+   "skill": {
+    "source": "Kaelio/ktx"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
+   }
+  },
+  {
    "id": "kubernetes-mcp-server",
    "name": "containers/kubernetes-mcp-server",
    "title": "Kubernetes and OpenShift access",
@@ -10619,6 +13063,66 @@
    "origin": {
     "list": "mcp-registry",
     "ref": "io.github.containers/kubernetes-mcp-server"
+   }
+  },
+  {
+   "id": "last30days-skill",
+   "name": "mvanhorn/last30days-skill",
+   "title": "Last-30-days research skill",
+   "url": "https://github.com/mvanhorn/last30days-skill",
+   "type": "skill-pack",
+   "category": "tools",
+   "license": "MIT",
+   "tags": [
+    "research",
+    "skills",
+    "tools"
+   ],
+   "description": {
+    "en": "Agent skill that researches a topic across Reddit, X, YouTube, Hacker News, Polymarket and the wider web, then synthesizes a grounded summary.",
+    "pt": "Agent skill que pesquisa um tema no Reddit, X, YouTube, Hacker News, Polymarket e na web em geral, sintetizando um resumo com fontes."
+   },
+   "skill": {
+    "source": "mvanhorn/last30days-skill"
+   },
+   "alternatives": [
+    {
+     "name": "Jesseovo/last30days-skill-cn",
+     "url": "https://github.com/Jesseovo/last30days-skill-cn",
+     "adds": {
+      "en": "Same idea adapted to mainland Chinese platforms: searches eight major Chinese sites from the last 30 days.",
+      "pt": "Mesma ideia adaptada às plataformas chinesas: pesquisa em oito grandes sites da China dos últimos 30 dias."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
+   "id": "lightweight-charts",
+   "name": "tradingview/lightweight-charts",
+   "title": "Lightweight Charts skills",
+   "url": "https://github.com/tradingview/lightweight-charts",
+   "type": "skill-pack",
+   "category": "dev",
+   "license": "Apache-2.0",
+   "tags": [
+    "charting",
+    "finance",
+    "data-visualization"
+   ],
+   "description": {
+    "en": "Official skills for TradingView's HTML5-canvas financial charting library, covering core chart usage and authoring custom chart plugins.",
+    "pt": "Skills oficiais da biblioteca de gráficos financeiros em canvas HTML5 da TradingView, cobrindo uso principal de gráficos e criação de plugins de gráfico customizados."
+   },
+   "skill": {
+    "source": "tradingview/lightweight-charts"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
    }
   },
   {
@@ -10707,6 +13211,65 @@
    }
   },
   {
+   "id": "marketingskills",
+   "name": "coreyhaines31/marketingskills",
+   "title": "Marketing skills for agents",
+   "url": "https://github.com/coreyhaines31/marketingskills",
+   "type": "skill-pack",
+   "category": "skills",
+   "license": "MIT",
+   "tags": [
+    "marketing",
+    "skills",
+    "seo"
+   ],
+   "description": {
+    "en": "Marketing skills for Claude Code and AI agents covering CRO, copywriting, SEO, analytics and growth engineering.",
+    "pt": "Skills de marketing para Claude Code e agentes de IA, cobrindo CRO, copywriting, SEO, analytics e growth engineering."
+   },
+   "skill": {
+    "source": "coreyhaines31/marketingskills"
+   },
+   "alternatives": [
+    {
+     "name": "aaron-he-zhu/aaron-marketing-skills",
+     "url": "https://github.com/aaron-he-zhu/aaron-marketing-skills",
+     "adds": {
+      "en": "120 marketing skills organized as an 8-discipline AI marketing team, with built-in auditor gates for quality.",
+      "pt": "120 skills de marketing organizadas como uma equipe de marketing com IA em 8 disciplinas, com portões de auditoria embutidos."
+     }
+    },
+    {
+     "name": "AgriciDaniel/claude-ads",
+     "url": "https://github.com/AgriciDaniel/claude-ads",
+     "adds": {
+      "en": "Narrower pack for paid-media operations across 12 ad platforms, with source-grounded audits and deterministic scoring.",
+      "pt": "Pacote focado em operações de mídia paga em 12 plataformas de anúncios, com auditorias por fontes e pontuação determinística."
+     }
+    },
+    {
+     "name": "AgriciDaniel/claude-blog",
+     "url": "https://github.com/AgriciDaniel/claude-blog",
+     "adds": {
+      "en": "Blog-specific suite of sub-skills and agents built around a versioned content-delivery contract for SEO and AI citations.",
+      "pt": "Conjunto de sub-skills e agentes para blogs, construído sobre um contrato de entrega de conteúdo para SEO e citações por IA."
+     }
+    },
+    {
+     "name": "irinabuht12-oss/marketing-skills",
+     "url": "https://github.com/irinabuht12-oss/marketing-skills",
+     "adds": {
+      "en": "Free 48-skill pack for Google Ads, Meta Ads, SEO and AI-visibility, paired with an optional hosted MCP connector.",
+      "pt": "Pacote gratuito de 48 skills para Google Ads, Meta Ads, SEO e visibilidade em IA, com conector MCP hospedado opcional."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
    "id": "markitdown-mcp",
    "name": "MarkItDown MCP",
    "url": "https://github.com/microsoft/markitdown/tree/main/packages/markitdown-mcp",
@@ -10729,6 +13292,66 @@
      "command": "markitdown-mcp",
      "args": []
     }
+   }
+  },
+  {
+   "id": "math-modeling-skill",
+   "name": "XiaoMaColtAI/math-modeling-skill",
+   "title": "Math modeling competition skills",
+   "url": "https://github.com/XiaoMaColtAI/math-modeling-skill",
+   "type": "skill-pack",
+   "category": "skills",
+   "license": null,
+   "tags": [
+    "math-modeling",
+    "competitions",
+    "academic-writing"
+   ],
+   "description": {
+    "en": "Three-role skill workflow (modeling, coding, writing) for mathematical modeling competitions such as CUMCM and MCM/ICM, with optimization/ML algorithm resources and paper templates.",
+    "pt": "Workflow de skills em três papéis (modelagem, programação, redação) para competições de modelagem matemática como CUMCM e MCM/ICM, com recursos de otimização/ML e templates de artigo."
+   },
+   "skill": {
+    "source": "XiaoMaColtAI/math-modeling-skill"
+   },
+   "alternatives": [
+    {
+     "name": "jihe520/MathModelAgent",
+     "url": "https://github.com/jihe520/MathModelAgent",
+     "adds": {
+      "en": "Similar numbered-stage workflow (analysis, coding, visualization, writing) for the same competitions.",
+      "pt": "Workflow similar em etapas numeradas (análise, código, visualização, redação) para as mesmas competições."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
+   }
+  },
+  {
+   "id": "mattpocock-skills",
+   "name": "mattpocock/skills",
+   "title": "Matt Pocock's engineering skills",
+   "url": "https://github.com/mattpocock/skills",
+   "type": "skill-pack",
+   "category": "skills",
+   "license": "MIT",
+   "tags": [
+    "skills",
+    "engineering",
+    "code-review"
+   ],
+   "description": {
+    "en": "Personal-but-public collection of 38 skills covering code review, TDD, domain modeling, debugging, architecture and ticket writing for coding agents.",
+    "pt": "Coleção pública de 38 skills cobrindo revisão de código, TDD, modelagem de domínio, depuração, arquitetura e escrita de tickets para agentes de código."
+   },
+   "skill": {
+    "source": "mattpocock/skills"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
    }
   },
   {
@@ -11708,6 +14331,31 @@
    }
   },
   {
+   "id": "medical-research-skills",
+   "name": "aipoch/medical-research-skills",
+   "title": "Medical research skills library",
+   "url": "https://github.com/aipoch/medical-research-skills",
+   "type": "skill-pack",
+   "category": "skills",
+   "license": "MIT",
+   "tags": [
+    "medical-research",
+    "biostatistics",
+    "academic-writing"
+   ],
+   "description": {
+    "en": "Over 600 agent skills for medical research: study protocol design, statistical and evidence analysis, figure/table generation and academic manuscript writing.",
+    "pt": "Mais de 600 skills de agente para pesquisa médica: desenho de protocolos de estudo, análise estatística e de evidências, geração de figuras/tabelas e redação de manuscritos acadêmicos."
+   },
+   "skill": {
+    "source": "aipoch/medical-research-skills"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
+   }
+  },
+  {
    "id": "medplum-mcp",
    "name": "medplum/medplum",
    "title": "FHIR healthcare data platform",
@@ -11735,6 +14383,31 @@
    }
   },
   {
+   "id": "megalinter",
+   "name": "oxsecurity/megalinter",
+   "title": "MegaLinter",
+   "url": "https://github.com/oxsecurity/megalinter",
+   "type": "skill-pack",
+   "category": "security",
+   "license": "AGPL-3.0",
+   "tags": [
+    "security",
+    "linting",
+    "ci"
+   ],
+   "description": {
+    "en": "Analyzes 50 languages and 22 formats for excessive copy-paste, spelling mistakes and security issues, usable as a GitHub Action, other CI or locally.",
+    "pt": "Analisa 50 linguagens e 22 formatos em busca de copy-paste excessivo, erros ortográficos e problemas de segurança, utilizável como GitHub Action, em outra CI ou localmente."
+   },
+   "skill": {
+    "source": "oxsecurity/megalinter"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
    "id": "microsoft-mcp",
    "name": "Microsoft MCP catalog",
    "url": "https://github.com/microsoft/mcp",
@@ -11748,6 +14421,42 @@
    "description": {
     "en": "Catalog of official Microsoft MCP servers (Azure, Microsoft 365, dev tools) with links to each implementation.",
     "pt": "Catálogo dos servidores MCP oficiais da Microsoft (Azure, Microsoft 365, ferramentas de dev) com links para cada implementação."
+   }
+  },
+  {
+   "id": "microsoft-skills",
+   "name": "microsoft/skills",
+   "title": "Microsoft SDK skills & agents",
+   "url": "https://github.com/microsoft/skills",
+   "type": "skill-pack",
+   "category": "dev",
+   "license": "MIT",
+   "tags": [
+    "skills",
+    "microsoft",
+    "mcp",
+    "dev"
+   ],
+   "description": {
+    "en": "Skills, MCP servers, custom agents and Agents.md files that ground coding agents in Microsoft SDKs and platforms.",
+    "pt": "Skills, servidores MCP, agentes personalizados e arquivos Agents.md que orientam agentes de código nos SDKs e plataformas da Microsoft."
+   },
+   "skill": {
+    "source": "microsoft/skills"
+   },
+   "alternatives": [
+    {
+     "name": "microsoft/azure-skills",
+     "url": "https://github.com/microsoft/azure-skills",
+     "adds": {
+      "en": "Same idea narrowed to Azure: skills plus MCP server configs for Azure-specific scenarios.",
+      "pt": "Mesma ideia focada no Azure: skills e configurações de servidor MCP para cenários específicos do Azure."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
    }
   },
   {
@@ -11988,6 +14697,41 @@
    }
   },
   {
+   "id": "motion-design-skill",
+   "name": "LottieFiles/motion-design-skill",
+   "title": "Universal motion design skill",
+   "url": "https://github.com/LottieFiles/motion-design-skill",
+   "type": "skill-pack",
+   "category": "dev",
+   "license": "MIT",
+   "tags": [
+    "motion-design",
+    "animation",
+    "ui"
+   ],
+   "description": {
+    "en": "Official LottieFiles skill encoding universal motion design principles - timing, easing and choreography adapted from Disney animation principles - for UI animation work.",
+    "pt": "Skill oficial da LottieFiles que codifica princípios universais de motion design - timing, easing e coreografia adaptados dos princípios de animação da Disney - para animações de UI."
+   },
+   "skill": {
+    "source": "LottieFiles/motion-design-skill"
+   },
+   "alternatives": [
+    {
+     "name": "Jakubantalik/transitions.dev",
+     "url": "https://github.com/Jakubantalik/transitions.dev",
+     "adds": {
+      "en": "Focused collection of ready-made page and component transitions for web apps.",
+      "pt": "Coleção focada de transições prontas de página e componente para aplicações web."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
+   }
+  },
+  {
    "id": "ms-365-mcp-server",
    "name": "Microsoft 365 MCP Server",
    "title": "Microsoft 365 and Graph API",
@@ -12049,6 +14793,31 @@
    }
   },
   {
+   "id": "n8n-mcp",
+   "name": "czlonkowski/n8n-mcp",
+   "title": "n8n workflow-building skills",
+   "url": "https://github.com/czlonkowski/n8n-mcp",
+   "type": "skill-pack",
+   "category": "integrations",
+   "license": "MIT",
+   "tags": [
+    "n8n",
+    "workflow-automation",
+    "mcp"
+   ],
+   "description": {
+    "en": "MCP server and skill set that lets Claude Desktop, Claude Code, Windsurf or Cursor build, validate and configure n8n automation workflows and nodes for you.",
+    "pt": "Servidor MCP e conjunto de skills que permitem ao Claude Desktop, Claude Code, Windsurf ou Cursor construir, validar e configurar workflows e nós de automação do n8n."
+   },
+   "skill": {
+    "source": "czlonkowski/n8n-mcp"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
+   }
+  },
+  {
    "id": "nanobanana-mcp-server",
    "name": "zhongweili/nanobanana-mcp-server",
    "title": "Gemini image generation and editing",
@@ -12089,6 +14858,41 @@
    "origin": {
     "list": "mcp-registry",
     "ref": "io.github.zhongweili/nanobanana-mcp-server"
+   }
+  },
+  {
+   "id": "nature-skills",
+   "name": "Yuan1z0825/nature-skills",
+   "title": "Nature-style academic writing skills",
+   "url": "https://github.com/Yuan1z0825/nature-skills",
+   "type": "skill-pack",
+   "category": "docs",
+   "license": "Apache-2.0",
+   "tags": [
+    "academic-writing",
+    "scientific-figures",
+    "research"
+   ],
+   "description": {
+    "en": "20 skills tailored to Nature-journal academic writing conventions and scientific figure design, including literature pipelines, citations and paper-to-slide conversion.",
+    "pt": "20 skills adaptadas às convenções de escrita acadêmica da revista Nature e ao design de figuras científicas, incluindo pipelines de literatura, citações e conversão de artigo para slides."
+   },
+   "skill": {
+    "source": "Yuan1z0825/nature-skills"
+   },
+   "alternatives": [
+    {
+     "name": "zLanqing/codex-claude-academic-skills",
+     "url": "https://github.com/zLanqing/codex-claude-academic-skills",
+     "adds": {
+      "en": "Broader academic workflow covering literature review, writing polish and scientific computing tools.",
+      "pt": "Fluxo acadêmico mais amplo cobrindo revisão de literatura, polimento de texto e ferramentas de computação científica."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
    }
   },
   {
@@ -12251,6 +15055,75 @@
    }
   },
   {
+   "id": "nuwa-skill",
+   "name": "alchaincyf/nuwa-skill",
+   "title": "Mental model distillation skills",
+   "url": "https://github.com/alchaincyf/nuwa-skill",
+   "type": "skill-pack",
+   "category": "skills",
+   "license": "MIT",
+   "tags": [
+    "mental-models",
+    "writing",
+    "decision-making"
+   ],
+   "description": {
+    "en": "Skills that distill how specific well-known thinkers (Musk, Feynman, Munger, Naval, Paul Graham) reason, decide and communicate, for use as agent perspectives.",
+    "pt": "Skills que destilam como pensadores conhecidos específicos (Musk, Feynman, Munger, Naval, Paul Graham) raciocinam, decidem e se comunicam, para uso como perspectivas de agente."
+   },
+   "skill": {
+    "source": "alchaincyf/nuwa-skill"
+   },
+   "alternatives": [
+    {
+     "name": "alchaincyf/huashu-skills",
+     "url": "https://github.com/alchaincyf/huashu-skills",
+     "adds": {
+      "en": "Same author's directory of 52 skills combining flagship, persona and built-in categories.",
+      "pt": "Diretório do mesmo autor com 52 skills combinando categorias principais, de persona e embutidas."
+     }
+    },
+    {
+     "name": "kangarooking/cangjie-skill",
+     "url": "https://github.com/kangarooking/cangjie-skill",
+     "adds": {
+      "en": "Distills books, long videos and podcasts into personal-productivity and decision skills.",
+      "pt": "Destila livros, vídeos longos e podcasts em skills de produtividade pessoal e tomada de decisão."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
+   }
+  },
+  {
+   "id": "nvidia-skills",
+   "name": "NVIDIA/skills",
+   "title": "NVIDIA agent skills",
+   "url": "https://github.com/NVIDIA/skills",
+   "type": "skill-pack",
+   "category": "dev",
+   "license": "Apache-2.0",
+   "tags": [
+    "skills",
+    "nvidia",
+    "cuda",
+    "robotics"
+   ],
+   "description": {
+    "en": "Official NVIDIA Agent Skills for coding agents covering physical AI, robotics, simulation, CUDA and RAG workflows end to end.",
+    "pt": "Agent Skills oficiais da NVIDIA para agentes de código, cobrindo IA física, robótica, simulação, CUDA e fluxos de RAG de ponta a ponta."
+   },
+   "skill": {
+    "source": "NVIDIA/skills"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
    "id": "nx-console-mcp",
    "name": "nrwl/nx-console",
    "title": "Nx monorepo tooling",
@@ -12317,6 +15190,74 @@
    }
   },
   {
+   "id": "obsidian-skills",
+   "name": "kepano/obsidian-skills",
+   "title": "Obsidian agent skills",
+   "url": "https://github.com/kepano/obsidian-skills",
+   "type": "skill-pack",
+   "category": "tools",
+   "license": "MIT",
+   "tags": [
+    "skills",
+    "obsidian",
+    "pkm"
+   ],
+   "description": {
+    "en": "Agent skills that teach a coding agent to use the Obsidian CLI and open formats such as Markdown, Bases and JSON Canvas.",
+    "pt": "Agent skills que ensinam um agente a usar o CLI do Obsidian e formatos abertos como Markdown, Bases e JSON Canvas."
+   },
+   "skill": {
+    "source": "kepano/obsidian-skills"
+   },
+   "alternatives": [
+    {
+     "name": "AgriciDaniel/claude-obsidian",
+     "url": "https://github.com/AgriciDaniel/claude-obsidian",
+     "adds": {
+      "en": "Turns Obsidian plus Claude Code into a self-organizing second brain, filing any dropped source into a connected knowledge graph.",
+      "pt": "Transforma Obsidian mais Claude Code em um segundo cérebro autoorganizável, arquivando qualquer fonte em um grafo de conhecimento conectado."
+     }
+    },
+    {
+     "name": "eugeniughelbur/obsidian-second-brain",
+     "url": "https://github.com/eugeniughelbur/obsidian-second-brain",
+     "adds": {
+      "en": "Persistent memory for Claude Code and 6 other CLI agents, stored as markdown in an Obsidian vault, with 45+ commands.",
+      "pt": "Memória persistente para Claude Code e outros 6 agentes de CLI, guardada como markdown num cofre do Obsidian, com mais de 45 comandos."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
+   "id": "obsidian-wiki",
+   "name": "Ar9av/obsidian-wiki",
+   "title": "Obsidian agent memory framework",
+   "url": "https://github.com/Ar9av/obsidian-wiki",
+   "type": "skill-pack",
+   "category": "tools",
+   "license": "MIT",
+   "tags": [
+    "knowledge-management",
+    "obsidian",
+    "memory"
+   ],
+   "description": {
+    "en": "Skill framework letting AI agents build and maintain a personal knowledge base ('digital brain') inside Obsidian, with cross-linking, graph coloring and history ingestion.",
+    "pt": "Framework de skills que permite a agentes de IA construir e manter uma base de conhecimento pessoal ('cérebro digital') dentro do Obsidian, com cross-linking, coloração de grafo e ingestão de histórico."
+   },
+   "skill": {
+    "source": "Ar9av/obsidian-wiki"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
+   }
+  },
+  {
    "id": "octocode-mcp",
    "name": "Octocode MCP - AI Context Platform",
    "title": "GitHub code research platform",
@@ -12349,6 +15290,92 @@
    "origin": {
     "list": "mcp-registry",
     "ref": "io.github.bgauryy/octocode-mcp"
+   }
+  },
+  {
+   "id": "officecli",
+   "name": "iOfficeAI/OfficeCLI",
+   "title": "OfficeCLI agent office suite",
+   "url": "https://github.com/iOfficeAI/OfficeCLI",
+   "type": "skill-pack",
+   "category": "docs",
+   "license": "Apache-2.0",
+   "tags": [
+    "office-documents",
+    "docx",
+    "pptx"
+   ],
+   "description": {
+    "en": "Office suite purpose-built for AI agents to read, edit and automate Word, Excel and PowerPoint files, with dedicated skills for financial models, pitch decks and dashboards.",
+    "pt": "Suíte de escritório feita para agentes de IA lerem, editarem e automatizarem arquivos Word, Excel e PowerPoint, com skills dedicadas para modelos financeiros, pitch decks e dashboards."
+   },
+   "skill": {
+    "source": "iOfficeAI/OfficeCLI"
+   },
+   "alternatives": [
+    {
+     "name": "genspark-ai/genoffice",
+     "url": "https://github.com/genspark-ai/genoffice",
+     "adds": {
+      "en": "Free open-source alternative office suite (docs, sheets, slides, PDF) with its own CLI and skill.",
+      "pt": "Suíte de escritório alternativa e gratuita (docs, planilhas, slides, PDF) com CLI e skill próprios."
+     }
+    },
+    {
+     "name": "OpenSenseNova/SenseNova-Skills",
+     "url": "https://github.com/OpenSenseNova/SenseNova-Skills",
+     "adds": {
+      "en": "Modular office-automation skills for Excel workflows: formatting, coloring and KPI reporting.",
+      "pt": "Skills modulares de automação de escritório para fluxos de Excel: formatação, coloração e relatórios de KPI."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
+   }
+  },
+  {
+   "id": "oh-my-claudecode",
+   "name": "Yeachan-Heo/oh-my-claudecode",
+   "title": "Teams-first multi-agent orchestration",
+   "url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+   "type": "skill-pack",
+   "category": "workflow",
+   "license": "MIT",
+   "tags": [
+    "orchestration",
+    "multi-agent",
+    "workflow"
+   ],
+   "description": {
+    "en": "Teams-first multi-agent orchestration layer for Claude Code, coordinating groups of agents on a shared task.",
+    "pt": "Camada de orquestração multiagente com foco em times para o Claude Code, coordenando grupos de agentes em uma tarefa compartilhada."
+   },
+   "skill": {
+    "source": "Yeachan-Heo/oh-my-claudecode"
+   },
+   "alternatives": [
+    {
+     "name": "superset-sh/superset",
+     "url": "https://github.com/superset-sh/superset",
+     "adds": {
+      "en": "Agentic IDE that orchestrates 100+ coding agents in parallel, each running under your own subscriptions.",
+      "pt": "IDE agêntica que orquestra mais de 100 agentes de código em paralelo, cada um rodando com suas próprias assinaturas."
+     }
+    },
+    {
+     "name": "a5c-ai/babysitter",
+     "url": "https://github.com/a5c-ai/babysitter",
+     "adds": {
+      "en": "Enforces deterministic, hallucination-resistant self-orchestration so agent workforces can manage very complex, long workflows.",
+      "pt": "Aplica autoorquestração determinística e resistente a alucinações para que equipes de agentes gerenciem fluxos longos e complexos."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
    }
   },
   {
@@ -12469,6 +15496,84 @@
    }
   },
   {
+   "id": "open-code-review",
+   "name": "alibaba/open-code-review",
+   "title": "Alibaba open code review",
+   "url": "https://github.com/alibaba/open-code-review",
+   "type": "skill-pack",
+   "category": "git",
+   "license": "Apache-2.0",
+   "tags": [
+    "git",
+    "code-review",
+    "security"
+   ],
+   "description": {
+    "en": "Hybrid code-review tool battle-tested at Alibaba's scale, combining deterministic pipelines with an LLM agent for precise, line-level comments and a built-in multi-language security ruleset.",
+    "pt": "Ferramenta híbrida de revisão de código testada em produção na escala da Alibaba, combinando pipelines determinísticos com um agente LLM para comentários precisos linha a linha e um conjunto de regras de segurança multilíngue."
+   },
+   "skill": {
+    "source": "alibaba/open-code-review"
+   },
+   "alternatives": [
+    {
+     "name": "hyhmrright/brooks-lint",
+     "url": "https://github.com/hyhmrright/brooks-lint",
+     "adds": {
+      "en": "Smaller AI code-review skill grounded in 12 classic software-engineering books, with severity labels and book citations.",
+      "pt": "Skill menor de revisão de código com IA, fundamentada em 12 livros clássicos de engenharia, com rótulos de severidade e citações."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
+   "id": "open-seo",
+   "name": "every-app/open-seo",
+   "title": "Open-source SEO skills",
+   "url": "https://github.com/every-app/open-seo",
+   "type": "skill-pack",
+   "category": "skills",
+   "license": "MIT",
+   "tags": [
+    "seo",
+    "skills",
+    "marketing"
+   ],
+   "description": {
+    "en": "Open-source alternative to Semrush and Ahrefs, packaged as agent skills for SEO analysis and optimization.",
+    "pt": "Alternativa open-source ao Semrush e Ahrefs, empacotada como agent skills para análise e otimização de SEO."
+   },
+   "skill": {
+    "source": "every-app/open-seo"
+   },
+   "alternatives": [
+    {
+     "name": "AgriciDaniel/claude-seo",
+     "url": "https://github.com/AgriciDaniel/claude-seo",
+     "adds": {
+      "en": "Much larger universal SEO pack: 25 sub-skills and 18 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO and local SEO.",
+      "pt": "Pacote de SEO universal bem maior: 25 sub-skills e 18 sub-agentes cobrindo SEO técnico, E-E-A-T, schema, GEO/AEO e SEO local."
+     }
+    },
+    {
+     "name": "appeeky/aso-skills",
+     "url": "https://github.com/appeeky/aso-skills",
+     "adds": {
+      "en": "Same idea applied to app stores: keyword research, metadata optimization and competitor analysis for App Store Optimization.",
+      "pt": "Mesma ideia aplicada a lojas de aplicativos: pesquisa de palavras-chave, otimização de metadados e análise de concorrentes para ASO."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
    "id": "openbrand-mcp",
    "name": "OpenBrand",
    "title": "Brand asset extraction",
@@ -12500,6 +15605,28 @@
    "origin": {
     "list": "mcp-registry",
     "ref": "io.github.ethanjyx/openbrand"
+   }
+  },
+  {
+   "id": "openhuman",
+   "name": "tinyhumansai/openhuman",
+   "title": "OpenHuman agent harness",
+   "url": "https://github.com/tinyhumansai/openhuman",
+   "type": "list",
+   "category": "workflow",
+   "license": "GPL-3.0",
+   "tags": [
+    "agents",
+    "orchestration",
+    "local-first"
+   ],
+   "description": {
+    "en": "Open-source agent harness with local-first memory, multi-agent orchestration and workflow tooling for personal AI assistants.",
+    "pt": "Harness de agentes open-source com memória local-first, orquestração multiagente e ferramentas de fluxo de trabalho para assistentes pessoais de IA."
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "agents-collection"
    }
   },
   {
@@ -12567,6 +15694,57 @@
    "origin": {
     "list": "mcp-registry",
     "ref": "io.github.OpenOSINT/openosint"
+   }
+  },
+  {
+   "id": "openspec",
+   "name": "Fission-AI/OpenSpec",
+   "title": "OpenSpec spec-driven dev",
+   "url": "https://github.com/Fission-AI/OpenSpec",
+   "type": "skill-pack",
+   "category": "workflow",
+   "license": "MIT",
+   "tags": [
+    "spec-driven-development",
+    "planning",
+    "sdlc"
+   ],
+   "description": {
+    "en": "Spec-driven development skill set for AI coding assistants: draft, verify, apply and archive change specs so implementation always follows an approved written spec.",
+    "pt": "Conjunto de skills de desenvolvimento orientado a especificação para assistentes de IA: rascunhar, verificar, aplicar e arquivar specs de mudança, garantindo que a implementação siga sempre uma especificação aprovada."
+   },
+   "skill": {
+    "source": "Fission-AI/OpenSpec"
+   },
+   "alternatives": [
+    {
+     "name": "bmad-code-org/BMAD-METHOD",
+     "url": "https://github.com/bmad-code-org/BMAD-METHOD",
+     "adds": {
+      "en": "Broader agile-flavored methodology with role-based agents (analyst, architect, PM, dev, UX).",
+      "pt": "Metodologia mais ampla de cunho ágil com agentes por papel (analista, arquiteto, PM, dev, UX)."
+     }
+    },
+    {
+     "name": "gotalab/cc-sdd",
+     "url": "https://github.com/gotalab/cc-sdd",
+     "adds": {
+      "en": "Minimal SDD harness with per-phase skills (spec, design, tasks, review) across multiple CLI agents.",
+      "pt": "Harness SDD minimalista com skills por fase (spec, design, tarefas, revisão) em vários agentes de CLI."
+     }
+    },
+    {
+     "name": "Gentleman-Programming/gentle-ai",
+     "url": "https://github.com/Gentleman-Programming/gentle-ai",
+     "adds": {
+      "en": "Bundles SDD alongside persistent-memory and code-review skills for several coding agents at once.",
+      "pt": "Combina SDD com skills de memória persistente e revisão de código para vários agentes de código ao mesmo tempo."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
    }
   },
   {
@@ -12686,6 +15864,56 @@
    "origin": {
     "list": "mcp-registry",
     "ref": "ai.packmind/mcp-server"
+   }
+  },
+  {
+   "id": "paper2code",
+   "name": "PrathamLearnsToCode/paper2code",
+   "title": "Paper-to-code skill",
+   "url": "https://github.com/PrathamLearnsToCode/paper2code",
+   "type": "skill-pack",
+   "category": "dev",
+   "license": "MIT",
+   "tags": [
+    "research",
+    "code-generation",
+    "arxiv"
+   ],
+   "description": {
+    "en": "Focused agent skill that turns any arXiv paper into a working code implementation.",
+    "pt": "Skill de agente focada em transformar qualquer artigo do arXiv em uma implementação de código funcional."
+   },
+   "skill": {
+    "source": "PrathamLearnsToCode/paper2code"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
+   }
+  },
+  {
+   "id": "paperasse",
+   "name": "romainsimon/paperasse",
+   "title": "French bureaucracy skills",
+   "url": "https://github.com/romainsimon/paperasse",
+   "type": "skill-pack",
+   "category": "skills",
+   "license": "MIT",
+   "tags": [
+    "legal",
+    "accounting",
+    "france"
+   ],
+   "description": {
+    "en": "Skills for AI agents specialized in French administrative and accounting paperwork: accountant, notary, tax auditor, tax specialist and condominium syndic roles.",
+    "pt": "Skills para agentes de IA especializados em burocracia administrativa e contábil francesa: papéis de contador, notário, auditor fiscal, especialista tributário e síndico predial."
+   },
+   "skill": {
+    "source": "romainsimon/paperasse"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
    }
   },
   {
@@ -12926,6 +16154,31 @@
    }
   },
   {
+   "id": "pipecat",
+   "name": "pipecat-ai/pipecat",
+   "title": "Pipecat voice agent framework",
+   "url": "https://github.com/pipecat-ai/pipecat",
+   "type": "skill-pack",
+   "category": "multimodal",
+   "license": "BSD-2-Clause",
+   "tags": [
+    "voice",
+    "multimodal",
+    "realtime"
+   ],
+   "description": {
+    "en": "Open-source framework for building voice agents, multimodal apps and realtime AI, maintained by Daily and the community; ships agent skills.",
+    "pt": "Framework open-source para construir agentes de voz, aplicativos multimodais e IA em tempo real, mantido pela Daily e pela comunidade; inclui agent skills."
+   },
+   "skill": {
+    "source": "pipecat-ai/pipecat"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
    "id": "planexe-mcp",
    "name": "PlanExe",
    "title": "Generate project plans from prompts",
@@ -12956,6 +16209,31 @@
    }
   },
   {
+   "id": "planning-with-files",
+   "name": "OthmanAdi/planning-with-files",
+   "title": "Crash-proof file-based planning",
+   "url": "https://github.com/OthmanAdi/planning-with-files",
+   "type": "skill-pack",
+   "category": "workflow",
+   "license": "MIT",
+   "tags": [
+    "planning",
+    "workflow",
+    "context"
+   ],
+   "description": {
+    "en": "Persistent, file-based planning for AI coding agents and long-running tasks: crash-proof markdown plans, session recovery after /clear or compaction, and a deterministic completion gate.",
+    "pt": "Planejamento persistente e baseado em arquivos para agentes de código em tarefas longas: planos em markdown resistentes a falhas, recuperação de sessão após /clear ou compactação e um portão determinístico de conclusão."
+   },
+   "skill": {
+    "source": "OthmanAdi/planning-with-files"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
    "id": "playwright-mcp",
    "name": "Playwright MCP",
    "url": "https://github.com/microsoft/playwright-mcp",
@@ -12980,6 +16258,65 @@
       "@playwright/mcp@latest"
      ]
     }
+   }
+  },
+  {
+   "id": "pm-skills",
+   "name": "phuryn/pm-skills",
+   "title": "Product management skill marketplace",
+   "url": "https://github.com/phuryn/pm-skills",
+   "type": "skill-pack",
+   "category": "skills",
+   "license": "MIT",
+   "tags": [
+    "product-management",
+    "skills"
+   ],
+   "description": {
+    "en": "Marketplace of 100+ agentic skills, commands and plugins for product managers, spanning discovery, strategy, execution, launch and growth.",
+    "pt": "Marketplace com mais de 100 skills, comandos e plugins agênticos para gerentes de produto, cobrindo descoberta, estratégia, execução, lançamento e crescimento."
+   },
+   "skill": {
+    "source": "phuryn/pm-skills"
+   },
+   "alternatives": [
+    {
+     "name": "deanpeters/Product-Manager-Skills",
+     "url": "https://github.com/deanpeters/Product-Manager-Skills",
+     "adds": {
+      "en": "Smaller product-management skill framework built on established PM methods.",
+      "pt": "Framework de skills de gestão de produto menor, construído sobre métodos consolidados de PM."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
+   "id": "portaljs",
+   "name": "datopian/portaljs",
+   "title": "PortalJS data portal skills",
+   "url": "https://github.com/datopian/portaljs",
+   "type": "skill-pack",
+   "category": "dev",
+   "license": "MIT",
+   "tags": [
+    "skills",
+    "data",
+    "portaljs"
+   ],
+   "description": {
+    "en": "AI-native framework by Datopian for building data portals: scaffold a full portal from a brief and load datasets in minutes, with agentic skills for CKAN, GitHub or Frictionless backends.",
+    "pt": "Framework nativo para IA da Datopian para construir portais de dados: monta um portal completo a partir de um briefing e carrega datasets em minutos, com agent skills para os backends CKAN, GitHub ou Frictionless."
+   },
+   "skill": {
+    "source": "datopian/portaljs"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
    }
   },
   {
@@ -13090,6 +16427,49 @@
    "origin": {
     "list": "mcp-registry",
     "ref": "com.microsoft/powerbi-modeling-mcp"
+   }
+  },
+  {
+   "id": "ppt-master",
+   "name": "hugohe3/ppt-master",
+   "title": "AI PowerPoint generation skill",
+   "url": "https://github.com/hugohe3/ppt-master",
+   "type": "skill-pack",
+   "category": "tools",
+   "license": "MIT",
+   "tags": [
+    "presentations",
+    "tools",
+    "pptx"
+   ],
+   "description": {
+    "en": "Turns documents or topics into native, editable PowerPoint decks with real shapes, transitions, data-backed charts, tables and optional narration.",
+    "pt": "Transforma documentos ou temas em apresentações PowerPoint nativas e editáveis, com formas reais, transições, gráficos e tabelas com dados e narração opcional."
+   },
+   "skill": {
+    "source": "hugohe3/ppt-master"
+   },
+   "alternatives": [
+    {
+     "name": "zarazhangrui/frontend-slides",
+     "url": "https://github.com/zarazhangrui/frontend-slides",
+     "adds": {
+      "en": "Creates web-based slide decks using the coding agent's own frontend skills instead of native PowerPoint files.",
+      "pt": "Cria apresentações baseadas na web usando as próprias skills de frontend do agente de código, em vez de arquivos PowerPoint nativos."
+     }
+    },
+    {
+     "name": "chuspeeism/dashi-ppt-skill",
+     "url": "https://github.com/chuspeeism/dashi-ppt-skill",
+     "adds": {
+      "en": "Generates browser-editable presentations from multiple visual themes, exportable to HTML, PDF and PPTX.",
+      "pt": "Gera apresentações editáveis no navegador a partir de vários temas visuais, exportáveis para HTML, PDF e PPTX."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
    }
   },
   {
@@ -13260,6 +16640,82 @@
    }
   },
   {
+   "id": "quarkdown",
+   "name": "iamgio/quarkdown",
+   "title": "Quarkdown markup compiler skill",
+   "url": "https://github.com/iamgio/quarkdown",
+   "type": "skill-pack",
+   "category": "tools",
+   "license": "GPL-3.0",
+   "tags": [
+    "markdown",
+    "document-generation",
+    "publishing"
+   ],
+   "description": {
+    "en": "Skill for a Markdown-superset compiler that turns marked-up text into papers, presentations, websites, books and knowledge bases from a single source.",
+    "pt": "Skill para um compilador de superset de Markdown que transforma texto marcado em artigos, apresentações, sites, livros e bases de conhecimento a partir de uma única fonte."
+   },
+   "skill": {
+    "source": "iamgio/quarkdown"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
+   }
+  },
+  {
+   "id": "ralph",
+   "name": "snarktank/ralph",
+   "title": "Ralph autonomous agent loop",
+   "url": "https://github.com/snarktank/ralph",
+   "type": "skill-pack",
+   "category": "workflow",
+   "license": "MIT",
+   "tags": [
+    "autonomy",
+    "workflow",
+    "loop"
+   ],
+   "description": {
+    "en": "Autonomous AI agent loop that runs repeatedly against a PRD until every item on it is complete.",
+    "pt": "Loop autônomo de agente de IA que roda repetidamente sobre um PRD até que todos os itens estejam concluídos."
+   },
+   "skill": {
+    "source": "snarktank/ralph"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
+   "id": "raptor",
+   "name": "gadievron/raptor",
+   "title": "Offensive/defensive debugging skills",
+   "url": "https://github.com/gadievron/raptor",
+   "type": "skill-pack",
+   "category": "security",
+   "license": null,
+   "tags": [
+    "exploit-development",
+    "debugging",
+    "security",
+    "authorized-use"
+   ],
+   "description": {
+    "en": "Security-focused skills for exploit development and debugging: function tracing, coverage analysis, Frida instrumentation, exploitability validation and GitHub evidence archiving. For authorized security testing only.",
+    "pt": "Skills focadas em segurança para desenvolvimento de exploits e depuração: rastreamento de funções, análise de cobertura, instrumentação com Frida, validação de exploitability e arquivamento de evidências no GitHub. Apenas para testes de segurança autorizados."
+   },
+   "skill": {
+    "source": "gadievron/raptor"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
+   }
+  },
+  {
    "id": "rea-mcp",
    "name": "REA",
    "title": "Reverse engineer from the CLI",
@@ -13364,6 +16820,56 @@
    "origin": {
     "list": "mcp-registry",
     "ref": "io.github.SamMorrowDrums/remarkable"
+   }
+  },
+  {
+   "id": "remotion-dev-skills",
+   "name": "remotion-dev/skills",
+   "title": "Remotion official video skills",
+   "url": "https://github.com/remotion-dev/skills",
+   "type": "skill-pack",
+   "category": "multimodal",
+   "license": null,
+   "tags": [
+    "video",
+    "remotion",
+    "react"
+   ],
+   "description": {
+    "en": "Official skill pack for Remotion (programmatic video with React), covering best practices, captions, interactivity, maps, rendering and Remotion Studio usage.",
+    "pt": "Pacote oficial de skills para o Remotion (vídeo programático com React), cobrindo boas práticas, legendas, interatividade, mapas, renderização e uso do Remotion Studio."
+   },
+   "skill": {
+    "source": "remotion-dev/skills"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
+   }
+  },
+  {
+   "id": "repomix",
+   "name": "yamadashy/repomix",
+   "title": "Repomix repo packer",
+   "url": "https://github.com/yamadashy/repomix",
+   "type": "skill-pack",
+   "category": "tools",
+   "license": "MIT",
+   "tags": [
+    "tools",
+    "context",
+    "cli"
+   ],
+   "description": {
+    "en": "Packs an entire repository into a single AI-friendly file, ready to feed to Claude, ChatGPT, Gemini or other LLM tools.",
+    "pt": "Empacota um repositório inteiro em um único arquivo amigável para IA, pronto para alimentar Claude, ChatGPT, Gemini ou outras ferramentas de LLM."
+   },
+   "skill": {
+    "source": "yamadashy/repomix"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
    }
   },
   {
@@ -13545,6 +17051,58 @@
    }
   },
   {
+   "id": "scientific-agent-skills",
+   "name": "K-Dense-AI/scientific-agent-skills",
+   "title": "Scientific Agent Skills library",
+   "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+   "type": "skill-pack",
+   "category": "skills",
+   "license": "MIT",
+   "tags": [
+    "science",
+    "bioinformatics",
+    "research",
+    "skill-library"
+   ],
+   "description": {
+    "en": "Library of validated skills that turn an AI agent into a research assistant across bioinformatics, chemoinformatics, astronomy and clinical research, used by a large scientist community.",
+    "pt": "Biblioteca de skills validadas que transformam um agente de IA em assistente de pesquisa em bioinformática, quimioinformática, astronomia e pesquisa clínica, usada por uma grande comunidade de cientistas."
+   },
+   "skill": {
+    "source": "K-Dense-AI/scientific-agent-skills"
+   },
+   "alternatives": [
+    {
+     "name": "google-deepmind/science-skills",
+     "url": "https://github.com/google-deepmind/science-skills",
+     "adds": {
+      "en": "Google DeepMind's own science skills built around AlphaFold and AlphaGenome workflows.",
+      "pt": "Skills científicas oficiais do Google DeepMind construídas em torno dos fluxos do AlphaFold e AlphaGenome."
+     }
+    },
+    {
+     "name": "aiming-lab/AutoResearchClaw",
+     "url": "https://github.com/aiming-lab/AutoResearchClaw",
+     "adds": {
+      "en": "Adds a full idea-to-paper autonomous research pipeline with citation verification.",
+      "pt": "Adiciona um pipeline autônomo completo de ideia a artigo, com verificação de citações."
+     }
+    },
+    {
+     "name": "foryourhealth111-pixel/Vibe-Skills",
+     "url": "https://github.com/foryourhealth111-pixel/Vibe-Skills",
+     "adds": {
+      "en": "Adds intelligent skill routing on top of a similar science skill set to cut token usage.",
+      "pt": "Adiciona roteamento inteligente de skills sobre um conjunto científico semelhante para reduzir uso de tokens."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
+   }
+  },
+  {
    "id": "screenpipe-screenpipe-mcp",
    "name": "screenpipe",
    "title": "Search local screen recordings",
@@ -13608,6 +17166,31 @@
    "origin": {
     "list": "mcp-registry",
     "ref": "io.github.saurabhsharma2u/search-console-mcp"
+   }
+  },
+  {
+   "id": "security-audit-skill",
+   "name": "cloudflare/security-audit-skill",
+   "title": "Cloudflare security audit skill",
+   "url": "https://github.com/cloudflare/security-audit-skill",
+   "type": "skill-pack",
+   "category": "security",
+   "license": "MIT",
+   "tags": [
+    "security-audit",
+    "code-review",
+    "cloudflare"
+   ],
+   "description": {
+    "en": "Official Cloudflare skill for running multi-phase code security audits that produce independently verified, machine-readable findings.",
+    "pt": "Skill oficial da Cloudflare para executar auditorias de segurança de código em múltiplas fases, produzindo achados verificados de forma independente e legíveis por máquina."
+   },
+   "skill": {
+    "source": "cloudflare/security-audit-skill"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
    }
   },
   {
@@ -13839,6 +17422,152 @@
    "origin": {
     "list": "mcp-registry",
     "ref": "io.github.signerlabs/shipswift"
+   }
+  },
+  {
+   "id": "simpleenglish",
+   "name": "AminBlg/SimpleEnglish",
+   "title": "Simplified Technical English skill",
+   "url": "https://github.com/AminBlg/SimpleEnglish",
+   "type": "skill-pack",
+   "category": "docs",
+   "license": "MIT",
+   "tags": [
+    "docs",
+    "writing",
+    "standard"
+   ],
+   "description": {
+    "en": "Agent skill that makes an LLM write documentation following ASD-STE100 Simplified Technical English, a controlled-language standard.",
+    "pt": "Agent skill que faz um LLM escrever documentação seguindo o ASD-STE100 Simplified Technical English, um padrão de linguagem controlada."
+   },
+   "skill": {
+    "source": "AminBlg/SimpleEnglish"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
+   "id": "skill-seekers",
+   "name": "yusufkaraaslan/Skill_Seekers",
+   "title": "Skill-Seekers skill generator",
+   "url": "https://github.com/yusufkaraaslan/Skill_Seekers",
+   "type": "skill-pack",
+   "category": "meta",
+   "license": "MIT",
+   "tags": [
+    "skill-creation",
+    "documentation",
+    "automation"
+   ],
+   "description": {
+    "en": "Toolkit that converts documentation sites, GitHub repositories, PDFs and other sources into installable Claude AI skills, with automatic conflict detection.",
+    "pt": "Kit de ferramentas que converte sites de documentação, repositórios do GitHub, PDFs e outras fontes em skills instaláveis para o Claude AI, com detecção automática de conflitos."
+   },
+   "skill": {
+    "source": "yusufkaraaslan/Skill_Seekers"
+   },
+   "alternatives": [
+    {
+     "name": "mgechev/skills-best-practices",
+     "url": "https://github.com/mgechev/skills-best-practices",
+     "adds": {
+      "en": "Adds a methodology skill for writing and LLM-validating professional-grade skills.",
+      "pt": "Adiciona uma skill de metodologia para escrever e validar com LLM skills de nível profissional."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
+   }
+  },
+  {
+   "id": "skillkit",
+   "name": "rohitg00/skillkit",
+   "title": "Cross-agent skill portability kit",
+   "url": "https://github.com/rohitg00/skillkit",
+   "type": "skill-pack",
+   "category": "meta",
+   "license": "Apache-2.0",
+   "tags": [
+    "skill-management",
+    "cross-agent",
+    "portability"
+   ],
+   "description": {
+    "en": "Tool and skill set that installs, translates and shares agent skills across Claude Code, Cursor, Codex, Copilot and 40+ other coding agents from one source.",
+    "pt": "Ferramenta e conjunto de skills que instala, traduz e compartilha skills de agentes entre Claude Code, Cursor, Codex, Copilot e mais de 40 outros agentes a partir de uma única fonte."
+   },
+   "skill": {
+    "source": "rohitg00/skillkit"
+   },
+   "alternatives": [
+    {
+     "name": "runkids/skillshare",
+     "url": "https://github.com/runkids/skillshare",
+     "adds": {
+      "en": "Focuses on one-command syncing and team sharing of skills across CLI tools.",
+      "pt": "Foca em sincronizar com um comando só e compartilhar skills em equipe entre ferramentas de CLI."
+     }
+    },
+    {
+     "name": "xingkongliang/skills-manager",
+     "url": "https://github.com/xingkongliang/skills-manager",
+     "adds": {
+      "en": "Desktop GUI app for browsing and organizing skills across 50+ coding tools.",
+      "pt": "Aplicativo desktop com GUI para navegar e organizar skills em mais de 50 ferramentas de código."
+     }
+    },
+    {
+     "name": "numman-ali/openskills",
+     "url": "https://github.com/numman-ali/openskills",
+     "adds": {
+      "en": "Lightweight universal skills loader distributed as an npm package.",
+      "pt": "Carregador universal e leve de skills, distribuído como pacote npm."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
+   }
+  },
+  {
+   "id": "skills",
+   "name": "browser-act/skills",
+   "title": "Browser-Act automation skills",
+   "url": "https://github.com/browser-act/skills",
+   "type": "skill-pack",
+   "category": "browser",
+   "license": "MIT",
+   "tags": [
+    "browser-automation",
+    "web-scraping",
+    "cli"
+   ],
+   "description": {
+    "en": "Skill library for a browser-automation CLI aimed at AI agents, with over 100 skills covering anti-bot handling, human handoff, and site-specific data extraction (e-commerce, travel, social).",
+    "pt": "Biblioteca de skills para um CLI de automação de navegador voltado a agentes de IA, com mais de 100 skills cobrindo bypass de anti-bot, handoff para humanos e extração de dados de sites específicos (e-commerce, viagens, redes sociais)."
+   },
+   "skill": {
+    "source": "browser-act/skills"
+   },
+   "alternatives": [
+    {
+     "name": "D4Vinci/Scrapling",
+     "url": "https://github.com/D4Vinci/Scrapling",
+     "adds": {
+      "en": "Adds a Python adaptive scraping framework skill for code-level, request-to-full-crawl extraction.",
+      "pt": "Adiciona skill de framework Python de scraping adaptativo para extração em código, de requisições simples a crawls completos."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
    }
   },
   {
@@ -14133,6 +17862,57 @@
    }
   },
   {
+   "id": "stitch-skills",
+   "name": "google-labs-code/stitch-skills",
+   "title": "Google Stitch design skills",
+   "url": "https://github.com/google-labs-code/stitch-skills",
+   "type": "skill-pack",
+   "category": "dev",
+   "license": "Apache-2.0",
+   "tags": [
+    "design",
+    "google-stitch",
+    "ui"
+   ],
+   "description": {
+    "en": "Official Agent Skills library for Google's Stitch MCP server, covering code-to-design, design generation, design-system management and React/shadcn component export.",
+    "pt": "Biblioteca oficial de Agent Skills para o servidor MCP Stitch do Google, cobrindo código-para-design, geração de design, gestão de design systems e exportação de componentes React/shadcn."
+   },
+   "skill": {
+    "source": "google-labs-code/stitch-skills"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
+   }
+  },
+  {
+   "id": "storybook",
+   "name": "storybookjs/storybook",
+   "title": "Storybook agent skills",
+   "url": "https://github.com/storybookjs/storybook",
+   "type": "skill-pack",
+   "category": "dev",
+   "license": "MIT",
+   "tags": [
+    "skills",
+    "storybook",
+    "ui",
+    "testing"
+   ],
+   "description": {
+    "en": "Storybook, the industry-standard workshop for building and testing UI components in isolation, ships Agent Skills that teach coding agents to use it.",
+    "pt": "O Storybook, workshop padrão da indústria para construir e testar componentes de UI isoladamente, inclui Agent Skills que ensinam agentes de código a usá-lo."
+   },
+   "skill": {
+    "source": "storybookjs/storybook"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
    "id": "strava-mcp",
    "name": "r-huijts/strava-mcp",
    "title": "Strava activity access",
@@ -14344,6 +18124,49 @@
    }
   },
   {
+   "id": "swiftui-agent-skill",
+   "name": "twostraws/SwiftUI-Agent-Skill",
+   "title": "SwiftUI agent skill",
+   "url": "https://github.com/twostraws/SwiftUI-Agent-Skill",
+   "type": "skill-pack",
+   "category": "dev",
+   "license": "MIT",
+   "tags": [
+    "skills",
+    "swiftui",
+    "ios"
+   ],
+   "description": {
+    "en": "Agent skill that teaches Claude Code, Codex and other AI tools SwiftUI best practices for building iOS/macOS interfaces.",
+    "pt": "Agent skill que ensina Claude Code, Codex e outras ferramentas de IA as boas práticas de SwiftUI para construir interfaces iOS/macOS."
+   },
+   "skill": {
+    "source": "twostraws/SwiftUI-Agent-Skill"
+   },
+   "alternatives": [
+    {
+     "name": "AvdLee/SwiftUI-Agent-Skill",
+     "url": "https://github.com/AvdLee/SwiftUI-Agent-Skill",
+     "adds": {
+      "en": "Same SwiftUI best-practices skill, maintained independently by a different author.",
+      "pt": "Mesma skill de boas práticas de SwiftUI, mantida de forma independente por outro autor."
+     }
+    },
+    {
+     "name": "AvdLee/Swift-Concurrency-Agent-Skill",
+     "url": "https://github.com/AvdLee/Swift-Concurrency-Agent-Skill",
+     "adds": {
+      "en": "Companion skill focused on Swift Concurrency: safe concurrency patterns, performance and Swift 6 migration guidance.",
+      "pt": "Skill complementar focada em Swift Concurrency: padrões seguros de concorrência, performance e orientação para migração ao Swift 6."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
    "id": "task-orchestrator-mcp",
    "name": "MCP Task Orchestrator",
    "title": "Enforced workflow discipline for agents",
@@ -14377,6 +18200,41 @@
    }
   },
   {
+   "id": "tech-leads-club-agent-skills",
+   "name": "tech-leads-club/agent-skills",
+   "title": "Validated skill registry",
+   "url": "https://github.com/tech-leads-club/agent-skills",
+   "type": "skill-pack",
+   "category": "meta",
+   "license": null,
+   "tags": [
+    "meta",
+    "registry",
+    "governance"
+   ],
+   "description": {
+    "en": "Secure, validated skill registry for professional AI coding agents, extending Antigravity, Claude Code, Cursor, Copilot and more.",
+    "pt": "Registro seguro e validado de skills para agentes de código profissionais, estendendo Antigravity, Claude Code, Cursor, Copilot e outros."
+   },
+   "skill": {
+    "source": "tech-leads-club/agent-skills"
+   },
+   "alternatives": [
+    {
+     "name": "FrancyJGLisboa/agent-skills-platform",
+     "url": "https://github.com/FrancyJGLisboa/agent-skills-platform",
+     "adds": {
+      "en": "Similar idea covering the full skill lifecycle: evidence, discovery, updates, rollback and quarantine across 17 platforms.",
+      "pt": "Ideia semelhante cobrindo todo o ciclo de vida da skill: evidência, descoberta, atualizações, rollback e quarentena em 17 plataformas."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
    "id": "terraform-mcp-server",
    "name": "Terraform",
    "title": "Terraform workflow automation",
@@ -14407,6 +18265,31 @@
    "origin": {
     "list": "mcp-registry",
     "ref": "io.github.hashicorp/terraform-mcp-server"
+   }
+  },
+  {
+   "id": "terraform-skill",
+   "name": "antonbabenko/terraform-skill",
+   "title": "Terraform & OpenTofu skill",
+   "url": "https://github.com/antonbabenko/terraform-skill",
+   "type": "skill-pack",
+   "category": "cloud",
+   "license": null,
+   "tags": [
+    "terraform",
+    "infrastructure-as-code",
+    "devops"
+   ],
+   "description": {
+    "en": "Skill from a well-known Terraform module maintainer covering testing, module structure, CI/CD and production infrastructure-as-code patterns for Terraform and OpenTofu.",
+    "pt": "Skill de um mantenedor conhecido de módulos Terraform cobrindo testes, estrutura de módulos, CI/CD e padrões de infraestrutura como código em produção para Terraform e OpenTofu."
+   },
+   "skill": {
+    "source": "antonbabenko/terraform-skill"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
    }
   },
   {
@@ -14653,6 +18536,109 @@
    "origin": {
     "list": "mcp-registry",
     "ref": "io.github.bergside/typeui"
+   }
+  },
+  {
+   "id": "ui-ux-pro-max-skill",
+   "name": "nextlevelbuilder/ui-ux-pro-max-skill",
+   "title": "UI/UX design intelligence skill",
+   "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+   "type": "skill-pack",
+   "category": "skills",
+   "license": "MIT",
+   "tags": [
+    "ui",
+    "ux",
+    "skills",
+    "design"
+   ],
+   "description": {
+    "en": "AI skill that provides design intelligence for building professional, cross-platform UI/UX, with a companion agent and slash commands.",
+    "pt": "Skill de IA que fornece inteligência de design para construir UI/UX profissional em múltiplas plataformas, com agente e comandos complementares."
+   },
+   "skill": {
+    "source": "nextlevelbuilder/ui-ux-pro-max-skill"
+   },
+   "alternatives": [
+    {
+     "name": "pbakaus/impeccable",
+     "url": "https://github.com/pbakaus/impeccable",
+     "adds": {
+      "en": "A design-language skill focused specifically on making the agent's visual taste better, not on broader UX process.",
+      "pt": "Skill de linguagem de design focada especificamente em melhorar o gosto visual do agente, sem cobrir o processo mais amplo de UX."
+     }
+    },
+    {
+     "name": "Leonxlnx/taste-skill",
+     "url": "https://github.com/Leonxlnx/taste-skill",
+     "adds": {
+      "en": "Narrower skill aimed at just one thing: stopping the agent from generating boring, generic-looking interfaces.",
+      "pt": "Skill mais restrita voltada a uma única coisa: impedir o agente de gerar interfaces genéricas e sem graça."
+     }
+    },
+    {
+     "name": "jakubkrehel/skills",
+     "url": "https://github.com/jakubkrehel/skills",
+     "adds": {
+      "en": "Small collection of skills focused on helping an agent build good-looking interfaces.",
+      "pt": "Pequena coleção de skills focada em ajudar um agente a construir interfaces com boa aparência."
+     }
+    },
+    {
+     "name": "Owl-Listener/designer-skills",
+     "url": "https://github.com/Owl-Listener/designer-skills",
+     "adds": {
+      "en": "Broader designer skill set spanning research, design systems, interaction and delivery, not just UI polish.",
+      "pt": "Conjunto mais amplo de skills de design cobrindo pesquisa, sistemas de design, interação e entrega, além do polimento visual."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
+   }
+  },
+  {
+   "id": "understand-anything",
+   "name": "Egonex-AI/Understand-Anything",
+   "title": "Codebase knowledge graphs",
+   "url": "https://github.com/Egonex-AI/Understand-Anything",
+   "type": "skill-pack",
+   "category": "tools",
+   "license": "MIT",
+   "tags": [
+    "code-intel",
+    "tools",
+    "knowledge-graph"
+   ],
+   "description": {
+    "en": "Turns any codebase into an interactive knowledge graph that agents (and humans) can explore, search and query, across Claude Code, Codex, Cursor and more.",
+    "pt": "Transforma qualquer codebase em um grafo de conhecimento interativo que agentes (e humanos) podem explorar, buscar e consultar, funcionando com Claude Code, Codex, Cursor e outros."
+   },
+   "skill": {
+    "source": "Egonex-AI/Understand-Anything"
+   },
+   "alternatives": [
+    {
+     "name": "abhigyanpatwari/GitNexus",
+     "url": "https://github.com/abhigyanpatwari/GitNexus",
+     "adds": {
+      "en": "Zero-server code intelligence engine that builds a similar graph representation without any backend infrastructure.",
+      "pt": "Motor de inteligência de código sem servidor que constrói uma representação em grafo semelhante sem infraestrutura de backend."
+     }
+    },
+    {
+     "name": "giancarloerra/SocratiCode",
+     "url": "https://github.com/giancarloerra/SocratiCode",
+     "adds": {
+      "en": "Enterprise-scale codebase intelligence (tested on 40M+ lines) with hybrid semantic search, dependency graphs and an interactive HTML viewer.",
+      "pt": "Inteligência de codebase em escala empresarial (40M+ linhas), busca semântica híbrida, grafos de dependência e visualizador HTML interativo."
+     }
+    }
+   ],
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
    }
   },
   {
@@ -15015,6 +19001,75 @@
    }
   },
   {
+   "id": "vibe-coding-cn",
+   "name": "tradecatlabs/vibe-coding-cn",
+   "title": "Web3 smart contract security skills",
+   "url": "https://github.com/tradecatlabs/vibe-coding-cn",
+   "type": "skill-pack",
+   "category": "security",
+   "license": "MIT",
+   "tags": [
+    "web3",
+    "smart-contracts",
+    "security-audit"
+   ],
+   "description": {
+    "en": "Skill set for analyzing Ethereum and other smart contract vulnerabilities, auditing Foundry-based contracts, and recognizing common Web3 bug classes.",
+    "pt": "Conjunto de skills para analisar vulnerabilidades de smart contracts Ethereum e outros, auditar contratos baseados em Foundry e reconhecer classes comuns de bugs em Web3."
+   },
+   "skill": {
+    "source": "tradecatlabs/vibe-coding-cn"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "skill-pack"
+   }
+  },
+  {
+   "id": "vibe-tools",
+   "name": "eastlondoner/vibe-tools",
+   "title": "Vibe Tools CLI for Cursor Agent",
+   "url": "https://github.com/eastlondoner/vibe-tools",
+   "type": "list",
+   "category": "tools",
+   "license": "MIT",
+   "tags": [
+    "cursor",
+    "cli",
+    "tools"
+   ],
+   "description": {
+    "en": "Command-line toolkit that gives Cursor Agent an extended AI team and advanced skills through external tool integrations.",
+    "pt": "Toolkit de linha de comando que dá ao Cursor Agent uma equipe de IA estendida e skills avançadas por meio de integrações com ferramentas externas."
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "rules-collection"
+   }
+  },
+  {
+   "id": "video-shotcraft",
+   "name": "Vincentwei1021/video-shotcraft",
+   "title": "Cinematic video shot skill",
+   "url": "https://github.com/Vincentwei1021/video-shotcraft",
+   "type": "list",
+   "category": "multimodal",
+   "license": "Apache-2.0",
+   "tags": [
+    "video",
+    "multimodal",
+    "remotion"
+   ],
+   "description": {
+    "en": "AI video skill for Claude Code and Codex that produces cinematic product videos with Remotion, backed by 152 shot-recipe cards and 209 motion previews.",
+    "pt": "Skill de vídeo com IA para Claude Code e Codex que produz vídeos cinematográficos de produto com Remotion, apoiada em 152 cartões de receita de plano e 209 previews de movimento."
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-plugin"
+   }
+  },
+  {
    "id": "visualtorch-mcp",
    "name": "VisualTorch",
    "title": "PyTorch architecture diagrams",
@@ -15106,6 +19161,31 @@
    "origin": {
     "list": "mcp-registry",
     "ref": "io.github.estruyf/vscode-demo-time"
+   }
+  },
+  {
+   "id": "vuejs-ai-skills",
+   "name": "vuejs-ai/skills",
+   "title": "Vue 3 agent skills",
+   "url": "https://github.com/vuejs-ai/skills",
+   "type": "skill-pack",
+   "category": "dev",
+   "license": "MIT",
+   "tags": [
+    "skills",
+    "vue",
+    "frontend"
+   ],
+   "description": {
+    "en": "Official agent skills for Vue 3 development, maintained under the Vue.js organization.",
+    "pt": "Agent skills oficiais para desenvolvimento em Vue 3, mantidas sob a organização do Vue.js."
+   },
+   "skill": {
+    "source": "vuejs-ai/skills"
+   },
+   "origin": {
+    "list": "github-discovery",
+    "ref": "claude-marketplace"
    }
   },
   {

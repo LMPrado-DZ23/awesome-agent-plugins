@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: ai-legal-claude
+name: zubair-trabzada/ai-legal-claude
+title: AI legal assistant skills
+url: https://github.com/zubair-trabzada/ai-legal-claude
+type: skill-pack
+category: skills
+license: null
+tags:
+  - legal
+  - contracts
+  - compliance
+description:
+  en: >-
+    Legal-assistant skill pack for Claude Code covering contract review, risk analysis, NDA generation, compliance
+    auditing, negotiation strategy and PDF report output.
+  pt: >-
+    Pacote de skills de assistente jurídico para o Claude Code cobrindo revisão de contratos, análise de risco, geração
+    de NDA, auditoria de conformidade, estratégia de negociação e relatórios em PDF.
+skill:
+  source: zubair-trabzada/ai-legal-claude
+origin:
+  list: github-discovery
+  ref: skill-pack

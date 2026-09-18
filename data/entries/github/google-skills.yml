@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: google-skills
+name: google/skills
+title: Google product skills
+url: https://github.com/google/skills
+type: skill-pack
+category: dev
+license: Apache-2.0
+tags:
+  - skills
+  - google
+  - dev
+description:
+  en: >-
+    Marketplace of Agent Skills covering Google products and technologies, for grounding coding agents in
+    Google-specific APIs and workflows.
+  pt: >-
+    Marketplace de Agent Skills sobre produtos e tecnologias do Google, para orientar agentes de código em APIs e fluxos
+    específicos do Google.
+skill:
+  source: google/skills
+origin:
+  list: github-discovery
+  ref: claude-marketplace

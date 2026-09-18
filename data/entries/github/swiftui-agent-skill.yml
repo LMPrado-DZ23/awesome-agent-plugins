@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: swiftui-agent-skill
+name: twostraws/SwiftUI-Agent-Skill
+title: SwiftUI agent skill
+url: https://github.com/twostraws/SwiftUI-Agent-Skill
+type: skill-pack
+category: dev
+license: MIT
+tags:
+  - skills
+  - swiftui
+  - ios
+description:
+  en: >-
+    Agent skill that teaches Claude Code, Codex and other AI tools SwiftUI best practices for building iOS/macOS
+    interfaces.
+  pt: >-
+    Agent skill que ensina Claude Code, Codex e outras ferramentas de IA as boas práticas de SwiftUI para construir
+    interfaces iOS/macOS.
+skill:
+  source: twostraws/SwiftUI-Agent-Skill
+alternatives:
+  - name: AvdLee/SwiftUI-Agent-Skill
+    url: https://github.com/AvdLee/SwiftUI-Agent-Skill
+    adds:
+      en: Same SwiftUI best-practices skill, maintained independently by a different author.
+      pt: Mesma skill de boas práticas de SwiftUI, mantida de forma independente por outro autor.
+  - name: AvdLee/Swift-Concurrency-Agent-Skill
+    url: https://github.com/AvdLee/Swift-Concurrency-Agent-Skill
+    adds:
+      en: >-
+        Companion skill focused on Swift Concurrency: safe concurrency patterns, performance and Swift 6 migration
+        guidance.
+      pt: >-
+        Skill complementar focada em Swift Concurrency: padrões seguros de concorrência, performance e orientação para
+        migração ao Swift 6.
+origin:
+  list: github-discovery
+  ref: claude-marketplace

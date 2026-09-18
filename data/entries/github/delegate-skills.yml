@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: delegate-skills
+name: amElnagdy/delegate-skills
+title: Multi-agent delegation skills
+url: https://github.com/amElnagdy/delegate-skills
+type: skill-pack
+category: workflow
+license: MIT
+tags:
+  - multi-agent
+  - code-review
+  - delegation
+description:
+  en: >-
+    Skill set for delegating a coding task to a separate coding-agent CLI (Aider, Cline, Codex, Cursor, Copilot and
+    more), then reviewing the diff and landing the commit yourself.
+  pt: >-
+    Conjunto de skills para delegar uma tarefa de código a um CLI de agente separado (Aider, Cline, Codex, Cursor,
+    Copilot e outros), revisando o diff e aplicando o commit você mesmo.
+skill:
+  source: amElnagdy/delegate-skills
+origin:
+  list: github-discovery
+  ref: skill-pack

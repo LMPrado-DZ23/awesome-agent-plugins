@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: understand-anything
+name: Egonex-AI/Understand-Anything
+title: Codebase knowledge graphs
+url: https://github.com/Egonex-AI/Understand-Anything
+type: skill-pack
+category: tools
+license: MIT
+tags:
+  - code-intel
+  - tools
+  - knowledge-graph
+description:
+  en: >-
+    Turns any codebase into an interactive knowledge graph that agents (and humans) can explore, search and query,
+    across Claude Code, Codex, Cursor and more.
+  pt: >-
+    Transforma qualquer codebase em um grafo de conhecimento interativo que agentes (e humanos) podem explorar, buscar e
+    consultar, funcionando com Claude Code, Codex, Cursor e outros.
+skill:
+  source: Egonex-AI/Understand-Anything
+alternatives:
+  - name: abhigyanpatwari/GitNexus
+    url: https://github.com/abhigyanpatwari/GitNexus
+    adds:
+      en: >-
+        Zero-server code intelligence engine that builds a similar graph representation without any backend
+        infrastructure.
+      pt: >-
+        Motor de inteligência de código sem servidor que constrói uma representação em grafo semelhante sem
+        infraestrutura de backend.
+  - name: giancarloerra/SocratiCode
+    url: https://github.com/giancarloerra/SocratiCode
+    adds:
+      en: >-
+        Enterprise-scale codebase intelligence (tested on 40M+ lines) with hybrid semantic search, dependency graphs and
+        an interactive HTML viewer.
+      pt: >-
+        Inteligência de codebase em escala empresarial (40M+ linhas), busca semântica híbrida, grafos de dependência e
+        visualizador HTML interativo.
+origin:
+  list: github-discovery
+  ref: claude-marketplace

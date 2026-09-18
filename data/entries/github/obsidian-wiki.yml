@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: obsidian-wiki
+name: Ar9av/obsidian-wiki
+title: Obsidian agent memory framework
+url: https://github.com/Ar9av/obsidian-wiki
+type: skill-pack
+category: tools
+license: MIT
+tags:
+  - knowledge-management
+  - obsidian
+  - memory
+description:
+  en: >-
+    Skill framework letting AI agents build and maintain a personal knowledge base ('digital brain') inside Obsidian,
+    with cross-linking, graph coloring and history ingestion.
+  pt: >-
+    Framework de skills que permite a agentes de IA construir e manter uma base de conhecimento pessoal ('cérebro
+    digital') dentro do Obsidian, com cross-linking, coloração de grafo e ingestão de histórico.
+skill:
+  source: Ar9av/obsidian-wiki
+origin:
+  list: github-discovery
+  ref: skill-pack

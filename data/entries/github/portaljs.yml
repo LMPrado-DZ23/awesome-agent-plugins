@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: portaljs
+name: datopian/portaljs
+title: PortalJS data portal skills
+url: https://github.com/datopian/portaljs
+type: skill-pack
+category: dev
+license: MIT
+tags:
+  - skills
+  - data
+  - portaljs
+description:
+  en: >-
+    AI-native framework by Datopian for building data portals: scaffold a full portal from a brief and load datasets in
+    minutes, with agentic skills for CKAN, GitHub or Frictionless backends.
+  pt: >-
+    Framework nativo para IA da Datopian para construir portais de dados: monta um portal completo a partir de um
+    briefing e carrega datasets em minutos, com agent skills para os backends CKAN, GitHub ou Frictionless.
+skill:
+  source: datopian/portaljs
+origin:
+  list: github-discovery
+  ref: claude-marketplace

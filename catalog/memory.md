@@ -4,9 +4,18 @@
 
 > This page is generated from `data/entries/` — do not edit by hand.
 
+- [Reasoning memory for agents](#honcho-mcp) — Memory that reasons: continual learning for stateful agents, aiming for better context with fewer tokens; need…
+- [Markdown knowledge base for agents](#basic-memory-mcp) — Local-first knowledge management with bi-directional sync between an LLM and Markdown files.
+- [Markdown notes as agent memory](#iwe-mcp) — Runs a Markdown knowledge base as agent memory against the notes directory it is started in.
+- [Obsidian notes access](#obsidian-mcp-server) — Reads, writes, searches, and edits Obsidian notes, tags, and frontmatter; needs an OBSIDIAN_API_KEY.
 - [Typed knowledge-graph memory](#dsh-graph-memory) — Traceable, searchable cross-session memory that stores conversation knowledge as typed graph nodes (task/skill…
+- [Local-first agentic RAG](#haiku-rag-mcp) — Local-first agentic RAG with citations: hybrid search, reranking, and multimodal document retrieval.
+- [Anytype encrypted wiki access](#anytype-mcp) — Official server for the Anytype API, an encrypted, local, and collaborative wiki; needs OPENAPI_MCP_HEADERS.
 - [Failure-recovery lessons knowledge base](#dsh-misakanet) — Search and record failure-recovery lessons from real engineering sessions, with BM25 plus semantic RAG retriev…
+- [Team chat to knowledge graph](#beever-atlas-mcp) — Open-source knowledge base that turns team chat into a typed knowledge graph and an auto-generated wiki.
 - [Cross-agent shared long-term memory](#dsh-dsh-mnemon) — Local-first persistent memory shared across Mnemon-enabled agents: runtime memory, searchable project document…
+- [Air-gapped enterprise GraphRAG](#veritasgraph-mcp) — Zero-trust, air-gapped enterprise GraphRAG server with offline, citation-grounded answers.
+- [Cross-session agent memory](#omega-memory-mcp) — Persistent memory, coordination, and learning for AI agents, local-first, exposed as 25 MCP tools.
 - [Seven-layer SQLite project memory](#dsh-dsh-meow-memory) — Project-scoped cross-session memory in a seven-layer SQLite store (soul/user/project/fact/lesson/rules/topic),…
 - [Approval-gated auditable memory](#dsh-dsh-memento) — Bounded, layered, approval-gated cross-session memory: a typed memory seam with a zero-dependency SQLite provi…
 - [Six-layer time-decaying memory](#dsh-stratagate-agentmemory) — Six-layer, time-decaying memory: recent conversations stay vivid while older ones fade into summaries, and las…
@@ -16,289 +25,39 @@
 - [Personal Obsidian vault memory](#dsh-dsh-client-ui-obsidian-memory) — Persistent AI memory backed by a local Obsidian/Codex vault, with five read/write/search tools and a sidebar v…
 - [Local/remote knowledge base search](#dsh-dsh-knowledge) — Local and remote knowledge bases with project- and session-scoped recall, controlled write-back, and an embedd…
 - [Multi-layer conversation history recall](#dsh-dsh-recall) — Conversation history recall via three-layer (literal, fuzzy, semantic) retrieval over every past session's ori…
-- [Air-gapped enterprise GraphRAG](#veritasgraph-mcp) — Zero-trust, air-gapped enterprise GraphRAG server with offline, citation-grounded answers.
-- [Anytype encrypted wiki access](#anytype-mcp) — Official server for the Anytype API, an encrypted, local, and collaborative wiki; needs OPENAPI_MCP_HEADERS.
-- [Cross-session agent memory](#omega-memory-mcp) — Persistent memory, coordination, and learning for AI agents, local-first, exposed as 25 MCP tools.
 - [Cross-tool session reader, no export](#dsh-deja-vu-extensions-dsh) — Reads the session files that other coding agents on the same machine already wrote (Claude Code, Codex, Cursor…
-- [Local-first agentic RAG](#haiku-rag-mcp) — Local-first agentic RAG with citations: hybrid search, reranking, and multimodal document retrieval.
-- [Markdown knowledge base for agents](#basic-memory-mcp) — Local-first knowledge management with bi-directional sync between an LLM and Markdown files.
-- [Markdown notes as agent memory](#iwe-mcp) — Runs a Markdown knowledge base as agent memory against the notes directory it is started in.
 - [Memory (reference)](#mcp-memory) — Reference knowledge-graph memory: entities, relations and observations stored in a local JSONL file. No model …
-- [Obsidian notes access](#obsidian-mcp-server) — Reads, writes, searches, and edits Obsidian notes, tags, and frontmatter; needs an OBSIDIAN_API_KEY.
 - [Plaintext one-fact-per-file memory](#dsh-engramory-plugin) — Long-term memory stored as plain markdown, one fact per file. A size-capped MEMORY.md index blocks writes that…
-- [Reasoning memory for agents](#honcho-mcp) — Memory that reasons: continual learning for stateful agents, aiming for better context with fewer tokens; need…
 - [Self-evolving team memory in git](#dsh-co-engram-dsh-plugin) — Self-evolving team memory kept as plain markdown in git: 38 bare-name memory tools plus a prompt-signals secti…
-- [Team chat to knowledge graph](#beever-atlas-mcp) — Open-source knowledge base that turns team chat into a typed knowledge graph and an auto-generated wiki.
 
-<a id="dsh-graph-memory"></a>
+<a id="honcho-mcp"></a>
 
-### Typed knowledge-graph memory
+### Reasoning memory for agents
 
-[adoresever/graph-memory](https://github.com/adoresever/graph-memory) — `Native plugin` · ★ 626 · License: MIT · Works with: DeepSeek Harness only
+[Honcho](https://github.com/plastic-labs/honcho) — `MCP server` · ★ 7.2k · License: AGPL-3.0 · Works with: All clients
 
-Traceable, searchable cross-session memory that stores conversation knowledge as typed graph nodes (task/skill/event) connected by typed edges.
-
-<details><summary>Install</summary>
-
-**DeepSeek Harness**
-
-```bash
-dsh plugin --profile web add github:adoresever/graph-memory
-```
-
-</details>
-
-<a id="dsh-misakanet"></a>
-
-### Failure-recovery lessons knowledge base
-
-[Ikalus1988/MisakaNet](https://github.com/Ikalus1988/MisakaNet) — `Native plugin` · ★ 493 · License: Apache-2.0 · Works with: DeepSeek Harness only
-
-Search and record failure-recovery lessons from real engineering sessions, with BM25 plus semantic RAG retrieval over a lessons knowledge base.
-
-**Alternatives:**
-
-- [akslcw/dsh-negative-ledger](https://github.com/akslcw/dsh-negative-ledger) (★ 3) — Persists disproven paths with outcome evidence and blocks repeat attempts until that evidence changes.
-
-<details><summary>Install</summary>
-
-**DeepSeek Harness**
-
-```bash
-dsh plugin --profile web add github:Ikalus1988/MisakaNet
-```
-
-</details>
-
-<a id="dsh-dsh-mnemon"></a>
-
-### Cross-agent shared long-term memory
-
-[omdsh-dev/dsh-mnemon](https://github.com/omdsh-dev/dsh-mnemon) — `Native plugin` · ★ 385 · License: MIT · Works with: DeepSeek Harness only
-
-Local-first persistent memory shared across Mnemon-enabled agents: runtime memory, searchable project documents, semantic recall, a knowledge graph, and a sidebar UI.
-
-**Alternatives:**
-
-- [vectorize-io/hindsight#coding-agents](https://github.com/vectorize-io/hindsight/tree/main/hindsight-integrations/coding-agents) — Adds automatic recall/retain with deep reflection, knowledge pages, and per-repo memory banks.
-- [ZSeven-W/dsh-noema](https://github.com/ZSeven-W/dsh-noema) (★ 128) — Adds import of memories from ten other AI coding tools plus a settings page.
-- [modusensus/dsh-mneme](https://github.com/modusensus/dsh-mneme) (★ 112) — Adds sleep-time auto-consolidation, freezing of conflicting memories for review, and a replayable audit trail.
-
-<details><summary>Install</summary>
-
-**DeepSeek Harness**
-
-```bash
-dsh plugin --profile web add github:omdsh-dev/dsh-mnemon
-```
-
-</details>
-
-<a id="dsh-dsh-meow-memory"></a>
-
-### Seven-layer SQLite project memory
-
-[Phant0Meow/dsh-meow-memory](https://github.com/Phant0Meow/dsh-meow-memory) — `Native plugin` · ★ 105 · License: MIT · Works with: DeepSeek Harness only
-
-Project-scoped cross-session memory in a seven-layer SQLite store (soul/user/project/fact/lesson/rules/topic), with first-message injection, per-message keyword hits, and idle-window consolidation.
-
-<details><summary>Install</summary>
-
-**DeepSeek Harness**
-
-```bash
-dsh plugin --profile web add github:Phant0Meow/dsh-meow-memory
-```
-
-</details>
-
-<a id="dsh-dsh-memento"></a>
-
-### Approval-gated auditable memory
-
-[PerryLink/dsh-memento](https://github.com/PerryLink/dsh-memento) — `Native plugin` · ★ 103 · License: Apache-2.0 · Works with: DeepSeek Harness only
-
-Bounded, layered, approval-gated cross-session memory: a typed memory seam with a zero-dependency SQLite provider, frozen snapshot injection, and a conformance suite for adapter compatibility.
-
-**Alternatives:**
-
-- [GIT121995/dsh-memory-gate](https://github.com/GIT121995/dsh-memory-gate) (★ 2) — Adds explainable use/verify/ignore decisions with a full audit trail and a per-call injection limit.
-- [highland0971/dsh-native-memory](https://github.com/highland0971/dsh-native-memory) (★ 2) — Runs on the harness's own storage seam with no external server, citing session and sequence for each fact.
-
-<details><summary>Install</summary>
-
-**DeepSeek Harness**
-
-```bash
-dsh plugin --profile web add github:PerryLink/dsh-memento
-```
-
-</details>
-
-<a id="dsh-stratagate-agentmemory"></a>
-
-### Six-layer time-decaying memory
-
-[diqierjia/StrataGate-AgentMemory](https://github.com/diqierjia/StrataGate-AgentMemory) — `Native plugin` · ★ 92 · License: MIT · Works with: DeepSeek Harness only
-
-Six-layer, time-decaying memory: recent conversations stay vivid while older ones fade into summaries, and lasting events and relationships settle into a knowledge graph. Supports bringing memories in from other AI tools.
-
-<details><summary>Install</summary>
-
-**DeepSeek Harness**
-
-```bash
-dsh plugin --profile web add "https://github.com/diqierjia/StrataGate-AgentMemory/releases/latest/download/stratagate-dsh.tgz"
-```
-
-</details>
-
-<a id="dsh-dsh-auto-memory"></a>
-
-### Zero-prompt proactive memory recall
-
-[Aik358/dsh-auto-memory](https://github.com/Aik358/dsh-auto-memory) — `Native plugin` · ★ 71 · License: BSD-3-Clause · Works with: DeepSeek Harness only
-
-Proactive associative memory: zero-prompt recall injected at a fixed boundary, three-layer auto-consolidation, skill crystallization, and handoff ledgers that survive context-window switches. Local markdown storage, model-agnostic, zero dependencies.
-
-<details><summary>Install</summary>
-
-**DeepSeek Harness**
-
-```bash
-dsh plugin --profile web add github:Aik358/dsh-auto-memory
-```
-
-</details>
-
-<a id="dsh-dsh-md-notes"></a>
-
-### Markdown notes capture and sync
-
-[XieZongChen/dsh-md-notes](https://github.com/XieZongChen/dsh-md-notes) — `Native plugin` · ★ 17 · License: MIT · Works with: DeepSeek Harness only
-
-Markdown notes manager and editor for DSH: quickly capture conversations into notes, keep them synced to Git repositories, and bring notes back into the conversation context.
-
-<details><summary>Install</summary>
-
-**DeepSeek Harness**
-
-```bash
-dsh plugin --profile web add github:XieZongChen/dsh-md-notes
-```
-
-</details>
-
-<a id="dsh-dsh-layered-memory"></a>
-
-### Auto-distilled hybrid-retrieval memory
-
-[JunNanLYS/dsh-layered-memory](https://github.com/JunNanLYS/dsh-layered-memory) — `Native plugin` · ★ 16 · License: MIT · Works with: DeepSeek Harness only
-
-Conversations auto-distilled into atomic facts, scene summaries, and a persona profile, injected before every model step via hybrid BM25 plus vector retrieval. Zero-config, with optional offline local embeddings and chat/work separation.
-
-<details><summary>Install</summary>
-
-**DeepSeek Harness**
-
-```bash
-dsh plugin --profile web add github:JunNanLYS/dsh-layered-memory
-```
-
-</details>
-
-<a id="dsh-dsh-client-ui-obsidian-memory"></a>
-
-### Personal Obsidian vault memory
-
-[detongz/dsh-client-ui-obsidian-memory](https://github.com/detongz/dsh-client-ui-obsidian-memory) — `Native plugin` · ★ 14 · License: MIT · Works with: DeepSeek Harness only
-
-Persistent AI memory backed by a local Obsidian/Codex vault, with five read/write/search tools and a sidebar vault browser.
-
-**Alternatives:**
-
-- [mingzeng21/dsh-obsidian](https://github.com/mingzeng21/dsh-obsidian) (★ 14) — Simpler tool set covering search, read, write, move, and trash on the vault.
-- [Noelune/unified-agent-memory](https://github.com/Noelune/unified-agent-memory) (★ 7) — Shares one Obsidian vault across every agent, with a dependency-free promote/adjudicate/forget core.
-- [398894496-arch/runtime36](https://github.com/398894496-arch/runtime36) (★ 39) — Read-only tools that route status, preference, and correction queries to the matching vault page.
-
-<details><summary>Install</summary>
-
-**DeepSeek Harness**
-
-```bash
-dsh plugin --profile web add github:detongz/dsh-client-ui-obsidian-memory
-```
-
-</details>
-
-<a id="dsh-dsh-knowledge"></a>
-
-### Local/remote knowledge base search
-
-[lemoncat7/dsh-knowledge](https://github.com/lemoncat7/dsh-knowledge) — `Native plugin` · ★ 11 · License: MIT · Works with: DeepSeek Harness only
-
-Local and remote knowledge bases with project- and session-scoped recall, controlled write-back, and an embedded web management console.
-
-**Alternatives:**
-
-- [htcqp802/dsh-knowledge-base](https://github.com/htcqp802/dsh-knowledge-base) (★ 5) — Imports md/txt/json/yml/docx/pdf, adds folder management and FTS5 full-text search.
-- [PerryLink/dsh-library](https://github.com/PerryLink/dsh-library) (★ 10) — Turns local documents into a queryable base with citation verification and source injection.
-- [melandlabs/opencontext#dsh-opencontext](https://github.com/melandlabs/opencontext/tree/main/plugins/dsh-opencontext) — Adds automatic prompt capture, session summaries, and structured insights alongside document retrieval.
-
-<details><summary>Install</summary>
-
-**DeepSeek Harness**
-
-```bash
-dsh plugin --profile web add github:lemoncat7/dsh-knowledge
-```
-
-</details>
-
-<a id="dsh-dsh-recall"></a>
-
-### Multi-layer conversation history recall
-
-[Relistencode/dsh-recall](https://github.com/Relistencode/dsh-recall) — `Native plugin` · ★ 3 · License: MIT · Works with: DeepSeek Harness only
-
-Conversation history recall via three-layer (literal, fuzzy, semantic) retrieval over every past session's original text, fully local and offline. One-command install, with the semantic layer running in a worker thread.
-
-<details><summary>Install</summary>
-
-**DeepSeek Harness**
-
-```bash
-dsh plugin --profile web add github:Relistencode/dsh-recall
-```
-
-</details>
-
-<a id="veritasgraph-mcp"></a>
-
-### Air-gapped enterprise GraphRAG
-
-[bibinprathap/VeritasGraph](https://github.com/bibinprathap/VeritasGraph) — `MCP server` · License: see repo · Works with: All clients
-
-Zero-trust, air-gapped enterprise GraphRAG server with offline, citation-grounded answers.
+Memory that reasons: continual learning for stateful agents, aiming for better context with fewer tokens; needs an Authorization token.
 
 <details><summary>Install</summary>
 
 **Claude Code**
 
 ```bash
-claude mcp add --transport stdio veritasgraph -- uvx veritasgraph-mcp
+claude mcp add --transport http honcho https://mcp.honcho.dev --header 'Authorization: Bearer <API_TOKEN>'
 ```
 
-**Codex CLI**
+**Codex CLI** — File: `~/.codex/config.toml`
 
-```bash
-codex mcp add veritasgraph -- uvx veritasgraph-mcp
+```toml
+[mcp_servers.honcho]
+url = "https://mcp.honcho.dev"
+bearer_token_env_var = "API_TOKEN"
 ```
 
 **Gemini CLI**
 
 ```bash
-gemini mcp add veritasgraph uvx veritasgraph-mcp
+gemini mcp add --transport http honcho https://mcp.honcho.dev --header 'Authorization: Bearer <API_TOKEN>'
 ```
 
 **Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
@@ -306,195 +65,10 @@ gemini mcp add veritasgraph uvx veritasgraph-mcp
 ```json
 {
   "mcpServers": {
-    "veritasgraph": {
-      "command": "uvx",
-      "args": [
-        "veritasgraph-mcp"
-      ]
-    }
-  }
-}
-```
-
-**VS Code (Copilot)** — File: `.vscode/mcp.json`
-
-```json
-{
-  "servers": {
-    "veritasgraph": {
-      "type": "stdio",
-      "command": "uvx",
-      "args": [
-        "veritasgraph-mcp"
-      ]
-    }
-  }
-}
-```
-
-**OpenCode** — File: `opencode.json`
-
-```json
-{
-  "$schema": "https://opencode.ai/config.json",
-  "mcp": {
-    "veritasgraph": {
-      "type": "local",
-      "command": [
-        "uvx",
-        "veritasgraph-mcp"
-      ],
-      "enabled": true
-    }
-  }
-}
-```
-
-**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
-
-```json
-{
-  "mcpServers": {
-    "veritasgraph": {
-      "command": "uvx",
-      "args": [
-        "veritasgraph-mcp"
-      ]
-    }
-  }
-}
-```
-
-**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
-
-```json
-{
-  "mcpServers": {
-    "veritasgraph": {
-      "command": "uvx",
-      "args": [
-        "veritasgraph-mcp"
-      ]
-    }
-  }
-}
-```
-
-**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
-
-```json
-{
-  "context_servers": {
-    "veritasgraph": {
-      "source": "custom",
-      "command": "uvx",
-      "args": [
-        "veritasgraph-mcp"
-      ]
-    }
-  }
-}
-```
-
-**Goose** — File: `~/.config/goose/config.yaml`
-
-```yaml
-extensions:
-  veritasgraph:
-    type: stdio
-    cmd: uvx
-    args: ["veritasgraph-mcp"]
-    enabled: true
-```
-
-**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "veritasgraph": {
-      "command": "uvx",
-      "args": [
-        "veritasgraph-mcp"
-      ]
-    }
-  }
-}
-```
-
-**Roo Code** — File: `.roo/mcp.json`
-
-```json
-{
-  "mcpServers": {
-    "veritasgraph": {
-      "command": "uvx",
-      "args": [
-        "veritasgraph-mcp"
-      ]
-    }
-  }
-}
-```
-
-**DeepSeek Harness** — File: `veritasgraph.cordis.yml  →  dsh web --patch ./veritasgraph.cordis.yml`
-
-```yaml
-- insert:
-    - id: mcp-veritasgraph
-      name: '@deepseek-ai/dsh-mcp-client'
-      config:
-        serverName: veritasgraph
-        transport: stdio
-        command: uvx
-        args: ["veritasgraph-mcp"]
-        env: {}
-        cwd: !!js process.cwd()
-```
-
-</details>
-
-<a id="anytype-mcp"></a>
-
-### Anytype encrypted wiki access
-
-[anyproto/anytype-mcp](https://github.com/anyproto/anytype-mcp) — `MCP server` · License: MIT · Works with: All clients
-
-Official server for the Anytype API, an encrypted, local, and collaborative wiki; needs OPENAPI_MCP_HEADERS.
-
-<details><summary>Install</summary>
-
-**Claude Code**
-
-```bash
-claude mcp add --transport stdio anytype-mcp --env OPENAPI_MCP_HEADERS='<OPENAPI_MCP_HEADERS>' -- npx -y @anyproto/anytype-mcp
-```
-
-**Codex CLI**
-
-```bash
-codex mcp add anytype-mcp --env OPENAPI_MCP_HEADERS='<OPENAPI_MCP_HEADERS>' -- npx -y @anyproto/anytype-mcp
-```
-
-**Gemini CLI**
-
-```bash
-gemini mcp add -e OPENAPI_MCP_HEADERS='<OPENAPI_MCP_HEADERS>' anytype-mcp npx -y @anyproto/anytype-mcp
-```
-
-**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "anytype-mcp": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@anyproto/anytype-mcp"
-      ],
-      "env": {
-        "OPENAPI_MCP_HEADERS": "<OPENAPI_MCP_HEADERS>"
+    "honcho": {
+      "url": "https://mcp.honcho.dev",
+      "headers": {
+        "Authorization": "Bearer <API_TOKEN>"
       }
     }
   }
@@ -506,15 +80,11 @@ gemini mcp add -e OPENAPI_MCP_HEADERS='<OPENAPI_MCP_HEADERS>' anytype-mcp npx -y
 ```json
 {
   "servers": {
-    "anytype-mcp": {
-      "type": "stdio",
-      "command": "npx",
-      "args": [
-        "-y",
-        "@anyproto/anytype-mcp"
-      ],
-      "env": {
-        "OPENAPI_MCP_HEADERS": "<OPENAPI_MCP_HEADERS>"
+    "honcho": {
+      "type": "http",
+      "url": "https://mcp.honcho.dev",
+      "headers": {
+        "Authorization": "Bearer <API_TOKEN>"
       }
     }
   }
@@ -527,16 +97,12 @@ gemini mcp add -e OPENAPI_MCP_HEADERS='<OPENAPI_MCP_HEADERS>' anytype-mcp npx -y
 {
   "$schema": "https://opencode.ai/config.json",
   "mcp": {
-    "anytype-mcp": {
-      "type": "local",
-      "command": [
-        "npx",
-        "-y",
-        "@anyproto/anytype-mcp"
-      ],
+    "honcho": {
+      "type": "remote",
+      "url": "https://mcp.honcho.dev",
       "enabled": true,
-      "environment": {
-        "OPENAPI_MCP_HEADERS": "<OPENAPI_MCP_HEADERS>"
+      "headers": {
+        "Authorization": "Bearer <API_TOKEN>"
       }
     }
   }
@@ -548,14 +114,11 @@ gemini mcp add -e OPENAPI_MCP_HEADERS='<OPENAPI_MCP_HEADERS>' anytype-mcp npx -y
 ```json
 {
   "mcpServers": {
-    "anytype-mcp": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@anyproto/anytype-mcp"
-      ],
-      "env": {
-        "OPENAPI_MCP_HEADERS": "<OPENAPI_MCP_HEADERS>"
+    "honcho": {
+      "type": "streamableHttp",
+      "url": "https://mcp.honcho.dev",
+      "headers": {
+        "Authorization": "Bearer <API_TOKEN>"
       }
     }
   }
@@ -567,14 +130,10 @@ gemini mcp add -e OPENAPI_MCP_HEADERS='<OPENAPI_MCP_HEADERS>' anytype-mcp npx -y
 ```json
 {
   "mcpServers": {
-    "anytype-mcp": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@anyproto/anytype-mcp"
-      ],
-      "env": {
-        "OPENAPI_MCP_HEADERS": "<OPENAPI_MCP_HEADERS>"
+    "honcho": {
+      "serverUrl": "https://mcp.honcho.dev",
+      "headers": {
+        "Authorization": "Bearer <API_TOKEN>"
       }
     }
   }
@@ -586,31 +145,29 @@ gemini mcp add -e OPENAPI_MCP_HEADERS='<OPENAPI_MCP_HEADERS>' anytype-mcp npx -y
 ```json
 {
   "context_servers": {
-    "anytype-mcp": {
+    "honcho": {
       "source": "custom",
       "command": "npx",
       "args": [
         "-y",
-        "@anyproto/anytype-mcp"
-      ],
-      "env": {
-        "OPENAPI_MCP_HEADERS": "<OPENAPI_MCP_HEADERS>"
-      }
+        "mcp-remote",
+        "https://mcp.honcho.dev",
+        "--header",
+        "Authorization:Bearer <API_TOKEN>"
+      ]
     }
   }
 }
 ```
+_Remote server bridged through the mcp-remote stdio proxy._
 
 **Goose** — File: `~/.config/goose/config.yaml`
 
 ```yaml
 extensions:
-  anytype-mcp:
-    type: stdio
-    cmd: npx
-    args: ["-y","@anyproto/anytype-mcp"]
-    envs:
-      OPENAPI_MCP_HEADERS: "<OPENAPI_MCP_HEADERS>"
+  honcho:
+    type: streamable_http
+    uri: https://mcp.honcho.dev
     enabled: true
 ```
 
@@ -619,14 +176,11 @@ extensions:
 ```json
 {
   "mcpServers": {
-    "anytype-mcp": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@anyproto/anytype-mcp"
-      ],
-      "env": {
-        "OPENAPI_MCP_HEADERS": "<OPENAPI_MCP_HEADERS>"
+    "honcho": {
+      "type": "streamable-http",
+      "url": "https://mcp.honcho.dev",
+      "headers": {
+        "Authorization": "Bearer <API_TOKEN>"
       }
     }
   }
@@ -638,420 +192,28 @@ extensions:
 ```json
 {
   "mcpServers": {
-    "anytype-mcp": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@anyproto/anytype-mcp"
-      ],
-      "env": {
-        "OPENAPI_MCP_HEADERS": "<OPENAPI_MCP_HEADERS>"
+    "honcho": {
+      "type": "streamable-http",
+      "url": "https://mcp.honcho.dev",
+      "headers": {
+        "Authorization": "Bearer <API_TOKEN>"
       }
     }
   }
 }
 ```
 
-**DeepSeek Harness** — File: `anytype-mcp.cordis.yml  →  dsh web --patch ./anytype-mcp.cordis.yml`
+**DeepSeek Harness** — File: `honcho.cordis.yml  →  dsh web --patch ./honcho.cordis.yml`
 
 ```yaml
 - insert:
-    - id: mcp-anytype-mcp
+    - id: mcp-honcho
       name: '@deepseek-ai/dsh-mcp-client'
       config:
-        serverName: anytype-mcp
-        transport: stdio
-        command: npx
-        args: ["-y","@anyproto/anytype-mcp"]
-        env: {"OPENAPI_MCP_HEADERS":"<OPENAPI_MCP_HEADERS>"}
-        cwd: !!js process.cwd()
-```
-
-</details>
-
-<a id="omega-memory-mcp"></a>
-
-### Cross-session agent memory
-
-[OMEGA Memory](https://github.com/omega-memory/omega-memory) — `MCP server` · License: Apache-2.0 · Works with: All clients
-
-Persistent memory, coordination, and learning for AI agents, local-first, exposed as 25 MCP tools.
-
-**Alternatives:**
-
-- [Vestige](https://github.com/samvallad33/vestige) — Local-first agent memory that reaches backward to find a failure's root cause.
-- [Compartment](https://github.com/MaxFreedomPollard/Compartment) — Durable agentic memory encrypted at rest, fully offline with no network or API key.
-- [TeleAI-UAGI/telemem](https://github.com/TeleAI-UAGI/telemem) — Long-term multimodal, character-aware memory, mem0-compatible, with a fully-local option; needs an OPENAI_API_KEY.
-- [Lyellr88/marm-memory](https://github.com/Lyellr88/marm-memory) — Universal server adding AI memory with semantic search.
-
-<details><summary>Install</summary>
-
-**Claude Code**
-
-```bash
-claude mcp add --transport stdio omega-memory -- uvx omega-memory
-```
-
-**Codex CLI**
-
-```bash
-codex mcp add omega-memory -- uvx omega-memory
-```
-
-**Gemini CLI**
-
-```bash
-gemini mcp add omega-memory uvx omega-memory
-```
-
-**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "omega-memory": {
-      "command": "uvx",
-      "args": [
-        "omega-memory"
-      ]
-    }
-  }
-}
-```
-
-**VS Code (Copilot)** — File: `.vscode/mcp.json`
-
-```json
-{
-  "servers": {
-    "omega-memory": {
-      "type": "stdio",
-      "command": "uvx",
-      "args": [
-        "omega-memory"
-      ]
-    }
-  }
-}
-```
-
-**OpenCode** — File: `opencode.json`
-
-```json
-{
-  "$schema": "https://opencode.ai/config.json",
-  "mcp": {
-    "omega-memory": {
-      "type": "local",
-      "command": [
-        "uvx",
-        "omega-memory"
-      ],
-      "enabled": true
-    }
-  }
-}
-```
-
-**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
-
-```json
-{
-  "mcpServers": {
-    "omega-memory": {
-      "command": "uvx",
-      "args": [
-        "omega-memory"
-      ]
-    }
-  }
-}
-```
-
-**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
-
-```json
-{
-  "mcpServers": {
-    "omega-memory": {
-      "command": "uvx",
-      "args": [
-        "omega-memory"
-      ]
-    }
-  }
-}
-```
-
-**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
-
-```json
-{
-  "context_servers": {
-    "omega-memory": {
-      "source": "custom",
-      "command": "uvx",
-      "args": [
-        "omega-memory"
-      ]
-    }
-  }
-}
-```
-
-**Goose** — File: `~/.config/goose/config.yaml`
-
-```yaml
-extensions:
-  omega-memory:
-    type: stdio
-    cmd: uvx
-    args: ["omega-memory"]
-    enabled: true
-```
-
-**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "omega-memory": {
-      "command": "uvx",
-      "args": [
-        "omega-memory"
-      ]
-    }
-  }
-}
-```
-
-**Roo Code** — File: `.roo/mcp.json`
-
-```json
-{
-  "mcpServers": {
-    "omega-memory": {
-      "command": "uvx",
-      "args": [
-        "omega-memory"
-      ]
-    }
-  }
-}
-```
-
-**DeepSeek Harness** — File: `omega-memory.cordis.yml  →  dsh web --patch ./omega-memory.cordis.yml`
-
-```yaml
-- insert:
-    - id: mcp-omega-memory
-      name: '@deepseek-ai/dsh-mcp-client'
-      config:
-        serverName: omega-memory
-        transport: stdio
-        command: uvx
-        args: ["omega-memory"]
-        env: {}
-        cwd: !!js process.cwd()
-```
-
-</details>
-
-<a id="dsh-deja-vu-extensions-dsh"></a>
-
-### Cross-tool session reader, no export
-
-[vshulcz/deja-vu#extensions/dsh](https://github.com/vshulcz/deja-vu/tree/main/extensions/dsh) — `Native plugin` · License: MIT · Works with: DeepSeek Harness only
-
-Reads the session files that other coding agents on the same machine already wrote (Claude Code, Codex, Cursor, VS Code Copilot Chat, opencode, and more), including sessions from before it was installed. Local BM25 index, no LLM, no embeddings, no network.
-
-<details><summary>Install</summary>
-
-**DeepSeek Harness**
-
-```bash
-dsh plugin --profile web add github:vshulcz/deja-vu#path:/extensions/dsh
-```
-
-</details>
-
-<a id="haiku-rag-mcp"></a>
-
-### Local-first agentic RAG
-
-[haiku.rag](https://github.com/ggozad/haiku.rag) — `MCP server` · License: MIT · Works with: All clients
-
-Local-first agentic RAG with citations: hybrid search, reranking, and multimodal document retrieval.
-
-<details><summary>Install</summary>
-
-**Claude Code**
-
-```bash
-claude mcp add --transport stdio haiku-rag -- uvx haiku-rag
-```
-
-**Codex CLI**
-
-```bash
-codex mcp add haiku-rag -- uvx haiku-rag
-```
-
-**Gemini CLI**
-
-```bash
-gemini mcp add haiku-rag uvx haiku-rag
-```
-
-**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "haiku-rag": {
-      "command": "uvx",
-      "args": [
-        "haiku-rag"
-      ]
-    }
-  }
-}
-```
-
-**VS Code (Copilot)** — File: `.vscode/mcp.json`
-
-```json
-{
-  "servers": {
-    "haiku-rag": {
-      "type": "stdio",
-      "command": "uvx",
-      "args": [
-        "haiku-rag"
-      ]
-    }
-  }
-}
-```
-
-**OpenCode** — File: `opencode.json`
-
-```json
-{
-  "$schema": "https://opencode.ai/config.json",
-  "mcp": {
-    "haiku-rag": {
-      "type": "local",
-      "command": [
-        "uvx",
-        "haiku-rag"
-      ],
-      "enabled": true
-    }
-  }
-}
-```
-
-**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
-
-```json
-{
-  "mcpServers": {
-    "haiku-rag": {
-      "command": "uvx",
-      "args": [
-        "haiku-rag"
-      ]
-    }
-  }
-}
-```
-
-**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
-
-```json
-{
-  "mcpServers": {
-    "haiku-rag": {
-      "command": "uvx",
-      "args": [
-        "haiku-rag"
-      ]
-    }
-  }
-}
-```
-
-**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
-
-```json
-{
-  "context_servers": {
-    "haiku-rag": {
-      "source": "custom",
-      "command": "uvx",
-      "args": [
-        "haiku-rag"
-      ]
-    }
-  }
-}
-```
-
-**Goose** — File: `~/.config/goose/config.yaml`
-
-```yaml
-extensions:
-  haiku-rag:
-    type: stdio
-    cmd: uvx
-    args: ["haiku-rag"]
-    enabled: true
-```
-
-**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "haiku-rag": {
-      "command": "uvx",
-      "args": [
-        "haiku-rag"
-      ]
-    }
-  }
-}
-```
-
-**Roo Code** — File: `.roo/mcp.json`
-
-```json
-{
-  "mcpServers": {
-    "haiku-rag": {
-      "command": "uvx",
-      "args": [
-        "haiku-rag"
-      ]
-    }
-  }
-}
-```
-
-**DeepSeek Harness** — File: `haiku-rag.cordis.yml  →  dsh web --patch ./haiku-rag.cordis.yml`
-
-```yaml
-- insert:
-    - id: mcp-haiku-rag
-      name: '@deepseek-ai/dsh-mcp-client'
-      config:
-        serverName: haiku-rag
-        transport: stdio
-        command: uvx
-        args: ["haiku-rag"]
-        env: {}
-        cwd: !!js process.cwd()
+        serverName: honcho
+        transport: streamable-http
+        url: https://mcp.honcho.dev
+        headers: {"Authorization":"Bearer <API_TOKEN>"}
 ```
 
 </details>
@@ -1060,7 +222,7 @@ extensions:
 
 ### Markdown knowledge base for agents
 
-[basicmachines-co/basic-memory](https://github.com/basicmachines-co/basic-memory) — `MCP server` · License: AGPL-3.0 · Works with: All clients
+[basicmachines-co/basic-memory](https://github.com/basicmachines-co/basic-memory) — `MCP server` · ★ 4.0k · License: AGPL-3.0 · Works with: All clients
 
 Local-first knowledge management with bi-directional sync between an LLM and Markdown files.
 
@@ -1241,7 +403,7 @@ extensions:
 
 ### Markdown notes as agent memory
 
-[IWE](https://github.com/iwe-org/iwe) — `MCP server` · License: Apache-2.0 · Works with: All clients
+[IWE](https://github.com/iwe-org/iwe) — `MCP server` · ★ 1.7k · License: Apache-2.0 · Works with: All clients
 
 Runs a Markdown knowledge base as agent memory against the notes directory it is started in.
 
@@ -1426,200 +588,11 @@ extensions:
 
 </details>
 
-<a id="mcp-memory"></a>
-
-### Memory (reference)
-
-[Memory (reference)](https://github.com/modelcontextprotocol/servers/tree/main/src/memory) — `MCP server` · License: see repo · Works with: All clients
-
-Reference knowledge-graph memory: entities, relations and observations stored in a local JSONL file. No model or embedding service needed.
-
-<details><summary>Install</summary>
-
-**Claude Code**
-
-```bash
-claude mcp add --transport stdio memory -- npx -y @modelcontextprotocol/server-memory
-```
-
-**Codex CLI**
-
-```bash
-codex mcp add memory -- npx -y @modelcontextprotocol/server-memory
-```
-
-**Gemini CLI**
-
-```bash
-gemini mcp add memory npx -y @modelcontextprotocol/server-memory
-```
-
-**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "memory": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-memory"
-      ]
-    }
-  }
-}
-```
-
-**VS Code (Copilot)** — File: `.vscode/mcp.json`
-
-```json
-{
-  "servers": {
-    "memory": {
-      "type": "stdio",
-      "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-memory"
-      ]
-    }
-  }
-}
-```
-
-**OpenCode** — File: `opencode.json`
-
-```json
-{
-  "$schema": "https://opencode.ai/config.json",
-  "mcp": {
-    "memory": {
-      "type": "local",
-      "command": [
-        "npx",
-        "-y",
-        "@modelcontextprotocol/server-memory"
-      ],
-      "enabled": true
-    }
-  }
-}
-```
-
-**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
-
-```json
-{
-  "mcpServers": {
-    "memory": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-memory"
-      ]
-    }
-  }
-}
-```
-
-**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
-
-```json
-{
-  "mcpServers": {
-    "memory": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-memory"
-      ]
-    }
-  }
-}
-```
-
-**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
-
-```json
-{
-  "context_servers": {
-    "memory": {
-      "source": "custom",
-      "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-memory"
-      ]
-    }
-  }
-}
-```
-
-**Goose** — File: `~/.config/goose/config.yaml`
-
-```yaml
-extensions:
-  memory:
-    type: stdio
-    cmd: npx
-    args: ["-y","@modelcontextprotocol/server-memory"]
-    enabled: true
-```
-
-**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "memory": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-memory"
-      ]
-    }
-  }
-}
-```
-
-**Roo Code** — File: `.roo/mcp.json`
-
-```json
-{
-  "mcpServers": {
-    "memory": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-memory"
-      ]
-    }
-  }
-}
-```
-
-**DeepSeek Harness** — File: `memory.cordis.yml  →  dsh web --patch ./memory.cordis.yml`
-
-```yaml
-- insert:
-    - id: mcp-memory
-      name: '@deepseek-ai/dsh-mcp-client'
-      config:
-        serverName: memory
-        transport: stdio
-        command: npx
-        args: ["-y","@modelcontextprotocol/server-memory"]
-        env: {}
-        cwd: !!js process.cwd()
-```
-
-</details>
-
 <a id="obsidian-mcp-server"></a>
 
 ### Obsidian notes access
 
-[cyanheads/obsidian-mcp-server](https://github.com/cyanheads/obsidian-mcp-server) — `MCP server` · License: Apache-2.0 · Works with: All clients
+[cyanheads/obsidian-mcp-server](https://github.com/cyanheads/obsidian-mcp-server) — `MCP server` · ★ 682 · License: Apache-2.0 · Works with: All clients
 
 Reads, writes, searches, and edits Obsidian notes, tags, and frontmatter; needs an OBSIDIAN_API_KEY.
 
@@ -1830,57 +803,50 @@ extensions:
 
 </details>
 
-<a id="dsh-engramory-plugin"></a>
+<a id="dsh-graph-memory"></a>
 
-### Plaintext one-fact-per-file memory
+### Typed knowledge-graph memory
 
-[tinqiao-oss/engramory#plugin](https://github.com/tinqiao-oss/engramory/tree/master/adapters/dsh/plugin) — `Native plugin` · License: MIT · Works with: DeepSeek Harness only
+[adoresever/graph-memory](https://github.com/adoresever/graph-memory) — `Native plugin` · ★ 626 · License: MIT · Works with: DeepSeek Harness only
 
-Long-term memory stored as plain markdown, one fact per file. A size-capped MEMORY.md index blocks writes that would grow it past the limit; shrinking rewrites always pass. The same store is shared with Claude Code, Codex, Kiro and OpenClaw.
-
-**Alternatives:**
-
-- [gezi-wen/sage-mem](https://github.com/gezi-wen/sage-mem) (★ 6) — Uses a file format compatible with Claude Code's CLAUDE.md, so migrating is a manual file copy.
-- [Max-Null/dsh-memory](https://github.com/Max-Null/dsh-memory) (★ 3) — Adds a human-confirm gate before saving and global plus git-tracked project-scoped JSON stores.
+Traceable, searchable cross-session memory that stores conversation knowledge as typed graph nodes (task/skill/event) connected by typed edges.
 
 <details><summary>Install</summary>
 
 **DeepSeek Harness**
 
 ```bash
-dsh plugin --profile web add github:tinqiao-oss/engramory#path:/adapters/dsh/plugin
+dsh plugin --profile web add github:adoresever/graph-memory
 ```
 
 </details>
 
-<a id="honcho-mcp"></a>
+<a id="haiku-rag-mcp"></a>
 
-### Reasoning memory for agents
+### Local-first agentic RAG
 
-[Honcho](https://github.com/plastic-labs/honcho) — `MCP server` · License: AGPL-3.0 · Works with: All clients
+[haiku.rag](https://github.com/ggozad/haiku.rag) — `MCP server` · ★ 609 · License: MIT · Works with: All clients
 
-Memory that reasons: continual learning for stateful agents, aiming for better context with fewer tokens; needs an Authorization token.
+Local-first agentic RAG with citations: hybrid search, reranking, and multimodal document retrieval.
 
 <details><summary>Install</summary>
 
 **Claude Code**
 
 ```bash
-claude mcp add --transport http honcho https://mcp.honcho.dev --header 'Authorization: Bearer <API_TOKEN>'
+claude mcp add --transport stdio haiku-rag -- uvx haiku-rag
 ```
 
-**Codex CLI** — File: `~/.codex/config.toml`
+**Codex CLI**
 
-```toml
-[mcp_servers.honcho]
-url = "https://mcp.honcho.dev"
-bearer_token_env_var = "API_TOKEN"
+```bash
+codex mcp add haiku-rag -- uvx haiku-rag
 ```
 
 **Gemini CLI**
 
 ```bash
-gemini mcp add --transport http honcho https://mcp.honcho.dev --header 'Authorization: Bearer <API_TOKEN>'
+gemini mcp add haiku-rag uvx haiku-rag
 ```
 
 **Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
@@ -1888,10 +854,195 @@ gemini mcp add --transport http honcho https://mcp.honcho.dev --header 'Authoriz
 ```json
 {
   "mcpServers": {
-    "honcho": {
-      "url": "https://mcp.honcho.dev",
-      "headers": {
-        "Authorization": "Bearer <API_TOKEN>"
+    "haiku-rag": {
+      "command": "uvx",
+      "args": [
+        "haiku-rag"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "haiku-rag": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "haiku-rag"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "haiku-rag": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "haiku-rag"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "haiku-rag": {
+      "command": "uvx",
+      "args": [
+        "haiku-rag"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "haiku-rag": {
+      "command": "uvx",
+      "args": [
+        "haiku-rag"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "haiku-rag": {
+      "source": "custom",
+      "command": "uvx",
+      "args": [
+        "haiku-rag"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  haiku-rag:
+    type: stdio
+    cmd: uvx
+    args: ["haiku-rag"]
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "haiku-rag": {
+      "command": "uvx",
+      "args": [
+        "haiku-rag"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "haiku-rag": {
+      "command": "uvx",
+      "args": [
+        "haiku-rag"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `haiku-rag.cordis.yml  →  dsh web --patch ./haiku-rag.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-haiku-rag
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: haiku-rag
+        transport: stdio
+        command: uvx
+        args: ["haiku-rag"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="anytype-mcp"></a>
+
+### Anytype encrypted wiki access
+
+[anyproto/anytype-mcp](https://github.com/anyproto/anytype-mcp) — `MCP server` · ★ 525 · License: MIT · Works with: All clients
+
+Official server for the Anytype API, an encrypted, local, and collaborative wiki; needs OPENAPI_MCP_HEADERS.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio anytype-mcp --env OPENAPI_MCP_HEADERS='<OPENAPI_MCP_HEADERS>' -- npx -y @anyproto/anytype-mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add anytype-mcp --env OPENAPI_MCP_HEADERS='<OPENAPI_MCP_HEADERS>' -- npx -y @anyproto/anytype-mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add -e OPENAPI_MCP_HEADERS='<OPENAPI_MCP_HEADERS>' anytype-mcp npx -y @anyproto/anytype-mcp
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "anytype-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@anyproto/anytype-mcp"
+      ],
+      "env": {
+        "OPENAPI_MCP_HEADERS": "<OPENAPI_MCP_HEADERS>"
       }
     }
   }
@@ -1903,11 +1054,15 @@ gemini mcp add --transport http honcho https://mcp.honcho.dev --header 'Authoriz
 ```json
 {
   "servers": {
-    "honcho": {
-      "type": "http",
-      "url": "https://mcp.honcho.dev",
-      "headers": {
-        "Authorization": "Bearer <API_TOKEN>"
+    "anytype-mcp": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@anyproto/anytype-mcp"
+      ],
+      "env": {
+        "OPENAPI_MCP_HEADERS": "<OPENAPI_MCP_HEADERS>"
       }
     }
   }
@@ -1920,12 +1075,16 @@ gemini mcp add --transport http honcho https://mcp.honcho.dev --header 'Authoriz
 {
   "$schema": "https://opencode.ai/config.json",
   "mcp": {
-    "honcho": {
-      "type": "remote",
-      "url": "https://mcp.honcho.dev",
+    "anytype-mcp": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@anyproto/anytype-mcp"
+      ],
       "enabled": true,
-      "headers": {
-        "Authorization": "Bearer <API_TOKEN>"
+      "environment": {
+        "OPENAPI_MCP_HEADERS": "<OPENAPI_MCP_HEADERS>"
       }
     }
   }
@@ -1937,11 +1096,14 @@ gemini mcp add --transport http honcho https://mcp.honcho.dev --header 'Authoriz
 ```json
 {
   "mcpServers": {
-    "honcho": {
-      "type": "streamableHttp",
-      "url": "https://mcp.honcho.dev",
-      "headers": {
-        "Authorization": "Bearer <API_TOKEN>"
+    "anytype-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@anyproto/anytype-mcp"
+      ],
+      "env": {
+        "OPENAPI_MCP_HEADERS": "<OPENAPI_MCP_HEADERS>"
       }
     }
   }
@@ -1953,10 +1115,14 @@ gemini mcp add --transport http honcho https://mcp.honcho.dev --header 'Authoriz
 ```json
 {
   "mcpServers": {
-    "honcho": {
-      "serverUrl": "https://mcp.honcho.dev",
-      "headers": {
-        "Authorization": "Bearer <API_TOKEN>"
+    "anytype-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@anyproto/anytype-mcp"
+      ],
+      "env": {
+        "OPENAPI_MCP_HEADERS": "<OPENAPI_MCP_HEADERS>"
       }
     }
   }
@@ -1968,29 +1134,31 @@ gemini mcp add --transport http honcho https://mcp.honcho.dev --header 'Authoriz
 ```json
 {
   "context_servers": {
-    "honcho": {
+    "anytype-mcp": {
       "source": "custom",
       "command": "npx",
       "args": [
         "-y",
-        "mcp-remote",
-        "https://mcp.honcho.dev",
-        "--header",
-        "Authorization:Bearer <API_TOKEN>"
-      ]
+        "@anyproto/anytype-mcp"
+      ],
+      "env": {
+        "OPENAPI_MCP_HEADERS": "<OPENAPI_MCP_HEADERS>"
+      }
     }
   }
 }
 ```
-_Remote server bridged through the mcp-remote stdio proxy._
 
 **Goose** — File: `~/.config/goose/config.yaml`
 
 ```yaml
 extensions:
-  honcho:
-    type: streamable_http
-    uri: https://mcp.honcho.dev
+  anytype-mcp:
+    type: stdio
+    cmd: npx
+    args: ["-y","@anyproto/anytype-mcp"]
+    envs:
+      OPENAPI_MCP_HEADERS: "<OPENAPI_MCP_HEADERS>"
     enabled: true
 ```
 
@@ -1999,11 +1167,14 @@ extensions:
 ```json
 {
   "mcpServers": {
-    "honcho": {
-      "type": "streamable-http",
-      "url": "https://mcp.honcho.dev",
-      "headers": {
-        "Authorization": "Bearer <API_TOKEN>"
+    "anytype-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@anyproto/anytype-mcp"
+      ],
+      "env": {
+        "OPENAPI_MCP_HEADERS": "<OPENAPI_MCP_HEADERS>"
       }
     }
   }
@@ -2015,46 +1186,55 @@ extensions:
 ```json
 {
   "mcpServers": {
-    "honcho": {
-      "type": "streamable-http",
-      "url": "https://mcp.honcho.dev",
-      "headers": {
-        "Authorization": "Bearer <API_TOKEN>"
+    "anytype-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@anyproto/anytype-mcp"
+      ],
+      "env": {
+        "OPENAPI_MCP_HEADERS": "<OPENAPI_MCP_HEADERS>"
       }
     }
   }
 }
 ```
 
-**DeepSeek Harness** — File: `honcho.cordis.yml  →  dsh web --patch ./honcho.cordis.yml`
+**DeepSeek Harness** — File: `anytype-mcp.cordis.yml  →  dsh web --patch ./anytype-mcp.cordis.yml`
 
 ```yaml
 - insert:
-    - id: mcp-honcho
+    - id: mcp-anytype-mcp
       name: '@deepseek-ai/dsh-mcp-client'
       config:
-        serverName: honcho
-        transport: streamable-http
-        url: https://mcp.honcho.dev
-        headers: {"Authorization":"Bearer <API_TOKEN>"}
+        serverName: anytype-mcp
+        transport: stdio
+        command: npx
+        args: ["-y","@anyproto/anytype-mcp"]
+        env: {"OPENAPI_MCP_HEADERS":"<OPENAPI_MCP_HEADERS>"}
+        cwd: !!js process.cwd()
 ```
 
 </details>
 
-<a id="dsh-co-engram-dsh-plugin"></a>
+<a id="dsh-misakanet"></a>
 
-### Self-evolving team memory in git
+### Failure-recovery lessons knowledge base
 
-[Co-Engram/Co-Engram#dsh-plugin](https://github.com/Co-Engram/Co-Engram/tree/main/packages/dsh-plugin) — `Native plugin` · License: MIT · Works with: DeepSeek Harness only
+[Ikalus1988/MisakaNet](https://github.com/Ikalus1988/MisakaNet) — `Native plugin` · ★ 493 · License: Apache-2.0 · Works with: DeepSeek Harness only
 
-Self-evolving team memory kept as plain markdown in git: 38 bare-name memory tools plus a prompt-signals section re-evaluated at every assembly, with reinforcement, decay, and sleep consolidation. Shares one data repo with Claude Code and OpenClaw hosts.
+Search and record failure-recovery lessons from real engineering sessions, with BM25 plus semantic RAG retrieval over a lessons knowledge base.
+
+**Alternatives:**
+
+- [akslcw/dsh-negative-ledger](https://github.com/akslcw/dsh-negative-ledger) (★ 3) — Persists disproven paths with outcome evidence and blocks repeat attempts until that evidence changes.
 
 <details><summary>Install</summary>
 
 **DeepSeek Harness**
 
 ```bash
-dsh plugin --profile web add github:Co-Engram/Co-Engram#path:/packages/dsh-plugin
+dsh plugin --profile web add github:Ikalus1988/MisakaNet
 ```
 
 </details>
@@ -2063,7 +1243,7 @@ dsh plugin --profile web add github:Co-Engram/Co-Engram#path:/packages/dsh-plugi
 
 ### Team chat to knowledge graph
 
-[Beever-AI/beever-atlas](https://github.com/Beever-AI/beever-atlas) — `MCP server` · License: Apache-2.0 · Works with: All clients
+[Beever-AI/beever-atlas](https://github.com/Beever-AI/beever-atlas) — `MCP server` · ★ 444 · License: Apache-2.0 · Works with: All clients
 
 Open-source knowledge base that turns team chat into a typed knowledge graph and an auto-generated wiki.
 
@@ -2260,6 +1440,826 @@ extensions:
         args: ["run","-i","--rm","ghcr.io/beever-ai/beever-atlas:0.3.0"]
         env: {}
         cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="dsh-dsh-mnemon"></a>
+
+### Cross-agent shared long-term memory
+
+[omdsh-dev/dsh-mnemon](https://github.com/omdsh-dev/dsh-mnemon) — `Native plugin` · ★ 385 · License: MIT · Works with: DeepSeek Harness only
+
+Local-first persistent memory shared across Mnemon-enabled agents: runtime memory, searchable project documents, semantic recall, a knowledge graph, and a sidebar UI.
+
+**Alternatives:**
+
+- [vectorize-io/hindsight#coding-agents](https://github.com/vectorize-io/hindsight/tree/main/hindsight-integrations/coding-agents) — Adds automatic recall/retain with deep reflection, knowledge pages, and per-repo memory banks.
+- [ZSeven-W/dsh-noema](https://github.com/ZSeven-W/dsh-noema) (★ 128) — Adds import of memories from ten other AI coding tools plus a settings page.
+- [modusensus/dsh-mneme](https://github.com/modusensus/dsh-mneme) (★ 112) — Adds sleep-time auto-consolidation, freezing of conflicting memories for review, and a replayable audit trail.
+
+<details><summary>Install</summary>
+
+**DeepSeek Harness**
+
+```bash
+dsh plugin --profile web add github:omdsh-dev/dsh-mnemon
+```
+
+</details>
+
+<a id="veritasgraph-mcp"></a>
+
+### Air-gapped enterprise GraphRAG
+
+[bibinprathap/VeritasGraph](https://github.com/bibinprathap/VeritasGraph) — `MCP server` · ★ 323 · License: see repo · Works with: All clients
+
+Zero-trust, air-gapped enterprise GraphRAG server with offline, citation-grounded answers.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio veritasgraph -- uvx veritasgraph-mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add veritasgraph -- uvx veritasgraph-mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add veritasgraph uvx veritasgraph-mcp
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "veritasgraph": {
+      "command": "uvx",
+      "args": [
+        "veritasgraph-mcp"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "veritasgraph": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "veritasgraph-mcp"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "veritasgraph": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "veritasgraph-mcp"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "veritasgraph": {
+      "command": "uvx",
+      "args": [
+        "veritasgraph-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "veritasgraph": {
+      "command": "uvx",
+      "args": [
+        "veritasgraph-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "veritasgraph": {
+      "source": "custom",
+      "command": "uvx",
+      "args": [
+        "veritasgraph-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  veritasgraph:
+    type: stdio
+    cmd: uvx
+    args: ["veritasgraph-mcp"]
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "veritasgraph": {
+      "command": "uvx",
+      "args": [
+        "veritasgraph-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "veritasgraph": {
+      "command": "uvx",
+      "args": [
+        "veritasgraph-mcp"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `veritasgraph.cordis.yml  →  dsh web --patch ./veritasgraph.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-veritasgraph
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: veritasgraph
+        transport: stdio
+        command: uvx
+        args: ["veritasgraph-mcp"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="omega-memory-mcp"></a>
+
+### Cross-session agent memory
+
+[OMEGA Memory](https://github.com/omega-memory/omega-memory) — `MCP server` · ★ 217 · License: Apache-2.0 · Works with: All clients
+
+Persistent memory, coordination, and learning for AI agents, local-first, exposed as 25 MCP tools.
+
+**Alternatives:**
+
+- [Vestige](https://github.com/samvallad33/vestige) (★ 628) — Local-first agent memory that reaches backward to find a failure's root cause.
+- [Compartment](https://github.com/MaxFreedomPollard/Compartment) (★ 581) — Durable agentic memory encrypted at rest, fully offline with no network or API key.
+- [TeleAI-UAGI/telemem](https://github.com/TeleAI-UAGI/telemem) (★ 491) — Long-term multimodal, character-aware memory, mem0-compatible, with a fully-local option; needs an OPENAI_API_KEY.
+- [Lyellr88/marm-memory](https://github.com/Lyellr88/marm-memory) (★ 380) — Universal server adding AI memory with semantic search.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio omega-memory -- uvx omega-memory
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add omega-memory -- uvx omega-memory
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add omega-memory uvx omega-memory
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "omega-memory": {
+      "command": "uvx",
+      "args": [
+        "omega-memory"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "omega-memory": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "omega-memory"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "omega-memory": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "omega-memory"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "omega-memory": {
+      "command": "uvx",
+      "args": [
+        "omega-memory"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "omega-memory": {
+      "command": "uvx",
+      "args": [
+        "omega-memory"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "omega-memory": {
+      "source": "custom",
+      "command": "uvx",
+      "args": [
+        "omega-memory"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  omega-memory:
+    type: stdio
+    cmd: uvx
+    args: ["omega-memory"]
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "omega-memory": {
+      "command": "uvx",
+      "args": [
+        "omega-memory"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "omega-memory": {
+      "command": "uvx",
+      "args": [
+        "omega-memory"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `omega-memory.cordis.yml  →  dsh web --patch ./omega-memory.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-omega-memory
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: omega-memory
+        transport: stdio
+        command: uvx
+        args: ["omega-memory"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="dsh-dsh-meow-memory"></a>
+
+### Seven-layer SQLite project memory
+
+[Phant0Meow/dsh-meow-memory](https://github.com/Phant0Meow/dsh-meow-memory) — `Native plugin` · ★ 105 · License: MIT · Works with: DeepSeek Harness only
+
+Project-scoped cross-session memory in a seven-layer SQLite store (soul/user/project/fact/lesson/rules/topic), with first-message injection, per-message keyword hits, and idle-window consolidation.
+
+<details><summary>Install</summary>
+
+**DeepSeek Harness**
+
+```bash
+dsh plugin --profile web add github:Phant0Meow/dsh-meow-memory
+```
+
+</details>
+
+<a id="dsh-dsh-memento"></a>
+
+### Approval-gated auditable memory
+
+[PerryLink/dsh-memento](https://github.com/PerryLink/dsh-memento) — `Native plugin` · ★ 103 · License: Apache-2.0 · Works with: DeepSeek Harness only
+
+Bounded, layered, approval-gated cross-session memory: a typed memory seam with a zero-dependency SQLite provider, frozen snapshot injection, and a conformance suite for adapter compatibility.
+
+**Alternatives:**
+
+- [GIT121995/dsh-memory-gate](https://github.com/GIT121995/dsh-memory-gate) (★ 2) — Adds explainable use/verify/ignore decisions with a full audit trail and a per-call injection limit.
+- [highland0971/dsh-native-memory](https://github.com/highland0971/dsh-native-memory) (★ 2) — Runs on the harness's own storage seam with no external server, citing session and sequence for each fact.
+
+<details><summary>Install</summary>
+
+**DeepSeek Harness**
+
+```bash
+dsh plugin --profile web add github:PerryLink/dsh-memento
+```
+
+</details>
+
+<a id="dsh-stratagate-agentmemory"></a>
+
+### Six-layer time-decaying memory
+
+[diqierjia/StrataGate-AgentMemory](https://github.com/diqierjia/StrataGate-AgentMemory) — `Native plugin` · ★ 92 · License: MIT · Works with: DeepSeek Harness only
+
+Six-layer, time-decaying memory: recent conversations stay vivid while older ones fade into summaries, and lasting events and relationships settle into a knowledge graph. Supports bringing memories in from other AI tools.
+
+<details><summary>Install</summary>
+
+**DeepSeek Harness**
+
+```bash
+dsh plugin --profile web add "https://github.com/diqierjia/StrataGate-AgentMemory/releases/latest/download/stratagate-dsh.tgz"
+```
+
+</details>
+
+<a id="dsh-dsh-auto-memory"></a>
+
+### Zero-prompt proactive memory recall
+
+[Aik358/dsh-auto-memory](https://github.com/Aik358/dsh-auto-memory) — `Native plugin` · ★ 71 · License: BSD-3-Clause · Works with: DeepSeek Harness only
+
+Proactive associative memory: zero-prompt recall injected at a fixed boundary, three-layer auto-consolidation, skill crystallization, and handoff ledgers that survive context-window switches. Local markdown storage, model-agnostic, zero dependencies.
+
+<details><summary>Install</summary>
+
+**DeepSeek Harness**
+
+```bash
+dsh plugin --profile web add github:Aik358/dsh-auto-memory
+```
+
+</details>
+
+<a id="dsh-dsh-md-notes"></a>
+
+### Markdown notes capture and sync
+
+[XieZongChen/dsh-md-notes](https://github.com/XieZongChen/dsh-md-notes) — `Native plugin` · ★ 17 · License: MIT · Works with: DeepSeek Harness only
+
+Markdown notes manager and editor for DSH: quickly capture conversations into notes, keep them synced to Git repositories, and bring notes back into the conversation context.
+
+<details><summary>Install</summary>
+
+**DeepSeek Harness**
+
+```bash
+dsh plugin --profile web add github:XieZongChen/dsh-md-notes
+```
+
+</details>
+
+<a id="dsh-dsh-layered-memory"></a>
+
+### Auto-distilled hybrid-retrieval memory
+
+[JunNanLYS/dsh-layered-memory](https://github.com/JunNanLYS/dsh-layered-memory) — `Native plugin` · ★ 16 · License: MIT · Works with: DeepSeek Harness only
+
+Conversations auto-distilled into atomic facts, scene summaries, and a persona profile, injected before every model step via hybrid BM25 plus vector retrieval. Zero-config, with optional offline local embeddings and chat/work separation.
+
+<details><summary>Install</summary>
+
+**DeepSeek Harness**
+
+```bash
+dsh plugin --profile web add github:JunNanLYS/dsh-layered-memory
+```
+
+</details>
+
+<a id="dsh-dsh-client-ui-obsidian-memory"></a>
+
+### Personal Obsidian vault memory
+
+[detongz/dsh-client-ui-obsidian-memory](https://github.com/detongz/dsh-client-ui-obsidian-memory) — `Native plugin` · ★ 14 · License: MIT · Works with: DeepSeek Harness only
+
+Persistent AI memory backed by a local Obsidian/Codex vault, with five read/write/search tools and a sidebar vault browser.
+
+**Alternatives:**
+
+- [mingzeng21/dsh-obsidian](https://github.com/mingzeng21/dsh-obsidian) (★ 14) — Simpler tool set covering search, read, write, move, and trash on the vault.
+- [Noelune/unified-agent-memory](https://github.com/Noelune/unified-agent-memory) (★ 7) — Shares one Obsidian vault across every agent, with a dependency-free promote/adjudicate/forget core.
+- [398894496-arch/runtime36](https://github.com/398894496-arch/runtime36) (★ 39) — Read-only tools that route status, preference, and correction queries to the matching vault page.
+
+<details><summary>Install</summary>
+
+**DeepSeek Harness**
+
+```bash
+dsh plugin --profile web add github:detongz/dsh-client-ui-obsidian-memory
+```
+
+</details>
+
+<a id="dsh-dsh-knowledge"></a>
+
+### Local/remote knowledge base search
+
+[lemoncat7/dsh-knowledge](https://github.com/lemoncat7/dsh-knowledge) — `Native plugin` · ★ 11 · License: MIT · Works with: DeepSeek Harness only
+
+Local and remote knowledge bases with project- and session-scoped recall, controlled write-back, and an embedded web management console.
+
+**Alternatives:**
+
+- [htcqp802/dsh-knowledge-base](https://github.com/htcqp802/dsh-knowledge-base) (★ 5) — Imports md/txt/json/yml/docx/pdf, adds folder management and FTS5 full-text search.
+- [PerryLink/dsh-library](https://github.com/PerryLink/dsh-library) (★ 10) — Turns local documents into a queryable base with citation verification and source injection.
+- [melandlabs/opencontext#dsh-opencontext](https://github.com/melandlabs/opencontext/tree/main/plugins/dsh-opencontext) — Adds automatic prompt capture, session summaries, and structured insights alongside document retrieval.
+
+<details><summary>Install</summary>
+
+**DeepSeek Harness**
+
+```bash
+dsh plugin --profile web add github:lemoncat7/dsh-knowledge
+```
+
+</details>
+
+<a id="dsh-dsh-recall"></a>
+
+### Multi-layer conversation history recall
+
+[Relistencode/dsh-recall](https://github.com/Relistencode/dsh-recall) — `Native plugin` · ★ 3 · License: MIT · Works with: DeepSeek Harness only
+
+Conversation history recall via three-layer (literal, fuzzy, semantic) retrieval over every past session's original text, fully local and offline. One-command install, with the semantic layer running in a worker thread.
+
+<details><summary>Install</summary>
+
+**DeepSeek Harness**
+
+```bash
+dsh plugin --profile web add github:Relistencode/dsh-recall
+```
+
+</details>
+
+<a id="dsh-deja-vu-extensions-dsh"></a>
+
+### Cross-tool session reader, no export
+
+[vshulcz/deja-vu#extensions/dsh](https://github.com/vshulcz/deja-vu/tree/main/extensions/dsh) — `Native plugin` · License: MIT · Works with: DeepSeek Harness only
+
+Reads the session files that other coding agents on the same machine already wrote (Claude Code, Codex, Cursor, VS Code Copilot Chat, opencode, and more), including sessions from before it was installed. Local BM25 index, no LLM, no embeddings, no network.
+
+<details><summary>Install</summary>
+
+**DeepSeek Harness**
+
+```bash
+dsh plugin --profile web add github:vshulcz/deja-vu#path:/extensions/dsh
+```
+
+</details>
+
+<a id="mcp-memory"></a>
+
+### Memory (reference)
+
+[Memory (reference)](https://github.com/modelcontextprotocol/servers/tree/main/src/memory) — `MCP server` · License: see repo · Works with: All clients
+
+Reference knowledge-graph memory: entities, relations and observations stored in a local JSONL file. No model or embedding service needed.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio memory -- npx -y @modelcontextprotocol/server-memory
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add memory -- npx -y @modelcontextprotocol/server-memory
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add memory npx -y @modelcontextprotocol/server-memory
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "memory": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "memory": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "memory": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "memory": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "memory": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "memory": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  memory:
+    type: stdio
+    cmd: npx
+    args: ["-y","@modelcontextprotocol/server-memory"]
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "memory": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "memory": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `memory.cordis.yml  →  dsh web --patch ./memory.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-memory
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: memory
+        transport: stdio
+        command: npx
+        args: ["-y","@modelcontextprotocol/server-memory"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="dsh-engramory-plugin"></a>
+
+### Plaintext one-fact-per-file memory
+
+[tinqiao-oss/engramory#plugin](https://github.com/tinqiao-oss/engramory/tree/master/adapters/dsh/plugin) — `Native plugin` · License: MIT · Works with: DeepSeek Harness only
+
+Long-term memory stored as plain markdown, one fact per file. A size-capped MEMORY.md index blocks writes that would grow it past the limit; shrinking rewrites always pass. The same store is shared with Claude Code, Codex, Kiro and OpenClaw.
+
+**Alternatives:**
+
+- [gezi-wen/sage-mem](https://github.com/gezi-wen/sage-mem) (★ 6) — Uses a file format compatible with Claude Code's CLAUDE.md, so migrating is a manual file copy.
+- [Max-Null/dsh-memory](https://github.com/Max-Null/dsh-memory) (★ 3) — Adds a human-confirm gate before saving and global plus git-tracked project-scoped JSON stores.
+
+<details><summary>Install</summary>
+
+**DeepSeek Harness**
+
+```bash
+dsh plugin --profile web add github:tinqiao-oss/engramory#path:/adapters/dsh/plugin
+```
+
+</details>
+
+<a id="dsh-co-engram-dsh-plugin"></a>
+
+### Self-evolving team memory in git
+
+[Co-Engram/Co-Engram#dsh-plugin](https://github.com/Co-Engram/Co-Engram/tree/main/packages/dsh-plugin) — `Native plugin` · License: MIT · Works with: DeepSeek Harness only
+
+Self-evolving team memory kept as plain markdown in git: 38 bare-name memory tools plus a prompt-signals section re-evaluated at every assembly, with reinforcement, decay, and sleep consolidation. Shares one data repo with Claude Code and OpenClaw hosts.
+
+<details><summary>Install</summary>
+
+**DeepSeek Harness**
+
+```bash
+dsh plugin --profile web add github:Co-Engram/Co-Engram#path:/packages/dsh-plugin
 ```
 
 </details>

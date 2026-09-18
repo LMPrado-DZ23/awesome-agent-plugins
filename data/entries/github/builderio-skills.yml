@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: builderio-skills
+name: BuilderIO/skills
+title: Builder.io agent skills
+url: https://github.com/BuilderIO/skills
+type: skill-pack
+category: dev
+license: MIT
+tags:
+  - skills
+  - builder-io
+  - cms
+description:
+  en: >-
+    Official Agent Skills published by Builder.io for driving its visual headless CMS and site-building platform from a
+    coding agent.
+  pt: >-
+    Agent Skills oficiais publicadas pela Builder.io para operar sua plataforma visual de CMS headless e construção de
+    sites a partir de um agente de código.
+skill:
+  source: BuilderIO/skills
+origin:
+  list: github-discovery
+  ref: claude-marketplace

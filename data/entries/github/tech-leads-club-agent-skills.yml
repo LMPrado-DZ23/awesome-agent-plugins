@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: tech-leads-club-agent-skills
+name: tech-leads-club/agent-skills
+title: Validated skill registry
+url: https://github.com/tech-leads-club/agent-skills
+type: skill-pack
+category: meta
+license: null
+tags:
+  - meta
+  - registry
+  - governance
+description:
+  en: >-
+    Secure, validated skill registry for professional AI coding agents, extending Antigravity, Claude Code, Cursor,
+    Copilot and more.
+  pt: >-
+    Registro seguro e validado de skills para agentes de código profissionais, estendendo Antigravity, Claude Code,
+    Cursor, Copilot e outros.
+skill:
+  source: tech-leads-club/agent-skills
+alternatives:
+  - name: FrancyJGLisboa/agent-skills-platform
+    url: https://github.com/FrancyJGLisboa/agent-skills-platform
+    adds:
+      en: >-
+        Similar idea covering the full skill lifecycle: evidence, discovery, updates, rollback and quarantine across 17
+        platforms.
+      pt: >-
+        Ideia semelhante cobrindo todo o ciclo de vida da skill: evidência, descoberta, atualizações, rollback e
+        quarentena em 17 plataformas.
+origin:
+  list: github-discovery
+  ref: claude-marketplace

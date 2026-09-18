@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: video-shotcraft
+name: Vincentwei1021/video-shotcraft
+title: Cinematic video shot skill
+url: https://github.com/Vincentwei1021/video-shotcraft
+type: list
+category: multimodal
+license: Apache-2.0
+tags:
+  - video
+  - multimodal
+  - remotion
+description:
+  en: >-
+    AI video skill for Claude Code and Codex that produces cinematic product videos with Remotion, backed by 152
+    shot-recipe cards and 209 motion previews.
+  pt: >-
+    Skill de vídeo com IA para Claude Code e Codex que produz vídeos cinematográficos de produto com Remotion, apoiada
+    em 152 cartões de receita de plano e 209 previews de movimento.
+origin:
+  list: github-discovery
+  ref: claude-plugin

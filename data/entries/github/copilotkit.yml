@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: copilotkit
+name: CopilotKit/CopilotKit
+title: CopilotKit frontend agent stack
+url: https://github.com/CopilotKit/CopilotKit
+type: skill-pack
+category: dev
+license: MIT
+tags:
+  - skills
+  - frontend
+  - generative-ui
+description:
+  en: >-
+    Frontend framework for building agent-facing UIs and generative UI across React, Angular, mobile and Slack, maker of
+    the AG-UI protocol; ships with agent skills.
+  pt: >-
+    Framework de frontend para construir interfaces voltadas a agentes e UI generativa em React, Angular, mobile e
+    Slack, criador do protocolo AG-UI; inclui agent skills.
+skill:
+  source: CopilotKit/CopilotKit
+origin:
+  list: github-discovery
+  ref: claude-marketplace

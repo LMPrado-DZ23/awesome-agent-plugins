@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: agent-skills-for-context-engineering
+name: muratcankoylan/Agent-Skills-for-Context-Engineering
+title: Context engineering skills
+url: https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering
+type: skill-pack
+category: skills
+license: MIT
+tags:
+  - context
+  - skills
+  - architecture
+description:
+  en: >-
+    Collection of Agent Skills for context engineering and multi-agent architectures, aimed at debugging and optimizing
+    production agent systems.
+  pt: >-
+    Coleção de Agent Skills para engenharia de contexto e arquiteturas multiagente, voltada a depurar e otimizar
+    sistemas de agentes em produção.
+skill:
+  source: muratcankoylan/Agent-Skills-for-Context-Engineering
+alternatives:
+  - name: NeoLabHQ/context-engineering-kit
+    url: https://github.com/NeoLabHQ/context-engineering-kit
+    adds:
+      en: >-
+        Hand-crafted skills aimed specifically at improving agent result quality, including a CodeRabbit-style open
+        alternative.
+      pt: >-
+        Skills feitas à mão com foco em melhorar a qualidade dos resultados do agente, incluindo alternativa aberta ao
+        estilo CodeRabbit.
+  - name: mksglu/context-mode
+    url: https://github.com/mksglu/context-mode
+    adds:
+      en: >-
+        Context-window optimizer that sandboxes tool output (up to 98% reduction) and persists session memory across 17
+        platforms.
+      pt: >-
+        Otimizador de janela de contexto que isola a saída de ferramentas (até 98% de redução) e mantém memória de
+        sessão em 17 plataformas.
+  - name: rohitg00/pro-workflow
+    url: https://github.com/rohitg00/pro-workflow
+    adds:
+      en: >-
+        Self-correcting memory that compounds over 50+ sessions, paired with parallel worktrees and agent-team
+        workflows.
+      pt: >-
+        Memória autocorretiva que se acumula ao longo de mais de 50 sessões, combinada com worktrees paralelas e fluxos
+        de equipes de agentes.
+origin:
+  list: github-discovery
+  ref: claude-marketplace

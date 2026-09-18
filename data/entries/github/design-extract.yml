@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: design-extract
+name: Manavarya09/design-extract
+title: Website design-system extractor
+url: https://github.com/Manavarya09/design-extract
+type: skill-pack
+category: tools
+license: MIT
+tags:
+  - design
+  - tokens
+  - tools
+description:
+  en: >-
+    Extracts a website's full design system into DTCG design tokens, with emitters for iOS SwiftUI, Android Compose,
+    Flutter, Tailwind v4 and Figma variables, plus a CSS/accessibility audit.
+  pt: >-
+    Extrai o sistema de design completo de um site em tokens DTCG, com geradores para iOS SwiftUI, Android Compose,
+    Flutter, Tailwind v4 e variáveis do Figma, além de auditoria de CSS e acessibilidade.
+skill:
+  source: Manavarya09/design-extract
+origin:
+  list: github-discovery
+  ref: claude-marketplace

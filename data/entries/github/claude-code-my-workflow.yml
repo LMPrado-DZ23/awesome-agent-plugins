@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: claude-code-my-workflow
+name: pedrohcgs/claude-code-my-workflow
+title: Academic econometrics research skills
+url: https://github.com/pedrohcgs/claude-code-my-workflow
+type: skill-pack
+category: docs
+license: MIT
+tags:
+  - academic-research
+  - econometrics
+  - latex
+description:
+  en: >-
+    Fork-ready Claude Code template for academic researchers using LaTeX/Beamer and R, with multi-agent review, quality
+    gates, adversarial QA and replication-protocol skills.
+  pt: >-
+    Template pronto para fork do Claude Code para pesquisadores acadêmicos usando LaTeX/Beamer e R, com revisão
+    multi-agente, gates de qualidade, QA adversarial e skills de protocolo de replicação.
+skill:
+  source: pedrohcgs/claude-code-my-workflow
+origin:
+  list: github-discovery
+  ref: skill-pack

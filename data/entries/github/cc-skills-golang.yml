@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: cc-skills-golang
+name: samber/cc-skills-golang
+title: Go agentic skills collection
+url: https://github.com/samber/cc-skills-golang
+type: native-plugin
+category: dev
+license: MIT
+tags:
+  - go
+  - skills
+  - dev
+description:
+  en: Collection of Golang-focused agentic skills for coding agents, packaged as a Gemini CLI extension.
+  pt: Coleção de skills agênticas focadas em Golang para agentes de código, empacotada como extensão do Gemini CLI.
+native:
+  client: gemini-cli
+  install: gemini extensions install https://github.com/samber/cc-skills-golang
+origin:
+  list: github-discovery
+  ref: gemini-extension

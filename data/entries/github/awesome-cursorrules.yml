@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: awesome-cursorrules
+name: PatrickJS/awesome-cursorrules
+title: Awesome Cursor rules
+url: https://github.com/PatrickJS/awesome-cursorrules
+type: list
+category: skills
+license: CC0-1.0
+tags:
+  - cursor
+  - rules
+  - skills
+description:
+  en: >-
+    Large curated collection of .cursorrules configuration files that customize Cursor's AI behavior for many languages
+    and frameworks.
+  pt: >-
+    Grande coleção curada de arquivos de configuração .cursorrules que personalizam o comportamento de IA do Cursor para
+    várias linguagens e frameworks.
+alternatives:
+  - name: flyeric0212/cursor-rules
+    url: https://github.com/flyeric0212/cursor-rules
+    adds:
+      en: Similar curated collection of Cursor rule files, organized by the maintainer with Chinese-language notes.
+      pt: Coleção curada semelhante de arquivos de regras do Cursor, organizada pelo mantenedor com notas em chinês.
+origin:
+  list: github-discovery
+  ref: rules-collection

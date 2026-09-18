@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: claude-video
+name: bradautomates/claude-video
+title: Give Claude the ability to watch video
+url: https://github.com/bradautomates/claude-video
+type: skill-pack
+category: multimodal
+license: MIT
+tags:
+  - video
+  - multimodal
+  - skills
+description:
+  en: >-
+    Skill that lets Claude watch any video: it downloads it, extracts frames, transcribes the audio, and hands it all
+    back for analysis.
+  pt: >-
+    Skill que permite ao Claude assistir a qualquer vídeo: baixa o arquivo, extrai quadros, transcreve o áudio e devolve
+    tudo para análise.
+skill:
+  source: bradautomates/claude-video
+origin:
+  list: github-discovery
+  ref: claude-marketplace

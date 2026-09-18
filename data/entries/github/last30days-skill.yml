@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: last30days-skill
+name: mvanhorn/last30days-skill
+title: Last-30-days research skill
+url: https://github.com/mvanhorn/last30days-skill
+type: skill-pack
+category: tools
+license: MIT
+tags:
+  - research
+  - skills
+  - tools
+description:
+  en: >-
+    Agent skill that researches a topic across Reddit, X, YouTube, Hacker News, Polymarket and the wider web, then
+    synthesizes a grounded summary.
+  pt: >-
+    Agent skill que pesquisa um tema no Reddit, X, YouTube, Hacker News, Polymarket e na web em geral, sintetizando um
+    resumo com fontes.
+skill:
+  source: mvanhorn/last30days-skill
+alternatives:
+  - name: Jesseovo/last30days-skill-cn
+    url: https://github.com/Jesseovo/last30days-skill-cn
+    adds:
+      en: "Same idea adapted to mainland Chinese platforms: searches eight major Chinese sites from the last 30 days."
+      pt: "Mesma ideia adaptada às plataformas chinesas: pesquisa em oito grandes sites da China dos últimos 30 dias."
+origin:
+  list: github-discovery
+  ref: claude-marketplace

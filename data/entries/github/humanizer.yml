@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: humanizer
+name: blader/humanizer
+title: AI-writing humanizer skill
+url: https://github.com/blader/humanizer
+type: marketplace
+category: skills
+license: MIT
+tags:
+  - writing
+  - skills
+description:
+  en: Agent skill that removes common signs of AI-generated writing from text, making it read more naturally.
+  pt: Agent skill que remove sinais comuns de texto gerado por IA, deixando a escrita com leitura mais natural.
+native:
+  client: claude-code
+  install: /plugin marketplace add blader/humanizer
+  lang: text
+alternatives:
+  - name: conorbronsdon/avoid-ai-writing
+    url: https://github.com/conorbronsdon/avoid-ai-writing
+    adds:
+      en: Similar skill that audits and rewrites content to remove AI writing patterns.
+      pt: Skill semelhante que audita e reescreve conteúdo para remover padrões de escrita de IA.
+  - name: Nanako0129/sepia
+    url: https://github.com/Nanako0129/sepia
+    adds:
+      en: De-AI-writing skill aimed at fiction specifically, repairing narrative architecture based on published research.
+      pt: >-
+        Skill de remoção de escrita de IA voltada especificamente à ficção, corrigindo a arquitetura narrativa com base
+        em pesquisa publicada.
+  - name: epoko77-ai/im-not-ai
+    url: https://github.com/epoko77-ai/im-not-ai
+    adds:
+      en: "Same idea for Korean text: detects and rewrites translationese and other tells specific to Korean AI writing."
+      pt: >-
+        Mesma ideia para textos em coreano: detecta e reescreve marcas de tradução e outros sinais típicos de escrita de
+        IA em coreano.
+origin:
+  list: github-discovery
+  ref: claude-marketplace

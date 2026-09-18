@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: quarkdown
+name: iamgio/quarkdown
+title: Quarkdown markup compiler skill
+url: https://github.com/iamgio/quarkdown
+type: skill-pack
+category: tools
+license: GPL-3.0
+tags:
+  - markdown
+  - document-generation
+  - publishing
+description:
+  en: >-
+    Skill for a Markdown-superset compiler that turns marked-up text into papers, presentations, websites, books and
+    knowledge bases from a single source.
+  pt: >-
+    Skill para um compilador de superset de Markdown que transforma texto marcado em artigos, apresentações, sites,
+    livros e bases de conhecimento a partir de uma única fonte.
+skill:
+  source: iamgio/quarkdown
+origin:
+  list: github-discovery
+  ref: skill-pack

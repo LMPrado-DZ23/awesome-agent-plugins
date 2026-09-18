@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: pipecat
+name: pipecat-ai/pipecat
+title: Pipecat voice agent framework
+url: https://github.com/pipecat-ai/pipecat
+type: skill-pack
+category: multimodal
+license: BSD-2-Clause
+tags:
+  - voice
+  - multimodal
+  - realtime
+description:
+  en: >-
+    Open-source framework for building voice agents, multimodal apps and realtime AI, maintained by Daily and the
+    community; ships agent skills.
+  pt: >-
+    Framework open-source para construir agentes de voz, aplicativos multimodais e IA em tempo real, mantido pela Daily
+    e pela comunidade; inclui agent skills.
+skill:
+  source: pipecat-ai/pipecat
+origin:
+  list: github-discovery
+  ref: claude-marketplace

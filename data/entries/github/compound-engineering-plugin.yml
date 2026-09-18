@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: compound-engineering-plugin
+name: EveryInc/compound-engineering-plugin
+title: Compound Engineering plugin
+url: https://github.com/EveryInc/compound-engineering-plugin
+type: skill-pack
+category: workflow
+license: MIT
+tags:
+  - methodology
+  - workflow
+description:
+  en: >-
+    Official Compound Engineering plugin for Claude Code, Codex and Cursor: a methodology for agent work that compounds
+    gains across sessions.
+  pt: >-
+    Plugin oficial de Compound Engineering para Claude Code, Codex e Cursor: uma metodologia de trabalho com agentes que
+    acumula ganhos entre sessões.
+skill:
+  source: EveryInc/compound-engineering-plugin
+origin:
+  list: github-discovery
+  ref: claude-marketplace

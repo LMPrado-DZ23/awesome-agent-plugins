@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: agent-browser
+name: vercel-labs/agent-browser
+title: Agent browser automation CLI
+url: https://github.com/vercel-labs/agent-browser
+type: skill-pack
+category: browser
+license: Apache-2.0
+tags:
+  - browser
+  - automation
+  - cli
+description:
+  en: "Browser automation CLI built for AI agents to drive a real browser: navigate, click, fill forms and read pages."
+  pt: >-
+    CLI de automação de navegador feita para agentes de IA controlarem um navegador real: navegar, clicar, preencher
+    formulários e ler páginas.
+skill:
+  source: vercel-labs/agent-browser
+alternatives:
+  - name: browser-use/browser-harness
+    url: https://github.com/browser-use/browser-harness
+    adds:
+      en: >-
+        Self-healing browser harness that lets an LLM complete open-ended browsing tasks even when the page layout
+        changes.
+      pt: >-
+        Harness de navegador autorreparável que permite a um LLM completar tarefas abertas de navegação mesmo quando o
+        layout da página muda.
+  - name: citrolabs/ego-lite
+    url: https://github.com/citrolabs/ego-lite
+    adds:
+      en: >-
+        Lets an agent share your already logged-in browser session instead of automating a fresh, unauthenticated
+        browser.
+      pt: >-
+        Permite que um agente compartilhe sua sessão de navegador já autenticada, em vez de automatizar um navegador
+        novo e sem login.
+  - name: SawyerHood/dev-browser
+    url: https://github.com/SawyerHood/dev-browser
+    adds:
+      en: Minimal Claude Skill that simply gives an agent the ability to open and use a web browser.
+      pt: Claude Skill minimalista que apenas dá a um agente a capacidade de abrir e usar um navegador web.
+  - name: lackeyjb/playwright-skill
+    url: https://github.com/lackeyjb/playwright-skill
+    adds:
+      en: General-purpose browser automation skill built specifically on top of Playwright.
+      pt: Skill de automação de navegador de propósito geral construída especificamente sobre o Playwright.
+origin:
+  list: github-discovery
+  ref: claude-marketplace

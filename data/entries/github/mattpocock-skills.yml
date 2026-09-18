@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: mattpocock-skills
+name: mattpocock/skills
+title: Matt Pocock's engineering skills
+url: https://github.com/mattpocock/skills
+type: skill-pack
+category: skills
+license: MIT
+tags:
+  - skills
+  - engineering
+  - code-review
+description:
+  en: >-
+    Personal-but-public collection of 38 skills covering code review, TDD, domain modeling, debugging, architecture and
+    ticket writing for coding agents.
+  pt: >-
+    Coleção pública de 38 skills cobrindo revisão de código, TDD, modelagem de domínio, depuração, arquitetura e escrita
+    de tickets para agentes de código.
+skill:
+  source: mattpocock/skills
+origin:
+  list: github-discovery
+  ref: claude-marketplace

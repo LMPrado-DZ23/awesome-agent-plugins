@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: anti-slop
+name: dmmulroy/anti-slop
+title: Anti-Slop TypeScript lint rules
+url: https://github.com/dmmulroy/anti-slop
+type: skill-pack
+category: dev
+license: MIT
+tags:
+  - typescript
+  - linting
+  - code-quality
+description:
+  en: >-
+    Single skill installing opinionated Oxlint rules that reject low-evidence, low-quality TypeScript and JavaScript
+    patterns commonly produced by AI code generation.
+  pt: >-
+    Skill único que instala regras opinativas do Oxlint para rejeitar padrões de baixa qualidade em TypeScript e
+    JavaScript, comuns em código gerado por IA.
+skill:
+  source: dmmulroy/anti-slop
+origin:
+  list: github-discovery
+  ref: skill-pack

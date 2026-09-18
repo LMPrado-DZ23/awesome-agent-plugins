@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: internet-court-skill
+name: internet-court/internet-court-skill
+title: Agent-to-agent commerce trust layer
+url: https://github.com/internet-court/internet-court-skill
+type: skill-pack
+category: integrations
+license: null
+tags:
+  - integrations
+  - payments
+  - agent-commerce
+description:
+  en: >-
+    Trust layer for agent-to-agent commerce: natural-language mandates, delegated on-chain permissions, payments, escrow
+    and dispute resolution as one open skill.
+  pt: >-
+    Camada de confiança para comércio entre agentes: mandatos em linguagem natural, permissões delegadas on-chain,
+    pagamentos, escrow e resolução de disputas em uma única skill aberta.
+skill:
+  source: internet-court/internet-court-skill
+origin:
+  list: github-discovery
+  ref: claude-marketplace

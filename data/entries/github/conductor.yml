@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: conductor
+name: gemini-cli-extensions/conductor
+title: Spec-driven development plugin
+url: https://github.com/gemini-cli-extensions/conductor
+type: skill-pack
+category: workflow
+license: Apache-2.0
+tags:
+  - spec-driven
+  - workflow
+description:
+  en: >-
+    Plugin for coding agents (Antigravity, Claude Code) that enables spec-driven development: specify, plan and
+    implement a feature in structured steps.
+  pt: >-
+    Plugin para agentes de código (Antigravity, Claude Code) que viabiliza o desenvolvimento orientado por
+    especificação: especificar, planejar e implementar uma funcionalidade em etapas estruturadas.
+skill:
+  source: gemini-cli-extensions/conductor
+origin:
+  list: github-discovery
+  ref: claude-marketplace

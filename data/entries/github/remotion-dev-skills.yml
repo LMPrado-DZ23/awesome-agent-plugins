@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: remotion-dev-skills
+name: remotion-dev/skills
+title: Remotion official video skills
+url: https://github.com/remotion-dev/skills
+type: skill-pack
+category: multimodal
+license: null
+tags:
+  - video
+  - remotion
+  - react
+description:
+  en: >-
+    Official skill pack for Remotion (programmatic video with React), covering best practices, captions, interactivity,
+    maps, rendering and Remotion Studio usage.
+  pt: >-
+    Pacote oficial de skills para o Remotion (vídeo programático com React), cobrindo boas práticas, legendas,
+    interatividade, mapas, renderização e uso do Remotion Studio.
+skill:
+  source: remotion-dev/skills
+origin:
+  list: github-discovery
+  ref: skill-pack

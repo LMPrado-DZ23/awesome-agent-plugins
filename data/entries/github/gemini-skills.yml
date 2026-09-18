@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: gemini-skills
+name: google-gemini/gemini-skills
+title: Gemini API & SDK skills
+url: https://github.com/google-gemini/gemini-skills
+type: skill-pack
+category: dev
+license: Apache-2.0
+tags:
+  - skills
+  - gemini
+  - google
+description:
+  en: >-
+    Official skills for the Gemini API, SDK and model/agent interactions, maintained under the Google Gemini
+    organization.
+  pt: >-
+    Skills oficiais para a API do Gemini, o SDK e interações com modelos e agentes, mantidas sob a organização Google
+    Gemini.
+skill:
+  source: google-gemini/gemini-skills
+origin:
+  list: github-discovery
+  ref: claude-marketplace

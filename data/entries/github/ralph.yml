@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: ralph
+name: snarktank/ralph
+title: Ralph autonomous agent loop
+url: https://github.com/snarktank/ralph
+type: skill-pack
+category: workflow
+license: MIT
+tags:
+  - autonomy
+  - workflow
+  - loop
+description:
+  en: Autonomous AI agent loop that runs repeatedly against a PRD until every item on it is complete.
+  pt: Loop autônomo de agente de IA que roda repetidamente sobre um PRD até que todos os itens estejam concluídos.
+skill:
+  source: snarktank/ralph
+origin:
+  list: github-discovery
+  ref: claude-marketplace

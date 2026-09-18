@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: microsoft-skills
+name: microsoft/skills
+title: Microsoft SDK skills & agents
+url: https://github.com/microsoft/skills
+type: skill-pack
+category: dev
+license: MIT
+tags:
+  - skills
+  - microsoft
+  - mcp
+  - dev
+description:
+  en: Skills, MCP servers, custom agents and Agents.md files that ground coding agents in Microsoft SDKs and platforms.
+  pt: >-
+    Skills, servidores MCP, agentes personalizados e arquivos Agents.md que orientam agentes de código nos SDKs e
+    plataformas da Microsoft.
+skill:
+  source: microsoft/skills
+alternatives:
+  - name: microsoft/azure-skills
+    url: https://github.com/microsoft/azure-skills
+    adds:
+      en: "Same idea narrowed to Azure: skills plus MCP server configs for Azure-specific scenarios."
+      pt: "Mesma ideia focada no Azure: skills e configurações de servidor MCP para cenários específicos do Azure."
+origin:
+  list: github-discovery
+  ref: claude-marketplace

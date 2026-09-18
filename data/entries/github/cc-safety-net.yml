@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: cc-safety-net
+name: kenryu42/cc-safety-net
+title: Pre-execution command guard
+url: https://github.com/kenryu42/cc-safety-net
+type: skill-pack
+category: security
+license: MIT
+tags:
+  - security
+  - guardrails
+  - tools
+description:
+  en: >-
+    Pre-execution guard for AI coding agents that blocks destructive Git and filesystem commands and attempts to access
+    sensitive files before a tool call runs.
+  pt: >-
+    Guarda de pré-execução para agentes de código que bloqueia comandos destrutivos de Git e sistema de arquivos, além
+    de tentativas de acessar arquivos sensíveis, antes de a chamada rodar.
+skill:
+  source: kenryu42/cc-safety-net
+origin:
+  list: github-discovery
+  ref: claude-marketplace

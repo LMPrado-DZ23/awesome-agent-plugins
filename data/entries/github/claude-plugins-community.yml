@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: claude-plugins-community
+name: anthropics/claude-plugins-community
+title: Official community plugin mirror
+url: https://github.com/anthropics/claude-plugins-community
+type: skill-pack
+category: meta
+license: Apache-2.0
+tags:
+  - meta
+  - official
+  - marketplace
+description:
+  en: >-
+    Read-only mirror of the official community plugin marketplace for Claude Cowork and Claude Code, maintained by
+    Anthropic.
+  pt: >-
+    Espelho somente leitura do marketplace oficial de plugins da comunidade para Claude Cowork e Claude Code, mantido
+    pela Anthropic.
+skill:
+  source: anthropics/claude-plugins-community
+origin:
+  list: github-discovery
+  ref: claude-marketplace

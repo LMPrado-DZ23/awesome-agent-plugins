@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: claude-hud
+name: jarrodwatts/claude-hud
+title: Claude Code HUD
+url: https://github.com/jarrodwatts/claude-hud
+type: marketplace
+category: tools
+license: MIT
+tags:
+  - tools
+  - observability
+  - claude-code
+description:
+  en: >-
+    Claude Code plugin that shows a live heads-up display of context usage, active tools, running agents and todo
+    progress.
+  pt: >-
+    Plugin de Claude Code que mostra um painel ao vivo com uso de contexto, ferramentas ativas, agentes em execução e
+    progresso das tarefas.
+native:
+  client: claude-code
+  install: /plugin marketplace add jarrodwatts/claude-hud
+  lang: text
+origin:
+  list: github-discovery
+  ref: claude-marketplace

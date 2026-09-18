@@ -92,7 +92,7 @@ Um pet de desktop para a interface web do DSH com 25 animações transparentes, 
 
 **Alternativas:**
 
-- [cyanfish-x/dsh-live2d-pets](https://github.com/cyanfish-x/dsh-live2d-pets) (★ 24) — Usa modelos Live2D que espelham o estado do agente (pensando, ocioso, erro, concluído, aguardando aprovação) com balões de fala e personas alternáveis.
+- [cyanfish-x/dsh-live2d-pets](https://github.com/cyanfish-x/dsh-live2d-pets) (★ 23) — Usa modelos Live2D que espelham o estado do agente (pensando, ocioso, erro, concluído, aguardando aprovação) com balões de fala e personas alternáveis.
 - [hellosz/dsh-pets](https://github.com/hellosz/dsh-pets) (★ 6) — Traz 10 pets compatíveis com o Petdex, um motor de status do agente com 9 estados e uma ferramenta pet_say para o agente falar através do pet.
 - [vlln/whale-girl](https://github.com/vlln/whale-girl) (★ 325) — Adiciona interações de alimentar e brincar além de arrastar, no estilo QQ-pet.
 - [nzl153/dsh-pet-whale](https://github.com/nzl153/dsh-pet-whale) (★ 3) — Desenha um pet em SVG puro a partir do contorno oficial da baleia, com 7 paletas de cores e sincronização com o tema claro/escuro.

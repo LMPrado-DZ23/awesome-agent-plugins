@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: ccpm
+name: automazeio/ccpm
+title: CCPM project management skill
+url: https://github.com/automazeio/ccpm
+type: skill-pack
+category: workflow
+license: MIT
+tags:
+  - project-management
+  - github-issues
+  - git-worktrees
+description:
+  en: >-
+    Well-known project-management skill system for coding agents that uses GitHub Issues and Git worktrees to coordinate
+    parallel agent execution.
+  pt: >-
+    Conhecido sistema de skill de gestão de projetos para agentes de código que usa GitHub Issues e Git worktrees para
+    coordenar execução paralela de agentes.
+skill:
+  source: automazeio/ccpm
+origin:
+  list: github-discovery
+  ref: skill-pack

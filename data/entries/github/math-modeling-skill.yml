@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: math-modeling-skill
+name: XiaoMaColtAI/math-modeling-skill
+title: Math modeling competition skills
+url: https://github.com/XiaoMaColtAI/math-modeling-skill
+type: skill-pack
+category: skills
+license: null
+tags:
+  - math-modeling
+  - competitions
+  - academic-writing
+description:
+  en: >-
+    Three-role skill workflow (modeling, coding, writing) for mathematical modeling competitions such as CUMCM and
+    MCM/ICM, with optimization/ML algorithm resources and paper templates.
+  pt: >-
+    Workflow de skills em três papéis (modelagem, programação, redação) para competições de modelagem matemática como
+    CUMCM e MCM/ICM, com recursos de otimização/ML e templates de artigo.
+skill:
+  source: XiaoMaColtAI/math-modeling-skill
+alternatives:
+  - name: jihe520/MathModelAgent
+    url: https://github.com/jihe520/MathModelAgent
+    adds:
+      en: Similar numbered-stage workflow (analysis, coding, visualization, writing) for the same competitions.
+      pt: Workflow similar em etapas numeradas (análise, código, visualização, redação) para as mesmas competições.
+origin:
+  list: github-discovery
+  ref: skill-pack

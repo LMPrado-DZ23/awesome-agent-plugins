@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: nuwa-skill
+name: alchaincyf/nuwa-skill
+title: Mental model distillation skills
+url: https://github.com/alchaincyf/nuwa-skill
+type: skill-pack
+category: skills
+license: MIT
+tags:
+  - mental-models
+  - writing
+  - decision-making
+description:
+  en: >-
+    Skills that distill how specific well-known thinkers (Musk, Feynman, Munger, Naval, Paul Graham) reason, decide and
+    communicate, for use as agent perspectives.
+  pt: >-
+    Skills que destilam como pensadores conhecidos específicos (Musk, Feynman, Munger, Naval, Paul Graham) raciocinam,
+    decidem e se comunicam, para uso como perspectivas de agente.
+skill:
+  source: alchaincyf/nuwa-skill
+alternatives:
+  - name: alchaincyf/huashu-skills
+    url: https://github.com/alchaincyf/huashu-skills
+    adds:
+      en: Same author's directory of 52 skills combining flagship, persona and built-in categories.
+      pt: Diretório do mesmo autor com 52 skills combinando categorias principais, de persona e embutidas.
+  - name: kangarooking/cangjie-skill
+    url: https://github.com/kangarooking/cangjie-skill
+    adds:
+      en: Distills books, long videos and podcasts into personal-productivity and decision skills.
+      pt: Destila livros, vídeos longos e podcasts em skills de produtividade pessoal e tomada de decisão.
+origin:
+  list: github-discovery
+  ref: skill-pack

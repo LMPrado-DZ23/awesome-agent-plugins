@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: deepeval
+name: confident-ai/deepeval
+title: DeepEval LLM evaluation
+url: https://github.com/confident-ai/deepeval
+type: skill-pack
+category: tools
+license: Apache-2.0
+tags:
+  - tools
+  - eval
+  - testing
+description:
+  en: Open-source LLM evaluation framework for testing and scoring the outputs of language models and agent pipelines.
+  pt: >-
+    Framework open-source de avaliação de LLMs para testar e pontuar as saídas de modelos de linguagem e pipelines de
+    agentes.
+skill:
+  source: confident-ai/deepeval
+origin:
+  list: github-discovery
+  ref: claude-marketplace

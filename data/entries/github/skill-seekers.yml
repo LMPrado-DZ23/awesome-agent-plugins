@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: skill-seekers
+name: yusufkaraaslan/Skill_Seekers
+title: Skill-Seekers skill generator
+url: https://github.com/yusufkaraaslan/Skill_Seekers
+type: skill-pack
+category: meta
+license: MIT
+tags:
+  - skill-creation
+  - documentation
+  - automation
+description:
+  en: >-
+    Toolkit that converts documentation sites, GitHub repositories, PDFs and other sources into installable Claude AI
+    skills, with automatic conflict detection.
+  pt: >-
+    Kit de ferramentas que converte sites de documentação, repositórios do GitHub, PDFs e outras fontes em skills
+    instaláveis para o Claude AI, com detecção automática de conflitos.
+skill:
+  source: yusufkaraaslan/Skill_Seekers
+alternatives:
+  - name: mgechev/skills-best-practices
+    url: https://github.com/mgechev/skills-best-practices
+    adds:
+      en: Adds a methodology skill for writing and LLM-validating professional-grade skills.
+      pt: Adiciona uma skill de metodologia para escrever e validar com LLM skills de nível profissional.
+origin:
+  list: github-discovery
+  ref: skill-pack

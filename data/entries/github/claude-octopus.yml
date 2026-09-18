@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: claude-octopus
+name: nyldn/claude-octopus
+title: Multi-model consensus runner
+url: https://github.com/nyldn/claude-octopus
+type: skill-pack
+category: tools
+license: MIT
+tags:
+  - tools
+  - multi-model
+  - review
+description:
+  en: >-
+    Runs the same research, design or coding task against multiple AI models in parallel and surfaces where they
+    disagree before you ship.
+  pt: >-
+    Executa a mesma tarefa de pesquisa, design ou código em paralelo em vários modelos de IA e evidencia onde eles
+    discordam antes de você publicar.
+skill:
+  source: nyldn/claude-octopus
+origin:
+  list: github-discovery
+  ref: claude-marketplace

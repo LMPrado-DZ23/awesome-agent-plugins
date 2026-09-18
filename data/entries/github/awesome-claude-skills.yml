@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: awesome-claude-skills
+name: ComposioHQ/awesome-claude-skills
+title: Awesome Claude Skills catalog
+url: https://github.com/ComposioHQ/awesome-claude-skills
+type: skill-pack
+category: skills
+license: null
+tags:
+  - skill-library
+  - claude-code
+  - automation
+description:
+  en: >-
+    Community-curated catalog of hundreds of ready-to-install Claude Agent Skills spanning design, document handling,
+    DevOps automations and per-service integrations.
+  pt: >-
+    Catálogo curado pela comunidade com centenas de Agent Skills prontas para instalar no Claude, cobrindo design,
+    manipulação de documentos, automações de DevOps e integrações por serviço.
+skill:
+  source: ComposioHQ/awesome-claude-skills
+alternatives:
+  - name: composio-community/awesome-codex-skills
+    url: https://github.com/composio-community/awesome-codex-skills
+    adds:
+      en: Same catalog concept retargeted at the Codex CLI and API.
+      pt: Mesmo conceito de catálogo, direcionado ao Codex CLI e à API.
+  - name: github/awesome-copilot
+    url: https://github.com/github/awesome-copilot
+    adds:
+      en: Community-contributed instructions, agents and skills specifically for GitHub Copilot.
+      pt: Instruções, agentes e skills contribuídos pela comunidade especificamente para o GitHub Copilot.
+  - name: rmyndharis/antigravity-skills
+    url: https://github.com/rmyndharis/antigravity-skills
+    adds:
+      en: Equivalent curated collection targeted at Google Antigravity.
+      pt: Coleção curada equivalente, voltada ao Google Antigravity.
+  - name: anbeime/skill
+    url: https://github.com/anbeime/skill
+    adds:
+      en: Chinese-language skill store that also auto-indexes and categorizes skills scraped from GitHub.
+      pt: Loja de skills em chinês que também indexa e categoriza automaticamente skills coletadas do GitHub.
+origin:
+  list: github-discovery
+  ref: skill-pack

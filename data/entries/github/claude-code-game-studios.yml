@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: claude-code-game-studios
+name: Donchitos/Claude-Code-Game-Studios
+title: Claude game dev studio skills
+url: https://github.com/Donchitos/Claude-Code-Game-Studios
+type: skill-pack
+category: workflow
+license: MIT
+tags:
+  - game-development
+  - workflow
+  - studio-pipeline
+description:
+  en: >-
+    Turns Claude Code into a full game-development studio with 72 workflow skills covering design, balance checks, asset
+    specs, art bibles and QA, mirroring a real studio's hierarchy.
+  pt: >-
+    Transforma o Claude Code num estúdio completo de desenvolvimento de jogos com 72 skills de workflow cobrindo design,
+    balanceamento, specs de assets, art bibles e QA, espelhando a hierarquia de um estúdio real.
+skill:
+  source: Donchitos/Claude-Code-Game-Studios
+alternatives:
+  - name: majidmanzarpour/threejs-game-skills
+    url: https://github.com/majidmanzarpour/threejs-game-skills
+    adds:
+      en: Focused specifically on building playable Three.js browser games with AAA-style graphics.
+      pt: Focado especificamente em construir jogos de navegador jogáveis em Three.js com gráficos estilo AAA.
+  - name: 0x0funky/agent-sprite-forge
+    url: https://github.com/0x0funky/agent-sprite-forge
+    adds:
+      en: Narrow skill for generating 2D sprite sheets, tile maps and animated GIFs from prompts.
+      pt: Skill específica para gerar sprite sheets 2D, mapas de tiles e GIFs animados a partir de prompts.
+origin:
+  list: github-discovery
+  ref: skill-pack

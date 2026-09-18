@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: ui-ux-pro-max-skill
+name: nextlevelbuilder/ui-ux-pro-max-skill
+title: UI/UX design intelligence skill
+url: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
+type: skill-pack
+category: skills
+license: MIT
+tags:
+  - ui
+  - ux
+  - skills
+  - design
+description:
+  en: >-
+    AI skill that provides design intelligence for building professional, cross-platform UI/UX, with a companion agent
+    and slash commands.
+  pt: >-
+    Skill de IA que fornece inteligência de design para construir UI/UX profissional em múltiplas plataformas, com
+    agente e comandos complementares.
+skill:
+  source: nextlevelbuilder/ui-ux-pro-max-skill
+alternatives:
+  - name: pbakaus/impeccable
+    url: https://github.com/pbakaus/impeccable
+    adds:
+      en: >-
+        A design-language skill focused specifically on making the agent's visual taste better, not on broader UX
+        process.
+      pt: >-
+        Skill de linguagem de design focada especificamente em melhorar o gosto visual do agente, sem cobrir o processo
+        mais amplo de UX.
+  - name: Leonxlnx/taste-skill
+    url: https://github.com/Leonxlnx/taste-skill
+    adds:
+      en: "Narrower skill aimed at just one thing: stopping the agent from generating boring, generic-looking interfaces."
+      pt: "Skill mais restrita voltada a uma única coisa: impedir o agente de gerar interfaces genéricas e sem graça."
+  - name: jakubkrehel/skills
+    url: https://github.com/jakubkrehel/skills
+    adds:
+      en: Small collection of skills focused on helping an agent build good-looking interfaces.
+      pt: Pequena coleção de skills focada em ajudar um agente a construir interfaces com boa aparência.
+  - name: Owl-Listener/designer-skills
+    url: https://github.com/Owl-Listener/designer-skills
+    adds:
+      en: Broader designer skill set spanning research, design systems, interaction and delivery, not just UI polish.
+      pt: >-
+        Conjunto mais amplo de skills de design cobrindo pesquisa, sistemas de design, interação e entrega, além do
+        polimento visual.
+origin:
+  list: github-discovery
+  ref: claude-marketplace

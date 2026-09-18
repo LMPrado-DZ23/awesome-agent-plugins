@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: gsap-skills
+name: greensock/gsap-skills
+title: GSAP animation skills
+url: https://github.com/greensock/gsap-skills
+type: skill-pack
+category: dev
+license: MIT
+tags:
+  - skills
+  - animation
+  - gsap
+  - frontend
+description:
+  en: >-
+    Official AI skills for GSAP (GreenSock Animation Platform) teaching coding agents correct animation patterns, plugin
+    usage and best practices.
+  pt: >-
+    Skills oficiais de IA para o GSAP (GreenSock Animation Platform), ensinando agentes de código padrões corretos de
+    animação, uso de plugins e boas práticas.
+skill:
+  source: greensock/gsap-skills
+origin:
+  list: github-discovery
+  ref: claude-marketplace

@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: front-end-checklist
+name: thedaviddias/Front-End-Checklist
+title: Front-End Checklist skills
+url: https://github.com/thedaviddias/Front-End-Checklist
+type: skill-pack
+category: dev
+license: null
+tags:
+  - frontend
+  - accessibility
+  - checklist
+  - web-development
+description:
+  en: >-
+    Hundreds of granular front-end best-practice checks (accessibility, performance, SEO, security) packaged as
+    individual skills for humans and AI coding agents.
+  pt: >-
+    Centenas de verificações granulares de boas práticas front-end (acessibilidade, performance, SEO, segurança)
+    empacotadas como skills individuais para humanos e agentes de IA.
+skill:
+  source: thedaviddias/Front-End-Checklist
+origin:
+  list: github-discovery
+  ref: skill-pack

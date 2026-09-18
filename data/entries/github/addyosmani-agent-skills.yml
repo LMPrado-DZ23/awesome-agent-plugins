@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: addyosmani-agent-skills
+name: addyosmani/agent-skills
+title: Production-grade engineering skills
+url: https://github.com/addyosmani/agent-skills
+type: skill-pack
+category: skills
+license: MIT
+tags:
+  - skills
+  - engineering
+description:
+  en: Production-grade engineering skills for AI coding agents by Addy Osmani, covering day-to-day software craftsmanship.
+  pt: >-
+    Skills de engenharia de nível de produção para agentes de código, criadas por Addy Osmani, cobrindo o ofício do dia
+    a dia de desenvolvimento.
+skill:
+  source: addyosmani/agent-skills
+alternatives:
+  - name: addyosmani/web-quality-skills
+    url: https://github.com/addyosmani/web-quality-skills
+    adds:
+      en: "Companion pack from the same author narrowed to web performance: skills based on Lighthouse and Core Web Vitals."
+      pt: "Pacote complementar do mesmo autor focado em performance web: skills baseadas em Lighthouse e Core Web Vitals."
+  - name: Jeffallan/claude-skills
+    url: https://github.com/Jeffallan/claude-skills
+    adds:
+      en: 67 specialized skills aimed at turning Claude Code into a full-stack pair programmer.
+      pt: 67 skills especializadas voltadas a transformar o Claude Code em um par de programação full-stack.
+origin:
+  list: github-discovery
+  ref: claude-marketplace

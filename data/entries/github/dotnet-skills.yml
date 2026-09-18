@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: dotnet-skills
+name: dotnet/skills
+title: .NET / C# agent skills
+url: https://github.com/dotnet/skills
+type: skill-pack
+category: dev
+license: MIT
+tags:
+  - skills
+  - dotnet
+  - csharp
+description:
+  en: Official skills repository to assist AI coding agents with .NET and C# development conventions and tooling.
+  pt: >-
+    Repositório oficial de skills para ajudar agentes de código com convenções e ferramentas de desenvolvimento em .NET
+    e C#.
+skill:
+  source: dotnet/skills
+origin:
+  list: github-discovery
+  ref: claude-marketplace

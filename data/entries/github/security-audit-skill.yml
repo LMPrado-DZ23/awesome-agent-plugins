@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: security-audit-skill
+name: cloudflare/security-audit-skill
+title: Cloudflare security audit skill
+url: https://github.com/cloudflare/security-audit-skill
+type: skill-pack
+category: security
+license: MIT
+tags:
+  - security-audit
+  - code-review
+  - cloudflare
+description:
+  en: >-
+    Official Cloudflare skill for running multi-phase code security audits that produce independently verified,
+    machine-readable findings.
+  pt: >-
+    Skill oficial da Cloudflare para executar auditorias de segurança de código em múltiplas fases, produzindo achados
+    verificados de forma independente e legíveis por máquina.
+skill:
+  source: cloudflare/security-audit-skill
+origin:
+  list: github-discovery
+  ref: skill-pack

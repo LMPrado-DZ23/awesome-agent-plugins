@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: huggingface-skills
+name: huggingface/skills
+title: Hugging Face ecosystem skills
+url: https://github.com/huggingface/skills
+type: skill-pack
+category: dev
+license: Apache-2.0
+tags:
+  - skills
+  - huggingface
+  - ml
+description:
+  en: "Agent Skills that give coding agents access to the Hugging Face ecosystem: models, datasets and Hub workflows."
+  pt: "Agent Skills que dão a agentes de código acesso ao ecossistema Hugging Face: modelos, datasets e fluxos do Hub."
+skill:
+  source: huggingface/skills
+origin:
+  list: github-discovery
+  ref: claude-marketplace

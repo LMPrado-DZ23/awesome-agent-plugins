@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: nature-skills
+name: Yuan1z0825/nature-skills
+title: Nature-style academic writing skills
+url: https://github.com/Yuan1z0825/nature-skills
+type: skill-pack
+category: docs
+license: Apache-2.0
+tags:
+  - academic-writing
+  - scientific-figures
+  - research
+description:
+  en: >-
+    20 skills tailored to Nature-journal academic writing conventions and scientific figure design, including literature
+    pipelines, citations and paper-to-slide conversion.
+  pt: >-
+    20 skills adaptadas às convenções de escrita acadêmica da revista Nature e ao design de figuras científicas,
+    incluindo pipelines de literatura, citações e conversão de artigo para slides.
+skill:
+  source: Yuan1z0825/nature-skills
+alternatives:
+  - name: zLanqing/codex-claude-academic-skills
+    url: https://github.com/zLanqing/codex-claude-academic-skills
+    adds:
+      en: Broader academic workflow covering literature review, writing polish and scientific computing tools.
+      pt: >-
+        Fluxo acadêmico mais amplo cobrindo revisão de literatura, polimento de texto e ferramentas de computação
+        científica.
+origin:
+  list: github-discovery
+  ref: skill-pack

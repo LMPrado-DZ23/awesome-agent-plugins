@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: repomix
+name: yamadashy/repomix
+title: Repomix repo packer
+url: https://github.com/yamadashy/repomix
+type: skill-pack
+category: tools
+license: MIT
+tags:
+  - tools
+  - context
+  - cli
+description:
+  en: >-
+    Packs an entire repository into a single AI-friendly file, ready to feed to Claude, ChatGPT, Gemini or other LLM
+    tools.
+  pt: >-
+    Empacota um repositório inteiro em um único arquivo amigável para IA, pronto para alimentar Claude, ChatGPT, Gemini
+    ou outras ferramentas de LLM.
+skill:
+  source: yamadashy/repomix
+origin:
+  list: github-discovery
+  ref: claude-marketplace

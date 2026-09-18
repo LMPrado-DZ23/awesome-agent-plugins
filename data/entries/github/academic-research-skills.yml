@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: academic-research-skills
+name: Imbad0202/academic-research-skills
+title: Academic research skill pipeline
+url: https://github.com/Imbad0202/academic-research-skills
+type: skill-pack
+category: skills
+license: null
+tags:
+  - research
+  - academic
+  - skills
+description:
+  en: "Skills covering the full academic research pipeline for Claude Code: research, write, review, revise and finalize."
+  pt: >-
+    Skills que cobrem todo o pipeline de pesquisa acadêmica para o Claude Code: pesquisar, escrever, revisar, corrigir e
+    finalizar.
+skill:
+  source: Imbad0202/academic-research-skills
+alternatives:
+  - name: Orchestra-Research/AI-Research-SKILLs
+    url: https://github.com/Orchestra-Research/AI-Research-SKILLs
+    adds:
+      en: >-
+        Broader open-source library of AI research and engineering skills, aimed at turning any agent into a research
+        assistant.
+      pt: >-
+        Biblioteca open-source mais ampla de skills de pesquisa e engenharia de IA, voltada a transformar qualquer
+        agente em assistente de pesquisa.
+  - name: brycewang-stanford/Auto-Empirical-Research-Skills
+    url: https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills
+    adds:
+      en: Very large curated library of skills for empirical research across eight social-science disciplines.
+      pt: Biblioteca curada e bem maior de skills para pesquisa empírica em oito disciplinas das ciências sociais.
+  - name: wanshuiyin/Auto-claude-code-research-in-sleep
+    url: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+    adds:
+      en: >-
+        Lightweight markdown-only skills for autonomous ML research: cross-model review loops, idea discovery and
+        experiment automation.
+      pt: >-
+        Skills leves, só em markdown, para pesquisa autônoma em ML: revisão entre modelos, descoberta de ideias e
+        automação de experimentos.
+origin:
+  list: github-discovery
+  ref: claude-marketplace

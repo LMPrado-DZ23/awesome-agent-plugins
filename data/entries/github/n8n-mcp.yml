@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: n8n-mcp
+name: czlonkowski/n8n-mcp
+title: n8n workflow-building skills
+url: https://github.com/czlonkowski/n8n-mcp
+type: skill-pack
+category: integrations
+license: MIT
+tags:
+  - n8n
+  - workflow-automation
+  - mcp
+description:
+  en: >-
+    MCP server and skill set that lets Claude Desktop, Claude Code, Windsurf or Cursor build, validate and configure n8n
+    automation workflows and nodes for you.
+  pt: >-
+    Servidor MCP e conjunto de skills que permitem ao Claude Desktop, Claude Code, Windsurf ou Cursor construir, validar
+    e configurar workflows e nós de automação do n8n.
+skill:
+  source: czlonkowski/n8n-mcp
+origin:
+  list: github-discovery
+  ref: skill-pack

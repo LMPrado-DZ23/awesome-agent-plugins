@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: career-ops
+name: career-ops-hq/career-ops
+title: AI job search operations
+url: https://github.com/career-ops-hq/career-ops
+type: skill-pack
+category: workflow
+license: MIT
+tags:
+  - career
+  - workflow
+  - skills
+description:
+  en: >-
+    Open-source AI job search skill: scans job portals, scores listings into a structured A-H report, tailors your CV
+    and tracks applications from your coding CLI.
+  pt: >-
+    Skill open-source de busca de emprego com IA: varre portais de vagas, pontua os anúncios em um relatório estruturado
+    de A a H, ajusta seu currículo e acompanha as candidaturas.
+skill:
+  source: career-ops-hq/career-ops
+origin:
+  list: github-discovery
+  ref: claude-marketplace

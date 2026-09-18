@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: creator-buddy
+name: SpaceZephyr/creator-buddy
+title: Creator growth research skills
+url: https://github.com/SpaceZephyr/creator-buddy
+type: skill-pack
+category: skills
+license: null
+tags:
+  - content-creation
+  - social-media
+  - trend-research
+description:
+  en: >-
+    32 orchestrated skills for cross-platform content search, creator analysis and viral trend research, with dedicated
+    coverage of Chinese platforms like WeChat official accounts.
+  pt: >-
+    32 skills orquestradas para busca de conteúdo multiplataforma, análise de criadores e pesquisa de tendências virais,
+    com cobertura dedicada a plataformas chinesas como contas oficiais do WeChat.
+skill:
+  source: SpaceZephyr/creator-buddy
+origin:
+  list: github-discovery
+  ref: skill-pack

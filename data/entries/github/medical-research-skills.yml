@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: medical-research-skills
+name: aipoch/medical-research-skills
+title: Medical research skills library
+url: https://github.com/aipoch/medical-research-skills
+type: skill-pack
+category: skills
+license: MIT
+tags:
+  - medical-research
+  - biostatistics
+  - academic-writing
+description:
+  en: >-
+    Over 600 agent skills for medical research: study protocol design, statistical and evidence analysis, figure/table
+    generation and academic manuscript writing.
+  pt: >-
+    Mais de 600 skills de agente para pesquisa médica: desenho de protocolos de estudo, análise estatística e de
+    evidências, geração de figuras/tabelas e redação de manuscritos acadêmicos.
+skill:
+  source: aipoch/medical-research-skills
+origin:
+  list: github-discovery
+  ref: skill-pack

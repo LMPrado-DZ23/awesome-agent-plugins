@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: skillkit
+name: rohitg00/skillkit
+title: Cross-agent skill portability kit
+url: https://github.com/rohitg00/skillkit
+type: skill-pack
+category: meta
+license: Apache-2.0
+tags:
+  - skill-management
+  - cross-agent
+  - portability
+description:
+  en: >-
+    Tool and skill set that installs, translates and shares agent skills across Claude Code, Cursor, Codex, Copilot and
+    40+ other coding agents from one source.
+  pt: >-
+    Ferramenta e conjunto de skills que instala, traduz e compartilha skills de agentes entre Claude Code, Cursor,
+    Codex, Copilot e mais de 40 outros agentes a partir de uma única fonte.
+skill:
+  source: rohitg00/skillkit
+alternatives:
+  - name: runkids/skillshare
+    url: https://github.com/runkids/skillshare
+    adds:
+      en: Focuses on one-command syncing and team sharing of skills across CLI tools.
+      pt: Foca em sincronizar com um comando só e compartilhar skills em equipe entre ferramentas de CLI.
+  - name: xingkongliang/skills-manager
+    url: https://github.com/xingkongliang/skills-manager
+    adds:
+      en: Desktop GUI app for browsing and organizing skills across 50+ coding tools.
+      pt: Aplicativo desktop com GUI para navegar e organizar skills em mais de 50 ferramentas de código.
+  - name: numman-ali/openskills
+    url: https://github.com/numman-ali/openskills
+    adds:
+      en: Lightweight universal skills loader distributed as an npm package.
+      pt: Carregador universal e leve de skills, distribuído como pacote npm.
+origin:
+  list: github-discovery
+  ref: skill-pack

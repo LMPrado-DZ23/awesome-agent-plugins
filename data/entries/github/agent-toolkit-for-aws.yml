@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: agent-toolkit-for-aws
+name: aws/agent-toolkit-for-aws
+title: AWS agent toolkit
+url: https://github.com/aws/agent-toolkit-for-aws
+type: skill-pack
+category: cloud
+license: Apache-2.0
+tags:
+  - skills
+  - mcp
+  - aws
+  - cloud
+description:
+  en: Official AWS-supported MCP servers, skills and plugins that help AI agents build and operate on AWS.
+  pt: Servidores MCP, skills e plugins com suporte oficial da AWS para ajudar agentes de IA a construir e operar na AWS.
+skill:
+  source: aws/agent-toolkit-for-aws
+origin:
+  list: github-discovery
+  ref: claude-marketplace

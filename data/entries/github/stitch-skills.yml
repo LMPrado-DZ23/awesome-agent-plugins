@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: stitch-skills
+name: google-labs-code/stitch-skills
+title: Google Stitch design skills
+url: https://github.com/google-labs-code/stitch-skills
+type: skill-pack
+category: dev
+license: Apache-2.0
+tags:
+  - design
+  - google-stitch
+  - ui
+description:
+  en: >-
+    Official Agent Skills library for Google's Stitch MCP server, covering code-to-design, design generation,
+    design-system management and React/shadcn component export.
+  pt: >-
+    Biblioteca oficial de Agent Skills para o servidor MCP Stitch do Google, cobrindo código-para-design, geração de
+    design, gestão de design systems e exportação de componentes React/shadcn.
+skill:
+  source: google-labs-code/stitch-skills
+origin:
+  list: github-discovery
+  ref: skill-pack

@@ -92,7 +92,7 @@ A desktop pet for the DSH Web UI with 25 transparent animations, screen wanderin
 
 **Alternatives:**
 
-- [cyanfish-x/dsh-live2d-pets](https://github.com/cyanfish-x/dsh-live2d-pets) (★ 24) — Uses Live2D models that mirror agent state (thinking, idle, error, done, awaiting approval) with speech bubbles and switchable personas.
+- [cyanfish-x/dsh-live2d-pets](https://github.com/cyanfish-x/dsh-live2d-pets) (★ 23) — Uses Live2D models that mirror agent state (thinking, idle, error, done, awaiting approval) with speech bubbles and switchable personas.
 - [hellosz/dsh-pets](https://github.com/hellosz/dsh-pets) (★ 6) — Ships 10 Petdex-compatible pets with a 9-state agent-status engine and a pet_say tool the agent can use to speak through the pet.
 - [vlln/whale-girl](https://github.com/vlln/whale-girl) (★ 325) — Adds feeding and play interactions on top of dragging, QQ-pet style.
 - [nzl153/dsh-pet-whale](https://github.com/nzl153/dsh-pet-whale) (★ 3) — Draws a pure-SVG pet from the official whale outline, with 7 color palettes and light/dark theme sync.

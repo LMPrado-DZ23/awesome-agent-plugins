@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: deep-research-skills
+name: Weizhena/Deep-Research-skills
+title: Structured deep research skill
+url: https://github.com/Weizhena/Deep-Research-skills
+type: skill-pack
+category: workflow
+license: MIT
+tags:
+  - deep-research
+  - human-in-the-loop
+  - reporting
+description:
+  en: >-
+    Structured deep-research skill for Claude Code, OpenCode and Codex with explicit human-in-the-loop control over
+    adding fields, adding items and generating the final report.
+  pt: >-
+    Skill estruturada de pesquisa profunda para Claude Code, OpenCode e Codex com controle explícito humano-no-loop
+    sobre adicionar campos, adicionar itens e gerar o relatório final.
+skill:
+  source: Weizhena/Deep-Research-skills
+origin:
+  list: github-discovery
+  ref: skill-pack

@@ -6,17 +6,21 @@
 
 - [Chrome DevTools MCP](#chrome-devtools-mcp) — Dá ao agente o Chrome DevTools: controla um Chrome real, inspeciona rede e console, grava traces de performanc…
 - [Playwright MCP](#playwright-mcp) — Automação de navegador para agentes via snapshots de acessibilidade do Playwright: navegar, clicar, preencher …
+- [Firecrawl web data skills](#firecrawl) — Skills oficiais do Firecrawl para sua API de scraping e busca na web: onboarding, scraping de página única, bu…
+- [AI browser agent for web tasks](#browser-use-mcp) — Controla um navegador Chrome real para completar tarefas como preencher formulários, extrair dados e fazer res…
+- [Agent browser automation CLI](#agent-browser) — CLI de automação de navegador feita para agentes de IA controlarem um navegador real: navegar, clicar, preench…
 - [Firecrawl MCP](#firecrawl-mcp) — Scraping, crawling, busca e extração estruturada da web para agentes via API Firecrawl (requer chave de API).
+- [Browser-Act automation skills](#skills) — Biblioteca de skills para um CLI de automação de navegador voltado a agentes de IA, com mais de 100 skills cob…
 - [Exa MCP](#exa-mcp) — Busca e crawling na web pelo mecanismo Exa, incluindo busca de contexto de código.
+- [Browserbase web access skills](#browserbase-skills) — Coleção oficial da Browserbase de agent skills para acessar e interagir com a web por meio de sua infraestrutu…
+- [Web search for AI agents](#brave-search-mcp-server) — Servidor oficial do Brave Search: resultados web, imagens, vídeos, rich results e resumos de IA; exige BRAVE_A…
 - [Web search for text-only agents](#dsh-modsearch) — Conecta buscas ao vivo na web e no X (Twitter) a agentes somente texto, retornando evidências estruturadas em …
 - [Control the Tabbit Browser](#dsh-dsh-plugin) — Dá ao agente controle do Tabbit Browser: carrega automaticamente uma skill complementar, detecta versões quali…
 - [Real browser automation and control](#dsh-dsh-browser) — Dá ao agente uma janela Electron nativa e compartilhada, controlada via CDP com 20 ferramentas (abrir páginas,…
 - [Fetch pages as clean readable text](#dsh-dsh-read-url) — Lê qualquer página da web extraindo apenas o conteúdo principal: detecção automática de charset (GBK/GB2312/UT…
 - [Headless browser acceptance testing](#dsh-dsh-verify) — Executa testes de aceitação independentes sobre entregas feitas pelo agente: recebe uma especificação em JSON …
 - [Control the Jiey Browser via MCP](#dsh-dsh-jiey-browser) — Controla o Jiey Browser a partir do DeepSeek Harness via MCP: navegar, capturar snapshots, agir sobre elemento…
-- [AI browser agent for web tasks](#browser-use-mcp) — Controla um navegador Chrome real para completar tarefas como preencher formulários, extrair dados e fazer res…
 - [Fetch (reference)](#mcp-fetch) — Servidor de referência que busca uma URL e converte a página em Markdown para o agente.
-- [Web search for AI agents](#brave-search-mcp-server) — Servidor oficial do Brave Search: resultados web, imagens, vídeos, rich results e resumos de IA; exige BRAVE_A…
 
 <a id="chrome-devtools-mcp"></a>
 
@@ -388,6 +392,381 @@ extensions:
 
 </details>
 
+<a id="firecrawl"></a>
+
+### Firecrawl web data skills
+
+[firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) — `Agent Skills` · ★ 182k · Licença: AGPL-3.0 · Funciona com: Todos os clientes
+
+Skills oficiais do Firecrawl para sua API de scraping e busca na web: onboarding, scraping de página única, busca multi-página e interação no navegador, para integrar dados da web ao vivo em agentes.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+npx skills add firecrawl/firecrawl -a claude-code -g
+```
+
+**Codex CLI**
+
+```bash
+npx skills add firecrawl/firecrawl -a codex -g
+```
+
+**Gemini CLI**
+
+```bash
+npx skills add firecrawl/firecrawl -a gemini-cli -g
+```
+
+**Cursor**
+
+```bash
+npx skills add firecrawl/firecrawl -a cursor -g
+```
+
+**VS Code (Copilot)**
+
+```bash
+npx skills add firecrawl/firecrawl -a github-copilot -g
+```
+
+**OpenCode**
+
+```bash
+npx skills add firecrawl/firecrawl -a opencode -g
+```
+
+**Cline**
+
+```bash
+npx skills add firecrawl/firecrawl -a cline -g
+```
+
+**Windsurf**
+
+```bash
+npx skills add firecrawl/firecrawl -a windsurf -g
+```
+
+**Zed**
+
+```bash
+npx skills add firecrawl/firecrawl -a zed -g
+```
+
+**Goose**
+
+```bash
+npx skills add firecrawl/firecrawl -a goose -g
+```
+
+**Kiro**
+
+```bash
+npx skills add firecrawl/firecrawl -a kiro-cli -g
+```
+
+**Roo Code**
+
+```bash
+npx skills add firecrawl/firecrawl -a roo -g
+```
+
+**DeepSeek Harness**
+
+```bash
+npx skills add firecrawl/firecrawl -a universal
+```
+
+</details>
+
+<a id="browser-use-mcp"></a>
+
+### AI browser agent for web tasks
+
+[browser-use/browser-use](https://github.com/browser-use/browser-use) — `Servidor MCP` · ★ 115k · Licença: MIT · Funciona com: Todos os clientes
+
+Controla um navegador Chrome real para completar tarefas como preencher formulários, extrair dados e fazer reservas.
+
+**Alternativas:**
+
+- [bytedance/UI-TARS-desktop/tree/main/packages/agent-infra/mcp-servers/browser](https://github.com/bytedance/UI-TARS-desktop/tree/main/packages/agent-infra/mcp-servers/browser) — Servidor de navegador do agent-infra UI-TARS (ByteDance) para o mesmo fluxo de clicar/digitar/extrair.
+- [AIHawk](https://github.com/feder-cr/AIHawk) (★ 32k) — Navega, clica, digita e lê páginas reais a partir de instruções em linguagem natural.
+- [Skyvern](https://github.com/Skyvern-AI/skyvern) (★ 23k) — Automação de navegador via nuvem; exige uma x-api-key.
+- [SeleniumBase MCP](https://github.com/seleniumbase/SeleniumBase) (★ 13k) — Framework de automação e testes de navegador baseado em Selenium, com modo CDP.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio browser-use -- uvx browser-use
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add browser-use -- uvx browser-use
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add browser-use uvx browser-use
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "browser-use": {
+      "command": "uvx",
+      "args": [
+        "browser-use"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "browser-use": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "browser-use"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "browser-use": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "browser-use"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "browser-use": {
+      "command": "uvx",
+      "args": [
+        "browser-use"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "browser-use": {
+      "command": "uvx",
+      "args": [
+        "browser-use"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "browser-use": {
+      "source": "custom",
+      "command": "uvx",
+      "args": [
+        "browser-use"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  browser-use:
+    type: stdio
+    cmd: uvx
+    args: ["browser-use"]
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "browser-use": {
+      "command": "uvx",
+      "args": [
+        "browser-use"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "browser-use": {
+      "command": "uvx",
+      "args": [
+        "browser-use"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `browser-use.cordis.yml  →  dsh web --patch ./browser-use.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-browser-use
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: browser-use
+        transport: stdio
+        command: uvx
+        args: ["browser-use"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="agent-browser"></a>
+
+### Agent browser automation CLI
+
+[vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) — `Agent Skills` · ★ 43k · Licença: Apache-2.0 · Funciona com: Todos os clientes
+
+CLI de automação de navegador feita para agentes de IA controlarem um navegador real: navegar, clicar, preencher formulários e ler páginas.
+
+**Alternativas:**
+
+- [browser-use/browser-harness](https://github.com/browser-use/browser-harness) (★ 18k) — Harness de navegador autorreparável que permite a um LLM completar tarefas abertas de navegação mesmo quando o layout da página muda.
+- [citrolabs/ego-lite](https://github.com/citrolabs/ego-lite) (★ 16k) — Permite que um agente compartilhe sua sessão de navegador já autenticada, em vez de automatizar um navegador novo e sem login.
+- [SawyerHood/dev-browser](https://github.com/SawyerHood/dev-browser) (★ 6.6k) — Claude Skill minimalista que apenas dá a um agente a capacidade de abrir e usar um navegador web.
+- [lackeyjb/playwright-skill](https://github.com/lackeyjb/playwright-skill) (★ 3.1k) — Skill de automação de navegador de propósito geral construída especificamente sobre o Playwright.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+npx skills add vercel-labs/agent-browser -a claude-code -g
+```
+
+**Codex CLI**
+
+```bash
+npx skills add vercel-labs/agent-browser -a codex -g
+```
+
+**Gemini CLI**
+
+```bash
+npx skills add vercel-labs/agent-browser -a gemini-cli -g
+```
+
+**Cursor**
+
+```bash
+npx skills add vercel-labs/agent-browser -a cursor -g
+```
+
+**VS Code (Copilot)**
+
+```bash
+npx skills add vercel-labs/agent-browser -a github-copilot -g
+```
+
+**OpenCode**
+
+```bash
+npx skills add vercel-labs/agent-browser -a opencode -g
+```
+
+**Cline**
+
+```bash
+npx skills add vercel-labs/agent-browser -a cline -g
+```
+
+**Windsurf**
+
+```bash
+npx skills add vercel-labs/agent-browser -a windsurf -g
+```
+
+**Zed**
+
+```bash
+npx skills add vercel-labs/agent-browser -a zed -g
+```
+
+**Goose**
+
+```bash
+npx skills add vercel-labs/agent-browser -a goose -g
+```
+
+**Kiro**
+
+```bash
+npx skills add vercel-labs/agent-browser -a kiro-cli -g
+```
+
+**Roo Code**
+
+```bash
+npx skills add vercel-labs/agent-browser -a roo -g
+```
+
+**DeepSeek Harness**
+
+```bash
+npx skills add vercel-labs/agent-browser -a universal
+```
+
+</details>
+
 <a id="firecrawl-mcp"></a>
 
 ### Firecrawl MCP
@@ -603,6 +982,100 @@ extensions:
 
 </details>
 
+<a id="skills"></a>
+
+### Browser-Act automation skills
+
+[browser-act/skills](https://github.com/browser-act/skills) — `Agent Skills` · ★ 6.0k · Licença: MIT · Funciona com: Todos os clientes
+
+Biblioteca de skills para um CLI de automação de navegador voltado a agentes de IA, com mais de 100 skills cobrindo bypass de anti-bot, handoff para humanos e extração de dados de sites específicos (e-commerce, viagens, redes sociais).
+
+**Alternativas:**
+
+- [D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling) (★ 82k) — Adiciona skill de framework Python de scraping adaptativo para extração em código, de requisições simples a crawls completos.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+npx skills add browser-act/skills -a claude-code -g
+```
+
+**Codex CLI**
+
+```bash
+npx skills add browser-act/skills -a codex -g
+```
+
+**Gemini CLI**
+
+```bash
+npx skills add browser-act/skills -a gemini-cli -g
+```
+
+**Cursor**
+
+```bash
+npx skills add browser-act/skills -a cursor -g
+```
+
+**VS Code (Copilot)**
+
+```bash
+npx skills add browser-act/skills -a github-copilot -g
+```
+
+**OpenCode**
+
+```bash
+npx skills add browser-act/skills -a opencode -g
+```
+
+**Cline**
+
+```bash
+npx skills add browser-act/skills -a cline -g
+```
+
+**Windsurf**
+
+```bash
+npx skills add browser-act/skills -a windsurf -g
+```
+
+**Zed**
+
+```bash
+npx skills add browser-act/skills -a zed -g
+```
+
+**Goose**
+
+```bash
+npx skills add browser-act/skills -a goose -g
+```
+
+**Kiro**
+
+```bash
+npx skills add browser-act/skills -a kiro-cli -g
+```
+
+**Roo Code**
+
+```bash
+npx skills add browser-act/skills -a roo -g
+```
+
+**DeepSeek Harness**
+
+```bash
+npx skills add browser-act/skills -a universal
+```
+
+</details>
+
 <a id="exa-mcp"></a>
 
 ### Exa MCP
@@ -765,6 +1238,318 @@ extensions:
 
 </details>
 
+<a id="browserbase-skills"></a>
+
+### Browserbase web access skills
+
+[browserbase/skills](https://github.com/browserbase/skills) — `Agent Skills` · ★ 3.7k · Licença: ver repo · Funciona com: Todos os clientes
+
+Coleção oficial da Browserbase de agent skills para acessar e interagir com a web por meio de sua infraestrutura de navegador hospedada.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+npx skills add browserbase/skills -a claude-code -g
+```
+
+**Codex CLI**
+
+```bash
+npx skills add browserbase/skills -a codex -g
+```
+
+**Gemini CLI**
+
+```bash
+npx skills add browserbase/skills -a gemini-cli -g
+```
+
+**Cursor**
+
+```bash
+npx skills add browserbase/skills -a cursor -g
+```
+
+**VS Code (Copilot)**
+
+```bash
+npx skills add browserbase/skills -a github-copilot -g
+```
+
+**OpenCode**
+
+```bash
+npx skills add browserbase/skills -a opencode -g
+```
+
+**Cline**
+
+```bash
+npx skills add browserbase/skills -a cline -g
+```
+
+**Windsurf**
+
+```bash
+npx skills add browserbase/skills -a windsurf -g
+```
+
+**Zed**
+
+```bash
+npx skills add browserbase/skills -a zed -g
+```
+
+**Goose**
+
+```bash
+npx skills add browserbase/skills -a goose -g
+```
+
+**Kiro**
+
+```bash
+npx skills add browserbase/skills -a kiro-cli -g
+```
+
+**Roo Code**
+
+```bash
+npx skills add browserbase/skills -a roo -g
+```
+
+**DeepSeek Harness**
+
+```bash
+npx skills add browserbase/skills -a universal
+```
+
+</details>
+
+<a id="brave-search-mcp-server"></a>
+
+### Web search for AI agents
+
+[brave/brave-search-mcp-server](https://github.com/brave/brave-search-mcp-server) — `Servidor MCP` · ★ 1.5k · Licença: MIT · Funciona com: Todos os clientes
+
+Servidor oficial do Brave Search: resultados web, imagens, vídeos, rich results e resumos de IA; exige BRAVE_API_KEY.
+
+**Alternativas:**
+
+- [tavily-ai/tavily-mcp](https://github.com/tavily-ai/tavily-mcp) (★ 2.4k) — Servidor de busca web voltado a IA; exige TAVILY_API_KEY.
+- [SearXNG Search](https://github.com/ihor-sokoliuk/mcp-searxng) (★ 1.2k) — Busca que preserva privacidade via instância própria do SearXNG, com paginação e leitura de URLs.
+- [spences10/mcp-omnisearch](https://github.com/spences10/mcp-omnisearch) (★ 350) — Combina múltiplos mecanismos de busca em um único servidor MCP.
+- [TinySuiteHQ/TinySearch](https://github.com/TinySuiteHQ/TinySearch) (★ 227) — Busca de descoberta autogerenciada para agentes; suporta cabeçalhos opcionais de exportação OpenTelemetry.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio brave-search-mcp-server --env BRAVE_API_KEY='<BRAVE_API_KEY>' -- npx -y @brave/brave-search-mcp-server
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add brave-search-mcp-server --env BRAVE_API_KEY='<BRAVE_API_KEY>' -- npx -y @brave/brave-search-mcp-server
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add -e BRAVE_API_KEY='<BRAVE_API_KEY>' brave-search-mcp-server npx -y @brave/brave-search-mcp-server
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "brave-search-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@brave/brave-search-mcp-server"
+      ],
+      "env": {
+        "BRAVE_API_KEY": "<BRAVE_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "brave-search-mcp-server": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@brave/brave-search-mcp-server"
+      ],
+      "env": {
+        "BRAVE_API_KEY": "<BRAVE_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "brave-search-mcp-server": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@brave/brave-search-mcp-server"
+      ],
+      "enabled": true,
+      "environment": {
+        "BRAVE_API_KEY": "<BRAVE_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "brave-search-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@brave/brave-search-mcp-server"
+      ],
+      "env": {
+        "BRAVE_API_KEY": "<BRAVE_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "brave-search-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@brave/brave-search-mcp-server"
+      ],
+      "env": {
+        "BRAVE_API_KEY": "<BRAVE_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "brave-search-mcp-server": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@brave/brave-search-mcp-server"
+      ],
+      "env": {
+        "BRAVE_API_KEY": "<BRAVE_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  brave-search-mcp-server:
+    type: stdio
+    cmd: npx
+    args: ["-y","@brave/brave-search-mcp-server"]
+    envs:
+      BRAVE_API_KEY: "<BRAVE_API_KEY>"
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "brave-search-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@brave/brave-search-mcp-server"
+      ],
+      "env": {
+        "BRAVE_API_KEY": "<BRAVE_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "brave-search-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@brave/brave-search-mcp-server"
+      ],
+      "env": {
+        "BRAVE_API_KEY": "<BRAVE_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `brave-search-mcp-server.cordis.yml  →  dsh web --patch ./brave-search-mcp-server.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-brave-search-mcp-server
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: brave-search-mcp-server
+        transport: stdio
+        command: npx
+        args: ["-y","@brave/brave-search-mcp-server"]
+        env: {"BRAVE_API_KEY":"<BRAVE_API_KEY>"}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
 <a id="dsh-modsearch"></a>
 
 ### Web search for text-only agents
@@ -887,194 +1672,6 @@ Controla o Jiey Browser a partir do DeepSeek Harness via MCP: navegar, capturar 
 
 ```bash
 dsh plugin --profile web add github:jiewaigongxing/dsh-jiey-browser
-```
-
-</details>
-
-<a id="browser-use-mcp"></a>
-
-### AI browser agent for web tasks
-
-[browser-use/browser-use](https://github.com/browser-use/browser-use) — `Servidor MCP` · Licença: MIT · Funciona com: Todos os clientes
-
-Controla um navegador Chrome real para completar tarefas como preencher formulários, extrair dados e fazer reservas.
-
-**Alternativas:**
-
-- [bytedance/UI-TARS-desktop/tree/main/packages/agent-infra/mcp-servers/browser](https://github.com/bytedance/UI-TARS-desktop/tree/main/packages/agent-infra/mcp-servers/browser) — Servidor de navegador do agent-infra UI-TARS (ByteDance) para o mesmo fluxo de clicar/digitar/extrair.
-- [AIHawk](https://github.com/feder-cr/AIHawk) — Navega, clica, digita e lê páginas reais a partir de instruções em linguagem natural.
-- [Skyvern](https://github.com/Skyvern-AI/skyvern) — Automação de navegador via nuvem; exige uma x-api-key.
-- [SeleniumBase MCP](https://github.com/seleniumbase/SeleniumBase) — Framework de automação e testes de navegador baseado em Selenium, com modo CDP.
-
-<details><summary>Instalar</summary>
-
-**Claude Code**
-
-```bash
-claude mcp add --transport stdio browser-use -- uvx browser-use
-```
-
-**Codex CLI**
-
-```bash
-codex mcp add browser-use -- uvx browser-use
-```
-
-**Gemini CLI**
-
-```bash
-gemini mcp add browser-use uvx browser-use
-```
-
-**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "browser-use": {
-      "command": "uvx",
-      "args": [
-        "browser-use"
-      ]
-    }
-  }
-}
-```
-
-**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
-
-```json
-{
-  "servers": {
-    "browser-use": {
-      "type": "stdio",
-      "command": "uvx",
-      "args": [
-        "browser-use"
-      ]
-    }
-  }
-}
-```
-
-**OpenCode** — Arquivo: `opencode.json`
-
-```json
-{
-  "$schema": "https://opencode.ai/config.json",
-  "mcp": {
-    "browser-use": {
-      "type": "local",
-      "command": [
-        "uvx",
-        "browser-use"
-      ],
-      "enabled": true
-    }
-  }
-}
-```
-
-**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
-
-```json
-{
-  "mcpServers": {
-    "browser-use": {
-      "command": "uvx",
-      "args": [
-        "browser-use"
-      ]
-    }
-  }
-}
-```
-
-**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
-
-```json
-{
-  "mcpServers": {
-    "browser-use": {
-      "command": "uvx",
-      "args": [
-        "browser-use"
-      ]
-    }
-  }
-}
-```
-
-**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
-
-```json
-{
-  "context_servers": {
-    "browser-use": {
-      "source": "custom",
-      "command": "uvx",
-      "args": [
-        "browser-use"
-      ]
-    }
-  }
-}
-```
-
-**Goose** — Arquivo: `~/.config/goose/config.yaml`
-
-```yaml
-extensions:
-  browser-use:
-    type: stdio
-    cmd: uvx
-    args: ["browser-use"]
-    enabled: true
-```
-
-**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "browser-use": {
-      "command": "uvx",
-      "args": [
-        "browser-use"
-      ]
-    }
-  }
-}
-```
-
-**Roo Code** — Arquivo: `.roo/mcp.json`
-
-```json
-{
-  "mcpServers": {
-    "browser-use": {
-      "command": "uvx",
-      "args": [
-        "browser-use"
-      ]
-    }
-  }
-}
-```
-
-**DeepSeek Harness** — Arquivo: `browser-use.cordis.yml  →  dsh web --patch ./browser-use.cordis.yml`
-
-```yaml
-- insert:
-    - id: mcp-browser-use
-      name: '@deepseek-ai/dsh-mcp-client'
-      config:
-        serverName: browser-use
-        transport: stdio
-        command: uvx
-        args: ["browser-use"]
-        env: {}
-        cwd: !!js process.cwd()
 ```
 
 </details>
@@ -1281,228 +1878,6 @@ Pré-requisito: `Requires uv (https://docs.astral.sh/uv/).`
         command: uvx
         args: ["mcp-server-fetch"]
         env: {}
-        cwd: !!js process.cwd()
-```
-
-</details>
-
-<a id="brave-search-mcp-server"></a>
-
-### Web search for AI agents
-
-[brave/brave-search-mcp-server](https://github.com/brave/brave-search-mcp-server) — `Servidor MCP` · Licença: MIT · Funciona com: Todos os clientes
-
-Servidor oficial do Brave Search: resultados web, imagens, vídeos, rich results e resumos de IA; exige BRAVE_API_KEY.
-
-**Alternativas:**
-
-- [tavily-ai/tavily-mcp](https://github.com/tavily-ai/tavily-mcp) — Servidor de busca web voltado a IA; exige TAVILY_API_KEY.
-- [SearXNG Search](https://github.com/ihor-sokoliuk/mcp-searxng) — Busca que preserva privacidade via instância própria do SearXNG, com paginação e leitura de URLs.
-- [spences10/mcp-omnisearch](https://github.com/spences10/mcp-omnisearch) — Combina múltiplos mecanismos de busca em um único servidor MCP.
-- [TinySuiteHQ/TinySearch](https://github.com/TinySuiteHQ/TinySearch) — Busca de descoberta autogerenciada para agentes; suporta cabeçalhos opcionais de exportação OpenTelemetry.
-
-<details><summary>Instalar</summary>
-
-**Claude Code**
-
-```bash
-claude mcp add --transport stdio brave-search-mcp-server --env BRAVE_API_KEY='<BRAVE_API_KEY>' -- npx -y @brave/brave-search-mcp-server
-```
-
-**Codex CLI**
-
-```bash
-codex mcp add brave-search-mcp-server --env BRAVE_API_KEY='<BRAVE_API_KEY>' -- npx -y @brave/brave-search-mcp-server
-```
-
-**Gemini CLI**
-
-```bash
-gemini mcp add -e BRAVE_API_KEY='<BRAVE_API_KEY>' brave-search-mcp-server npx -y @brave/brave-search-mcp-server
-```
-
-**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "brave-search-mcp-server": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@brave/brave-search-mcp-server"
-      ],
-      "env": {
-        "BRAVE_API_KEY": "<BRAVE_API_KEY>"
-      }
-    }
-  }
-}
-```
-
-**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
-
-```json
-{
-  "servers": {
-    "brave-search-mcp-server": {
-      "type": "stdio",
-      "command": "npx",
-      "args": [
-        "-y",
-        "@brave/brave-search-mcp-server"
-      ],
-      "env": {
-        "BRAVE_API_KEY": "<BRAVE_API_KEY>"
-      }
-    }
-  }
-}
-```
-
-**OpenCode** — Arquivo: `opencode.json`
-
-```json
-{
-  "$schema": "https://opencode.ai/config.json",
-  "mcp": {
-    "brave-search-mcp-server": {
-      "type": "local",
-      "command": [
-        "npx",
-        "-y",
-        "@brave/brave-search-mcp-server"
-      ],
-      "enabled": true,
-      "environment": {
-        "BRAVE_API_KEY": "<BRAVE_API_KEY>"
-      }
-    }
-  }
-}
-```
-
-**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
-
-```json
-{
-  "mcpServers": {
-    "brave-search-mcp-server": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@brave/brave-search-mcp-server"
-      ],
-      "env": {
-        "BRAVE_API_KEY": "<BRAVE_API_KEY>"
-      }
-    }
-  }
-}
-```
-
-**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
-
-```json
-{
-  "mcpServers": {
-    "brave-search-mcp-server": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@brave/brave-search-mcp-server"
-      ],
-      "env": {
-        "BRAVE_API_KEY": "<BRAVE_API_KEY>"
-      }
-    }
-  }
-}
-```
-
-**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
-
-```json
-{
-  "context_servers": {
-    "brave-search-mcp-server": {
-      "source": "custom",
-      "command": "npx",
-      "args": [
-        "-y",
-        "@brave/brave-search-mcp-server"
-      ],
-      "env": {
-        "BRAVE_API_KEY": "<BRAVE_API_KEY>"
-      }
-    }
-  }
-}
-```
-
-**Goose** — Arquivo: `~/.config/goose/config.yaml`
-
-```yaml
-extensions:
-  brave-search-mcp-server:
-    type: stdio
-    cmd: npx
-    args: ["-y","@brave/brave-search-mcp-server"]
-    envs:
-      BRAVE_API_KEY: "<BRAVE_API_KEY>"
-    enabled: true
-```
-
-**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "brave-search-mcp-server": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@brave/brave-search-mcp-server"
-      ],
-      "env": {
-        "BRAVE_API_KEY": "<BRAVE_API_KEY>"
-      }
-    }
-  }
-}
-```
-
-**Roo Code** — Arquivo: `.roo/mcp.json`
-
-```json
-{
-  "mcpServers": {
-    "brave-search-mcp-server": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@brave/brave-search-mcp-server"
-      ],
-      "env": {
-        "BRAVE_API_KEY": "<BRAVE_API_KEY>"
-      }
-    }
-  }
-}
-```
-
-**DeepSeek Harness** — Arquivo: `brave-search-mcp-server.cordis.yml  →  dsh web --patch ./brave-search-mcp-server.cordis.yml`
-
-```yaml
-- insert:
-    - id: mcp-brave-search-mcp-server
-      name: '@deepseek-ai/dsh-mcp-client'
-      config:
-        serverName: brave-search-mcp-server
-        transport: stdio
-        command: npx
-        args: ["-y","@brave/brave-search-mcp-server"]
-        env: {"BRAVE_API_KEY":"<BRAVE_API_KEY>"}
         cwd: !!js process.cwd()
 ```
 

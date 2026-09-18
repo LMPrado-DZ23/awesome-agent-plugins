@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: generative-media-skills
+name: SamurAIGPT/Generative-Media-Skills
+title: muapi generative media skills
+url: https://github.com/SamurAIGPT/Generative-Media-Skills
+type: skill-pack
+category: multimodal
+license: MIT
+tags:
+  - generative-media
+  - video-generation
+  - image-generation
+description:
+  en: >-
+    73 skills for high-quality multi-modal image, video and audio generation through the muapi API, covering ad
+    creatives, social video, product ads and cinematic direction.
+  pt: >-
+    73 skills para geração multimodal de imagem, vídeo e áudio de alta qualidade via API muapi, cobrindo criativos de
+    anúncio, vídeo social, anúncios de produto e direção cinematográfica.
+skill:
+  source: SamurAIGPT/Generative-Media-Skills
+origin:
+  list: github-discovery
+  ref: skill-pack

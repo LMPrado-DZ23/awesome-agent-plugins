@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: terraform-skill
+name: antonbabenko/terraform-skill
+title: Terraform & OpenTofu skill
+url: https://github.com/antonbabenko/terraform-skill
+type: skill-pack
+category: cloud
+license: null
+tags:
+  - terraform
+  - infrastructure-as-code
+  - devops
+description:
+  en: >-
+    Skill from a well-known Terraform module maintainer covering testing, module structure, CI/CD and production
+    infrastructure-as-code patterns for Terraform and OpenTofu.
+  pt: >-
+    Skill de um mantenedor conhecido de módulos Terraform cobrindo testes, estrutura de módulos, CI/CD e padrões de
+    infraestrutura como código em produção para Terraform e OpenTofu.
+skill:
+  source: antonbabenko/terraform-skill
+origin:
+  list: github-discovery
+  ref: skill-pack

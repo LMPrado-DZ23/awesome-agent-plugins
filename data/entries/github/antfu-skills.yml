@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: antfu-skills
+name: antfu/skills
+title: Anthony Fu's JS ecosystem skills
+url: https://github.com/antfu/skills
+type: skill-pack
+category: dev
+license: MIT
+tags:
+  - javascript
+  - vue
+  - tooling
+description:
+  en: >-
+    Curated skill collection from a well-known open-source maintainer covering Vite, Vue, Nuxt, Pinia, Vitest, VueUse,
+    UnoCSS, pnpm and other modern JS tooling.
+  pt: >-
+    Coleção curada de skills de um mantenedor open-source conhecido, cobrindo Vite, Vue, Nuxt, Pinia, Vitest, VueUse,
+    UnoCSS, pnpm e outras ferramentas JS modernas.
+skill:
+  source: antfu/skills
+origin:
+  list: github-discovery
+  ref: skill-pack

@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: paper2code
+name: PrathamLearnsToCode/paper2code
+title: Paper-to-code skill
+url: https://github.com/PrathamLearnsToCode/paper2code
+type: skill-pack
+category: dev
+license: MIT
+tags:
+  - research
+  - code-generation
+  - arxiv
+description:
+  en: Focused agent skill that turns any arXiv paper into a working code implementation.
+  pt: Skill de agente focada em transformar qualquer artigo do arXiv em uma implementação de código funcional.
+skill:
+  source: PrathamLearnsToCode/paper2code
+origin:
+  list: github-discovery
+  ref: skill-pack

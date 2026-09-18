@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: cli
+name: larksuite/cli
+title: Lark/Feishu official CLI skills
+url: https://github.com/larksuite/cli
+type: skill-pack
+category: integrations
+license: MIT
+tags:
+  - lark
+  - feishu
+  - enterprise-integration
+description:
+  en: >-
+    Official Lark/Feishu CLI and skill set covering messenger, docs, base, attendance, approval and other core Lark
+    business domains, built for humans and AI agents alike.
+  pt: >-
+    CLI e conjunto de skills oficiais do Lark/Feishu cobrindo mensageria, documentos, base, ponto, aprovações e outros
+    domínios centrais do Lark, feito tanto para humanos quanto para agentes de IA.
+skill:
+  source: larksuite/cli
+origin:
+  list: github-discovery
+  ref: skill-pack

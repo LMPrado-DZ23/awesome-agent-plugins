@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: vibe-coding-cn
+name: tradecatlabs/vibe-coding-cn
+title: Web3 smart contract security skills
+url: https://github.com/tradecatlabs/vibe-coding-cn
+type: skill-pack
+category: security
+license: MIT
+tags:
+  - web3
+  - smart-contracts
+  - security-audit
+description:
+  en: >-
+    Skill set for analyzing Ethereum and other smart contract vulnerabilities, auditing Foundry-based contracts, and
+    recognizing common Web3 bug classes.
+  pt: >-
+    Conjunto de skills para analisar vulnerabilidades de smart contracts Ethereum e outros, auditar contratos baseados
+    em Foundry e reconhecer classes comuns de bugs em Web3.
+skill:
+  source: tradecatlabs/vibe-coding-cn
+origin:
+  list: github-discovery
+  ref: skill-pack

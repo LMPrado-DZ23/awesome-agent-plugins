@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: hack-skills
+name: yaklang/hack-skills
+title: Practical hacker skills library
+url: https://github.com/yaklang/hack-skills
+type: skill-pack
+category: security
+license: MIT
+tags:
+  - security
+  - penetration-testing
+  - red-team
+  - authorized-use
+description:
+  en: >-
+    Over a hundred offensive-security skills (web, network, Active Directory, mobile, cloud) for AI-assisted penetration
+    testing. For authorized security testing only.
+  pt: >-
+    Mais de cem skills de segurança ofensiva (web, rede, Active Directory, mobile, nuvem) para pentest assistido por IA.
+    Apenas para testes de segurança autorizados.
+skill:
+  source: yaklang/hack-skills
+alternatives:
+  - name: SnailSploit/Claude-Red
+    url: https://github.com/SnailSploit/Claude-Red
+    adds:
+      en: "Curated red-team skill library organized by attack surface: AD, API, JWT, OAuth, CI/CD, cloud."
+      pt: "Biblioteca de skills de red team organizada por superfície de ataque: AD, API, JWT, OAuth, CI/CD, nuvem."
+  - name: zhaoxuya520/reverse-skill
+    url: https://github.com/zhaoxuya520/reverse-skill
+    adds:
+      en: Adds AI-routed toolchain bootstrapping for reverse engineering and authorized pentesting.
+      pt: Adiciona bootstrapping de ferramentas roteado por IA para engenharia reversa e pentest autorizado.
+  - name: Netw0rkNoob/VulnClaw
+    url: https://github.com/Netw0rkNoob/VulnClaw
+    adds:
+      en: Adds an end-to-end recon-to-report pipeline driven by natural language.
+      pt: Adiciona um pipeline completo de reconhecimento a relatório, guiado por linguagem natural.
+origin:
+  list: github-discovery
+  ref: skill-pack

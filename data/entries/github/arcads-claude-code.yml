@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: arcads-claude-code
+name: krusemediallc/arcads-claude-code
+title: Arcads ad-video generation skills
+url: https://github.com/krusemediallc/arcads-claude-code
+type: skill-pack
+category: multimodal
+license: MIT
+tags:
+  - advertising
+  - video-generation
+  - marketing
+description:
+  en: >-
+    Official Arcads API skill pack for AI-generated ad creatives: cloning ads, building thumbnails, image ads and short
+    marketing videos from a prompting library.
+  pt: >-
+    Pacote oficial de skills da API Arcads para criativos de anúncio gerados por IA: clonar anúncios, criar thumbnails,
+    anúncios em imagem e vídeos curtos de marketing a partir de uma biblioteca de prompts.
+skill:
+  source: krusemediallc/arcads-claude-code
+origin:
+  list: github-discovery
+  ref: skill-pack

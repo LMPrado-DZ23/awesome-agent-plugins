@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: firecrawl
+name: firecrawl/firecrawl
+title: Firecrawl web data skills
+url: https://github.com/firecrawl/firecrawl
+type: skill-pack
+category: browser
+license: AGPL-3.0
+tags:
+  - web-scraping
+  - search
+  - api-integration
+  - browser-automation
+description:
+  en: >-
+    Firecrawl's official skills for its web scraping/search API: onboarding, single-page scrape, multi-page search, and
+    browser interaction, for integrating live web data into agent code.
+  pt: >-
+    Skills oficiais do Firecrawl para sua API de scraping e busca na web: onboarding, scraping de página única, busca
+    multi-página e interação no navegador, para integrar dados da web ao vivo em agentes.
+skill:
+  source: firecrawl/firecrawl
+origin:
+  list: github-discovery
+  ref: skill-pack
