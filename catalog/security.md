@@ -21,7 +21,7 @@
 
 ### Read-only relay and config security audit
 
-[toby-bridges/api-relay-audit](https://github.com/toby-bridges/api-relay-audit) — `Native plugin` · ★ 838 · License: AGPL-3.0 · Works with: DeepSeek Harness only
+[toby-bridges/api-relay-audit](https://github.com/toby-bridges/api-relay-audit) — `Native plugin` · ★ 839 · License: AGPL-3.0 · Works with: DeepSeek Harness only
 
 Runs local security audits of AI API relays and LLM proxies, producing Markdown reports on prompt injection, model substitution signals, tool-call rewriting, error leakage, stream integrity, and Web3 risks.
 

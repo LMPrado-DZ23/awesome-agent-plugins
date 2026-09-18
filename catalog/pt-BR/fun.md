@@ -14,7 +14,7 @@
 
 ### Parody ad banners
 
-[Nagi-ovo/dsh-ads](https://github.com/Nagi-ovo/dsh-ads) — `Plugin nativo` · ★ 627 · Licença: BSD-3-Clause · Funciona com: DeepSeek Harness apenas
+[Nagi-ovo/dsh-ads](https://github.com/Nagi-ovo/dsh-ads) — `Plugin nativo` · ★ 628 · Licença: BSD-3-Clause · Funciona com: DeepSeek Harness apenas
 
 Anúncios paródia fictícios no estilo da web chinesa de 2005: banners na barra lateral, feeds no chat, pop-ups nos cantos e um botão de fechar com área de clique menor do que parece.
 
