@@ -1,9 +1,9 @@
 {
- "checked_at": "2026-09-18",
+ "checked_at": "2026-09-21",
  "repos": {
   "01Virex/dsh-status-rotator": {
-   "stars": 86,
-   "pushed_at": "2026-09-18",
+   "stars": 87,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
@@ -20,7 +20,7 @@
    "license": "MIT"
   },
   "0x0funky/agent-sprite-forge": {
-   "stars": 4139,
+   "stars": 4158,
    "pushed_at": "2026-07-12",
    "archived": false,
    "license": "MIT"
@@ -33,7 +33,7 @@
   },
   "1624318455/dsh-plugin-tts": {
    "stars": 19,
-   "pushed_at": "2026-09-17",
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
@@ -62,8 +62,8 @@
    "license": "MIT"
   },
   "2672243194/dsh-read-url": {
-   "stars": 18,
-   "pushed_at": "2026-09-06",
+   "stars": 19,
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "MIT"
   },
@@ -86,14 +86,14 @@
    "license": "MIT"
   },
   "54yyyu/zotero-mcp": {
-   "stars": 5080,
+   "stars": 5100,
    "pushed_at": "2026-09-15",
    "archived": false,
    "license": "MIT"
   },
   "6Mikao9/dsh-wsl-workspace": {
-   "stars": 50,
-   "pushed_at": "2026-09-11",
+   "stars": 51,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
@@ -104,25 +104,25 @@
    "license": "MIT"
   },
   "8beeeaaat/touchdesigner-mcp": {
-   "stars": 539,
-   "pushed_at": "2026-09-09",
+   "stars": 544,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "9087/dsh-diff-approval": {
-   "stars": 6,
-   "pushed_at": "2026-09-18",
+   "stars": 7,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "A3Boy/dsh-web-tools": {
-   "stars": 28,
+   "stars": 26,
    "pushed_at": "2026-09-03",
    "archived": false,
    "license": "MIT"
   },
   "a5c-ai/babysitter": {
-   "stars": 1800,
+   "stars": 1806,
    "pushed_at": "2026-09-16",
    "archived": false,
    "license": "MIT"
@@ -134,20 +134,20 @@
    "license": "MIT"
   },
   "A9T9/RPA": {
-   "stars": 2023,
+   "stars": 2026,
    "pushed_at": "2026-08-09",
    "archived": false,
    "license": "NOASSERTION"
   },
   "aantthony/equation.io": {
-   "stars": 405,
-   "pushed_at": "2026-09-18",
+   "stars": 406,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "aaron-he-zhu/aaron-marketing-skills": {
-   "stars": 2800,
-   "pushed_at": "2026-09-18",
+   "stars": 2811,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
@@ -164,115 +164,115 @@
    "license": "MIT"
   },
   "abhigyanpatwari/GitNexus": {
-   "stars": 47436,
-   "pushed_at": "2026-09-18",
+   "stars": 47486,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "NOASSERTION"
   },
   "AcidGr/dsh-web-lan-access": {
-   "stars": 31,
+   "stars": 33,
    "pushed_at": "2026-09-10",
    "archived": false,
    "license": "MIT"
   },
   "AcidGr/dsh-web-mobile-fix": {
-   "stars": 8,
+   "stars": 9,
    "pushed_at": "2026-09-11",
    "archived": false,
    "license": "MIT"
   },
   "activeing123/mcptoon": {
    "stars": 202,
-   "pushed_at": "2026-09-18",
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "Apache-2.0"
   },
   "addyosmani/agent-skills": {
-   "stars": 96376,
-   "pushed_at": "2026-09-18",
+   "stars": 97990,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "addyosmani/web-quality-skills": {
-   "stars": 2803,
+   "stars": 2815,
    "pushed_at": "2026-08-24",
    "archived": false,
    "license": "MIT"
   },
   "adoresever/graph-memory": {
-   "stars": 626,
+   "stars": 627,
    "pushed_at": "2026-09-09",
    "archived": false,
    "license": "MIT"
   },
   "ADWMC/helm-d": {
-   "stars": 58,
-   "pushed_at": "2026-09-15",
+   "stars": 71,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "affaan-m/ECC": {
-   "stars": 262019,
-   "pushed_at": "2026-09-18",
+   "stars": 264350,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "AgentConnect/dsh-awiki": {
    "stars": 17,
-   "pushed_at": "2026-09-18",
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "agenticmail/agenticmail": {
-   "stars": 224,
+   "stars": 225,
    "pushed_at": "2026-09-13",
    "archived": false,
    "license": "MIT"
   },
   "Agents365-ai/drawio-skill": {
-   "stars": 9457,
+   "stars": 9548,
    "pushed_at": "2026-09-14",
    "archived": false,
    "license": "MIT"
   },
   "agentskills/agentskills": {
-   "stars": 25499,
+   "stars": 25559,
    "pushed_at": "2026-08-09",
    "archived": false,
    "license": "Apache-2.0"
   },
   "agentsmd/agents.md": {
-   "stars": 24446,
+   "stars": 24527,
    "pushed_at": "2026-09-10",
    "archived": false,
    "license": "MIT"
   },
   "AgriciDaniel/claude-ads": {
-   "stars": 9397,
+   "stars": 9450,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "MIT"
   },
   "AgriciDaniel/claude-blog": {
-   "stars": 2185,
+   "stars": 2215,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "MIT"
   },
   "AgriciDaniel/claude-obsidian": {
-   "stars": 15072,
+   "stars": 15118,
    "pushed_at": "2026-09-10",
    "archived": false,
    "license": "MIT"
   },
   "AgriciDaniel/claude-seo": {
-   "stars": 17165,
+   "stars": 17343,
    "pushed_at": "2026-09-11",
    "archived": false,
    "license": "MIT"
   },
   "ai-dashboad/flutter-skill": {
-   "stars": 376,
+   "stars": 375,
    "pushed_at": "2026-09-01",
    "archived": false,
    "license": "MIT"
@@ -290,26 +290,26 @@
    "license": "MIT"
   },
   "Aik358/dsh-auto-memory": {
-   "stars": 71,
-   "pushed_at": "2026-09-18",
+   "stars": 74,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "BSD-3-Clause"
   },
   "aiming-lab/AutoResearchClaw": {
-   "stars": 14451,
+   "stars": 14485,
    "pushed_at": "2026-08-19",
    "archived": false,
    "license": "MIT"
   },
   "aipoch/medical-research-skills": {
-   "stars": 1888,
+   "stars": 1902,
    "pushed_at": "2026-09-17",
    "archived": false,
    "license": "MIT"
   },
   "Airmetro/dsh-update-checker": {
    "stars": 17,
-   "pushed_at": "2026-09-17",
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
@@ -332,31 +332,31 @@
    "license": "MIT"
   },
   "alchaincyf/huashu-skills": {
-   "stars": 1565,
+   "stars": 1587,
    "pushed_at": "2026-09-06",
    "archived": false,
    "license": null
   },
   "alchaincyf/nuwa-skill": {
-   "stars": 32876,
+   "stars": 33035,
    "pushed_at": "2026-08-25",
    "archived": false,
    "license": "MIT"
   },
   "alibaba/open-code-review": {
-   "stars": 36614,
-   "pushed_at": "2026-09-18",
+   "stars": 38918,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "alirezarezvani/claude-skills": {
-   "stars": 26126,
+   "stars": 26205,
    "pushed_at": "2026-08-30",
    "archived": false,
    "license": "MIT"
   },
   "alisaitteke/photoshop-mcp": {
-   "stars": 482,
+   "stars": 491,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "MIT"
@@ -368,38 +368,38 @@
    "license": "MIT"
   },
   "alvinunreal/openpets": {
-   "stars": 1211,
-   "pushed_at": "2026-09-18",
+   "stars": 1218,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "amElnagdy/delegate-skills": {
-   "stars": 2096,
-   "pushed_at": "2026-09-16",
+   "stars": 2136,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "AminBlg/SimpleEnglish": {
-   "stars": 3435,
+   "stars": 3459,
    "pushed_at": "2026-09-16",
    "archived": false,
    "license": "MIT"
   },
   "amlyczz/dsh-agy-link": {
-   "stars": 70,
-   "pushed_at": "2026-09-18",
+   "stars": 75,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "anbeime/skill": {
-   "stars": 6925,
-   "pushed_at": "2026-09-18",
+   "stars": 7044,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": null
   },
   "andrewdryga/emisar": {
-   "stars": 334,
-   "pushed_at": "2026-09-18",
+   "stars": 336,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "NOASSERTION"
   },
@@ -416,13 +416,13 @@
    "license": "MIT"
   },
   "Anionex/dsh-turn-rewind": {
-   "stars": 115,
+   "stars": 117,
    "pushed_at": "2026-09-14",
    "archived": false,
    "license": "BSD-3-Clause"
   },
   "Anionex/dsh-vision-toolkit": {
-   "stars": 882,
+   "stars": 883,
    "pushed_at": "2026-09-16",
    "archived": false,
    "license": "MIT"
@@ -434,85 +434,85 @@
    "license": "MIT"
   },
   "anousss007/blatui": {
-   "stars": 251,
+   "stars": 252,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "NOASSERTION"
   },
   "antfu/skills": {
-   "stars": 5895,
+   "stars": 5905,
    "pushed_at": "2026-06-23",
    "archived": false,
    "license": "MIT"
   },
   "anthropics/claude-plugins-community": {
-   "stars": 4230,
+   "stars": 4335,
    "pushed_at": "2026-08-25",
    "archived": false,
    "license": "Apache-2.0"
   },
   "anthropics/claude-plugins-official": {
-   "stars": 36480,
-   "pushed_at": "2026-09-18",
+   "stars": 36580,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "anthropics/financial-services": {
-   "stars": 34908,
+   "stars": 35629,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "Apache-2.0"
   },
   "anthropics/skills": {
-   "stars": 177040,
+   "stars": 177415,
    "pushed_at": "2026-09-10",
    "archived": false,
    "license": null
   },
   "antonbabenko/terraform-skill": {
-   "stars": 2354,
+   "stars": 2369,
    "pushed_at": "2026-07-03",
    "archived": false,
    "license": "NOASSERTION"
   },
   "antvis/mcp-server-chart": {
-   "stars": 4370,
+   "stars": 4377,
    "pushed_at": "2026-08-27",
    "archived": false,
    "license": "MIT"
   },
   "anweat/dsh-browser": {
-   "stars": 21,
-   "pushed_at": "2026-09-13",
+   "stars": 22,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "anweat/dsh-web-search-pro": {
-   "stars": 67,
-   "pushed_at": "2026-09-13",
+   "stars": 69,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "AnxForever/stylekit": {
-   "stars": 514,
-   "pushed_at": "2026-09-17",
+   "stars": 524,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "anyproto/anytype-mcp": {
    "stars": 525,
-   "pushed_at": "2026-09-18",
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "MIT"
   },
   "aosi526/dsh-workbuddy-xdpool": {
-   "stars": 9,
-   "pushed_at": "2026-09-18",
+   "stars": 13,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "apify/agent-skills": {
-   "stars": 2387,
+   "stars": 2394,
    "pushed_at": "2026-09-17",
    "archived": false,
    "license": null
@@ -530,38 +530,38 @@
    "license": "MIT"
   },
   "appeeky/aso-skills": {
-   "stars": 2016,
+   "stars": 2080,
    "pushed_at": "2026-08-22",
    "archived": false,
    "license": "MIT"
   },
   "Appllama/appllama-skills": {
-   "stars": 1862,
+   "stars": 1926,
    "pushed_at": "2026-09-06",
    "archived": false,
    "license": "MIT"
   },
   "Ar9av/obsidian-wiki": {
-   "stars": 3429,
-   "pushed_at": "2026-09-18",
+   "stars": 3442,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "ArcadeData/arcadedb": {
-   "stars": 1157,
-   "pushed_at": "2026-09-18",
+   "stars": 1158,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "architecture-decision-record/architecture-decision-record": {
-   "stars": 16960,
+   "stars": 16981,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "NOASSERTION"
   },
   "Areium/dsh-fail-logger": {
-   "stars": 9,
-   "pushed_at": "2026-09-01",
+   "stars": 10,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
@@ -572,86 +572,86 @@
    "license": "MIT"
   },
   "artokun/comfyui-mcp": {
-   "stars": 756,
-   "pushed_at": "2026-09-14",
+   "stars": 759,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "ArtyMcLabin/Gmail-MCP-Server": {
-   "stars": 238,
+   "stars": 240,
    "pushed_at": "2026-09-11",
    "archived": false,
    "license": "MIT"
   },
   "Ataraxy-Labs/sem": {
-   "stars": 3353,
-   "pushed_at": "2026-09-13",
+   "stars": 3357,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "atilaahmettaner/tradingview-mcp": {
-   "stars": 4572,
+   "stars": 4601,
    "pushed_at": "2026-09-01",
    "archived": false,
    "license": "MIT"
   },
   "atlassian/atlassian-mcp-server": {
-   "stars": 1047,
+   "stars": 1052,
    "pushed_at": "2026-09-15",
    "archived": false,
    "license": "Apache-2.0"
   },
   "Atomic-Mail/atomic-mail-agentic": {
-   "stars": 260,
-   "pushed_at": "2026-09-18",
+   "stars": 261,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "automazeio/ccpm": {
-   "stars": 8380,
+   "stars": 8382,
    "pushed_at": "2026-03-18",
    "archived": false,
    "license": "MIT"
   },
   "AvdLee/Swift-Concurrency-Agent-Skill": {
-   "stars": 1655,
+   "stars": 1657,
    "pushed_at": "2026-09-14",
    "archived": false,
    "license": "MIT"
   },
   "AvdLee/SwiftUI-Agent-Skill": {
-   "stars": 3574,
+   "stars": 3591,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "MIT"
   },
   "awesome-dsh-plugin/awesome-dsh-plugin": {
-   "stars": 16183,
-   "pushed_at": "2026-09-18",
+   "stars": 16492,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "CC0-1.0"
   },
   "awesome-dsh-plugin/dsh-find-plugin": {
-   "stars": 139,
+   "stars": 141,
    "pushed_at": "2026-08-19",
    "archived": false,
    "license": "MIT"
   },
   "aws/agent-toolkit-for-aws": {
-   "stars": 2672,
-   "pushed_at": "2026-09-18",
+   "stars": 2688,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "awslabs/mcp": {
-   "stars": 9710,
-   "pushed_at": "2026-09-18",
+   "stars": 9716,
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "Apache-2.0"
   },
   "ayghri/i-have-adhd": {
-   "stars": 48008,
-   "pushed_at": "2026-09-16",
+   "stars": 49573,
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "MIT"
   },
@@ -662,44 +662,44 @@
    "license": "MIT"
   },
   "basicmachines-co/basic-memory": {
-   "stars": 3990,
+   "stars": 4015,
    "pushed_at": "2026-09-16",
    "archived": false,
    "license": "AGPL-3.0"
   },
   "Beever-AI/beever-atlas": {
-   "stars": 444,
+   "stars": 446,
    "pushed_at": "2026-09-10",
    "archived": false,
    "license": "Apache-2.0"
   },
   "bergside/awesome-design-skills": {
-   "stars": 2842,
+   "stars": 2874,
    "pushed_at": "2026-06-28",
    "archived": false,
    "license": "MIT"
   },
   "bergside/typeui": {
-   "stars": 1951,
+   "stars": 1955,
    "pushed_at": "2026-07-04",
    "archived": false,
    "license": "NOASSERTION"
   },
   "BetterDB-inc/monitor": {
-   "stars": 1298,
-   "pushed_at": "2026-09-18",
+   "stars": 1299,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "NOASSERTION"
   },
   "bgauryy/octocode-mcp": {
-   "stars": 941,
+   "stars": 942,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "MIT"
   },
   "bibinprathap/VeritasGraph": {
-   "stars": 323,
-   "pushed_at": "2026-09-18",
+   "stars": 324,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": null
   },
@@ -716,80 +716,80 @@
    "license": "MIT"
   },
   "blader/humanizer": {
-   "stars": 49923,
+   "stars": 50890,
    "pushed_at": "2026-09-06",
    "archived": false,
    "license": "MIT"
   },
   "Blank-not-black/dsh-Remote": {
-   "stars": 35,
-   "pushed_at": "2026-09-16",
+   "stars": 38,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "blazickjp/arxiv-mcp-server": {
-   "stars": 3163,
+   "stars": 3170,
    "pushed_at": "2026-08-26",
    "archived": false,
    "license": "Apache-2.0"
   },
   "blitzdotdev/blitz-mac": {
-   "stars": 1748,
+   "stars": 1747,
    "pushed_at": "2026-07-14",
    "archived": false,
    "license": "Apache-2.0"
   },
   "bmad-code-org/BMAD-METHOD": {
-   "stars": 53195,
-   "pushed_at": "2026-09-18",
+   "stars": 53303,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "NOASSERTION"
   },
   "bowenliang123/dsh-context": {
-   "stars": 1435,
-   "pushed_at": "2026-09-18",
+   "stars": 1468,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "bradautomates/claude-video": {
-   "stars": 17366,
+   "stars": 17478,
    "pushed_at": "2026-07-01",
    "archived": false,
    "license": "MIT"
   },
   "brave/brave-search-mcp-server": {
-   "stars": 1452,
+   "stars": 1456,
    "pushed_at": "2026-09-17",
    "archived": false,
    "license": "MIT"
   },
   "browser-act/skills": {
-   "stars": 5955,
+   "stars": 5969,
    "pushed_at": "2026-08-24",
    "archived": false,
    "license": "MIT"
   },
   "browser-use/browser-harness": {
-   "stars": 17709,
+   "stars": 17934,
    "pushed_at": "2026-09-12",
    "archived": false,
    "license": "MIT"
   },
   "browser-use/browser-use": {
-   "stars": 115159,
+   "stars": 115703,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "MIT"
   },
   "browserbase/skills": {
-   "stars": 3722,
+   "stars": 3724,
    "pushed_at": "2026-09-09",
    "archived": false,
    "license": null
   },
   "brycewang-stanford/Auto-Empirical-Research-Skills": {
-   "stars": 3870,
-   "pushed_at": "2026-09-14",
+   "stars": 3908,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "NOASSERTION"
   },
@@ -800,122 +800,122 @@
    "license": "MIT"
   },
   "btspoony/mstar-harness": {
-   "stars": 60,
-   "pushed_at": "2026-09-18",
+   "stars": 61,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "BuilderIO/agent-native": {
-   "stars": 4807,
-   "pushed_at": "2026-09-18",
+   "stars": 5596,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": null
   },
   "BuilderIO/skills": {
-   "stars": 4291,
-   "pushed_at": "2026-09-18",
+   "stars": 4339,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "burningion/video-editing-mcp": {
-   "stars": 288,
+   "stars": 289,
    "pushed_at": "2025-10-09",
    "archived": false,
    "license": null
   },
   "butterbase-ai/butterbase-oss": {
-   "stars": 3569,
-   "pushed_at": "2026-09-18",
+   "stars": 3628,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "Buzzso/dsh-sev": {
-   "stars": 137,
+   "stars": 136,
    "pushed_at": "2026-08-27",
    "archived": false,
    "license": "MIT"
   },
   "bvisible/mcp-ssh-manager": {
-   "stars": 483,
+   "stars": 484,
    "pushed_at": "2026-09-13",
    "archived": false,
    "license": "MIT"
   },
   "bx33661/Wireshark-MCP": {
-   "stars": 256,
+   "stars": 259,
    "pushed_at": "2026-09-05",
    "archived": false,
    "license": "MIT"
   },
   "bytebase/dbhub": {
-   "stars": 3537,
-   "pushed_at": "2026-09-18",
+   "stars": 3546,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "bytedance/UI-TARS-desktop": {
-   "stars": 39043,
+   "stars": 39066,
    "pushed_at": "2026-09-11",
    "archived": false,
    "license": "Apache-2.0"
   },
   "cablate/mcp-google-map": {
-   "stars": 459,
+   "stars": 462,
    "pushed_at": "2026-09-16",
    "archived": false,
    "license": "MIT"
   },
   "callstack/agent-device": {
-   "stars": 4663,
-   "pushed_at": "2026-09-18",
+   "stars": 4701,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "callstackincubator/agent-skills": {
-   "stars": 1651,
+   "stars": 1654,
    "pushed_at": "2026-09-16",
    "archived": false,
    "license": "MIT"
   },
   "cameroncooke/XcodeBuildMCP": {
-   "stars": 6402,
+   "stars": 6410,
    "pushed_at": "2026-09-11",
    "archived": false,
    "license": "MIT"
   },
   "CAOGGL/dsh-ding": {
-   "stars": 8,
+   "stars": 9,
    "pushed_at": "2026-08-21",
    "archived": false,
    "license": "MIT"
   },
   "caoyiwei850/dsh-ssh-ops": {
-   "stars": 20,
-   "pushed_at": "2026-09-18",
+   "stars": 21,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "career-ops-hq/career-ops": {
-   "stars": 72070,
-   "pushed_at": "2026-09-18",
+   "stars": 72306,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "cathrynlavery/diagram-design": {
-   "stars": 41136,
-   "pushed_at": "2026-09-18",
+   "stars": 41738,
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "MIT"
   },
   "ccch1mneyyy/dsh-TUI": {
-   "stars": 3091,
-   "pushed_at": "2026-09-18",
+   "stars": 3131,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "ccxt/ccxt": {
-   "stars": 44030,
-   "pushed_at": "2026-09-18",
+   "stars": 44085,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
@@ -932,20 +932,20 @@
    "license": null
   },
   "Cerbur/clutch-dsh": {
-   "stars": 26,
-   "pushed_at": "2026-09-17",
+   "stars": 28,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "chenproton/dsh-history": {
    "stars": 14,
-   "pushed_at": "2026-09-11",
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "cheshireez/dsh-skill-hub": {
-   "stars": 19,
-   "pushed_at": "2026-09-16",
+   "stars": 20,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
@@ -956,37 +956,37 @@
    "license": "MIT"
   },
   "ChiR24/Unreal_mcp": {
-   "stars": 876,
-   "pushed_at": "2026-09-18",
+   "stars": 880,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "ChongCyrus/Vibe-Mathematics": {
    "stars": 28,
-   "pushed_at": "2026-09-06",
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "chrisdoc/hevy-mcp": {
-   "stars": 480,
-   "pushed_at": "2026-09-18",
+   "stars": 481,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "ChromeDevTools/chrome-devtools-mcp": {
-   "stars": 52280,
-   "pushed_at": "2026-09-18",
+   "stars": 52419,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "chuspeeism/dashi-ppt-skill": {
-   "stars": 8417,
+   "stars": 8572,
    "pushed_at": "2026-09-12",
    "archived": false,
    "license": "AGPL-3.0"
   },
   "ciembor/agent-rules-books": {
-   "stars": 2823,
+   "stars": 2838,
    "pushed_at": "2026-09-10",
    "archived": false,
    "license": "MIT"
@@ -998,8 +998,8 @@
    "license": "MIT"
   },
   "citrolabs/ego-lite": {
-   "stars": 16187,
-   "pushed_at": "2026-09-18",
+   "stars": 16317,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
@@ -1010,25 +1010,25 @@
    "license": "Apache-2.0"
   },
   "cloader/dsh-taskboard": {
-   "stars": 48,
-   "pushed_at": "2026-09-16",
+   "stars": 49,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "cloudflare/mcp-server-cloudflare": {
-   "stars": 4209,
+   "stars": 4264,
    "pushed_at": "2026-09-01",
    "archived": false,
    "license": "Apache-2.0"
   },
   "cloudflare/security-audit-skill": {
-   "stars": 13541,
+   "stars": 18627,
    "pushed_at": "2026-09-14",
    "archived": false,
    "license": "MIT"
   },
   "cloudflare/skills": {
-   "stars": 2859,
+   "stars": 2885,
    "pushed_at": "2026-09-08",
    "archived": false,
    "license": "Apache-2.0"
@@ -1046,73 +1046,73 @@
    "license": "MIT"
   },
   "comet-ml/opik-mcp": {
-   "stars": 220,
-   "pushed_at": "2026-09-17",
+   "stars": 221,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "compiler-explorer/compiler-explorer": {
-   "stars": 19079,
-   "pushed_at": "2026-09-18",
+   "stars": 19084,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "BSD-2-Clause"
   },
   "composio-community/awesome-claude-plugins": {
-   "stars": 1970,
+   "stars": 1973,
    "pushed_at": "2026-07-26",
    "archived": false,
    "license": null
   },
   "composio-community/awesome-codex-skills": {
-   "stars": 16529,
+   "stars": 16577,
    "pushed_at": "2026-07-26",
    "archived": false,
    "license": null
   },
   "ComposioHQ/awesome-claude-skills": {
-   "stars": 75292,
+   "stars": 75427,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": null
   },
   "confident-ai/deepeval": {
-   "stars": 18330,
-   "pushed_at": "2026-09-18",
+   "stars": 18367,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "conorbronsdon/avoid-ai-writing": {
-   "stars": 4475,
-   "pushed_at": "2026-09-17",
+   "stars": 4619,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "containers/kubernetes-mcp-server": {
-   "stars": 2109,
-   "pushed_at": "2026-09-18",
+   "stars": 2113,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "Continuum-AI-Corp/OrcaReplay": {
-   "stars": 255,
-   "pushed_at": "2026-09-18",
+   "stars": 259,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "CopilotKit/CopilotKit": {
-   "stars": 37408,
-   "pushed_at": "2026-09-18",
+   "stars": 37446,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "coreyhaines31/marketingskills": {
-   "stars": 50835,
+   "stars": 51053,
    "pushed_at": "2026-09-05",
    "archived": false,
    "license": "MIT"
   },
   "corrinehu/dsh-workbuddy-connect": {
-   "stars": 131,
+   "stars": 159,
    "pushed_at": "2026-09-17",
    "archived": false,
    "license": "MIT"
@@ -1124,7 +1124,7 @@
    "license": "Apache-2.0"
   },
   "CrowdStrike/falcon-mcp": {
-   "stars": 256,
+   "stars": 257,
    "pushed_at": "2026-09-17",
    "archived": false,
    "license": "MIT"
@@ -1136,50 +1136,50 @@
    "license": "MIT"
   },
   "CursorTouch/Windows-MCP": {
-   "stars": 7041,
+   "stars": 7068,
    "pushed_at": "2026-09-16",
    "archived": false,
    "license": "MIT"
   },
   "cv-superding/dsh-deepseek-web-login": {
-   "stars": 84,
-   "pushed_at": "2026-09-17",
+   "stars": 113,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "cyanfish-x/dsh-live2d-pets": {
-   "stars": 23,
+   "stars": 24,
    "pushed_at": "2026-08-16",
    "archived": false,
    "license": null
   },
   "cyanheads/git-mcp-server": {
-   "stars": 240,
+   "stars": 241,
    "pushed_at": "2026-08-24",
    "archived": false,
    "license": "Apache-2.0"
   },
   "cyanheads/obsidian-mcp-server": {
    "stars": 682,
-   "pushed_at": "2026-09-13",
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "Apache-2.0"
   },
   "czlonkowski/n8n-mcp": {
-   "stars": 22941,
-   "pushed_at": "2026-09-16",
+   "stars": 22958,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "d-dev0101/open-sea-skin": {
-   "stars": 378,
+   "stars": 381,
    "pushed_at": "2026-09-11",
    "archived": false,
    "license": "MIT"
   },
   "D4Vinci/Scrapling": {
-   "stars": 82163,
-   "pushed_at": "2026-09-18",
+   "stars": 82756,
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "BSD-3-Clause"
   },
@@ -1196,38 +1196,38 @@
    "license": "MIT"
   },
   "datopian/portaljs": {
-   "stars": 2354,
+   "stars": 2355,
    "pushed_at": "2026-09-07",
    "archived": false,
    "license": "MIT"
   },
   "davepoon/buildwithclaude": {
-   "stars": 3492,
-   "pushed_at": "2026-09-17",
+   "stars": 3501,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "DDDMUC/dsh-free-search": {
-   "stars": 204,
+   "stars": 218,
    "pushed_at": "2026-09-17",
    "archived": false,
    "license": "MIT"
   },
   "deanpeters/Product-Manager-Skills": {
-   "stars": 7003,
+   "stars": 7030,
    "pushed_at": "2026-09-01",
    "archived": false,
    "license": "NOASSERTION"
   },
   "decionis/agent-safe-pipeline": {
-   "stars": 532,
-   "pushed_at": "2026-09-18",
+   "stars": 591,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "DeHor-Labs/mcp-fiscal-brasil": {
-   "stars": 306,
-   "pushed_at": "2026-09-13",
+   "stars": 308,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
@@ -1244,26 +1244,26 @@
    "license": "MIT"
   },
   "DeusData/codebase-memory-mcp": {
-   "stars": 43767,
-   "pushed_at": "2026-09-18",
+   "stars": 43951,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "dgunning/edgartools": {
-   "stars": 2728,
-   "pushed_at": "2026-09-17",
+   "stars": 2733,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "dhicoc/dsh-reverse-skill": {
-   "stars": 148,
+   "stars": 162,
    "pushed_at": "2026-08-26",
    "archived": false,
    "license": "MIT"
   },
   "dickpy/dsh-imagegen": {
-   "stars": 78,
-   "pushed_at": "2026-09-18",
+   "stars": 82,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "Apache-2.0"
   },
@@ -1280,25 +1280,25 @@
    "license": "MIT"
   },
   "DietrichGebert/ponytail": {
-   "stars": 142005,
+   "stars": 143475,
    "pushed_at": "2026-09-14",
    "archived": false,
    "license": "MIT"
   },
   "dingminhua/dsh-connect-workbuddy": {
-   "stars": 26,
+   "stars": 30,
    "pushed_at": "2026-09-17",
    "archived": false,
    "license": "MIT"
   },
   "diqierjia/StrataGate-AgentMemory": {
-   "stars": 92,
-   "pushed_at": "2026-09-18",
+   "stars": 96,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "dmmulroy/anti-slop": {
-   "stars": 4642,
+   "stars": 4683,
    "pushed_at": "2026-09-10",
    "archived": false,
    "license": "MIT"
@@ -1310,7 +1310,7 @@
    "license": "MIT"
   },
   "docling-project/docling-mcp": {
-   "stars": 748,
+   "stars": 750,
    "pushed_at": "2026-09-07",
    "archived": false,
    "license": "MIT"
@@ -1322,50 +1322,50 @@
    "license": "MIT"
   },
   "domdomegg/computer-use-mcp": {
-   "stars": 373,
+   "stars": 376,
    "pushed_at": "2026-09-09",
    "archived": false,
    "license": "MIT"
   },
   "Donchitos/Claude-Code-Game-Studios": {
-   "stars": 25182,
+   "stars": 25329,
    "pushed_at": "2026-05-21",
    "archived": false,
    "license": "MIT"
   },
   "dongdongbh/Mindwtr": {
-   "stars": 2068,
-   "pushed_at": "2026-09-18",
+   "stars": 2086,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "AGPL-3.0"
   },
   "dongsheng123132/task-passport": {
-   "stars": 10,
+   "stars": 11,
    "pushed_at": "2026-08-26",
    "archived": false,
    "license": "MIT"
   },
   "dotnet/skills": {
-   "stars": 5445,
-   "pushed_at": "2026-09-18",
+   "stars": 5456,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "dream-num/dsh-univer-office": {
-   "stars": 365,
-   "pushed_at": "2026-09-18",
+   "stars": 380,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "droidrun/mobilerun": {
-   "stars": 9409,
+   "stars": 9435,
    "pushed_at": "2026-09-16",
    "archived": false,
    "license": "MIT"
   },
   "dsh-market/dsh-market": {
-   "stars": 4143,
-   "pushed_at": "2026-09-18",
+   "stars": 4308,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
@@ -1376,7 +1376,7 @@
    "license": "MIT"
   },
   "dsh-plugins/dsh-auxiliary": {
-   "stars": 9,
+   "stars": 10,
    "pushed_at": "2026-09-06",
    "archived": false,
    "license": "LGPL-3.0"
@@ -1394,26 +1394,26 @@
    "license": "MIT"
   },
   "duriantaco/skylos": {
-   "stars": 820,
-   "pushed_at": "2026-09-18",
+   "stars": 827,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "Apache-2.0"
   },
   "Duskriver/dsh-opencode-go": {
-   "stars": 15,
-   "pushed_at": "2026-09-17",
+   "stars": 17,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "eastlondoner/vibe-tools": {
-   "stars": 4823,
+   "stars": 4824,
    "pushed_at": "2025-08-25",
    "archived": false,
    "license": "MIT"
   },
   "eat-pray-ai/yutu": {
-   "stars": 637,
-   "pushed_at": "2026-09-14",
+   "stars": 683,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "Apache-2.0"
   },
@@ -1424,7 +1424,7 @@
    "license": "MIT"
   },
   "Egonex-AI/Understand-Anything": {
-   "stars": 83245,
+   "stars": 83527,
    "pushed_at": "2026-09-12",
    "archived": false,
    "license": "MIT"
@@ -1436,37 +1436,37 @@
    "license": "MIT"
   },
   "elementalsouls/Claude-BugHunter": {
-   "stars": 4538,
-   "pushed_at": "2026-09-18",
+   "stars": 4593,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "elysia395/dsh-wallpaper-engine": {
-   "stars": 303,
-   "pushed_at": "2026-09-18",
+   "stars": 319,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "emiliaprotocol/emilia-protocol": {
    "stars": 617,
-   "pushed_at": "2026-09-17",
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "enuno/unifi-mcp-server": {
-   "stars": 263,
+   "stars": 266,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "Apache-2.0"
   },
   "epoko77-ai/im-not-ai": {
-   "stars": 5637,
+   "stars": 5658,
    "pushed_at": "2026-09-06",
    "archived": false,
    "license": "MIT"
   },
   "erpipe-org/mcp-odoo": {
-   "stars": 414,
+   "stars": 413,
    "pushed_at": "2026-08-25",
    "archived": false,
    "license": "MIT"
@@ -1478,7 +1478,7 @@
    "license": "NOASSERTION"
   },
   "eternityspring/shuohao-skills": {
-   "stars": 3556,
+   "stars": 3663,
    "pushed_at": "2026-09-14",
    "archived": false,
    "license": "Apache-2.0"
@@ -1490,50 +1490,50 @@
    "license": "MIT"
   },
   "EthanYoQ/AI-Novel-Writer": {
-   "stars": 986,
+   "stars": 1044,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "GPL-3.0"
   },
   "eugeniughelbur/obsidian-second-brain": {
-   "stars": 4513,
-   "pushed_at": "2026-09-18",
+   "stars": 4565,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "every-app/open-seo": {
-   "stars": 19278,
-   "pushed_at": "2026-09-18",
+   "stars": 19807,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "EveryInc/compound-engineering-plugin": {
-   "stars": 25151,
-   "pushed_at": "2026-09-18",
+   "stars": 25186,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "exa-labs/exa-mcp-server": {
-   "stars": 5029,
+   "stars": 5035,
    "pushed_at": "2026-08-21",
    "archived": false,
    "license": "MIT"
   },
   "expo/skills": {
-   "stars": 2552,
+   "stars": 2592,
    "pushed_at": "2026-09-17",
    "archived": false,
    "license": "MIT"
   },
   "fandc520/dsh-comfyui": {
-   "stars": 73,
+   "stars": 80,
    "pushed_at": "2026-09-14",
    "archived": false,
    "license": "MIT"
   },
   "FeatherHunter/dsh-mattpocock-skills-deck": {
-   "stars": 71,
-   "pushed_at": "2026-09-18",
+   "stars": 74,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
@@ -1544,13 +1544,13 @@
    "license": "MIT"
   },
   "feder-cr/AIHawk": {
-   "stars": 31592,
-   "pushed_at": "2026-09-18",
+   "stars": 31614,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "feibi-mochi/deepseek-harness-control-center": {
-   "stars": 72,
+   "stars": 73,
    "pushed_at": "2026-09-09",
    "archived": false,
    "license": "MIT"
@@ -1562,62 +1562,62 @@
    "license": "MIT"
   },
   "ffroliva/gflow-cli": {
-   "stars": 215,
-   "pushed_at": "2026-09-18",
+   "stars": 216,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "figma/mcp-server-guide": {
-   "stars": 2002,
+   "stars": 2010,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": null
   },
   "firecrawl/anydoc": {
-   "stars": 21747,
+   "stars": 21875,
    "pushed_at": "2026-08-28",
    "archived": false,
    "license": "MIT"
   },
   "firecrawl/firecrawl": {
-   "stars": 182001,
-   "pushed_at": "2026-09-18",
+   "stars": 182790,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "AGPL-3.0"
   },
   "firecrawl/firecrawl-mcp-server": {
-   "stars": 7484,
-   "pushed_at": "2026-09-18",
+   "stars": 7497,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "FishBottle7/opencode2dsh": {
-   "stars": 73,
-   "pushed_at": "2026-09-18",
+   "stars": 79,
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "MIT"
   },
   "Fishquito7/dsh-skill-mcp-panel": {
-   "stars": 134,
-   "pushed_at": "2026-09-17",
+   "stars": 138,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "Fission-AI/OpenSpec": {
-   "stars": 69318,
-   "pushed_at": "2026-09-17",
+   "stars": 69744,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "fkiene/llmtrim": {
-   "stars": 234,
+   "stars": 236,
    "pushed_at": "2026-09-16",
    "archived": false,
    "license": "MPL-2.0"
   },
   "FlorianBruniaux/claude-code-ultimate-guide": {
-   "stars": 5994,
-   "pushed_at": "2026-09-18",
+   "stars": 6009,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "CC-BY-SA-4.0"
   },
@@ -1628,20 +1628,20 @@
    "license": "MIT"
   },
   "flyeric0212/cursor-rules": {
-   "stars": 1886,
+   "stars": 1888,
    "pushed_at": "2026-01-25",
    "archived": false,
    "license": null
   },
   "flymysql/dsh-remote": {
-   "stars": 85,
-   "pushed_at": "2026-09-18",
+   "stars": 90,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "flytohub/flyto-core": {
    "stars": 481,
-   "pushed_at": "2026-09-07",
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
@@ -1658,26 +1658,26 @@
    "license": "MIT"
   },
   "foryourhealth111-pixel/Vibe-Skills": {
-   "stars": 3339,
+   "stars": 3389,
    "pushed_at": "2026-08-31",
    "archived": false,
    "license": "Apache-2.0"
   },
   "FrancyJGLisboa/agent-skills-platform": {
-   "stars": 2399,
+   "stars": 2401,
    "pushed_at": "2026-09-15",
    "archived": false,
    "license": "MIT"
   },
   "franksong2702/dsh-codex-connect": {
    "stars": 113,
-   "pushed_at": "2026-09-18",
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "FuRongJun-1999/dsh-memory": {
-   "stars": 221,
-   "pushed_at": "2026-09-18",
+   "stars": 233,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
@@ -1688,38 +1688,38 @@
    "license": "MIT"
   },
   "FuzzySoul/dsh-chatvoice": {
-   "stars": 3,
+   "stars": 4,
    "pushed_at": "2026-08-16",
    "archived": false,
    "license": "MIT"
   },
   "FuzzySoul/dsh-free-vision": {
-   "stars": 7,
+   "stars": 8,
    "pushed_at": "2026-08-19",
    "archived": false,
    "license": "MIT"
   },
   "gadievron/raptor": {
-   "stars": 3806,
-   "pushed_at": "2026-09-15",
+   "stars": 3812,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "NOASSERTION"
   },
   "GanyuanRan/Aegis": {
-   "stars": 1210,
-   "pushed_at": "2026-09-16",
+   "stars": 1224,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "gastownhall/beads": {
-   "stars": 27291,
-   "pushed_at": "2026-09-18",
+   "stars": 27332,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "GDWhisper/dsh-web-startup-auth": {
-   "stars": 43,
-   "pushed_at": "2026-09-18",
+   "stars": 47,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
@@ -1730,20 +1730,20 @@
    "license": "Apache-2.0"
   },
   "genspark-ai/genoffice": {
-   "stars": 7157,
-   "pushed_at": "2026-09-18",
+   "stars": 7400,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "Gentleman-Programming/gentle-ai": {
-   "stars": 6997,
-   "pushed_at": "2026-09-18",
+   "stars": 7092,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "geolens-io/geolens": {
-   "stars": 247,
-   "pushed_at": "2026-09-18",
+   "stars": 249,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
@@ -1766,14 +1766,14 @@
    "license": "Apache-2.0"
   },
   "ggozad/haiku.rag": {
-   "stars": 609,
-   "pushed_at": "2026-09-18",
+   "stars": 611,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "giancarloerra/SocratiCode": {
-   "stars": 3313,
-   "pushed_at": "2026-09-17",
+   "stars": 3316,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "AGPL-3.0"
   },
@@ -1784,20 +1784,20 @@
    "license": "MIT"
   },
   "github/awesome-copilot": {
-   "stars": 39145,
-   "pushed_at": "2026-09-18",
+   "stars": 39225,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "github/github-mcp-server": {
-   "stars": 33039,
+   "stars": 33099,
    "pushed_at": "2026-09-16",
    "archived": false,
    "license": "MIT"
   },
   "GitHubJiKe/dsh-markdown-preview": {
    "stars": 2,
-   "pushed_at": "2026-08-17",
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "MIT"
   },
@@ -1808,19 +1808,19 @@
    "license": "NOASSERTION"
   },
   "Glade-tool/glade-mcp": {
-   "stars": 219,
+   "stars": 222,
    "pushed_at": "2026-09-02",
    "archived": false,
    "license": "MIT"
   },
   "glifxyz/glif-mcp-server": {
-   "stars": 209,
+   "stars": 210,
    "pushed_at": "2026-07-30",
    "archived": false,
    "license": "MIT"
   },
   "GLips/Figma-Context-MCP": {
-   "stars": 15879,
+   "stars": 15889,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "MIT"
@@ -1838,13 +1838,13 @@
    "license": "MIT"
   },
   "gongyijie85/dsh-ponytail": {
-   "stars": 11,
+   "stars": 12,
    "pushed_at": "2026-09-10",
    "archived": false,
    "license": "MIT"
   },
   "gongyijie85/mattpocock-skills-dsh": {
-   "stars": 15,
+   "stars": 14,
    "pushed_at": "2026-09-11",
    "archived": false,
    "license": "MIT"
@@ -1856,37 +1856,37 @@
    "license": "MIT"
   },
   "google-deepmind/science-skills": {
-   "stars": 3090,
+   "stars": 3116,
    "pushed_at": "2026-09-15",
    "archived": false,
    "license": "Apache-2.0"
   },
   "google-gemini/gemini-skills": {
-   "stars": 4179,
+   "stars": 4188,
    "pushed_at": "2026-09-17",
    "archived": false,
    "license": "Apache-2.0"
   },
   "google-labs-code/stitch-skills": {
-   "stars": 8338,
+   "stars": 8348,
    "pushed_at": "2026-08-17",
    "archived": false,
    "license": "Apache-2.0"
   },
   "google/agents-cli": {
-   "stars": 5960,
+   "stars": 5971,
    "pushed_at": "2026-09-16",
    "archived": false,
    "license": "Apache-2.0"
   },
   "google/skills": {
-   "stars": 20140,
-   "pushed_at": "2026-09-18",
+   "stars": 20228,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "googleworkspace/cli": {
-   "stars": 31052,
+   "stars": 31081,
    "pushed_at": "2026-09-17",
    "archived": false,
    "license": "Apache-2.0"
@@ -1898,31 +1898,31 @@
    "license": "MIT"
   },
   "gotalab/cc-sdd": {
-   "stars": 3670,
+   "stars": 3672,
    "pushed_at": "2026-05-20",
    "archived": false,
    "license": "MIT"
   },
   "grafana/mcp-grafana": {
-   "stars": 3470,
-   "pushed_at": "2026-09-18",
+   "stars": 3475,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "greensock/gsap-skills": {
-   "stars": 15451,
+   "stars": 15532,
    "pushed_at": "2026-07-29",
    "archived": false,
    "license": "MIT"
   },
   "grunmin/dsh-acp-enhanced": {
    "stars": 6,
-   "pushed_at": "2026-09-05",
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "HaD0Yun/godot-mcp": {
-   "stars": 257,
+   "stars": 259,
    "pushed_at": "2026-09-12",
    "archived": false,
    "license": "MIT"
@@ -1934,32 +1934,32 @@
    "license": "MIT"
   },
   "Han-1413141/dsh-cost-meter": {
-   "stars": 312,
+   "stars": 320,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "MIT"
   },
   "hanzhangzzz/dsh-diagram": {
    "stars": 13,
-   "pushed_at": "2026-09-16",
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "HaoyueQin/dsh-better-reasoning-effort": {
-   "stars": 26,
+   "stars": 27,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "MIT"
   },
   "hashgraph-online/hol-guard": {
-   "stars": 626,
-   "pushed_at": "2026-09-18",
+   "stars": 640,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "hashicorp/terraform-mcp-server": {
    "stars": 1531,
-   "pushed_at": "2026-09-18",
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MPL-2.0"
   },
@@ -1982,7 +1982,7 @@
    "license": "MIT"
   },
   "hellodigua/dsh-emoji": {
-   "stars": 44,
+   "stars": 45,
    "pushed_at": "2026-09-12",
    "archived": false,
    "license": "MIT"
@@ -2000,26 +2000,26 @@
    "license": "MIT"
   },
   "heroui-inc/heroui": {
-   "stars": 30742,
-   "pushed_at": "2026-09-18",
+   "stars": 30779,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "hesreallyhim/awesome-claude-code": {
-   "stars": 54273,
-   "pushed_at": "2026-09-18",
+   "stars": 54383,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "NOASSERTION"
   },
   "heygen-com/hyperframes": {
-   "stars": 51368,
-   "pushed_at": "2026-09-18",
+   "stars": 52104,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "HeyPuter/puter": {
-   "stars": 43551,
-   "pushed_at": "2026-09-18",
+   "stars": 43562,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "AGPL-3.0"
   },
@@ -2042,32 +2042,32 @@
    "license": "MIT"
   },
   "himself65/finance-skills": {
-   "stars": 3328,
+   "stars": 3337,
    "pushed_at": "2026-08-27",
    "archived": false,
    "license": "MIT"
   },
   "hkkz9522/dsh-session-manager": {
-   "stars": 11,
+   "stars": 13,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "MIT"
   },
   "HKUDS/CLI-Anything": {
-   "stars": 49564,
+   "stars": 49648,
    "pushed_at": "2026-08-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "HKUDS/Vibe-Trading": {
-   "stars": 33659,
-   "pushed_at": "2026-09-18",
+   "stars": 33770,
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "MIT"
   },
   "homeassistant-ai/ha-mcp": {
-   "stars": 4779,
-   "pushed_at": "2026-09-18",
+   "stars": 4806,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
@@ -2096,38 +2096,38 @@
    "license": "MIT"
   },
   "howmp/dsh-pentest": {
-   "stars": 504,
+   "stars": 526,
    "pushed_at": "2026-09-11",
    "archived": false,
    "license": null
   },
   "HsiangNianian/dsh-auto-continue": {
-   "stars": 103,
-   "pushed_at": "2026-09-12",
+   "stars": 110,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "htcqp802/dsh-knowledge-base": {
-   "stars": 5,
+   "stars": 6,
    "pushed_at": "2026-08-16",
    "archived": false,
    "license": "MIT"
   },
   "HUANGCHIHHUNGLeo/claude-real-video": {
-   "stars": 2160,
-   "pushed_at": "2026-09-11",
+   "stars": 2167,
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "MIT"
   },
   "huggingface/skills": {
-   "stars": 11065,
+   "stars": 11075,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "Apache-2.0"
   },
   "hugohe3/ppt-master": {
-   "stars": 55196,
-   "pushed_at": "2026-09-18",
+   "stars": 55736,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
@@ -2144,67 +2144,67 @@
    "license": "MIT"
   },
   "hust-open-atom-club/oh-dsh": {
-   "stars": 318,
+   "stars": 320,
    "pushed_at": "2026-09-12",
    "archived": false,
    "license": "MIT"
   },
   "hxy91819/dsh-auth": {
    "stars": 6,
-   "pushed_at": "2026-09-07",
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "hyhmrright/brooks-lint": {
-   "stars": 1484,
-   "pushed_at": "2026-09-14",
+   "stars": 1487,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "hypothesi/mcp-server-tauri": {
-   "stars": 305,
+   "stars": 306,
    "pushed_at": "2026-08-28",
    "archived": false,
    "license": "MIT"
   },
   "hytime/dsh-thinking-effort": {
    "stars": 32,
-   "pushed_at": "2026-09-18",
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "MIT"
   },
   "iamgio/quarkdown": {
-   "stars": 16134,
-   "pushed_at": "2026-09-18",
+   "stars": 16186,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "GPL-3.0"
   },
   "idosal/git-mcp": {
-   "stars": 8407,
+   "stars": 8413,
    "pushed_at": "2026-05-08",
    "archived": false,
    "license": "Apache-2.0"
   },
   "ihor-sokoliuk/mcp-searxng": {
-   "stars": 1246,
-   "pushed_at": "2026-09-18",
+   "stars": 1250,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "Ikalus1988/MisakaNet": {
-   "stars": 493,
-   "pushed_at": "2026-09-18",
+   "stars": 495,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "Imbad0202/academic-research-skills": {
-   "stars": 48654,
-   "pushed_at": "2026-09-16",
+   "stars": 48975,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "NOASSERTION"
   },
   "IMNMV/ClaudeR": {
-   "stars": 342,
+   "stars": 344,
    "pushed_at": "2026-09-15",
    "archived": false,
    "license": "NOASSERTION"
@@ -2216,38 +2216,38 @@
    "license": "MIT"
   },
   "internet-court/internet-court-skill": {
-   "stars": 5838,
+   "stars": 5865,
    "pushed_at": "2026-08-19",
    "archived": false,
    "license": "NOASSERTION"
   },
   "iOfficeAI/OfficeCLI": {
-   "stars": 30807,
+   "stars": 30918,
    "pushed_at": "2026-09-16",
    "archived": false,
    "license": "Apache-2.0"
   },
   "irinabuht12-oss/google-meta-ads-ga4-mcp": {
-   "stars": 1965,
-   "pushed_at": "2026-09-09",
+   "stars": 2027,
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "MIT"
   },
   "irinabuht12-oss/marketing-skills": {
-   "stars": 1569,
+   "stars": 1632,
    "pushed_at": "2026-09-16",
    "archived": false,
    "license": null
   },
   "IvanMurzak/Unity-MCP": {
-   "stars": 4290,
+   "stars": 4311,
    "pushed_at": "2026-09-17",
    "archived": false,
    "license": "Apache-2.0"
   },
   "iwe-org/iwe": {
-   "stars": 1653,
-   "pushed_at": "2026-09-17",
+   "stars": 1691,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "Apache-2.0"
   },
@@ -2258,19 +2258,19 @@
    "license": "MIT"
   },
   "Jakubantalik/transitions.dev": {
-   "stars": 4243,
-   "pushed_at": "2026-09-13",
+   "stars": 4280,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": null
   },
   "jakubkrehel/skills": {
-   "stars": 6886,
+   "stars": 6958,
    "pushed_at": "2026-08-29",
    "archived": false,
    "license": "MIT"
   },
   "JanDeDobbeleer/oh-my-posh": {
-   "stars": 23480,
+   "stars": 23487,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "MIT"
@@ -2282,8 +2282,8 @@
    "license": "MIT"
   },
   "jarrodwatts/claude-hud": {
-   "stars": 28044,
-   "pushed_at": "2026-09-12",
+   "stars": 28083,
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "MIT"
   },
@@ -2300,19 +2300,19 @@
    "license": "MIT"
   },
   "jeff-nasseri/mikrotik-mcp": {
-   "stars": 277,
-   "pushed_at": "2026-09-17",
+   "stars": 278,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "Jeffallan/claude-skills": {
-   "stars": 11531,
+   "stars": 11554,
    "pushed_at": "2026-08-07",
    "archived": false,
    "license": "MIT"
   },
   "JerBouma/FinanceToolkit": {
-   "stars": 5353,
+   "stars": 5362,
    "pushed_at": "2026-09-10",
    "archived": false,
    "license": "MIT"
@@ -2324,38 +2324,38 @@
    "license": "MIT"
   },
   "jeremylongshore/tons-of-skills-marketplace": {
-   "stars": 2775,
-   "pushed_at": "2026-09-18",
+   "stars": 2780,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "Jesseovo/last30days-skill-cn": {
-   "stars": 1801,
+   "stars": 1805,
    "pushed_at": "2026-07-20",
    "archived": false,
    "license": "NOASSERTION"
   },
   "jfarcand/mirroir-mcp": {
-   "stars": 220,
-   "pushed_at": "2026-09-13",
+   "stars": 222,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "Apache-2.0"
   },
   "jgraph/drawio-mcp": {
-   "stars": 5466,
+   "stars": 5484,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "Apache-2.0"
   },
   "jgravelle/jcodemunch-mcp": {
-   "stars": 2696,
-   "pushed_at": "2026-09-18",
+   "stars": 2703,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "NOASSERTION"
   },
   "jgravelle/jdocmunch-mcp": {
-   "stars": 203,
-   "pushed_at": "2026-09-18",
+   "stars": 204,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "NOASSERTION"
   },
@@ -2384,19 +2384,19 @@
    "license": "MIT"
   },
   "jihe520/MathModelAgent": {
-   "stars": 5685,
-   "pushed_at": "2026-09-17",
+   "stars": 5840,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": null
   },
   "jilian-dsh/dsh-rule-engine": {
    "stars": 3,
-   "pushed_at": "2026-09-10",
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "JimLiu/baoyu-design": {
-   "stars": 4081,
+   "stars": 4119,
    "pushed_at": "2026-07-30",
    "archived": false,
    "license": "MIT"
@@ -2444,14 +2444,14 @@
    "license": "MIT"
   },
   "JUANWANG-BUAA/dsh-full-remote": {
-   "stars": 42,
-   "pushed_at": "2026-09-16",
+   "stars": 43,
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "MIT"
   },
   "JuliusBrussee/caveman": {
-   "stars": 106594,
-   "pushed_at": "2026-09-18",
+   "stars": 107093,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "NOASSERTION"
   },
@@ -2462,19 +2462,19 @@
    "license": "MIT"
   },
   "K-Dense-AI/scientific-agent-skills": {
-   "stars": 45507,
-   "pushed_at": "2026-09-14",
+   "stars": 45886,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "Kaelio/ktx": {
-   "stars": 1596,
+   "stars": 1601,
    "pushed_at": "2026-09-11",
    "archived": false,
    "license": "Apache-2.0"
   },
   "kangarooking/cangjie-skill": {
-   "stars": 10259,
+   "stars": 10405,
    "pushed_at": "2026-09-13",
    "archived": false,
    "license": "MIT"
@@ -2486,7 +2486,7 @@
    "license": "MIT"
   },
   "KelaoHu/dsh-lowtide": {
-   "stars": 156,
+   "stars": 159,
    "pushed_at": "2026-09-16",
    "archived": false,
    "license": "MIT"
@@ -2498,32 +2498,32 @@
    "license": "MIT"
   },
   "kenryu42/cc-safety-net": {
-   "stars": 1549,
-   "pushed_at": "2026-09-17",
+   "stars": 1551,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "kenz1117/dsh-ui-usage-billing": {
-   "stars": 54,
-   "pushed_at": "2026-09-16",
+   "stars": 56,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "kepano/obsidian-skills": {
-   "stars": 48566,
+   "stars": 48683,
    "pushed_at": "2026-09-15",
    "archived": false,
    "license": "MIT"
   },
   "keploy/keploy": {
-   "stars": 18467,
-   "pushed_at": "2026-09-17",
+   "stars": 18468,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "Apache-2.0"
   },
   "kingOfSoySauce/dsh-skin-market": {
-   "stars": 150,
-   "pushed_at": "2026-09-18",
+   "stars": 153,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
@@ -2534,43 +2534,43 @@
    "license": "MIT"
   },
   "KKKKhazix/human-writing": {
-   "stars": 3727,
+   "stars": 3766,
    "pushed_at": "2026-08-11",
    "archived": false,
    "license": "MIT"
   },
   "Klavis-AI/klavis": {
-   "stars": 5808,
+   "stars": 5810,
    "pushed_at": "2026-06-01",
    "archived": false,
    "license": "Apache-2.0"
   },
   "kLOsk/adloop": {
-   "stars": 265,
+   "stars": 266,
    "pushed_at": "2026-09-16",
    "archived": false,
    "license": "MIT"
   },
   "KongFangXun/sofagent": {
-   "stars": 45,
-   "pushed_at": "2026-09-17",
+   "stars": 47,
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "MIT"
   },
   "krusemediallc/arcads-claude-code": {
-   "stars": 1505,
+   "stars": 1513,
    "pushed_at": "2026-09-14",
    "archived": false,
    "license": "MIT"
   },
   "kubeshop/testkube": {
-   "stars": 1658,
-   "pushed_at": "2026-09-18",
+   "stars": 1660,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "NOASSERTION"
   },
   "kw78/dsh-office-tools": {
-   "stars": 20,
+   "stars": 22,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "MIT"
@@ -2582,32 +2582,32 @@
    "license": "MIT"
   },
   "lackeyjb/playwright-skill": {
-   "stars": 3124,
+   "stars": 3133,
    "pushed_at": "2026-08-14",
    "archived": false,
    "license": "MIT"
   },
   "Laplace-bit/dsh-smooth-stream": {
-   "stars": 74,
+   "stars": 73,
    "pushed_at": "2026-09-15",
    "archived": false,
    "license": "MIT"
   },
   "larashero3-dotcom/writing-dna-skill": {
-   "stars": 1964,
+   "stars": 2027,
    "pushed_at": "2026-08-24",
    "archived": false,
    "license": "MIT"
   },
   "larksuite/cli": {
-   "stars": 17272,
-   "pushed_at": "2026-09-18",
+   "stars": 17370,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "leancoderkavy/premiere-pro-mcp": {
-   "stars": 271,
-   "pushed_at": "2026-09-18",
+   "stars": 277,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
@@ -2624,8 +2624,8 @@
    "license": "MIT"
   },
   "Leonxlnx/taste-skill": {
-   "stars": 88242,
-   "pushed_at": "2026-09-16",
+   "stars": 88937,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
@@ -2636,7 +2636,7 @@
    "license": "MIT"
   },
   "levnikolaevich/claude-code-skills": {
-   "stars": 565,
+   "stars": 566,
    "pushed_at": "2026-09-16",
    "archived": false,
    "license": "MIT"
@@ -2648,14 +2648,14 @@
    "license": "MIT"
   },
   "liangmianya/dsh-synapse": {
-   "stars": 407,
+   "stars": 412,
    "pushed_at": "2026-08-26",
    "archived": false,
    "license": "MIT"
   },
   "liguobao/deepseek-harness-remote": {
-   "stars": 204,
-   "pushed_at": "2026-09-18",
+   "stars": 210,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": null
   },
@@ -2678,13 +2678,13 @@
    "license": "MIT"
   },
   "linhay/harmony-next.skills": {
-   "stars": 350,
-   "pushed_at": "2026-09-15",
+   "stars": 352,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": null
   },
   "linhut/gongwen-skill": {
-   "stars": 56,
+   "stars": 60,
    "pushed_at": "2026-09-11",
    "archived": false,
    "license": "MIT"
@@ -2696,37 +2696,37 @@
    "license": "MIT"
   },
   "LiPu-jpg/Openwrite": {
-   "stars": 742,
+   "stars": 745,
    "pushed_at": "2026-09-16",
    "archived": false,
    "license": "Apache-2.0"
   },
   "literaf/dsh-ai4scholar": {
-   "stars": 26,
+   "stars": 27,
    "pushed_at": "2026-09-11",
    "archived": false,
    "license": "MIT"
   },
   "liustack/modlens": {
-   "stars": 3986,
+   "stars": 4001,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "MIT"
   },
   "liustack/modsearch": {
-   "stars": 506,
+   "stars": 516,
    "pushed_at": "2026-09-15",
    "archived": false,
    "license": "MIT"
   },
   "LiZhenNet/dsh-antigravity": {
-   "stars": 22,
+   "stars": 21,
    "pushed_at": "2026-08-19",
    "archived": false,
    "license": "MIT"
   },
   "ljagiello/ctf-skills": {
-   "stars": 3315,
+   "stars": 3323,
    "pushed_at": "2026-09-13",
    "archived": false,
    "license": "MIT"
@@ -2744,7 +2744,7 @@
    "license": "MIT"
   },
   "llmsresearch/paperbanana": {
-   "stars": 2371,
+   "stars": 2376,
    "pushed_at": "2026-09-17",
    "archived": false,
    "license": "MIT"
@@ -2774,7 +2774,7 @@
    "license": "Apache-2.0"
   },
   "LottieFiles/motion-design-skill": {
-   "stars": 1690,
+   "stars": 1712,
    "pushed_at": "2026-05-18",
    "archived": false,
    "license": "MIT"
@@ -2798,13 +2798,13 @@
    "license": "BSD-3-Clause"
   },
   "ludo-technologies/pyscn": {
-   "stars": 1068,
-   "pushed_at": "2026-09-18",
+   "stars": 1076,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "lujianjun19/dsh-llm-github-copilot": {
-   "stars": 8,
+   "stars": 9,
    "pushed_at": "2026-09-10",
    "archived": false,
    "license": "MIT"
@@ -2816,14 +2816,14 @@
    "license": "AGPL-3.0"
   },
   "Lyellr88/marm-memory": {
-   "stars": 380,
-   "pushed_at": "2026-09-18",
+   "stars": 397,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "MadsLorentzen/ai-job-search": {
-   "stars": 43266,
-   "pushed_at": "2026-09-16",
+   "stars": 43519,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
@@ -2834,19 +2834,19 @@
    "license": "MIT"
   },
   "majidmanzarpour/threejs-game-skills": {
-   "stars": 2089,
+   "stars": 2104,
    "pushed_at": "2026-09-05",
    "archived": false,
    "license": "MIT"
   },
   "makenotion/notion-mcp-server": {
-   "stars": 4640,
-   "pushed_at": "2026-09-13",
+   "stars": 4642,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "Manavarya09/design-extract": {
-   "stars": 4117,
+   "stars": 4128,
    "pushed_at": "2026-09-16",
    "archived": false,
    "license": "MIT"
@@ -2858,50 +2858,50 @@
    "license": "MIT"
   },
   "maple-pwn/paperlab": {
-   "stars": 7,
+   "stars": 8,
    "pushed_at": "2026-08-15",
    "archived": false,
    "license": "MIT"
   },
   "marckohlbrugge/sessy": {
-   "stars": 929,
+   "stars": 932,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "NOASSERTION"
   },
   "marianfoo/mcp-sap-docs": {
-   "stars": 230,
-   "pushed_at": "2026-09-09",
+   "stars": 231,
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "Apache-2.0"
   },
   "markdown-viewer/skills": {
-   "stars": 3326,
+   "stars": 3328,
    "pushed_at": "2026-05-26",
    "archived": false,
    "license": null
   },
   "mattpocock/skills": {
-   "stars": 265252,
+   "stars": 266853,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "MIT"
   },
   "Max-Null/dsh-memory": {
    "stars": 3,
-   "pushed_at": "2026-09-18",
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "Max-Samson/dsh-usage-chart": {
    "stars": 9,
-   "pushed_at": "2026-09-11",
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "MIT"
   },
   "maxanatsko/mcp-engine-public": {
    "stars": 256,
-   "pushed_at": "2026-09-15",
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "NOASSERTION"
   },
@@ -2912,14 +2912,14 @@
    "license": "MIT"
   },
   "MaxFreedomPollard/Compartment": {
-   "stars": 581,
+   "stars": 582,
    "pushed_at": "2026-09-17",
    "archived": false,
    "license": "Apache-2.0"
   },
   "mbailey/voicemode": {
    "stars": 1370,
-   "pushed_at": "2026-09-15",
+   "pushed_at": "2026-09-18",
    "archived": false,
    "license": "MIT"
   },
@@ -2930,74 +2930,74 @@
    "license": "MIT"
   },
   "measure-sh/measure": {
-   "stars": 1399,
-   "pushed_at": "2026-09-18",
+   "stars": 1400,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "medplum/medplum": {
-   "stars": 2684,
-   "pushed_at": "2026-09-18",
+   "stars": 2693,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "melandlabs/opencontext": {
    "stars": 76,
-   "pushed_at": "2026-09-18",
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "memodb-io/Acontext": {
-   "stars": 3690,
+   "stars": 3692,
    "pushed_at": "2026-07-14",
    "archived": false,
    "license": "Apache-2.0"
   },
   "MemPalace/mempalace": {
-   "stars": 59147,
-   "pushed_at": "2026-09-18",
+   "stars": 59194,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "MengTo/Skills": {
-   "stars": 6075,
+   "stars": 6165,
    "pushed_at": "2026-09-17",
    "archived": false,
    "license": "MIT"
   },
   "MervinPraison/PraisonAI": {
-   "stars": 9072,
+   "stars": 9081,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "MIT"
   },
   "MeteorNOX/DeepSeek-Balance-Whale-Widget": {
-   "stars": 2689,
-   "pushed_at": "2026-09-18",
+   "stars": 2863,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "meysam81/parse-dmarc": {
-   "stars": 207,
-   "pushed_at": "2026-09-18",
+   "stars": 208,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "mgechev/skills-best-practices": {
-   "stars": 2254,
+   "stars": 2255,
    "pushed_at": "2026-07-27",
    "archived": false,
    "license": null
   },
   "MichengAI/dsh-agency-agents": {
-   "stars": 54,
-   "pushed_at": "2026-09-18",
+   "stars": 58,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "MichengAI/dsh-archive-manager": {
-   "stars": 68,
-   "pushed_at": "2026-09-18",
+   "stars": 73,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
@@ -3008,7 +3008,7 @@
    "license": "Apache-2.0"
   },
   "MichengAI/dsh-codex-ui": {
-   "stars": 81,
+   "stars": 90,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "Apache-2.0"
@@ -3020,61 +3020,61 @@
    "license": "Apache-2.0"
   },
   "MichengAI/dsh-skills-manager": {
-   "stars": 57,
-   "pushed_at": "2026-09-18",
+   "stars": 60,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "MicroMilo/upstream-radar": {
    "stars": 12,
-   "pushed_at": "2026-09-18",
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "Apache-2.0"
   },
   "microsoft/azure-skills": {
-   "stars": 1488,
-   "pushed_at": "2026-09-18",
+   "stars": 1489,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "microsoft/hve-core": {
-   "stars": 1465,
-   "pushed_at": "2026-09-18",
+   "stars": 1468,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "microsoft/markitdown": {
-   "stars": 185415,
+   "stars": 186094,
    "pushed_at": "2026-09-16",
    "archived": false,
    "license": "MIT"
   },
   "microsoft/mcp": {
-   "stars": 3686,
-   "pushed_at": "2026-09-18",
+   "stars": 3690,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "microsoft/playwright-mcp": {
-   "stars": 37256,
+   "stars": 37427,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "Apache-2.0"
   },
   "microsoft/powerbi-modeling-mcp": {
-   "stars": 1161,
-   "pushed_at": "2026-09-08",
+   "stars": 1165,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "microsoft/skills": {
-   "stars": 3032,
-   "pushed_at": "2026-09-18",
+   "stars": 3041,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "MicrosoftDocs/mcp": {
-   "stars": 1895,
+   "stars": 1898,
    "pushed_at": "2026-09-10",
    "archived": false,
    "license": "CC-BY-4.0"
@@ -3087,55 +3087,55 @@
   },
   "minivv/dsh-agent-skills": {
    "stars": 14,
-   "pushed_at": "2026-09-15",
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "mksglu/context-mode": {
-   "stars": 23535,
-   "pushed_at": "2026-09-18",
+   "stars": 23841,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "NOASSERTION"
   },
   "mobile-next/mobile-mcp": {
-   "stars": 6753,
+   "stars": 6794,
    "pushed_at": "2026-09-16",
    "archived": false,
    "license": "Apache-2.0"
   },
   "modelcontextprotocol/inspector": {
-   "stars": 10912,
-   "pushed_at": "2026-09-18",
+   "stars": 10916,
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": null
   },
   "modelcontextprotocol/modelcontextprotocol": {
-   "stars": 9253,
-   "pushed_at": "2026-09-18",
+   "stars": 9266,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "NOASSERTION"
   },
   "modelcontextprotocol/registry": {
-   "stars": 7265,
+   "stars": 7267,
    "pushed_at": "2026-09-16",
    "archived": false,
    "license": "NOASSERTION"
   },
   "modelcontextprotocol/servers": {
-   "stars": 90450,
+   "stars": 90520,
    "pushed_at": "2026-09-03",
    "archived": false,
    "license": "NOASSERTION"
   },
   "modelscope/FunASR": {
-   "stars": 20417,
-   "pushed_at": "2026-09-18",
+   "stars": 20458,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "modusensus/dsh-mneme": {
-   "stars": 112,
-   "pushed_at": "2026-09-18",
+   "stars": 115,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
@@ -3146,20 +3146,20 @@
    "license": null
   },
   "Mombrane/dsh-subagent-monitor": {
-   "stars": 25,
+   "stars": 26,
    "pushed_at": "2026-09-14",
    "archived": false,
    "license": "MIT"
   },
   "mondaycom/mcp": {
-   "stars": 425,
+   "stars": 426,
    "pushed_at": "2026-09-16",
    "archived": false,
    "license": "MIT"
   },
   "mongodb-js/mongodb-mcp-server": {
-   "stars": 1132,
-   "pushed_at": "2026-09-18",
+   "stars": 1134,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
@@ -3170,7 +3170,7 @@
    "license": "MIT"
   },
   "moon09300731/dsh-approval-gate": {
-   "stars": 73,
+   "stars": 78,
    "pushed_at": "2026-08-20",
    "archived": false,
    "license": "MIT"
@@ -3182,19 +3182,19 @@
    "license": "MIT"
   },
   "morluto/rea": {
-   "stars": 412,
+   "stars": 413,
    "pushed_at": "2026-09-08",
    "archived": false,
    "license": "MIT"
   },
   "motherduckdb/mcp-server-motherduck": {
    "stars": 523,
-   "pushed_at": "2026-08-19",
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "MIT"
   },
   "MrmoLabs/dsh-mermaid": {
-   "stars": 11,
+   "stars": 10,
    "pushed_at": "2026-09-05",
    "archived": false,
    "license": "MIT"
@@ -3206,26 +3206,26 @@
    "license": "MIT"
   },
   "mukul975/Anthropic-Cybersecurity-Skills": {
-   "stars": 32965,
+   "stars": 33063,
    "pushed_at": "2026-08-31",
    "archived": false,
    "license": "Apache-2.0"
   },
   "multica-ai/andrej-karpathy-skills": {
-   "stars": 213973,
+   "stars": 214452,
    "pushed_at": "2026-04-20",
    "archived": false,
    "license": null
   },
   "muratcankoylan/Agent-Skills-for-Context-Engineering": {
-   "stars": 18010,
+   "stars": 18013,
    "pushed_at": "2026-09-11",
    "archived": false,
    "license": "MIT"
   },
   "muvon/octocode": {
-   "stars": 475,
-   "pushed_at": "2026-09-18",
+   "stars": 477,
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "Apache-2.0"
   },
@@ -3236,44 +3236,44 @@
    "license": "Apache-2.0"
   },
   "mvanhorn/last30days-skill": {
-   "stars": 62298,
-   "pushed_at": "2026-09-18",
+   "stars": 62517,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "Nagi-ovo/dsh-ads": {
-   "stars": 628,
-   "pushed_at": "2026-08-27",
+   "stars": 630,
+   "pushed_at": "2026-09-18",
    "archived": false,
    "license": "BSD-3-Clause"
   },
   "Nagi-ovo/dsh-visualize": {
-   "stars": 262,
-   "pushed_at": "2026-08-27",
+   "stars": 261,
+   "pushed_at": "2026-09-18",
    "archived": false,
    "license": "BSD-3-Clause"
   },
   "Nanako0129/sepia": {
-   "stars": 2681,
-   "pushed_at": "2026-09-18",
+   "stars": 2736,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "NanmiCoder/dsh-agent-teams": {
-   "stars": 1724,
+   "stars": 1759,
    "pushed_at": "2026-09-17",
    "archived": false,
    "license": "MIT"
   },
   "NanmiCoder/dsh-auto-mode": {
    "stars": 161,
-   "pushed_at": "2026-09-14",
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "neiltron/apple-health-mcp": {
    "stars": 568,
-   "pushed_at": "2026-09-18",
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
@@ -3284,37 +3284,37 @@
    "license": "MIT"
   },
   "NeoLabHQ/context-engineering-kit": {
-   "stars": 1710,
+   "stars": 1716,
    "pushed_at": "2026-08-26",
    "archived": false,
    "license": "GPL-3.0"
   },
   "neondatabase/mcp-server-neon": {
-   "stars": 648,
-   "pushed_at": "2026-09-18",
+   "stars": 649,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "netdata/netdata": {
-   "stars": 80574,
-   "pushed_at": "2026-09-18",
+   "stars": 80612,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "GPL-3.0"
   },
   "Netw0rkNoob/VulnClaw": {
-   "stars": 3367,
+   "stars": 3387,
    "pushed_at": "2026-09-17",
    "archived": false,
    "license": "MIT"
   },
   "nextlevelbuilder/ui-ux-pro-max-skill": {
-   "stars": 128823,
-   "pushed_at": "2026-09-15",
+   "stars": 129486,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "nicobailon/visual-explainer": {
-   "stars": 9867,
+   "stars": 9885,
    "pushed_at": "2026-08-28",
    "archived": false,
    "license": "MIT"
@@ -3326,7 +3326,7 @@
    "license": "MIT"
   },
   "nirholas/claude-code": {
-   "stars": 6240,
+   "stars": 6241,
    "pushed_at": "2026-09-15",
    "archived": false,
    "license": "NOASSERTION"
@@ -3338,8 +3338,8 @@
    "license": "MIT"
   },
   "NoNameLeGo/dsh-catppuccin-theme": {
-   "stars": 41,
-   "pushed_at": "2026-09-18",
+   "stars": 43,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
@@ -3356,14 +3356,14 @@
    "license": null
   },
   "nowork-studio/notfair-plugin": {
-   "stars": 3822,
-   "pushed_at": "2026-09-17",
+   "stars": 3839,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "nowork-studio/toprank": {
-   "stars": 3822,
-   "pushed_at": "2026-09-17",
+   "stars": 3839,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
@@ -3375,91 +3375,91 @@
   },
   "nteract/semiotic": {
    "stars": 2706,
-   "pushed_at": "2026-09-18",
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "Apache-2.0"
   },
   "numman-ali/openskills": {
-   "stars": 10762,
+   "stars": 10765,
    "pushed_at": "2026-01-18",
    "archived": false,
    "license": "NOASSERTION"
   },
   "Nutlope/hallmark": {
-   "stars": 28854,
+   "stars": 28975,
    "pushed_at": "2026-08-06",
    "archived": false,
    "license": "MIT"
   },
   "Nutlope/inspo": {
-   "stars": 480,
+   "stars": 661,
    "pushed_at": "2026-09-15",
    "archived": false,
    "license": "MIT"
   },
   "NVIDIA/skills": {
-   "stars": 3349,
-   "pushed_at": "2026-09-18",
+   "stars": 3390,
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "Apache-2.0"
   },
   "Nwflower/dsh-chat-import": {
-   "stars": 177,
-   "pushed_at": "2026-09-18",
+   "stars": 191,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "nyldn/claude-octopus": {
-   "stars": 4088,
-   "pushed_at": "2026-09-18",
+   "stars": 4092,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "nzl153/dsh-pet-whale": {
-   "stars": 3,
-   "pushed_at": "2026-09-15",
+   "stars": 6,
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "MIT"
   },
   "obra/superpowers": {
-   "stars": 288538,
-   "pushed_at": "2026-09-18",
+   "stars": 289551,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "omdsh-dev/dsh-at-file": {
-   "stars": 512,
+   "stars": 511,
    "pushed_at": "2026-09-01",
    "archived": false,
    "license": "MIT"
   },
   "omdsh-dev/DSH-better-sidebar": {
-   "stars": 3663,
-   "pushed_at": "2026-09-17",
+   "stars": 3697,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "omdsh-dev/dsh-data-agent": {
-   "stars": 194,
+   "stars": 196,
    "pushed_at": "2026-09-10",
    "archived": false,
    "license": "MIT"
   },
   "omdsh-dev/dsh-genui": {
-   "stars": 464,
-   "pushed_at": "2026-09-18",
+   "stars": 471,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "omdsh-dev/dsh-lark": {
-   "stars": 54,
+   "stars": 56,
    "pushed_at": "2026-08-19",
    "archived": false,
    "license": "BSD-3-Clause"
   },
   "omdsh-dev/dsh-mnemon": {
-   "stars": 385,
-   "pushed_at": "2026-09-18",
+   "stars": 391,
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "MIT"
   },
@@ -3470,8 +3470,8 @@
    "license": "Apache-2.0"
   },
   "omnara-ai/omnara": {
-   "stars": 2859,
-   "pushed_at": "2026-09-18",
+   "stars": 2860,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
@@ -3483,7 +3483,7 @@
   },
   "ooples/token-optimizer-mcp": {
    "stars": 531,
-   "pushed_at": "2026-09-18",
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "MIT"
   },
@@ -3494,68 +3494,68 @@
    "license": "MIT"
   },
   "opencues/opencues": {
-   "stars": 51,
-   "pushed_at": "2026-09-18",
+   "stars": 53,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "Apache-2.0"
   },
   "opendatalab/MinerU": {
-   "stars": 80210,
-   "pushed_at": "2026-09-18",
+   "stars": 80387,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "NOASSERTION"
   },
   "opendatalab/MinerU-Ecosystem": {
-   "stars": 208,
+   "stars": 213,
    "pushed_at": "2026-05-11",
    "archived": false,
    "license": "Apache-2.0"
   },
   "OpenImageDebugger/OpenImageDebugger": {
    "stars": 250,
-   "pushed_at": "2026-09-17",
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "openma-ai/deepseek-harness-acp": {
-   "stars": 32,
-   "pushed_at": "2026-09-18",
+   "stars": 34,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "NOASSERTION"
   },
   "OpenOSINT/OpenOSINT": {
-   "stars": 1603,
+   "stars": 1616,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "MIT"
   },
   "OpenSenseNova/SenseNova-Skills": {
-   "stars": 5649,
+   "stars": 5672,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "MIT"
   },
   "openstatusHQ/openstatus": {
-   "stars": 9128,
-   "pushed_at": "2026-09-18",
+   "stars": 9132,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "AGPL-3.0"
   },
   "oraios/serena": {
-   "stars": 29580,
-   "pushed_at": "2026-09-18",
+   "stars": 29661,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "NOASSERTION"
   },
   "Orchestra-Research/AI-Research-SKILLs": {
-   "stars": 12823,
+   "stars": 12913,
    "pushed_at": "2026-06-16",
    "archived": false,
    "license": "MIT"
   },
   "orziz/odai": {
    "stars": 115,
-   "pushed_at": "2026-09-18",
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
@@ -3566,38 +3566,38 @@
    "license": "MIT"
   },
   "OthmanAdi/planning-with-files": {
-   "stars": 26984,
-   "pushed_at": "2026-09-18",
+   "stars": 27041,
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "MIT"
   },
   "Owl-Listener/designer-skills": {
-   "stars": 2685,
+   "stars": 2708,
    "pushed_at": "2026-09-05",
    "archived": false,
    "license": "MIT"
   },
   "oxbshw/watch-skill": {
-   "stars": 379,
+   "stars": 384,
    "pushed_at": "2026-09-14",
    "archived": false,
    "license": "MIT"
   },
   "oxsecurity/megalinter": {
-   "stars": 2594,
-   "pushed_at": "2026-09-18",
+   "stars": 2598,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "AGPL-3.0"
   },
   "pab1it0/prometheus-mcp-server": {
-   "stars": 516,
-   "pushed_at": "2026-08-05",
+   "stars": 517,
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "MIT"
   },
   "PackmindHub/packmind": {
-   "stars": 312,
-   "pushed_at": "2026-09-18",
+   "stars": 313,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
@@ -3609,42 +3609,42 @@
   },
   "PandaPolo/dsh-voice-call": {
    "stars": 2,
-   "pushed_at": "2026-09-05",
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "MIT"
   },
   "Paramchoudhary/ResumeSkills": {
-   "stars": 2342,
+   "stars": 2392,
    "pushed_at": "2026-06-19",
    "archived": false,
    "license": "MIT"
   },
   "patrickchugh/terravision": {
-   "stars": 1634,
+   "stars": 1635,
    "pushed_at": "2026-09-14",
    "archived": false,
    "license": "AGPL-3.0"
   },
   "PatrickJS/awesome-cursorrules": {
-   "stars": 40796,
+   "stars": 40808,
    "pushed_at": "2026-05-30",
    "archived": false,
    "license": "CC0-1.0"
   },
   "pbakaus/impeccable": {
-   "stars": 68988,
-   "pushed_at": "2026-09-18",
+   "stars": 69527,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "PC2005-cloud/dsh-pet": {
-   "stars": 677,
+   "stars": 703,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "MIT"
   },
   "pedrohcgs/claude-code-my-workflow": {
-   "stars": 1592,
+   "stars": 1595,
    "pushed_at": "2026-08-24",
    "archived": false,
    "license": "MIT"
@@ -3662,8 +3662,8 @@
    "license": "MIT"
   },
   "pengyue-polaron/deepseek-harness-genui": {
-   "stars": 112,
-   "pushed_at": "2026-09-16",
+   "stars": 113,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
@@ -3674,110 +3674,110 @@
    "license": "MIT"
   },
   "PensiveFei/dsh-voice-scribe": {
-   "stars": 32,
-   "pushed_at": "2026-09-17",
+   "stars": 33,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "PerryLink/dsh-auto-review": {
-   "stars": 182,
-   "pushed_at": "2026-09-18",
+   "stars": 189,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "PerryLink/dsh-background-agents": {
    "stars": 16,
-   "pushed_at": "2026-09-18",
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "PerryLink/dsh-checkpoint-rewind": {
    "stars": 18,
-   "pushed_at": "2026-09-18",
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "PerryLink/dsh-claude-move": {
-   "stars": 24,
-   "pushed_at": "2026-09-18",
+   "stars": 26,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "PerryLink/dsh-composer-history": {
    "stars": 15,
-   "pushed_at": "2026-09-18",
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "PerryLink/dsh-defend": {
    "stars": 16,
-   "pushed_at": "2026-09-18",
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "PerryLink/dsh-doublecheck": {
-   "stars": 34,
-   "pushed_at": "2026-09-18",
+   "stars": 38,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "PerryLink/dsh-github": {
-   "stars": 14,
-   "pushed_at": "2026-09-18",
+   "stars": 15,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "PerryLink/dsh-library": {
-   "stars": 10,
-   "pushed_at": "2026-09-18",
+   "stars": 12,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "PerryLink/dsh-lsp-actions": {
-   "stars": 20,
-   "pushed_at": "2026-09-18",
+   "stars": 19,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "PerryLink/dsh-mcp-panel": {
-   "stars": 61,
-   "pushed_at": "2026-09-18",
+   "stars": 62,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "PerryLink/dsh-memento": {
-   "stars": 103,
-   "pushed_at": "2026-09-18",
+   "stars": 108,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "PerryLink/dsh-observe": {
-   "stars": 7,
-   "pushed_at": "2026-09-18",
+   "stars": 8,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "PerryLink/dsh-permission-rules": {
-   "stars": 112,
-   "pushed_at": "2026-09-18",
+   "stars": 113,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "PerryLink/dsh-plugin-guide": {
    "stars": 40,
-   "pushed_at": "2026-09-15",
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "pgEdge/pgedge-postgres-mcp": {
-   "stars": 227,
+   "stars": 228,
    "pushed_at": "2026-09-16",
    "archived": false,
    "license": "PostgreSQL"
   },
   "Phant0Meow/dsh-meow-memory": {
-   "stars": 105,
-   "pushed_at": "2026-09-10",
+   "stars": 111,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
@@ -3788,38 +3788,38 @@
    "license": "MIT"
   },
   "phuryn/pm-skills": {
-   "stars": 26435,
+   "stars": 26494,
    "pushed_at": "2026-09-14",
    "archived": false,
    "license": "MIT"
   },
   "piotr-agier/google-drive-mcp": {
    "stars": 219,
-   "pushed_at": "2026-09-17",
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "pipecat-ai/pipecat": {
-   "stars": 15649,
-   "pushed_at": "2026-09-18",
+   "stars": 15725,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "BSD-2-Clause"
   },
   "PlanExeOrg/PlanExe": {
    "stars": 401,
-   "pushed_at": "2026-09-13",
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "plannotator/effective-html": {
-   "stars": 3223,
+   "stars": 3248,
    "pushed_at": "2026-09-14",
    "archived": false,
    "license": "MIT"
   },
   "plastic-labs/honcho": {
-   "stars": 7245,
-   "pushed_at": "2026-09-18",
+   "stars": 7282,
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "AGPL-3.0"
   },
@@ -3830,7 +3830,7 @@
    "license": "AGPL-3.0"
   },
   "PolinniZhong/dsh-omi-voice": {
-   "stars": 73,
+   "stars": 74,
    "pushed_at": "2026-08-28",
    "archived": false,
    "license": "MIT"
@@ -3842,8 +3842,8 @@
    "license": "MIT"
   },
   "PostHog/posthog": {
-   "stars": 39851,
-   "pushed_at": "2026-09-18",
+   "stars": 39880,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "NOASSERTION"
   },
@@ -3855,31 +3855,31 @@
   },
   "ppy-web/dsh-plugin-xiaomi-mimo-tts": {
    "stars": 7,
-   "pushed_at": "2026-09-18",
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "PrathamLearnsToCode/paper2code": {
-   "stars": 1523,
+   "stars": 1524,
    "pushed_at": "2026-04-03",
    "archived": false,
    "license": "MIT"
   },
   "PrefectHQ/fastmcp": {
-   "stars": 27730,
-   "pushed_at": "2026-09-18",
+   "stars": 27833,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "priyankark/lighthouse-mcp": {
-   "stars": 208,
+   "stars": 209,
    "pushed_at": "2026-09-13",
    "archived": false,
    "license": "MIT"
   },
   "punkpeye/awesome-mcp-servers": {
-   "stars": 95228,
-   "pushed_at": "2026-09-15",
+   "stars": 95379,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
@@ -3891,37 +3891,37 @@
   },
   "qishuilalala/dsh-voice-mode": {
    "stars": 12,
-   "pushed_at": "2026-09-18",
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "questflowai/investorskills": {
-   "stars": 1846,
+   "stars": 1853,
    "pushed_at": "2026-08-23",
    "archived": false,
    "license": "MIT"
   },
   "r-huijts/strava-mcp": {
-   "stars": 486,
+   "stars": 489,
    "pushed_at": "2026-06-13",
    "archived": false,
    "license": "MIT"
   },
   "RAFOLIE/dsh-desktop-windowos": {
    "stars": 22,
-   "pushed_at": "2026-09-14",
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "RareSense/Nova3D": {
-   "stars": 714,
+   "stars": 718,
    "pushed_at": "2026-08-12",
    "archived": false,
    "license": "MIT"
   },
   "razzant/claudexor": {
-   "stars": 471,
-   "pushed_at": "2026-09-18",
+   "stars": 478,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
@@ -3932,8 +3932,8 @@
    "license": "MIT"
   },
   "RekklesNA/ProxmoxMCP-Plus": {
-   "stars": 543,
-   "pushed_at": "2026-09-16",
+   "stars": 546,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
@@ -3950,26 +3950,26 @@
    "license": "MIT"
   },
   "remotion-dev/skills": {
-   "stars": 4642,
+   "stars": 4673,
    "pushed_at": "2026-09-17",
    "archived": false,
    "license": null
   },
   "repowise-dev/repowise": {
-   "stars": 6670,
-   "pushed_at": "2026-09-18",
+   "stars": 6768,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "AGPL-3.0"
   },
   "RevolutionLA/dsh-dream-skin": {
-   "stars": 175,
-   "pushed_at": "2026-09-18",
+   "stars": 178,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "rhel-lightspeed/linux-mcp-server": {
-   "stars": 299,
-   "pushed_at": "2026-09-18",
+   "stars": 301,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
@@ -3980,7 +3980,7 @@
    "license": "MIT"
   },
   "RKiding/Awesome-finance-skills": {
-   "stars": 3015,
+   "stars": 3023,
    "pushed_at": "2026-03-29",
    "archived": false,
    "license": "Apache-2.0"
@@ -3992,62 +3992,62 @@
    "license": "MIT"
   },
   "rmyndharis/antigravity-skills": {
-   "stars": 1572,
+   "stars": 1593,
    "pushed_at": "2026-08-02",
    "archived": false,
    "license": "MIT"
   },
   "robotmcp/ros-mcp-server": {
-   "stars": 1461,
-   "pushed_at": "2026-09-18",
+   "stars": 1466,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "rohitg00/agentmemory": {
-   "stars": 28592,
-   "pushed_at": "2026-09-14",
+   "stars": 28669,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "rohitg00/awesome-claude-code-toolkit": {
-   "stars": 2624,
+   "stars": 2631,
    "pushed_at": "2026-05-12",
    "archived": false,
    "license": "Apache-2.0"
   },
   "rohitg00/pro-workflow": {
-   "stars": 2874,
+   "stars": 2875,
    "pushed_at": "2026-08-31",
    "archived": false,
    "license": null
   },
   "rohitg00/skillkit": {
-   "stars": 1510,
+   "stars": 1534,
    "pushed_at": "2026-06-02",
    "archived": false,
    "license": "Apache-2.0"
   },
   "romainsimon/paperasse": {
-   "stars": 2394,
+   "stars": 2399,
    "pushed_at": "2026-08-10",
    "archived": false,
    "license": "MIT"
   },
   "runkids/skillshare": {
-   "stars": 2676,
-   "pushed_at": "2026-09-18",
+   "stars": 2684,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "ruvnet/claude-flow": {
-   "stars": 72799,
-   "pushed_at": "2026-09-18",
+   "stars": 72975,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "ruvnet/ruflo": {
-   "stars": 72799,
-   "pushed_at": "2026-09-18",
+   "stars": 72975,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
@@ -4076,7 +4076,7 @@
    "license": "MIT"
   },
   "samber/cc-skills-golang": {
-   "stars": 3282,
+   "stars": 3295,
    "pushed_at": "2026-09-07",
    "archived": false,
    "license": "MIT"
@@ -4088,13 +4088,13 @@
    "license": "MIT"
   },
   "SamMorrowDrums/remarkable-mcp": {
-   "stars": 234,
+   "stars": 235,
    "pushed_at": "2026-09-08",
    "archived": false,
    "license": "MIT"
   },
   "SamurAIGPT/Generative-Media-Skills": {
-   "stars": 4298,
+   "stars": 4314,
    "pushed_at": "2026-09-08",
    "archived": false,
    "license": "MIT"
@@ -4106,32 +4106,32 @@
    "license": "AGPL-3.0"
   },
   "sandbaseai/sandbase-harness": {
-   "stars": 646,
-   "pushed_at": "2026-09-18",
+   "stars": 648,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "sandbaseai/sandbase-skills": {
-   "stars": 195,
+   "stars": 196,
    "pushed_at": "2026-09-08",
    "archived": false,
    "license": "Apache-2.0"
   },
   "saurabhsharma2u/search-console-mcp": {
-   "stars": 291,
+   "stars": 293,
    "pushed_at": "2026-09-02",
    "archived": false,
    "license": "MIT"
   },
   "SawyerHood/dev-browser": {
-   "stars": 6626,
+   "stars": 6631,
    "pushed_at": "2026-09-05",
    "archived": false,
    "license": "MIT"
   },
   "saya-ch/dsh-mobile": {
-   "stars": 273,
-   "pushed_at": "2026-09-18",
+   "stars": 288,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "Apache-2.0"
   },
@@ -4142,25 +4142,25 @@
    "license": "MIT"
   },
   "SceneView/sceneview": {
-   "stars": 1320,
-   "pushed_at": "2026-09-18",
+   "stars": 1322,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "Apache-2.0"
   },
   "screenpipe/screenpipe": {
-   "stars": 21622,
-   "pushed_at": "2026-09-18",
+   "stars": 21652,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "NOASSERTION"
   },
   "SeaOf0/dsh-redteam-model": {
-   "stars": 511,
-   "pushed_at": "2026-09-18",
+   "stars": 556,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "seleniumbase/SeleniumBase": {
-   "stars": 13025,
+   "stars": 13031,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "MIT"
@@ -4173,7 +4173,7 @@
   },
   "seven282/oss-prompt-optimizer": {
    "stars": 16,
-   "pushed_at": "2026-09-15",
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
@@ -4184,19 +4184,19 @@
    "license": "MIT"
   },
   "shanliuling/dsh-image-gen": {
-   "stars": 438,
-   "pushed_at": "2026-09-17",
+   "stars": 446,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "Apache-2.0"
   },
   "shaobeichen/dsh-pocket": {
-   "stars": 1207,
+   "stars": 1267,
    "pushed_at": "2026-09-16",
    "archived": false,
    "license": "GPL-2.0"
   },
   "shengsheng90/DSH-taskboard": {
-   "stars": 325,
+   "stars": 328,
    "pushed_at": "2026-09-16",
    "archived": false,
    "license": "Apache-2.0"
@@ -4220,38 +4220,38 @@
    "license": "MIT"
   },
   "sickn33/agentic-awesome-skills": {
-   "stars": 46567,
-   "pushed_at": "2026-09-18",
+   "stars": 46693,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "signerlabs/ShipSwift": {
-   "stars": 3219,
+   "stars": 3220,
    "pushed_at": "2026-08-09",
    "archived": false,
    "license": "MIT"
   },
   "silverstein/minutes": {
-   "stars": 1486,
-   "pushed_at": "2026-09-18",
+   "stars": 1492,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "sipyourdrink-ltd/bernstein": {
-   "stars": 1190,
-   "pushed_at": "2026-09-18",
+   "stars": 1232,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "SiriLee/dsh-rewind": {
-   "stars": 76,
-   "pushed_at": "2026-09-18",
+   "stars": 83,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "sirkirby/unifi-mcp": {
-   "stars": 829,
-   "pushed_at": "2026-09-18",
+   "stars": 835,
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "MIT"
   },
@@ -4262,74 +4262,74 @@
    "license": "MIT"
   },
   "sjh9714/dsh-win32": {
-   "stars": 52,
-   "pushed_at": "2026-09-18",
+   "stars": 57,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "sjkim1127/Reversecore_MCP": {
-   "stars": 203,
-   "pushed_at": "2026-09-18",
+   "stars": 205,
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "MIT"
   },
   "Skyvern-AI/skyvern": {
-   "stars": 23034,
-   "pushed_at": "2026-09-18",
+   "stars": 23045,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "AGPL-3.0"
   },
   "slywalker2006/dsh-passwords": {
-   "stars": 61,
+   "stars": 63,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "GPL-3.0"
   },
   "Small-tailqwq/dsh-deep-whale": {
-   "stars": 2129,
-   "pushed_at": "2026-09-15",
+   "stars": 2167,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "NOASSERTION"
   },
   "SnailSploit/Claude-Red": {
-   "stars": 6175,
-   "pushed_at": "2026-08-30",
+   "stars": 6600,
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "MIT"
   },
   "snarktank/ralph": {
-   "stars": 21821,
+   "stars": 21833,
    "pushed_at": "2026-02-02",
    "archived": false,
    "license": "MIT"
   },
   "SnowAmberX/dsh-role-router": {
    "stars": 4,
-   "pushed_at": "2026-09-18",
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "BSD-3-Clause"
   },
   "Snowflake-Labs/mcp": {
-   "stars": 298,
+   "stars": 299,
    "pushed_at": "2026-05-15",
    "archived": false,
    "license": "Apache-2.0"
   },
   "Softeria/ms-365-mcp-server": {
-   "stars": 983,
-   "pushed_at": "2026-09-18",
+   "stars": 985,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "software-mansion/argent": {
-   "stars": 2846,
-   "pushed_at": "2026-09-18",
+   "stars": 2864,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "SonarSource/sonarqube-mcp-server": {
-   "stars": 654,
-   "pushed_at": "2026-09-18",
+   "stars": 655,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "NOASSERTION"
   },
@@ -4340,14 +4340,14 @@
    "license": "MIT"
   },
   "SpaceZephyr/creator-buddy": {
-   "stars": 1470,
+   "stars": 1499,
    "pushed_at": "2026-08-26",
    "archived": false,
    "license": null
   },
   "spences10/mcp-omnisearch": {
-   "stars": 350,
-   "pushed_at": "2026-09-18",
+   "stars": 351,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
@@ -4358,14 +4358,14 @@
    "license": "MIT"
   },
   "squirrelscan/squirrelscan": {
-   "stars": 268,
-   "pushed_at": "2026-09-18",
+   "stars": 267,
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "MIT"
   },
   "stackql/stackql": {
-   "stars": 965,
-   "pushed_at": "2026-09-18",
+   "stars": 991,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
@@ -4389,7 +4389,7 @@
   },
   "STARDUSTLC666/dsh-email": {
    "stars": 14,
-   "pushed_at": "2026-09-18",
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "MIT"
   },
@@ -4400,7 +4400,7 @@
    "license": "MIT"
   },
   "STARDUSTLC666/dsh-ppt": {
-   "stars": 6,
+   "stars": 7,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "MIT"
@@ -4436,32 +4436,32 @@
    "license": "Apache-2.0"
   },
   "stefanoamorelli/sec-edgar-mcp": {
-   "stars": 358,
-   "pushed_at": "2026-09-15",
+   "stars": 357,
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "AGPL-3.0"
   },
   "stoneface10/dsh-codex-connect-plus": {
-   "stars": 3,
+   "stars": 4,
    "pushed_at": "2026-08-29",
    "archived": false,
    "license": "Apache-2.0"
   },
   "storybookjs/storybook": {
-   "stars": 91096,
-   "pushed_at": "2026-09-18",
+   "stars": 91117,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "stripe/agent-toolkit": {
-   "stars": 1826,
-   "pushed_at": "2026-09-17",
+   "stars": 1829,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "stripe/ai": {
-   "stars": 1826,
-   "pushed_at": "2026-09-17",
+   "stars": 1829,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
@@ -4472,8 +4472,8 @@
    "license": "MIT"
   },
   "strukto-ai/mirage": {
-   "stars": 3641,
-   "pushed_at": "2026-09-18",
+   "stars": 3646,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
@@ -4496,8 +4496,8 @@
    "license": "MIT"
   },
   "StuMason/coolify-mcp": {
-   "stars": 598,
-   "pushed_at": "2026-09-17",
+   "stars": 601,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
@@ -4514,8 +4514,8 @@
    "license": null
   },
   "suntianc/dsh-antigravity-auth": {
-   "stars": 15,
-   "pushed_at": "2026-09-10",
+   "stars": 16,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
@@ -4532,80 +4532,80 @@
    "license": "MIT"
   },
   "supabase/agent-skills": {
-   "stars": 2631,
+   "stars": 2640,
    "pushed_at": "2026-08-12",
    "archived": false,
    "license": "MIT"
   },
   "supabase/mcp": {
-   "stars": 2914,
-   "pushed_at": "2026-09-18",
+   "stars": 2917,
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "Apache-2.0"
   },
   "superdesigndev/superdesign-skill": {
-   "stars": 573,
+   "stars": 582,
    "pushed_at": "2026-08-21",
    "archived": false,
    "license": "MIT"
   },
   "superdesigndev/treg": {
-   "stars": 1651,
-   "pushed_at": "2026-09-18",
+   "stars": 1760,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "NOASSERTION"
   },
   "superloglabs/superlog": {
-   "stars": 1450,
-   "pushed_at": "2026-09-18",
+   "stars": 1452,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "Apache-2.0"
   },
   "superserve-ai/superserve": {
-   "stars": 460,
+   "stars": 462,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "Apache-2.0"
   },
   "superset-sh/superset": {
-   "stars": 14381,
-   "pushed_at": "2026-09-18",
+   "stars": 14431,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "NOASSERTION"
   },
   "surendranb/google-analytics-mcp": {
    "stars": 242,
-   "pushed_at": "2026-09-18",
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "sv-number/mcp-server": {
-   "stars": 550,
+   "stars": 551,
    "pushed_at": "2026-08-10",
    "archived": false,
    "license": "MIT"
   },
   "sveltejs/ai-tools": {
-   "stars": 326,
-   "pushed_at": "2026-09-18",
+   "stars": 328,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "svnscha/mcp-windbg": {
-   "stars": 1580,
-   "pushed_at": "2026-09-09",
+   "stars": 1583,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "SylphxAI/pdf-reader-mcp": {
-   "stars": 934,
-   "pushed_at": "2026-09-17",
+   "stars": 935,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "t8y2/dbx": {
-   "stars": 20058,
-   "pushed_at": "2026-09-18",
+   "stars": 20331,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
@@ -4616,7 +4616,7 @@
    "license": "MIT"
   },
   "tamaratran/fast-jev-compaction": {
-   "stars": 3140,
+   "stars": 5794,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "MIT"
@@ -4628,7 +4628,7 @@
    "license": "MIT"
   },
   "tavily-ai/tavily-mcp": {
-   "stars": 2393,
+   "stars": 2396,
    "pushed_at": "2026-09-16",
    "archived": false,
    "license": "MIT"
@@ -4640,55 +4640,55 @@
    "license": "MIT"
   },
   "TecFancy/dsh-auth-gate": {
-   "stars": 14,
+   "stars": 15,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "MIT"
   },
   "tech-leads-club/agent-skills": {
-   "stars": 6396,
-   "pushed_at": "2026-09-18",
+   "stars": 6573,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "NOASSERTION"
   },
   "TeleAI-UAGI/telemem": {
-   "stars": 491,
+   "stars": 492,
    "pushed_at": "2026-09-14",
    "archived": false,
    "license": "Apache-2.0"
   },
   "Tencent/AI-Infra-Guard": {
-   "stars": 6446,
-   "pushed_at": "2026-09-18",
+   "stars": 6519,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "Apache-2.0"
   },
   "Tencent/BrowserSkill": {
-   "stars": 5255,
-   "pushed_at": "2026-09-18",
+   "stars": 6244,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "TencentCloudBase/CloudBase-AI-Toolkit": {
-   "stars": 1114,
-   "pushed_at": "2026-09-18",
+   "stars": 1121,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "thedaviddias/Front-End-Checklist": {
-   "stars": 74200,
+   "stars": 74218,
    "pushed_at": "2026-08-14",
    "archived": false,
    "license": null
   },
   "thedotmack/claude-mem": {
-   "stars": 94208,
-   "pushed_at": "2026-09-18",
+   "stars": 94378,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "Apache-2.0"
   },
   "THEWOLFWALKER/dsh-notifier": {
-   "stars": 50,
+   "stars": 51,
    "pushed_at": "2026-09-13",
    "archived": false,
    "license": "MIT"
@@ -4706,7 +4706,7 @@
    "license": "MIT"
   },
   "timescale/pg-aiguide": {
-   "stars": 1847,
+   "stars": 1848,
    "pushed_at": "2026-09-16",
    "archived": false,
    "license": "Apache-2.0"
@@ -4718,19 +4718,19 @@
    "license": "MIT"
   },
   "tinyhumansai/openhuman": {
-   "stars": 39875,
-   "pushed_at": "2026-09-18",
+   "stars": 39991,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "GPL-3.0"
   },
   "TinySuiteHQ/TinySearch": {
-   "stars": 227,
-   "pushed_at": "2026-09-05",
+   "stars": 229,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "titanwings/dsh-automation": {
-   "stars": 95,
+   "stars": 98,
    "pushed_at": "2026-09-08",
    "archived": false,
    "license": "MIT"
@@ -4742,13 +4742,13 @@
    "license": "MIT"
   },
   "tldraw/tldraw": {
-   "stars": 50448,
-   "pushed_at": "2026-09-18",
+   "stars": 50494,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "NOASSERTION"
   },
   "Tlyer233/dsh-vscode-review": {
-   "stars": 8,
+   "stars": 9,
    "pushed_at": "2026-09-12",
    "archived": false,
    "license": null
@@ -4760,26 +4760,26 @@
    "license": "AGPL-3.0"
   },
   "toby-bridges/api-relay-audit": {
-   "stars": 839,
+   "stars": 842,
    "pushed_at": "2026-09-16",
    "archived": false,
    "license": "AGPL-3.0"
   },
   "tolgee/tolgee-platform": {
-   "stars": 4103,
-   "pushed_at": "2026-09-18",
+   "stars": 4108,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "NOASSERTION"
   },
   "tomyud1/godot-mcp": {
-   "stars": 431,
+   "stars": 433,
    "pushed_at": "2026-08-24",
    "archived": false,
    "license": "MIT"
   },
   "toolclub/dsh-agent-team-gui": {
-   "stars": 176,
-   "pushed_at": "2026-09-18",
+   "stars": 217,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
@@ -4790,38 +4790,38 @@
    "license": "MIT"
   },
   "TQSY114514/dsh-ui-appearance": {
-   "stars": 14,
-   "pushed_at": "2026-09-18",
+   "stars": 13,
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "MIT"
   },
   "tradecatlabs/vibe-coding-cn": {
-   "stars": 16287,
+   "stars": 16332,
    "pushed_at": "2026-09-17",
    "archived": false,
    "license": "MIT"
   },
   "tradermonty/claude-trading-skills": {
-   "stars": 2854,
-   "pushed_at": "2026-09-18",
+   "stars": 2870,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "tradingview/lightweight-charts": {
-   "stars": 17305,
+   "stars": 17323,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "Apache-2.0"
   },
   "trailofbits/skills": {
-   "stars": 7153,
-   "pushed_at": "2026-09-16",
+   "stars": 7192,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "CC-BY-SA-4.0"
   },
   "TranHoaiHung/figma-ui-mcp": {
-   "stars": 241,
-   "pushed_at": "2026-05-26",
+   "stars": 242,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
@@ -4844,68 +4844,68 @@
    "license": null
   },
   "tt-a1i/archify": {
-   "stars": 66777,
-   "pushed_at": "2026-09-18",
+   "stars": 68801,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "tufantunc/ssh-mcp": {
-   "stars": 745,
-   "pushed_at": "2026-09-17",
+   "stars": 751,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "tugcantopaloglu/godot-mcp": {
-   "stars": 461,
+   "stars": 465,
    "pushed_at": "2026-07-13",
    "archived": false,
    "license": "MIT"
   },
   "twostraws/SwiftUI-Agent-Skill": {
-   "stars": 4757,
+   "stars": 4816,
    "pushed_at": "2026-04-20",
    "archived": false,
    "license": "MIT"
   },
   "ucsandman/DashClaw": {
-   "stars": 305,
-   "pushed_at": "2026-09-16",
+   "stars": 306,
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "MIT"
   },
   "UI5/webcomponents-react": {
    "stars": 540,
-   "pushed_at": "2026-09-18",
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "Ultronen/dsh-archived-chats": {
    "stars": 23,
-   "pushed_at": "2026-09-18",
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "upstash/context7": {
-   "stars": 62174,
-   "pushed_at": "2026-09-18",
+   "stars": 62268,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "usekaneo/kaneo": {
-   "stars": 9119,
-   "pushed_at": "2026-09-18",
+   "stars": 9146,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "usertour/usertour": {
-   "stars": 2307,
-   "pushed_at": "2026-09-18",
+   "stars": 2308,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "NOASSERTION"
   },
   "V1ki/dsh-plugin-subscriptions": {
-   "stars": 371,
-   "pushed_at": "2026-09-16",
+   "stars": 374,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
@@ -4916,44 +4916,44 @@
    "license": "MIT"
   },
   "vectorize-io/hindsight": {
-   "stars": 23903,
-   "pushed_at": "2026-09-18",
+   "stars": 24169,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "vercel-labs/agent-browser": {
-   "stars": 42843,
-   "pushed_at": "2026-09-18",
+   "stars": 42980,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "vercel-labs/agent-skills": {
-   "stars": 31320,
+   "stars": 31417,
    "pushed_at": "2026-08-28",
    "archived": false,
    "license": null
   },
   "vercel-labs/skills": {
-   "stars": 31966,
+   "stars": 32150,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "MIT"
   },
   "vercel/next-devtools-mcp": {
-   "stars": 821,
+   "stars": 823,
    "pushed_at": "2026-09-15",
    "archived": false,
    "license": null
   },
   "Vexa-ai/vexa": {
-   "stars": 2802,
-   "pushed_at": "2026-09-18",
+   "stars": 2806,
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "Apache-2.0"
   },
   "vfarcic/dot-ai": {
    "stars": 335,
-   "pushed_at": "2026-09-15",
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
@@ -4982,14 +4982,14 @@
    "license": "MIT"
   },
   "Vincentwei1021/video-shotcraft": {
-   "stars": 8948,
+   "stars": 9156,
    "pushed_at": "2026-09-09",
    "archived": false,
    "license": "Apache-2.0"
   },
   "vishalsachdev/canvas-mcp": {
-   "stars": 254,
-   "pushed_at": "2026-09-18",
+   "stars": 257,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
@@ -5000,20 +5000,20 @@
    "license": "MIT"
   },
   "vlln/whale-girl": {
-   "stars": 325,
+   "stars": 327,
    "pushed_at": "2026-08-31",
    "archived": false,
    "license": "MIT"
   },
   "Vncntvx/dsh-zotero": {
-   "stars": 20,
-   "pushed_at": "2026-09-14",
+   "stars": 21,
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "MIT"
   },
   "vndee/llm-sandbox": {
-   "stars": 1122,
-   "pushed_at": "2026-09-14",
+   "stars": 1123,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
@@ -5024,31 +5024,31 @@
    "license": "Apache-2.0"
   },
   "volcengine/OpenViking": {
-   "stars": 38012,
-   "pushed_at": "2026-09-18",
+   "stars": 38299,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "AGPL-3.0"
   },
   "VoltAgent/awesome-claude-code-subagents": {
-   "stars": 25190,
-   "pushed_at": "2026-09-14",
+   "stars": 25229,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "Vrun-design/openflowkit": {
-   "stars": 771,
-   "pushed_at": "2026-08-19",
+   "stars": 790,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "vshulcz/deja-vu": {
-   "stars": 841,
-   "pushed_at": "2026-09-18",
+   "stars": 910,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "vuejs-ai/skills": {
-   "stars": 2859,
+   "stars": 2867,
    "pushed_at": "2026-05-30",
    "archived": false,
    "license": "MIT"
@@ -5060,19 +5060,19 @@
    "license": "MIT"
   },
   "wanshuiyin/Auto-claude-code-research-in-sleep": {
-   "stars": 16323,
+   "stars": 16453,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "MIT"
   },
   "webkubor/dsh-bloom-theme": {
-   "stars": 37,
-   "pushed_at": "2026-09-18",
+   "stars": 41,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "Weizhena/Deep-Research-skills": {
-   "stars": 2188,
+   "stars": 2212,
    "pushed_at": "2026-08-23",
    "archived": false,
    "license": "MIT"
@@ -5090,7 +5090,7 @@
    "license": "MIT"
   },
   "wenbin-wb/dsh-bridge": {
-   "stars": 166,
+   "stars": 170,
    "pushed_at": "2026-09-16",
    "archived": false,
    "license": "MIT"
@@ -5103,7 +5103,7 @@
   },
   "whyihaveyou/dsh-suite": {
    "stars": 55,
-   "pushed_at": "2026-09-18",
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
@@ -5115,7 +5115,7 @@
   },
   "willyfh/visualtorch": {
    "stars": 332,
-   "pushed_at": "2026-09-18",
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
@@ -5126,26 +5126,26 @@
    "license": "MIT"
   },
   "wingsky-1/dsh-plugin-hub": {
-   "stars": 18,
-   "pushed_at": "2026-09-18",
+   "stars": 19,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "WizisCool/dsh-ears": {
-   "stars": 20,
+   "stars": 21,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "MIT"
   },
   "wlj521/dsh-ui-tweaks": {
    "stars": 18,
-   "pushed_at": "2026-09-15",
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "wloops/dsh-git-worktree": {
    "stars": 14,
-   "pushed_at": "2026-09-15",
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
@@ -5156,8 +5156,8 @@
    "license": "MIT"
   },
   "wonderwhy-er/DesktopCommanderMCP": {
-   "stars": 9643,
-   "pushed_at": "2026-09-17",
+   "stars": 9678,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
@@ -5168,32 +5168,32 @@
    "license": "MIT"
   },
   "WordPress/agent-skills": {
-   "stars": 2153,
-   "pushed_at": "2026-09-18",
+   "stars": 2156,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "NOASSERTION"
   },
   "WorldFlowAI/everything-claude-code": {
-   "stars": 3204,
+   "stars": 3402,
    "pushed_at": "2026-01-23",
    "archived": false,
    "license": null
   },
   "wqty123/dsh-browser": {
-   "stars": 68,
+   "stars": 73,
    "pushed_at": "2026-09-16",
    "archived": false,
    "license": "MIT"
   },
   "wshobson/agents": {
-   "stars": 39779,
-   "pushed_at": "2026-09-14",
+   "stars": 39848,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "WSL043/dsh-codex-subscription": {
-   "stars": 76,
-   "pushed_at": "2026-09-16",
+   "stars": 86,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
@@ -5210,7 +5210,7 @@
    "license": "MIT"
   },
   "wuyoscar/GPT-Image2-Skill": {
-   "stars": 5451,
+   "stars": 5490,
    "pushed_at": "2026-09-09",
    "archived": false,
    "license": "MIT"
@@ -5228,26 +5228,26 @@
    "license": "MIT"
   },
   "xbtlin/ai-berkshire": {
-   "stars": 16434,
-   "pushed_at": "2026-09-18",
+   "stars": 16476,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "xgone/dsh-remote": {
-   "stars": 65,
+   "stars": 64,
    "pushed_at": "2026-09-09",
    "archived": false,
    "license": "MIT"
   },
   "xiajiajun516/dsh-config-manager": {
-   "stars": 116,
-   "pushed_at": "2026-09-18",
+   "stars": 117,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "XiaoMaColtAI/math-modeling-skill": {
-   "stars": 1602,
-   "pushed_at": "2026-09-18",
+   "stars": 1669,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": null
   },
@@ -5258,7 +5258,7 @@
    "license": "MIT"
   },
   "Xidong-AI/dsh-rate-limiter": {
-   "stars": 2,
+   "stars": 3,
    "pushed_at": "2026-09-12",
    "archived": false,
    "license": "MIT"
@@ -5276,14 +5276,14 @@
    "license": "MIT"
   },
   "xingkongliang/skills-manager": {
-   "stars": 4826,
+   "stars": 4883,
    "pushed_at": "2026-09-17",
    "archived": false,
    "license": "MIT"
   },
   "xmanrui/dsh-im": {
-   "stars": 1391,
-   "pushed_at": "2026-09-16",
+   "stars": 1427,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
@@ -5312,43 +5312,43 @@
    "license": "MIT"
   },
   "yaklang/hack-skills": {
-   "stars": 2237,
+   "stars": 2258,
    "pushed_at": "2026-09-13",
    "archived": false,
    "license": "MIT"
   },
   "yamadashy/repomix": {
-   "stars": 28404,
-   "pushed_at": "2026-09-13",
+   "stars": 28439,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "yctimlin/mcp_excalidraw": {
-   "stars": 2447,
+   "stars": 2454,
    "pushed_at": "2026-09-08",
    "archived": false,
    "license": "MIT"
   },
   "Yeachan-Heo/oh-my-claudecode": {
-   "stars": 39246,
-   "pushed_at": "2026-09-18",
+   "stars": 39285,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "yinnho/aginxbrowser": {
    "stars": 30,
-   "pushed_at": "2026-09-18",
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "Apache-2.0"
   },
   "yjh051108/dsh-routing-suite": {
-   "stars": 7195,
+   "stars": 7205,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "MIT"
   },
   "ykarapazar/word-mcp-live": {
-   "stars": 218,
+   "stars": 219,
    "pushed_at": "2026-05-29",
    "archived": false,
    "license": "MIT"
@@ -5360,14 +5360,14 @@
    "license": "MIT"
   },
   "ysr666/dsh-vision-router": {
-   "stars": 1107,
-   "pushed_at": "2026-09-18",
+   "stars": 1113,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
   "Yuan1z0825/nature-skills": {
-   "stars": 43080,
-   "pushed_at": "2026-09-16",
+   "stars": 43699,
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "Apache-2.0"
   },
@@ -5378,8 +5378,8 @@
    "license": "MIT"
   },
   "YuJunZhiXue/dsh-purge": {
-   "stars": 1370,
-   "pushed_at": "2026-09-18",
+   "stars": 1733,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "MIT"
   },
@@ -5390,37 +5390,37 @@
    "license": "MIT"
   },
   "yusufkaraaslan/Skill_Seekers": {
-   "stars": 15002,
-   "pushed_at": "2026-09-16",
+   "stars": 15016,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "Yuuhann1999/dsh-bloub-mood": {
-   "stars": 16,
+   "stars": 17,
    "pushed_at": "2026-08-22",
    "archived": false,
    "license": "MIT"
   },
   "yyh-001/dsh-meme": {
-   "stars": 93,
+   "stars": 97,
    "pushed_at": "2026-09-14",
    "archived": false,
    "license": "MIT"
   },
   "Z-6354/dsh-mobile-hanui": {
-   "stars": 16,
+   "stars": 15,
    "pushed_at": "2026-08-18",
    "archived": false,
    "license": "MIT"
   },
   "zapier/zapier-mcp": {
-   "stars": 411,
+   "stars": 413,
    "pushed_at": "2026-07-29",
    "archived": false,
    "license": "MIT"
   },
   "zarazhangrui/frontend-slides": {
-   "stars": 29511,
+   "stars": 29639,
    "pushed_at": "2026-06-23",
    "archived": false,
    "license": "MIT"
@@ -5432,31 +5432,31 @@
    "license": "Apache-2.0"
   },
   "ZeframLou/call-me": {
-   "stars": 2645,
+   "stars": 2644,
    "pushed_at": "2026-04-07",
    "archived": false,
    "license": null
   },
   "zenstory-ai/drama-skills": {
-   "stars": 2041,
+   "stars": 2137,
    "pushed_at": "2026-09-18",
    "archived": false,
    "license": "MIT"
   },
   "zereight/gitlab-mcp": {
-   "stars": 1986,
-   "pushed_at": "2026-09-16",
+   "stars": 1991,
+   "pushed_at": "2026-09-20",
    "archived": false,
    "license": "MIT"
   },
   "zexadev/dsh-tether": {
-   "stars": 45,
-   "pushed_at": "2026-09-18",
+   "stars": 46,
+   "pushed_at": "2026-09-19",
    "archived": false,
    "license": "MIT"
   },
   "zh667/TokenLedger": {
-   "stars": 200,
+   "stars": 202,
    "pushed_at": "2026-09-15",
    "archived": false,
    "license": "MIT"
@@ -5474,13 +5474,13 @@
    "license": "MIT"
   },
   "zhaoolee/notes": {
-   "stars": 165,
+   "stars": 166,
    "pushed_at": "2026-09-12",
    "archived": false,
    "license": "Apache-2.0"
   },
   "zhaoxuya520/reverse-skill": {
-   "stars": 36454,
+   "stars": 36775,
    "pushed_at": "2026-09-03",
    "archived": false,
    "license": "MIT"
@@ -5498,14 +5498,14 @@
    "license": "MIT"
   },
   "zhu1090093659/dsh-web": {
-   "stars": 7746,
-   "pushed_at": "2026-09-18",
+   "stars": 7892,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
   "zhu1090093659/dsh-web-ui": {
-   "stars": 7746,
-   "pushed_at": "2026-09-18",
+   "stars": 7892,
+   "pushed_at": "2026-09-21",
    "archived": false,
    "license": "Apache-2.0"
   },
@@ -5522,7 +5522,7 @@
    "license": "MIT"
   },
   "zLanqing/codex-claude-academic-skills": {
-   "stars": 4050,
+   "stars": 4154,
    "pushed_at": "2026-05-14",
    "archived": false,
    "license": "MIT"
@@ -5540,19 +5540,19 @@
    "license": "MIT"
   },
   "ZSeven-W/dsh-android": {
-   "stars": 148,
+   "stars": 155,
    "pushed_at": "2026-09-14",
    "archived": false,
    "license": "MIT"
   },
   "ZSeven-W/dsh-crew": {
-   "stars": 148,
+   "stars": 149,
    "pushed_at": "2026-09-14",
    "archived": false,
    "license": "MIT"
   },
   "ZSeven-W/dsh-ios": {
-   "stars": 295,
+   "stars": 298,
    "pushed_at": "2026-09-14",
    "archived": false,
    "license": "MIT"
@@ -5564,13 +5564,13 @@
    "license": "MIT"
   },
   "ZSeven-W/dsh-openpencil": {
-   "stars": 174,
+   "stars": 176,
    "pushed_at": "2026-09-17",
    "archived": false,
    "license": "MIT"
   },
   "zubair-trabzada/ai-legal-claude": {
-   "stars": 1743,
+   "stars": 1747,
    "pushed_at": "2026-03-27",
    "archived": false,
    "license": null

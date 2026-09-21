@@ -12,7 +12,7 @@
 
 ### Agent Skills
 
-[Agent Skills](https://github.com/agentskills/agentskills) — `Padrão / especificação` · ★ 25k · Licença: Apache-2.0 · Funciona com: —
+[Agent Skills](https://github.com/agentskills/agentskills) — `Padrão / especificação` · ★ 26k · Licença: Apache-2.0 · Funciona com: —
 
 Especificação das Agent Skills: uma pasta com SKILL.md (nome, descrição, instruções) e scripts/recursos opcionais que o agente carrega sob demanda.
 
@@ -20,7 +20,7 @@ Especificação das Agent Skills: uma pasta com SKILL.md (nome, descrição, ins
 
 ### AGENTS.md
 
-[AGENTS.md](https://github.com/agentsmd/agents.md) — `Padrão / especificação` · ★ 24k · Licença: MIT · Funciona com: —
+[AGENTS.md](https://github.com/agentsmd/agents.md) — `Padrão / especificação` · ★ 25k · Licença: MIT · Funciona com: —
 
 Formato Markdown aberto para instruções de projeto a agentes de código (setup, build, testes, convenções). Lido por Codex, Cursor, OpenCode, Zed, Windsurf, DeepSeek Harness e outros.
 

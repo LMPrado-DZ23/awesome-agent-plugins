@@ -14,7 +14,7 @@
 
 ### Parody ad banners
 
-[Nagi-ovo/dsh-ads](https://github.com/Nagi-ovo/dsh-ads) — `Plugin nativo` · ★ 628 · Licença: BSD-3-Clause · Funciona com: DeepSeek Harness apenas
+[Nagi-ovo/dsh-ads](https://github.com/Nagi-ovo/dsh-ads) — `Plugin nativo` · ★ 630 · Licença: BSD-3-Clause · Funciona com: DeepSeek Harness apenas
 
 Anúncios paródia fictícios no estilo da web chinesa de 2005: banners na barra lateral, feeds no chat, pop-ups nos cantos e um botão de fechar com área de clique menor do que parece.
 
@@ -32,7 +32,7 @@ dsh plugin --profile web add github:Nagi-ovo/dsh-ads
 
 ### Chat meme stickers
 
-[yyh-001/dsh-meme](https://github.com/yyh-001/dsh-meme) — `Plugin nativo` · ★ 93 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[yyh-001/dsh-meme](https://github.com/yyh-001/dsh-meme) — `Plugin nativo` · ★ 97 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Figurinhas de meme para o chat, com envio somente por texto, envio automático baseado em humor, um seletor no estilo QQ/WeChat, aprendizado automático e pacotes personalizados.
 
@@ -50,7 +50,7 @@ dsh plugin --profile web add github:yyh-001/dsh-meme
 
 ### Auto-emoji replies
 
-[hellodigua/dsh-emoji](https://github.com/hellodigua/dsh-emoji) — `Plugin nativo` · ★ 44 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[hellodigua/dsh-emoji](https://github.com/hellodigua/dsh-emoji) — `Plugin nativo` · ★ 45 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Adiciona emojis automaticamente às respostas da IA.
 
@@ -92,10 +92,10 @@ Um pet de desktop para a interface web do DSH com 25 animações transparentes, 
 
 **Alternativas:**
 
-- [cyanfish-x/dsh-live2d-pets](https://github.com/cyanfish-x/dsh-live2d-pets) (★ 23) — Usa modelos Live2D que espelham o estado do agente (pensando, ocioso, erro, concluído, aguardando aprovação) com balões de fala e personas alternáveis.
+- [cyanfish-x/dsh-live2d-pets](https://github.com/cyanfish-x/dsh-live2d-pets) (★ 24) — Usa modelos Live2D que espelham o estado do agente (pensando, ocioso, erro, concluído, aguardando aprovação) com balões de fala e personas alternáveis.
 - [hellosz/dsh-pets](https://github.com/hellosz/dsh-pets) (★ 6) — Traz 10 pets compatíveis com o Petdex, um motor de status do agente com 9 estados e uma ferramenta pet_say para o agente falar através do pet.
-- [vlln/whale-girl](https://github.com/vlln/whale-girl) (★ 325) — Adiciona interações de alimentar e brincar além de arrastar, no estilo QQ-pet.
-- [nzl153/dsh-pet-whale](https://github.com/nzl153/dsh-pet-whale) (★ 3) — Desenha um pet em SVG puro a partir do contorno oficial da baleia, com 7 paletas de cores e sincronização com o tema claro/escuro.
+- [vlln/whale-girl](https://github.com/vlln/whale-girl) (★ 327) — Adiciona interações de alimentar e brincar além de arrastar, no estilo QQ-pet.
+- [nzl153/dsh-pet-whale](https://github.com/nzl153/dsh-pet-whale) (★ 6) — Desenha um pet em SVG puro a partir do contorno oficial da baleia, com 7 paletas de cores e sincronização com o tema claro/escuro.
 
 <details><summary>Instalar</summary>
 

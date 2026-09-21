@@ -10,8 +10,8 @@
 - [Manage repos across Git hosts](#gk-cli-mcp) — The GitKraken server for managing repos, pull requests, and issues across GitHub, GitLab, and Bitbucket.
 - [Native git operations](#git-mcp-server) — Comprehensive git server enabling native git tools including clone, commit, and worktree management.
 - [Find UX issues in React code](#dsh-dsh-user-experience) — Finds potential UX issues in a project by automatically reviewing React/TypeScript code, pinpointing each prob…
-- [Git worktree session targets](#dsh-dsh-git-worktree) — Git-worktree Session Targets with isolated task sessions, ready-for-review status, reversible local preview, h…
 - [GitHub CI and PR review bot](#dsh-dsh-github) — Official-grade GitHub CI integration: a composite action.yml, a polling PR review bot with idempotent inline c…
+- [Git worktree session targets](#dsh-dsh-git-worktree) — Git-worktree Session Targets with isolated task sessions, ready-for-review status, reversible local preview, h…
 - [Explore and audit GitHub via gh CLI](#dsh-github-explore) — GitHub search, discovery and audit scripts wrapped as a SKILL.md pack around the gh CLI: repo search, multi-ax…
 - [Review files changed this session](#dsh-dsh-session-review) — A strip above the composer lists files modified in the current session (collapsed by default), with a Review b…
 - [First-class git tools for the model](#dsh-dsh-plugin-git-workflow) — Gives the model first-class Git tools for status, diff, log, commit and branch, with validated messages and pa…
@@ -213,7 +213,7 @@ extensions:
 
 ### Alibaba open code review
 
-[alibaba/open-code-review](https://github.com/alibaba/open-code-review) — `Agent Skills` · ★ 37k · License: Apache-2.0 · Works with: All clients
+[alibaba/open-code-review](https://github.com/alibaba/open-code-review) — `Agent Skills` · ★ 39k · License: Apache-2.0 · Works with: All clients
 
 Hybrid code-review tool battle-tested at Alibaba's scale, combining deterministic pipelines with an LLM agent for precise, line-level comments and a built-in multi-language security ruleset.
 
@@ -720,7 +720,7 @@ extensions:
 
 ### Native git operations
 
-[cyanheads/git-mcp-server](https://github.com/cyanheads/git-mcp-server) — `MCP server` · ★ 240 · License: Apache-2.0 · Works with: All clients
+[cyanheads/git-mcp-server](https://github.com/cyanheads/git-mcp-server) — `MCP server` · ★ 241 · License: Apache-2.0 · Works with: All clients
 
 Comprehensive git server enabling native git tools including clone, commit, and worktree management.
 
@@ -923,6 +923,28 @@ dsh plugin --profile web add github:DietCokewithSugar/dsh-user-experience
 
 </details>
 
+<a id="dsh-dsh-github"></a>
+
+### GitHub CI and PR review bot
+
+[PerryLink/dsh-github](https://github.com/PerryLink/dsh-github) — `Native plugin` · ★ 15 · License: Apache-2.0 · Works with: DeepSeek Harness only
+
+Official-grade GitHub CI integration: a composite action.yml, a polling PR review bot with idempotent inline comments and a status-check gate, plus PR and issue tools where every write is gated by human approval.
+
+**Alternatives:**
+
+- [Starfie1d1272/dsh-github-skills](https://github.com/Starfie1d1272/dsh-github-skills) (★ 5) — Packages the workflow as four skills: PR triage, review feedback, Actions diagnosis and safe draft-PR publishing, via gh/git fallbacks
+
+<details><summary>Install</summary>
+
+**DeepSeek Harness**
+
+```bash
+dsh plugin --profile web add github:PerryLink/dsh-github
+```
+
+</details>
+
 <a id="dsh-dsh-git-worktree"></a>
 
 ### Git worktree session targets
@@ -942,28 +964,6 @@ Git-worktree Session Targets with isolated task sessions, ready-for-review statu
 
 ```bash
 dsh plugin --profile web add github:wloops/dsh-git-worktree
-```
-
-</details>
-
-<a id="dsh-dsh-github"></a>
-
-### GitHub CI and PR review bot
-
-[PerryLink/dsh-github](https://github.com/PerryLink/dsh-github) — `Native plugin` · ★ 14 · License: Apache-2.0 · Works with: DeepSeek Harness only
-
-Official-grade GitHub CI integration: a composite action.yml, a polling PR review bot with idempotent inline comments and a status-check gate, plus PR and issue tools where every write is gated by human approval.
-
-**Alternatives:**
-
-- [Starfie1d1272/dsh-github-skills](https://github.com/Starfie1d1272/dsh-github-skills) (★ 5) — Packages the workflow as four skills: PR triage, review feedback, Actions diagnosis and safe draft-PR publishing, via gh/git fallbacks
-
-<details><summary>Install</summary>
-
-**DeepSeek Harness**
-
-```bash
-dsh plugin --profile web add github:PerryLink/dsh-github
 ```
 
 </details>
@@ -1001,7 +1001,7 @@ A strip above the composer lists files modified in the current session (collapse
 **Alternatives:**
 
 - [cirelir/dsh-change-review](https://github.com/cirelir/dsh-change-review) (★ 14) — Tracks write/edit calls with session isolation, subagent aggregation and SSE live updates, also without needing git
-- [9087/dsh-diff-approval](https://github.com/9087/dsh-diff-approval) (★ 6) — Lets each change block be kept or reverted individually, supports undo/redo, and persists the review across restarts
+- [9087/dsh-diff-approval](https://github.com/9087/dsh-diff-approval) (★ 7) — Lets each change block be kept or reverted individually, supports undo/redo, and persists the review across restarts
 - [Tlyer233/dsh-vscode-review#dsh-review](https://github.com/Tlyer233/dsh-vscode-review/tree/main/dsh-review) — Records every write, edit and shell rm into a shadow git repo, reviewable hunk-by-hunk inside a companion VS Code extension
 
 <details><summary>Install</summary>

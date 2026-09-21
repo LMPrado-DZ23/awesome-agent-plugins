@@ -592,7 +592,7 @@ gemini extensions install https://github.com/google/agents-cli
 
 ### Cloudflare MCP servers
 
-[Cloudflare MCP servers](https://github.com/cloudflare/mcp-server-cloudflare) — `Servidor MCP` · ★ 4.2k · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[Cloudflare MCP servers](https://github.com/cloudflare/mcp-server-cloudflare) — `Servidor MCP` · ★ 4.3k · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Servidores MCP remotos da Cloudflare (bindings de Workers, builds, renderização de navegador, DNS analytics, audit logs…). A configuração mostrada conecta o servidor de Workers Bindings.
 
@@ -2047,7 +2047,7 @@ extensions:
 
 ### Application observability agent
 
-[Superlog](https://github.com/superloglabs/superlog) — `Servidor MCP` · ★ 1.4k · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[Superlog](https://github.com/superloglabs/superlog) — `Servidor MCP` · ★ 1.5k · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Agente open-source que observa e ajuda a corrigir uma aplicação: consulta logs, traces, métricas e incidentes.
 
@@ -2656,7 +2656,7 @@ extensions:
 
 ### SQL-native cloud provisioning
 
-[StackQL MCP Server](https://github.com/stackql/stackql) — `Servidor MCP` · ★ 965 · Licença: MIT · Funciona com: Todos os clientes
+[StackQL MCP Server](https://github.com/stackql/stackql) — `Servidor MCP` · ★ 991 · Licença: MIT · Funciona com: Todos os clientes
 
 Motor de consulta e provisionamento nativo em SQL para infraestrutura de nuvem.
 
@@ -2861,7 +2861,7 @@ extensions:
 
 ### Amazon SES observability
 
-[Sessy — Amazon SES observability](https://github.com/marckohlbrugge/sessy) — `Servidor MCP` · ★ 929 · Licença: ver repo · Funciona com: Todos os clientes
+[Sessy — Amazon SES observability](https://github.com/marckohlbrugge/sessy) — `Servidor MCP` · ★ 932 · Licença: ver repo · Funciona com: Todos os clientes
 
 Observabilidade somente leitura do Amazon SES: busca eventos, inspeciona bounces e traz estatísticas de entrega; exige token de Authorization.
 
@@ -3274,7 +3274,7 @@ extensions:
 
 ### Neon serverless Postgres management
 
-[Neon](https://github.com/neondatabase/mcp-server-neon) — `Servidor MCP` · ★ 648 · Licença: MIT · Funciona com: Todos os clientes
+[Neon](https://github.com/neondatabase/mcp-server-neon) — `Servidor MCP` · ★ 649 · Licença: MIT · Funciona com: Todos os clientes
 
 Servidor oficial para gerenciar projetos Neon e bancos Postgres Lakebase; exige token de Authorization.
 
@@ -3462,7 +3462,7 @@ extensions:
 
 ### Coolify infrastructure management
 
-[StuMason/coolify-mcp](https://github.com/StuMason/coolify-mcp) — `Servidor MCP` · ★ 598 · Licença: MIT · Funciona com: Todos os clientes
+[StuMason/coolify-mcp](https://github.com/StuMason/coolify-mcp) — `Servidor MCP` · ★ 601 · Licença: MIT · Funciona com: Todos os clientes
 
 45 ferramentas para gerenciar a infraestrutura Coolify, diagnósticos e busca na documentação; exige COOLIFY_ACCESS_TOKEN.
 
@@ -3677,7 +3677,7 @@ extensions:
 
 ### Proxmox VE management
 
-[ProxmoxMCP-Plus](https://github.com/RekklesNA/ProxmoxMCP-Plus) — `Servidor MCP` · ★ 543 · Licença: MIT · Funciona com: Todos os clientes
+[ProxmoxMCP-Plus](https://github.com/RekklesNA/ProxmoxMCP-Plus) — `Servidor MCP` · ★ 546 · Licença: MIT · Funciona com: Todos os clientes
 
 Gerencia VMs, LXCs, snapshots, backups, storage e operações de cluster no Proxmox VE.
 
@@ -4145,7 +4145,7 @@ extensions:
 
 ### Prometheus metrics and PromQL
 
-[Prometheus MCP Server](https://github.com/pab1it0/prometheus-mcp-server) — `Servidor MCP` · ★ 516 · Licença: MIT · Funciona com: Todos os clientes
+[Prometheus MCP Server](https://github.com/pab1it0/prometheus-mcp-server) — `Servidor MCP` · ★ 517 · Licença: MIT · Funciona com: Todos os clientes
 
 Dá acesso a métricas do Prometheus e execução de consultas PromQL para assistentes de IA.
 
@@ -4847,7 +4847,7 @@ extensions:
 
 ### Snowflake data platform
 
-[OSS Snowflake MCP Server](https://github.com/Snowflake-Labs/mcp) — `Servidor MCP` · ★ 298 · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[OSS Snowflake MCP Server](https://github.com/Snowflake-Labs/mcp) — `Servidor MCP` · ★ 299 · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Servidor para o Snowflake, da Snowflake Labs.
 
@@ -5385,7 +5385,7 @@ extensions:
 
 ### Enterprise PostgreSQL with hybrid search
 
-[pgEdge/pgedge-postgres-mcp](https://github.com/pgEdge/pgedge-postgres-mcp) — `Servidor MCP` · ★ 227 · Licença: PostgreSQL · Funciona com: Todos os clientes
+[pgEdge/pgedge-postgres-mcp](https://github.com/pgEdge/pgedge-postgres-mcp) — `Servidor MCP` · ★ 228 · Licença: PostgreSQL · Funciona com: Todos os clientes
 
 Servidor PostgreSQL empresarial com consultas em linguagem natural, busca híbrida (pgvector e BM25) e uma interface web.
 

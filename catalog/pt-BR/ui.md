@@ -35,7 +35,7 @@ Um workbench completo na barra lateral do DeepSeek Harness com renderização e 
 
 **Alternativas:**
 
-- [MichengAI/dsh-codex-ui](https://github.com/MichengAI/dsh-codex-ui) (★ 81) — Reconstrói a barra lateral, a árvore do workspace, a busca e a navegação de turnos em um layout estilo Codex, em vez de um workbench com abas.
+- [MichengAI/dsh-codex-ui](https://github.com/MichengAI/dsh-codex-ui) (★ 90) — Reconstrói a barra lateral, a árvore do workspace, a busca e a navegação de turnos em um layout estilo Codex, em vez de um workbench com abas.
 - [Jiyr0119/dsh-workspace-explorer](https://github.com/Jiyr0119/dsh-workspace-explorer) (★ 29) — Adiciona um popup animado e de propósito único com a árvore de arquivos do workspace, com busca e arrastar arquivos direto para o compositor.
 - [openAGFS/dsh-agfs](https://github.com/openAGFS/dsh-agfs) (★ 2) — Serve um aplicativo web independente de navegador de arquivos em React, além de uma ferramenta browse_files que o modelo pode chamar.
 - [2nd1st/dsh-plugin-open-app](https://github.com/2nd1st/dsh-plugin-open-app) (★ 7) — Dá a cada aplicativo MCP instalado seu próprio container na barra lateral com workspace e sessão separados, além de renderização inline nos chats.
@@ -77,7 +77,7 @@ dsh plugin --profile web add github:ccch1mneyyy/dsh-TUI
 
 ### Balance and cost widget
 
-[MeteorNOX/DeepSeek-Balance-Whale-Widget](https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget) — `Plugin nativo` · ★ 2.7k · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[MeteorNOX/DeepSeek-Balance-Whale-Widget](https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget) — `Plugin nativo` · ★ 2.9k · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Um widget fixo no canto da interface web do DSH mostrando saldo, uso do dia e custo por turno com preços de pico/fora de pico, bolhas de alerta editáveis, mais de 30 templates de provedores com saldo e cota por modelo, e sons ao fim das tarefas. Somente local, sem telemetria.
 
@@ -99,7 +99,7 @@ dsh plugin --profile web add github:MeteorNOX/DeepSeek-Balance-Whale-Widget
 
 ### At-file composer mentions
 
-[omdsh-dev/dsh-at-file](https://github.com/omdsh-dev/dsh-at-file) — `Plugin nativo` · ★ 512 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[omdsh-dev/dsh-at-file](https://github.com/omdsh-dev/dsh-at-file) — `Plugin nativo` · ★ 511 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Menções @arquivo estilo Codex: busque arquivos do workspace direto do compositor e anexe seu conteúdo aos prompts.
 
@@ -117,7 +117,7 @@ dsh plugin --profile web add github:omdsh-dev/dsh-at-file
 
 ### Design preview and editing
 
-[ZSeven-W/dsh-openpencil](https://github.com/ZSeven-W/dsh-openpencil) — `Plugin nativo` · ★ 174 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[ZSeven-W/dsh-openpencil](https://github.com/ZSeven-W/dsh-openpencil) — `Plugin nativo` · ★ 176 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Plugin de pré-visualização e edição de designs OpenPencil para o DeepSeek Harness.
 
@@ -135,14 +135,14 @@ dsh plugin --profile web add github:ZSeven-W/dsh-openpencil
 
 ### Inline generative UI apps
 
-[pengyue-polaron/deepseek-harness-genui](https://github.com/pengyue-polaron/deepseek-harness-genui) — `Plugin nativo` · ★ 112 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[pengyue-polaron/deepseek-harness-genui](https://github.com/pengyue-polaron/deepseek-harness-genui) — `Plugin nativo` · ★ 113 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Renderiza aplicativos de tarefa em React e TypeScript baseados em código, inline, no Canvas, em tela cheia ou em localhost, mantendo o estado de interação disponível para turnos posteriores do agente, com acesso a MCP e API sujeito a aprovação.
 
 **Alternativas:**
 
-- [omdsh-dev/dsh-genui](https://github.com/omdsh-dev/dsh-genui) (★ 464) — Renderiza tipos de widgets prontos — layout, gráficos, formulários, quizzes, diagramas mermaid, cenas 3D — com um loop de eventos de ação de volta ao modelo.
-- [Nagi-ovo/dsh-visualize](https://github.com/Nagi-ovo/dsh-visualize) (★ 262) — Transmite cartões HTML interativos em sandbox diretamente no chat com pré-visualização em streaming, em vez de aplicativos React completos.
+- [omdsh-dev/dsh-genui](https://github.com/omdsh-dev/dsh-genui) (★ 471) — Renderiza tipos de widgets prontos — layout, gráficos, formulários, quizzes, diagramas mermaid, cenas 3D — com um loop de eventos de ação de volta ao modelo.
+- [Nagi-ovo/dsh-visualize](https://github.com/Nagi-ovo/dsh-visualize) (★ 261) — Transmite cartões HTML interativos em sandbox diretamente no chat com pré-visualização em streaming, em vez de aplicativos React completos.
 - [jiuyuechuwuhao/dsh-canvas-preview](https://github.com/jiuyuechuwuhao/dsh-canvas-preview) (★ 3) — Adiciona uma aba Canvas que pré-visualiza ao vivo artefatos HTML do workspace e os exporta localmente como PNG, JPG ou SVG.
 
 <details><summary>Instalar</summary>
@@ -159,7 +159,7 @@ dsh plugin --profile web add github:pengyue-polaron/deepseek-harness-genui
 
 ### Auto-resume interrupted requests
 
-[HsiangNianian/dsh-auto-continue](https://github.com/HsiangNianian/dsh-auto-continue) — `Plugin nativo` · ★ 103 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[HsiangNianian/dsh-auto-continue](https://github.com/HsiangNianian/dsh-auto-continue) — `Plugin nativo` · ★ 110 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Retoma automaticamente requisições interrompidas do DSH Web enviando uma mensagem de continuação enfileirada após falhas de rede, timeout ou travamento do host, com classificação de erros, backoff adaptativo, texto de continuação personalizável e notificações do navegador.
 
@@ -177,13 +177,13 @@ dsh plugin --profile web add github:HsiangNianian/dsh-auto-continue
 
 ### Turn-status indicator widget
 
-[01Virex/dsh-status-rotator](https://github.com/01Virex/dsh-status-rotator) — `Plugin nativo` · ★ 86 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[01Virex/dsh-status-rotator](https://github.com/01Virex/dsh-status-rotator) — `Plugin nativo` · ★ 87 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Alterna o rótulo de status do turno entre 1059 frases bilíngues com efeito de máquina de escrever, gradiente arco-íris animado, danmaku, 12 pacotes de tema alternáveis, placeholders dinâmicos e rotação do título da aba.
 
 **Alternativas:**
 
-- [Yuuhann1999/dsh-bloub-mood](https://github.com/Yuuhann1999/dsh-bloub-mood) (★ 16) — Substitui o favicon, o logotipo da barra lateral e o título de destaque por formas animadas de ícone de humor que seguem o estado da sessão.
+- [Yuuhann1999/dsh-bloub-mood](https://github.com/Yuuhann1999/dsh-bloub-mood) (★ 17) — Substitui o favicon, o logotipo da barra lateral e o título de destaque por formas animadas de ícone de humor que seguem o estado da sessão.
 - [Luaphes/dsh-web-attention-badge](https://github.com/Luaphes/dsh-web-attention-badge) (★ 5) — Pisca um selo na moldura, uma contagem no título da aba e um favicon colorido conforme o status quando uma sessão precisa de atenção ou acabou de terminar.
 
 <details><summary>Instalar</summary>
@@ -200,7 +200,7 @@ dsh plugin --profile web add github:01Virex/dsh-status-rotator
 
 ### Smooth streaming text rendering
 
-[Laplace-bit/dsh-smooth-stream](https://github.com/Laplace-bit/dsh-smooth-stream) — `Plugin nativo` · ★ 74 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[Laplace-bit/dsh-smooth-stream](https://github.com/Laplace-bit/dsh-smooth-stream) — `Plugin nativo` · ★ 73 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Renderização de streaming fluida e rolagem suave para a interface web do DeepSeek Harness.
 
@@ -268,7 +268,7 @@ Suíte de melhorias de interface para o cliente web do DSH: locale chinês compl
 **Alternativas:**
 
 - [wlj521/dsh-ui-tweaks](https://github.com/wlj521/dsh-ui-tweaks) (★ 18) — Adiciona uma GitBar com gerenciamento de branches, diffs por arquivo e commit-e-push direto da interface de conversa.
-- [AcidGr/dsh-web-mobile-fix](https://github.com/AcidGr/dsh-web-mobile-fix) (★ 8) — Corrige o layout para telas estreitas: configurações e barra lateral em tela cheia, navegação de plugins em uma linha, popups centralizados.
+- [AcidGr/dsh-web-mobile-fix](https://github.com/AcidGr/dsh-web-mobile-fix) (★ 9) — Corrige o layout para telas estreitas: configurações e barra lateral em tela cheia, navegação de plugins em uma linha, popups centralizados.
 - [dsh-niao/dsh-niao-quick-open](https://github.com/dsh-niao/dsh-niao-quick-open) (★ 6) — Adiciona abertura do workspace em um clique (copiar caminho, revelar no Finder, abrir em um editor detectado automaticamente) e um botão de reinício forçado.
 
 <details><summary>Instalar</summary>
@@ -285,7 +285,7 @@ dsh plugin --profile web add github:magian1127/deepseek-harness-zh_pro
 
 ### Live subagent run monitor
 
-[Mombrane/dsh-subagent-monitor](https://github.com/Mombrane/dsh-subagent-monitor) — `Plugin nativo` · ★ 25 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[Mombrane/dsh-subagent-monitor](https://github.com/Mombrane/dsh-subagent-monitor) — `Plugin nativo` · ★ 26 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Um monitor ao vivo de execuções de subagentes para a interface web: um gatilho no rodapé da barra lateral e um painel fixo no canto superior direito mostram cada subagente da sessão atual em tempo real (em execução/tempo decorrido, resultados finais, indentação em árvore), com salto em um clique para a conversa filha.
 

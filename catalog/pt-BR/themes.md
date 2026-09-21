@@ -17,13 +17,13 @@
 
 ### Wallpaper Engine background player
 
-[elysia395/dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine) — `Plugin nativo` · ★ 303 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[elysia395/dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine) — `Plugin nativo` · ★ 319 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Reproduz papéis de parede de Vídeo e Web do Wallpaper Engine local atrás do chat (papéis de parede de Cena viram quadros estáticos), com filtros de classificação e tipo, uploads personalizados e uma janela de configurações em vidro líquido estilo iOS. Requer DSH 0.1.5-rc.1+ e dsh-better-sidebar 0.19.0+.
 
 **Alternativas:**
 
-- [d-dev0101/open-sea-skin](https://github.com/d-dev0101/open-sea-skin) (★ 378) — Renderiza uma cena de oceano animada em tempo real via WebGPU, com controles de ondas, luz do dia e vidro, em vez de arquivos de papel de parede pré-gravados.
+- [d-dev0101/open-sea-skin](https://github.com/d-dev0101/open-sea-skin) (★ 381) — Renderiza uma cena de oceano animada em tempo real via WebGPU, com controles de ondas, luz do dia e vidro, em vez de arquivos de papel de parede pré-gravados.
 
 <details><summary>Instalar</summary>
 
@@ -39,15 +39,15 @@ dsh plugin --profile web add github:elysia395/dsh-wallpaper-engine
 
 ### All-in-one skin and wallpaper suite
 
-[RevolutionLA/dsh-dream-skin](https://github.com/RevolutionLA/dsh-dream-skin) — `Plugin nativo` · ★ 175 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[RevolutionLA/dsh-dream-skin](https://github.com/RevolutionLA/dsh-dream-skin) — `Plugin nativo` · ★ 178 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Adiciona 8 temas nativos, um papel de parede translúcido com opacidade e desfoque ajustáveis, uma cor de destaque por usuário e importação/exportação de pacotes de tema com favoritos e um seletor aleatório surpreenda-me, tudo nativo no sistema de temas do DSH.
 
 **Alternativas:**
 
-- [NoNameLeGo/dsh-catppuccin-theme](https://github.com/NoNameLeGo/dsh-catppuccin-theme) (★ 41) — Adiciona a paleta oficial Catppuccin em 4 variantes com vidro fosco ajustável em 5 regiões da interface.
+- [NoNameLeGo/dsh-catppuccin-theme](https://github.com/NoNameLeGo/dsh-catppuccin-theme) (★ 43) — Adiciona a paleta oficial Catppuccin em 4 variantes com vidro fosco ajustável em 5 regiões da interface.
 - [Tkingxiao/dsh-any-background](https://github.com/Tkingxiao/dsh-any-background) (★ 33) — Alterna automaticamente o texto entre claro e escuro conforme as cores extraídas do papel de parede, com desfoque por área em 6 regiões.
-- [TQSY114514/dsh-ui-appearance](https://github.com/TQSY114514/dsh-ui-appearance) (★ 14) — Reúne temas de paleta de cores completos e papéis de parede em vídeo em um único painel de aparência.
+- [TQSY114514/dsh-ui-appearance](https://github.com/TQSY114514/dsh-ui-appearance) (★ 13) — Reúne temas de paleta de cores completos e papéis de parede em vídeo em um único painel de aparência.
 - [mux9056-bot/dsh-theme](https://github.com/mux9056-bot/dsh-theme) (★ 3) — Traz 30 pacotes de temas CSS prontos com variantes claro/escuro, gerenciáveis por uma API programática.
 
 <details><summary>Instalar</summary>
@@ -64,7 +64,7 @@ dsh plugin --profile web add github:RevolutionLA/dsh-dream-skin
 
 ### Bloom Morandi OKLCH theme
 
-[webkubor/dsh-bloom-theme](https://github.com/webkubor/dsh-bloom-theme) — `Plugin nativo` · ★ 37 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[webkubor/dsh-bloom-theme](https://github.com/webkubor/dsh-bloom-theme) — `Plugin nativo` · ★ 41 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Dez variantes de cor em tons Morandi (névoa, cinábrio, pétala, ondulação, sálvia, pedra, lápis, âmbar, aurora, lavanda) construídas no espaço de cor OKLCH para manter claro e escuro perceptualmente equilibrados, alternáveis pela barra superior, com todos os pares de frente/fundo atendendo ao WCAG AA ou melhor.
 

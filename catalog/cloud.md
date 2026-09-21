@@ -592,7 +592,7 @@ gemini extensions install https://github.com/google/agents-cli
 
 ### Cloudflare MCP servers
 
-[Cloudflare MCP servers](https://github.com/cloudflare/mcp-server-cloudflare) — `MCP server` · ★ 4.2k · License: Apache-2.0 · Works with: All clients
+[Cloudflare MCP servers](https://github.com/cloudflare/mcp-server-cloudflare) — `MCP server` · ★ 4.3k · License: Apache-2.0 · Works with: All clients
 
 Cloudflare's remote MCP servers (Workers bindings, builds, browser rendering, DNS analytics, audit logs…). The config shown connects the Workers Bindings server.
 
@@ -2047,7 +2047,7 @@ extensions:
 
 ### Application observability agent
 
-[Superlog](https://github.com/superloglabs/superlog) — `MCP server` · ★ 1.4k · License: Apache-2.0 · Works with: All clients
+[Superlog](https://github.com/superloglabs/superlog) — `MCP server` · ★ 1.5k · License: Apache-2.0 · Works with: All clients
 
 Open-source agent that observes and helps fix an application: query logs, traces, metrics, and incidents.
 
@@ -2656,7 +2656,7 @@ extensions:
 
 ### SQL-native cloud provisioning
 
-[StackQL MCP Server](https://github.com/stackql/stackql) — `MCP server` · ★ 965 · License: MIT · Works with: All clients
+[StackQL MCP Server](https://github.com/stackql/stackql) — `MCP server` · ★ 991 · License: MIT · Works with: All clients
 
 SQL-native query and provisioning engine for cloud infrastructure.
 
@@ -2861,7 +2861,7 @@ extensions:
 
 ### Amazon SES observability
 
-[Sessy — Amazon SES observability](https://github.com/marckohlbrugge/sessy) — `MCP server` · ★ 929 · License: see repo · Works with: All clients
+[Sessy — Amazon SES observability](https://github.com/marckohlbrugge/sessy) — `MCP server` · ★ 932 · License: see repo · Works with: All clients
 
 Read-only Amazon SES observability: search events, inspect bounces, and pull delivery stats; needs an Authorization token.
 
@@ -3274,7 +3274,7 @@ extensions:
 
 ### Neon serverless Postgres management
 
-[Neon](https://github.com/neondatabase/mcp-server-neon) — `MCP server` · ★ 648 · License: MIT · Works with: All clients
+[Neon](https://github.com/neondatabase/mcp-server-neon) — `MCP server` · ★ 649 · License: MIT · Works with: All clients
 
 Official server for managing Neon projects and Lakebase Postgres databases; needs an Authorization token.
 
@@ -3462,7 +3462,7 @@ extensions:
 
 ### Coolify infrastructure management
 
-[StuMason/coolify-mcp](https://github.com/StuMason/coolify-mcp) — `MCP server` · ★ 598 · License: MIT · Works with: All clients
+[StuMason/coolify-mcp](https://github.com/StuMason/coolify-mcp) — `MCP server` · ★ 601 · License: MIT · Works with: All clients
 
 45 tools for managing Coolify infrastructure, diagnostics, and documentation search; needs a COOLIFY_ACCESS_TOKEN.
 
@@ -3677,7 +3677,7 @@ extensions:
 
 ### Proxmox VE management
 
-[ProxmoxMCP-Plus](https://github.com/RekklesNA/ProxmoxMCP-Plus) — `MCP server` · ★ 543 · License: MIT · Works with: All clients
+[ProxmoxMCP-Plus](https://github.com/RekklesNA/ProxmoxMCP-Plus) — `MCP server` · ★ 546 · License: MIT · Works with: All clients
 
 Manages Proxmox VE VMs, LXCs, snapshots, backups, storage, and cluster operations.
 
@@ -4145,7 +4145,7 @@ extensions:
 
 ### Prometheus metrics and PromQL
 
-[Prometheus MCP Server](https://github.com/pab1it0/prometheus-mcp-server) — `MCP server` · ★ 516 · License: MIT · Works with: All clients
+[Prometheus MCP Server](https://github.com/pab1it0/prometheus-mcp-server) — `MCP server` · ★ 517 · License: MIT · Works with: All clients
 
 Provides Prometheus metrics access and PromQL query execution for AI assistants.
 
@@ -4847,7 +4847,7 @@ extensions:
 
 ### Snowflake data platform
 
-[OSS Snowflake MCP Server](https://github.com/Snowflake-Labs/mcp) — `MCP server` · ★ 298 · License: Apache-2.0 · Works with: All clients
+[OSS Snowflake MCP Server](https://github.com/Snowflake-Labs/mcp) — `MCP server` · ★ 299 · License: Apache-2.0 · Works with: All clients
 
 Server for Snowflake from Snowflake Labs.
 
@@ -5385,7 +5385,7 @@ extensions:
 
 ### Enterprise PostgreSQL with hybrid search
 
-[pgEdge/pgedge-postgres-mcp](https://github.com/pgEdge/pgedge-postgres-mcp) — `MCP server` · ★ 227 · License: PostgreSQL · Works with: All clients
+[pgEdge/pgedge-postgres-mcp](https://github.com/pgEdge/pgedge-postgres-mcp) — `MCP server` · ★ 228 · License: PostgreSQL · Works with: All clients
 
 Enterprise PostgreSQL server with natural-language queries, hybrid search (pgvector plus BM25), and a web UI.
 

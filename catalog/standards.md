@@ -12,7 +12,7 @@
 
 ### Agent Skills
 
-[Agent Skills](https://github.com/agentskills/agentskills) — `Standard / spec` · ★ 25k · License: Apache-2.0 · Works with: —
+[Agent Skills](https://github.com/agentskills/agentskills) — `Standard / spec` · ★ 26k · License: Apache-2.0 · Works with: —
 
 Specification for Agent Skills: a folder with a SKILL.md (name, description, instructions) plus optional scripts and resources that an agent loads on demand.
 
@@ -20,7 +20,7 @@ Specification for Agent Skills: a folder with a SKILL.md (name, description, ins
 
 ### AGENTS.md
 
-[AGENTS.md](https://github.com/agentsmd/agents.md) — `Standard / spec` · ★ 24k · License: MIT · Works with: —
+[AGENTS.md](https://github.com/agentsmd/agents.md) — `Standard / spec` · ★ 25k · License: MIT · Works with: —
 
 Open Markdown format for project instructions to coding agents (setup, build, test, conventions). Read by Codex, Cursor, OpenCode, Zed, Windsurf, DeepSeek Harness and others.
 

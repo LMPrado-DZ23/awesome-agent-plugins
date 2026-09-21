@@ -5,8 +5,8 @@
 > This page is generated from `data/entries/` — do not edit by hand.
 
 - [Cybersecurity skill library](#anthropic-cybersecurity-skills) — 818 structured cybersecurity skills for AI agents mapped to MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND an…
-- [Web3 smart contract security skills](#vibe-coding-cn) — Skill set for analyzing Ethereum and other smart contract vulnerabilities, auditing Foundry-based contracts, a…
 - [Cloudflare security audit skill](#security-audit-skill) — Official Cloudflare skill for running multi-phase code security audits that produce independently verified, ma…
+- [Web3 smart contract security skills](#vibe-coding-cn) — Skill set for analyzing Ethereum and other smart contract vulnerabilities, auditing Foundry-based contracts, a…
 - [AI infrastructure red-teaming skills](#ai-infra-guard) — Full-stack AI red-teaming skill set detecting agentic supply-chain risk, authorization bypass, cascading failu…
 - [Offensive/defensive debugging skills](#raptor) — Security-focused skills for exploit development and debugging: function tracing, coverage analysis, Frida inst…
 - [CTF challenge-solving skills](#ctf-skills) — Focused skill set for solving Capture-The-Flag challenges: web exploitation, binary pwn, cryptography, reverse…
@@ -21,8 +21,8 @@
 - [SonarQube code quality scans](#sonarqube-mcp-server) — Official SonarSource server for analyzing code quality and security with SonarQube Server or Cloud; needs a SO…
 - [Authorized pentest and redteam toolkit](#dsh-dsh-redteam-model) — Authorized-security toolkit with nine work modes (redteam coordination, pentest, code audit, binary analysis, …
 - [Reverse engineer from the CLI](#rea-mcp) — Reverse engineers arbitrary targets from the terminal or an agent, via one CLI and server.
-- [CrowdStrike Falcon security analysis](#falcon-mcp) — Official CrowdStrike server connecting agents to Falcon for security analysis and automation; needs Falcon cli…
 - [Network analysis with tshark](#wireshark-mcp) — Professional network analysis with tshark for security audits, deep-dives, and threat detection.
+- [CrowdStrike Falcon security analysis](#falcon-mcp) — Official CrowdStrike server connecting agents to Falcon for security analysis and automation; needs Falcon cli…
 - [DMARC report parsing](#parse-dmarc-mcp) — Lightweight DMARC parser that auto-fetches email reports and visualizes compliance in one app.
 - [Threat hunting on Elasticsearch](#crowdsentinels-ai-mcp) — AI threat hunting and incident response for Elasticsearch/OpenSearch with endpoint and network forensics; need…
 - [Reverse engineering and forensics](#reversecore-mcp) — Security-first server for reverse engineering, malware analysis, forensics, and static analysis (SAST).
@@ -49,7 +49,7 @@
 **Alternatives:**
 
 - [trailofbits/skills](https://github.com/trailofbits/skills) (★ 7.2k) — Trail of Bits' own Claude Code skills for security research, vulnerability detection and audit workflows.
-- [elementalsouls/Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter) (★ 4.5k) — Bug-hunting and external red-team skill bundle with 82 skills and disclosed-report patterns across 24 vulnerability classes.
+- [elementalsouls/Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter) (★ 4.6k) — Bug-hunting and external red-team skill bundle with 82 skills and disclosed-report patterns across 24 vulnerability classes.
 
 <details><summary>Install</summary>
 
@@ -129,6 +129,96 @@ npx skills add mukul975/Anthropic-Cybersecurity-Skills -a roo -g
 
 ```bash
 npx skills add mukul975/Anthropic-Cybersecurity-Skills -a universal
+```
+
+</details>
+
+<a id="security-audit-skill"></a>
+
+### Cloudflare security audit skill
+
+[cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) — `Agent Skills` · ★ 19k · License: MIT · Works with: All clients
+
+Official Cloudflare skill for running multi-phase code security audits that produce independently verified, machine-readable findings.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+npx skills add cloudflare/security-audit-skill -a claude-code -g
+```
+
+**Codex CLI**
+
+```bash
+npx skills add cloudflare/security-audit-skill -a codex -g
+```
+
+**Gemini CLI**
+
+```bash
+npx skills add cloudflare/security-audit-skill -a gemini-cli -g
+```
+
+**Cursor**
+
+```bash
+npx skills add cloudflare/security-audit-skill -a cursor -g
+```
+
+**VS Code (Copilot)**
+
+```bash
+npx skills add cloudflare/security-audit-skill -a github-copilot -g
+```
+
+**OpenCode**
+
+```bash
+npx skills add cloudflare/security-audit-skill -a opencode -g
+```
+
+**Cline**
+
+```bash
+npx skills add cloudflare/security-audit-skill -a cline -g
+```
+
+**Windsurf**
+
+```bash
+npx skills add cloudflare/security-audit-skill -a windsurf -g
+```
+
+**Zed**
+
+```bash
+npx skills add cloudflare/security-audit-skill -a zed -g
+```
+
+**Goose**
+
+```bash
+npx skills add cloudflare/security-audit-skill -a goose -g
+```
+
+**Kiro**
+
+```bash
+npx skills add cloudflare/security-audit-skill -a kiro-cli -g
+```
+
+**Roo Code**
+
+```bash
+npx skills add cloudflare/security-audit-skill -a roo -g
+```
+
+**DeepSeek Harness**
+
+```bash
+npx skills add cloudflare/security-audit-skill -a universal
 ```
 
 </details>
@@ -223,101 +313,11 @@ npx skills add tradecatlabs/vibe-coding-cn -a universal
 
 </details>
 
-<a id="security-audit-skill"></a>
-
-### Cloudflare security audit skill
-
-[cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) — `Agent Skills` · ★ 14k · License: MIT · Works with: All clients
-
-Official Cloudflare skill for running multi-phase code security audits that produce independently verified, machine-readable findings.
-
-<details><summary>Install</summary>
-
-**Claude Code**
-
-```bash
-npx skills add cloudflare/security-audit-skill -a claude-code -g
-```
-
-**Codex CLI**
-
-```bash
-npx skills add cloudflare/security-audit-skill -a codex -g
-```
-
-**Gemini CLI**
-
-```bash
-npx skills add cloudflare/security-audit-skill -a gemini-cli -g
-```
-
-**Cursor**
-
-```bash
-npx skills add cloudflare/security-audit-skill -a cursor -g
-```
-
-**VS Code (Copilot)**
-
-```bash
-npx skills add cloudflare/security-audit-skill -a github-copilot -g
-```
-
-**OpenCode**
-
-```bash
-npx skills add cloudflare/security-audit-skill -a opencode -g
-```
-
-**Cline**
-
-```bash
-npx skills add cloudflare/security-audit-skill -a cline -g
-```
-
-**Windsurf**
-
-```bash
-npx skills add cloudflare/security-audit-skill -a windsurf -g
-```
-
-**Zed**
-
-```bash
-npx skills add cloudflare/security-audit-skill -a zed -g
-```
-
-**Goose**
-
-```bash
-npx skills add cloudflare/security-audit-skill -a goose -g
-```
-
-**Kiro**
-
-```bash
-npx skills add cloudflare/security-audit-skill -a kiro-cli -g
-```
-
-**Roo Code**
-
-```bash
-npx skills add cloudflare/security-audit-skill -a roo -g
-```
-
-**DeepSeek Harness**
-
-```bash
-npx skills add cloudflare/security-audit-skill -a universal
-```
-
-</details>
-
 <a id="ai-infra-guard"></a>
 
 ### AI infrastructure red-teaming skills
 
-[Tencent/AI-Infra-Guard](https://github.com/Tencent/AI-Infra-Guard) — `Agent Skills` · ★ 6.4k · License: Apache-2.0 · Works with: All clients
+[Tencent/AI-Infra-Guard](https://github.com/Tencent/AI-Infra-Guard) — `Agent Skills` · ★ 6.5k · License: Apache-2.0 · Works with: All clients
 
 Full-stack AI red-teaming skill set detecting agentic supply-chain risk, authorization bypass, cascading failures, data leakage and prompt injection across agents, skills and MCP servers. For authorized security testing only.
 
@@ -677,14 +677,14 @@ npx skills add oxsecurity/megalinter -a universal
 
 ### Practical hacker skills library
 
-[yaklang/hack-skills](https://github.com/yaklang/hack-skills) — `Agent Skills` · ★ 2.2k · License: MIT · Works with: All clients
+[yaklang/hack-skills](https://github.com/yaklang/hack-skills) — `Agent Skills` · ★ 2.3k · License: MIT · Works with: All clients
 
 Over a hundred offensive-security skills (web, network, Active Directory, mobile, cloud) for AI-assisted penetration testing. For authorized security testing only.
 
 **Alternatives:**
 
-- [SnailSploit/Claude-Red](https://github.com/SnailSploit/Claude-Red) (★ 6.2k) — Curated red-team skill library organized by attack surface: AD, API, JWT, OAuth, CI/CD, cloud.
-- [zhaoxuya520/reverse-skill](https://github.com/zhaoxuya520/reverse-skill) (★ 36k) — Adds AI-routed toolchain bootstrapping for reverse engineering and authorized pentesting.
+- [SnailSploit/Claude-Red](https://github.com/SnailSploit/Claude-Red) (★ 6.6k) — Curated red-team skill library organized by attack surface: AD, API, JWT, OAuth, CI/CD, cloud.
+- [zhaoxuya520/reverse-skill](https://github.com/zhaoxuya520/reverse-skill) (★ 37k) — Adds AI-routed toolchain bootstrapping for reverse engineering and authorized pentesting.
 - [Netw0rkNoob/VulnClaw](https://github.com/Netw0rkNoob/VulnClaw) (★ 3.4k) — Adds an end-to-end recon-to-report pipeline driven by natural language.
 
 <details><summary>Install</summary>
@@ -1016,7 +1016,7 @@ extensions:
 
 ### Pre-execution command guard
 
-[kenryu42/cc-safety-net](https://github.com/kenryu42/cc-safety-net) — `Agent Skills` · ★ 1.5k · License: MIT · Works with: All clients
+[kenryu42/cc-safety-net](https://github.com/kenryu42/cc-safety-net) — `Agent Skills` · ★ 1.6k · License: MIT · Works with: All clients
 
 Pre-execution guard for AI coding agents that blocks destructive Git and filesystem commands and attempts to access sensitive files before a tool call runs.
 
@@ -1113,7 +1113,7 @@ Open-source governance layer for AI agents with byte-identical run receipts, 40+
 **Alternatives:**
 
 - [Emilia Protocol](https://github.com/emiliaprotocol/emilia-protocol) (★ 617) — Exact-action approval for consequential agent actions, with signed receipts; needs an EP_API_KEY.
-- [HOL Guard](https://github.com/hashgraph-online/hol-guard) (★ 626) — Local-first security evidence and approval workflows for an agent's actions.
+- [HOL Guard](https://github.com/hashgraph-online/hol-guard) (★ 640) — Local-first security evidence and approval workflows for an agent's actions.
 - [ucsandman/DashClaw/tree/main/mcp-server](https://github.com/ucsandman/DashClaw/tree/main/mcp-server) — Policy checks, approvals, records, and governed HTTP capabilities for unattended agents.
 
 <details><summary>Install</summary>
@@ -1498,7 +1498,7 @@ extensions:
 
 ### Read-only relay and config security audit
 
-[toby-bridges/api-relay-audit](https://github.com/toby-bridges/api-relay-audit) — `Native plugin` · ★ 839 · License: AGPL-3.0 · Works with: DeepSeek Harness only
+[toby-bridges/api-relay-audit](https://github.com/toby-bridges/api-relay-audit) — `Native plugin` · ★ 842 · License: AGPL-3.0 · Works with: DeepSeek Harness only
 
 Runs local security audits of AI API relays and LLM proxies, producing Markdown reports on prompt injection, model substitution signals, tool-call rewriting, error leakage, stream integrity, and Web3 risks.
 
@@ -1520,7 +1520,7 @@ dsh plugin --profile web add github:toby-bridges/api-relay-audit
 
 ### Dead code and secrets detection
 
-[duriantaco/skylos](https://github.com/duriantaco/skylos) — `MCP server` · ★ 820 · License: Apache-2.0 · Works with: All clients
+[duriantaco/skylos](https://github.com/duriantaco/skylos) — `MCP server` · ★ 827 · License: Apache-2.0 · Works with: All clients
 
 Dead code, security, secrets detection, and code quality for Python, TypeScript, and Go; needs a SKYLOS_API_KEY.
 
@@ -1727,7 +1727,7 @@ extensions:
 
 ### SonarQube code quality scans
 
-[SonarQube MCP Server](https://github.com/SonarSource/sonarqube-mcp-server) — `MCP server` · ★ 654 · License: see repo · Works with: All clients
+[SonarQube MCP Server](https://github.com/SonarSource/sonarqube-mcp-server) — `MCP server` · ★ 655 · License: see repo · Works with: All clients
 
 Official SonarSource server for analyzing code quality and security with SonarQube Server or Cloud; needs a SONARQUBE_TOKEN.
 
@@ -2024,13 +2024,13 @@ extensions:
 
 ### Authorized pentest and redteam toolkit
 
-[SeaOf0/dsh-redteam-model](https://github.com/SeaOf0/dsh-redteam-model) — `Native plugin` · ★ 511 · License: MIT · Works with: DeepSeek Harness only
+[SeaOf0/dsh-redteam-model](https://github.com/SeaOf0/dsh-redteam-model) — `Native plugin` · ★ 556 · License: MIT · Works with: DeepSeek Harness only
 
 Authorized-security toolkit with nine work modes (redteam coordination, pentest, code audit, binary analysis, attack-defense, AV evasion, incident response, cloud security, CTF) and fifteen runtime plugins, managed from one settings page.
 
 **Alternatives:**
 
-- [howmp/dsh-pentest](https://github.com/howmp/dsh-pentest) (★ 504) — Adds an exploration chain that tracks assets and findings through a dedicated web view.
+- [howmp/dsh-pentest](https://github.com/howmp/dsh-pentest) (★ 526) — Adds an exploration chain that tracks assets and findings through a dedicated web view.
 - [ADWMC/helm-d#helmd](https://github.com/ADWMC/helm-d/tree/main/packages/helmd) — Adds 33 reverse-engineering tools for APK, native binary, protocol and malware samples, plus an on-disk case workflow with evidence chains.
 
 <details><summary>Install</summary>
@@ -2047,7 +2047,7 @@ dsh plugin --profile web add github:SeaOf0/dsh-redteam-model
 
 ### Reverse engineer from the CLI
 
-[REA](https://github.com/morluto/rea) — `MCP server` · ★ 412 · License: MIT · Works with: All clients
+[REA](https://github.com/morluto/rea) — `MCP server` · ★ 413 · License: MIT · Works with: All clients
 
 Reverse engineers arbitrary targets from the terminal or an agent, via one CLI and server.
 
@@ -2232,11 +2232,192 @@ extensions:
 
 </details>
 
+<a id="wireshark-mcp"></a>
+
+### Network analysis with tshark
+
+[bx33661/Wireshark-MCP](https://github.com/bx33661/Wireshark-MCP) — `MCP server` · ★ 259 · License: MIT · Works with: All clients
+
+Professional network analysis with tshark for security audits, deep-dives, and threat detection.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio wireshark-mcp -- uvx wireshark-mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add wireshark-mcp -- uvx wireshark-mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add wireshark-mcp uvx wireshark-mcp
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "wireshark-mcp": {
+      "command": "uvx",
+      "args": [
+        "wireshark-mcp"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "wireshark-mcp": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "wireshark-mcp"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "wireshark-mcp": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "wireshark-mcp"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "wireshark-mcp": {
+      "command": "uvx",
+      "args": [
+        "wireshark-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "wireshark-mcp": {
+      "command": "uvx",
+      "args": [
+        "wireshark-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "wireshark-mcp": {
+      "source": "custom",
+      "command": "uvx",
+      "args": [
+        "wireshark-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  wireshark-mcp:
+    type: stdio
+    cmd: uvx
+    args: ["wireshark-mcp"]
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "wireshark-mcp": {
+      "command": "uvx",
+      "args": [
+        "wireshark-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "wireshark-mcp": {
+      "command": "uvx",
+      "args": [
+        "wireshark-mcp"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `wireshark-mcp.cordis.yml  →  dsh web --patch ./wireshark-mcp.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-wireshark-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: wireshark-mcp
+        transport: stdio
+        command: uvx
+        args: ["wireshark-mcp"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
 <a id="falcon-mcp"></a>
 
 ### CrowdStrike Falcon security analysis
 
-[CrowdStrike Falcon MCP Server](https://github.com/CrowdStrike/falcon-mcp) — `MCP server` · ★ 256 · License: MIT · Works with: All clients
+[CrowdStrike Falcon MCP Server](https://github.com/CrowdStrike/falcon-mcp) — `MCP server` · ★ 257 · License: MIT · Works with: All clients
 
 Official CrowdStrike server connecting agents to Falcon for security analysis and automation; needs Falcon client credentials.
 
@@ -2457,192 +2638,11 @@ extensions:
 
 </details>
 
-<a id="wireshark-mcp"></a>
-
-### Network analysis with tshark
-
-[bx33661/Wireshark-MCP](https://github.com/bx33661/Wireshark-MCP) — `MCP server` · ★ 256 · License: MIT · Works with: All clients
-
-Professional network analysis with tshark for security audits, deep-dives, and threat detection.
-
-<details><summary>Install</summary>
-
-**Claude Code**
-
-```bash
-claude mcp add --transport stdio wireshark-mcp -- uvx wireshark-mcp
-```
-
-**Codex CLI**
-
-```bash
-codex mcp add wireshark-mcp -- uvx wireshark-mcp
-```
-
-**Gemini CLI**
-
-```bash
-gemini mcp add wireshark-mcp uvx wireshark-mcp
-```
-
-**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "wireshark-mcp": {
-      "command": "uvx",
-      "args": [
-        "wireshark-mcp"
-      ]
-    }
-  }
-}
-```
-
-**VS Code (Copilot)** — File: `.vscode/mcp.json`
-
-```json
-{
-  "servers": {
-    "wireshark-mcp": {
-      "type": "stdio",
-      "command": "uvx",
-      "args": [
-        "wireshark-mcp"
-      ]
-    }
-  }
-}
-```
-
-**OpenCode** — File: `opencode.json`
-
-```json
-{
-  "$schema": "https://opencode.ai/config.json",
-  "mcp": {
-    "wireshark-mcp": {
-      "type": "local",
-      "command": [
-        "uvx",
-        "wireshark-mcp"
-      ],
-      "enabled": true
-    }
-  }
-}
-```
-
-**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
-
-```json
-{
-  "mcpServers": {
-    "wireshark-mcp": {
-      "command": "uvx",
-      "args": [
-        "wireshark-mcp"
-      ]
-    }
-  }
-}
-```
-
-**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
-
-```json
-{
-  "mcpServers": {
-    "wireshark-mcp": {
-      "command": "uvx",
-      "args": [
-        "wireshark-mcp"
-      ]
-    }
-  }
-}
-```
-
-**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
-
-```json
-{
-  "context_servers": {
-    "wireshark-mcp": {
-      "source": "custom",
-      "command": "uvx",
-      "args": [
-        "wireshark-mcp"
-      ]
-    }
-  }
-}
-```
-
-**Goose** — File: `~/.config/goose/config.yaml`
-
-```yaml
-extensions:
-  wireshark-mcp:
-    type: stdio
-    cmd: uvx
-    args: ["wireshark-mcp"]
-    enabled: true
-```
-
-**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "wireshark-mcp": {
-      "command": "uvx",
-      "args": [
-        "wireshark-mcp"
-      ]
-    }
-  }
-}
-```
-
-**Roo Code** — File: `.roo/mcp.json`
-
-```json
-{
-  "mcpServers": {
-    "wireshark-mcp": {
-      "command": "uvx",
-      "args": [
-        "wireshark-mcp"
-      ]
-    }
-  }
-}
-```
-
-**DeepSeek Harness** — File: `wireshark-mcp.cordis.yml  →  dsh web --patch ./wireshark-mcp.cordis.yml`
-
-```yaml
-- insert:
-    - id: mcp-wireshark-mcp
-      name: '@deepseek-ai/dsh-mcp-client'
-      config:
-        serverName: wireshark-mcp
-        transport: stdio
-        command: uvx
-        args: ["wireshark-mcp"]
-        env: {}
-        cwd: !!js process.cwd()
-```
-
-</details>
-
 <a id="parse-dmarc-mcp"></a>
 
 ### DMARC report parsing
 
-[Parse-DMARC MCP Server](https://github.com/meysam81/parse-dmarc) — `MCP server` · ★ 207 · License: Apache-2.0 · Works with: All clients
+[Parse-DMARC MCP Server](https://github.com/meysam81/parse-dmarc) — `MCP server` · ★ 208 · License: Apache-2.0 · Works with: All clients
 
 Lightweight DMARC parser that auto-fetches email reports and visualizes compliance in one app.
 
@@ -3072,7 +3072,7 @@ extensions:
 
 ### Reverse engineering and forensics
 
-[Reversecore MCP](https://github.com/sjkim1127/Reversecore_MCP) — `MCP server` · ★ 203 · License: MIT · Works with: All clients
+[Reversecore MCP](https://github.com/sjkim1127/Reversecore_MCP) — `MCP server` · ★ 205 · License: MIT · Works with: All clients
 
 Security-first server for reverse engineering, malware analysis, forensics, and static analysis (SAST).
 
@@ -3253,13 +3253,13 @@ extensions:
 
 ### Second-model auto-approval review
 
-[PerryLink/dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) — `Native plugin` · ★ 182 · License: Apache-2.0 · Works with: DeepSeek Harness only
+[PerryLink/dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) — `Native plugin` · ★ 189 · License: Apache-2.0 · Works with: DeepSeek Harness only
 
 Adds a read-only reviewer subagent to the approval chain that returns structured allow/deny verdicts with reasons, and fails closed by default when the review is inconclusive.
 
 **Alternatives:**
 
-- [moon09300731/dsh-approval-gate](https://github.com/moon09300731/dsh-approval-gate) (★ 73) — Pre-classifies whether an action is reversible, auto-approves safe ones, escalates dangerous ones, with one-click revert via snapshots.
+- [moon09300731/dsh-approval-gate](https://github.com/moon09300731/dsh-approval-gate) (★ 78) — Pre-classifies whether an action is reversible, auto-approves safe ones, escalates dangerous ones, with one-click revert via snapshots.
 - [PAKIKNOWLEDGE/dsh-auto-classifier](https://github.com/PAKIKNOWLEDGE/dsh-auto-classifier) (★ 1) — Adds an LLM semantic judge plus git checkpointing so unattended sessions can be rolled back.
 - [NanmiCoder/dsh-auto-mode](https://github.com/NanmiCoder/dsh-auto-mode) (★ 161) — Denies critical paths outright and grants only one exact wider access per escalation request.
 - [Alnita-M/dsh-Almost_Full_Access](https://github.com/Alnita-M/dsh-Almost_Full_Access) (★ 1) — Combines deterministic rule checks with a subagent review before granting near-full access.
@@ -3278,7 +3278,7 @@ dsh plugin --profile web add github:PerryLink/dsh-auto-review
 
 ### Declarative permission rules engine
 
-[PerryLink/dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) — `Native plugin` · ★ 112 · License: Apache-2.0 · Works with: DeepSeek Harness only
+[PerryLink/dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) — `Native plugin` · ★ 113 · License: Apache-2.0 · Works with: DeepSeek Harness only
 
 Declarative, ordered allow/deny/ask rules matching tool names, arguments, workspace paths, and agent identity at the pre-execute stage, with full session-log audit, dry-run mode, and hot reload.
 
@@ -3301,16 +3301,16 @@ dsh plugin --profile web add github:PerryLink/dsh-permission-rules
 
 ### Web UI login and auth gate
 
-[xgone/dsh-remote](https://github.com/xgone/dsh-remote) — `Native plugin` · ★ 65 · License: MIT · Works with: DeepSeek Harness only
+[xgone/dsh-remote](https://github.com/xgone/dsh-remote) — `Native plugin` · ★ 64 · License: MIT · Works with: DeepSeek Harness only
 
 Secures the harness Web UI behind a login gate: MFA/TOTP, signed session cookies, optional admin, user and guest roles, in-browser workspace selection, and allowlisted remote file previews.
 
 **Alternatives:**
 
-- [TecFancy/dsh-auth-gate](https://github.com/TecFancy/dsh-auth-gate) (★ 14) — Supports shared-token authentication, request rate limiting, and a CLI for user management.
+- [TecFancy/dsh-auth-gate](https://github.com/TecFancy/dsh-auth-gate) (★ 15) — Supports shared-token authentication, request rate limiting, and a CLI for user management.
 - [hxy91819/dsh-auth](https://github.com/hxy91819/dsh-auth) (★ 6) — Uses Caddy forward_auth with Argon2id password hashing, revocable sessions, and a bilingual UI.
 - [SummerSec/dsh-web-auth](https://github.com/SummerSec/dsh-web-auth) (★ 2) — Adds IP-based login throttling and an scrypt password-hashing CLI.
-- [GDWhisper/dsh-web-startup-auth](https://github.com/GDWhisper/dsh-web-startup-auth) (★ 43) — Lets the Web UI bind to 0.0.0.0 safely and includes a CLI to rotate the signing key and invalidate all sessions.
+- [GDWhisper/dsh-web-startup-auth](https://github.com/GDWhisper/dsh-web-startup-auth) (★ 47) — Lets the Web UI bind to 0.0.0.0 safely and includes a CLI to rotate the signing key and invalidate all sessions.
 
 <details><summary>Install</summary>
 
@@ -3326,7 +3326,7 @@ dsh plugin --profile web add github:xgone/dsh-remote
 
 ### Multi-tenant server security platform
 
-[slywalker2006/dsh-passwords](https://github.com/slywalker2006/dsh-passwords) — `Native plugin` · ★ 61 · License: GPL-3.0 · Works with: DeepSeek Harness only
+[slywalker2006/dsh-passwords](https://github.com/slywalker2006/dsh-passwords) — `Native plugin` · ★ 63 · License: GPL-3.0 · Works with: DeepSeek Harness only
 
 Turns the harness into a server-grade multi-tenant platform: remote access with automatic HTTPS, per-subuser permissions with token and daily quotas, sandbox enforcement, encrypted authentication, and an audit log.
 
