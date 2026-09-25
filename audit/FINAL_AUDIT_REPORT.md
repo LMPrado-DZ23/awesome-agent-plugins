@@ -28,7 +28,7 @@ O e2e final registrou `claude-code`, `codex` e as instalações de skills como a
 
 ## Decisões e limites
 
-Não foram alterados dados do catálogo, histórico Git anterior, permissões ou configurações externas. A publicação será feita em um commit novo na branch atual, conforme autorização explícita do usuário. O único limite restante é a ausência do binário Gemini no ambiente; o fluxo correspondente continua coberto pelos renderizadores unitários e pode ser executado quando o CLI estiver disponível.
+Não foram alterados dados do catálogo, histórico Git anterior, permissões ou configurações externas. A publicação foi realizada em um commit novo na branch `main`, conforme autorização explícita do usuário. O único limite restante é a ausência do binário Gemini no ambiente; o fluxo correspondente continua coberto pelos renderizadores unitários e pode ser executado quando o CLI estiver disponível.
 
 **Status:** COMPLETED.
 

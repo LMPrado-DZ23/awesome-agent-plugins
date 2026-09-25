@@ -66,3 +66,9 @@ Na segunda rodada foi corrigido o desalinhamento do schema: o tipo válido `inst
 Resultado final desta continuação: 19 testes passando; 589 entradas e 5 coleções válidas; artefatos atualizados; `npm audit` sem vulnerabilidades; e2e passando em Claude Code, Codex e skills, com Gemini explicitamente pulado por ausência do binário.
 
 **STATUS: COMPLETED**
+
+## Publicação
+
+Commit publicado em `origin/main`: `8439fb8 fix: harden catalog validation and e2e checks`. O repositório local ficou alinhado com `origin/main` após o push.
+
+**STATUS: COMPLETED**
