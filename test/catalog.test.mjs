@@ -1,8 +1,9 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
+import { readFileSync } from 'node:fs';
 import yaml from 'js-yaml';
-import { validateEntry, validateCatalog } from '../lib/validate.mjs';
+import { validateEntry, validateCatalog, validateCollections } from '../lib/validate.mjs';
 import { CLIENT_IDS, installFor, clientsFor, serverName } from '../lib/clients.mjs';
 import { search } from '../lib/search.mjs';
 import { loadEntries, ROOT } from '../lib/catalog.mjs';
@@ -38,6 +39,27 @@ test('catalog rejects duplicate ids and URLs listed twice', () => {
   const errs = validateCatalog([{ file: 'a.yml', entry: stdio }, { file: 'b.yml', entry: stdio }, { file: 'c.yml', entry: alt }]).join('\n');
   assert.match(errs, /duplicate id/);
   assert.match(errs, /already listed/);
+});
+
+test('catalog rejects duplicate URLs within the same entry and malformed entries without crashing', () => {
+  const sameFile = { ...http, alternatives: [{ name: 'Same server', url: 'https://github.com/o/demo-http', adds: d }] };
+  const errs = validateCatalog([{ file: 'same.yml', entry: sameFile }, { file: 'null.yml', entry: null }]).join('\n');
+  assert.match(errs, /same\.yml: https:\/\/github\.com\/o\/demo-http already listed in same\.yml/);
+  assert.match(errs, /null\.yml: entry must be a mapping/);
+});
+
+test('validators report malformed alternatives and collections instead of throwing', () => {
+  assert.match(validateEntry({ ...http, alternatives: [null] }).join('\n'), /alternatives\[0\]: must be a mapping/);
+  assert.match(validateCatalog([{ file: 'bad-entry.yml', entry: { ...http, alternatives: [null] } }]).join('\n'), /alternatives\[0\]: must be a mapping/);
+  assert.match(validateCatalog([{ file: 'bad-url.yml', entry: { ...http, url: 42 } }]).join('\n'), /bad-url\.yml: url: https URL required/);
+  assert.match(validateCollections([{ file: 'bad.yml', collection: null }], new Set()).join('\n'), /bad\.yml: collection must be a mapping/);
+});
+
+test('editor schema includes every catalog type and the instructions shape', () => {
+  const schema = JSON.parse(readFileSync(new URL('../schema/entry.schema.json', import.meta.url), 'utf8'));
+  assert.ok(schema.properties.type.enum.includes('instructions'));
+  assert.deepEqual(schema.properties.instructions.required, ['url']);
+  assert.equal(schema.properties.instructions.properties.url.pattern, '^https://');
 });
 
 test('every client renders every MCP entry', () => {

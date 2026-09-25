@@ -5,14 +5,16 @@
 //   npm run e2e            # clients found on PATH or runnable via npx
 //
 // Needs network (npx). Not part of `npm test`.
-import { execSync } from 'node:child_process';
+import { execSync, execFileSync } from 'node:child_process';
 import { mkdtempSync, readFileSync, existsSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { installFor } from '../lib/clients.mjs';
 
 const stdio = { id: 'e2e-memory', type: 'mcp-server', mcp: { name: 'e2e-memory', stdio: { command: 'npx', args: ['-y', '@modelcontextprotocol/server-memory'], env: { E2E_KEY: 'x' } } } };
-const http = { id: 'e2e-http', type: 'mcp-server', mcp: { name: 'e2e-http', http: { url: 'https://mcp.context7.com/mcp' } } };
+// Use a neutral HTTPS URL: real hosted MCP endpoints may trigger OAuth during
+// `codex mcp add`, which would make this non-interactive check hang.
+const http = { id: 'e2e-http', type: 'mcp-server', mcp: { name: 'e2e-http', http: { url: 'https://example.com/mcp' } } };
 const skill = { id: 'e2e-skill', type: 'skill-pack', skill: { source: 'anthropics/skills', skills: ['pdf'] } };
 
 // Project-scoped variants of the generated commands (same syntax, isolated target).
@@ -34,11 +36,21 @@ const CASES = {
 
 // The env value placeholder must be concrete for the CLI to accept it.
 const concrete = (s) => s.replace(/'?<([A-Z0-9_]+)>'?/g, 'x');
+const commandExists = (name) => {
+  try { execFileSync('which', [name], { stdio: 'ignore' }); return true; } catch { return false; }
+};
 let failed = 0;
 
 for (const [client, c] of Object.entries(CASES)) {
-  const dir = mkdtempSync(join(tmpdir(), `aap-e2e-${client}-`));
+  // Codex refuses to create helper binaries under /tmp. Keep all e2e state in
+  // the checkout instead, then remove it in finally just like the /tmp case.
+  const parent = client === 'codex' ? process.cwd() : tmpdir();
+  const dir = mkdtempSync(join(parent, `.aap-e2e-${client}-`));
   try {
+    if (client === 'gemini-cli' && !commandExists('gemini')) {
+      console.log('⊘ gemini-cli: skipped (gemini executable not installed)');
+      continue;
+    }
     for (const e of [stdio, http]) {
       execSync(c.run(concrete(installFor(e, client).text)), {
         cwd: dir, stdio: 'pipe', timeout: 240_000, env: { ...process.env, ...(c.env?.(dir) ?? {}) },
