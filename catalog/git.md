@@ -213,7 +213,7 @@ extensions:
 
 ### Alibaba open code review
 
-[alibaba/open-code-review](https://github.com/alibaba/open-code-review) — `Agent Skills` · ★ 39k · License: Apache-2.0 · Works with: All clients
+[alibaba/open-code-review](https://github.com/alibaba/open-code-review) — `Agent Skills` · ★ 42k · License: Apache-2.0 · Works with: All clients
 
 Hybrid code-review tool battle-tested at Alibaba's scale, combining deterministic pipelines with an LLM agent for precise, line-level comments and a built-in multi-language security ruleset.
 
@@ -531,7 +531,7 @@ extensions:
 
 ### Manage repos across Git hosts
 
-[gitkraken/gk-cli](https://github.com/gitkraken/gk-cli) — `MCP server` · ★ 459 · License: see repo · Works with: All clients
+[gitkraken/gk-cli](https://github.com/gitkraken/gk-cli) — `MCP server` · ★ 462 · License: see repo · Works with: All clients
 
 The GitKraken server for managing repos, pull requests, and issues across GitHub, GitLab, and Bitbucket.
 
@@ -909,7 +909,7 @@ extensions:
 
 ### Find UX issues in React code
 
-[DietCokewithSugar/dsh-user-experience](https://github.com/DietCokewithSugar/dsh-user-experience) — `Native plugin` · ★ 19 · License: MIT · Works with: DeepSeek Harness only
+[DietCokewithSugar/dsh-user-experience](https://github.com/DietCokewithSugar/dsh-user-experience) — `Native plugin` · ★ 20 · License: MIT · Works with: DeepSeek Harness only
 
 Finds potential UX issues in a project by automatically reviewing React/TypeScript code, pinpointing each problem and giving concrete suggestions.
 
@@ -927,7 +927,7 @@ dsh plugin --profile web add github:DietCokewithSugar/dsh-user-experience
 
 ### GitHub CI and PR review bot
 
-[PerryLink/dsh-github](https://github.com/PerryLink/dsh-github) — `Native plugin` · ★ 15 · License: Apache-2.0 · Works with: DeepSeek Harness only
+[PerryLink/dsh-github](https://github.com/PerryLink/dsh-github) — `Native plugin` · ★ 19 · License: Apache-2.0 · Works with: DeepSeek Harness only
 
 Official-grade GitHub CI integration: a composite action.yml, a polling PR review bot with idempotent inline comments and a status-check gate, plus PR and issue tools where every write is gated by human approval.
 
@@ -949,7 +949,7 @@ dsh plugin --profile web add github:PerryLink/dsh-github
 
 ### Git worktree session targets
 
-[wloops/dsh-git-worktree](https://github.com/wloops/dsh-git-worktree) — `Native plugin` · ★ 14 · License: MIT · Works with: DeepSeek Harness only
+[wloops/dsh-git-worktree](https://github.com/wloops/dsh-git-worktree) — `Native plugin` · ★ 15 · License: MIT · Works with: DeepSeek Harness only
 
 Git-worktree Session Targets with isolated task sessions, ready-for-review status, reversible local preview, human-confirmed delivery, environment retention and recovery, and same-session iteration.
 
@@ -972,7 +972,7 @@ dsh plugin --profile web add github:wloops/dsh-git-worktree
 
 ### Explore and audit GitHub via gh CLI
 
-[Fectivnfy112357/github-explore](https://github.com/Fectivnfy112357/github-explore) — `Native plugin` · ★ 6 · License: MIT · Works with: DeepSeek Harness only
+[Fectivnfy112357/github-explore](https://github.com/Fectivnfy112357/github-explore) — `Native plugin` · ★ 7 · License: MIT · Works with: DeepSeek Harness only
 
 GitHub search, discovery and audit scripts wrapped as a SKILL.md pack around the gh CLI: repo search, multi-axis exploration, trending, repo summaries, similar projects, code search, and issue/PR search and org audits.
 
@@ -1001,7 +1001,7 @@ A strip above the composer lists files modified in the current session (collapse
 **Alternatives:**
 
 - [cirelir/dsh-change-review](https://github.com/cirelir/dsh-change-review) (★ 14) — Tracks write/edit calls with session isolation, subagent aggregation and SSE live updates, also without needing git
-- [9087/dsh-diff-approval](https://github.com/9087/dsh-diff-approval) (★ 7) — Lets each change block be kept or reverted individually, supports undo/redo, and persists the review across restarts
+- [9087/dsh-diff-approval](https://github.com/9087/dsh-diff-approval) (★ 9) — Lets each change block be kept or reverted individually, supports undo/redo, and persists the review across restarts
 - [Tlyer233/dsh-vscode-review#dsh-review](https://github.com/Tlyer233/dsh-vscode-review/tree/main/dsh-review) — Records every write, edit and shell rm into a shadow git repo, reviewable hunk-by-hunk inside a companion VS Code extension
 
 <details><summary>Install</summary>

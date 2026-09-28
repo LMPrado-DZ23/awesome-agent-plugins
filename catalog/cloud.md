@@ -12,10 +12,10 @@
 - [Cloudflare MCP servers](#cloudflare-mcp) — Cloudflare's remote MCP servers (Workers bindings, builds, browser rendering, DNS analytics, audit logs…). The…
 - [Microsoft MCP catalog](#microsoft-mcp) — Catalog of official Microsoft MCP servers (Azure, Microsoft 365, dev tools) with links to each implementation.
 - [Grafana dashboards and data](#mcp-grafana) — Official server giving access to Grafana dashboards, data sources, and more.
-- [Supabase MCP](#supabase-mcp) — Manage Supabase projects from the agent: tables, SQL, migrations, edge functions, logs and docs. Supports read…
 - [Cloudflare agent skills](#cloudflare-skills) — Skills that teach coding agents how to build applications and infrastructure on Cloudflare's platform.
-- [FHIR healthcare data platform](#medplum-mcp) — Securely accesses and manages FHIR healthcare data stored in Medplum.
+- [Supabase MCP](#supabase-mcp) — Manage Supabase projects from the agent: tables, SQL, migrations, edge functions, logs and docs. Supports read…
 - [AWS agent toolkit](#agent-toolkit-for-aws) — Official AWS-supported MCP servers, skills and plugins that help AI agents build and operate on AWS.
+- [FHIR healthcare data platform](#medplum-mcp) — Securely accesses and manages FHIR healthcare data stored in Medplum.
 - [Terraform & OpenTofu skill](#terraform-skill) — Skill from a well-known Terraform module maintainer covering testing, module structure, CI/CD and production i…
 - [Kubernetes and OpenShift access](#kubernetes-mcp-server) — Server for interacting with Kubernetes and OpenShift clusters.
 - [Terraform workflow automation](#terraform-mcp-server) — Official Hashicorp server for more accurate Terraform generation and automated workflows for HCP and Terraform…
@@ -211,13 +211,13 @@ extensions:
 
 ### Query databases via saved connections
 
-[t8y2/dbx](https://github.com/t8y2/dbx) — `MCP server` · ★ 20k · License: Apache-2.0 · Works with: All clients
+[t8y2/dbx](https://github.com/t8y2/dbx) — `MCP server` · ★ 21k · License: Apache-2.0 · Works with: All clients
 
 Queries databases from AI agents using connections already configured in DBX.
 
 **Alternatives:**
 
-- [DBHub](https://github.com/bytebase/dbhub) (★ 3.5k) — Minimal, token-efficient server for PostgreSQL, MySQL, SQL Server, SQLite, and MariaDB.
+- [DBHub](https://github.com/bytebase/dbhub) (★ 3.6k) — Minimal, token-efficient server for PostgreSQL, MySQL, SQL Server, SQLite, and MariaDB.
 
 <details><summary>Install</summary>
 
@@ -412,7 +412,7 @@ Open-source MCP servers for AWS (documentation, CDK, cost analysis, databases, L
 
 ### Manage status pages and monitors
 
-[openstatus](https://github.com/openstatusHQ/openstatus) — `MCP server` · ★ 9.1k · License: AGPL-3.0 · Works with: All clients
+[openstatus](https://github.com/openstatusHQ/openstatus) — `MCP server` · ★ 9.2k · License: AGPL-3.0 · Works with: All clients
 
 Manages monitors, status pages, incidents, and maintenance windows in an openstatus workspace.
 
@@ -1055,6 +1055,96 @@ extensions:
 
 </details>
 
+<a id="cloudflare-skills"></a>
+
+### Cloudflare agent skills
+
+[cloudflare/skills](https://github.com/cloudflare/skills) — `Agent Skills` · ★ 2.9k · License: Apache-2.0 · Works with: All clients
+
+Skills that teach coding agents how to build applications and infrastructure on Cloudflare's platform.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+npx skills add cloudflare/skills -a claude-code -g
+```
+
+**Codex CLI**
+
+```bash
+npx skills add cloudflare/skills -a codex -g
+```
+
+**Gemini CLI**
+
+```bash
+npx skills add cloudflare/skills -a gemini-cli -g
+```
+
+**Cursor**
+
+```bash
+npx skills add cloudflare/skills -a cursor -g
+```
+
+**VS Code (Copilot)**
+
+```bash
+npx skills add cloudflare/skills -a github-copilot -g
+```
+
+**OpenCode**
+
+```bash
+npx skills add cloudflare/skills -a opencode -g
+```
+
+**Cline**
+
+```bash
+npx skills add cloudflare/skills -a cline -g
+```
+
+**Windsurf**
+
+```bash
+npx skills add cloudflare/skills -a windsurf -g
+```
+
+**Zed**
+
+```bash
+npx skills add cloudflare/skills -a zed -g
+```
+
+**Goose**
+
+```bash
+npx skills add cloudflare/skills -a goose -g
+```
+
+**Kiro**
+
+```bash
+npx skills add cloudflare/skills -a kiro-cli -g
+```
+
+**Roo Code**
+
+```bash
+npx skills add cloudflare/skills -a roo -g
+```
+
+**DeepSeek Harness**
+
+```bash
+npx skills add cloudflare/skills -a universal
+```
+
+</details>
+
 <a id="supabase-mcp"></a>
 
 ### Supabase MCP
@@ -1217,92 +1307,92 @@ extensions:
 
 </details>
 
-<a id="cloudflare-skills"></a>
+<a id="agent-toolkit-for-aws"></a>
 
-### Cloudflare agent skills
+### AWS agent toolkit
 
-[cloudflare/skills](https://github.com/cloudflare/skills) — `Agent Skills` · ★ 2.9k · License: Apache-2.0 · Works with: All clients
+[aws/agent-toolkit-for-aws](https://github.com/aws/agent-toolkit-for-aws) — `Agent Skills` · ★ 2.7k · License: Apache-2.0 · Works with: All clients
 
-Skills that teach coding agents how to build applications and infrastructure on Cloudflare's platform.
+Official AWS-supported MCP servers, skills and plugins that help AI agents build and operate on AWS.
 
 <details><summary>Install</summary>
 
 **Claude Code**
 
 ```bash
-npx skills add cloudflare/skills -a claude-code -g
+npx skills add aws/agent-toolkit-for-aws -a claude-code -g
 ```
 
 **Codex CLI**
 
 ```bash
-npx skills add cloudflare/skills -a codex -g
+npx skills add aws/agent-toolkit-for-aws -a codex -g
 ```
 
 **Gemini CLI**
 
 ```bash
-npx skills add cloudflare/skills -a gemini-cli -g
+npx skills add aws/agent-toolkit-for-aws -a gemini-cli -g
 ```
 
 **Cursor**
 
 ```bash
-npx skills add cloudflare/skills -a cursor -g
+npx skills add aws/agent-toolkit-for-aws -a cursor -g
 ```
 
 **VS Code (Copilot)**
 
 ```bash
-npx skills add cloudflare/skills -a github-copilot -g
+npx skills add aws/agent-toolkit-for-aws -a github-copilot -g
 ```
 
 **OpenCode**
 
 ```bash
-npx skills add cloudflare/skills -a opencode -g
+npx skills add aws/agent-toolkit-for-aws -a opencode -g
 ```
 
 **Cline**
 
 ```bash
-npx skills add cloudflare/skills -a cline -g
+npx skills add aws/agent-toolkit-for-aws -a cline -g
 ```
 
 **Windsurf**
 
 ```bash
-npx skills add cloudflare/skills -a windsurf -g
+npx skills add aws/agent-toolkit-for-aws -a windsurf -g
 ```
 
 **Zed**
 
 ```bash
-npx skills add cloudflare/skills -a zed -g
+npx skills add aws/agent-toolkit-for-aws -a zed -g
 ```
 
 **Goose**
 
 ```bash
-npx skills add cloudflare/skills -a goose -g
+npx skills add aws/agent-toolkit-for-aws -a goose -g
 ```
 
 **Kiro**
 
 ```bash
-npx skills add cloudflare/skills -a kiro-cli -g
+npx skills add aws/agent-toolkit-for-aws -a kiro-cli -g
 ```
 
 **Roo Code**
 
 ```bash
-npx skills add cloudflare/skills -a roo -g
+npx skills add aws/agent-toolkit-for-aws -a roo -g
 ```
 
 **DeepSeek Harness**
 
 ```bash
-npx skills add cloudflare/skills -a universal
+npx skills add aws/agent-toolkit-for-aws -a universal
 ```
 
 </details>
@@ -1465,96 +1555,6 @@ extensions:
         serverName: mcp
         transport: streamable-http
         url: https://api.medplum.com/mcp/stream
-```
-
-</details>
-
-<a id="agent-toolkit-for-aws"></a>
-
-### AWS agent toolkit
-
-[aws/agent-toolkit-for-aws](https://github.com/aws/agent-toolkit-for-aws) — `Agent Skills` · ★ 2.7k · License: Apache-2.0 · Works with: All clients
-
-Official AWS-supported MCP servers, skills and plugins that help AI agents build and operate on AWS.
-
-<details><summary>Install</summary>
-
-**Claude Code**
-
-```bash
-npx skills add aws/agent-toolkit-for-aws -a claude-code -g
-```
-
-**Codex CLI**
-
-```bash
-npx skills add aws/agent-toolkit-for-aws -a codex -g
-```
-
-**Gemini CLI**
-
-```bash
-npx skills add aws/agent-toolkit-for-aws -a gemini-cli -g
-```
-
-**Cursor**
-
-```bash
-npx skills add aws/agent-toolkit-for-aws -a cursor -g
-```
-
-**VS Code (Copilot)**
-
-```bash
-npx skills add aws/agent-toolkit-for-aws -a github-copilot -g
-```
-
-**OpenCode**
-
-```bash
-npx skills add aws/agent-toolkit-for-aws -a opencode -g
-```
-
-**Cline**
-
-```bash
-npx skills add aws/agent-toolkit-for-aws -a cline -g
-```
-
-**Windsurf**
-
-```bash
-npx skills add aws/agent-toolkit-for-aws -a windsurf -g
-```
-
-**Zed**
-
-```bash
-npx skills add aws/agent-toolkit-for-aws -a zed -g
-```
-
-**Goose**
-
-```bash
-npx skills add aws/agent-toolkit-for-aws -a goose -g
-```
-
-**Kiro**
-
-```bash
-npx skills add aws/agent-toolkit-for-aws -a kiro-cli -g
-```
-
-**Roo Code**
-
-```bash
-npx skills add aws/agent-toolkit-for-aws -a roo -g
-```
-
-**DeepSeek Harness**
-
-```bash
-npx skills add aws/agent-toolkit-for-aws -a universal
 ```
 
 </details>
@@ -2656,7 +2656,7 @@ extensions:
 
 ### SQL-native cloud provisioning
 
-[StackQL MCP Server](https://github.com/stackql/stackql) — `MCP server` · ★ 991 · License: MIT · Works with: All clients
+[StackQL MCP Server](https://github.com/stackql/stackql) — `MCP server` · ★ 1.0k · License: MIT · Works with: All clients
 
 SQL-native query and provisioning engine for cloud infrastructure.
 
@@ -2861,7 +2861,7 @@ extensions:
 
 ### Amazon SES observability
 
-[Sessy — Amazon SES observability](https://github.com/marckohlbrugge/sessy) — `MCP server` · ★ 932 · License: see repo · Works with: All clients
+[Sessy — Amazon SES observability](https://github.com/marckohlbrugge/sessy) — `MCP server` · ★ 937 · License: see repo · Works with: All clients
 
 Read-only Amazon SES observability: search events, inspect bounces, and pull delivery stats; needs an Authorization token.
 
@@ -3049,7 +3049,7 @@ extensions:
 
 ### Query ClickHouse clusters
 
-[ClickHouse](https://github.com/ClickHouse/mcp-clickhouse) — `MCP server` · ★ 877 · License: Apache-2.0 · Works with: All clients
+[ClickHouse](https://github.com/ClickHouse/mcp-clickhouse) — `MCP server` · ★ 880 · License: Apache-2.0 · Works with: All clients
 
 Official server for querying and exploring ClickHouse clusters and chDB.
 
@@ -3462,7 +3462,7 @@ extensions:
 
 ### Coolify infrastructure management
 
-[StuMason/coolify-mcp](https://github.com/StuMason/coolify-mcp) — `MCP server` · ★ 601 · License: MIT · Works with: All clients
+[StuMason/coolify-mcp](https://github.com/StuMason/coolify-mcp) — `MCP server` · ★ 602 · License: MIT · Works with: All clients
 
 45 tools for managing Coolify infrastructure, diagnostics, and documentation search; needs a COOLIFY_ACCESS_TOKEN.
 
@@ -3677,7 +3677,7 @@ extensions:
 
 ### Proxmox VE management
 
-[ProxmoxMCP-Plus](https://github.com/RekklesNA/ProxmoxMCP-Plus) — `MCP server` · ★ 546 · License: MIT · Works with: All clients
+[ProxmoxMCP-Plus](https://github.com/RekklesNA/ProxmoxMCP-Plus) — `MCP server` · ★ 561 · License: MIT · Works with: All clients
 
 Manages Proxmox VE VMs, LXCs, snapshots, backups, storage, and cluster operations.
 
@@ -3911,7 +3911,7 @@ extensions:
 
 ### MotherDuck SQL analytics
 
-[motherduckdb/mcp-server-motherduck](https://github.com/motherduckdb/mcp-server-motherduck) — `MCP server` · ★ 523 · License: MIT · Works with: All clients
+[motherduckdb/mcp-server-motherduck](https://github.com/motherduckdb/mcp-server-motherduck) — `MCP server` · ★ 524 · License: MIT · Works with: All clients
 
 SQL analytics and data engineering for AI assistants and IDEs via MotherDuck; needs a MOTHERDUCK_TOKEN.
 
@@ -4442,7 +4442,7 @@ extensions:
 
 ### AI-driven Kubernetes deployment
 
-[vfarcic/dot-ai](https://github.com/vfarcic/dot-ai) — `MCP server` · ★ 335 · License: MIT · Works with: All clients
+[vfarcic/dot-ai](https://github.com/vfarcic/dot-ai) — `MCP server` · ★ 336 · License: MIT · Works with: All clients
 
 AI-powered development platform for Kubernetes deployments and intelligent automation.
 
@@ -4631,7 +4631,7 @@ extensions:
 
 ### Elasticsearch queries
 
-[cr7258/elasticsearch-mcp-server](https://github.com/cr7258/elasticsearch-mcp-server) — `MCP server` · ★ 307 · License: Apache-2.0 · Works with: All clients
+[cr7258/elasticsearch-mcp-server](https://github.com/cr7258/elasticsearch-mcp-server) — `MCP server` · ★ 308 · License: Apache-2.0 · Works with: All clients
 
 Interacts with Elasticsearch for search and analytics; needs an ELASTICSEARCH_API_KEY or password.
 
@@ -5063,7 +5063,7 @@ extensions:
 
 ### VictoriaMetrics integration
 
-[VictoriaMetrics/mcp-victoriametrics](https://github.com/VictoriaMetrics/mcp-victoriametrics) — `MCP server` · ★ 234 · License: Apache-2.0 · Works with: All clients
+[VictoriaMetrics/mcp-victoriametrics](https://github.com/VictoriaMetrics/mcp-victoriametrics) — `MCP server` · ★ 235 · License: Apache-2.0 · Works with: All clients
 
 Integrates with the VictoriaMetrics API and documentation; needs a VictoriaMetrics bearer token.
 
@@ -5385,7 +5385,7 @@ extensions:
 
 ### Enterprise PostgreSQL with hybrid search
 
-[pgEdge/pgedge-postgres-mcp](https://github.com/pgEdge/pgedge-postgres-mcp) — `MCP server` · ★ 228 · License: PostgreSQL · Works with: All clients
+[pgEdge/pgedge-postgres-mcp](https://github.com/pgEdge/pgedge-postgres-mcp) — `MCP server` · ★ 230 · License: PostgreSQL · Works with: All clients
 
 Enterprise PostgreSQL server with natural-language queries, hybrid search (pgvector plus BM25), and a web UI.
 

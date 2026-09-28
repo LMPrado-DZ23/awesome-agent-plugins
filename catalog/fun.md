@@ -14,7 +14,7 @@
 
 ### Parody ad banners
 
-[Nagi-ovo/dsh-ads](https://github.com/Nagi-ovo/dsh-ads) — `Native plugin` · ★ 630 · License: BSD-3-Clause · Works with: DeepSeek Harness only
+[Nagi-ovo/dsh-ads](https://github.com/Nagi-ovo/dsh-ads) — `Native plugin` · ★ 635 · License: BSD-3-Clause · Works with: DeepSeek Harness only
 
 Fictional parody ads in 2005-Chinese-web style: sidebar banners, in-chat feeds, corner popups, and a close button with a smaller-than-it-looks hit area.
 
@@ -32,7 +32,7 @@ dsh plugin --profile web add github:Nagi-ovo/dsh-ads
 
 ### Chat meme stickers
 
-[yyh-001/dsh-meme](https://github.com/yyh-001/dsh-meme) — `Native plugin` · ★ 97 · License: MIT · Works with: DeepSeek Harness only
+[yyh-001/dsh-meme](https://github.com/yyh-001/dsh-meme) — `Native plugin` · ★ 112 · License: MIT · Works with: DeepSeek Harness only
 
 Chat meme stickers with text-only sending, mood-based auto-send, a QQ/WeChat-style picker, auto-learning, and custom packs.
 
@@ -92,10 +92,10 @@ A desktop pet for the DSH Web UI with 25 transparent animations, screen wanderin
 
 **Alternatives:**
 
-- [cyanfish-x/dsh-live2d-pets](https://github.com/cyanfish-x/dsh-live2d-pets) (★ 24) — Uses Live2D models that mirror agent state (thinking, idle, error, done, awaiting approval) with speech bubbles and switchable personas.
+- [cyanfish-x/dsh-live2d-pets](https://github.com/cyanfish-x/dsh-live2d-pets) (★ 27) — Uses Live2D models that mirror agent state (thinking, idle, error, done, awaiting approval) with speech bubbles and switchable personas.
 - [hellosz/dsh-pets](https://github.com/hellosz/dsh-pets) (★ 6) — Ships 10 Petdex-compatible pets with a 9-state agent-status engine and a pet_say tool the agent can use to speak through the pet.
-- [vlln/whale-girl](https://github.com/vlln/whale-girl) (★ 327) — Adds feeding and play interactions on top of dragging, QQ-pet style.
-- [nzl153/dsh-pet-whale](https://github.com/nzl153/dsh-pet-whale) (★ 6) — Draws a pure-SVG pet from the official whale outline, with 7 color palettes and light/dark theme sync.
+- [vlln/whale-girl](https://github.com/vlln/whale-girl) (★ 338) — Adds feeding and play interactions on top of dragging, QQ-pet style.
+- [nzl153/dsh-pet-whale](https://github.com/nzl153/dsh-pet-whale) (★ 8) — Draws a pure-SVG pet from the official whale outline, with 7 color palettes and light/dark theme sync.
 
 <details><summary>Install</summary>
 
