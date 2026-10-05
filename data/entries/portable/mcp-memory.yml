@@ -22,3 +22,9 @@ mcp:
     args:
       - "-y"
       - "@modelcontextprotocol/server-memory"
+alternatives:
+  - name: Hyperconsciousness
+    url: https://github.com/louis030195/hyperconsciousness
+    adds:
+      en: Developer-alpha Rust store with encrypted, append-only records, device sync, and scoped, expiring MCP grants.
+      pt: Armazenamento em Rust em fase alfa, com registros criptografados e somente de acréscimo, sincronização entre dispositivos e permissões MCP com escopo e prazo de validade.

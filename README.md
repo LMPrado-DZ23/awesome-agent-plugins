@@ -4,7 +4,7 @@
 
 > One catalog of **MCP servers, Agent Skills and native plugins** for AI coding agents — with the exact install command for *your* client.
 
-![entries](https://img.shields.io/badge/entries-589-blue) ![projects](https://img.shields.io/badge/projects-945-blue) ![clients](https://img.shields.io/badge/clients-13-green)
+![entries](https://img.shields.io/badge/entries-589-blue) ![projects](https://img.shields.io/badge/projects-946-blue) ![clients](https://img.shields.io/badge/clients-13-green)
 
 Most lists are tied to one client. Here every entry says which agents it works with, and install instructions are generated per client from a single canonical spec, so they stay consistent. Near-duplicate plugins are folded into one entry that points to the best option and lists what each alternative adds.
 
@@ -79,7 +79,7 @@ Ready-made kits for common setups — install a whole kit on one client with a s
 - [Code Intelligence](catalog/code-intel.md) — 10 entries
 - [Browser & Web](catalog/browser.md) — 17 entries + 22 alternatives folded in
 - [Docs & Knowledge](catalog/docs.md) — 29 entries + 12 alternatives folded in
-- [Memory](catalog/memory.md) — 25 entries + 18 alternatives folded in
+- [Memory](catalog/memory.md) — 25 entries + 19 alternatives folded in
 - [Tools & Capabilities](catalog/tools.md) — 61 entries + 33 alternatives folded in
 - [Development & Runtime](catalog/dev.md) — 78 entries + 24 alternatives folded in
 - [Git & Code Review](catalog/git.md) — 16 entries + 11 alternatives folded in
