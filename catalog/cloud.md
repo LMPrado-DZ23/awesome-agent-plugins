@@ -211,7 +211,7 @@ extensions:
 
 ### Query databases via saved connections
 
-[t8y2/dbx](https://github.com/t8y2/dbx) — `MCP server` · ★ 21k · License: Apache-2.0 · Works with: All clients
+[t8y2/dbx](https://github.com/t8y2/dbx) — `MCP server` · ★ 25k · License: Apache-2.0 · Works with: All clients
 
 Queries databases from AI agents using connections already configured in DBX.
 
@@ -404,7 +404,7 @@ extensions:
 
 ### AWS MCP servers
 
-[AWS MCP servers](https://github.com/awslabs/mcp) — `Curated list / registry` · ★ 9.7k · License: Apache-2.0 · Works with: —
+[AWS MCP servers](https://github.com/awslabs/mcp) — `Curated list / registry` · ★ 9.8k · License: Apache-2.0 · Works with: —
 
 Open-source MCP servers for AWS (documentation, CDK, cost analysis, databases, Lambda and more), each with its own install instructions.
 
@@ -592,7 +592,7 @@ gemini extensions install https://github.com/google/agents-cli
 
 ### Cloudflare MCP servers
 
-[Cloudflare MCP servers](https://github.com/cloudflare/mcp-server-cloudflare) — `MCP server` · ★ 4.3k · License: Apache-2.0 · Works with: All clients
+[Cloudflare MCP servers](https://github.com/cloudflare/mcp-server-cloudflare) — `MCP server` · ★ 4.4k · License: Apache-2.0 · Works with: All clients
 
 Cloudflare's remote MCP servers (Workers bindings, builds, browser rendering, DNS analytics, audit logs…). The config shown connects the Workers Bindings server.
 
@@ -1059,7 +1059,7 @@ extensions:
 
 ### Cloudflare agent skills
 
-[cloudflare/skills](https://github.com/cloudflare/skills) — `Agent Skills` · ★ 2.9k · License: Apache-2.0 · Works with: All clients
+[cloudflare/skills](https://github.com/cloudflare/skills) — `Agent Skills` · ★ 3.0k · License: Apache-2.0 · Works with: All clients
 
 Skills that teach coding agents how to build applications and infrastructure on Cloudflare's platform.
 
@@ -1311,7 +1311,7 @@ extensions:
 
 ### AWS agent toolkit
 
-[aws/agent-toolkit-for-aws](https://github.com/aws/agent-toolkit-for-aws) — `Agent Skills` · ★ 2.7k · License: Apache-2.0 · Works with: All clients
+[aws/agent-toolkit-for-aws](https://github.com/aws/agent-toolkit-for-aws) — `Agent Skills` · ★ 2.8k · License: Apache-2.0 · Works with: All clients
 
 Official AWS-supported MCP servers, skills and plugins that help AI agents build and operate on AWS.
 
@@ -2656,7 +2656,7 @@ extensions:
 
 ### SQL-native cloud provisioning
 
-[StackQL MCP Server](https://github.com/stackql/stackql) — `MCP server` · ★ 1.0k · License: MIT · Works with: All clients
+[StackQL MCP Server](https://github.com/stackql/stackql) — `MCP server` · ★ 1.1k · License: MIT · Works with: All clients
 
 SQL-native query and provisioning engine for cloud infrastructure.
 
@@ -2861,7 +2861,7 @@ extensions:
 
 ### Amazon SES observability
 
-[Sessy — Amazon SES observability](https://github.com/marckohlbrugge/sessy) — `MCP server` · ★ 937 · License: see repo · Works with: All clients
+[Sessy — Amazon SES observability](https://github.com/marckohlbrugge/sessy) — `MCP server` · ★ 936 · License: see repo · Works with: All clients
 
 Read-only Amazon SES observability: search events, inspect bounces, and pull delivery stats; needs an Authorization token.
 
@@ -3049,7 +3049,7 @@ extensions:
 
 ### Query ClickHouse clusters
 
-[ClickHouse](https://github.com/ClickHouse/mcp-clickhouse) — `MCP server` · ★ 880 · License: Apache-2.0 · Works with: All clients
+[ClickHouse](https://github.com/ClickHouse/mcp-clickhouse) — `MCP server` · ★ 879 · License: Apache-2.0 · Works with: All clients
 
 Official server for querying and exploring ClickHouse clusters and chDB.
 
@@ -3274,7 +3274,7 @@ extensions:
 
 ### Neon serverless Postgres management
 
-[Neon](https://github.com/neondatabase/mcp-server-neon) — `MCP server` · ★ 649 · License: MIT · Works with: All clients
+[Neon](https://github.com/neondatabase/mcp-server-neon) — `MCP server` · ★ 648 · License: MIT · Works with: All clients
 
 Official server for managing Neon projects and Lakebase Postgres databases; needs an Authorization token.
 
@@ -3462,7 +3462,7 @@ extensions:
 
 ### Coolify infrastructure management
 
-[StuMason/coolify-mcp](https://github.com/StuMason/coolify-mcp) — `MCP server` · ★ 602 · License: MIT · Works with: All clients
+[StuMason/coolify-mcp](https://github.com/StuMason/coolify-mcp) — `MCP server` · ★ 608 · License: MIT · Works with: All clients
 
 45 tools for managing Coolify infrastructure, diagnostics, and documentation search; needs a COOLIFY_ACCESS_TOKEN.
 
@@ -3677,7 +3677,7 @@ extensions:
 
 ### Proxmox VE management
 
-[ProxmoxMCP-Plus](https://github.com/RekklesNA/ProxmoxMCP-Plus) — `MCP server` · ★ 561 · License: MIT · Works with: All clients
+[ProxmoxMCP-Plus](https://github.com/RekklesNA/ProxmoxMCP-Plus) — `MCP server` · ★ 570 · License: MIT · Works with: All clients
 
 Manages Proxmox VE VMs, LXCs, snapshots, backups, storage, and cluster operations.
 
@@ -3911,7 +3911,7 @@ extensions:
 
 ### MotherDuck SQL analytics
 
-[motherduckdb/mcp-server-motherduck](https://github.com/motherduckdb/mcp-server-motherduck) — `MCP server` · ★ 524 · License: MIT · Works with: All clients
+[motherduckdb/mcp-server-motherduck](https://github.com/motherduckdb/mcp-server-motherduck) — `MCP server` · ★ 526 · License: MIT · Works with: All clients
 
 SQL analytics and data engineering for AI assistants and IDEs via MotherDuck; needs a MOTHERDUCK_TOKEN.
 
@@ -4145,7 +4145,7 @@ extensions:
 
 ### Prometheus metrics and PromQL
 
-[Prometheus MCP Server](https://github.com/pab1it0/prometheus-mcp-server) — `MCP server` · ★ 517 · License: MIT · Works with: All clients
+[Prometheus MCP Server](https://github.com/pab1it0/prometheus-mcp-server) — `MCP server` · ★ 516 · License: MIT · Works with: All clients
 
 Provides Prometheus metrics access and PromQL query execution for AI assistants.
 
@@ -4847,7 +4847,7 @@ extensions:
 
 ### Snowflake data platform
 
-[OSS Snowflake MCP Server](https://github.com/Snowflake-Labs/mcp) — `MCP server` · ★ 299 · License: Apache-2.0 · Works with: All clients
+[OSS Snowflake MCP Server](https://github.com/Snowflake-Labs/mcp) — `MCP server` · ★ 298 · License: Apache-2.0 · Works with: All clients
 
 Server for Snowflake from Snowflake Labs.
 
@@ -5063,7 +5063,7 @@ extensions:
 
 ### VictoriaMetrics integration
 
-[VictoriaMetrics/mcp-victoriametrics](https://github.com/VictoriaMetrics/mcp-victoriametrics) — `MCP server` · ★ 235 · License: Apache-2.0 · Works with: All clients
+[VictoriaMetrics/mcp-victoriametrics](https://github.com/VictoriaMetrics/mcp-victoriametrics) — `MCP server` · ★ 236 · License: Apache-2.0 · Works with: All clients
 
 Integrates with the VictoriaMetrics API and documentation; needs a VictoriaMetrics bearer token.
 
@@ -5385,7 +5385,7 @@ extensions:
 
 ### Enterprise PostgreSQL with hybrid search
 
-[pgEdge/pgedge-postgres-mcp](https://github.com/pgEdge/pgedge-postgres-mcp) — `MCP server` · ★ 230 · License: PostgreSQL · Works with: All clients
+[pgEdge/pgedge-postgres-mcp](https://github.com/pgEdge/pgedge-postgres-mcp) — `MCP server` · ★ 232 · License: PostgreSQL · Works with: All clients
 
 Enterprise PostgreSQL server with natural-language queries, hybrid search (pgvector plus BM25), and a web UI.
 

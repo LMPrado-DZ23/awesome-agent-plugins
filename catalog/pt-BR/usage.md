@@ -17,7 +17,7 @@
 
 ### Context lifecycle dashboard
 
-[bowenliang123/dsh-context](https://github.com/bowenliang123/dsh-context) — `Plugin nativo` · ★ 1.6k · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
+[bowenliang123/dsh-context](https://github.com/bowenliang123/dsh-context) — `Plugin nativo` · ★ 1.9k · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
 
 Painel, comando /context e navegador para gerenciar todo o ciclo de vida do contexto: composição categorizada, detalhes de conteúdo, tendências de evolução ao longo do tempo e eventos de compactação e injeção.
 
@@ -39,14 +39,14 @@ dsh plugin --profile web add github:bowenliang123/dsh-context
 
 ### Session and daily cost dashboard
 
-[Han-1413141/dsh-cost-meter](https://github.com/Han-1413141/dsh-cost-meter) — `Plugin nativo` · ★ 344 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[Han-1413141/dsh-cost-meter](https://github.com/Han-1413141/dsh-cost-meter) — `Plugin nativo` · ★ 375 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Acompanha o custo de API por sessão e diário contra um orçamento com percentual de uso, mostra o saldo oficial da conta, mantém um painel de histórico e sincroniza preços oficiais de horário de pico/fora de pico com um clique.
 
 **Alternativas:**
 
-- [feibi-mochi/deepseek-harness-control-center](https://github.com/feibi-mochi/deepseek-harness-control-center) (★ 72) — Adiciona recarga oficial, alertas de conclusão, layouts flexíveis e controles de sessão assistidos por agente.
-- [kenz1117/dsh-ui-usage-billing](https://github.com/kenz1117/dsh-ui-usage-billing) (★ 60) — Estima o custo em CNY a partir de um catálogo de preços multi-provedor atualizado e isenta rotas de planos por assinatura do total.
+- [feibi-mochi/deepseek-harness-control-center](https://github.com/feibi-mochi/deepseek-harness-control-center) (★ 74) — Adiciona recarga oficial, alertas de conclusão, layouts flexíveis e controles de sessão assistidos por agente.
+- [kenz1117/dsh-ui-usage-billing](https://github.com/kenz1117/dsh-ui-usage-billing) (★ 70) — Estima o custo em CNY a partir de um catálogo de preços multi-provedor atualizado e isenta rotas de planos por assinatura do total.
 - [nonewind/dsh-spend](https://github.com/nonewind/dsh-spend) (★ 8) — Mostra um painel flutuante com estatísticas de tokens por modelo, por dia e por sessão.
 - [Max-Samson/dsh-usage-chart](https://github.com/Max-Samson/dsh-usage-chart) (★ 9) — Adiciona gráficos SVG sem dependências para uso e custo por turno, direto abaixo do campo de composição.
 
@@ -70,7 +70,7 @@ Painel lateral que atribui tokens ao site de relay que atendeu cada requisição
 
 **Alternativas:**
 
-- [Jannchie/dsh-bill](https://github.com/Jannchie/dsh-bill) (★ 4) — Precifica cada chamada a partir de um catálogo online com mais de 8000 modelos e atribui o gasto por saída de ferramenta, saída de modelo ou prompt de sistema.
+- [Jannchie/dsh-bill](https://github.com/Jannchie/dsh-bill) (★ 5) — Precifica cada chamada a partir de um catálogo online com mais de 8000 modelos e atribui o gasto por saída de ferramenta, saída de modelo ou prompt de sistema.
 
 <details><summary>Instalar</summary>
 
@@ -86,7 +86,7 @@ dsh plugin --profile web add github:zh667/TokenLedger
 
 ### Cross-session personal usage center
 
-[PolinniZhong/dsh-personal-center](https://github.com/PolinniZhong/dsh-personal-center) — `Plugin nativo` · ★ 120 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[PolinniZhong/dsh-personal-center](https://github.com/PolinniZhong/dsh-personal-center) — `Plugin nativo` · ★ 118 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Central pessoal local e offline: estatísticas de uso entre sessões, estimativa de custo por modelo, instruções globais personalizadas, ajuste de tamanho de fonte, um bichinho de estimação de desktop orientado a dados e uma visão geral do status das conversas.
 

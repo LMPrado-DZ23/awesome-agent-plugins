@@ -28,6 +28,6 @@ Formato Markdown aberto para instruções de projeto a agentes de código (setup
 
 ### Model Context Protocol
 
-[Model Context Protocol](https://github.com/modelcontextprotocol/modelcontextprotocol) — `Padrão / especificação` · ★ 9.3k · Licença: ver repo · Funciona com: —
+[Model Context Protocol](https://github.com/modelcontextprotocol/modelcontextprotocol) — `Padrão / especificação` · ★ 9.4k · Licença: ver repo · Funciona com: —
 
 Especificação e documentação do MCP, o protocolo aberto que todos os clientes desta lista usam para conectar agentes a ferramentas, dados e prompts.

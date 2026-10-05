@@ -19,10 +19,10 @@
 - [Self-reflecting agent framework](#praisonai-mcp) — AI agents framework with self-reflection and MCP support.
 - [CCPM project management skill](#ccpm) — Well-known project-management skill system for coding agents that uses GitHub Issues and Git worktrees to coor…
 - [Spec-driven development plugin](#conductor) — Plugin for coding agents (Antigravity, Claude Code) that enables spec-driven development: specify, plan and im…
-- [Deploy durable managed agents](#omnara-mcp) — Deploys durable AI agents with Omnara, an open-source managed-agent platform.
 - [Manage agent instruction rule files](#dsh-dsh-purge) — Adds a Settings UI to edit prompt-inject.md and manage AGENTS.md or CLAUDE.md rule sets, check for plugin upda…
-- [Structured deep research skill](#deep-research-skills) — Structured deep-research skill for Claude Code, OpenCode and Codex with explicit human-in-the-loop control ove…
+- [Deploy durable managed agents](#omnara-mcp) — Deploys durable AI agents with Omnara, an open-source managed-agent platform.
 - [Multi-agent delegation skills](#delegate-skills) — Skill set for delegating a coding task to a separate coding-agent CLI (Aider, Cline, Codex, Cursor, Copilot an…
+- [Structured deep research skill](#deep-research-skills) — Structured deep-research skill for Claude Code, OpenCode and Codex with explicit human-in-the-loop control ove…
 - [Multi-agent team orchestration](#dsh-dsh-agent-teams) — AgentTeams: coordinates multiple agents working together as a team on a shared task.
 - [Novel-writing production workbench](#dsh-openwrite) — Novel-writing workbench for DSH with an authoring preset, outline and character management, manuscript annotat…
 - [External agent runtime connector](#dsh-sandbase-harness) — Connects DSH to a local SandBase Harness runtime over stdio MCP for managing agents and sessions, streaming tu…
@@ -270,7 +270,7 @@ Prerequisite: `git clone https://github.com/LMPrado-DZ23/dz23-subagents-universa
 
 ### Multi-agent orchestration with swarms
 
-[ruvnet/claude-flow](https://github.com/ruvnet/claude-flow) — `MCP server` · ★ 73k · License: MIT · Works with: All clients
+[ruvnet/claude-flow](https://github.com/ruvnet/claude-flow) — `MCP server` · ★ 74k · License: MIT · Works with: All clients
 
 AI orchestration with hive-mind swarms, neural networks, and 87 tools for enterprise development; needs ANTHROPIC_API_KEY, GITHUB_TOKEN, and FLOW_NEXUS_API_KEY.
 
@@ -507,7 +507,7 @@ extensions:
 
 ### AI job search operations
 
-[career-ops-hq/career-ops](https://github.com/career-ops-hq/career-ops) — `Agent Skills` · ★ 73k · License: MIT · Works with: All clients
+[career-ops-hq/career-ops](https://github.com/career-ops-hq/career-ops) — `Agent Skills` · ★ 74k · License: MIT · Works with: All clients
 
 Open-source AI job search skill: scans job portals, scores listings into a structured A-H report, tailors your CV and tracks applications from your coding CLI.
 
@@ -605,7 +605,7 @@ Spec-driven development skill set for AI coding assistants: draft, verify, apply
 
 - [bmad-code-org/BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD) (★ 54k) — Broader agile-flavored methodology with role-based agents (analyst, architect, PM, dev, UX).
 - [gotalab/cc-sdd](https://github.com/gotalab/cc-sdd) (★ 3.7k) — Minimal SDD harness with per-phase skills (spec, design, tasks, review) across multiple CLI agents.
-- [Gentleman-Programming/gentle-ai](https://github.com/Gentleman-Programming/gentle-ai) (★ 7.4k) — Bundles SDD alongside persistent-memory and code-review skills for several coding agents at once.
+- [Gentleman-Programming/gentle-ai](https://github.com/Gentleman-Programming/gentle-ai) (★ 7.5k) — Bundles SDD alongside persistent-memory and code-review skills for several coding agents at once.
 
 <details><summary>Install</summary>
 
@@ -693,13 +693,13 @@ npx skills add Fission-AI/OpenSpec -a universal
 
 ### AI job search toolkit
 
-[MadsLorentzen/ai-job-search](https://github.com/MadsLorentzen/ai-job-search) — `Agent Skills` · ★ 44k · License: MIT · Works with: All clients
+[MadsLorentzen/ai-job-search](https://github.com/MadsLorentzen/ai-job-search) — `Agent Skills` · ★ 45k · License: MIT · Works with: All clients
 
 Job-search skill pack built on Claude Code: evaluates postings, tailors CVs and cover letters, searches multiple job boards, and preps for interviews, all running locally.
 
 **Alternatives:**
 
-- [Paramchoudhary/ResumeSkills](https://github.com/Paramchoudhary/ResumeSkills) (★ 2.5k) — Adds dedicated skills for resume writing, LinkedIn optimization and offer comparison.
+- [Paramchoudhary/ResumeSkills](https://github.com/Paramchoudhary/ResumeSkills) (★ 2.6k) — Adds dedicated skills for resume writing, LinkedIn optimization and offer comparison.
 
 <details><summary>Install</summary>
 
@@ -787,7 +787,7 @@ npx skills add MadsLorentzen/ai-job-search -a universal
 
 ### OpenHuman agent harness
 
-[tinyhumansai/openhuman](https://github.com/tinyhumansai/openhuman) — `Curated list / registry` · ★ 40k · License: GPL-3.0 · Works with: —
+[tinyhumansai/openhuman](https://github.com/tinyhumansai/openhuman) — `Curated list / registry` · ★ 41k · License: GPL-3.0 · Works with: —
 
 Open-source agent harness with local-first memory, multi-agent orchestration and workflow tooling for personal AI assistants.
 
@@ -795,7 +795,7 @@ Open-source agent harness with local-first memory, multi-agent orchestration and
 
 ### Teams-first multi-agent orchestration
 
-[Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) — `Agent Skills` · ★ 39k · License: MIT · Works with: All clients
+[Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) — `Agent Skills` · ★ 40k · License: MIT · Works with: All clients
 
 Teams-first multi-agent orchestration layer for Claude Code, coordinating groups of agents on a shared task.
 
@@ -890,7 +890,7 @@ npx skills add Yeachan-Heo/oh-my-claudecode -a universal
 
 ### Beads agent memory & task tracking
 
-[gastownhall/beads](https://github.com/gastownhall/beads) — `Agent Skills` · ★ 27k · License: MIT · Works with: All clients
+[gastownhall/beads](https://github.com/gastownhall/beads) — `Agent Skills` · ★ 28k · License: MIT · Works with: All clients
 
 A combined memory and task-tracking upgrade for coding agents, giving them durable state across long-running work.
 
@@ -1070,14 +1070,14 @@ npx skills add OthmanAdi/planning-with-files -a universal
 
 ### Claude game dev studio skills
 
-[Donchitos/Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios) — `Agent Skills` · ★ 25k · License: MIT · Works with: All clients
+[Donchitos/Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios) — `Agent Skills` · ★ 26k · License: MIT · Works with: All clients
 
 Turns Claude Code into a full game-development studio with 72 workflow skills covering design, balance checks, asset specs, art bibles and QA, mirroring a real studio's hierarchy.
 
 **Alternatives:**
 
-- [majidmanzarpour/threejs-game-skills](https://github.com/majidmanzarpour/threejs-game-skills) (★ 2.2k) — Focused specifically on building playable Three.js browser games with AAA-style graphics.
-- [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) (★ 4.2k) — Narrow skill for generating 2D sprite sheets, tile maps and animated GIFs from prompts.
+- [majidmanzarpour/threejs-game-skills](https://github.com/majidmanzarpour/threejs-game-skills) (★ 2.4k) — Focused specifically on building playable Three.js browser games with AAA-style graphics.
+- [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) (★ 4.3k) — Narrow skill for generating 2D sprite sheets, tile maps and animated GIFs from prompts.
 
 <details><summary>Install</summary>
 
@@ -1702,6 +1702,24 @@ npx skills add gemini-cli-extensions/conductor -a universal
 
 </details>
 
+<a id="dsh-dsh-purge"></a>
+
+### Manage agent instruction rule files
+
+[YuJunZhiXue/dsh-purge](https://github.com/YuJunZhiXue/dsh-purge) — `Native plugin` · ★ 3.4k · License: MIT · Works with: DeepSeek Harness only
+
+Adds a Settings UI to edit prompt-inject.md and manage AGENTS.md or CLAUDE.md rule sets, check for plugin updates, and apply or restore reversible local package updates.
+
+<details><summary>Install</summary>
+
+**DeepSeek Harness**
+
+```bash
+dsh plugin --profile web add github:YuJunZhiXue/dsh-purge
+```
+
+</details>
+
 <a id="omnara-mcp"></a>
 
 ### Deploy durable managed agents
@@ -1864,20 +1882,92 @@ extensions:
 
 </details>
 
-<a id="dsh-dsh-purge"></a>
+<a id="delegate-skills"></a>
 
-### Manage agent instruction rule files
+### Multi-agent delegation skills
 
-[YuJunZhiXue/dsh-purge](https://github.com/YuJunZhiXue/dsh-purge) — `Native plugin` · ★ 2.5k · License: MIT · Works with: DeepSeek Harness only
+[amElnagdy/delegate-skills](https://github.com/amElnagdy/delegate-skills) — `Agent Skills` · ★ 2.3k · License: MIT · Works with: All clients
 
-Adds a Settings UI to edit prompt-inject.md and manage AGENTS.md or CLAUDE.md rule sets, check for plugin updates, and apply or restore reversible local package updates.
+Skill set for delegating a coding task to a separate coding-agent CLI (Aider, Cline, Codex, Cursor, Copilot and more), then reviewing the diff and landing the commit yourself.
 
 <details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+npx skills add amElnagdy/delegate-skills -a claude-code -g
+```
+
+**Codex CLI**
+
+```bash
+npx skills add amElnagdy/delegate-skills -a codex -g
+```
+
+**Gemini CLI**
+
+```bash
+npx skills add amElnagdy/delegate-skills -a gemini-cli -g
+```
+
+**Cursor**
+
+```bash
+npx skills add amElnagdy/delegate-skills -a cursor -g
+```
+
+**VS Code (Copilot)**
+
+```bash
+npx skills add amElnagdy/delegate-skills -a github-copilot -g
+```
+
+**OpenCode**
+
+```bash
+npx skills add amElnagdy/delegate-skills -a opencode -g
+```
+
+**Cline**
+
+```bash
+npx skills add amElnagdy/delegate-skills -a cline -g
+```
+
+**Windsurf**
+
+```bash
+npx skills add amElnagdy/delegate-skills -a windsurf -g
+```
+
+**Zed**
+
+```bash
+npx skills add amElnagdy/delegate-skills -a zed -g
+```
+
+**Goose**
+
+```bash
+npx skills add amElnagdy/delegate-skills -a goose -g
+```
+
+**Kiro**
+
+```bash
+npx skills add amElnagdy/delegate-skills -a kiro-cli -g
+```
+
+**Roo Code**
+
+```bash
+npx skills add amElnagdy/delegate-skills -a roo -g
+```
 
 **DeepSeek Harness**
 
 ```bash
-dsh plugin --profile web add github:YuJunZhiXue/dsh-purge
+npx skills add amElnagdy/delegate-skills -a universal
 ```
 
 </details>
@@ -1972,101 +2062,11 @@ npx skills add Weizhena/Deep-Research-skills -a universal
 
 </details>
 
-<a id="delegate-skills"></a>
-
-### Multi-agent delegation skills
-
-[amElnagdy/delegate-skills](https://github.com/amElnagdy/delegate-skills) — `Agent Skills` · ★ 2.2k · License: MIT · Works with: All clients
-
-Skill set for delegating a coding task to a separate coding-agent CLI (Aider, Cline, Codex, Cursor, Copilot and more), then reviewing the diff and landing the commit yourself.
-
-<details><summary>Install</summary>
-
-**Claude Code**
-
-```bash
-npx skills add amElnagdy/delegate-skills -a claude-code -g
-```
-
-**Codex CLI**
-
-```bash
-npx skills add amElnagdy/delegate-skills -a codex -g
-```
-
-**Gemini CLI**
-
-```bash
-npx skills add amElnagdy/delegate-skills -a gemini-cli -g
-```
-
-**Cursor**
-
-```bash
-npx skills add amElnagdy/delegate-skills -a cursor -g
-```
-
-**VS Code (Copilot)**
-
-```bash
-npx skills add amElnagdy/delegate-skills -a github-copilot -g
-```
-
-**OpenCode**
-
-```bash
-npx skills add amElnagdy/delegate-skills -a opencode -g
-```
-
-**Cline**
-
-```bash
-npx skills add amElnagdy/delegate-skills -a cline -g
-```
-
-**Windsurf**
-
-```bash
-npx skills add amElnagdy/delegate-skills -a windsurf -g
-```
-
-**Zed**
-
-```bash
-npx skills add amElnagdy/delegate-skills -a zed -g
-```
-
-**Goose**
-
-```bash
-npx skills add amElnagdy/delegate-skills -a goose -g
-```
-
-**Kiro**
-
-```bash
-npx skills add amElnagdy/delegate-skills -a kiro-cli -g
-```
-
-**Roo Code**
-
-```bash
-npx skills add amElnagdy/delegate-skills -a roo -g
-```
-
-**DeepSeek Harness**
-
-```bash
-npx skills add amElnagdy/delegate-skills -a universal
-```
-
-</details>
-
 <a id="dsh-dsh-agent-teams"></a>
 
 ### Multi-agent team orchestration
 
-[NanmiCoder/dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) — `Native plugin` · ★ 1.8k · License: MIT · Works with: DeepSeek Harness only
+[NanmiCoder/dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) — `Native plugin` · ★ 1.9k · License: MIT · Works with: DeepSeek Harness only
 
 AgentTeams: coordinates multiple agents working together as a team on a shared task.
 
@@ -2074,7 +2074,7 @@ AgentTeams: coordinates multiple agents working together as a team on a shared t
 
 - [stuarthu/dsh-crew](https://github.com/stuarthu/dsh-crew) (★ 6) — Adds a PM-authored PRD gate, then locked per-role tool sets for architect, engineer, QA and reviewers.
 - [toolclub/dsh-agent-team-gui](https://github.com/toolclub/dsh-agent-team-gui) (★ 281) — Adds Settings-configured persistent squads with per-member model policies and a bounded DAG planner.
-- [limuyang2/agent-team](https://github.com/limuyang2/agent-team) (★ 38) — Adds independent contexts and shared workspaces per assistant, with per-assistant models and skills.
+- [limuyang2/agent-team](https://github.com/limuyang2/agent-team) (★ 39) — Adds independent contexts and shared workspaces per assistant, with per-assistant models and skills.
 
 <details><summary>Install</summary>
 
@@ -2090,7 +2090,7 @@ dsh plugin --profile web add github:NanmiCoder/dsh-agent-teams
 
 ### Novel-writing production workbench
 
-[LiPu-jpg/Openwrite](https://github.com/LiPu-jpg/Openwrite) — `Native plugin` · ★ 763 · License: Apache-2.0 · Works with: DeepSeek Harness only
+[LiPu-jpg/Openwrite](https://github.com/LiPu-jpg/Openwrite) — `Native plugin` · ★ 786 · License: Apache-2.0 · Works with: DeepSeek Harness only
 
 Novel-writing workbench for DSH with an authoring preset, outline and character management, manuscript annotations, review workflows, and a managed local Python backend.
 
@@ -2112,7 +2112,7 @@ dsh plugin --profile web add "https://github.com/LiPu-jpg/Openwrite/releases/dow
 
 ### External agent runtime connector
 
-[sandbaseai/sandbase-harness](https://github.com/sandbaseai/sandbase-harness) — `Native plugin` · ★ 675 · License: Apache-2.0 · Works with: DeepSeek Harness only
+[sandbaseai/sandbase-harness](https://github.com/sandbaseai/sandbase-harness) — `Native plugin` · ★ 682 · License: Apache-2.0 · Works with: DeepSeek Harness only
 
 Connects DSH to a local SandBase Harness runtime over stdio MCP for managing agents and sessions, streaming turns, inspecting artifacts, and cancelling work.
 
@@ -2130,7 +2130,7 @@ dsh plugin --profile web add github:sandbaseai/sandbase-harness
 
 ### Native conversational image generation
 
-[shanliuling/dsh-image-gen](https://github.com/shanliuling/dsh-image-gen) — `Native plugin` · ★ 513 · License: Apache-2.0 · Works with: DeepSeek Harness only
+[shanliuling/dsh-image-gen](https://github.com/shanliuling/dsh-image-gen) — `Native plugin` · ★ 574 · License: Apache-2.0 · Works with: DeepSeek Harness only
 
 Native conversational image generation for DeepSeek Harness: ask the agent to create an image, and it handles generation and keeps the result directly in the conversation.
 
@@ -2152,7 +2152,7 @@ dsh plugin --profile web add github:shanliuling/dsh-image-gen
 
 ### Metacognitive agent oversight
 
-[PV-Bhat/vibe-check-mcp-server](https://github.com/PV-Bhat/vibe-check-mcp-server) — `MCP server` · ★ 503 · License: MIT · Works with: All clients
+[PV-Bhat/vibe-check-mcp-server](https://github.com/PV-Bhat/vibe-check-mcp-server) — `MCP server` · ★ 502 · License: MIT · Works with: All clients
 
 Metacognitive oversight for AI agents: adaptive interrupts for alignment, reflection, and safety; needs an API key.
 
@@ -2367,13 +2367,13 @@ extensions:
 
 ### Route work across coding agents
 
-[Claudexor](https://github.com/razzant/claudexor) — `MCP server` · ★ 489 · License: MIT · Works with: All clients
+[Claudexor](https://github.com/razzant/claudexor) — `MCP server` · ★ 494 · License: MIT · Works with: All clients
 
 Routes coding work across Claude Code, Codex, Cursor, and OpenCode with shared context.
 
 **Alternatives:**
 
-- [Concord MCP](https://github.com/Get-Concord-AI/concord-mcp) (★ 338) — Cross-harness communication and shared work-state for coding agents.
+- [Concord MCP](https://github.com/Get-Concord-AI/concord-mcp) (★ 404) — Cross-harness communication and shared work-state for coding agents.
 
 <details><summary>Install</summary>
 
@@ -2741,7 +2741,7 @@ extensions:
 
 ### Spec-driven development workflow
 
-[formulahendry/mcp-server-spec-driven-development](https://github.com/formulahendry/mcp-server-spec-driven-development) — `MCP server` · ★ 438 · License: MIT · Works with: All clients
+[formulahendry/mcp-server-spec-driven-development](https://github.com/formulahendry/mcp-server-spec-driven-development) — `MCP server` · ★ 439 · License: MIT · Works with: All clients
 
 Facilitates spec-driven development workflows, as an alternative to unstructured vibe coding.
 
@@ -2930,7 +2930,7 @@ extensions:
 
 ### Generate project plans from prompts
 
-[PlanExe](https://github.com/PlanExeOrg/PlanExe) — `MCP server` · ★ 402 · License: MIT · Works with: All clients
+[PlanExe](https://github.com/PlanExeOrg/PlanExe) — `MCP server` · ★ 400 · License: MIT · Works with: All clients
 
 Generates rough-draft project plans from natural-language prompts; needs an X-API-Key.
 
@@ -3116,7 +3116,7 @@ extensions:
 
 ### Auditable AGI self-improvement loop
 
-[FuRongJun-1999/dsh-memory](https://github.com/FuRongJun-1999/dsh-memory) — `Native plugin` · ★ 277 · License: MIT · Works with: DeepSeek Harness only
+[FuRongJun-1999/dsh-memory](https://github.com/FuRongJun-1999/dsh-memory) — `Native plugin` · ★ 322 · License: MIT · Works with: DeepSeek Harness only
 
 Explores a white-box AGI architecture: a metacognitive self-cognition loop, continual learning via a knowledge flywheel, a world model with condition space and spatiotemporal memory graph, bootstrap self-improvement, and auditable trust guardrails, without relying on an LLM.
 
@@ -3134,7 +3134,7 @@ dsh plugin --profile web add github:FuRongJun-1999/dsh-memory
 
 ### Replay recorded agent runs
 
-[Continuum-AI-Corp/OrcaReplay](https://github.com/Continuum-AI-Corp/OrcaReplay) — `MCP server` · ★ 269 · License: Apache-2.0 · Works with: All clients
+[Continuum-AI-Corp/OrcaReplay](https://github.com/Continuum-AI-Corp/OrcaReplay) — `MCP server` · ★ 280 · License: Apache-2.0 · Works with: All clients
 
 Reads, replays, and forks recorded coding-agent runs.
 
@@ -3323,7 +3323,7 @@ extensions:
 
 ### Enforced workflow discipline for agents
 
-[MCP Task Orchestrator](https://github.com/jpicklyk/task-orchestrator) — `MCP server` · ★ 206 · License: MIT · Works with: All clients
+[MCP Task Orchestrator](https://github.com/jpicklyk/task-orchestrator) — `MCP server` · ★ 207 · License: MIT · Works with: All clients
 
 Server-enforced workflow discipline for AI agents: work items, dependency graphs, and quality gates.
 
@@ -3528,7 +3528,7 @@ extensions:
 
 ### Cron-scheduled task board
 
-[cloader/dsh-taskboard](https://github.com/cloader/dsh-taskboard) — `Native plugin` · ★ 56 · License: Apache-2.0 · Works with: DeepSeek Harness only
+[cloader/dsh-taskboard](https://github.com/cloader/dsh-taskboard) — `Native plugin` · ★ 57 · License: Apache-2.0 · Works with: DeepSeek Harness only
 
 Task board for DSH: create tasks with project and model assignment, run them manually or on cron schedules; new sessions in a project automatically pick up its todo tasks and move them to in-review when done.
 
@@ -3552,7 +3552,7 @@ dsh plugin --profile web add github:cloader/dsh-taskboard
 
 ### Requirements and test-evidence guard
 
-[PerryLink/dsh-doublecheck](https://github.com/PerryLink/dsh-doublecheck) — `Native plugin` · ★ 44 · License: Apache-2.0 · Works with: DeepSeek Harness only
+[PerryLink/dsh-doublecheck](https://github.com/PerryLink/dsh-doublecheck) — `Native plugin` · ★ 55 · License: Apache-2.0 · Works with: DeepSeek Harness only
 
 Engineering-discipline guard: a requirements grill before the first edit, red/green test-evidence gates, a forked adversary review, and a delivery report with per-dimension verification.
 
@@ -3570,7 +3570,7 @@ dsh plugin --profile web add github:PerryLink/dsh-doublecheck
 
 ### Research workbench with provenance
 
-[biociao/dsh-science](https://github.com/biociao/dsh-science) — `Native plugin` · ★ 41 · License: MIT · Works with: DeepSeek Harness only
+[biociao/dsh-science](https://github.com/biociao/dsh-science) — `Native plugin` · ★ 42 · License: MIT · Works with: DeepSeek Harness only
 
 Claude Science-style research workbench: a ReAct research-loop engine, versioned artifacts with provenance tracking, and ten science skills for genomics, pathogens, and bioinformatics.
 
@@ -3588,7 +3588,7 @@ dsh plugin --profile web add github:biociao/dsh-science
 
 ### Multi-agent math verification framework
 
-[ChongCyrus/Vibe-Mathematics](https://github.com/ChongCyrus/Vibe-Mathematics) — `Native plugin` · ★ 32 · License: MIT · Works with: DeepSeek Harness only
+[ChongCyrus/Vibe-Mathematics](https://github.com/ChongCyrus/Vibe-Mathematics) — `Native plugin` · ★ 34 · License: MIT · Works with: DeepSeek Harness only
 
 Multi-agent math problem-solving and verification framework: brainstorm, solver iteration, multi-verifier debate, and a verified knowledge base, with checkpoint resume and manual or automatic intervention.
 
@@ -3606,7 +3606,7 @@ dsh plugin --profile web add github:ChongCyrus/Vibe-Mathematics
 
 ### Scheduled headless coding runs
 
-[MichengAI/dsh-automation](https://github.com/MichengAI/dsh-automation) — `Native plugin` · ★ 21 · License: Apache-2.0 · Works with: DeepSeek Harness only
+[MichengAI/dsh-automation](https://github.com/MichengAI/dsh-automation) — `Native plugin` · ★ 22 · License: Apache-2.0 · Works with: DeepSeek Harness only
 
 Runs scheduled coding tasks in isolated DeepSeek Harness sessions, managed from Settings or the agent.
 
@@ -3614,7 +3614,7 @@ Runs scheduled coding tasks in isolated DeepSeek Harness sessions, managed from 
 
 - [Ceelog/dsh-plugins#dsh-plugin-scheduled-tasks](https://github.com/Ceelog/dsh-plugins/tree/main/src/plugins/dsh-plugin-scheduled-tasks) — Adds one-time, interval, and cron schedules per project with durable run history.
 - [KelaoHu/dsh-lowtide#dsh-lowtide](https://github.com/KelaoHu/dsh-lowtide/tree/main/packages/dsh-lowtide) — Runs task batches automatically in off-peak hours with four execution strategies and L1-L3 adjudication.
-- [titanwings/dsh-automation](https://github.com/titanwings/dsh-automation) (★ 101) — Simpler scheduled runs in fresh agent sessions with an auditable history.
+- [titanwings/dsh-automation](https://github.com/titanwings/dsh-automation) (★ 100) — Simpler scheduled runs in fresh agent sessions with an auditable history.
 
 <details><summary>Install</summary>
 
@@ -3648,13 +3648,13 @@ dsh plugin --profile web add github:AgentConnect/dsh-awiki
 
 ### Durable background child agents
 
-[PerryLink/dsh-background-agents](https://github.com/PerryLink/dsh-background-agents) — `Native plugin` · ★ 18 · License: Apache-2.0 · Works with: DeepSeek Harness only
+[PerryLink/dsh-background-agents](https://github.com/PerryLink/dsh-background-agents) — `Native plugin` · ★ 19 · License: Apache-2.0 · Works with: DeepSeek Harness only
 
 Durable background child agents on the official subagent seam: start from any session, watch progress in the web UI sidebar, message and interrupt at any time, with per-child tool scoping and delegation-depth caps.
 
 **Alternatives:**
 
-- [ZSeven-W/dsh-crew](https://github.com/ZSeven-W/dsh-crew) (★ 153) — Adds dispatching work to DSH agents directly from Claude Code or Codex, plus a multimodal bridge.
+- [ZSeven-W/dsh-crew](https://github.com/ZSeven-W/dsh-crew) (★ 156) — Adds dispatching work to DSH agents directly from Claude Code or Codex, plus a multimodal bridge.
 - [hongyue0721/dsh-kimicode-swarm](https://github.com/hongyue0721/dsh-kimicode-swarm) (★ 4) — Adds batch-parallel subagent dispatch with adaptive scheduling and a /swarm command.
 
 <details><summary>Install</summary>

@@ -13,8 +13,8 @@
 - [Per-subagent model routing](#dsh-dsh-plugin-subagent-director) — Lets each subagent use its own LLM provider and model through configurable role templates.
 - [GitHub Copilot model adapter](#dsh-dsh-llm-github-copilot) — Adds GitHub Copilot as a model provider: OAuth device-flow sign-in, live model discovery from the Copilot API,…
 - [Live model catalog and plan usage](#dsh-dsh-model-sync) — Writes live provider model lists into settings and shows the 5h/7d plan window or metered balance for the curr…
-- [Weak-network model retries](#dsh-dsh-plugin-weaknet-adaptor) — Keeps model calls alive over unreliable connections with long-backoff stream retries, a local response replay …
 - [OpenAI-compatible gateway bridge](#dsh-dsh-sub2api) — Connects a sub2api gateway so OpenAI, Claude, Grok, and Gemini all route through one base URL, with per-key mo…
+- [Weak-network model retries](#dsh-dsh-plugin-weaknet-adaptor) — Keeps model calls alive over unreliable connections with long-backoff stream retries, a local response replay …
 - [Free OpenCode model access](#dsh-opencode2dsh) — Exposes OpenCode Zen's free models to the harness with no API key required.
 - [Volcengine Ark plan routes](#dsh-ark-cli-ark-plan-api) — Registers Volcengine Ark Agent Plan, Coding Plan, and postpaid model routes directly in the native model picke…
 
@@ -22,7 +22,7 @@
 
 ### DeepSeek chat and completion
 
-[DeepSeek MCP Server](https://github.com/DMontgomery40/deepseek-mcp-server) — `MCP server` · ★ 352 · License: MIT · Works with: All clients
+[DeepSeek MCP Server](https://github.com/DMontgomery40/deepseek-mcp-server) — `MCP server` · ★ 354 · License: MIT · Works with: All clients
 
 Official DeepSeek server for chat, completion, model listing, and balance endpoints; needs a DEEPSEEK_API_KEY.
 
@@ -237,14 +237,14 @@ extensions:
 
 ### WorkBuddy model bridge
 
-[corrinehu/dsh-workbuddy-connect](https://github.com/corrinehu/dsh-workbuddy-connect) — `Native plugin` · ★ 219 · License: MIT · Works with: DeepSeek Harness only
+[corrinehu/dsh-workbuddy-connect](https://github.com/corrinehu/dsh-workbuddy-connect) — `Native plugin` · ★ 295 · License: MIT · Works with: DeepSeek Harness only
 
 Brings models from the locally signed-in WorkBuddy desktop app into the harness with zero extra configuration.
 
 **Alternatives:**
 
-- [dingminhua/dsh-connect-workbuddy](https://github.com/dingminhua/dsh-connect-workbuddy) (★ 42) — Adds per-model image-input opt-in, account switching, and a read-only credits overview with daily check-in.
-- [aosi526/dsh-workbuddy-xdpool](https://github.com/aosi526/dsh-workbuddy-xdpool) (★ 23) — Merges every signed-in WorkBuddy account into one auto-failover pool with per-model credit multipliers shown.
+- [dingminhua/dsh-connect-workbuddy](https://github.com/dingminhua/dsh-connect-workbuddy) (★ 63) — Adds per-model image-input opt-in, account switching, and a read-only credits overview with daily check-in.
+- [aosi526/dsh-workbuddy-xdpool](https://github.com/aosi526/dsh-workbuddy-xdpool) (★ 45) — Merges every signed-in WorkBuddy account into one auto-failover pool with per-model credit multipliers shown.
 
 <details><summary>Install</summary>
 
@@ -260,7 +260,7 @@ dsh plugin --profile web add github:corrinehu/dsh-workbuddy-connect
 
 ### DeepSeek web session models
 
-[cv-superding/dsh-deepseek-web-login](https://github.com/cv-superding/dsh-deepseek-web-login) — `Native plugin` · ★ 176 · License: Apache-2.0 · Works with: DeepSeek Harness only
+[cv-superding/dsh-deepseek-web-login](https://github.com/cv-superding/dsh-deepseek-web-login) — `Native plugin` · ★ 226 · License: Apache-2.0 · Works with: DeepSeek Harness only
 
 Adds a provider that uses chat.deepseek.com web models directly, with browser login capture, proof-of-work request signing, SSE streaming, and prompting-based tool calls.
 
@@ -278,15 +278,15 @@ dsh plugin --profile web add github:cv-superding/dsh-deepseek-web-login
 
 ### ChatGPT/Codex OAuth model bridge
 
-[franksong2702/dsh-codex-connect](https://github.com/franksong2702/dsh-codex-connect) — `Native plugin` · ★ 124 · License: Apache-2.0 · Works with: DeepSeek Harness only
+[franksong2702/dsh-codex-connect](https://github.com/franksong2702/dsh-codex-connect) — `Native plugin` · ★ 136 · License: Apache-2.0 · Works with: DeepSeek Harness only
 
 Connects a ChatGPT account and OpenAI Codex models to the harness via OAuth, with opt-in search and image tools.
 
 **Alternatives:**
 
-- [WSL043/dsh-codex-subscription](https://github.com/WSL043/dsh-codex-subscription) (★ 103) — Adds subscription web search, quota tracking with a safe reset, image tools, and a Fast mode, with no API key or Codex CLI needed.
+- [WSL043/dsh-codex-subscription](https://github.com/WSL043/dsh-codex-subscription) (★ 133) — Adds subscription web search, quota tracking with a safe reset, image tools, and a Fast mode, with no API key or Codex CLI needed.
 - [WNJXYK/dsh-codex-oauth](https://github.com/WNJXYK/dsh-codex-oauth) (★ 14) — Adds image generation, subscription quota reporting, and both browser and device-code OAuth sign-in.
-- [suntianc/dsh-codex-auth](https://github.com/suntianc/dsh-codex-auth) (★ 16) — Reuses an existing Codex CLI ChatGPT login instead of running a separate OAuth flow.
+- [suntianc/dsh-codex-auth](https://github.com/suntianc/dsh-codex-auth) (★ 17) — Reuses an existing Codex CLI ChatGPT login instead of running a separate OAuth flow.
 - [stoneface10/dsh-codex-connect-plus](https://github.com/stoneface10/dsh-codex-connect-plus) (★ 4) — Adds gpt-image-2 image generation and editing alongside Codex model access.
 
 <details><summary>Install</summary>
@@ -303,14 +303,14 @@ dsh plugin --profile web add github:franksong2702/dsh-codex-connect
 
 ### Google Antigravity model provider
 
-[amlyczz/dsh-agy-link](https://github.com/amlyczz/dsh-agy-link) — `Native plugin` · ★ 87 · License: MIT · Works with: DeepSeek Harness only
+[amlyczz/dsh-agy-link](https://github.com/amlyczz/dsh-agy-link) — `Native plugin` · ★ 96 · License: MIT · Works with: DeepSeek Harness only
 
 Connects Google Antigravity (agy CLI) models with streaming chat for Gemini, Claude, and GPT-OSS subscriptions, native tool cards, thinking turns, and in-GUI Google OAuth login.
 
 **Alternatives:**
 
-- [LiZhenNet/dsh-antigravity](https://github.com/LiZhenNet/dsh-antigravity) (★ 22) — Adds explicit quota management and a dedicated model-selector UI.
-- [suntianc/dsh-antigravity-auth](https://github.com/suntianc/dsh-antigravity-auth) (★ 16) — Adds image generation/editing, video understanding, and web search to the Antigravity route.
+- [LiZhenNet/dsh-antigravity](https://github.com/LiZhenNet/dsh-antigravity) (★ 24) — Adds explicit quota management and a dedicated model-selector UI.
+- [suntianc/dsh-antigravity-auth](https://github.com/suntianc/dsh-antigravity-auth) (★ 17) — Adds image generation/editing, video understanding, and web search to the Antigravity route.
 
 <details><summary>Install</summary>
 
@@ -326,13 +326,13 @@ dsh plugin --profile web add github:amlyczz/dsh-agy-link
 
 ### Multi-provider coding subscriptions
 
-[lninghaha/dsh-coding-subscription-oauth](https://github.com/lninghaha/dsh-coding-subscription-oauth) — `Native plugin` · ★ 23 · License: see repo · Works with: DeepSeek Harness only
+[lninghaha/dsh-coding-subscription-oauth](https://github.com/lninghaha/dsh-coding-subscription-oauth) — `Native plugin` · ★ 25 · License: see repo · Works with: DeepSeek Harness only
 
 Signs in locally to SuperGrok/Grok Build, ChatGPT Plus Codex, Kimi Code, and Claude Code subscriptions without pasting tokens, with an opt-in loopback OpenAI/Anthropic gateway.
 
 **Alternatives:**
 
-- [V1ki/dsh-plugin-subscriptions](https://github.com/V1ki/dsh-plugin-subscriptions) (★ 399) — Also exposes image_generate, video_generate, and x_search tools alongside the Claude, Codex, and Grok subscription routes.
+- [V1ki/dsh-plugin-subscriptions](https://github.com/V1ki/dsh-plugin-subscriptions) (★ 421) — Also exposes image_generate, video_generate, and x_search tools alongside the Claude, Codex, and Grok subscription routes.
 
 <details><summary>Install</summary>
 
@@ -354,9 +354,9 @@ Lets each subagent use its own LLM provider and model through configurable role 
 
 **Alternatives:**
 
-- [SnowAmberX/dsh-role-router](https://github.com/SnowAmberX/dsh-role-router) (★ 4) — Automatically switches to a planner model in plan mode and exposes per-role reasoning effort in the Web UI.
-- [hytime/dsh-thinking-effort](https://github.com/hytime/dsh-thinking-effort) (★ 36) — Sets reasoning-effort levels and sub-agent defaults specifically for custom or third-party models.
-- [HaoyueQin/dsh-better-reasoning-effort](https://github.com/HaoyueQin/dsh-better-reasoning-effort) (★ 36) — Suggests reasoning-effort and input-modality settings per model, fused from a knowledge base with confidence labels.
+- [SnowAmberX/dsh-role-router](https://github.com/SnowAmberX/dsh-role-router) (★ 5) — Automatically switches to a planner model in plan mode and exposes per-role reasoning effort in the Web UI.
+- [hytime/dsh-thinking-effort](https://github.com/hytime/dsh-thinking-effort) (★ 40) — Sets reasoning-effort levels and sub-agent defaults specifically for custom or third-party models.
+- [HaoyueQin/dsh-better-reasoning-effort](https://github.com/HaoyueQin/dsh-better-reasoning-effort) (★ 44) — Suggests reasoning-effort and input-modality settings per model, fused from a knowledge base with confidence labels.
 
 <details><summary>Install</summary>
 
@@ -372,7 +372,7 @@ dsh plugin --profile web add github:SeverusZh/dsh-plugin-subagent-director
 
 ### GitHub Copilot model adapter
 
-[lujianjun19/dsh-llm-github-copilot](https://github.com/lujianjun19/dsh-llm-github-copilot) — `Native plugin` · ★ 10 · License: MIT · Works with: DeepSeek Harness only
+[lujianjun19/dsh-llm-github-copilot](https://github.com/lujianjun19/dsh-llm-github-copilot) — `Native plugin` · ★ 12 · License: MIT · Works with: DeepSeek Harness only
 
 Adds GitHub Copilot as a model provider: OAuth device-flow sign-in, live model discovery from the Copilot API, vision support for image-capable models, and automatic routing between the Chat Completions and Responses API protocols.
 
@@ -396,7 +396,7 @@ Writes live provider model lists into settings and shows the 5h/7d plan window o
 
 **Alternatives:**
 
-- [HOWILLMAKEIT/dsh-model-context-catalog](https://github.com/HOWILLMAKEIT/dsh-model-context-catalog) (★ 34) — Configures the context-window size for registered models so long sessions aren't misjudged as overflowing.
+- [HOWILLMAKEIT/dsh-model-context-catalog](https://github.com/HOWILLMAKEIT/dsh-model-context-catalog) (★ 33) — Configures the context-window size for registered models so long sessions aren't misjudged as overflowing.
 
 <details><summary>Install</summary>
 
@@ -408,34 +408,11 @@ dsh plugin --profile web add github:jiay98528-dev/dsh-model-sync
 
 </details>
 
-<a id="dsh-dsh-plugin-weaknet-adaptor"></a>
-
-### Weak-network model retries
-
-[jiay98528-dev/dsh-plugin-weaknet-adaptor](https://github.com/jiay98528-dev/dsh-plugin-weaknet-adaptor) — `Native plugin` · ★ 3 · License: MIT · Works with: DeepSeek Harness only
-
-Keeps model calls alive over unreliable connections with long-backoff stream retries, a local response replay cache, heartbeat auto-reconnect, and a degraded-mode token economy.
-
-**Alternatives:**
-
-- [HB00/dsh-llm-failover](https://github.com/HB00/dsh-llm-failover) (★ 0) — Automatically switches providers on rate limits or quota exhaustion, with a cooldown and a permanent last-resort fallback.
-- [btspoony/dsh-llm-fallbacks](https://github.com/btspoony/dsh-llm-fallbacks) (★ 20) — Applies separate retry and fallback strategies per agent role.
-
-<details><summary>Install</summary>
-
-**DeepSeek Harness**
-
-```bash
-dsh plugin --profile web add github:jiay98528-dev/dsh-plugin-weaknet-adaptor
-```
-
-</details>
-
 <a id="dsh-dsh-sub2api"></a>
 
 ### OpenAI-compatible gateway bridge
 
-[GodD6366/dsh-sub2api](https://github.com/GodD6366/dsh-sub2api) — `Native plugin` · ★ 2 · License: MIT · Works with: DeepSeek Harness only
+[GodD6366/dsh-sub2api](https://github.com/GodD6366/dsh-sub2api) — `Native plugin` · ★ 3 · License: MIT · Works with: DeepSeek Harness only
 
 Connects a sub2api gateway so OpenAI, Claude, Grok, and Gemini all route through one base URL, with per-key model discovery, usage lookup, and vision/image tools.
 
@@ -453,6 +430,29 @@ dsh plugin --profile web add github:GodD6366/dsh-sub2api
 
 </details>
 
+<a id="dsh-dsh-plugin-weaknet-adaptor"></a>
+
+### Weak-network model retries
+
+[jiay98528-dev/dsh-plugin-weaknet-adaptor](https://github.com/jiay98528-dev/dsh-plugin-weaknet-adaptor) — `Native plugin` · ★ 3 · License: MIT · Works with: DeepSeek Harness only
+
+Keeps model calls alive over unreliable connections with long-backoff stream retries, a local response replay cache, heartbeat auto-reconnect, and a degraded-mode token economy.
+
+**Alternatives:**
+
+- [HB00/dsh-llm-failover](https://github.com/HB00/dsh-llm-failover) (★ 1) — Automatically switches providers on rate limits or quota exhaustion, with a cooldown and a permanent last-resort fallback.
+- [btspoony/dsh-llm-fallbacks](https://github.com/btspoony/dsh-llm-fallbacks) (★ 22) — Applies separate retry and fallback strategies per agent role.
+
+<details><summary>Install</summary>
+
+**DeepSeek Harness**
+
+```bash
+dsh plugin --profile web add github:jiay98528-dev/dsh-plugin-weaknet-adaptor
+```
+
+</details>
+
 <a id="dsh-opencode2dsh"></a>
 
 ### Free OpenCode model access
@@ -464,7 +464,7 @@ Exposes OpenCode Zen's free models to the harness with no API key required.
 **Alternatives:**
 
 - [xiaozhe7772222/dsh-opencode-zen](https://github.com/xiaozhe7772222/dsh-opencode-zen) (★ 23) — Bundles 6 free models with multi-key rotation and automatic rate-limit backoff.
-- [Duskriver/dsh-opencode-go](https://github.com/Duskriver/dsh-opencode-go) (★ 57) — Adds live gateway model discovery, online capability metadata, and session-aware routing for OpenCode Go.
+- [Duskriver/dsh-opencode-go](https://github.com/Duskriver/dsh-opencode-go) (★ 90) — Adds live gateway model discovery, online capability metadata, and session-aware routing for OpenCode Go.
 
 <details><summary>Install</summary>
 

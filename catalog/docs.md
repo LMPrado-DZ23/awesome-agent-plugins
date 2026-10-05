@@ -38,7 +38,7 @@
 
 ### Context7
 
-[Context7](https://github.com/upstash/context7) — `MCP server` · ★ 62k · License: MIT · Works with: All clients
+[Context7](https://github.com/upstash/context7) — `MCP server` · ★ 63k · License: MIT · Works with: All clients
 
 Up-to-date, version-specific library documentation and code examples pulled into the agent context on demand. Local alternative: `npx -y @upstash/context7-mcp`.
 
@@ -200,13 +200,13 @@ extensions:
 
 ### Nature-style academic writing skills
 
-[Yuan1z0825/nature-skills](https://github.com/Yuan1z0825/nature-skills) — `Agent Skills` · ★ 45k · License: Apache-2.0 · Works with: All clients
+[Yuan1z0825/nature-skills](https://github.com/Yuan1z0825/nature-skills) — `Agent Skills` · ★ 46k · License: Apache-2.0 · Works with: All clients
 
 20 skills tailored to Nature-journal academic writing conventions and scientific figure design, including literature pipelines, citations and paper-to-slide conversion.
 
 **Alternatives:**
 
-- [zLanqing/codex-claude-academic-skills](https://github.com/zLanqing/codex-claude-academic-skills) (★ 4.4k) — Broader academic workflow covering literature review, writing polish and scientific computing tools.
+- [zLanqing/codex-claude-academic-skills](https://github.com/zLanqing/codex-claude-academic-skills) (★ 4.5k) — Broader academic workflow covering literature review, writing polish and scientific computing tools.
 
 <details><summary>Install</summary>
 
@@ -294,13 +294,13 @@ npx skills add Yuan1z0825/nature-skills -a universal
 
 ### OfficeCLI agent office suite
 
-[iOfficeAI/OfficeCLI](https://github.com/iOfficeAI/OfficeCLI) — `Agent Skills` · ★ 31k · License: Apache-2.0 · Works with: All clients
+[iOfficeAI/OfficeCLI](https://github.com/iOfficeAI/OfficeCLI) — `Agent Skills` · ★ 32k · License: Apache-2.0 · Works with: All clients
 
 Office suite purpose-built for AI agents to read, edit and automate Word, Excel and PowerPoint files, with dedicated skills for financial models, pitch decks and dashboards.
 
 **Alternatives:**
 
-- [genspark-ai/genoffice](https://github.com/genspark-ai/genoffice) (★ 8.0k) — Free open-source alternative office suite (docs, sheets, slides, PDF) with its own CLI and skill.
+- [genspark-ai/genoffice](https://github.com/genspark-ai/genoffice) (★ 8.7k) — Free open-source alternative office suite (docs, sheets, slides, PDF) with its own CLI and skill.
 - [OpenSenseNova/SenseNova-Skills](https://github.com/OpenSenseNova/SenseNova-Skills) (★ 5.7k) — Modular office-automation skills for Excel workflows: formatting, coloring and KPI reporting.
 
 <details><summary>Install</summary>
@@ -389,7 +389,7 @@ npx skills add iOfficeAI/OfficeCLI -a universal
 
 ### AnyDoc document to Markdown
 
-[firecrawl/anydoc](https://github.com/firecrawl/anydoc) — `Agent Skills` · ★ 22k · License: MIT · Works with: All clients
+[firecrawl/anydoc](https://github.com/firecrawl/anydoc) — `Agent Skills` · ★ 23k · License: MIT · Works with: All clients
 
 Single skill that converts Word, PowerPoint, Excel, OpenDocument, RTF, EPUB, CSV and PDF files into clean Markdown, built on a Rust converter with Node.js and Python bindings.
 
@@ -1131,7 +1131,7 @@ extensions:
 
 ### Simplified Technical English skill
 
-[AminBlg/SimpleEnglish](https://github.com/AminBlg/SimpleEnglish) — `Agent Skills` · ★ 3.6k · License: MIT · Works with: All clients
+[AminBlg/SimpleEnglish](https://github.com/AminBlg/SimpleEnglish) — `Agent Skills` · ★ 3.8k · License: MIT · Works with: All clients
 
 Agent skill that makes an LLM write documentation following ASD-STE100 Simplified Technical English, a controlled-language standard.
 
@@ -2118,7 +2118,7 @@ Token-efficient search for coding agents over public and private documentation; 
 
 **Alternatives:**
 
-- [jDocmunch MCP](https://github.com/jgravelle/jdocmunch-mcp) (★ 203) — Section-level local search across .md, .rst, .adoc, .ipynb, .html, .yaml, .json, and OpenAPI files.
+- [jDocmunch MCP](https://github.com/jgravelle/jdocmunch-mcp) (★ 204) — Section-level local search across .md, .rst, .adoc, .ipynb, .html, .yaml, .json, and OpenAPI files.
 
 <details><summary>Install</summary>
 
@@ -2331,15 +2331,15 @@ extensions:
 
 ### PDF reading with page citations
 
-[PDF Reader MCP](https://github.com/SylphxAI/pdf-reader-mcp) — `MCP server` · ★ 945 · License: MIT · Works with: All clients
+[PDF Reader MCP](https://github.com/SylphxAI/pdf-reader-mcp) — `MCP server` · ★ 1.0k · License: MIT · Works with: All clients
 
 Evidence-first PDF server that returns citeable page and bounding-box evidence for documents.
 
 **Alternatives:**
 
-- [Docling MCP](https://github.com/docling-project/docling-mcp) (★ 760) — Converts PDFs and other document formats to structured output via Docling; needs a Docling API key.
-- [PageIndex MCP](https://github.com/VectifyAI/pageindex-mcp) (★ 391) — Reasoning-based RAG for chatting with long PDFs, local or online.
-- [MinerU Open MCP](https://github.com/opendatalab/MinerU-Ecosystem) (★ 217) — Parses PDF, image, doc, ppt, and xls files into Markdown via the MinerU API; needs a MINERU_API_TOKEN.
+- [Docling MCP](https://github.com/docling-project/docling-mcp) (★ 767) — Converts PDFs and other document formats to structured output via Docling; needs a Docling API key.
+- [PageIndex MCP](https://github.com/VectifyAI/pageindex-mcp) (★ 399) — Reasoning-based RAG for chatting with long PDFs, local or online.
+- [MinerU Open MCP](https://github.com/opendatalab/MinerU-Ecosystem) (★ 219) — Parses PDF, image, doc, ppt, and xls files into Markdown via the MinerU API; needs a MINERU_API_TOKEN.
 
 <details><summary>Install</summary>
 
@@ -2526,7 +2526,7 @@ extensions:
 
 ### Full office suite inside DSH
 
-[dream-num/dsh-univer-office](https://github.com/dream-num/dsh-univer-office) — `Native plugin` · ★ 428 · License: Apache-2.0 · Works with: DeepSeek Harness only
+[dream-num/dsh-univer-office](https://github.com/dream-num/dsh-univer-office) — `Native plugin` · ★ 469 · License: Apache-2.0 · Works with: DeepSeek Harness only
 
 Brings spreadsheets, docs, slides, canvases and relational tables into one runtime inside DeepSeek Harness, with connected data, validation, versioned changes and isolated worktrees for multi-agent collaboration.
 
@@ -2782,7 +2782,7 @@ extensions:
 
 ### Unified SAP documentation search
 
-[marianfoo/mcp-sap-docs](https://github.com/marianfoo/mcp-sap-docs) — `MCP server` · ★ 233 · License: Apache-2.0 · Works with: All clients
+[marianfoo/mcp-sap-docs](https://github.com/marianfoo/mcp-sap-docs) — `MCP server` · ★ 236 · License: Apache-2.0 · Works with: All clients
 
 Fast unified search across SAP docs (SAPUI5, CAP, OpenUI5, wdi5) using BM25 full-text search.
 
@@ -2971,13 +2971,13 @@ extensions:
 
 ### Editable diagrams in conversations
 
-[hanzhangzzz/dsh-diagram](https://github.com/hanzhangzzz/dsh-diagram) — `Native plugin` · ★ 14 · License: MIT · Works with: DeepSeek Harness only
+[hanzhangzzz/dsh-diagram](https://github.com/hanzhangzzz/dsh-diagram) — `Native plugin` · ★ 16 · License: MIT · Works with: DeepSeek Harness only
 
 Editable Excalidraw diagrams rendered directly inside DeepSeek Harness conversations.
 
 **Alternatives:**
 
-- [MrmoLabs/dsh-mermaid](https://github.com/MrmoLabs/dsh-mermaid) (★ 11) — Renders Mermaid code fences as SVG instead, with streaming, fullscreen zoom/pan and SVG export
+- [MrmoLabs/dsh-mermaid](https://github.com/MrmoLabs/dsh-mermaid) (★ 12) — Renders Mermaid code fences as SVG instead, with streaming, fullscreen zoom/pan and SVG export
 
 <details><summary>Install</summary>
 
@@ -2999,7 +2999,7 @@ Overleaf-style LaTeX paper workbench: annotate any text in the rendered PDF and 
 
 **Alternatives:**
 
-- [fly233338/dsh-overleaf](https://github.com/fly233338/dsh-overleaf) (★ 12) — Connects multiple existing Overleaf cloud projects via OverleafMCP for browsing, analysis and Git-based file updates
+- [fly233338/dsh-overleaf](https://github.com/fly233338/dsh-overleaf) (★ 13) — Connects multiple existing Overleaf cloud projects via OverleafMCP for browsing, analysis and Git-based file updates
 
 <details><summary>Install</summary>
 

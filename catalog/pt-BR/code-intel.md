@@ -234,7 +234,7 @@ Pré-requisito: `uv tool install -p 3.13 serena-agent && serena init`
 
 ### Codebase knowledge graph
 
-[Codebase Memory](https://github.com/DeusData/codebase-memory-mcp) — `Servidor MCP` · ★ 45k · Licença: MIT · Funciona com: Todos os clientes
+[Codebase Memory](https://github.com/DeusData/codebase-memory-mcp) — `Servidor MCP` · ★ 46k · Licença: MIT · Funciona com: Todos os clientes
 
 Constrói um grafo de conhecimento do código em 162 linguagens, com consultas em sub-milissegundos e menos tokens.
 
@@ -423,7 +423,7 @@ extensions:
 
 ### Codebase intelligence for agents
 
-[Repowise](https://github.com/repowise-dev/repowise) — `Servidor MCP` · ★ 7.1k · Licença: AGPL-3.0 · Funciona com: Todos os clientes
+[Repowise](https://github.com/repowise-dev/repowise) — `Servidor MCP` · ★ 7.2k · Licença: AGPL-3.0 · Funciona com: Todos os clientes
 
 Inteligência de código para agentes: grafo de dependências, histórico do git, documentação, decisões e saúde do código.
 
@@ -1378,7 +1378,7 @@ extensions:
 
 ### Layered code graph with SCIP
 
-[Hex Graph](https://github.com/levnikolaevich/claude-code-skills) — `Servidor MCP` · ★ 565 · Licença: MIT · Funciona com: Todos os clientes
+[Hex Graph](https://github.com/levnikolaevich/claude-code-skills) — `Servidor MCP` · ★ 569 · Licença: MIT · Funciona com: Todos os clientes
 
 Servidor de grafo de código determinístico em camadas, com overlays de frameworks e interoperabilidade SCIP.
 
@@ -1567,7 +1567,7 @@ extensions:
 
 ### Local semantic code indexer
 
-[Octocode](https://github.com/muvon/octocode) — `Servidor MCP` · ★ 478 · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[Octocode](https://github.com/muvon/octocode) — `Servidor MCP` · ★ 479 · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Indexador de código com IA para um repositório local, com busca semântica e grafos de conhecimento.
 
@@ -1756,7 +1756,7 @@ extensions:
 
 ### Semantic search for files and code
 
-[Vexor](https://github.com/scarletkc/vexor) — `Servidor MCP` · ★ 241 · Licença: MIT · Funciona com: Todos os clientes
+[Vexor](https://github.com/scarletkc/vexor) — `Servidor MCP` · ★ 242 · Licença: MIT · Funciona com: Todos os clientes
 
 Um motor de busca semântica para arquivos e código; exige VEXOR_API_KEY (e opcionalmente uma chave de rerank).
 

@@ -19,7 +19,7 @@
 
 ### Visual non-linear conversation map
 
-[liangmianya/dsh-synapse](https://github.com/liangmianya/dsh-synapse) — `Plugin nativo` · ★ 444 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[liangmianya/dsh-synapse](https://github.com/liangmianya/dsh-synapse) — `Plugin nativo` · ★ 472 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Espaço de conversa visual e não linear para o DeepSeek Harness: sessões, continuações e ramificações viram um mapa de conversa navegável.
 
@@ -37,7 +37,7 @@ dsh plugin --profile web add github:liangmianya/dsh-synapse
 
 ### Cross-tool session import and export
 
-[Nwflower/dsh-chat-import](https://github.com/Nwflower/dsh-chat-import) — `Plugin nativo` · ★ 204 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[Nwflower/dsh-chat-import](https://github.com/Nwflower/dsh-chat-import) — `Plugin nativo` · ★ 210 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Importa históricos de chat com fidelidade total de 13 agentes de codificação (Claude Code, Codex, ChatGPT, Cursor, Gemini, opencode e outros) como sessões retomáveis do DeepSeek Harness, com exportação reversa de volta ao Claude Code.
 
@@ -61,14 +61,14 @@ dsh plugin --profile web add github:Nwflower/dsh-chat-import
 
 ### Conversation rewind via change ledger
 
-[Anionex/dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind) — `Plugin nativo` · ★ 120 · Licença: BSD-3-Clause · Funciona com: DeepSeek Harness apenas
+[Anionex/dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind) — `Plugin nativo` · ★ 130 · Licença: BSD-3-Clause · Funciona com: DeepSeek Harness apenas
 
 Retrocede o estado da conversa e do workspace, com base em um Change Ledger persistente.
 
 **Alternativas:**
 
-- [SiriLee/dsh-rewind](https://github.com/SiriLee/dsh-rewind) (★ 98) — Retrocede no próprio lugar sem bifurcar a sessão, com restauração opcional de arquivos a partir do disco.
-- [limbo947/dsh-recall-plugin](https://github.com/limbo947/dsh-recall-plugin) (★ 35) — Adiciona um painel de confirmação com prévia de diff antes de reverter a conversa e os arquivos do workspace.
+- [SiriLee/dsh-rewind](https://github.com/SiriLee/dsh-rewind) (★ 112) — Retrocede no próprio lugar sem bifurcar a sessão, com restauração opcional de arquivos a partir do disco.
+- [limbo947/dsh-recall-plugin](https://github.com/limbo947/dsh-recall-plugin) (★ 34) — Adiciona um painel de confirmação com prévia de diff antes de reverter a conversa e os arquivos do workspace.
 
 <details><summary>Instalar</summary>
 
@@ -84,7 +84,7 @@ dsh plugin --profile web add github:Anionex/dsh-turn-rewind
 
 ### Archived-session management panel
 
-[MichengAI/dsh-archive-manager](https://github.com/MichengAI/dsh-archive-manager) — `Plugin nativo` · ★ 86 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
+[MichengAI/dsh-archive-manager](https://github.com/MichengAI/dsh-archive-manager) — `Plugin nativo` · ★ 100 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
 
 Adiciona uma página de sessões arquivadas em Settings para buscar, restaurar e excluir sessões arquivadas do DeepSeek Harness por workspace.
 
@@ -125,7 +125,7 @@ dsh plugin --profile web add github:Moeblack/dsh-message-edit
 
 ### One-click conversation sharing
 
-[hellodigua/dsh-share](https://github.com/hellodigua/dsh-share) — `Plugin nativo` · ★ 34 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[hellodigua/dsh-share](https://github.com/hellodigua/dsh-share) — `Plugin nativo` · ★ 36 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Compartilha suas conversas com um clique.
 
@@ -143,7 +143,7 @@ dsh plugin --profile web add github:hellodigua/dsh-share
 
 ### Cross-workspace session manager
 
-[hkkz9522/dsh-session-manager](https://github.com/hkkz9522/dsh-session-manager) — `Plugin nativo` · ★ 18 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[hkkz9522/dsh-session-manager](https://github.com/hkkz9522/dsh-session-manager) — `Plugin nativo` · ★ 29 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Gerenciador de sessões para a Web UI do DeepSeek Harness: exclui sessões, arquiva sessões, move sessões entre workspaces e migra o preset de agente de uma sessão.
 
@@ -197,7 +197,7 @@ dsh plugin --profile web add github:penguin-oo/dsh-bookmarks
 
 ### Durable task state across tools
 
-[dongsheng123132/task-passport](https://github.com/dongsheng123132/task-passport) — `Plugin nativo` · ★ 11 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[dongsheng123132/task-passport](https://github.com/dongsheng123132/task-passport) — `Plugin nativo` · ★ 10 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Carrega estado durável de tarefas entre DeepSeek Harness, WorkBuddy, Claude Code e Codex com checkpoints legíveis por máquina e bloqueio otimista.
 

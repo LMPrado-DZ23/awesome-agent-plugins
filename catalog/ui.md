@@ -4,17 +4,17 @@
 
 > This page is generated from `data/entries/` — do not edit by hand.
 
-- [Extensible sidebar workbench](#dsh-dsh-better-sidebar) — A full sidebar workbench for DeepSeek Harness with file rendering and editing, an embedded terminal, Git integ…
 - [Full-screen terminal UI](#dsh-dsh-tui) — A Claude Code-style full-screen terminal UI for DeepSeek Harness, with a pixel-whale header, a live status lin…
 - [Balance and cost widget](#dsh-deepseek-balance-whale-widget) — A fixed-corner widget for the DSH web GUI showing balance, today's usage, and per-turn cost with peak/off-peak…
+- [Extensible sidebar workbench](#dsh-dsh-better-sidebar) — A full sidebar workbench for DeepSeek Harness with file rendering and editing, an embedded terminal, Git integ…
 - [At-file composer mentions](#dsh-dsh-at-file) — Codex-style @file mentions: search workspace files from the composer and attach their contents to prompts.
 - [Design preview and editing](#dsh-dsh-openpencil) — OpenPencil design preview and editing plugin for DeepSeek Harness.
 - [Auto-resume interrupted requests](#dsh-dsh-auto-continue) — Automatically resumes interrupted DSH Web requests by sending a queued continue message after network, timeout…
-- [Inline generative UI apps](#dsh-deepseek-harness-genui) — Renders code-first React and TypeScript task apps inline, in Canvas, full screen, or on localhost, keeping int…
 - [Turn-status indicator widget](#dsh-dsh-status-rotator) — Rotates the turn-status label through 1059 bilingual phrases with typewriter output, an animated rainbow gradi…
+- [Inline generative UI apps](#dsh-deepseek-harness-genui) — Renders code-first React and TypeScript task apps inline, in Canvas, full screen, or on localhost, keeping int…
 - [Smooth streaming text rendering](#dsh-dsh-smooth-stream) — Fluid streaming rendering and smooth scrolling for the DeepSeek Harness Web UI.
-- [Conversation navigation rail](#dsh-dsh-chat-timeline) — A 1:1 port of DeepSeek's official web right-side chat navigation rail: a hover-expandable rail with reading-po…
 - [Searchable skill picker](#dsh-dsh-skill-picker) — A WorkBuddy-style skill picker: a button beside the composer opens a searchable list of installed skills, and …
+- [Conversation navigation rail](#dsh-dsh-chat-timeline) — A 1:1 port of DeepSeek's official web right-side chat navigation rail: a hover-expandable rail with reading-po…
 - [Web UI localization and tweaks](#dsh-deepseek-harness-zh-pro) — UI enhancement suite for the DSH web client: completed Chinese locale, one-row usage stats, auto-expanded thin…
 - [Live subagent run monitor](#dsh-dsh-subagent-monitor) — A live subagent run monitor for the Web UI: a sidebar footer trigger and a fixed top-right panel show each sub…
 - [Drag-and-drop file upload](#dsh-dsh-file-upload) — Claude-style drag-and-drop and paperclip file upload with content sniffing, document-to-Markdown conversion vi…
@@ -25,36 +25,11 @@
 - [Multi-window conversation wall](#dsh-dsh-multi-chat) — A multi-window wall for the DSH Web UI: run and monitor several conversations side by side in one screen, with…
 - [Composer autocomplete and fill-ins](#dsh-opencues-integrations-dsh) — Offers word alternatives and underscore-gated fill-ins in the composer: end a line with an underscore to have …
 
-<a id="dsh-dsh-better-sidebar"></a>
-
-### Extensible sidebar workbench
-
-[omdsh-dev/DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) — `Native plugin` · ★ 3.9k · License: MIT · Works with: DeepSeek Harness only
-
-A full sidebar workbench for DeepSeek Harness with file rendering and editing, an embedded terminal, Git integration, and a subagents view; third-party plugins can register their own tabs into it.
-
-**Alternatives:**
-
-- [MichengAI/dsh-codex-ui](https://github.com/MichengAI/dsh-codex-ui) (★ 100) — Rebuilds the sidebar, workspace tree, search, and turn navigation in a Codex-style layout instead of a tabbed workbench.
-- [Jiyr0119/dsh-workspace-explorer](https://github.com/Jiyr0119/dsh-workspace-explorer) (★ 30) — Adds a single-purpose animated workspace file-tree popup you can search and drag files from directly into the composer.
-- [openAGFS/dsh-agfs](https://github.com/openAGFS/dsh-agfs) (★ 2) — Serves a standalone React file-browser web app plus a browse_files tool the model can call.
-- [2nd1st/dsh-plugin-open-app](https://github.com/2nd1st/dsh-plugin-open-app) (★ 7) — Gives each installed MCP app its own sidebar container with a separate workspace and session, plus inline rendering in chats.
-
-<details><summary>Install</summary>
-
-**DeepSeek Harness**
-
-```bash
-dsh plugin --profile web add github:omdsh-dev/DSH-better-sidebar
-```
-
-</details>
-
 <a id="dsh-dsh-tui"></a>
 
 ### Full-screen terminal UI
 
-[ccch1mneyyy/dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) — `Native plugin` · ★ 3.7k · License: MIT · Works with: DeepSeek Harness only
+[ccch1mneyyy/dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) — `Native plugin` · ★ 4.1k · License: MIT · Works with: DeepSeek Harness only
 
 A Claude Code-style full-screen terminal UI for DeepSeek Harness, with a pixel-whale header, a live status line, and streaming thought expansion.
 
@@ -77,7 +52,7 @@ dsh plugin --profile web add github:ccch1mneyyy/dsh-TUI
 
 ### Balance and cost widget
 
-[MeteorNOX/DeepSeek-Balance-Whale-Widget](https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget) — `Native plugin` · ★ 3.3k · License: MIT · Works with: DeepSeek Harness only
+[MeteorNOX/DeepSeek-Balance-Whale-Widget](https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget) — `Native plugin` · ★ 4.0k · License: MIT · Works with: DeepSeek Harness only
 
 A fixed-corner widget for the DSH web GUI showing balance, today's usage, and per-turn cost with peak/off-peak pricing, editable alert bubbles, over 30 vendor templates with per-model balance and quota, and task-end sounds. Local-only, no telemetry.
 
@@ -95,11 +70,36 @@ dsh plugin --profile web add github:MeteorNOX/DeepSeek-Balance-Whale-Widget
 
 </details>
 
+<a id="dsh-dsh-better-sidebar"></a>
+
+### Extensible sidebar workbench
+
+[omdsh-dev/DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) — `Native plugin` · ★ 4.0k · License: MIT · Works with: DeepSeek Harness only
+
+A full sidebar workbench for DeepSeek Harness with file rendering and editing, an embedded terminal, Git integration, and a subagents view; third-party plugins can register their own tabs into it.
+
+**Alternatives:**
+
+- [MichengAI/dsh-codex-ui](https://github.com/MichengAI/dsh-codex-ui) (★ 114) — Rebuilds the sidebar, workspace tree, search, and turn navigation in a Codex-style layout instead of a tabbed workbench.
+- [Jiyr0119/dsh-workspace-explorer](https://github.com/Jiyr0119/dsh-workspace-explorer) (★ 35) — Adds a single-purpose animated workspace file-tree popup you can search and drag files from directly into the composer.
+- [openAGFS/dsh-agfs](https://github.com/openAGFS/dsh-agfs) (★ 2) — Serves a standalone React file-browser web app plus a browse_files tool the model can call.
+- [2nd1st/dsh-plugin-open-app](https://github.com/2nd1st/dsh-plugin-open-app) (★ 7) — Gives each installed MCP app its own sidebar container with a separate workspace and session, plus inline rendering in chats.
+
+<details><summary>Install</summary>
+
+**DeepSeek Harness**
+
+```bash
+dsh plugin --profile web add github:omdsh-dev/DSH-better-sidebar
+```
+
+</details>
+
 <a id="dsh-dsh-at-file"></a>
 
 ### At-file composer mentions
 
-[omdsh-dev/dsh-at-file](https://github.com/omdsh-dev/dsh-at-file) — `Native plugin` · ★ 513 · License: MIT · Works with: DeepSeek Harness only
+[omdsh-dev/dsh-at-file](https://github.com/omdsh-dev/dsh-at-file) — `Native plugin` · ★ 516 · License: MIT · Works with: DeepSeek Harness only
 
 Codex-style @file mentions: search workspace files from the composer and attach their contents to prompts.
 
@@ -117,7 +117,7 @@ dsh plugin --profile web add github:omdsh-dev/dsh-at-file
 
 ### Design preview and editing
 
-[ZSeven-W/dsh-openpencil](https://github.com/ZSeven-W/dsh-openpencil) — `Native plugin` · ★ 180 · License: MIT · Works with: DeepSeek Harness only
+[ZSeven-W/dsh-openpencil](https://github.com/ZSeven-W/dsh-openpencil) — `Native plugin` · ★ 183 · License: MIT · Works with: DeepSeek Harness only
 
 OpenPencil design preview and editing plugin for DeepSeek Harness.
 
@@ -135,7 +135,7 @@ dsh plugin --profile web add github:ZSeven-W/dsh-openpencil
 
 ### Auto-resume interrupted requests
 
-[HsiangNianian/dsh-auto-continue](https://github.com/HsiangNianian/dsh-auto-continue) — `Native plugin` · ★ 120 · License: MIT · Works with: DeepSeek Harness only
+[HsiangNianian/dsh-auto-continue](https://github.com/HsiangNianian/dsh-auto-continue) — `Native plugin` · ★ 132 · License: MIT · Works with: DeepSeek Harness only
 
 Automatically resumes interrupted DSH Web requests by sending a queued continue message after network, timeout, or host-crash failures, with error classification, adaptive backoff, templated continue text, and browser notifications.
 
@@ -149,35 +149,11 @@ dsh plugin --profile web add github:HsiangNianian/dsh-auto-continue
 
 </details>
 
-<a id="dsh-deepseek-harness-genui"></a>
-
-### Inline generative UI apps
-
-[pengyue-polaron/deepseek-harness-genui](https://github.com/pengyue-polaron/deepseek-harness-genui) — `Native plugin` · ★ 114 · License: MIT · Works with: DeepSeek Harness only
-
-Renders code-first React and TypeScript task apps inline, in Canvas, full screen, or on localhost, keeping interaction state available to later agent turns, with approval-gated MCP and API access.
-
-**Alternatives:**
-
-- [omdsh-dev/dsh-genui](https://github.com/omdsh-dev/dsh-genui) (★ 485) — Renders built-in widget types — layout, charts, forms, quizzes, mermaid diagrams, 3D scenes — with an action event loop back to the model.
-- [Nagi-ovo/dsh-visualize](https://github.com/Nagi-ovo/dsh-visualize) (★ 280) — Streams sandboxed interactive HTML cards directly into the chat with a live streaming preview, instead of full React apps.
-- [jiuyuechuwuhao/dsh-canvas-preview](https://github.com/jiuyuechuwuhao/dsh-canvas-preview) (★ 4) — Adds a Canvas tab that live-previews workspace HTML artifacts and exports them locally as PNG, JPG, or SVG.
-
-<details><summary>Install</summary>
-
-**DeepSeek Harness**
-
-```bash
-dsh plugin --profile web add github:pengyue-polaron/deepseek-harness-genui
-```
-
-</details>
-
 <a id="dsh-dsh-status-rotator"></a>
 
 ### Turn-status indicator widget
 
-[01Virex/dsh-status-rotator](https://github.com/01Virex/dsh-status-rotator) — `Native plugin` · ★ 93 · License: MIT · Works with: DeepSeek Harness only
+[01Virex/dsh-status-rotator](https://github.com/01Virex/dsh-status-rotator) — `Native plugin` · ★ 126 · License: MIT · Works with: DeepSeek Harness only
 
 Rotates the turn-status label through 1059 bilingual phrases with typewriter output, an animated rainbow gradient, danmaku, 12 toggleable theme packs, live placeholders, and tab-title rotation.
 
@@ -196,11 +172,35 @@ dsh plugin --profile web add github:01Virex/dsh-status-rotator
 
 </details>
 
+<a id="dsh-deepseek-harness-genui"></a>
+
+### Inline generative UI apps
+
+[pengyue-polaron/deepseek-harness-genui](https://github.com/pengyue-polaron/deepseek-harness-genui) — `Native plugin` · ★ 114 · License: MIT · Works with: DeepSeek Harness only
+
+Renders code-first React and TypeScript task apps inline, in Canvas, full screen, or on localhost, keeping interaction state available to later agent turns, with approval-gated MCP and API access.
+
+**Alternatives:**
+
+- [omdsh-dev/dsh-genui](https://github.com/omdsh-dev/dsh-genui) (★ 515) — Renders built-in widget types — layout, charts, forms, quizzes, mermaid diagrams, 3D scenes — with an action event loop back to the model.
+- [Nagi-ovo/dsh-visualize](https://github.com/Nagi-ovo/dsh-visualize) (★ 288) — Streams sandboxed interactive HTML cards directly into the chat with a live streaming preview, instead of full React apps.
+- [jiuyuechuwuhao/dsh-canvas-preview](https://github.com/jiuyuechuwuhao/dsh-canvas-preview) (★ 4) — Adds a Canvas tab that live-previews workspace HTML artifacts and exports them locally as PNG, JPG, or SVG.
+
+<details><summary>Install</summary>
+
+**DeepSeek Harness**
+
+```bash
+dsh plugin --profile web add github:pengyue-polaron/deepseek-harness-genui
+```
+
+</details>
+
 <a id="dsh-dsh-smooth-stream"></a>
 
 ### Smooth streaming text rendering
 
-[Laplace-bit/dsh-smooth-stream](https://github.com/Laplace-bit/dsh-smooth-stream) — `Native plugin` · ★ 76 · License: MIT · Works with: DeepSeek Harness only
+[Laplace-bit/dsh-smooth-stream](https://github.com/Laplace-bit/dsh-smooth-stream) — `Native plugin` · ★ 81 · License: MIT · Works with: DeepSeek Harness only
 
 Fluid streaming rendering and smooth scrolling for the DeepSeek Harness Web UI.
 
@@ -214,36 +214,11 @@ dsh plugin --profile web add github:Laplace-bit/dsh-smooth-stream
 
 </details>
 
-<a id="dsh-dsh-chat-timeline"></a>
-
-### Conversation navigation rail
-
-[jjxjjjjiik-bot/dsh-chat-timeline](https://github.com/jjxjjjjiik-bot/dsh-chat-timeline) — `Native plugin` · ★ 32 · License: MIT · Works with: DeepSeek Harness only
-
-A 1:1 port of DeepSeek's official web right-side chat navigation rail: a hover-expandable rail with reading-position highlight and click-to-jump between turns.
-
-**Alternatives:**
-
-- [Wine-Red/dsh-codex-timeline](https://github.com/Wine-Red/dsh-codex-timeline) (★ 8) — Adds hover previews of per-turn metrics and model-answer excerpts, plus local conversation search.
-- [liliuCourier/dsh-chat-outline](https://github.com/liliuCourier/dsh-chat-outline) (★ 8) — Adds a keyword filter across turns and can jump the same position into the Trajectory view.
-- [kelearns/dsh-navigation-bar](https://github.com/kelearns/dsh-navigation-bar) (★ 7) — Uses a piano-key layout with a hover ladder and message-preview tooltip instead of a plain rail.
-- [houyanchao/dsh-timeline](https://github.com/houyanchao/dsh-timeline) (★ 39) — Bundles the timeline rail together with a prompt library, conversation export, and quick notes.
-
-<details><summary>Install</summary>
-
-**DeepSeek Harness**
-
-```bash
-dsh plugin --profile web add github:jjxjjjjiik-bot/dsh-chat-timeline
-```
-
-</details>
-
 <a id="dsh-dsh-skill-picker"></a>
 
 ### Searchable skill picker
 
-[a735624258/dsh-skill-picker](https://github.com/a735624258/dsh-skill-picker) — `Native plugin` · ★ 30 · License: MIT · Works with: DeepSeek Harness only
+[a735624258/dsh-skill-picker](https://github.com/a735624258/dsh-skill-picker) — `Native plugin` · ★ 35 · License: MIT · Works with: DeepSeek Harness only
 
 A WorkBuddy-style skill picker: a button beside the composer opens a searchable list of installed skills, and picking one inserts the official /skill-name gesture so the skill loads with the message.
 
@@ -257,11 +232,36 @@ dsh plugin --profile web add github:a735624258/dsh-skill-picker
 
 </details>
 
+<a id="dsh-dsh-chat-timeline"></a>
+
+### Conversation navigation rail
+
+[jjxjjjjiik-bot/dsh-chat-timeline](https://github.com/jjxjjjjiik-bot/dsh-chat-timeline) — `Native plugin` · ★ 31 · License: MIT · Works with: DeepSeek Harness only
+
+A 1:1 port of DeepSeek's official web right-side chat navigation rail: a hover-expandable rail with reading-position highlight and click-to-jump between turns.
+
+**Alternatives:**
+
+- [Wine-Red/dsh-codex-timeline](https://github.com/Wine-Red/dsh-codex-timeline) (★ 9) — Adds hover previews of per-turn metrics and model-answer excerpts, plus local conversation search.
+- [liliuCourier/dsh-chat-outline](https://github.com/liliuCourier/dsh-chat-outline) (★ 8) — Adds a keyword filter across turns and can jump the same position into the Trajectory view.
+- [kelearns/dsh-navigation-bar](https://github.com/kelearns/dsh-navigation-bar) (★ 6) — Uses a piano-key layout with a hover ladder and message-preview tooltip instead of a plain rail.
+- [houyanchao/dsh-timeline](https://github.com/houyanchao/dsh-timeline) (★ 40) — Bundles the timeline rail together with a prompt library, conversation export, and quick notes.
+
+<details><summary>Install</summary>
+
+**DeepSeek Harness**
+
+```bash
+dsh plugin --profile web add github:jjxjjjjiik-bot/dsh-chat-timeline
+```
+
+</details>
+
 <a id="dsh-deepseek-harness-zh-pro"></a>
 
 ### Web UI localization and tweaks
 
-[magian1127/deepseek-harness-zh_pro](https://github.com/magian1127/deepseek-harness-zh_pro) — `Native plugin` · ★ 28 · License: MIT · Works with: DeepSeek Harness only
+[magian1127/deepseek-harness-zh_pro](https://github.com/magian1127/deepseek-harness-zh_pro) — `Native plugin` · ★ 30 · License: MIT · Works with: DeepSeek Harness only
 
 UI enhancement suite for the DSH web client: completed Chinese locale, one-row usage stats, auto-expanded thinking, adjustable chat width, session archiving and deletion, plus an optional prompt-injection switch that is off by default.
 
@@ -321,7 +321,7 @@ dsh plugin --profile web add github:HongMing-Huang/dsh-file-upload
 
 ### Windows tray desktop shell
 
-[RAFOLIE/dsh-desktop-windowos](https://github.com/RAFOLIE/dsh-desktop-windowos) — `Native plugin` · ★ 24 · License: MIT · Works with: DeepSeek Harness only
+[RAFOLIE/dsh-desktop-windowos](https://github.com/RAFOLIE/dsh-desktop-windowos) — `Native plugin` · ★ 22 · License: MIT · Works with: DeepSeek Harness only
 
 A Windows tray desktop shell for DeepSeek Harness that auto-installs and auto-updates its executable from GitHub Releases, creates desktop shortcuts for the app and the web UI, and exposes a desktop_launch tool to start it from the conversation.
 
@@ -339,7 +339,7 @@ dsh plugin --profile web add github:RAFOLIE/dsh-desktop-windowos
 
 ### Composer input history
 
-[PerryLink/dsh-composer-history](https://github.com/PerryLink/dsh-composer-history) — `Native plugin` · ★ 16 · License: Apache-2.0 · Works with: DeepSeek Harness only
+[PerryLink/dsh-composer-history](https://github.com/PerryLink/dsh-composer-history) — `Native plugin` · ★ 17 · License: Apache-2.0 · Works with: DeepSeek Harness only
 
 Terminal-style input history for the web composer: edge-first arrow-key recall with exact draft and caret restore, browser-local persisted history, Ctrl+R reverse search, cross-session snippets, and prompt templates with variables.
 

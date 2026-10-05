@@ -9,8 +9,8 @@
 - [GitLab projects and merge requests](#gitlab-mcp) — Servidor GitLab para projetos, merge requests, issues, pipelines, wikis e releases; exige GITLAB_PERSONAL_ACCE…
 - [Manage repos across Git hosts](#gk-cli-mcp) — Servidor da GitKraken para gerenciar repositórios, pull requests e issues no GitHub, GitLab e Bitbucket.
 - [Native git operations](#git-mcp-server) — Servidor git abrangente com ferramentas nativas como clone, commit e gestão de worktrees.
-- [Find UX issues in React code](#dsh-dsh-user-experience) — Encontra possíveis problemas de UX em um projeto revisando automaticamente código React/TypeScript, apontando …
 - [GitHub CI and PR review bot](#dsh-dsh-github) — Integração de CI com o GitHub de nível oficial: um action.yml composto, um bot de revisão de PR por polling co…
+- [Find UX issues in React code](#dsh-dsh-user-experience) — Encontra possíveis problemas de UX em um projeto revisando automaticamente código React/TypeScript, apontando …
 - [Git worktree session targets](#dsh-dsh-git-worktree) — Session Targets baseados em git worktree com sessões de tarefa isoladas, status pronto-para-revisão, preview l…
 - [Explore and audit GitHub via gh CLI](#dsh-github-explore) — Scripts de busca, descoberta e auditoria do GitHub empacotados como uma skill em torno da gh CLI: busca de rep…
 - [Review files changed this session](#dsh-dsh-session-review) — Uma faixa acima do campo de composição lista os arquivos modificados na sessão atual (recolhida por padrão), c…
@@ -213,7 +213,7 @@ extensions:
 
 ### Alibaba open code review
 
-[alibaba/open-code-review](https://github.com/alibaba/open-code-review) — `Agent Skills` · ★ 42k · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[alibaba/open-code-review](https://github.com/alibaba/open-code-review) — `Agent Skills` · ★ 44k · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Ferramenta híbrida de revisão de código testada em produção na escala da Alibaba, combinando pipelines determinísticos com um agente LLM para comentários precisos linha a linha e um conjunto de regras de segurança multilíngue.
 
@@ -531,7 +531,7 @@ extensions:
 
 ### Manage repos across Git hosts
 
-[gitkraken/gk-cli](https://github.com/gitkraken/gk-cli) — `Servidor MCP` · ★ 462 · Licença: ver repo · Funciona com: Todos os clientes
+[gitkraken/gk-cli](https://github.com/gitkraken/gk-cli) — `Servidor MCP` · ★ 460 · Licença: ver repo · Funciona com: Todos os clientes
 
 Servidor da GitKraken para gerenciar repositórios, pull requests e issues no GitHub, GitLab e Bitbucket.
 
@@ -720,7 +720,7 @@ extensions:
 
 ### Native git operations
 
-[cyanheads/git-mcp-server](https://github.com/cyanheads/git-mcp-server) — `Servidor MCP` · ★ 241 · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[cyanheads/git-mcp-server](https://github.com/cyanheads/git-mcp-server) — `Servidor MCP` · ★ 239 · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Servidor git abrangente com ferramentas nativas como clone, commit e gestão de worktrees.
 
@@ -905,29 +905,11 @@ extensions:
 
 </details>
 
-<a id="dsh-dsh-user-experience"></a>
-
-### Find UX issues in React code
-
-[DietCokewithSugar/dsh-user-experience](https://github.com/DietCokewithSugar/dsh-user-experience) — `Plugin nativo` · ★ 20 · Licença: MIT · Funciona com: DeepSeek Harness apenas
-
-Encontra possíveis problemas de UX em um projeto revisando automaticamente código React/TypeScript, apontando cada problema e dando sugestões concretas.
-
-<details><summary>Instalar</summary>
-
-**DeepSeek Harness**
-
-```bash
-dsh plugin --profile web add github:DietCokewithSugar/dsh-user-experience
-```
-
-</details>
-
 <a id="dsh-dsh-github"></a>
 
 ### GitHub CI and PR review bot
 
-[PerryLink/dsh-github](https://github.com/PerryLink/dsh-github) — `Plugin nativo` · ★ 19 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
+[PerryLink/dsh-github](https://github.com/PerryLink/dsh-github) — `Plugin nativo` · ★ 23 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
 
 Integração de CI com o GitHub de nível oficial: um action.yml composto, um bot de revisão de PR por polling com comentários inline idempotentes e um gate de status-check, além de ferramentas de PR e issues em que toda escrita é aprovada por um humano.
 
@@ -945,11 +927,29 @@ dsh plugin --profile web add github:PerryLink/dsh-github
 
 </details>
 
+<a id="dsh-dsh-user-experience"></a>
+
+### Find UX issues in React code
+
+[DietCokewithSugar/dsh-user-experience](https://github.com/DietCokewithSugar/dsh-user-experience) — `Plugin nativo` · ★ 21 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+
+Encontra possíveis problemas de UX em um projeto revisando automaticamente código React/TypeScript, apontando cada problema e dando sugestões concretas.
+
+<details><summary>Instalar</summary>
+
+**DeepSeek Harness**
+
+```bash
+dsh plugin --profile web add github:DietCokewithSugar/dsh-user-experience
+```
+
+</details>
+
 <a id="dsh-dsh-git-worktree"></a>
 
 ### Git worktree session targets
 
-[wloops/dsh-git-worktree](https://github.com/wloops/dsh-git-worktree) — `Plugin nativo` · ★ 15 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[wloops/dsh-git-worktree](https://github.com/wloops/dsh-git-worktree) — `Plugin nativo` · ★ 17 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Session Targets baseados em git worktree com sessões de tarefa isoladas, status pronto-para-revisão, preview local reversível, entrega confirmada por humano, retenção e recuperação de ambiente, e iteração na mesma sessão.
 
@@ -972,7 +972,7 @@ dsh plugin --profile web add github:wloops/dsh-git-worktree
 
 ### Explore and audit GitHub via gh CLI
 
-[Fectivnfy112357/github-explore](https://github.com/Fectivnfy112357/github-explore) — `Plugin nativo` · ★ 7 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[Fectivnfy112357/github-explore](https://github.com/Fectivnfy112357/github-explore) — `Plugin nativo` · ★ 8 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Scripts de busca, descoberta e auditoria do GitHub empacotados como uma skill em torno da gh CLI: busca de repositórios, exploração multieixo, trending, resumos de repositório, projetos similares, busca de código e auditorias de issues/PRs e organizações.
 
@@ -1000,7 +1000,7 @@ Uma faixa acima do campo de composição lista os arquivos modificados na sessã
 
 **Alternativas:**
 
-- [cirelir/dsh-change-review](https://github.com/cirelir/dsh-change-review) (★ 14) — Rastreia write/edit com isolamento por sessão, agregação de subagentes e atualizações ao vivo via SSE, sem precisar de git
+- [cirelir/dsh-change-review](https://github.com/cirelir/dsh-change-review) (★ 13) — Rastreia write/edit com isolamento por sessão, agregação de subagentes e atualizações ao vivo via SSE, sem precisar de git
 - [9087/dsh-diff-approval](https://github.com/9087/dsh-diff-approval) (★ 9) — Permite manter ou reverter cada bloco de mudança individualmente, oferece desfazer/refazer e mantém a revisão persistente entre reinícios
 - [Tlyer233/dsh-vscode-review#dsh-review](https://github.com/Tlyer233/dsh-vscode-review/tree/main/dsh-review) — Registra write, edit e rm de shell num repositório git sombra, revisável trecho a trecho numa extensão companheira do VS Code
 

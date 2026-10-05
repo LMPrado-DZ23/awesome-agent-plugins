@@ -15,24 +15,24 @@
 - [Claude Code HUD](#claude-hud) — Plugin de Claude Code que mostra um painel ao vivo com uso de contexto, ferramentas ativas, agentes em execuçã…
 - [DeepEval LLM evaluation](#deepeval) — Framework open-source de avaliação de LLMs para testar e pontuar as saídas de modelos de linguagem e pipelines…
 - [Quarkdown markup compiler skill](#quarkdown) — Skill para um compilador de superset de Markdown que transforma texto marcado em artigos, apresentações, sites…
-- [Desktop Commander](#desktop-commander) — Controle de terminal, gestão de processos longos, busca no sistema de arquivos e edição de arquivos por diff p…
 - [Diagrams-as-code (draw.io) skill](#drawio-skill) — Skill que transforma linguagem natural, código, manifestos Terraform/Kubernetes, SQL, OpenAPI, AsyncAPI, Proto…
+- [Desktop Commander](#desktop-commander) — Controle de terminal, gestão de processos longos, busca no sistema de arquivos e edição de arquivos por diff p…
 - [Progressive MCP tool exposure](#klavis-mcp) — Servidor para uso progressivo de ferramentas em escala, expondo grandes conjuntos de ferramentas MCP de forma …
 - [Interactive draw.io diagrams](#drawio-mcp) — Cria diagramas no chat renderizados como diagramas draw.io interativos, com mais de 10.000 formas pesquisáveis…
 - [Vibe Tools CLI for Cursor Agent](#vibe-tools) — Toolkit de linha de comando que dá ao Cursor Agent uma equipe de IA estendida e skills avançadas por meio de i…
 - [AntV chart generation](#mcp-server-chart) — Gera gráficos usando a biblioteca de visualização AntV; exige um SERVICE_ID.
+- [Paid API catalog for agents](#dsh-treg) — Catálogo de ferramentas para agentes: pesquisa cerca de 2.600 endpoints externos (SEO/SERP, backlinks, social,…
 - [Website design-system extractor](#design-extract) — Extrai o sistema de design completo de um site em tokens DTCG, com geradores para iOS SwiftUI, Android Compose…
 - [Multi-model consensus runner](#claude-octopus) — Executa a mesma tarefa de pesquisa, design ou código em paralelo em vários modelos de IA e evidencia onde eles…
-- [Paid API catalog for agents](#dsh-treg) — Catálogo de ferramentas para agentes: pesquisa cerca de 2.600 endpoints externos (SEO/SERP, backlinks, social,…
 - [Obsidian agent memory framework](#obsidian-wiki) — Framework de skills que permite a agentes de IA construir e manter uma base de conhecimento pessoal ('cérebro …
-- [Academic diagram generation](#paperbanana-mcp) — Gera diagramas acadêmicos e gráficos estatísticos a partir de texto usando IA multiagente.
 - [Study top app screens and paywalls](#appllama-skills-mcp) — Estuda telas, fluxos e paywalls de apps de iOS com maior faturamento para embasar o design de novos apps.
+- [Academic diagram generation](#paperbanana-mcp) — Gera diagramas acadêmicos e gráficos estatísticos a partir de texto usando IA multiagente.
 - [Figma design context for agents](#mcp-server-guide) — Servidor oficial do Figma que traz o contexto de design do Figma diretamente para o fluxo de trabalho de um ag…
 - [Design system prompts for coding agents](#typeui-mcp) — Sistemas de design, prompts de UI e variações de layout para ferramentas de codificação com IA.
 - [Real website design references](#inspo-mcp) — Sites reais em produção para agentes de código: paletas de cores, fontes, layouts de dobra e JSX de referência…
 - [Context-window token optimization](#token-optimizer-mcp) — Otimização da janela de contexto com cache, compressão e ferramentas inteligentes de arquivos, reduzindo token…
-- [Interactive equation graphing](#equation-io-mcp) — Cria gráficos 2D e 3D interativos a partir de equações validadas, com links compartilháveis e prévias em PNG.
 - [Verify agent work from video evidence](#watch-skill-mcp) — Assiste a vídeos e sessões ao vivo, guarda evidências com timestamp e verifica o próprio trabalho de um agente…
+- [Interactive equation graphing](#equation-io-mcp) — Cria gráficos 2D e 3D interativos a partir de equações validadas, com links compartilháveis e prévias em PNG.
 - [Organize Claude Code configuration](#claude-code-organizer-mcp) — Organiza memórias, skills, servidores MCP, comandos e agentes do Claude Code por arrastar e soltar.
 - [PyTorch architecture diagrams](#visualtorch-mcp) — Renderiza diagramas de arquitetura de modelos PyTorch e revelações em GIF animado a partir de uma fonte de mod…
 - [Stata regression analysis](#stata-mcp) — Permite que um LLM ajude a rodar análises de regressão no Stata.
@@ -47,17 +47,17 @@
 - [Blender 3D production plugin](#dsh-blender) — Plugin de produção 3D para Blender com 30 skills de modelagem/reconstrução, 13 ferramentas em tempo de execuçã…
 - [Hash-anchored file editing](#dsh-dsh-better-edit) — Ferramentas read / edit / batch_edit / undo_last_edit ancoradas em hash: cada linha recebe um hash de conteúdo…
 - [Cross-platform academic search](#dsh-dsh-ai4scholar) — Busca acadêmica AI4Scholar: 38 ferramentas sobre Semantic Scholar, PubMed, Google Scholar, arXiv, bioRxiv/medR…
-- [Two-way Codex-DSH skill sync](#dsh-dsh-codex-sync) — Ponte bidirecional entre Codex e DSH: importa skills de ~/.codex/skills, importa sessões com anexo de workspac…
-- [Language server actions](#dsh-dsh-lsp-actions) — Superfície de ações LSP para o DSH: diagnósticos, formatação, autocompletar, ações de código, símbolos, ajuda …
 - [Zotero evidence store for agents](#dsh-dsh-zotero) — Usa o Zotero como repositório de evidências para agentes: pesquisa sua biblioteca, inspeciona metadados e nota…
+- [Language server actions](#dsh-dsh-lsp-actions) — Superfície de ações LSP para o DSH: diagnósticos, formatação, autocompletar, ações de código, símbolos, ajuda …
+- [Two-way Codex-DSH skill sync](#dsh-dsh-codex-sync) — Ponte bidirecional entre Codex e DSH: importa skills de ~/.codex/skills, importa sessões com anexo de workspac…
 - [Cross-shell terminal tool](#dsh-dsh-bash-terminal) — Uma única ferramenta de shell cobrindo PowerShell, Git Bash e WSL no Windows, além de um terminal PTY interati…
 - [Git-based session rewind](#dsh-dsh-checkpoint-rewind) — Um /rewind ao estilo Claude Code para o DeepSeek Harness: tira snapshots do workspace via git antes de cada fe…
 - [One-click prompt optimizer](#dsh-oss-prompt-optimizer) — Otimiza uma instrução bruta em um prompt profissional com um clique: três estilos de saída, perfil de papel/ta…
 - [HarmonyOS device automation](#dsh-dsh-hdc-bridge) — Ponte para dispositivos HarmonyOS: um loop de automação hdc para captura de tela/instalação/log/crash/UI com u…
 - [Auxiliary model routing tools](#dsh-dsh-auxiliary) — Fornece rotas de modelo dedicadas, ferramentas e orientações de sistema para visão, compactação, revisões, sub…
 - [Connect DSH to OOMOL apps](#dsh-dsh-oomol) — Conecta o DeepSeek Harness a aplicativos e serviços gerenciados pela OOMOL, com descoberta e execução progress…
-- [MiniMax multimodal bridge](#dsh-dsh-mmx-bridge) — Uma única ferramenta mmx_bridge cobrindo compreensão/geração de imagens da MiniMax, vídeo, TTS, música, capas,…
 - [Web-novel writing engine](#dsh-dsh-tool-writing) — Motor de escrita de web-novels para o DeepSeek Harness: rascunho, esboço e brainstorming em paralelo com chave…
+- [MiniMax multimodal bridge](#dsh-dsh-mmx-bridge) — Uma única ferramenta mmx_bridge cobrindo compreensão/geração de imagens da MiniMax, vídeo, TTS, música, capas,…
 - [Deterministic code graph tool](#dsh-dsh-tool-lens) — Ferramenta determinística de grafo de código AST e inteligência de arquitetura para hierarquias de chamadas, r…
 - [Brand asset extraction](#openbrand-mcp) — Extrai ativos de marca (logos, cores, imagens de fundo, nome da marca) a partir de qualquer URL de site; exige…
 - [Collaborative drawing canvas](#tldraw-mcp-app) — Desenha e colabora visualmente com agentes na tela compartilhada do tldraw.
@@ -70,7 +70,7 @@
 
 ### Claude Mem persistent context
 
-[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) — `Agent Skills` · ★ 95k · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) — `Agent Skills` · ★ 96k · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Captura o que um agente faz durante a sessão, comprime com IA e reinjeta as memórias relevantes em sessões futuras, funcionando com Claude Code, Codex, Gemini e outros.
 
@@ -167,7 +167,7 @@ npx skills add thedotmack/claude-mem -a universal
 
 ### Codebase knowledge graphs
 
-[Egonex-AI/Understand-Anything](https://github.com/Egonex-AI/Understand-Anything) — `Agent Skills` · ★ 84k · Licença: MIT · Funciona com: Todos os clientes
+[Egonex-AI/Understand-Anything](https://github.com/Egonex-AI/Understand-Anything) — `Agent Skills` · ★ 85k · Licença: MIT · Funciona com: Todos os clientes
 
 Transforma qualquer codebase em um grafo de conhecimento interativo que agentes (e humanos) podem explorar, buscar e consultar, funcionando com Claude Code, Codex, Cursor e outros.
 
@@ -262,13 +262,13 @@ npx skills add Egonex-AI/Understand-Anything -a universal
 
 ### Last-30-days research skill
 
-[mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) — `Agent Skills` · ★ 63k · Licença: MIT · Funciona com: Todos os clientes
+[mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) — `Agent Skills` · ★ 64k · Licença: MIT · Funciona com: Todos os clientes
 
 Agent skill que pesquisa um tema no Reddit, X, YouTube, Hacker News, Polymarket e na web em geral, sintetizando um resumo com fontes.
 
 **Alternativas:**
 
-- [Jesseovo/last30days-skill-cn](https://github.com/Jesseovo/last30days-skill-cn) (★ 1.8k) — Mesma ideia adaptada às plataformas chinesas: pesquisa em oito grandes sites da China dos últimos 30 dias.
+- [Jesseovo/last30days-skill-cn](https://github.com/Jesseovo/last30days-skill-cn) (★ 1.9k) — Mesma ideia adaptada às plataformas chinesas: pesquisa em oito grandes sites da China dos últimos 30 dias.
 
 <details><summary>Instalar</summary>
 
@@ -356,14 +356,14 @@ npx skills add mvanhorn/last30days-skill -a universal
 
 ### AI PowerPoint generation skill
 
-[hugohe3/ppt-master](https://github.com/hugohe3/ppt-master) — `Agent Skills` · ★ 57k · Licença: MIT · Funciona com: Todos os clientes
+[hugohe3/ppt-master](https://github.com/hugohe3/ppt-master) — `Agent Skills` · ★ 58k · Licença: MIT · Funciona com: Todos os clientes
 
 Transforma documentos ou temas em apresentações PowerPoint nativas e editáveis, com formas reais, transições, gráficos e tabelas com dados e narração opcional.
 
 **Alternativas:**
 
 - [zarazhangrui/frontend-slides](https://github.com/zarazhangrui/frontend-slides) (★ 30k) — Cria apresentações baseadas na web usando as próprias skills de frontend do agente de código, em vez de arquivos PowerPoint nativos.
-- [chuspeeism/dashi-ppt-skill](https://github.com/chuspeeism/dashi-ppt-skill) (★ 8.9k) — Gera apresentações editáveis no navegador a partir de vários temas visuais, exportáveis para HTML, PDF e PPTX.
+- [chuspeeism/dashi-ppt-skill](https://github.com/chuspeeism/dashi-ppt-skill) (★ 9.2k) — Gera apresentações editáveis no navegador a partir de vários temas visuais, exportáveis para HTML, PDF e PPTX.
 
 <details><summary>Instalar</summary>
 
@@ -451,7 +451,7 @@ npx skills add hugohe3/ppt-master -a universal
 
 ### CLI-Anything agent-native CLIs
 
-[HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything) — `Agent Skills` · ★ 51k · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything) — `Agent Skills` · ★ 52k · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Torna qualquer software de linha de comando nativo para agentes, por meio de um hub de CLIs e uma grande biblioteca de skills que descrevem como operar cada ferramenta.
 
@@ -548,7 +548,7 @@ Agent skills que ensinam um agente a usar o CLI do Obsidian e formatos abertos c
 **Alternativas:**
 
 - [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) (★ 15k) — Transforma Obsidian mais Claude Code em um segundo cérebro autoorganizável, arquivando qualquer fonte em um grafo de conhecimento conectado.
-- [eugeniughelbur/obsidian-second-brain](https://github.com/eugeniughelbur/obsidian-second-brain) (★ 4.6k) — Memória persistente para Claude Code e outros 6 agentes de CLI, guardada como markdown num cofre do Obsidian, com mais de 45 comandos.
+- [eugeniughelbur/obsidian-second-brain](https://github.com/eugeniughelbur/obsidian-second-brain) (★ 4.7k) — Memória persistente para Claude Code e outros 6 agentes de CLI, guardada como markdown num cofre do Obsidian, com mais de 45 comandos.
 
 <details><summary>Instalar</summary>
 
@@ -642,8 +642,8 @@ Skill para gerar diagramas limpos em estilo editorial, como HTML e SVG autoconti
 
 **Alternativas:**
 
-- [nicobailon/visual-explainer](https://github.com/nicobailon/visual-explainer) (★ 9.9k) — Gera páginas HTML ricas ou apresentações para diagramas, revisões de diff, auditorias de plano, tabelas de dados e resumos de projeto.
-- [plannotator/effective-html](https://github.com/plannotator/effective-html) (★ 3.3k) — Conjunto mais amplo de skills para artefatos HTML: wireframes, protótipos interativos, planos e diagramas.
+- [nicobailon/visual-explainer](https://github.com/nicobailon/visual-explainer) (★ 10k) — Gera páginas HTML ricas ou apresentações para diagramas, revisões de diff, auditorias de plano, tabelas de dados e resumos de projeto.
+- [plannotator/effective-html](https://github.com/plannotator/effective-html) (★ 3.5k) — Conjunto mais amplo de skills para artefatos HTML: wireframes, protótipos interativos, planos e diagramas.
 
 <details><summary>Instalar</summary>
 
@@ -839,7 +839,7 @@ Plugin de Claude Code que mostra um painel ao vivo com uso de contexto, ferramen
 
 ### DeepEval LLM evaluation
 
-[confident-ai/deepeval](https://github.com/confident-ai/deepeval) — `Agent Skills` · ★ 18k · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[confident-ai/deepeval](https://github.com/confident-ai/deepeval) — `Agent Skills` · ★ 19k · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Framework open-source de avaliação de LLMs para testar e pontuar as saídas de modelos de linguagem e pipelines de agentes.
 
@@ -1015,11 +1015,106 @@ npx skills add iamgio/quarkdown -a universal
 
 </details>
 
+<a id="drawio-skill"></a>
+
+### Diagrams-as-code (draw.io) skill
+
+[Agents365-ai/drawio-skill](https://github.com/Agents365-ai/drawio-skill) — `Agent Skills` · ★ 9.9k · Licença: MIT · Funciona com: Todos os clientes
+
+Skill que transforma linguagem natural, código, manifestos Terraform/Kubernetes, SQL, OpenAPI, AsyncAPI, Protobuf e GraphQL em diagramas de arquitetura draw.io editáveis e testados.
+
+**Alternativas:**
+
+- [markdown-viewer/skills](https://github.com/markdown-viewer/skills) (★ 3.4k) — Gera diagramas de arquitetura, rede, BPMN, UML e mapas mentais nativamente dentro do Markdown.
+- [yctimlin/mcp_excalidraw](https://github.com/yctimlin/mcp_excalidraw) (★ 2.5k) — Servidor MCP e skill para diagramas programáticos em tempo real no canvas do Excalidraw.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+npx skills add Agents365-ai/drawio-skill -a claude-code -g
+```
+
+**Codex CLI**
+
+```bash
+npx skills add Agents365-ai/drawio-skill -a codex -g
+```
+
+**Gemini CLI**
+
+```bash
+npx skills add Agents365-ai/drawio-skill -a gemini-cli -g
+```
+
+**Cursor**
+
+```bash
+npx skills add Agents365-ai/drawio-skill -a cursor -g
+```
+
+**VS Code (Copilot)**
+
+```bash
+npx skills add Agents365-ai/drawio-skill -a github-copilot -g
+```
+
+**OpenCode**
+
+```bash
+npx skills add Agents365-ai/drawio-skill -a opencode -g
+```
+
+**Cline**
+
+```bash
+npx skills add Agents365-ai/drawio-skill -a cline -g
+```
+
+**Windsurf**
+
+```bash
+npx skills add Agents365-ai/drawio-skill -a windsurf -g
+```
+
+**Zed**
+
+```bash
+npx skills add Agents365-ai/drawio-skill -a zed -g
+```
+
+**Goose**
+
+```bash
+npx skills add Agents365-ai/drawio-skill -a goose -g
+```
+
+**Kiro**
+
+```bash
+npx skills add Agents365-ai/drawio-skill -a kiro-cli -g
+```
+
+**Roo Code**
+
+```bash
+npx skills add Agents365-ai/drawio-skill -a roo -g
+```
+
+**DeepSeek Harness**
+
+```bash
+npx skills add Agents365-ai/drawio-skill -a universal
+```
+
+</details>
+
 <a id="desktop-commander"></a>
 
 ### Desktop Commander
 
-[Desktop Commander](https://github.com/wonderwhy-er/DesktopCommanderMCP) — `Servidor MCP` · ★ 9.8k · Licença: MIT · Funciona com: Todos os clientes
+[Desktop Commander](https://github.com/wonderwhy-er/DesktopCommanderMCP) — `Servidor MCP` · ★ 9.9k · Licença: MIT · Funciona com: Todos os clientes
 
 Controle de terminal, gestão de processos longos, busca no sistema de arquivos e edição de arquivos por diff para agentes.
 
@@ -1204,101 +1299,6 @@ extensions:
 
 </details>
 
-<a id="drawio-skill"></a>
-
-### Diagrams-as-code (draw.io) skill
-
-[Agents365-ai/drawio-skill](https://github.com/Agents365-ai/drawio-skill) — `Agent Skills` · ★ 9.7k · Licença: MIT · Funciona com: Todos os clientes
-
-Skill que transforma linguagem natural, código, manifestos Terraform/Kubernetes, SQL, OpenAPI, AsyncAPI, Protobuf e GraphQL em diagramas de arquitetura draw.io editáveis e testados.
-
-**Alternativas:**
-
-- [markdown-viewer/skills](https://github.com/markdown-viewer/skills) (★ 3.3k) — Gera diagramas de arquitetura, rede, BPMN, UML e mapas mentais nativamente dentro do Markdown.
-- [yctimlin/mcp_excalidraw](https://github.com/yctimlin/mcp_excalidraw) (★ 2.5k) — Servidor MCP e skill para diagramas programáticos em tempo real no canvas do Excalidraw.
-
-<details><summary>Instalar</summary>
-
-**Claude Code**
-
-```bash
-npx skills add Agents365-ai/drawio-skill -a claude-code -g
-```
-
-**Codex CLI**
-
-```bash
-npx skills add Agents365-ai/drawio-skill -a codex -g
-```
-
-**Gemini CLI**
-
-```bash
-npx skills add Agents365-ai/drawio-skill -a gemini-cli -g
-```
-
-**Cursor**
-
-```bash
-npx skills add Agents365-ai/drawio-skill -a cursor -g
-```
-
-**VS Code (Copilot)**
-
-```bash
-npx skills add Agents365-ai/drawio-skill -a github-copilot -g
-```
-
-**OpenCode**
-
-```bash
-npx skills add Agents365-ai/drawio-skill -a opencode -g
-```
-
-**Cline**
-
-```bash
-npx skills add Agents365-ai/drawio-skill -a cline -g
-```
-
-**Windsurf**
-
-```bash
-npx skills add Agents365-ai/drawio-skill -a windsurf -g
-```
-
-**Zed**
-
-```bash
-npx skills add Agents365-ai/drawio-skill -a zed -g
-```
-
-**Goose**
-
-```bash
-npx skills add Agents365-ai/drawio-skill -a goose -g
-```
-
-**Kiro**
-
-```bash
-npx skills add Agents365-ai/drawio-skill -a kiro-cli -g
-```
-
-**Roo Code**
-
-```bash
-npx skills add Agents365-ai/drawio-skill -a roo -g
-```
-
-**DeepSeek Harness**
-
-```bash
-npx skills add Agents365-ai/drawio-skill -a universal
-```
-
-</details>
-
 <a id="klavis-mcp"></a>
 
 ### Progressive MCP tool exposure
@@ -1465,14 +1465,14 @@ extensions:
 
 ### Interactive draw.io diagrams
 
-[draw.io](https://github.com/jgraph/drawio-mcp) — `Servidor MCP` · ★ 5.5k · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[draw.io](https://github.com/jgraph/drawio-mcp) — `Servidor MCP` · ★ 5.6k · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Cria diagramas no chat renderizados como diagramas draw.io interativos, com mais de 10.000 formas pesquisáveis.
 
 **Alternativas:**
 
 - [TerraVision](https://github.com/patrickchugh/terravision) (★ 1.6k) — Gera diagramas de arquitetura de nuvem a partir de um terraform plan, com ícones oficiais de AWS, Azure e GCP.
-- [Vrun-design/openflowkit](https://github.com/Vrun-design/openflowkit) (★ 816) — Ferramentas locais de diagramação de fluxo baseadas em nós para clientes MCP.
+- [Vrun-design/openflowkit](https://github.com/Vrun-design/openflowkit) (★ 831) — Ferramentas locais de diagramação de fluxo baseadas em nós para clientes MCP.
 
 <details><summary>Instalar</summary>
 
@@ -1855,11 +1855,29 @@ extensions:
 
 </details>
 
+<a id="dsh-treg"></a>
+
+### Paid API catalog for agents
+
+[superdesigndev/treg](https://github.com/superdesigndev/treg) — `Plugin nativo` · ★ 4.2k · Licença: ver repo · Funciona com: DeepSeek Harness apenas
+
+Catálogo de ferramentas para agentes: pesquisa cerca de 2.600 endpoints externos (SEO/SERP, backlinks, social, enriquecimento de pessoas/empresas, anúncios, scraping) pela tarefa, lê parâmetros e preço, e chama com a credencial injetada no servidor.
+
+<details><summary>Instalar</summary>
+
+**DeepSeek Harness**
+
+```bash
+dsh plugin --profile web add github:superdesigndev/treg
+```
+
+</details>
+
 <a id="design-extract"></a>
 
 ### Website design-system extractor
 
-[Manavarya09/design-extract](https://github.com/Manavarya09/design-extract) — `Agent Skills` · ★ 4.1k · Licença: MIT · Funciona com: Todos os clientes
+[Manavarya09/design-extract](https://github.com/Manavarya09/design-extract) — `Agent Skills` · ★ 4.2k · Licença: MIT · Funciona com: Todos os clientes
 
 Extrai o sistema de design completo de um site em tokens DTCG, com geradores para iOS SwiftUI, Android Compose, Flutter, Tailwind v4 e variáveis do Figma, além de auditoria de CSS e acessibilidade.
 
@@ -1949,7 +1967,7 @@ npx skills add Manavarya09/design-extract -a universal
 
 ### Multi-model consensus runner
 
-[nyldn/claude-octopus](https://github.com/nyldn/claude-octopus) — `Agent Skills` · ★ 4.1k · Licença: MIT · Funciona com: Todos os clientes
+[nyldn/claude-octopus](https://github.com/nyldn/claude-octopus) — `Agent Skills` · ★ 4.2k · Licença: MIT · Funciona com: Todos os clientes
 
 Executa a mesma tarefa de pesquisa, design ou código em paralelo em vários modelos de IA e evidencia onde eles discordam antes de você publicar.
 
@@ -2031,24 +2049,6 @@ npx skills add nyldn/claude-octopus -a roo -g
 
 ```bash
 npx skills add nyldn/claude-octopus -a universal
-```
-
-</details>
-
-<a id="dsh-treg"></a>
-
-### Paid API catalog for agents
-
-[superdesigndev/treg](https://github.com/superdesigndev/treg) — `Plugin nativo` · ★ 3.7k · Licença: ver repo · Funciona com: DeepSeek Harness apenas
-
-Catálogo de ferramentas para agentes: pesquisa cerca de 2.600 endpoints externos (SEO/SERP, backlinks, social, enriquecimento de pessoas/empresas, anúncios, scraping) pela tarefa, lê parâmetros e preço, e chama com a credencial injetada no servidor.
-
-<details><summary>Instalar</summary>
-
-**DeepSeek Harness**
-
-```bash
-dsh plugin --profile web add github:superdesigndev/treg
 ```
 
 </details>
@@ -2139,6 +2139,168 @@ npx skills add Ar9av/obsidian-wiki -a roo -g
 
 ```bash
 npx skills add Ar9av/obsidian-wiki -a universal
+```
+
+</details>
+
+<a id="appllama-skills-mcp"></a>
+
+### Study top app screens and paywalls
+
+[Appllama](https://github.com/Appllama/appllama-skills) — `Servidor MCP` · ★ 2.4k · Licença: MIT · Funciona com: Todos os clientes
+
+Estuda telas, fluxos e paywalls de apps de iOS com maior faturamento para embasar o design de novos apps.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport http appllama https://mcp.appllama.io/mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add appllama --url https://mcp.appllama.io/mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add --transport http appllama https://mcp.appllama.io/mcp
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "appllama": {
+      "url": "https://mcp.appllama.io/mcp"
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "appllama": {
+      "type": "http",
+      "url": "https://mcp.appllama.io/mcp"
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "appllama": {
+      "type": "remote",
+      "url": "https://mcp.appllama.io/mcp",
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "appllama": {
+      "type": "streamableHttp",
+      "url": "https://mcp.appllama.io/mcp"
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "appllama": {
+      "serverUrl": "https://mcp.appllama.io/mcp"
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "appllama": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://mcp.appllama.io/mcp"
+      ]
+    }
+  }
+}
+```
+_Remote server bridged through the mcp-remote stdio proxy._
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  appllama:
+    type: streamable_http
+    uri: https://mcp.appllama.io/mcp
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "appllama": {
+      "type": "streamable-http",
+      "url": "https://mcp.appllama.io/mcp"
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "appllama": {
+      "type": "streamable-http",
+      "url": "https://mcp.appllama.io/mcp"
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `appllama.cordis.yml  →  dsh web --patch ./appllama.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-appllama
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: appllama
+        transport: streamable-http
+        url: https://mcp.appllama.io/mcp
 ```
 
 </details>
@@ -2324,168 +2486,6 @@ extensions:
 
 </details>
 
-<a id="appllama-skills-mcp"></a>
-
-### Study top app screens and paywalls
-
-[Appllama](https://github.com/Appllama/appllama-skills) — `Servidor MCP` · ★ 2.1k · Licença: MIT · Funciona com: Todos os clientes
-
-Estuda telas, fluxos e paywalls de apps de iOS com maior faturamento para embasar o design de novos apps.
-
-<details><summary>Instalar</summary>
-
-**Claude Code**
-
-```bash
-claude mcp add --transport http appllama https://mcp.appllama.io/mcp
-```
-
-**Codex CLI**
-
-```bash
-codex mcp add appllama --url https://mcp.appllama.io/mcp
-```
-
-**Gemini CLI**
-
-```bash
-gemini mcp add --transport http appllama https://mcp.appllama.io/mcp
-```
-
-**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "appllama": {
-      "url": "https://mcp.appllama.io/mcp"
-    }
-  }
-}
-```
-
-**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
-
-```json
-{
-  "servers": {
-    "appllama": {
-      "type": "http",
-      "url": "https://mcp.appllama.io/mcp"
-    }
-  }
-}
-```
-
-**OpenCode** — Arquivo: `opencode.json`
-
-```json
-{
-  "$schema": "https://opencode.ai/config.json",
-  "mcp": {
-    "appllama": {
-      "type": "remote",
-      "url": "https://mcp.appllama.io/mcp",
-      "enabled": true
-    }
-  }
-}
-```
-
-**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
-
-```json
-{
-  "mcpServers": {
-    "appllama": {
-      "type": "streamableHttp",
-      "url": "https://mcp.appllama.io/mcp"
-    }
-  }
-}
-```
-
-**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
-
-```json
-{
-  "mcpServers": {
-    "appllama": {
-      "serverUrl": "https://mcp.appllama.io/mcp"
-    }
-  }
-}
-```
-
-**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
-
-```json
-{
-  "context_servers": {
-    "appllama": {
-      "source": "custom",
-      "command": "npx",
-      "args": [
-        "-y",
-        "mcp-remote",
-        "https://mcp.appllama.io/mcp"
-      ]
-    }
-  }
-}
-```
-_Remote server bridged through the mcp-remote stdio proxy._
-
-**Goose** — Arquivo: `~/.config/goose/config.yaml`
-
-```yaml
-extensions:
-  appllama:
-    type: streamable_http
-    uri: https://mcp.appllama.io/mcp
-    enabled: true
-```
-
-**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "appllama": {
-      "type": "streamable-http",
-      "url": "https://mcp.appllama.io/mcp"
-    }
-  }
-}
-```
-
-**Roo Code** — Arquivo: `.roo/mcp.json`
-
-```json
-{
-  "mcpServers": {
-    "appllama": {
-      "type": "streamable-http",
-      "url": "https://mcp.appllama.io/mcp"
-    }
-  }
-}
-```
-
-**DeepSeek Harness** — Arquivo: `appllama.cordis.yml  →  dsh web --patch ./appllama.cordis.yml`
-
-```yaml
-- insert:
-    - id: mcp-appllama
-      name: '@deepseek-ai/dsh-mcp-client'
-      config:
-        serverName: appllama
-        transport: streamable-http
-        url: https://mcp.appllama.io/mcp
-```
-
-</details>
-
 <a id="mcp-server-guide"></a>
 
 ### Figma design context for agents
@@ -2497,7 +2497,7 @@ Servidor oficial do Figma que traz o contexto de design do Figma diretamente par
 **Alternativas:**
 
 - [GLips/Figma-Context-MCP](https://github.com/GLips/Figma-Context-MCP) (★ 16k) — Dá a um agente de código acesso aos dados do Figma para implementar designs em qualquer framework de uma vez; exige FIGMA_API_KEY.
-- [TranHoaiHung/figma-ui-mcp](https://github.com/TranHoaiHung/figma-ui-mcp) (★ 256) — Servidor Figma bidirecional: um agente desenha UI na tela do Figma e também lê os designs de volta.
+- [TranHoaiHung/figma-ui-mcp](https://github.com/TranHoaiHung/figma-ui-mcp) (★ 262) — Servidor Figma bidirecional: um agente desenha UI na tela do Figma e também lê os designs de volta.
 
 <details><summary>Instalar</summary>
 
@@ -2824,7 +2824,7 @@ extensions:
 
 ### Real website design references
 
-[Nutlope/inspo](https://github.com/Nutlope/inspo) — `Servidor MCP` · ★ 793 · Licença: MIT · Funciona com: Todos os clientes
+[Nutlope/inspo](https://github.com/Nutlope/inspo) — `Servidor MCP` · ★ 848 · Licença: MIT · Funciona com: Todos os clientes
 
 Sites reais em produção para agentes de código: paletas de cores, fontes, layouts de dobra e JSX de referência; exige TOGETHER_API_KEY.
 
@@ -3039,13 +3039,13 @@ extensions:
 
 ### Context-window token optimization
 
-[ooples/token-optimizer-mcp](https://github.com/ooples/token-optimizer-mcp) — `Servidor MCP` · ★ 537 · Licença: MIT · Funciona com: Todos os clientes
+[ooples/token-optimizer-mcp](https://github.com/ooples/token-optimizer-mcp) — `Servidor MCP` · ★ 538 · Licença: MIT · Funciona com: Todos os clientes
 
 Otimização da janela de contexto com cache, compressão e ferramentas inteligentes de arquivos, reduzindo tokens em 60-90%.
 
 **Alternativas:**
 
-- [llmtrim](https://github.com/fkiene/llmtrim) (★ 240) — Servidor proxy que comprime prompts, saídas de ferramentas e respostas de LLM para reduzir o custo em tokens.
+- [llmtrim](https://github.com/fkiene/llmtrim) (★ 244) — Servidor proxy que comprime prompts, saídas de ferramentas e respostas de LLM para reduzir o custo em tokens.
 
 <details><summary>Instalar</summary>
 
@@ -3228,173 +3228,11 @@ extensions:
 
 </details>
 
-<a id="equation-io-mcp"></a>
-
-### Interactive equation graphing
-
-[Equation.io](https://github.com/aantthony/equation.io) — `Servidor MCP` · ★ 406 · Licença: MIT · Funciona com: Todos os clientes
-
-Cria gráficos 2D e 3D interativos a partir de equações validadas, com links compartilháveis e prévias em PNG.
-
-<details><summary>Instalar</summary>
-
-**Claude Code**
-
-```bash
-claude mcp add --transport http equation https://equation.io/mcp
-```
-
-**Codex CLI**
-
-```bash
-codex mcp add equation --url https://equation.io/mcp
-```
-
-**Gemini CLI**
-
-```bash
-gemini mcp add --transport http equation https://equation.io/mcp
-```
-
-**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "equation": {
-      "url": "https://equation.io/mcp"
-    }
-  }
-}
-```
-
-**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
-
-```json
-{
-  "servers": {
-    "equation": {
-      "type": "http",
-      "url": "https://equation.io/mcp"
-    }
-  }
-}
-```
-
-**OpenCode** — Arquivo: `opencode.json`
-
-```json
-{
-  "$schema": "https://opencode.ai/config.json",
-  "mcp": {
-    "equation": {
-      "type": "remote",
-      "url": "https://equation.io/mcp",
-      "enabled": true
-    }
-  }
-}
-```
-
-**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
-
-```json
-{
-  "mcpServers": {
-    "equation": {
-      "type": "streamableHttp",
-      "url": "https://equation.io/mcp"
-    }
-  }
-}
-```
-
-**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
-
-```json
-{
-  "mcpServers": {
-    "equation": {
-      "serverUrl": "https://equation.io/mcp"
-    }
-  }
-}
-```
-
-**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
-
-```json
-{
-  "context_servers": {
-    "equation": {
-      "source": "custom",
-      "command": "npx",
-      "args": [
-        "-y",
-        "mcp-remote",
-        "https://equation.io/mcp"
-      ]
-    }
-  }
-}
-```
-_Remote server bridged through the mcp-remote stdio proxy._
-
-**Goose** — Arquivo: `~/.config/goose/config.yaml`
-
-```yaml
-extensions:
-  equation:
-    type: streamable_http
-    uri: https://equation.io/mcp
-    enabled: true
-```
-
-**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "equation": {
-      "type": "streamable-http",
-      "url": "https://equation.io/mcp"
-    }
-  }
-}
-```
-
-**Roo Code** — Arquivo: `.roo/mcp.json`
-
-```json
-{
-  "mcpServers": {
-    "equation": {
-      "type": "streamable-http",
-      "url": "https://equation.io/mcp"
-    }
-  }
-}
-```
-
-**DeepSeek Harness** — Arquivo: `equation.cordis.yml  →  dsh web --patch ./equation.cordis.yml`
-
-```yaml
-- insert:
-    - id: mcp-equation
-      name: '@deepseek-ai/dsh-mcp-client'
-      config:
-        serverName: equation
-        transport: streamable-http
-        url: https://equation.io/mcp
-```
-
-</details>
-
 <a id="watch-skill-mcp"></a>
 
 ### Verify agent work from video evidence
 
-[oxbshw/watch-skill](https://github.com/oxbshw/watch-skill) — `Servidor MCP` · ★ 402 · Licença: MIT · Funciona com: Todos os clientes
+[oxbshw/watch-skill](https://github.com/oxbshw/watch-skill) — `Servidor MCP` · ★ 441 · Licença: MIT · Funciona com: Todos os clientes
 
 Assiste a vídeos e sessões ao vivo, guarda evidências com timestamp e verifica o próprio trabalho de um agente.
 
@@ -3571,17 +3409,179 @@ extensions:
 
 </details>
 
+<a id="equation-io-mcp"></a>
+
+### Interactive equation graphing
+
+[Equation.io](https://github.com/aantthony/equation.io) — `Servidor MCP` · ★ 408 · Licença: MIT · Funciona com: Todos os clientes
+
+Cria gráficos 2D e 3D interativos a partir de equações validadas, com links compartilháveis e prévias em PNG.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport http equation https://equation.io/mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add equation --url https://equation.io/mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add --transport http equation https://equation.io/mcp
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "equation": {
+      "url": "https://equation.io/mcp"
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "equation": {
+      "type": "http",
+      "url": "https://equation.io/mcp"
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "equation": {
+      "type": "remote",
+      "url": "https://equation.io/mcp",
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "equation": {
+      "type": "streamableHttp",
+      "url": "https://equation.io/mcp"
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "equation": {
+      "serverUrl": "https://equation.io/mcp"
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "equation": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://equation.io/mcp"
+      ]
+    }
+  }
+}
+```
+_Remote server bridged through the mcp-remote stdio proxy._
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  equation:
+    type: streamable_http
+    uri: https://equation.io/mcp
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "equation": {
+      "type": "streamable-http",
+      "url": "https://equation.io/mcp"
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "equation": {
+      "type": "streamable-http",
+      "url": "https://equation.io/mcp"
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `equation.cordis.yml  →  dsh web --patch ./equation.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-equation
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: equation
+        transport: streamable-http
+        url: https://equation.io/mcp
+```
+
+</details>
+
 <a id="claude-code-organizer-mcp"></a>
 
 ### Organize Claude Code configuration
 
-[mcpware/claude-code-organizer](https://github.com/mcpware/claude-code-organizer) — `Servidor MCP` · ★ 381 · Licença: MIT · Funciona com: Todos os clientes
+[mcpware/claude-code-organizer](https://github.com/mcpware/claude-code-organizer) — `Servidor MCP` · ★ 383 · Licença: MIT · Funciona com: Todos os clientes
 
 Organiza memórias, skills, servidores MCP, comandos e agentes do Claude Code por arrastar e soltar.
 
 **Alternativas:**
 
-- [mcptoon](https://github.com/activeing123/mcptoon) (★ 206) — Cliente MCP sem dependências que mantém uma config sincronizada entre agentes, com listas de ferramentas compactas.
+- [mcptoon](https://github.com/activeing123/mcptoon) (★ 213) — Cliente MCP sem dependências que mantém uma config sincronizada entre agentes, com listas de ferramentas compactas.
 
 <details><summary>Instalar</summary>
 
@@ -3768,7 +3768,7 @@ extensions:
 
 ### PyTorch architecture diagrams
 
-[VisualTorch](https://github.com/willyfh/visualtorch) — `Servidor MCP` · ★ 332 · Licença: MIT · Funciona com: Todos os clientes
+[VisualTorch](https://github.com/willyfh/visualtorch) — `Servidor MCP` · ★ 335 · Licença: MIT · Funciona com: Todos os clientes
 
 Renderiza diagramas de arquitetura de modelos PyTorch e revelações em GIF animado a partir de uma fonte de modelo confiável.
 
@@ -3949,7 +3949,7 @@ extensions:
 
 ### Stata regression analysis
 
-[SepineTam/stata-mcp](https://github.com/SepineTam/stata-mcp) — `Servidor MCP` · ★ 261 · Licença: AGPL-3.0 · Funciona com: Todos os clientes
+[SepineTam/stata-mcp](https://github.com/SepineTam/stata-mcp) — `Servidor MCP` · ★ 263 · Licença: AGPL-3.0 · Funciona com: Todos os clientes
 
 Permite que um LLM ajude a rodar análises de regressão no Stata.
 
@@ -4130,7 +4130,7 @@ extensions:
 
 ### shadcn/ui components for Laravel Blade
 
-[anousss007/blatui](https://github.com/anousss007/blatui) — `Servidor MCP` · ★ 257 · Licença: ver repo · Funciona com: Todos os clientes
+[anousss007/blatui](https://github.com/anousss007/blatui) — `Servidor MCP` · ★ 259 · Licença: ver repo · Funciona com: Todos os clientes
 
 shadcn/ui para Laravel Blade: descubra, leia e instale componentes, blocos e gráficos do BlatUI.
 
@@ -4292,7 +4292,7 @@ extensions:
 
 ### Build presentations with Demo Time
 
-[estruyf/vscode-demo-time](https://github.com/estruyf/vscode-demo-time) — `Servidor MCP` · ★ 247 · Licença: ver repo · Funciona com: Todos os clientes
+[estruyf/vscode-demo-time](https://github.com/estruyf/vscode-demo-time) — `Servidor MCP` · ★ 248 · Licença: ver repo · Funciona com: Todos os clientes
 
 Permite que assistentes de IA interajam com a extensão Demo Time do VS Code para ajudar a montar apresentações e demos.
 
@@ -4481,7 +4481,7 @@ extensions:
 
 ### AI database connection and SQL
 
-[omdsh-dev/dsh-data-agent](https://github.com/omdsh-dev/dsh-data-agent) — `Plugin nativo` · ★ 198 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[omdsh-dev/dsh-data-agent](https://github.com/omdsh-dev/dsh-data-agent) — `Plugin nativo` · ★ 202 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Permite que o agente se conecte a bancos de dados e escreva consultas SQL em seu nome.
 
@@ -4503,7 +4503,7 @@ dsh plugin --profile web add github:omdsh-dev/dsh-data-agent
 
 ### Backup and migrate DSH config
 
-[xiajiajun516/dsh-config-manager](https://github.com/xiajiajun516/dsh-config-manager) — `Plugin nativo` · ★ 134 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[xiajiajun516/dsh-config-manager](https://github.com/xiajiajun516/dsh-config-manager) — `Plugin nativo` · ★ 155 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Faz backup, exporta, importa e migra toda a config do DSH: definições, plugins, MCP, skills, workspaces. Segredos ficam excluídos por padrão ou cifrados em AES-256-GCM se ativado. Importações mostram prévia com rollback; perfis guardam várias config; sync remota via repo Git.
 
@@ -4521,13 +4521,13 @@ dsh plugin --profile web add github:xiajiajun516/dsh-config-manager
 
 ### Manage multiple SSH workspaces
 
-[flymysql/dsh-remote](https://github.com/flymysql/dsh-remote) — `Plugin nativo` · ★ 100 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[flymysql/dsh-remote](https://github.com/flymysql/dsh-remote) — `Plugin nativo` · ★ 117 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Gerencia vários hosts SSH como workspaces: escolha um workspace local ou remoto no fluxo Add-workspace, espelhe um workspace remoto numa pasta local real e opere-o com ferramentas rw_*; um modal centralizado preenche / para caminhos remotos com autocompletar de diretórios.
 
 **Alternativas:**
 
-- [caoyiwei850/dsh-ssh-ops](https://github.com/caoyiwei850/dsh-ssh-ops) (★ 22) — Adiciona um terminal de operações SSH que controla um servidor a partir da conversa, com um terminal xterm.js interativo ao lado
+- [caoyiwei850/dsh-ssh-ops](https://github.com/caoyiwei850/dsh-ssh-ops) (★ 23) — Adiciona um terminal de operações SSH que controla um servidor a partir da conversa, com um terminal xterm.js interativo ao lado
 
 <details><summary>Instalar</summary>
 
@@ -4543,7 +4543,7 @@ dsh plugin --profile web add github:flymysql/dsh-remote
 
 ### Deep-read books and articles
 
-[xiehuan123/dsh-deepread](https://github.com/xiehuan123/dsh-deepread) — `Plugin nativo` · ★ 56 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[xiehuan123/dsh-deepread](https://github.com/xiehuan123/dsh-deepread) — `Plugin nativo` · ★ 59 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Lê livros e artigos em profundidade em cinco modos (rápido, profundo, mapa de conhecimento, Feynman, livro completo), com relatórios de afirmação-evidência-dado, mapas Mermaid/XMind, comparação em lote, pré-checagem de orçamento e exportação MD/HTML de URLs, arquivos ou texto.
 
@@ -4561,7 +4561,7 @@ dsh plugin --profile web add github:xiehuan123/dsh-deepread
 
 ### Accessibility-first computer use
 
-[Anionex/dsh-computer-use](https://github.com/Anionex/dsh-computer-use) — `Plugin nativo` · ★ 46 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[Anionex/dsh-computer-use](https://github.com/Anionex/dsh-computer-use) — `Plugin nativo` · ★ 50 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Uso de computador para macOS baseado em acessibilidade: faz observações atualizadas antes de agir, rejeita estados desatualizados, restringe permissões e garante entradas seguras.
 
@@ -4583,7 +4583,7 @@ dsh plugin --profile web add github:Anionex/dsh-computer-use
 
 ### Academic writing polish guard
 
-[xmutfyh/dsh-plugin-writing-guard](https://github.com/xmutfyh/dsh-plugin-writing-guard) — `Plugin nativo` · ★ 43 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[xmutfyh/dsh-plugin-writing-guard](https://github.com/xmutfyh/dsh-plugin-writing-guard) — `Plugin nativo` · ★ 45 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Guarda de escrita acadêmica bilíngue (EN/ZH): remove escrita defensiva de estilo IA, protege evidências científicas (números, citações, força das afirmações, escopo) ao polir, e calibra para uma revista alvo. Regex local determinístico, sem rede ou LLM, com auditoria automática.
 
@@ -4605,7 +4605,7 @@ dsh plugin --profile web add github:xmutfyh/dsh-plugin-writing-guard
 
 ### Blender 3D production plugin
 
-[CheshireJCat/blender](https://github.com/CheshireJCat/blender) — `Plugin nativo` · ★ 37 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[CheshireJCat/blender](https://github.com/CheshireJCat/blender) — `Plugin nativo` · ★ 40 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Plugin de produção 3D para Blender com 30 skills de modelagem/reconstrução, 13 ferramentas em tempo de execução e 26 auxiliares determinísticos para ajuste de referência, renderização, validação, animação e exportação portável; instalável como dsh-blender.
 
@@ -4655,6 +4655,46 @@ dsh plugin --profile web add github:literaf/dsh-ai4scholar
 
 </details>
 
+<a id="dsh-dsh-zotero"></a>
+
+### Zotero evidence store for agents
+
+[Vncntvx/dsh-zotero](https://github.com/Vncntvx/dsh-zotero) — `Plugin nativo` · ★ 29 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+
+Usa o Zotero como repositório de evidências para agentes: pesquisa sua biblioteca, inspeciona metadados e notas, recupera trechos de evidência, abre os PDFs de origem e gera citações e bibliografias.
+
+**Alternativas:**
+
+- [STARDUSTLC666/dsh-cite](https://github.com/STARDUSTLC666/dsh-cite) (★ 2) — Funciona sem biblioteca Zotero: busca exata por DOI, pesquisa no Crossref, citações em vários estilos, BibTeX e validação de DOI
+
+<details><summary>Instalar</summary>
+
+**DeepSeek Harness**
+
+```bash
+dsh plugin --profile web add github:Vncntvx/dsh-zotero
+```
+
+</details>
+
+<a id="dsh-dsh-lsp-actions"></a>
+
+### Language server actions
+
+[PerryLink/dsh-lsp-actions](https://github.com/PerryLink/dsh-lsp-actions) — `Plugin nativo` · ★ 26 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
+
+Superfície de ações LSP para o DSH: diagnósticos, formatação, autocompletar, ações de código, símbolos, ajuda de assinatura, inlay hints e renomeação, todos apoiados por language servers reais.
+
+<details><summary>Instalar</summary>
+
+**DeepSeek Harness**
+
+```bash
+dsh plugin --profile web add github:PerryLink/dsh-lsp-actions
+```
+
+</details>
+
 <a id="dsh-dsh-codex-sync"></a>
 
 ### Two-way Codex-DSH skill sync
@@ -4677,51 +4717,11 @@ dsh plugin --profile web add github:Walvez/dsh-codex-sync
 
 </details>
 
-<a id="dsh-dsh-lsp-actions"></a>
-
-### Language server actions
-
-[PerryLink/dsh-lsp-actions](https://github.com/PerryLink/dsh-lsp-actions) — `Plugin nativo` · ★ 25 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
-
-Superfície de ações LSP para o DSH: diagnósticos, formatação, autocompletar, ações de código, símbolos, ajuda de assinatura, inlay hints e renomeação, todos apoiados por language servers reais.
-
-<details><summary>Instalar</summary>
-
-**DeepSeek Harness**
-
-```bash
-dsh plugin --profile web add github:PerryLink/dsh-lsp-actions
-```
-
-</details>
-
-<a id="dsh-dsh-zotero"></a>
-
-### Zotero evidence store for agents
-
-[Vncntvx/dsh-zotero](https://github.com/Vncntvx/dsh-zotero) — `Plugin nativo` · ★ 24 · Licença: MIT · Funciona com: DeepSeek Harness apenas
-
-Usa o Zotero como repositório de evidências para agentes: pesquisa sua biblioteca, inspeciona metadados e notas, recupera trechos de evidência, abre os PDFs de origem e gera citações e bibliografias.
-
-**Alternativas:**
-
-- [STARDUSTLC666/dsh-cite](https://github.com/STARDUSTLC666/dsh-cite) (★ 2) — Funciona sem biblioteca Zotero: busca exata por DOI, pesquisa no Crossref, citações em vários estilos, BibTeX e validação de DOI
-
-<details><summary>Instalar</summary>
-
-**DeepSeek Harness**
-
-```bash
-dsh plugin --profile web add github:Vncntvx/dsh-zotero
-```
-
-</details>
-
 <a id="dsh-dsh-bash-terminal"></a>
 
 ### Cross-shell terminal tool
 
-[MAXeaglet/dsh-bash-terminal](https://github.com/MAXeaglet/dsh-bash-terminal) — `Plugin nativo` · ★ 22 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[MAXeaglet/dsh-bash-terminal](https://github.com/MAXeaglet/dsh-bash-terminal) — `Plugin nativo` · ★ 23 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Uma única ferramenta de shell cobrindo PowerShell, Git Bash e WSL no Windows, além de um terminal PTY interativo; o terminal padrão é escolhido nas configurações do DSH.
 
@@ -4775,7 +4775,7 @@ dsh plugin --profile web add github:seven282/oss-prompt-optimizer
 
 ### HarmonyOS device automation
 
-[1na-ko/dsh-hdc-bridge](https://github.com/1na-ko/dsh-hdc-bridge) — `Plugin nativo` · ★ 18 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[1na-ko/dsh-hdc-bridge](https://github.com/1na-ko/dsh-hdc-bridge) — `Plugin nativo` · ★ 19 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Ponte para dispositivos HarmonyOS: um loop de automação hdc para captura de tela/instalação/log/crash/UI com uma ferramenta read_image, conhecimento de API versionado com prioridade oficial (SDK .d.ts e docs empacotados) e uma esteira de build/assinatura/lint via DevEco CLI.
 
@@ -4825,6 +4825,24 @@ dsh plugin --profile web add github:oomol-lab/dsh-oomol
 
 </details>
 
+<a id="dsh-dsh-tool-writing"></a>
+
+### Web-novel writing engine
+
+[x2802490130-prog/dsh-tool-writing](https://github.com/x2802490130-prog/dsh-tool-writing) — `Plugin nativo` · ★ 11 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+
+Motor de escrita de web-novels para o DeepSeek Harness: rascunho, esboço e brainstorming em paralelo com chave DeepSeek separada, gestão de lore e pistas, recuperação vetorial semântica, biblioteca de corpus, livro-razão de uso, revisão mecânica e plano de serialização.
+
+<details><summary>Instalar</summary>
+
+**DeepSeek Harness**
+
+```bash
+dsh plugin --profile web add github:x2802490130-prog/dsh-tool-writing
+```
+
+</details>
+
 <a id="dsh-dsh-mmx-bridge"></a>
 
 ### MiniMax multimodal bridge
@@ -4847,29 +4865,11 @@ dsh plugin --profile web add github:welsione/dsh-mmx-bridge
 
 </details>
 
-<a id="dsh-dsh-tool-writing"></a>
-
-### Web-novel writing engine
-
-[x2802490130-prog/dsh-tool-writing](https://github.com/x2802490130-prog/dsh-tool-writing) — `Plugin nativo` · ★ 10 · Licença: MIT · Funciona com: DeepSeek Harness apenas
-
-Motor de escrita de web-novels para o DeepSeek Harness: rascunho, esboço e brainstorming em paralelo com chave DeepSeek separada, gestão de lore e pistas, recuperação vetorial semântica, biblioteca de corpus, livro-razão de uso, revisão mecânica e plano de serialização.
-
-<details><summary>Instalar</summary>
-
-**DeepSeek Harness**
-
-```bash
-dsh plugin --profile web add github:x2802490130-prog/dsh-tool-writing
-```
-
-</details>
-
 <a id="dsh-dsh-tool-lens"></a>
 
 ### Deterministic code graph tool
 
-[trench-xinxin/dsh-tool-lens](https://github.com/trench-xinxin/dsh-tool-lens) — `Plugin nativo` · ★ 5 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[trench-xinxin/dsh-tool-lens](https://github.com/trench-xinxin/dsh-tool-lens) — `Plugin nativo` · ★ 4 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Ferramenta determinística de grafo de código AST e inteligência de arquitetura para hierarquias de chamadas, raio de impacto, dependências circulares, fatias de domínio e contratos de API full-stack.
 

@@ -8,6 +8,7 @@
 - [Cloudflare security audit skill](#security-audit-skill) — Skill oficial da Cloudflare para executar auditorias de segurança de código em múltiplas fases, produzindo ach…
 - [Web3 smart contract security skills](#vibe-coding-cn) — Conjunto de skills para analisar vulnerabilidades de smart contracts Ethereum e outros, auditar contratos base…
 - [AI infrastructure red-teaming skills](#ai-infra-guard) — Conjunto de skills de red teaming full-stack para IA que detecta riscos de supply chain agentic, bypass de aut…
+- [Reverse engineer from the CLI](#rea-mcp) — Faz engenharia reversa de alvos diversos a partir do terminal ou de um agente, com uma única CLI e servidor.
 - [Offensive/defensive debugging skills](#raptor) — Skills focadas em segurança para desenvolvimento de exploits e depuração: rastreamento de funções, análise de …
 - [CTF challenge-solving skills](#ctf-skills) — Conjunto de skills focado em resolver desafios de Capture-The-Flag: exploração web, pwn binário, criptografia,…
 - [MegaLinter](#megalinter) — Analisa 50 linguagens e 22 formatos em busca de copy-paste excessivo, erros ortográficos e problemas de segura…
@@ -18,9 +19,8 @@
 - [Protect agents from malicious packages](#vet-mcp) — Protege agentes de IA e IDEs contra pacotes open-source maliciosos.
 - [Read-only relay and config security audit](#dsh-api-relay-audit) — Executa auditorias locais de segurança em relays de API de IA e proxies de LLM, gerando relatórios em Markdown…
 - [Dead code and secrets detection](#skylos-mcp) — Detecção de código morto, segredos e problemas de qualidade para Python, TypeScript e Go; exige SKYLOS_API_KEY…
-- [SonarQube code quality scans](#sonarqube-mcp-server) — Servidor oficial da SonarSource para analisar qualidade de código e segurança com SonarQube Server ou Cloud; e…
 - [Authorized pentest and redteam toolkit](#dsh-dsh-redteam-model) — Kit de segurança autorizada com nove modos de trabalho (coordenação de redteam, pentest, auditoria de código, …
-- [Reverse engineer from the CLI](#rea-mcp) — Faz engenharia reversa de alvos diversos a partir do terminal ou de um agente, com uma única CLI e servidor.
+- [SonarQube code quality scans](#sonarqube-mcp-server) — Servidor oficial da SonarSource para analisar qualidade de código e segurança com SonarQube Server ou Cloud; e…
 - [Network analysis with tshark](#wireshark-mcp) — Análise de rede profissional com tshark para auditorias de segurança, investigações e detecção de ameaças.
 - [CrowdStrike Falcon security analysis](#falcon-mcp) — Servidor oficial da CrowdStrike conectando agentes ao Falcon para análise de segurança e automação; exige cred…
 - [Second-model auto-approval review](#dsh-dsh-auto-review) — Adiciona um subagente revisor somente leitura à cadeia de aprovação, que retorna veredictos estruturados de pe…
@@ -48,8 +48,8 @@
 
 **Alternativas:**
 
-- [trailofbits/skills](https://github.com/trailofbits/skills) (★ 7.3k) — Skills próprias da Trail of Bits para pesquisa de segurança, detecção de vulnerabilidades e fluxos de auditoria.
-- [elementalsouls/Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter) (★ 4.7k) — Pacote de skills para caça de bugs e red team externo, com 82 skills e padrões de relatórios divulgados em 24 classes de vulnerabilidade.
+- [trailofbits/skills](https://github.com/trailofbits/skills) (★ 7.4k) — Skills próprias da Trail of Bits para pesquisa de segurança, detecção de vulnerabilidades e fluxos de auditoria.
+- [elementalsouls/Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter) (★ 4.8k) — Pacote de skills para caça de bugs e red team externo, com 82 skills e padrões de relatórios divulgados em 24 classes de vulnerabilidade.
 
 <details><summary>Instalar</summary>
 
@@ -137,7 +137,7 @@ npx skills add mukul975/Anthropic-Cybersecurity-Skills -a universal
 
 ### Cloudflare security audit skill
 
-[cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) — `Agent Skills` · ★ 23k · Licença: MIT · Funciona com: Todos os clientes
+[cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) — `Agent Skills` · ★ 25k · Licença: MIT · Funciona com: Todos os clientes
 
 Skill oficial da Cloudflare para executar auditorias de segurança de código em múltiplas fases, produzindo achados verificados de forma independente e legíveis por máquina.
 
@@ -317,7 +317,7 @@ npx skills add tradecatlabs/vibe-coding-cn -a universal
 
 ### AI infrastructure red-teaming skills
 
-[Tencent/AI-Infra-Guard](https://github.com/Tencent/AI-Infra-Guard) — `Agent Skills` · ★ 6.6k · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[Tencent/AI-Infra-Guard](https://github.com/Tencent/AI-Infra-Guard) — `Agent Skills` · ★ 6.8k · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Conjunto de skills de red teaming full-stack para IA que detecta riscos de supply chain agentic, bypass de autorização, falhas em cascata, vazamento de dados e prompt injection em agentes, skills e servidores MCP. Apenas para testes de segurança autorizados.
 
@@ -403,11 +403,200 @@ npx skills add Tencent/AI-Infra-Guard -a universal
 
 </details>
 
+<a id="rea-mcp"></a>
+
+### Reverse engineer from the CLI
+
+[REA](https://github.com/morluto/rea) — `Servidor MCP` · ★ 4.4k · Licença: MIT · Funciona com: Todos os clientes
+
+Faz engenharia reversa de alvos diversos a partir do terminal ou de um agente, com uma única CLI e servidor.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio rea -- npx -y rea-agents
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add rea -- npx -y rea-agents
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add rea npx -y rea-agents
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "rea": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "rea-agents"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "rea": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "rea-agents"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "rea": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "rea-agents"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "rea": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "rea-agents"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "rea": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "rea-agents"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "rea": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "rea-agents"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  rea:
+    type: stdio
+    cmd: npx
+    args: ["-y","rea-agents"]
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "rea": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "rea-agents"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "rea": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "rea-agents"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `rea.cordis.yml  →  dsh web --patch ./rea.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-rea
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: rea
+        transport: stdio
+        command: npx
+        args: ["-y","rea-agents"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
 <a id="raptor"></a>
 
 ### Offensive/defensive debugging skills
 
-[gadievron/raptor](https://github.com/gadievron/raptor) — `Agent Skills` · ★ 3.8k · Licença: ver repo · Funciona com: Todos os clientes
+[gadievron/raptor](https://github.com/gadievron/raptor) — `Agent Skills` · ★ 3.9k · Licença: ver repo · Funciona com: Todos os clientes
 
 Skills focadas em segurança para desenvolvimento de exploits e depuração: rastreamento de funções, análise de cobertura, instrumentação com Frida, validação de exploitability e arquivamento de evidências no GitHub. Apenas para testes de segurança autorizados.
 
@@ -677,14 +866,14 @@ npx skills add oxsecurity/megalinter -a universal
 
 ### Practical hacker skills library
 
-[yaklang/hack-skills](https://github.com/yaklang/hack-skills) — `Agent Skills` · ★ 2.3k · Licença: MIT · Funciona com: Todos os clientes
+[yaklang/hack-skills](https://github.com/yaklang/hack-skills) — `Agent Skills` · ★ 2.4k · Licença: MIT · Funciona com: Todos os clientes
 
 Mais de cem skills de segurança ofensiva (web, rede, Active Directory, mobile, nuvem) para pentest assistido por IA. Apenas para testes de segurança autorizados.
 
 **Alternativas:**
 
-- [SnailSploit/Claude-Red](https://github.com/SnailSploit/Claude-Red) (★ 7.0k) — Biblioteca de skills de red team organizada por superfície de ataque: AD, API, JWT, OAuth, CI/CD, nuvem.
-- [zhaoxuya520/reverse-skill](https://github.com/zhaoxuya520/reverse-skill) (★ 39k) — Adiciona bootstrapping de ferramentas roteado por IA para engenharia reversa e pentest autorizado.
+- [SnailSploit/Claude-Red](https://github.com/SnailSploit/Claude-Red) (★ 7.3k) — Biblioteca de skills de red team organizada por superfície de ataque: AD, API, JWT, OAuth, CI/CD, nuvem.
+- [zhaoxuya520/reverse-skill](https://github.com/zhaoxuya520/reverse-skill) (★ 40k) — Adiciona bootstrapping de ferramentas roteado por IA para engenharia reversa e pentest autorizado.
 - [Netw0rkNoob/VulnClaw](https://github.com/Netw0rkNoob/VulnClaw) (★ 3.5k) — Adiciona um pipeline completo de reconhecimento a relatório, guiado por linguagem natural.
 
 <details><summary>Instalar</summary>
@@ -1106,14 +1295,14 @@ npx skills add kenryu42/cc-safety-net -a universal
 
 ### Governance layer for agent actions
 
-[sipyourdrink-ltd/bernstein](https://github.com/sipyourdrink-ltd/bernstein) — `Servidor MCP` · ★ 1.3k · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[sipyourdrink-ltd/bernstein](https://github.com/sipyourdrink-ltd/bernstein) — `Servidor MCP` · ★ 1.4k · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Camada de governança open-source para agentes de IA, com recibos de execução bit a bit, mais de 40 adaptadores e suporte a air-gap.
 
 **Alternativas:**
 
-- [Emilia Protocol](https://github.com/emiliaprotocol/emilia-protocol) (★ 616) — Aprovação de ações exatas para ações relevantes de agentes, com recibos assinados; exige EP_API_KEY.
-- [HOL Guard](https://github.com/hashgraph-online/hol-guard) (★ 670) — Evidências de segurança e workflows de aprovação local-first para as ações de um agente.
+- [Emilia Protocol](https://github.com/emiliaprotocol/emilia-protocol) (★ 612) — Aprovação de ações exatas para ações relevantes de agentes, com recibos assinados; exige EP_API_KEY.
+- [HOL Guard](https://github.com/hashgraph-online/hol-guard) (★ 775) — Evidências de segurança e workflows de aprovação local-first para as ações de um agente.
 - [ucsandman/DashClaw/tree/main/mcp-server](https://github.com/ucsandman/DashClaw/tree/main/mcp-server) — Verificações de política, aprovações, registros e capacidades de HTTP governadas para agentes não supervisionados.
 
 <details><summary>Instalar</summary>
@@ -1498,7 +1687,7 @@ extensions:
 
 ### Read-only relay and config security audit
 
-[toby-bridges/api-relay-audit](https://github.com/toby-bridges/api-relay-audit) — `Plugin nativo` · ★ 860 · Licença: AGPL-3.0 · Funciona com: DeepSeek Harness apenas
+[toby-bridges/api-relay-audit](https://github.com/toby-bridges/api-relay-audit) — `Plugin nativo` · ★ 868 · Licença: AGPL-3.0 · Funciona com: DeepSeek Harness apenas
 
 Executa auditorias locais de segurança em relays de API de IA e proxies de LLM, gerando relatórios em Markdown sobre injeção de prompt, sinais de substituição de modelo, reescrita de chamadas de ferramenta, vazamento de erros, integridade de stream e riscos Web3.
 
@@ -1520,7 +1709,7 @@ dsh plugin --profile web add github:toby-bridges/api-relay-audit
 
 ### Dead code and secrets detection
 
-[duriantaco/skylos](https://github.com/duriantaco/skylos) — `Servidor MCP` · ★ 838 · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[duriantaco/skylos](https://github.com/duriantaco/skylos) — `Servidor MCP` · ★ 841 · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Detecção de código morto, segredos e problemas de qualidade para Python, TypeScript e Go; exige SKYLOS_API_KEY.
 
@@ -1723,11 +1912,34 @@ extensions:
 
 </details>
 
+<a id="dsh-dsh-redteam-model"></a>
+
+### Authorized pentest and redteam toolkit
+
+[SeaOf0/dsh-redteam-model](https://github.com/SeaOf0/dsh-redteam-model) — `Plugin nativo` · ★ 665 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+
+Kit de segurança autorizada com nove modos de trabalho (coordenação de redteam, pentest, auditoria de código, análise binária, ataque-defesa, evasão de AV, resposta a incidentes, segurança em nuvem, CTF) e quinze plugins em runtime, gerenciados por uma única página de configurações.
+
+**Alternativas:**
+
+- [howmp/dsh-pentest](https://github.com/howmp/dsh-pentest) (★ 594) — Adiciona uma cadeia de exploração que rastreia ativos e achados por meio de uma visualização web dedicada.
+- [ADWMC/helm-d#helmd](https://github.com/ADWMC/helm-d/tree/main/packages/helmd) — Adiciona 33 ferramentas de engenharia reversa para APK, binários nativos, protocolos e amostras de malware, além de um fluxo de casos em disco com cadeias de evidência.
+
+<details><summary>Instalar</summary>
+
+**DeepSeek Harness**
+
+```bash
+dsh plugin --profile web add github:SeaOf0/dsh-redteam-model
+```
+
+</details>
+
 <a id="sonarqube-mcp-server"></a>
 
 ### SonarQube code quality scans
 
-[SonarQube MCP Server](https://github.com/SonarSource/sonarqube-mcp-server) — `Servidor MCP` · ★ 655 · Licença: ver repo · Funciona com: Todos os clientes
+[SonarQube MCP Server](https://github.com/SonarSource/sonarqube-mcp-server) — `Servidor MCP` · ★ 657 · Licença: ver repo · Funciona com: Todos os clientes
 
 Servidor oficial da SonarSource para analisar qualidade de código e segurança com SonarQube Server ou Cloud; exige SONARQUBE_TOKEN.
 
@@ -2020,223 +2232,11 @@ extensions:
 
 </details>
 
-<a id="dsh-dsh-redteam-model"></a>
-
-### Authorized pentest and redteam toolkit
-
-[SeaOf0/dsh-redteam-model](https://github.com/SeaOf0/dsh-redteam-model) — `Plugin nativo` · ★ 643 · Licença: MIT · Funciona com: DeepSeek Harness apenas
-
-Kit de segurança autorizada com nove modos de trabalho (coordenação de redteam, pentest, auditoria de código, análise binária, ataque-defesa, evasão de AV, resposta a incidentes, segurança em nuvem, CTF) e quinze plugins em runtime, gerenciados por uma única página de configurações.
-
-**Alternativas:**
-
-- [howmp/dsh-pentest](https://github.com/howmp/dsh-pentest) (★ 559) — Adiciona uma cadeia de exploração que rastreia ativos e achados por meio de uma visualização web dedicada.
-- [ADWMC/helm-d#helmd](https://github.com/ADWMC/helm-d/tree/main/packages/helmd) — Adiciona 33 ferramentas de engenharia reversa para APK, binários nativos, protocolos e amostras de malware, além de um fluxo de casos em disco com cadeias de evidência.
-
-<details><summary>Instalar</summary>
-
-**DeepSeek Harness**
-
-```bash
-dsh plugin --profile web add github:SeaOf0/dsh-redteam-model
-```
-
-</details>
-
-<a id="rea-mcp"></a>
-
-### Reverse engineer from the CLI
-
-[REA](https://github.com/morluto/rea) — `Servidor MCP` · ★ 416 · Licença: MIT · Funciona com: Todos os clientes
-
-Faz engenharia reversa de alvos diversos a partir do terminal ou de um agente, com uma única CLI e servidor.
-
-<details><summary>Instalar</summary>
-
-**Claude Code**
-
-```bash
-claude mcp add --transport stdio rea -- npx -y rea-agents
-```
-
-**Codex CLI**
-
-```bash
-codex mcp add rea -- npx -y rea-agents
-```
-
-**Gemini CLI**
-
-```bash
-gemini mcp add rea npx -y rea-agents
-```
-
-**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "rea": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "rea-agents"
-      ]
-    }
-  }
-}
-```
-
-**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
-
-```json
-{
-  "servers": {
-    "rea": {
-      "type": "stdio",
-      "command": "npx",
-      "args": [
-        "-y",
-        "rea-agents"
-      ]
-    }
-  }
-}
-```
-
-**OpenCode** — Arquivo: `opencode.json`
-
-```json
-{
-  "$schema": "https://opencode.ai/config.json",
-  "mcp": {
-    "rea": {
-      "type": "local",
-      "command": [
-        "npx",
-        "-y",
-        "rea-agents"
-      ],
-      "enabled": true
-    }
-  }
-}
-```
-
-**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
-
-```json
-{
-  "mcpServers": {
-    "rea": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "rea-agents"
-      ]
-    }
-  }
-}
-```
-
-**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
-
-```json
-{
-  "mcpServers": {
-    "rea": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "rea-agents"
-      ]
-    }
-  }
-}
-```
-
-**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
-
-```json
-{
-  "context_servers": {
-    "rea": {
-      "source": "custom",
-      "command": "npx",
-      "args": [
-        "-y",
-        "rea-agents"
-      ]
-    }
-  }
-}
-```
-
-**Goose** — Arquivo: `~/.config/goose/config.yaml`
-
-```yaml
-extensions:
-  rea:
-    type: stdio
-    cmd: npx
-    args: ["-y","rea-agents"]
-    enabled: true
-```
-
-**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "rea": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "rea-agents"
-      ]
-    }
-  }
-}
-```
-
-**Roo Code** — Arquivo: `.roo/mcp.json`
-
-```json
-{
-  "mcpServers": {
-    "rea": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "rea-agents"
-      ]
-    }
-  }
-}
-```
-
-**DeepSeek Harness** — Arquivo: `rea.cordis.yml  →  dsh web --patch ./rea.cordis.yml`
-
-```yaml
-- insert:
-    - id: mcp-rea
-      name: '@deepseek-ai/dsh-mcp-client'
-      config:
-        serverName: rea
-        transport: stdio
-        command: npx
-        args: ["-y","rea-agents"]
-        env: {}
-        cwd: !!js process.cwd()
-```
-
-</details>
-
 <a id="wireshark-mcp"></a>
 
 ### Network analysis with tshark
 
-[bx33661/Wireshark-MCP](https://github.com/bx33661/Wireshark-MCP) — `Servidor MCP` · ★ 273 · Licença: MIT · Funciona com: Todos os clientes
+[bx33661/Wireshark-MCP](https://github.com/bx33661/Wireshark-MCP) — `Servidor MCP` · ★ 284 · Licença: MIT · Funciona com: Todos os clientes
 
 Análise de rede profissional com tshark para auditorias de segurança, investigações e detecção de ameaças.
 
@@ -2417,7 +2417,7 @@ extensions:
 
 ### CrowdStrike Falcon security analysis
 
-[CrowdStrike Falcon MCP Server](https://github.com/CrowdStrike/falcon-mcp) — `Servidor MCP` · ★ 258 · Licença: MIT · Funciona com: Todos os clientes
+[CrowdStrike Falcon MCP Server](https://github.com/CrowdStrike/falcon-mcp) — `Servidor MCP` · ★ 264 · Licença: MIT · Funciona com: Todos os clientes
 
 Servidor oficial da CrowdStrike conectando agentes ao Falcon para análise de segurança e automação; exige credenciais de cliente do Falcon.
 
@@ -2642,13 +2642,13 @@ extensions:
 
 ### Second-model auto-approval review
 
-[PerryLink/dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) — `Plugin nativo` · ★ 210 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
+[PerryLink/dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) — `Plugin nativo` · ★ 234 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
 
 Adiciona um subagente revisor somente leitura à cadeia de aprovação, que retorna veredictos estruturados de permitir/negar com justificativas, falhando de forma segura (nega) por padrão quando a revisão é inconclusiva.
 
 **Alternativas:**
 
-- [moon09300731/dsh-approval-gate](https://github.com/moon09300731/dsh-approval-gate) (★ 79) — Pré-classifica se uma ação é reversível, aprova automaticamente as seguras, escala as perigosas, com reversão em um clique via snapshots.
+- [moon09300731/dsh-approval-gate](https://github.com/moon09300731/dsh-approval-gate) (★ 83) — Pré-classifica se uma ação é reversível, aprova automaticamente as seguras, escala as perigosas, com reversão em um clique via snapshots.
 - [PAKIKNOWLEDGE/dsh-auto-classifier](https://github.com/PAKIKNOWLEDGE/dsh-auto-classifier) (★ 1) — Adiciona um juiz semântico via LLM e checkpoints de git para reverter sessões não supervisionadas.
 - [NanmiCoder/dsh-auto-mode](https://github.com/NanmiCoder/dsh-auto-mode) (★ 164) — Nega diretamente caminhos críticos e concede apenas um acesso ampliado exato por pedido de escalonamento.
 - [Alnita-M/dsh-Almost_Full_Access](https://github.com/Alnita-M/dsh-Almost_Full_Access) (★ 1) — Combina verificações de regras determinísticas com revisão por subagente antes de conceder acesso quase total.
@@ -2667,7 +2667,7 @@ dsh plugin --profile web add github:PerryLink/dsh-auto-review
 
 ### DMARC report parsing
 
-[Parse-DMARC MCP Server](https://github.com/meysam81/parse-dmarc) — `Servidor MCP` · ★ 207 · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[Parse-DMARC MCP Server](https://github.com/meysam81/parse-dmarc) — `Servidor MCP` · ★ 208 · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Parser leve de DMARC que busca relatórios de e-mail automaticamente e visualiza a conformidade em um único app.
 
@@ -2872,7 +2872,7 @@ extensions:
 
 ### Threat hunting on Elasticsearch
 
-[thomasxm/CrowdSentinels-AI-MCP](https://github.com/thomasxm/CrowdSentinels-AI-MCP) — `Servidor MCP` · ★ 206 · Licença: GPL-3.0 · Funciona com: Todos os clientes
+[thomasxm/CrowdSentinels-AI-MCP](https://github.com/thomasxm/CrowdSentinels-AI-MCP) — `Servidor MCP` · ★ 208 · Licença: GPL-3.0 · Funciona com: Todos os clientes
 
 Caça a ameaças e resposta a incidentes com IA para Elasticsearch/OpenSearch, com forense de endpoint e rede; exige credenciais do Elasticsearch.
 
@@ -3097,7 +3097,7 @@ extensions:
 
 ### Reverse engineering and forensics
 
-[Reversecore MCP](https://github.com/sjkim1127/Reversecore_MCP) — `Servidor MCP` · ★ 205 · Licença: MIT · Funciona com: Todos os clientes
+[Reversecore MCP](https://github.com/sjkim1127/Reversecore_MCP) — `Servidor MCP` · ★ 207 · Licença: MIT · Funciona com: Todos os clientes
 
 Servidor voltado a segurança para engenharia reversa, análise de malware, forense e análise estática (SAST).
 
@@ -3278,7 +3278,7 @@ extensions:
 
 ### Declarative permission rules engine
 
-[PerryLink/dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) — `Plugin nativo` · ★ 114 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
+[PerryLink/dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) — `Plugin nativo` · ★ 118 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
 
 Regras declarativas e ordenadas de permitir/negar/perguntar que combinam nomes de ferramentas, argumentos, caminhos do workspace e identidade do agente antes da execução, com auditoria completa de log de sessão, modo dry-run e recarga a quente.
 
@@ -3301,7 +3301,7 @@ dsh plugin --profile web add github:PerryLink/dsh-permission-rules
 
 ### Web UI login and auth gate
 
-[xgone/dsh-remote](https://github.com/xgone/dsh-remote) — `Plugin nativo` · ★ 66 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[xgone/dsh-remote](https://github.com/xgone/dsh-remote) — `Plugin nativo` · ★ 69 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Protege a Web UI do harness atrás de um login: MFA/TOTP, cookies de sessão assinados, papéis opcionais de admin, usuário e convidado, seleção de workspace no navegador e previews de arquivos remotos com lista de permissão.
 
@@ -3310,7 +3310,7 @@ Protege a Web UI do harness atrás de um login: MFA/TOTP, cookies de sessão ass
 - [TecFancy/dsh-auth-gate](https://github.com/TecFancy/dsh-auth-gate) (★ 15) — Suporta autenticação por token compartilhado, limitação de taxa de requisições e uma CLI para gestão de usuários.
 - [hxy91819/dsh-auth](https://github.com/hxy91819/dsh-auth) (★ 6) — Usa Caddy forward_auth com hashing de senha Argon2id, sessões revogáveis e interface bilíngue.
 - [SummerSec/dsh-web-auth](https://github.com/SummerSec/dsh-web-auth) (★ 2) — Adiciona limitação de login por IP e uma CLI de hashing de senha com scrypt.
-- [GDWhisper/dsh-web-startup-auth](https://github.com/GDWhisper/dsh-web-startup-auth) (★ 47) — Permite vincular a Web UI a 0.0.0.0 com segurança e inclui uma CLI para rotacionar a chave de assinatura e invalidar todas as sessões.
+- [GDWhisper/dsh-web-startup-auth](https://github.com/GDWhisper/dsh-web-startup-auth) (★ 50) — Permite vincular a Web UI a 0.0.0.0 com segurança e inclui uma CLI para rotacionar a chave de assinatura e invalidar todas as sessões.
 
 <details><summary>Instalar</summary>
 
@@ -3326,7 +3326,7 @@ dsh plugin --profile web add github:xgone/dsh-remote
 
 ### Multi-tenant server security platform
 
-[slywalker2006/dsh-passwords](https://github.com/slywalker2006/dsh-passwords) — `Plugin nativo` · ★ 63 · Licença: GPL-3.0 · Funciona com: DeepSeek Harness apenas
+[slywalker2006/dsh-passwords](https://github.com/slywalker2006/dsh-passwords) — `Plugin nativo` · ★ 67 · Licença: GPL-3.0 · Funciona com: DeepSeek Harness apenas
 
 Transforma o harness em uma plataforma multi-tenant de nível servidor: acesso remoto com HTTPS automático, permissões por subusuário com cotas de token e diárias, sandbox obrigatório, autenticação criptografada e log de auditoria.
 
@@ -3437,7 +3437,7 @@ Guarda de segurança estática e em runtime: varreduras baseadas em regras para 
 
 **Alternativas:**
 
-- [PerryLink/dsh-defend](https://github.com/PerryLink/dsh-defend) (★ 19) — Detecta padrões de injeção de prompt, jailbreak e vazamento de segredos em três pontos do pipeline com níveis de permitir/perguntar/bloquear e proteção contra exclusão destrutiva.
+- [PerryLink/dsh-defend](https://github.com/PerryLink/dsh-defend) (★ 23) — Detecta padrões de injeção de prompt, jailbreak e vazamento de segredos em três pontos do pipeline com níveis de permitir/perguntar/bloquear e proteção contra exclusão destrutiva.
 
 <details><summary>Instalar</summary>
 
