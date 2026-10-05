@@ -2042,6 +2042,10 @@ dsh plugin --profile web add github:vshulcz/deja-vu#path:/extensions/dsh
 
 Memória de referência em grafo de conhecimento: entidades, relações e observações num arquivo JSONL local. Não precisa de modelo nem embeddings.
 
+**Alternativas:**
+
+- [Hyperconsciousness](https://github.com/louis030195/hyperconsciousness) — Armazenamento em Rust em fase alfa, com registros criptografados e somente de acréscimo, sincronização entre dispositivos e permissões MCP com escopo e prazo de validade.
+
 <details><summary>Instalar</summary>
 
 **Claude Code**

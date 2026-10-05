@@ -2042,6 +2042,10 @@ dsh plugin --profile web add github:vshulcz/deja-vu#path:/extensions/dsh
 
 Reference knowledge-graph memory: entities, relations and observations stored in a local JSONL file. No model or embedding service needed.
 
+**Alternatives:**
+
+- [Hyperconsciousness](https://github.com/louis030195/hyperconsciousness) — Developer-alpha Rust store with encrypted, append-only records, device sync, and scoped, expiring MCP grants.
+
 <details><summary>Install</summary>
 
 **Claude Code**
