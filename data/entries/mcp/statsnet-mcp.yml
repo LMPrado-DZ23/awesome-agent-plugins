@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: statsnet-mcp
+name: Statsnet MCP
+title: World company background checks
+url: https://github.com/usenetstate/statsnet-mcp
+type: mcp-server
+category: cloud
+license: MIT
+tags:
+  - company-data
+  - osint
+  - background-check
+  - remote
+description:
+  en: >-
+    Background check any company in the world: registration, executives, courts and finances. Remote MCP at https://statsnet.co/mcp. Registry: io.github.usenetstate/statsnet.
+  pt: >-
+    Verificação de empresas no mundo inteiro: registro, executivos, tribunais e finanças.
+    MCP remoto em https://statsnet.co/mcp.
+mcp:
+  name: statsnet
+  http:
+    url: https://statsnet.co/mcp
+origin:
+  list: mcp-registry
+  ref: io.github.usenetstate/statsnet
