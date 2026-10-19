@@ -211,13 +211,13 @@ extensions:
 
 ### Query databases via saved connections
 
-[t8y2/dbx](https://github.com/t8y2/dbx) — `MCP server` · ★ 26k · License: Apache-2.0 · Works with: All clients
+[t8y2/dbx](https://github.com/t8y2/dbx) — `MCP server` · ★ 27k · License: Apache-2.0 · Works with: All clients
 
 Queries databases from AI agents using connections already configured in DBX.
 
 **Alternatives:**
 
-- [DBHub](https://github.com/bytebase/dbhub) (★ 3.6k) — Minimal, token-efficient server for PostgreSQL, MySQL, SQL Server, SQLite, and MariaDB.
+- [DBHub](https://github.com/bytebase/dbhub) (★ 3.7k) — Minimal, token-efficient server for PostgreSQL, MySQL, SQL Server, SQLite, and MariaDB.
 
 <details><summary>Install</summary>
 
@@ -1059,7 +1059,7 @@ extensions:
 
 ### Cloudflare agent skills
 
-[cloudflare/skills](https://github.com/cloudflare/skills) — `Agent Skills` · ★ 3.0k · License: Apache-2.0 · Works with: All clients
+[cloudflare/skills](https://github.com/cloudflare/skills) — `Agent Skills` · ★ 3.1k · License: Apache-2.0 · Works with: All clients
 
 Skills that teach coding agents how to build applications and infrastructure on Cloudflare's platform.
 
@@ -1149,7 +1149,7 @@ npx skills add cloudflare/skills -a universal
 
 ### Supabase MCP
 
-[Supabase MCP](https://github.com/supabase/mcp) — `MCP server` · ★ 2.9k · License: Apache-2.0 · Works with: All clients
+[Supabase MCP](https://github.com/supabase/mcp) — `MCP server` · ★ 3.0k · License: Apache-2.0 · Works with: All clients
 
 Manage Supabase projects from the agent: tables, SQL, migrations, edge functions, logs and docs. Supports read-only and project-scoped modes via URL parameters.
 
@@ -1311,7 +1311,7 @@ extensions:
 
 ### AWS agent toolkit
 
-[aws/agent-toolkit-for-aws](https://github.com/aws/agent-toolkit-for-aws) — `Agent Skills` · ★ 2.8k · License: Apache-2.0 · Works with: All clients
+[aws/agent-toolkit-for-aws](https://github.com/aws/agent-toolkit-for-aws) — `Agent Skills` · ★ 2.9k · License: Apache-2.0 · Works with: All clients
 
 Official AWS-supported MCP servers, skills and plugins that help AI agents build and operate on AWS.
 
@@ -1401,7 +1401,7 @@ npx skills add aws/agent-toolkit-for-aws -a universal
 
 ### FHIR healthcare data platform
 
-[medplum/medplum](https://github.com/medplum/medplum) — `MCP server` · ★ 2.7k · License: Apache-2.0 · Works with: All clients
+[medplum/medplum](https://github.com/medplum/medplum) — `MCP server` · ★ 2.8k · License: Apache-2.0 · Works with: All clients
 
 Securely accesses and manages FHIR healthcare data stored in Medplum.
 
@@ -1842,7 +1842,7 @@ extensions:
 
 ### Terraform workflow automation
 
-[Terraform](https://github.com/hashicorp/terraform-mcp-server) — `MCP server` · ★ 1.5k · License: MPL-2.0 · Works with: All clients
+[Terraform](https://github.com/hashicorp/terraform-mcp-server) — `MCP server` · ★ 1.6k · License: MPL-2.0 · Works with: All clients
 
 Official Hashicorp server for more accurate Terraform generation and automated workflows for HCP and Terraform Enterprise.
 
@@ -2861,7 +2861,7 @@ extensions:
 
 ### Amazon SES observability
 
-[Sessy — Amazon SES observability](https://github.com/marckohlbrugge/sessy) — `MCP server` · ★ 939 · License: see repo · Works with: All clients
+[Sessy — Amazon SES observability](https://github.com/marckohlbrugge/sessy) — `MCP server` · ★ 941 · License: see repo · Works with: All clients
 
 Read-only Amazon SES observability: search events, inspect bounces, and pull delivery stats; needs an Authorization token.
 
@@ -3049,7 +3049,7 @@ extensions:
 
 ### Query ClickHouse clusters
 
-[ClickHouse](https://github.com/ClickHouse/mcp-clickhouse) — `MCP server` · ★ 885 · License: Apache-2.0 · Works with: All clients
+[ClickHouse](https://github.com/ClickHouse/mcp-clickhouse) — `MCP server` · ★ 889 · License: Apache-2.0 · Works with: All clients
 
 Official server for querying and exploring ClickHouse clusters and chDB.
 
@@ -3274,7 +3274,7 @@ extensions:
 
 ### Neon serverless Postgres management
 
-[Neon](https://github.com/neondatabase/mcp-server-neon) — `MCP server` · ★ 651 · License: MIT · Works with: All clients
+[Neon](https://github.com/neondatabase/mcp-server-neon) — `MCP server` · ★ 654 · License: MIT · Works with: All clients
 
 Official server for managing Neon projects and Lakebase Postgres databases; needs an Authorization token.
 
@@ -3462,7 +3462,7 @@ extensions:
 
 ### Coolify infrastructure management
 
-[StuMason/coolify-mcp](https://github.com/StuMason/coolify-mcp) — `MCP server` · ★ 612 · License: MIT · Works with: All clients
+[StuMason/coolify-mcp](https://github.com/StuMason/coolify-mcp) — `MCP server` · ★ 614 · License: MIT · Works with: All clients
 
 45 tools for managing Coolify infrastructure, diagnostics, and documentation search; needs a COOLIFY_ACCESS_TOKEN.
 
@@ -3677,7 +3677,7 @@ extensions:
 
 ### Proxmox VE management
 
-[ProxmoxMCP-Plus](https://github.com/RekklesNA/ProxmoxMCP-Plus) — `MCP server` · ★ 581 · License: MIT · Works with: All clients
+[ProxmoxMCP-Plus](https://github.com/RekklesNA/ProxmoxMCP-Plus) — `MCP server` · ★ 601 · License: MIT · Works with: All clients
 
 Manages Proxmox VE VMs, LXCs, snapshots, backups, storage, and cluster operations.
 
@@ -3911,7 +3911,7 @@ extensions:
 
 ### MotherDuck SQL analytics
 
-[motherduckdb/mcp-server-motherduck](https://github.com/motherduckdb/mcp-server-motherduck) — `MCP server` · ★ 527 · License: MIT · Works with: All clients
+[motherduckdb/mcp-server-motherduck](https://github.com/motherduckdb/mcp-server-motherduck) — `MCP server` · ★ 532 · License: MIT · Works with: All clients
 
 SQL analytics and data engineering for AI assistants and IDEs via MotherDuck; needs a MOTHERDUCK_TOKEN.
 
@@ -4145,7 +4145,7 @@ extensions:
 
 ### Prometheus metrics and PromQL
 
-[Prometheus MCP Server](https://github.com/pab1it0/prometheus-mcp-server) — `MCP server` · ★ 518 · License: MIT · Works with: All clients
+[Prometheus MCP Server](https://github.com/pab1it0/prometheus-mcp-server) — `MCP server` · ★ 519 · License: MIT · Works with: All clients
 
 Provides Prometheus metrics access and PromQL query execution for AI assistants.
 
@@ -4442,7 +4442,7 @@ extensions:
 
 ### AI-driven Kubernetes deployment
 
-[vfarcic/dot-ai](https://github.com/vfarcic/dot-ai) — `MCP server` · ★ 336 · License: MIT · Works with: All clients
+[vfarcic/dot-ai](https://github.com/vfarcic/dot-ai) — `MCP server` · ★ 337 · License: MIT · Works with: All clients
 
 AI-powered development platform for Kubernetes deployments and intelligent automation.
 
@@ -4631,7 +4631,7 @@ extensions:
 
 ### Elasticsearch queries
 
-[cr7258/elasticsearch-mcp-server](https://github.com/cr7258/elasticsearch-mcp-server) — `MCP server` · ★ 312 · License: Apache-2.0 · Works with: All clients
+[cr7258/elasticsearch-mcp-server](https://github.com/cr7258/elasticsearch-mcp-server) — `MCP server` · ★ 313 · License: Apache-2.0 · Works with: All clients
 
 Interacts with Elasticsearch for search and analytics; needs an ELASTICSEARCH_API_KEY or password.
 
@@ -4847,7 +4847,7 @@ extensions:
 
 ### Snowflake data platform
 
-[OSS Snowflake MCP Server](https://github.com/Snowflake-Labs/mcp) — `MCP server` · ★ 299 · License: Apache-2.0 · Works with: All clients
+[OSS Snowflake MCP Server](https://github.com/Snowflake-Labs/mcp) — `MCP server` · ★ 300 · License: Apache-2.0 · Works with: All clients
 
 Server for Snowflake from Snowflake Labs.
 
@@ -5063,7 +5063,7 @@ extensions:
 
 ### VictoriaMetrics integration
 
-[VictoriaMetrics/mcp-victoriametrics](https://github.com/VictoriaMetrics/mcp-victoriametrics) — `MCP server` · ★ 237 · License: Apache-2.0 · Works with: All clients
+[VictoriaMetrics/mcp-victoriametrics](https://github.com/VictoriaMetrics/mcp-victoriametrics) — `MCP server` · ★ 238 · License: Apache-2.0 · Works with: All clients
 
 Integrates with the VictoriaMetrics API and documentation; needs a VictoriaMetrics bearer token.
 
@@ -5385,7 +5385,7 @@ extensions:
 
 ### Enterprise PostgreSQL with hybrid search
 
-[pgEdge/pgedge-postgres-mcp](https://github.com/pgEdge/pgedge-postgres-mcp) — `MCP server` · ★ 234 · License: PostgreSQL · Works with: All clients
+[pgEdge/pgedge-postgres-mcp](https://github.com/pgEdge/pgedge-postgres-mcp) — `MCP server` · ★ 237 · License: PostgreSQL · Works with: All clients
 
 Enterprise PostgreSQL server with natural-language queries, hybrid search (pgvector plus BM25), and a web UI.
 

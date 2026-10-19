@@ -234,7 +234,7 @@ Prerequisite: `uv tool install -p 3.13 serena-agent && serena init`
 
 ### Codebase knowledge graph
 
-[Codebase Memory](https://github.com/DeusData/codebase-memory-mcp) — `MCP server` · ★ 46k · License: MIT · Works with: All clients
+[Codebase Memory](https://github.com/DeusData/codebase-memory-mcp) — `MCP server` · ★ 47k · License: MIT · Works with: All clients
 
 Builds a codebase knowledge graph across 162 languages with sub-millisecond queries and reduced token usage.
 
@@ -423,7 +423,7 @@ extensions:
 
 ### Codebase intelligence for agents
 
-[Repowise](https://github.com/repowise-dev/repowise) — `MCP server` · ★ 7.6k · License: AGPL-3.0 · Works with: All clients
+[Repowise](https://github.com/repowise-dev/repowise) — `MCP server` · ★ 7.9k · License: AGPL-3.0 · Works with: All clients
 
 Codebase intelligence for coding agents: dependency graph, git history, docs, decisions, and code health.
 
@@ -1163,7 +1163,7 @@ extensions:
 
 ### GitHub code research platform
 
-[Octocode MCP - AI Context Platform](https://github.com/bgauryy/octocode-mcp) — `MCP server` · ★ 950 · License: MIT · Works with: All clients
+[Octocode MCP - AI Context Platform](https://github.com/bgauryy/octocode-mcp) — `MCP server` · ★ 951 · License: MIT · Works with: All clients
 
 AI code research platform to search, analyze, and extract insights from any GitHub repository; needs a GITHUB_TOKEN.
 
@@ -1378,7 +1378,7 @@ extensions:
 
 ### Layered code graph with SCIP
 
-[Hex Graph](https://github.com/levnikolaevich/claude-code-skills) — `MCP server` · ★ 576 · License: MIT · Works with: All clients
+[Hex Graph](https://github.com/levnikolaevich/claude-code-skills) — `MCP server` · ★ 581 · License: MIT · Works with: All clients
 
 Deterministic layered code graph server with framework overlays and SCIP interoperability.
 
@@ -1567,7 +1567,7 @@ extensions:
 
 ### Local semantic code indexer
 
-[Octocode](https://github.com/muvon/octocode) — `MCP server` · ★ 510 · License: Apache-2.0 · Works with: All clients
+[Octocode](https://github.com/muvon/octocode) — `MCP server` · ★ 512 · License: Apache-2.0 · Works with: All clients
 
 AI-powered code indexer for a local repository with semantic search and knowledge graphs.
 
@@ -1756,7 +1756,7 @@ extensions:
 
 ### Semantic search for files and code
 
-[Vexor](https://github.com/scarletkc/vexor) — `MCP server` · ★ 244 · License: MIT · Works with: All clients
+[Vexor](https://github.com/scarletkc/vexor) — `MCP server` · ★ 245 · License: MIT · Works with: All clients
 
 A semantic search engine for files and code; needs a VEXOR_API_KEY (and optionally a rerank API key).
 

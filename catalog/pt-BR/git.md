@@ -213,7 +213,7 @@ extensions:
 
 ### Alibaba open code review
 
-[alibaba/open-code-review](https://github.com/alibaba/open-code-review) — `Agent Skills` · ★ 46k · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[alibaba/open-code-review](https://github.com/alibaba/open-code-review) — `Agent Skills` · ★ 48k · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Ferramenta híbrida de revisão de código testada em produção na escala da Alibaba, combinando pipelines determinísticos com um agente LLM para comentários precisos linha a linha e um conjunto de regras de segurança multilíngue.
 
@@ -307,7 +307,7 @@ npx skills add alibaba/open-code-review -a universal
 
 ### GitLab projects and merge requests
 
-[zereight/gitlab-mcp](https://github.com/zereight/gitlab-mcp) — `Servidor MCP` · ★ 2.0k · Licença: MIT · Funciona com: Todos os clientes
+[zereight/gitlab-mcp](https://github.com/zereight/gitlab-mcp) — `Servidor MCP` · ★ 2.1k · Licença: MIT · Funciona com: Todos os clientes
 
 Servidor GitLab para projetos, merge requests, issues, pipelines, wikis e releases; exige GITLAB_PERSONAL_ACCESS_TOKEN.
 
@@ -531,7 +531,7 @@ extensions:
 
 ### Manage repos across Git hosts
 
-[gitkraken/gk-cli](https://github.com/gitkraken/gk-cli) — `Servidor MCP` · ★ 461 · Licença: ver repo · Funciona com: Todos os clientes
+[gitkraken/gk-cli](https://github.com/gitkraken/gk-cli) — `Servidor MCP` · ★ 460 · Licença: ver repo · Funciona com: Todos os clientes
 
 Servidor da GitKraken para gerenciar repositórios, pull requests e issues no GitHub, GitLab e Bitbucket.
 
@@ -720,7 +720,7 @@ extensions:
 
 ### Native git operations
 
-[cyanheads/git-mcp-server](https://github.com/cyanheads/git-mcp-server) — `Servidor MCP` · ★ 241 · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[cyanheads/git-mcp-server](https://github.com/cyanheads/git-mcp-server) — `Servidor MCP` · ★ 242 · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Servidor git abrangente com ferramentas nativas como clone, commit e gestão de worktrees.
 
@@ -956,7 +956,7 @@ Session Targets baseados em git worktree com sessões de tarefa isoladas, status
 **Alternativas:**
 
 - [Cerbur/clutch-dsh#clutch-dsh-worktree](https://github.com/Cerbur/clutch-dsh/tree/main/packages/clutch-dsh-worktree) — Adiciona uma visão de Worktree na Web UI que agrupa as Sessions existentes por worktree git, mantendo o DSH como fonte da verdade
-- [HeathHe/dsh-worktree-panel](https://github.com/HeathHe/dsh-worktree-panel) (★ 8) — Substitui a barra lateral por uma hierarquia projeto-worktree-sessão, com criação/remoção de worktree e proteção de migração
+- [HeathHe/dsh-worktree-panel](https://github.com/HeathHe/dsh-worktree-panel) (★ 9) — Substitui a barra lateral por uma hierarquia projeto-worktree-sessão, com criação/remoção de worktree e proteção de migração
 
 <details><summary>Instalar</summary>
 
@@ -978,7 +978,7 @@ Scripts de busca, descoberta e auditoria do GitHub empacotados como uma skill em
 
 **Alternativas:**
 
-- [zoahdev/dsh-github-intelligence](https://github.com/zoahdev/dsh-github-intelligence) (★ 14) — Adiciona releases, issues, PRs e dados de contribuidores, além de um relatório detalhado com cache TTL, sem chave de API
+- [zoahdev/dsh-github-intelligence](https://github.com/zoahdev/dsh-github-intelligence) — Adiciona releases, issues, PRs e dados de contribuidores, além de um relatório detalhado com cache TTL, sem chave de API
 
 <details><summary>Instalar</summary>
 
@@ -1001,7 +1001,7 @@ Uma faixa acima do campo de composição lista os arquivos modificados na sessã
 **Alternativas:**
 
 - [cirelir/dsh-change-review](https://github.com/cirelir/dsh-change-review) (★ 13) — Rastreia write/edit com isolamento por sessão, agregação de subagentes e atualizações ao vivo via SSE, sem precisar de git
-- [9087/dsh-diff-approval](https://github.com/9087/dsh-diff-approval) (★ 9) — Permite manter ou reverter cada bloco de mudança individualmente, oferece desfazer/refazer e mantém a revisão persistente entre reinícios
+- [9087/dsh-diff-approval](https://github.com/9087/dsh-diff-approval) (★ 10) — Permite manter ou reverter cada bloco de mudança individualmente, oferece desfazer/refazer e mantém a revisão persistente entre reinícios
 - [Tlyer233/dsh-vscode-review#dsh-review](https://github.com/Tlyer233/dsh-vscode-review/tree/main/dsh-review) — Registra write, edit e rm de shell num repositório git sombra, revisável trecho a trecho numa extensão companheira do VS Code
 
 <details><summary>Instalar</summary>
@@ -1060,8 +1060,8 @@ Conexão via GitHub Device Flow mais um fluxo de PR dentro da conversa: uma barr
 
 **Alternativas:**
 
-- [Moon-shiyue/dsh-github-connect](https://github.com/Moon-shiyue/dsh-github-connect) (★ 7) — Conecta via OAuth device flow ou um personal access token e chama a API do GitHub diretamente por uma ferramenta github_api
-- [Noob-stupid/dsh-github-login](https://github.com/Noob-stupid/dsh-github-login) (★ 6) — Adiciona login por device flow dentro da janela, sem precisar de terminal, sincronizando o token com a gh CLI e endpoints de status do host
+- [Moon-shiyue/dsh-github-connect](https://github.com/Moon-shiyue/dsh-github-connect) (★ 9) — Conecta via OAuth device flow ou um personal access token e chama a API do GitHub diretamente por uma ferramenta github_api
+- [Noob-stupid/dsh-github-login](https://github.com/Noob-stupid/dsh-github-login) (★ 7) — Adiciona login por device flow dentro da janela, sem precisar de terminal, sincronizando o token com a gh CLI e endpoints de status do host
 
 <details><summary>Instalar</summary>
 

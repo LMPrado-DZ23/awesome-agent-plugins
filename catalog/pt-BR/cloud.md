@@ -211,13 +211,13 @@ extensions:
 
 ### Query databases via saved connections
 
-[t8y2/dbx](https://github.com/t8y2/dbx) — `Servidor MCP` · ★ 26k · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[t8y2/dbx](https://github.com/t8y2/dbx) — `Servidor MCP` · ★ 27k · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Consulta bancos de dados a partir de agentes de IA usando conexões já configuradas no DBX.
 
 **Alternativas:**
 
-- [DBHub](https://github.com/bytebase/dbhub) (★ 3.6k) — Servidor mínimo e eficiente em tokens para PostgreSQL, MySQL, SQL Server, SQLite e MariaDB.
+- [DBHub](https://github.com/bytebase/dbhub) (★ 3.7k) — Servidor mínimo e eficiente em tokens para PostgreSQL, MySQL, SQL Server, SQLite e MariaDB.
 
 <details><summary>Instalar</summary>
 
@@ -1059,7 +1059,7 @@ extensions:
 
 ### Cloudflare agent skills
 
-[cloudflare/skills](https://github.com/cloudflare/skills) — `Agent Skills` · ★ 3.0k · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[cloudflare/skills](https://github.com/cloudflare/skills) — `Agent Skills` · ★ 3.1k · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Skills que ensinam agentes de código a construir aplicações e infraestrutura na plataforma da Cloudflare.
 
@@ -1149,7 +1149,7 @@ npx skills add cloudflare/skills -a universal
 
 ### Supabase MCP
 
-[Supabase MCP](https://github.com/supabase/mcp) — `Servidor MCP` · ★ 2.9k · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[Supabase MCP](https://github.com/supabase/mcp) — `Servidor MCP` · ★ 3.0k · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Gerencie projetos Supabase pelo agente: tabelas, SQL, migrations, edge functions, logs e docs. Modos somente leitura e por projeto via parâmetros na URL.
 
@@ -1311,7 +1311,7 @@ extensions:
 
 ### AWS agent toolkit
 
-[aws/agent-toolkit-for-aws](https://github.com/aws/agent-toolkit-for-aws) — `Agent Skills` · ★ 2.8k · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[aws/agent-toolkit-for-aws](https://github.com/aws/agent-toolkit-for-aws) — `Agent Skills` · ★ 2.9k · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Servidores MCP, skills e plugins com suporte oficial da AWS para ajudar agentes de IA a construir e operar na AWS.
 
@@ -1401,7 +1401,7 @@ npx skills add aws/agent-toolkit-for-aws -a universal
 
 ### FHIR healthcare data platform
 
-[medplum/medplum](https://github.com/medplum/medplum) — `Servidor MCP` · ★ 2.7k · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[medplum/medplum](https://github.com/medplum/medplum) — `Servidor MCP` · ★ 2.8k · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Acessa e gerencia com segurança dados de saúde no formato FHIR armazenados no Medplum.
 
@@ -1842,7 +1842,7 @@ extensions:
 
 ### Terraform workflow automation
 
-[Terraform](https://github.com/hashicorp/terraform-mcp-server) — `Servidor MCP` · ★ 1.5k · Licença: MPL-2.0 · Funciona com: Todos os clientes
+[Terraform](https://github.com/hashicorp/terraform-mcp-server) — `Servidor MCP` · ★ 1.6k · Licença: MPL-2.0 · Funciona com: Todos os clientes
 
 Servidor oficial da Hashicorp para geração de Terraform mais precisa e workflows automatizados para HCP e Terraform Enterprise.
 
@@ -2861,7 +2861,7 @@ extensions:
 
 ### Amazon SES observability
 
-[Sessy — Amazon SES observability](https://github.com/marckohlbrugge/sessy) — `Servidor MCP` · ★ 939 · Licença: ver repo · Funciona com: Todos os clientes
+[Sessy — Amazon SES observability](https://github.com/marckohlbrugge/sessy) — `Servidor MCP` · ★ 941 · Licença: ver repo · Funciona com: Todos os clientes
 
 Observabilidade somente leitura do Amazon SES: busca eventos, inspeciona bounces e traz estatísticas de entrega; exige token de Authorization.
 
@@ -3049,7 +3049,7 @@ extensions:
 
 ### Query ClickHouse clusters
 
-[ClickHouse](https://github.com/ClickHouse/mcp-clickhouse) — `Servidor MCP` · ★ 885 · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[ClickHouse](https://github.com/ClickHouse/mcp-clickhouse) — `Servidor MCP` · ★ 889 · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Servidor oficial para consultar e explorar clusters ClickHouse e o chDB.
 
@@ -3274,7 +3274,7 @@ extensions:
 
 ### Neon serverless Postgres management
 
-[Neon](https://github.com/neondatabase/mcp-server-neon) — `Servidor MCP` · ★ 651 · Licença: MIT · Funciona com: Todos os clientes
+[Neon](https://github.com/neondatabase/mcp-server-neon) — `Servidor MCP` · ★ 654 · Licença: MIT · Funciona com: Todos os clientes
 
 Servidor oficial para gerenciar projetos Neon e bancos Postgres Lakebase; exige token de Authorization.
 
@@ -3462,7 +3462,7 @@ extensions:
 
 ### Coolify infrastructure management
 
-[StuMason/coolify-mcp](https://github.com/StuMason/coolify-mcp) — `Servidor MCP` · ★ 612 · Licença: MIT · Funciona com: Todos os clientes
+[StuMason/coolify-mcp](https://github.com/StuMason/coolify-mcp) — `Servidor MCP` · ★ 614 · Licença: MIT · Funciona com: Todos os clientes
 
 45 ferramentas para gerenciar a infraestrutura Coolify, diagnósticos e busca na documentação; exige COOLIFY_ACCESS_TOKEN.
 
@@ -3677,7 +3677,7 @@ extensions:
 
 ### Proxmox VE management
 
-[ProxmoxMCP-Plus](https://github.com/RekklesNA/ProxmoxMCP-Plus) — `Servidor MCP` · ★ 581 · Licença: MIT · Funciona com: Todos os clientes
+[ProxmoxMCP-Plus](https://github.com/RekklesNA/ProxmoxMCP-Plus) — `Servidor MCP` · ★ 601 · Licença: MIT · Funciona com: Todos os clientes
 
 Gerencia VMs, LXCs, snapshots, backups, storage e operações de cluster no Proxmox VE.
 
@@ -3911,7 +3911,7 @@ extensions:
 
 ### MotherDuck SQL analytics
 
-[motherduckdb/mcp-server-motherduck](https://github.com/motherduckdb/mcp-server-motherduck) — `Servidor MCP` · ★ 527 · Licença: MIT · Funciona com: Todos os clientes
+[motherduckdb/mcp-server-motherduck](https://github.com/motherduckdb/mcp-server-motherduck) — `Servidor MCP` · ★ 532 · Licença: MIT · Funciona com: Todos os clientes
 
 Analytics em SQL e engenharia de dados para assistentes de IA e IDEs via MotherDuck; exige MOTHERDUCK_TOKEN.
 
@@ -4145,7 +4145,7 @@ extensions:
 
 ### Prometheus metrics and PromQL
 
-[Prometheus MCP Server](https://github.com/pab1it0/prometheus-mcp-server) — `Servidor MCP` · ★ 518 · Licença: MIT · Funciona com: Todos os clientes
+[Prometheus MCP Server](https://github.com/pab1it0/prometheus-mcp-server) — `Servidor MCP` · ★ 519 · Licença: MIT · Funciona com: Todos os clientes
 
 Dá acesso a métricas do Prometheus e execução de consultas PromQL para assistentes de IA.
 
@@ -4442,7 +4442,7 @@ extensions:
 
 ### AI-driven Kubernetes deployment
 
-[vfarcic/dot-ai](https://github.com/vfarcic/dot-ai) — `Servidor MCP` · ★ 336 · Licença: MIT · Funciona com: Todos os clientes
+[vfarcic/dot-ai](https://github.com/vfarcic/dot-ai) — `Servidor MCP` · ★ 337 · Licença: MIT · Funciona com: Todos os clientes
 
 Plataforma de desenvolvimento com IA para deployments no Kubernetes e automação inteligente.
 
@@ -4631,7 +4631,7 @@ extensions:
 
 ### Elasticsearch queries
 
-[cr7258/elasticsearch-mcp-server](https://github.com/cr7258/elasticsearch-mcp-server) — `Servidor MCP` · ★ 312 · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[cr7258/elasticsearch-mcp-server](https://github.com/cr7258/elasticsearch-mcp-server) — `Servidor MCP` · ★ 313 · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Interage com o Elasticsearch para busca e analytics; exige ELASTICSEARCH_API_KEY ou senha.
 
@@ -4847,7 +4847,7 @@ extensions:
 
 ### Snowflake data platform
 
-[OSS Snowflake MCP Server](https://github.com/Snowflake-Labs/mcp) — `Servidor MCP` · ★ 299 · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[OSS Snowflake MCP Server](https://github.com/Snowflake-Labs/mcp) — `Servidor MCP` · ★ 300 · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Servidor para o Snowflake, da Snowflake Labs.
 
@@ -5063,7 +5063,7 @@ extensions:
 
 ### VictoriaMetrics integration
 
-[VictoriaMetrics/mcp-victoriametrics](https://github.com/VictoriaMetrics/mcp-victoriametrics) — `Servidor MCP` · ★ 237 · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[VictoriaMetrics/mcp-victoriametrics](https://github.com/VictoriaMetrics/mcp-victoriametrics) — `Servidor MCP` · ★ 238 · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Integra com a API e a documentação do VictoriaMetrics; exige um bearer token do VictoriaMetrics.
 
@@ -5385,7 +5385,7 @@ extensions:
 
 ### Enterprise PostgreSQL with hybrid search
 
-[pgEdge/pgedge-postgres-mcp](https://github.com/pgEdge/pgedge-postgres-mcp) — `Servidor MCP` · ★ 234 · Licença: PostgreSQL · Funciona com: Todos os clientes
+[pgEdge/pgedge-postgres-mcp](https://github.com/pgEdge/pgedge-postgres-mcp) — `Servidor MCP` · ★ 237 · Licença: PostgreSQL · Funciona com: Todos os clientes
 
 Servidor PostgreSQL empresarial com consultas em linguagem natural, busca híbrida (pgvector e BM25) e uma interface web.
 

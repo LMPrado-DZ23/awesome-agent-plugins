@@ -213,7 +213,7 @@ extensions:
 
 ### Alibaba open code review
 
-[alibaba/open-code-review](https://github.com/alibaba/open-code-review) — `Agent Skills` · ★ 46k · License: Apache-2.0 · Works with: All clients
+[alibaba/open-code-review](https://github.com/alibaba/open-code-review) — `Agent Skills` · ★ 48k · License: Apache-2.0 · Works with: All clients
 
 Hybrid code-review tool battle-tested at Alibaba's scale, combining deterministic pipelines with an LLM agent for precise, line-level comments and a built-in multi-language security ruleset.
 
@@ -307,7 +307,7 @@ npx skills add alibaba/open-code-review -a universal
 
 ### GitLab projects and merge requests
 
-[zereight/gitlab-mcp](https://github.com/zereight/gitlab-mcp) — `MCP server` · ★ 2.0k · License: MIT · Works with: All clients
+[zereight/gitlab-mcp](https://github.com/zereight/gitlab-mcp) — `MCP server` · ★ 2.1k · License: MIT · Works with: All clients
 
 GitLab server for projects, merge requests, issues, pipelines, wikis, and releases; needs a GITLAB_PERSONAL_ACCESS_TOKEN.
 
@@ -531,7 +531,7 @@ extensions:
 
 ### Manage repos across Git hosts
 
-[gitkraken/gk-cli](https://github.com/gitkraken/gk-cli) — `MCP server` · ★ 461 · License: see repo · Works with: All clients
+[gitkraken/gk-cli](https://github.com/gitkraken/gk-cli) — `MCP server` · ★ 460 · License: see repo · Works with: All clients
 
 The GitKraken server for managing repos, pull requests, and issues across GitHub, GitLab, and Bitbucket.
 
@@ -720,7 +720,7 @@ extensions:
 
 ### Native git operations
 
-[cyanheads/git-mcp-server](https://github.com/cyanheads/git-mcp-server) — `MCP server` · ★ 241 · License: Apache-2.0 · Works with: All clients
+[cyanheads/git-mcp-server](https://github.com/cyanheads/git-mcp-server) — `MCP server` · ★ 242 · License: Apache-2.0 · Works with: All clients
 
 Comprehensive git server enabling native git tools including clone, commit, and worktree management.
 
@@ -956,7 +956,7 @@ Git-worktree Session Targets with isolated task sessions, ready-for-review statu
 **Alternatives:**
 
 - [Cerbur/clutch-dsh#clutch-dsh-worktree](https://github.com/Cerbur/clutch-dsh/tree/main/packages/clutch-dsh-worktree) — Adds a Worktree view in the Web UI that groups existing Sessions by git worktree while keeping DSH as the source of truth
-- [HeathHe/dsh-worktree-panel](https://github.com/HeathHe/dsh-worktree-panel) (★ 8) — Replaces the workspace sidebar with a project-worktree-session hierarchy, with worktree create/remove and storage-migration safeguards
+- [HeathHe/dsh-worktree-panel](https://github.com/HeathHe/dsh-worktree-panel) (★ 9) — Replaces the workspace sidebar with a project-worktree-session hierarchy, with worktree create/remove and storage-migration safeguards
 
 <details><summary>Install</summary>
 
@@ -978,7 +978,7 @@ GitHub search, discovery and audit scripts wrapped as a SKILL.md pack around the
 
 **Alternatives:**
 
-- [zoahdev/dsh-github-intelligence](https://github.com/zoahdev/dsh-github-intelligence) (★ 14) — Adds repo releases, issues, pull requests and contributor data plus a deep repo report with TTL caching, no API key needed
+- [zoahdev/dsh-github-intelligence](https://github.com/zoahdev/dsh-github-intelligence) — Adds repo releases, issues, pull requests and contributor data plus a deep repo report with TTL caching, no API key needed
 
 <details><summary>Install</summary>
 
@@ -1001,7 +1001,7 @@ A strip above the composer lists files modified in the current session (collapse
 **Alternatives:**
 
 - [cirelir/dsh-change-review](https://github.com/cirelir/dsh-change-review) (★ 13) — Tracks write/edit calls with session isolation, subagent aggregation and SSE live updates, also without needing git
-- [9087/dsh-diff-approval](https://github.com/9087/dsh-diff-approval) (★ 9) — Lets each change block be kept or reverted individually, supports undo/redo, and persists the review across restarts
+- [9087/dsh-diff-approval](https://github.com/9087/dsh-diff-approval) (★ 10) — Lets each change block be kept or reverted individually, supports undo/redo, and persists the review across restarts
 - [Tlyer233/dsh-vscode-review#dsh-review](https://github.com/Tlyer233/dsh-vscode-review/tree/main/dsh-review) — Records every write, edit and shell rm into a shadow git repo, reviewable hunk-by-hunk inside a companion VS Code extension
 
 <details><summary>Install</summary>
@@ -1060,8 +1060,8 @@ GitHub Device Flow connection plus an in-conversation PR workflow: a status bar 
 
 **Alternatives:**
 
-- [Moon-shiyue/dsh-github-connect](https://github.com/Moon-shiyue/dsh-github-connect) (★ 7) — Connects via OAuth device flow or a personal access token and calls the GitHub API directly through a github_api tool
-- [Noob-stupid/dsh-github-login](https://github.com/Noob-stupid/dsh-github-login) (★ 6) — Adds an in-window device-flow login with no terminal needed, syncing the token into the gh CLI plus host status endpoints
+- [Moon-shiyue/dsh-github-connect](https://github.com/Moon-shiyue/dsh-github-connect) (★ 9) — Connects via OAuth device flow or a personal access token and calls the GitHub API directly through a github_api tool
+- [Noob-stupid/dsh-github-login](https://github.com/Noob-stupid/dsh-github-login) (★ 7) — Adds an in-window device-flow login with no terminal needed, syncing the token into the gh CLI plus host status endpoints
 
 <details><summary>Install</summary>
 

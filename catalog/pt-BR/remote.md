@@ -20,15 +20,15 @@
 
 ### Control real Android and iOS devices
 
-[droidrun/mobilerun](https://github.com/droidrun/mobilerun) — `Servidor MCP` · ★ 9.6k · Licença: MIT · Funciona com: Todos os clientes
+[droidrun/mobilerun](https://github.com/droidrun/mobilerun) — `Servidor MCP` · ★ 9.7k · Licença: MIT · Funciona com: Todos os clientes
 
 Controla dispositivos Android e iOS reais com agentes de LLM: tocar, deslizar, digitar e automatizar fluxos; exige token de Authorization.
 
 **Alternativas:**
 
-- [mobile-next/mobile-mcp](https://github.com/mobile-next/mobile-mcp) (★ 9.0k) — Servidor para desenvolvimento, automação e testes mobile em iOS e Android.
-- [agent-device](https://github.com/callstack/agent-device) (★ 5.0k) — Verifica, controla e depura apps reais de iOS, Android, TV e desktop.
-- [Argent](https://github.com/software-mansion/argent) (★ 3.0k) — Controla simuladores de iOS, emuladores de Android, TVs e apps Electron/web a partir de um agente de código.
+- [mobile-next/mobile-mcp](https://github.com/mobile-next/mobile-mcp) (★ 9.8k) — Servidor para desenvolvimento, automação e testes mobile em iOS e Android.
+- [agent-device](https://github.com/callstack/agent-device) (★ 5.1k) — Verifica, controla e depura apps reais de iOS, Android, TV e desktop.
+- [Argent](https://github.com/software-mansion/argent) (★ 3.1k) — Controla simuladores de iOS, emuladores de Android, TVs e apps Electron/web a partir de um agente de código.
 
 <details><summary>Instalar</summary>
 
@@ -214,15 +214,15 @@ extensions:
 
 ### Computer-use automation for Windows
 
-[CursorTouch/Windows-MCP](https://github.com/CursorTouch/Windows-MCP) — `Servidor MCP` · ★ 8.8k · Licença: MIT · Funciona com: Todos os clientes
+[CursorTouch/Windows-MCP](https://github.com/CursorTouch/Windows-MCP) — `Servidor MCP` · ★ 9.5k · Licença: MIT · Funciona com: Todos os clientes
 
 Um servidor para automação estilo computer-use no Windows.
 
 **Alternativas:**
 
 - [Ui.Vision MCP](https://github.com/A9T9/RPA/tree/main/mcp) — Automação RPA de navegador e desktop com OCR, reconhecimento de imagem e controle real de mouse e teclado.
-- [Computer Use](https://github.com/domdomegg/computer-use-mcp) (★ 384) — Controle de computador genérico e multiplataforma via capturas de tela, mouse e teclado.
-- [jfarcand/mirroir-mcp](https://github.com/jfarcand/mirroir-mcp) (★ 251) — Controla um iPhone real via o iPhone Mirroring do macOS: captura de tela, toque, deslize e digitação.
+- [Computer Use](https://github.com/domdomegg/computer-use-mcp) (★ 385) — Controle de computador genérico e multiplataforma via capturas de tela, mouse e teclado.
+- [jfarcand/mirroir-mcp](https://github.com/jfarcand/mirroir-mcp) (★ 262) — Controla um iPhone real via o iPhone Mirroring do macOS: captura de tela, toque, deslize e digitação.
 
 <details><summary>Instalar</summary>
 
@@ -401,15 +401,15 @@ extensions:
 
 ### Policy-gated SSH access
 
-[SSH — policy-gated remote access](https://github.com/tufantunc/ssh-mcp) — `Servidor MCP` · ★ 799 · Licença: MIT · Funciona com: Todos os clientes
+[SSH — policy-gated remote access](https://github.com/tufantunc/ssh-mcp) — `Servidor MCP` · ★ 816 · Licença: MIT · Funciona com: Todos os clientes
 
 SSH auditado e controlado por política para hosts Linux e Windows, com papéis, aprovações e log de auditoria; exige senha ou passphrase de SSH.
 
 **Alternativas:**
 
-- [bvisible/mcp-ssh-manager](https://github.com/bvisible/mcp-ssh-manager) (★ 504) — Gestão de servidores SSH para agentes, com modos de segurança somente leitura e allowlist por servidor.
-- [emisar](https://github.com/andrewdryga/emisar) (★ 337) — Permite que a IA opere servidores sem SSH, escolhendo e aprovando mudanças arriscadas com trilha de auditoria completa.
-- [rhel-lightspeed/linux-mcp-server](https://github.com/rhel-lightspeed/linux-mcp-server) (★ 317) — Administração e diagnóstico de sistemas Linux, somente leitura.
+- [bvisible/mcp-ssh-manager](https://github.com/bvisible/mcp-ssh-manager) (★ 512) — Gestão de servidores SSH para agentes, com modos de segurança somente leitura e allowlist por servidor.
+- [emisar](https://github.com/andrewdryga/emisar) (★ 339) — Permite que a IA opere servidores sem SSH, escolhendo e aprovando mudanças arriscadas com trilha de auditoria completa.
+- [rhel-lightspeed/linux-mcp-server](https://github.com/rhel-lightspeed/linux-mcp-server) (★ 316) — Administração e diagnóstico de sistemas Linux, somente leitura.
 
 <details><summary>Instalar</summary>
 
@@ -640,7 +640,7 @@ extensions:
 
 ### Remote/mobile access to DSH
 
-[saya-ch/dsh-mobile](https://github.com/saya-ch/dsh-mobile) — `Plugin nativo` · ★ 438 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
+[saya-ch/dsh-mobile](https://github.com/saya-ch/dsh-mobile) — `Plugin nativo` · ★ 517 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
 
 Acesse e controle uma sessão do DeepSeek Harness a partir de um app Android ou navegador móvel, via LAN ou conexão remota segura, com pareamento persistente de dispositivo e interface móvel personalizável.
 
@@ -649,7 +649,7 @@ Acesse e controle uma sessão do DeepSeek Harness a partir de um app Android ou 
 - [Blank-not-black/dsh-Remote#plugin](https://github.com/Blank-not-black/dsh-Remote/tree/main/packages/plugin) — Adiciona barra lateral/admin, gateway com token autorrecuperável, transferência /fs até 2GB e troca automática de servidor por latência.
 - [Z-6354/dsh-mobile-hanui](https://github.com/Z-6354/dsh-mobile-hanui) (★ 17) — Adiciona PWA instalável com suporte offline, notificações push e gestos de toque como puxar para atualizar e deslizar da borda para voltar.
 - [zhu1090093659/dsh-web#packages/dsh-remote-web-ui](https://github.com/zhu1090093659/dsh-web/tree/main/packages/dsh-remote-web-ui) — Adiciona pareamento por QR code em canal com token, com sync em tempo real via SSE entre os modos de interface móvel e desktop.
-- [zexadev/dsh-tether](https://github.com/zexadev/dsh-tether) (★ 59) — Adiciona conexão ponto a ponto via iroh, sem necessidade de servidor, com fallback para um relay que só transporta dados cifrados.
+- [zexadev/dsh-tether](https://github.com/zexadev/dsh-tether) (★ 63) — Adiciona conexão ponto a ponto via iroh, sem necessidade de servidor, com fallback para um relay que só transporta dados cifrados.
 
 <details><summary>Instalar</summary>
 
@@ -665,7 +665,7 @@ dsh plugin --profile web add github:saya-ch/dsh-mobile
 
 ### Live iOS device control
 
-[ZSeven-W/dsh-ios](https://github.com/ZSeven-W/dsh-ios) — `Plugin nativo` · ★ 319 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[ZSeven-W/dsh-ios](https://github.com/ZSeven-W/dsh-ios) — `Plugin nativo` · ★ 331 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Coloca um Simulador iOS ativo ou um iPhone conectado por USB dentro da conversa, com 22 ferramentas para inicializar, compilar, controlar a interface por identidade de acessibilidade ou texto via OCR, e hot-reload de previews SwiftUI.
 
@@ -683,13 +683,13 @@ dsh plugin --profile web add github:ZSeven-W/dsh-ios
 
 ### Drive DSH from chat apps
 
-[wenbin-wb/dsh-bridge](https://github.com/wenbin-wb/dsh-bridge) — `Plugin nativo` · ★ 194 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[wenbin-wb/dsh-bridge](https://github.com/wenbin-wb/dsh-bridge) — `Plugin nativo` · ★ 204 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Adiciona acesso remoto e móvel via QR code na LAN e túneis Cloudflare ou personalizados, além de integrações de bot com WeChat, QQ, Feishu e Telegram, com autenticação embutida.
 
 **Alternativas:**
 
-- [zhuiyueya/dsh-im-gateway](https://github.com/zhuiyueya/dsh-im-gateway) (★ 49) — Agrega mais de 20 plataformas de chat, incluindo Discord e WhatsApp, em sessões unificadas com aprovações remotas e lista allowedUserIds.
+- [zhuiyueya/dsh-im-gateway](https://github.com/zhuiyueya/dsh-im-gateway) (★ 52) — Agrega mais de 20 plataformas de chat, incluindo Discord e WhatsApp, em sessões unificadas com aprovações remotas e lista allowedUserIds.
 
 <details><summary>Instalar</summary>
 
@@ -705,7 +705,7 @@ dsh plugin --profile web add github:wenbin-wb/dsh-bridge
 
 ### Live Android device control
 
-[ZSeven-W/dsh-android](https://github.com/ZSeven-W/dsh-android) — `Plugin nativo` · ★ 181 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[ZSeven-W/dsh-android](https://github.com/ZSeven-W/dsh-android) — `Plugin nativo` · ★ 189 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Coloca um emulador Android ativo ou um telefone via USB dentro da conversa, controlado via adb, com 20 ferramentas para streaming, build/run com Gradle, interação por árvore de UI ou OCR, logcat e inspeção de processos/memória.
 
@@ -723,13 +723,13 @@ dsh plugin --profile web add github:ZSeven-W/dsh-android
 
 ### Full remote server administration
 
-[JUANWANG-BUAA/dsh-full-remote](https://github.com/JUANWANG-BUAA/dsh-full-remote) — `Plugin nativo` · ★ 48 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[JUANWANG-BUAA/dsh-full-remote](https://github.com/JUANWANG-BUAA/dsh-full-remote) — `Plugin nativo` · ★ 49 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Oferece acesso total à API do servidor (settings, credentials, host.listDirectory) via proxy reverso protegido por token, com sessões por dispositivo, convites por QR, e aprovação, limite de CIDR, timeout de inatividade e TLS local opcionais.
 
 **Alternativas:**
 
-- [liguobao/deepseek-harness-remote](https://github.com/liguobao/deepseek-harness-remote) (★ 317) — Usa criptografia ponta a ponta (Noise IK + WebRTC/relay) e restringe clientes a pré-visualização somente leitura, sem shell ou área remota.
+- [liguobao/deepseek-harness-remote](https://github.com/liguobao/deepseek-harness-remote) (★ 383) — Usa criptografia ponta a ponta (Noise IK + WebRTC/relay) e restringe clientes a pré-visualização somente leitura, sem shell ou área remota.
 - [Buzzso/dsh-sev](https://github.com/Buzzso/dsh-sev) (★ 137) — Gerencia seu próprio host DSH remoto pela GUI local via túneis SSH que se autorrecuperam e uma lista combinada de sessões locais e remotas.
 - [Linjiangxian0203/dsh-remote-tunnel](https://github.com/Linjiangxian0203/dsh-remote-tunnel) (★ 6) — Executa o dsh web em servidor Linux remoto via systemd (sem root), atrás de túnel SSH autorreconectável, com portas e auditoria.
 
@@ -747,7 +747,7 @@ dsh plugin --profile web add github:JUANWANG-BUAA/dsh-full-remote
 
 ### LAN access for the Web UI
 
-[AcidGr/dsh-web-lan-access](https://github.com/AcidGr/dsh-web-lan-access) — `Plugin nativo` · ★ 38 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[AcidGr/dsh-web-lan-access](https://github.com/AcidGr/dsh-web-lan-access) — `Plugin nativo` · ★ 39 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Injeta um polyfill de crypto.randomUUID para que a Web UI do DSH continue funcionando ao ser aberta por endereços LAN ou Tailscale em HTTP puro, que os navegadores tratam como origens inseguras.
 
