@@ -4,7 +4,7 @@
 
 > One catalog of **MCP servers, Agent Skills and native plugins** for AI coding agents — with the exact install command for *your* client.
 
-![entries](https://img.shields.io/badge/entries-589-blue) ![projects](https://img.shields.io/badge/projects-945-blue) ![clients](https://img.shields.io/badge/clients-13-green)
+![entries](https://img.shields.io/badge/entries-590-blue) ![projects](https://img.shields.io/badge/projects-946-blue) ![clients](https://img.shields.io/badge/clients-13-green)
 
 Most lists are tied to one client. Here every entry says which agents it works with, and install instructions are generated per client from a single canonical spec, so they stay consistent. Near-duplicate plugins are folded into one entry that points to the best option and lists what each alternative adds.
 
@@ -75,7 +75,7 @@ Ready-made kits for common setups — install a whole kit on one client with a s
 
 - [Standards & Specs](catalog/standards.md) — 3 entries
 - [Registries, Lists & Plugin Managers](catalog/meta.md) — 18 entries + 17 alternatives folded in
-- [Skills & Instructions](catalog/skills.md) — 46 entries + 49 alternatives folded in
+- [Skills & Instructions](catalog/skills.md) — 47 entries + 49 alternatives folded in
 - [Code Intelligence](catalog/code-intel.md) — 10 entries
 - [Browser & Web](catalog/browser.md) — 17 entries + 22 alternatives folded in
 - [Docs & Knowledge](catalog/docs.md) — 29 entries + 12 alternatives folded in
@@ -102,7 +102,7 @@ Every import is reproducible (`scripts/import/`) and every entry passes the same
 
 | Source | Entries | How it is selected |
 |---|---|---|
-| Hand-curated | 44 | Official servers, specs and skill packs checked against their READMEs. |
+| Hand-curated | 45 | Official servers, specs and skill packs checked against their READMEs. |
 | [MCP Registry](https://registry.modelcontextprotocol.io) | 198 | Servers from the official registry with ≥200★, whose registry namespace matches the GitHub owner (anti-impersonation); install spec taken from the registry package data. |
 | GitHub discovery | 127 | Topic/keyword search, classified by files actually present (SKILL.md, plugin marketplace, Gemini extension manifest). |
 | [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) | 220 | Top plugins by stars and npm downloads; near-duplicates folded into alternatives. |

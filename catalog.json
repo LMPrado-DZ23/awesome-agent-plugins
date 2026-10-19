@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "count": 589,
+ "count": 590,
  "clients": {
   "claude-code": {
    "name": "Claude Code",
@@ -19499,6 +19499,26 @@
    "origin": {
     "list": "mcp-registry",
     "ref": "io.github.eat-pray-ai/yutu"
+   }
+  },
+  {
+   "id": "yylo-skills",
+   "name": "YYLO Skills",
+   "url": "https://github.com/yylo-dev/yylo-skills",
+   "type": "skill-pack",
+   "category": "skills",
+   "license": "MIT",
+   "tags": [
+    "kanban",
+    "workflow",
+    "tasks"
+   ],
+   "description": {
+    "en": "Eight SKILL.md packs for the YYLO controller workflow (Kanban and Ledger tasks, wiki, workflow, artifacts) that install on Claude Code, Codex and Pi.",
+    "pt": "Oito pacotes SKILL.md para o fluxo de trabalho do controlador YYLO (tarefas Kanban e Ledger, wiki, workflow, artefatos) que se instalam no Claude Code, Codex e Pi."
+   },
+   "skill": {
+    "source": "yylo-dev/yylo-skills"
    }
   },
   {

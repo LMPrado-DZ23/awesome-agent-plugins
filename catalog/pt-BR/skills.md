@@ -50,6 +50,7 @@
 - [Responsible AI-origin analysis rules](#responsible-ai-origin-analysis) — Instrução permanente de projeto para qualquer agente: nunca tratar um padrão isolado como prova de autoria por…
 - [AI Origin Analysis](#ai-origin-analysis) — Skill para avaliar se texto, código ou repositório pode ter sido gerado por IA sem tratar estilo como prova: h…
 - [Clean AI traces from Russian text](#dsh-humanizer-ru-dsh) — Remove marcas de IA de textos em russo: encontra artefatos de copiar-colar de ferramentas de IA populares, rem…
+- [YYLO Skills](#yylo-skills) — Oito pacotes SKILL.md para o fluxo de trabalho do controlador YYLO (tarefas Kanban e Ledger, wiki, workflow, a…
 
 <a id="superpowers"></a>
 
@@ -3068,6 +3069,96 @@ Remove marcas de IA de textos em russo: encontra artefatos de copiar-colar de fe
 
 ```bash
 dsh plugin --profile web add github:Vladimir-Human/humanizer-ru#path:/dsh
+```
+
+</details>
+
+<a id="yylo-skills"></a>
+
+### YYLO Skills
+
+[YYLO Skills](https://github.com/yylo-dev/yylo-skills) — `Agent Skills` · Licença: MIT · Funciona com: Todos os clientes
+
+Oito pacotes SKILL.md para o fluxo de trabalho do controlador YYLO (tarefas Kanban e Ledger, wiki, workflow, artefatos) que se instalam no Claude Code, Codex e Pi.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+npx skills add yylo-dev/yylo-skills -a claude-code -g
+```
+
+**Codex CLI**
+
+```bash
+npx skills add yylo-dev/yylo-skills -a codex -g
+```
+
+**Gemini CLI**
+
+```bash
+npx skills add yylo-dev/yylo-skills -a gemini-cli -g
+```
+
+**Cursor**
+
+```bash
+npx skills add yylo-dev/yylo-skills -a cursor -g
+```
+
+**VS Code (Copilot)**
+
+```bash
+npx skills add yylo-dev/yylo-skills -a github-copilot -g
+```
+
+**OpenCode**
+
+```bash
+npx skills add yylo-dev/yylo-skills -a opencode -g
+```
+
+**Cline**
+
+```bash
+npx skills add yylo-dev/yylo-skills -a cline -g
+```
+
+**Windsurf**
+
+```bash
+npx skills add yylo-dev/yylo-skills -a windsurf -g
+```
+
+**Zed**
+
+```bash
+npx skills add yylo-dev/yylo-skills -a zed -g
+```
+
+**Goose**
+
+```bash
+npx skills add yylo-dev/yylo-skills -a goose -g
+```
+
+**Kiro**
+
+```bash
+npx skills add yylo-dev/yylo-skills -a kiro-cli -g
+```
+
+**Roo Code**
+
+```bash
+npx skills add yylo-dev/yylo-skills -a roo -g
+```
+
+**DeepSeek Harness**
+
+```bash
+npx skills add yylo-dev/yylo-skills -a universal
 ```
 
 </details>
