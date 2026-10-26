@@ -12,9 +12,9 @@
 - [Cloudflare MCP servers](#cloudflare-mcp) — Servidores MCP remotos da Cloudflare (bindings de Workers, builds, renderização de navegador, DNS analytics, a…
 - [Microsoft MCP catalog](#microsoft-mcp) — Catálogo dos servidores MCP oficiais da Microsoft (Azure, Microsoft 365, ferramentas de dev) com links para ca…
 - [Grafana dashboards and data](#mcp-grafana) — Servidor oficial que dá acesso a dashboards, fontes de dados e mais recursos do Grafana.
+- [AWS agent toolkit](#agent-toolkit-for-aws) — Servidores MCP, skills e plugins com suporte oficial da AWS para ajudar agentes de IA a construir e operar na …
 - [Cloudflare agent skills](#cloudflare-skills) — Skills que ensinam agentes de código a construir aplicações e infraestrutura na plataforma da Cloudflare.
 - [Supabase MCP](#supabase-mcp) — Gerencie projetos Supabase pelo agente: tabelas, SQL, migrations, edge functions, logs e docs. Modos somente l…
-- [AWS agent toolkit](#agent-toolkit-for-aws) — Servidores MCP, skills e plugins com suporte oficial da AWS para ajudar agentes de IA a construir e operar na …
 - [FHIR healthcare data platform](#medplum-mcp) — Acessa e gerencia com segurança dados de saúde no formato FHIR armazenados no Medplum.
 - [Terraform & OpenTofu skill](#terraform-skill) — Skill de um mantenedor conhecido de módulos Terraform cobrindo testes, estrutura de módulos, CI/CD e padrões d…
 - [Kubernetes and OpenShift access](#kubernetes-mcp-server) — Servidor para interagir com clusters Kubernetes e OpenShift.
@@ -26,15 +26,15 @@
 - [Amazon SES observability](#sessy-mcp) — Observabilidade somente leitura do Amazon SES: busca eventos, inspeciona bounces e traz estatísticas de entreg…
 - [Query ClickHouse clusters](#mcp-clickhouse) — Servidor oficial para consultar e explorar clusters ClickHouse e o chDB.
 - [Neon serverless Postgres management](#mcp-server-neon) — Servidor oficial para gerenciar projetos Neon e bancos Postgres Lakebase; exige token de Authorization.
-- [Coolify infrastructure management](#coolify-mcp) — 45 ferramentas para gerenciar a infraestrutura Coolify, diagnósticos e busca na documentação; exige COOLIFY_AC…
 - [Proxmox VE management](#proxmoxmcp-plus) — Gerencia VMs, LXCs, snapshots, backups, storage e operações de cluster no Proxmox VE.
+- [Coolify infrastructure management](#coolify-mcp) — 45 ferramentas para gerenciar a infraestrutura Coolify, diagnósticos e busca na documentação; exige COOLIFY_AC…
 - [MotherDuck SQL analytics](#mcp-server-motherduck) — Analytics em SQL e engenharia de dados para assistentes de IA e IDEs via MotherDuck; exige MOTHERDUCK_TOKEN.
 - [Prometheus metrics and PromQL](#prometheus-mcp-server) — Dá acesso a métricas do Prometheus e execução de consultas PromQL para assistentes de IA.
 - [AI-driven Kubernetes deployment](#dot-ai-mcp) — Plataforma de desenvolvimento com IA para deployments no Kubernetes e automação inteligente.
 - [Elasticsearch queries](#elasticsearch-mcp-server) — Interage com o Elasticsearch para busca e analytics; exige ELASTICSEARCH_API_KEY ou senha.
 - [Snowflake data platform](#snowflake-labs-mcp) — Servidor para o Snowflake, da Snowflake Labs.
-- [VictoriaMetrics integration](#mcp-victoriametrics) — Integra com a API e a documentação do VictoriaMetrics; exige um bearer token do VictoriaMetrics.
 - [Enterprise PostgreSQL with hybrid search](#pgedge-postgres-mcp) — Servidor PostgreSQL empresarial com consultas em linguagem natural, busca híbrida (pgvector e BM25) e uma inte…
+- [VictoriaMetrics integration](#mcp-victoriametrics) — Integra com a API e a documentação do VictoriaMetrics; exige um bearer token do VictoriaMetrics.
 - [Azure services access](#mcp-azure-mcp-server) — Servidor oficial do Azure conectando agentes de IA aos serviços do Azure.
 - [Backend platform management](#butterbase-oss-mcp-server) — Gerencia uma plataforma de backend: schemas, auth, funções, storage, RAG e deploys; exige BUTTERBASE_API_KEY.
 - [Firecracker microVM sandboxes](#superserve-mcp) — Cria, executa em e gerencia sandboxes microVM Firecracker; exige SUPERSERVE_API_KEY.
@@ -211,7 +211,7 @@ extensions:
 
 ### Query databases via saved connections
 
-[t8y2/dbx](https://github.com/t8y2/dbx) — `Servidor MCP` · ★ 27k · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[t8y2/dbx](https://github.com/t8y2/dbx) — `Servidor MCP` · ★ 28k · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Consulta bancos de dados a partir de agentes de IA usando conexões já configuradas no DBX.
 
@@ -574,7 +574,7 @@ extensions:
 
 ### Google Cloud agent development CLI
 
-[google/agents-cli](https://github.com/google/agents-cli) — `Plugin nativo` · ★ 6.1k · Licença: Apache-2.0 · Funciona com: Gemini CLI apenas
+[google/agents-cli](https://github.com/google/agents-cli) — `Plugin nativo` · ★ 6.2k · Licença: Apache-2.0 · Funciona com: Gemini CLI apenas
 
 CLI e skills que transformam qualquer assistente de código em especialista em criar, avaliar e implantar agentes de IA no Agent Development Kit do Google Cloud.
 
@@ -1055,11 +1055,101 @@ extensions:
 
 </details>
 
+<a id="agent-toolkit-for-aws"></a>
+
+### AWS agent toolkit
+
+[aws/agent-toolkit-for-aws](https://github.com/aws/agent-toolkit-for-aws) — `Agent Skills` · ★ 3.3k · Licença: Apache-2.0 · Funciona com: Todos os clientes
+
+Servidores MCP, skills e plugins com suporte oficial da AWS para ajudar agentes de IA a construir e operar na AWS.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+npx skills add aws/agent-toolkit-for-aws -a claude-code -g
+```
+
+**Codex CLI**
+
+```bash
+npx skills add aws/agent-toolkit-for-aws -a codex -g
+```
+
+**Gemini CLI**
+
+```bash
+npx skills add aws/agent-toolkit-for-aws -a gemini-cli -g
+```
+
+**Cursor**
+
+```bash
+npx skills add aws/agent-toolkit-for-aws -a cursor -g
+```
+
+**VS Code (Copilot)**
+
+```bash
+npx skills add aws/agent-toolkit-for-aws -a github-copilot -g
+```
+
+**OpenCode**
+
+```bash
+npx skills add aws/agent-toolkit-for-aws -a opencode -g
+```
+
+**Cline**
+
+```bash
+npx skills add aws/agent-toolkit-for-aws -a cline -g
+```
+
+**Windsurf**
+
+```bash
+npx skills add aws/agent-toolkit-for-aws -a windsurf -g
+```
+
+**Zed**
+
+```bash
+npx skills add aws/agent-toolkit-for-aws -a zed -g
+```
+
+**Goose**
+
+```bash
+npx skills add aws/agent-toolkit-for-aws -a goose -g
+```
+
+**Kiro**
+
+```bash
+npx skills add aws/agent-toolkit-for-aws -a kiro-cli -g
+```
+
+**Roo Code**
+
+```bash
+npx skills add aws/agent-toolkit-for-aws -a roo -g
+```
+
+**DeepSeek Harness**
+
+```bash
+npx skills add aws/agent-toolkit-for-aws -a universal
+```
+
+</details>
+
 <a id="cloudflare-skills"></a>
 
 ### Cloudflare agent skills
 
-[cloudflare/skills](https://github.com/cloudflare/skills) — `Agent Skills` · ★ 3.1k · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[cloudflare/skills](https://github.com/cloudflare/skills) — `Agent Skills` · ★ 3.2k · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Skills que ensinam agentes de código a construir aplicações e infraestrutura na plataforma da Cloudflare.
 
@@ -1303,96 +1393,6 @@ extensions:
         serverName: supabase
         transport: streamable-http
         url: https://mcp.supabase.com/mcp
-```
-
-</details>
-
-<a id="agent-toolkit-for-aws"></a>
-
-### AWS agent toolkit
-
-[aws/agent-toolkit-for-aws](https://github.com/aws/agent-toolkit-for-aws) — `Agent Skills` · ★ 2.9k · Licença: Apache-2.0 · Funciona com: Todos os clientes
-
-Servidores MCP, skills e plugins com suporte oficial da AWS para ajudar agentes de IA a construir e operar na AWS.
-
-<details><summary>Instalar</summary>
-
-**Claude Code**
-
-```bash
-npx skills add aws/agent-toolkit-for-aws -a claude-code -g
-```
-
-**Codex CLI**
-
-```bash
-npx skills add aws/agent-toolkit-for-aws -a codex -g
-```
-
-**Gemini CLI**
-
-```bash
-npx skills add aws/agent-toolkit-for-aws -a gemini-cli -g
-```
-
-**Cursor**
-
-```bash
-npx skills add aws/agent-toolkit-for-aws -a cursor -g
-```
-
-**VS Code (Copilot)**
-
-```bash
-npx skills add aws/agent-toolkit-for-aws -a github-copilot -g
-```
-
-**OpenCode**
-
-```bash
-npx skills add aws/agent-toolkit-for-aws -a opencode -g
-```
-
-**Cline**
-
-```bash
-npx skills add aws/agent-toolkit-for-aws -a cline -g
-```
-
-**Windsurf**
-
-```bash
-npx skills add aws/agent-toolkit-for-aws -a windsurf -g
-```
-
-**Zed**
-
-```bash
-npx skills add aws/agent-toolkit-for-aws -a zed -g
-```
-
-**Goose**
-
-```bash
-npx skills add aws/agent-toolkit-for-aws -a goose -g
-```
-
-**Kiro**
-
-```bash
-npx skills add aws/agent-toolkit-for-aws -a kiro-cli -g
-```
-
-**Roo Code**
-
-```bash
-npx skills add aws/agent-toolkit-for-aws -a roo -g
-```
-
-**DeepSeek Harness**
-
-```bash
-npx skills add aws/agent-toolkit-for-aws -a universal
 ```
 
 </details>
@@ -2414,7 +2414,7 @@ extensions:
 
 ### MongoDB database access
 
-[mongodb-js/mongodb-mcp-server](https://github.com/mongodb-js/mongodb-mcp-server) — `Servidor MCP` · ★ 1.1k · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[mongodb-js/mongodb-mcp-server](https://github.com/mongodb-js/mongodb-mcp-server) — `Servidor MCP` · ★ 1.2k · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Servidor oficial do MongoDB para operações de banco de dados a partir de agentes de IA.
 
@@ -2861,7 +2861,7 @@ extensions:
 
 ### Amazon SES observability
 
-[Sessy — Amazon SES observability](https://github.com/marckohlbrugge/sessy) — `Servidor MCP` · ★ 941 · Licença: ver repo · Funciona com: Todos os clientes
+[Sessy — Amazon SES observability](https://github.com/marckohlbrugge/sessy) — `Servidor MCP` · ★ 944 · Licença: ver repo · Funciona com: Todos os clientes
 
 Observabilidade somente leitura do Amazon SES: busca eventos, inspeciona bounces e traz estatísticas de entrega; exige token de Authorization.
 
@@ -3049,7 +3049,7 @@ extensions:
 
 ### Query ClickHouse clusters
 
-[ClickHouse](https://github.com/ClickHouse/mcp-clickhouse) — `Servidor MCP` · ★ 889 · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[ClickHouse](https://github.com/ClickHouse/mcp-clickhouse) — `Servidor MCP` · ★ 893 · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Servidor oficial para consultar e explorar clusters ClickHouse e o chDB.
 
@@ -3274,7 +3274,7 @@ extensions:
 
 ### Neon serverless Postgres management
 
-[Neon](https://github.com/neondatabase/mcp-server-neon) — `Servidor MCP` · ★ 654 · Licença: MIT · Funciona com: Todos os clientes
+[Neon](https://github.com/neondatabase/mcp-server-neon) — `Servidor MCP` · ★ 655 · Licença: MIT · Funciona com: Todos os clientes
 
 Servidor oficial para gerenciar projetos Neon e bancos Postgres Lakebase; exige token de Authorization.
 
@@ -3458,226 +3458,11 @@ extensions:
 
 </details>
 
-<a id="coolify-mcp"></a>
-
-### Coolify infrastructure management
-
-[StuMason/coolify-mcp](https://github.com/StuMason/coolify-mcp) — `Servidor MCP` · ★ 614 · Licença: MIT · Funciona com: Todos os clientes
-
-45 ferramentas para gerenciar a infraestrutura Coolify, diagnósticos e busca na documentação; exige COOLIFY_ACCESS_TOKEN.
-
-<details><summary>Instalar</summary>
-
-**Claude Code**
-
-```bash
-claude mcp add --transport stdio coolify --env COOLIFY_ACCESS_TOKEN='<COOLIFY_ACCESS_TOKEN>' -- npx -y @masonator/coolify-mcp
-```
-
-**Codex CLI**
-
-```bash
-codex mcp add coolify --env COOLIFY_ACCESS_TOKEN='<COOLIFY_ACCESS_TOKEN>' -- npx -y @masonator/coolify-mcp
-```
-
-**Gemini CLI**
-
-```bash
-gemini mcp add -e COOLIFY_ACCESS_TOKEN='<COOLIFY_ACCESS_TOKEN>' coolify npx -y @masonator/coolify-mcp
-```
-
-**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "coolify": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@masonator/coolify-mcp"
-      ],
-      "env": {
-        "COOLIFY_ACCESS_TOKEN": "<COOLIFY_ACCESS_TOKEN>"
-      }
-    }
-  }
-}
-```
-
-**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
-
-```json
-{
-  "servers": {
-    "coolify": {
-      "type": "stdio",
-      "command": "npx",
-      "args": [
-        "-y",
-        "@masonator/coolify-mcp"
-      ],
-      "env": {
-        "COOLIFY_ACCESS_TOKEN": "<COOLIFY_ACCESS_TOKEN>"
-      }
-    }
-  }
-}
-```
-
-**OpenCode** — Arquivo: `opencode.json`
-
-```json
-{
-  "$schema": "https://opencode.ai/config.json",
-  "mcp": {
-    "coolify": {
-      "type": "local",
-      "command": [
-        "npx",
-        "-y",
-        "@masonator/coolify-mcp"
-      ],
-      "enabled": true,
-      "environment": {
-        "COOLIFY_ACCESS_TOKEN": "<COOLIFY_ACCESS_TOKEN>"
-      }
-    }
-  }
-}
-```
-
-**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
-
-```json
-{
-  "mcpServers": {
-    "coolify": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@masonator/coolify-mcp"
-      ],
-      "env": {
-        "COOLIFY_ACCESS_TOKEN": "<COOLIFY_ACCESS_TOKEN>"
-      }
-    }
-  }
-}
-```
-
-**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
-
-```json
-{
-  "mcpServers": {
-    "coolify": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@masonator/coolify-mcp"
-      ],
-      "env": {
-        "COOLIFY_ACCESS_TOKEN": "<COOLIFY_ACCESS_TOKEN>"
-      }
-    }
-  }
-}
-```
-
-**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
-
-```json
-{
-  "context_servers": {
-    "coolify": {
-      "source": "custom",
-      "command": "npx",
-      "args": [
-        "-y",
-        "@masonator/coolify-mcp"
-      ],
-      "env": {
-        "COOLIFY_ACCESS_TOKEN": "<COOLIFY_ACCESS_TOKEN>"
-      }
-    }
-  }
-}
-```
-
-**Goose** — Arquivo: `~/.config/goose/config.yaml`
-
-```yaml
-extensions:
-  coolify:
-    type: stdio
-    cmd: npx
-    args: ["-y","@masonator/coolify-mcp"]
-    envs:
-      COOLIFY_ACCESS_TOKEN: "<COOLIFY_ACCESS_TOKEN>"
-    enabled: true
-```
-
-**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "coolify": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@masonator/coolify-mcp"
-      ],
-      "env": {
-        "COOLIFY_ACCESS_TOKEN": "<COOLIFY_ACCESS_TOKEN>"
-      }
-    }
-  }
-}
-```
-
-**Roo Code** — Arquivo: `.roo/mcp.json`
-
-```json
-{
-  "mcpServers": {
-    "coolify": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@masonator/coolify-mcp"
-      ],
-      "env": {
-        "COOLIFY_ACCESS_TOKEN": "<COOLIFY_ACCESS_TOKEN>"
-      }
-    }
-  }
-}
-```
-
-**DeepSeek Harness** — Arquivo: `coolify.cordis.yml  →  dsh web --patch ./coolify.cordis.yml`
-
-```yaml
-- insert:
-    - id: mcp-coolify
-      name: '@deepseek-ai/dsh-mcp-client'
-      config:
-        serverName: coolify
-        transport: stdio
-        command: npx
-        args: ["-y","@masonator/coolify-mcp"]
-        env: {"COOLIFY_ACCESS_TOKEN":"<COOLIFY_ACCESS_TOKEN>"}
-        cwd: !!js process.cwd()
-```
-
-</details>
-
 <a id="proxmoxmcp-plus"></a>
 
 ### Proxmox VE management
 
-[ProxmoxMCP-Plus](https://github.com/RekklesNA/ProxmoxMCP-Plus) — `Servidor MCP` · ★ 601 · Licença: MIT · Funciona com: Todos os clientes
+[ProxmoxMCP-Plus](https://github.com/RekklesNA/ProxmoxMCP-Plus) — `Servidor MCP` · ★ 620 · Licença: MIT · Funciona com: Todos os clientes
 
 Gerencia VMs, LXCs, snapshots, backups, storage e operações de cluster no Proxmox VE.
 
@@ -3907,11 +3692,226 @@ extensions:
 
 </details>
 
+<a id="coolify-mcp"></a>
+
+### Coolify infrastructure management
+
+[StuMason/coolify-mcp](https://github.com/StuMason/coolify-mcp) — `Servidor MCP` · ★ 616 · Licença: MIT · Funciona com: Todos os clientes
+
+45 ferramentas para gerenciar a infraestrutura Coolify, diagnósticos e busca na documentação; exige COOLIFY_ACCESS_TOKEN.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio coolify --env COOLIFY_ACCESS_TOKEN='<COOLIFY_ACCESS_TOKEN>' -- npx -y @masonator/coolify-mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add coolify --env COOLIFY_ACCESS_TOKEN='<COOLIFY_ACCESS_TOKEN>' -- npx -y @masonator/coolify-mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add -e COOLIFY_ACCESS_TOKEN='<COOLIFY_ACCESS_TOKEN>' coolify npx -y @masonator/coolify-mcp
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "coolify": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@masonator/coolify-mcp"
+      ],
+      "env": {
+        "COOLIFY_ACCESS_TOKEN": "<COOLIFY_ACCESS_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "coolify": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@masonator/coolify-mcp"
+      ],
+      "env": {
+        "COOLIFY_ACCESS_TOKEN": "<COOLIFY_ACCESS_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "coolify": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@masonator/coolify-mcp"
+      ],
+      "enabled": true,
+      "environment": {
+        "COOLIFY_ACCESS_TOKEN": "<COOLIFY_ACCESS_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "coolify": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@masonator/coolify-mcp"
+      ],
+      "env": {
+        "COOLIFY_ACCESS_TOKEN": "<COOLIFY_ACCESS_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "coolify": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@masonator/coolify-mcp"
+      ],
+      "env": {
+        "COOLIFY_ACCESS_TOKEN": "<COOLIFY_ACCESS_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "coolify": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@masonator/coolify-mcp"
+      ],
+      "env": {
+        "COOLIFY_ACCESS_TOKEN": "<COOLIFY_ACCESS_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  coolify:
+    type: stdio
+    cmd: npx
+    args: ["-y","@masonator/coolify-mcp"]
+    envs:
+      COOLIFY_ACCESS_TOKEN: "<COOLIFY_ACCESS_TOKEN>"
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "coolify": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@masonator/coolify-mcp"
+      ],
+      "env": {
+        "COOLIFY_ACCESS_TOKEN": "<COOLIFY_ACCESS_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "coolify": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@masonator/coolify-mcp"
+      ],
+      "env": {
+        "COOLIFY_ACCESS_TOKEN": "<COOLIFY_ACCESS_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `coolify.cordis.yml  →  dsh web --patch ./coolify.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-coolify
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: coolify
+        transport: stdio
+        command: npx
+        args: ["-y","@masonator/coolify-mcp"]
+        env: {"COOLIFY_ACCESS_TOKEN":"<COOLIFY_ACCESS_TOKEN>"}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
 <a id="mcp-server-motherduck"></a>
 
 ### MotherDuck SQL analytics
 
-[motherduckdb/mcp-server-motherduck](https://github.com/motherduckdb/mcp-server-motherduck) — `Servidor MCP` · ★ 532 · Licença: MIT · Funciona com: Todos os clientes
+[motherduckdb/mcp-server-motherduck](https://github.com/motherduckdb/mcp-server-motherduck) — `Servidor MCP` · ★ 534 · Licença: MIT · Funciona com: Todos os clientes
 
 Analytics em SQL e engenharia de dados para assistentes de IA e IDEs via MotherDuck; exige MOTHERDUCK_TOKEN.
 
@@ -4442,7 +4442,7 @@ extensions:
 
 ### AI-driven Kubernetes deployment
 
-[vfarcic/dot-ai](https://github.com/vfarcic/dot-ai) — `Servidor MCP` · ★ 337 · Licença: MIT · Funciona com: Todos os clientes
+[vfarcic/dot-ai](https://github.com/vfarcic/dot-ai) — `Servidor MCP` · ★ 338 · Licença: MIT · Funciona com: Todos os clientes
 
 Plataforma de desenvolvimento com IA para deployments no Kubernetes e automação inteligente.
 
@@ -4631,7 +4631,7 @@ extensions:
 
 ### Elasticsearch queries
 
-[cr7258/elasticsearch-mcp-server](https://github.com/cr7258/elasticsearch-mcp-server) — `Servidor MCP` · ★ 313 · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[cr7258/elasticsearch-mcp-server](https://github.com/cr7258/elasticsearch-mcp-server) — `Servidor MCP` · ★ 314 · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Interage com o Elasticsearch para busca e analytics; exige ELASTICSEARCH_API_KEY ou senha.
 
@@ -4847,7 +4847,7 @@ extensions:
 
 ### Snowflake data platform
 
-[OSS Snowflake MCP Server](https://github.com/Snowflake-Labs/mcp) — `Servidor MCP` · ★ 300 · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[OSS Snowflake MCP Server](https://github.com/Snowflake-Labs/mcp) — `Servidor MCP` · ★ 303 · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Servidor para o Snowflake, da Snowflake Labs.
 
@@ -5059,11 +5059,216 @@ extensions:
 
 </details>
 
+<a id="pgedge-postgres-mcp"></a>
+
+### Enterprise PostgreSQL with hybrid search
+
+[pgEdge/pgedge-postgres-mcp](https://github.com/pgEdge/pgedge-postgres-mcp) — `Servidor MCP` · ★ 241 · Licença: PostgreSQL · Funciona com: Todos os clientes
+
+Servidor PostgreSQL empresarial com consultas em linguagem natural, busca híbrida (pgvector e BM25) e uma interface web.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio postgres-mcp -- docker run -i --rm ghcr.io/pgedge/postgres-mcp:latest
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add postgres-mcp -- docker run -i --rm ghcr.io/pgedge/postgres-mcp:latest
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add postgres-mcp docker run -i --rm ghcr.io/pgedge/postgres-mcp:latest
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "postgres-mcp": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/pgedge/postgres-mcp:latest"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "postgres-mcp": {
+      "type": "stdio",
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/pgedge/postgres-mcp:latest"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "postgres-mcp": {
+      "type": "local",
+      "command": [
+        "docker",
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/pgedge/postgres-mcp:latest"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "postgres-mcp": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/pgedge/postgres-mcp:latest"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "postgres-mcp": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/pgedge/postgres-mcp:latest"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "postgres-mcp": {
+      "source": "custom",
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/pgedge/postgres-mcp:latest"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  postgres-mcp:
+    type: stdio
+    cmd: docker
+    args: ["run","-i","--rm","ghcr.io/pgedge/postgres-mcp:latest"]
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "postgres-mcp": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/pgedge/postgres-mcp:latest"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "postgres-mcp": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/pgedge/postgres-mcp:latest"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `postgres-mcp.cordis.yml  →  dsh web --patch ./postgres-mcp.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-postgres-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: postgres-mcp
+        transport: stdio
+        command: docker
+        args: ["run","-i","--rm","ghcr.io/pgedge/postgres-mcp:latest"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
 <a id="mcp-victoriametrics"></a>
 
 ### VictoriaMetrics integration
 
-[VictoriaMetrics/mcp-victoriametrics](https://github.com/VictoriaMetrics/mcp-victoriametrics) — `Servidor MCP` · ★ 238 · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[VictoriaMetrics/mcp-victoriametrics](https://github.com/VictoriaMetrics/mcp-victoriametrics) — `Servidor MCP` · ★ 240 · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Integra com a API e a documentação do VictoriaMetrics; exige um bearer token do VictoriaMetrics.
 
@@ -5376,211 +5581,6 @@ extensions:
         command: docker
         args: ["run","-i","--rm","-e","VM_INSTANCE_ENTRYPOINT","-e","VM_INSTANCE_TYPE","-e","VM_INSTANCE_BEARER_TOKEN","-e","VMC_API_KEY","ghcr.io/victoriametrics/mcp-victoriametrics:1.120.1"]
         env: {"VM_INSTANCE_ENTRYPOINT":"<VM_INSTANCE_ENTRYPOINT>","VM_INSTANCE_TYPE":"<VM_INSTANCE_TYPE>","VM_INSTANCE_BEARER_TOKEN":"<VM_INSTANCE_BEARER_TOKEN>","VMC_API_KEY":"<VMC_API_KEY>"}
-        cwd: !!js process.cwd()
-```
-
-</details>
-
-<a id="pgedge-postgres-mcp"></a>
-
-### Enterprise PostgreSQL with hybrid search
-
-[pgEdge/pgedge-postgres-mcp](https://github.com/pgEdge/pgedge-postgres-mcp) — `Servidor MCP` · ★ 237 · Licença: PostgreSQL · Funciona com: Todos os clientes
-
-Servidor PostgreSQL empresarial com consultas em linguagem natural, busca híbrida (pgvector e BM25) e uma interface web.
-
-<details><summary>Instalar</summary>
-
-**Claude Code**
-
-```bash
-claude mcp add --transport stdio postgres-mcp -- docker run -i --rm ghcr.io/pgedge/postgres-mcp:latest
-```
-
-**Codex CLI**
-
-```bash
-codex mcp add postgres-mcp -- docker run -i --rm ghcr.io/pgedge/postgres-mcp:latest
-```
-
-**Gemini CLI**
-
-```bash
-gemini mcp add postgres-mcp docker run -i --rm ghcr.io/pgedge/postgres-mcp:latest
-```
-
-**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "postgres-mcp": {
-      "command": "docker",
-      "args": [
-        "run",
-        "-i",
-        "--rm",
-        "ghcr.io/pgedge/postgres-mcp:latest"
-      ]
-    }
-  }
-}
-```
-
-**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
-
-```json
-{
-  "servers": {
-    "postgres-mcp": {
-      "type": "stdio",
-      "command": "docker",
-      "args": [
-        "run",
-        "-i",
-        "--rm",
-        "ghcr.io/pgedge/postgres-mcp:latest"
-      ]
-    }
-  }
-}
-```
-
-**OpenCode** — Arquivo: `opencode.json`
-
-```json
-{
-  "$schema": "https://opencode.ai/config.json",
-  "mcp": {
-    "postgres-mcp": {
-      "type": "local",
-      "command": [
-        "docker",
-        "run",
-        "-i",
-        "--rm",
-        "ghcr.io/pgedge/postgres-mcp:latest"
-      ],
-      "enabled": true
-    }
-  }
-}
-```
-
-**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
-
-```json
-{
-  "mcpServers": {
-    "postgres-mcp": {
-      "command": "docker",
-      "args": [
-        "run",
-        "-i",
-        "--rm",
-        "ghcr.io/pgedge/postgres-mcp:latest"
-      ]
-    }
-  }
-}
-```
-
-**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
-
-```json
-{
-  "mcpServers": {
-    "postgres-mcp": {
-      "command": "docker",
-      "args": [
-        "run",
-        "-i",
-        "--rm",
-        "ghcr.io/pgedge/postgres-mcp:latest"
-      ]
-    }
-  }
-}
-```
-
-**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
-
-```json
-{
-  "context_servers": {
-    "postgres-mcp": {
-      "source": "custom",
-      "command": "docker",
-      "args": [
-        "run",
-        "-i",
-        "--rm",
-        "ghcr.io/pgedge/postgres-mcp:latest"
-      ]
-    }
-  }
-}
-```
-
-**Goose** — Arquivo: `~/.config/goose/config.yaml`
-
-```yaml
-extensions:
-  postgres-mcp:
-    type: stdio
-    cmd: docker
-    args: ["run","-i","--rm","ghcr.io/pgedge/postgres-mcp:latest"]
-    enabled: true
-```
-
-**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "postgres-mcp": {
-      "command": "docker",
-      "args": [
-        "run",
-        "-i",
-        "--rm",
-        "ghcr.io/pgedge/postgres-mcp:latest"
-      ]
-    }
-  }
-}
-```
-
-**Roo Code** — Arquivo: `.roo/mcp.json`
-
-```json
-{
-  "mcpServers": {
-    "postgres-mcp": {
-      "command": "docker",
-      "args": [
-        "run",
-        "-i",
-        "--rm",
-        "ghcr.io/pgedge/postgres-mcp:latest"
-      ]
-    }
-  }
-}
-```
-
-**DeepSeek Harness** — Arquivo: `postgres-mcp.cordis.yml  →  dsh web --patch ./postgres-mcp.cordis.yml`
-
-```yaml
-- insert:
-    - id: mcp-postgres-mcp
-      name: '@deepseek-ai/dsh-mcp-client'
-      config:
-        serverName: postgres-mcp
-        transport: stdio
-        command: docker
-        args: ["run","-i","--rm","ghcr.io/pgedge/postgres-mcp:latest"]
-        env: {}
         cwd: !!js process.cwd()
 ```
 

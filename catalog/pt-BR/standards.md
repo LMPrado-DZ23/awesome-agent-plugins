@@ -12,7 +12,7 @@
 
 ### Agent Skills
 
-[Agent Skills](https://github.com/agentskills/agentskills) — `Padrão / especificação` · ★ 26k · Licença: Apache-2.0 · Funciona com: —
+[Agent Skills](https://github.com/agentskills/agentskills) — `Padrão / especificação` · ★ 27k · Licença: Apache-2.0 · Funciona com: —
 
 Especificação das Agent Skills: uma pasta com SKILL.md (nome, descrição, instruções) e scripts/recursos opcionais que o agente carrega sob demanda.
 

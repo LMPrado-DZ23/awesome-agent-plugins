@@ -4,8 +4,8 @@
 
 > This page is generated from `data/entries/` — do not edit by hand.
 
-- [Control real Android and iOS devices](#mobilerun-mcp) — Controls real Android and iOS devices with LLM agents: tap, swipe, type, and automate flows; needs an Authoriz…
 - [Computer-use automation for Windows](#windows-mcp) — A server for computer-use style automation on Windows OS.
+- [Control real Android and iOS devices](#mobilerun-mcp) — Controls real Android and iOS devices with LLM agents: tap, swipe, type, and automate flows; needs an Authoriz…
 - [Policy-gated SSH access](#ssh-mcp) — Policy-gated, audited SSH for Linux and Windows hosts, with roles, approvals, and an audit log; needs SSH pass…
 - [Remote/mobile access to DSH](#dsh-dsh-mobile) — Access and control a DeepSeek Harness session from an Android app or mobile browser, over LAN or a secure remo…
 - [Live iOS device control](#dsh-dsh-ios) — Puts a live iOS Simulator or USB-connected iPhone inside the conversation, with 22 agent tools to boot, build,…
@@ -16,18 +16,205 @@
 - [Session events as MCP progress](#dsh-dsh-streaming-mcp-bridge) — Streams live DeepSeek Harness session events out as MCP progress notifications, with an ACP adapter for bridgi…
 - [SSH host management panel](#dsh-dsh-web-ui-packages-dsh-ssh) — Adds an SSH operations panel to DSH: a web terminal, SFTP file transfer with progress, local port forwarding, …
 
+<a id="windows-mcp"></a>
+
+### Computer-use automation for Windows
+
+[CursorTouch/Windows-MCP](https://github.com/CursorTouch/Windows-MCP) — `MCP server` · ★ 10k · License: MIT · Works with: All clients
+
+A server for computer-use style automation on Windows OS.
+
+**Alternatives:**
+
+- [Ui.Vision MCP](https://github.com/A9T9/RPA/tree/main/mcp) — Browser and desktop RPA automation with OCR, image recognition, and real mouse and keyboard input.
+- [Computer Use](https://github.com/domdomegg/computer-use-mcp) (★ 387) — Generic, cross-platform computer control via screenshots, mouse, and keyboard.
+- [jfarcand/mirroir-mcp](https://github.com/jfarcand/mirroir-mcp) (★ 268) — Controls a real iPhone through macOS iPhone Mirroring: screenshot, tap, swipe, and type.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio windows-mcp -- uvx windows-mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add windows-mcp -- uvx windows-mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add windows-mcp uvx windows-mcp
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "windows-mcp": {
+      "command": "uvx",
+      "args": [
+        "windows-mcp"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "windows-mcp": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "windows-mcp"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "windows-mcp": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "windows-mcp"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "windows-mcp": {
+      "command": "uvx",
+      "args": [
+        "windows-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "windows-mcp": {
+      "command": "uvx",
+      "args": [
+        "windows-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "windows-mcp": {
+      "source": "custom",
+      "command": "uvx",
+      "args": [
+        "windows-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  windows-mcp:
+    type: stdio
+    cmd: uvx
+    args: ["windows-mcp"]
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "windows-mcp": {
+      "command": "uvx",
+      "args": [
+        "windows-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "windows-mcp": {
+      "command": "uvx",
+      "args": [
+        "windows-mcp"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `windows-mcp.cordis.yml  →  dsh web --patch ./windows-mcp.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-windows-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: windows-mcp
+        transport: stdio
+        command: uvx
+        args: ["windows-mcp"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
 <a id="mobilerun-mcp"></a>
 
 ### Control real Android and iOS devices
 
-[droidrun/mobilerun](https://github.com/droidrun/mobilerun) — `MCP server` · ★ 9.7k · License: MIT · Works with: All clients
+[droidrun/mobilerun](https://github.com/droidrun/mobilerun) — `MCP server` · ★ 9.8k · License: MIT · Works with: All clients
 
 Controls real Android and iOS devices with LLM agents: tap, swipe, type, and automate flows; needs an Authorization token.
 
 **Alternatives:**
 
-- [mobile-next/mobile-mcp](https://github.com/mobile-next/mobile-mcp) (★ 9.8k) — Server for iOS and Android mobile development, automation, and testing.
-- [agent-device](https://github.com/callstack/agent-device) (★ 5.1k) — Verifies, controls, and debugs real iOS, Android, TV, and desktop apps.
+- [mobile-next/mobile-mcp](https://github.com/mobile-next/mobile-mcp) (★ 10k) — Server for iOS and Android mobile development, automation, and testing.
+- [agent-device](https://github.com/callstack/agent-device) (★ 5.2k) — Verifies, controls, and debugs real iOS, Android, TV, and desktop apps.
 - [Argent](https://github.com/software-mansion/argent) (★ 3.1k) — Drives iOS simulators, Android emulators, TVs, and Electron/web apps from a coding agent.
 
 <details><summary>Install</summary>
@@ -210,206 +397,19 @@ extensions:
 
 </details>
 
-<a id="windows-mcp"></a>
-
-### Computer-use automation for Windows
-
-[CursorTouch/Windows-MCP](https://github.com/CursorTouch/Windows-MCP) — `MCP server` · ★ 9.5k · License: MIT · Works with: All clients
-
-A server for computer-use style automation on Windows OS.
-
-**Alternatives:**
-
-- [Ui.Vision MCP](https://github.com/A9T9/RPA/tree/main/mcp) — Browser and desktop RPA automation with OCR, image recognition, and real mouse and keyboard input.
-- [Computer Use](https://github.com/domdomegg/computer-use-mcp) (★ 385) — Generic, cross-platform computer control via screenshots, mouse, and keyboard.
-- [jfarcand/mirroir-mcp](https://github.com/jfarcand/mirroir-mcp) (★ 262) — Controls a real iPhone through macOS iPhone Mirroring: screenshot, tap, swipe, and type.
-
-<details><summary>Install</summary>
-
-**Claude Code**
-
-```bash
-claude mcp add --transport stdio windows-mcp -- uvx windows-mcp
-```
-
-**Codex CLI**
-
-```bash
-codex mcp add windows-mcp -- uvx windows-mcp
-```
-
-**Gemini CLI**
-
-```bash
-gemini mcp add windows-mcp uvx windows-mcp
-```
-
-**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "windows-mcp": {
-      "command": "uvx",
-      "args": [
-        "windows-mcp"
-      ]
-    }
-  }
-}
-```
-
-**VS Code (Copilot)** — File: `.vscode/mcp.json`
-
-```json
-{
-  "servers": {
-    "windows-mcp": {
-      "type": "stdio",
-      "command": "uvx",
-      "args": [
-        "windows-mcp"
-      ]
-    }
-  }
-}
-```
-
-**OpenCode** — File: `opencode.json`
-
-```json
-{
-  "$schema": "https://opencode.ai/config.json",
-  "mcp": {
-    "windows-mcp": {
-      "type": "local",
-      "command": [
-        "uvx",
-        "windows-mcp"
-      ],
-      "enabled": true
-    }
-  }
-}
-```
-
-**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
-
-```json
-{
-  "mcpServers": {
-    "windows-mcp": {
-      "command": "uvx",
-      "args": [
-        "windows-mcp"
-      ]
-    }
-  }
-}
-```
-
-**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
-
-```json
-{
-  "mcpServers": {
-    "windows-mcp": {
-      "command": "uvx",
-      "args": [
-        "windows-mcp"
-      ]
-    }
-  }
-}
-```
-
-**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
-
-```json
-{
-  "context_servers": {
-    "windows-mcp": {
-      "source": "custom",
-      "command": "uvx",
-      "args": [
-        "windows-mcp"
-      ]
-    }
-  }
-}
-```
-
-**Goose** — File: `~/.config/goose/config.yaml`
-
-```yaml
-extensions:
-  windows-mcp:
-    type: stdio
-    cmd: uvx
-    args: ["windows-mcp"]
-    enabled: true
-```
-
-**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "windows-mcp": {
-      "command": "uvx",
-      "args": [
-        "windows-mcp"
-      ]
-    }
-  }
-}
-```
-
-**Roo Code** — File: `.roo/mcp.json`
-
-```json
-{
-  "mcpServers": {
-    "windows-mcp": {
-      "command": "uvx",
-      "args": [
-        "windows-mcp"
-      ]
-    }
-  }
-}
-```
-
-**DeepSeek Harness** — File: `windows-mcp.cordis.yml  →  dsh web --patch ./windows-mcp.cordis.yml`
-
-```yaml
-- insert:
-    - id: mcp-windows-mcp
-      name: '@deepseek-ai/dsh-mcp-client'
-      config:
-        serverName: windows-mcp
-        transport: stdio
-        command: uvx
-        args: ["windows-mcp"]
-        env: {}
-        cwd: !!js process.cwd()
-```
-
-</details>
-
 <a id="ssh-mcp"></a>
 
 ### Policy-gated SSH access
 
-[SSH — policy-gated remote access](https://github.com/tufantunc/ssh-mcp) — `MCP server` · ★ 816 · License: MIT · Works with: All clients
+[SSH — policy-gated remote access](https://github.com/tufantunc/ssh-mcp) — `MCP server` · ★ 832 · License: MIT · Works with: All clients
 
 Policy-gated, audited SSH for Linux and Windows hosts, with roles, approvals, and an audit log; needs SSH password or passphrase.
 
 **Alternatives:**
 
-- [bvisible/mcp-ssh-manager](https://github.com/bvisible/mcp-ssh-manager) (★ 512) — SSH server management for agents, with per-server read-only and allowlist security modes.
-- [emisar](https://github.com/andrewdryga/emisar) (★ 339) — Lets AI operate servers without SSH, choosing and approving risky changes with a full audit trail.
-- [rhel-lightspeed/linux-mcp-server](https://github.com/rhel-lightspeed/linux-mcp-server) (★ 316) — Read-only Linux system administration and diagnostics.
+- [bvisible/mcp-ssh-manager](https://github.com/bvisible/mcp-ssh-manager) (★ 520) — SSH server management for agents, with per-server read-only and allowlist security modes.
+- [emisar](https://github.com/andrewdryga/emisar) (★ 330) — Lets AI operate servers without SSH, choosing and approving risky changes with a full audit trail.
+- [rhel-lightspeed/linux-mcp-server](https://github.com/rhel-lightspeed/linux-mcp-server) (★ 315) — Read-only Linux system administration and diagnostics.
 
 <details><summary>Install</summary>
 
@@ -640,16 +640,16 @@ extensions:
 
 ### Remote/mobile access to DSH
 
-[saya-ch/dsh-mobile](https://github.com/saya-ch/dsh-mobile) — `Native plugin` · ★ 517 · License: Apache-2.0 · Works with: DeepSeek Harness only
+[saya-ch/dsh-mobile](https://github.com/saya-ch/dsh-mobile) — `Native plugin` · ★ 637 · License: Apache-2.0 · Works with: DeepSeek Harness only
 
 Access and control a DeepSeek Harness session from an Android app or mobile browser, over LAN or a secure remote connection, with persistent device pairing and a customizable mobile interface.
 
 **Alternatives:**
 
 - [Blank-not-black/dsh-Remote#plugin](https://github.com/Blank-not-black/dsh-Remote/tree/main/packages/plugin) — Adds a native sidebar/admin drawer, a self-healing token gateway, resumable /fs transfer up to 2GB, and latency-based server auto-switching.
-- [Z-6354/dsh-mobile-hanui](https://github.com/Z-6354/dsh-mobile-hanui) (★ 17) — Adds an installable PWA with offline support, push notifications, and touch gestures like pull-to-refresh and edge-swipe back.
+- [Z-6354/dsh-mobile-hanui](https://github.com/Z-6354/dsh-mobile-hanui) (★ 18) — Adds an installable PWA with offline support, push notifications, and touch gestures like pull-to-refresh and edge-swipe back.
 - [zhu1090093659/dsh-web#packages/dsh-remote-web-ui](https://github.com/zhu1090093659/dsh-web/tree/main/packages/dsh-remote-web-ui) — Adds QR-code pairing over a token-gated channel with SSE real-time sync between separate mobile and desktop GUI modes.
-- [zexadev/dsh-tether](https://github.com/zexadev/dsh-tether) (★ 63) — Adds pure peer-to-peer connection via iroh with no server to set up, falling back to a relay that only carries ciphertext.
+- [zexadev/dsh-tether](https://github.com/zexadev/dsh-tether) (★ 79) — Adds pure peer-to-peer connection via iroh with no server to set up, falling back to a relay that only carries ciphertext.
 
 <details><summary>Install</summary>
 
@@ -665,7 +665,7 @@ dsh plugin --profile web add github:saya-ch/dsh-mobile
 
 ### Live iOS device control
 
-[ZSeven-W/dsh-ios](https://github.com/ZSeven-W/dsh-ios) — `Native plugin` · ★ 331 · License: MIT · Works with: DeepSeek Harness only
+[ZSeven-W/dsh-ios](https://github.com/ZSeven-W/dsh-ios) — `Native plugin` · ★ 346 · License: MIT · Works with: DeepSeek Harness only
 
 Puts a live iOS Simulator or USB-connected iPhone inside the conversation, with 22 agent tools to boot, build, drive the UI by accessibility identity or OCR text, and hot-reload SwiftUI previews.
 
@@ -683,13 +683,13 @@ dsh plugin --profile web add github:ZSeven-W/dsh-ios
 
 ### Drive DSH from chat apps
 
-[wenbin-wb/dsh-bridge](https://github.com/wenbin-wb/dsh-bridge) — `Native plugin` · ★ 204 · License: MIT · Works with: DeepSeek Harness only
+[wenbin-wb/dsh-bridge](https://github.com/wenbin-wb/dsh-bridge) — `Native plugin` · ★ 221 · License: MIT · Works with: DeepSeek Harness only
 
 Adds remote and mobile access via LAN QR codes and Cloudflare or custom tunnels, plus bot integrations for WeChat, QQ, Feishu, and Telegram, with built-in authentication.
 
 **Alternatives:**
 
-- [zhuiyueya/dsh-im-gateway](https://github.com/zhuiyueya/dsh-im-gateway) (★ 52) — Aggregates 20+ chat platforms, including Discord and WhatsApp, into unified sessions with remote approvals and an allowedUserIds list.
+- [zhuiyueya/dsh-im-gateway](https://github.com/zhuiyueya/dsh-im-gateway) (★ 56) — Aggregates 20+ chat platforms, including Discord and WhatsApp, into unified sessions with remote approvals and an allowedUserIds list.
 
 <details><summary>Install</summary>
 
@@ -705,7 +705,7 @@ dsh plugin --profile web add github:wenbin-wb/dsh-bridge
 
 ### Live Android device control
 
-[ZSeven-W/dsh-android](https://github.com/ZSeven-W/dsh-android) — `Native plugin` · ★ 189 · License: MIT · Works with: DeepSeek Harness only
+[ZSeven-W/dsh-android](https://github.com/ZSeven-W/dsh-android) — `Native plugin` · ★ 207 · License: MIT · Works with: DeepSeek Harness only
 
 Puts a live Android emulator or USB phone inside the conversation, driven via adb, with 20 agent tools for streaming, Gradle build/run, UI-tree or OCR interaction, logcat, and process/memory inspection.
 
@@ -723,13 +723,13 @@ dsh plugin --profile web add github:ZSeven-W/dsh-android
 
 ### Full remote server administration
 
-[JUANWANG-BUAA/dsh-full-remote](https://github.com/JUANWANG-BUAA/dsh-full-remote) — `Native plugin` · ★ 49 · License: MIT · Works with: DeepSeek Harness only
+[JUANWANG-BUAA/dsh-full-remote](https://github.com/JUANWANG-BUAA/dsh-full-remote) — `Native plugin` · ★ 51 · License: MIT · Works with: DeepSeek Harness only
 
 Gives full server-side API access (settings, credentials, host.listDirectory) through a token-gated reverse proxy, with per-device sessions, QR phone invites, and optional approval, CIDR limits, idle timeout, and local TLS.
 
 **Alternatives:**
 
-- [liguobao/deepseek-harness-remote](https://github.com/liguobao/deepseek-harness-remote) (★ 383) — Uses end-to-end encryption (Noise IK plus WebRTC/relay) and limits clients to read-only file preview, no shell or remote-desktop access.
+- [liguobao/deepseek-harness-remote](https://github.com/liguobao/deepseek-harness-remote) (★ 868) — Uses end-to-end encryption (Noise IK plus WebRTC/relay) and limits clients to read-only file preview, no shell or remote-desktop access.
 - [Buzzso/dsh-sev](https://github.com/Buzzso/dsh-sev) (★ 137) — Manages your own remote DSH host from the local GUI via auto-healing SSH tunnels and a combined local/remote session list.
 - [Linjiangxian0203/dsh-remote-tunnel](https://github.com/Linjiangxian0203/dsh-remote-tunnel) (★ 6) — Runs dsh web on a remote Linux server via systemd (no root) behind an auto-reconnecting SSH tunnel, with port allocation and an audit view.
 
@@ -747,7 +747,7 @@ dsh plugin --profile web add github:JUANWANG-BUAA/dsh-full-remote
 
 ### LAN access for the Web UI
 
-[AcidGr/dsh-web-lan-access](https://github.com/AcidGr/dsh-web-lan-access) — `Native plugin` · ★ 39 · License: MIT · Works with: DeepSeek Harness only
+[AcidGr/dsh-web-lan-access](https://github.com/AcidGr/dsh-web-lan-access) — `Native plugin` · ★ 40 · License: MIT · Works with: DeepSeek Harness only
 
 Injects a crypto.randomUUID polyfill so the DSH Web UI keeps working when opened over plain-HTTP LAN or Tailscale IP addresses, which browsers otherwise treat as insecure origins.
 

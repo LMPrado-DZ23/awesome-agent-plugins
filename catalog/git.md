@@ -531,7 +531,7 @@ extensions:
 
 ### Manage repos across Git hosts
 
-[gitkraken/gk-cli](https://github.com/gitkraken/gk-cli) — `MCP server` · ★ 460 · License: see repo · Works with: All clients
+[gitkraken/gk-cli](https://github.com/gitkraken/gk-cli) — `MCP server` · ★ 462 · License: see repo · Works with: All clients
 
 The GitKraken server for managing repos, pull requests, and issues across GitHub, GitLab, and Bitbucket.
 
@@ -720,7 +720,7 @@ extensions:
 
 ### Native git operations
 
-[cyanheads/git-mcp-server](https://github.com/cyanheads/git-mcp-server) — `MCP server` · ★ 242 · License: Apache-2.0 · Works with: All clients
+[cyanheads/git-mcp-server](https://github.com/cyanheads/git-mcp-server) — `MCP server` · ★ 244 · License: Apache-2.0 · Works with: All clients
 
 Comprehensive git server enabling native git tools including clone, commit, and worktree management.
 
@@ -909,7 +909,7 @@ extensions:
 
 ### GitHub CI and PR review bot
 
-[PerryLink/dsh-github](https://github.com/PerryLink/dsh-github) — `Native plugin` · ★ 22 · License: Apache-2.0 · Works with: DeepSeek Harness only
+[PerryLink/dsh-github](https://github.com/PerryLink/dsh-github) — `Native plugin` · ★ 27 · License: Apache-2.0 · Works with: DeepSeek Harness only
 
 Official-grade GitHub CI integration: a composite action.yml, a polling PR review bot with idempotent inline comments and a status-check gate, plus PR and issue tools where every write is gated by human approval.
 
@@ -949,7 +949,7 @@ dsh plugin --profile web add github:DietCokewithSugar/dsh-user-experience
 
 ### Git worktree session targets
 
-[wloops/dsh-git-worktree](https://github.com/wloops/dsh-git-worktree) — `Native plugin` · ★ 19 · License: MIT · Works with: DeepSeek Harness only
+[wloops/dsh-git-worktree](https://github.com/wloops/dsh-git-worktree) — `Native plugin` · ★ 20 · License: MIT · Works with: DeepSeek Harness only
 
 Git-worktree Session Targets with isolated task sessions, ready-for-review status, reversible local preview, human-confirmed delivery, environment retention and recovery, and same-session iteration.
 
@@ -1000,8 +1000,8 @@ A strip above the composer lists files modified in the current session (collapse
 
 **Alternatives:**
 
-- [cirelir/dsh-change-review](https://github.com/cirelir/dsh-change-review) (★ 13) — Tracks write/edit calls with session isolation, subagent aggregation and SSE live updates, also without needing git
-- [9087/dsh-diff-approval](https://github.com/9087/dsh-diff-approval) (★ 10) — Lets each change block be kept or reverted individually, supports undo/redo, and persists the review across restarts
+- [cirelir/dsh-change-review](https://github.com/cirelir/dsh-change-review) (★ 14) — Tracks write/edit calls with session isolation, subagent aggregation and SSE live updates, also without needing git
+- [9087/dsh-diff-approval](https://github.com/9087/dsh-diff-approval) (★ 14) — Lets each change block be kept or reverted individually, supports undo/redo, and persists the review across restarts
 - [Tlyer233/dsh-vscode-review#dsh-review](https://github.com/Tlyer233/dsh-vscode-review/tree/main/dsh-review) — Records every write, edit and shell rm into a shadow git repo, reviewable hunk-by-hunk inside a companion VS Code extension
 
 <details><summary>Install</summary>
@@ -1060,7 +1060,7 @@ GitHub Device Flow connection plus an in-conversation PR workflow: a status bar 
 
 **Alternatives:**
 
-- [Moon-shiyue/dsh-github-connect](https://github.com/Moon-shiyue/dsh-github-connect) (★ 9) — Connects via OAuth device flow or a personal access token and calls the GitHub API directly through a github_api tool
+- [Moon-shiyue/dsh-github-connect](https://github.com/Moon-shiyue/dsh-github-connect) (★ 11) — Connects via OAuth device flow or a personal access token and calls the GitHub API directly through a github_api tool
 - [Noob-stupid/dsh-github-login](https://github.com/Noob-stupid/dsh-github-login) (★ 7) — Adds an in-window device-flow login with no terminal needed, syncing the token into the gh CLI plus host status endpoints
 
 <details><summary>Install</summary>

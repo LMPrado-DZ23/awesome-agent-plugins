@@ -4,7 +4,6 @@
 
 > This page is generated from `data/entries/` — do not edit by hand.
 
-- [WorkBuddy model bridge](#dsh-dsh-workbuddy-connect) — Brings models from the locally signed-in WorkBuddy desktop app into the harness with zero extra configuration.
 - [DeepSeek chat and completion](#deepseek-mcp-server) — Official DeepSeek server for chat, completion, model listing, and balance endpoints; needs a DEEPSEEK_API_KEY.
 - [DeepSeek web session models](#dsh-dsh-deepseek-web-login) — Adds a provider that uses chat.deepseek.com web models directly, with browser login capture, proof-of-work req…
 - [ChatGPT/Codex OAuth model bridge](#dsh-dsh-codex-connect) — Connects a ChatGPT account and OpenAI Codex models to the harness via OAuth, with opt-in search and image tool…
@@ -17,35 +16,13 @@
 - [Weak-network model retries](#dsh-dsh-plugin-weaknet-adaptor) — Keeps model calls alive over unreliable connections with long-backoff stream retries, a local response replay …
 - [Free OpenCode model access](#dsh-opencode2dsh) — Exposes OpenCode Zen's free models to the harness with no API key required.
 - [Volcengine Ark plan routes](#dsh-ark-cli-ark-plan-api) — Registers Volcengine Ark Agent Plan, Coding Plan, and postpaid model routes directly in the native model picke…
-
-<a id="dsh-dsh-workbuddy-connect"></a>
-
-### WorkBuddy model bridge
-
-[corrinehu/dsh-workbuddy-connect](https://github.com/corrinehu/dsh-workbuddy-connect) — `Native plugin` · ★ 1.4k · License: MIT · Works with: DeepSeek Harness only
-
-Brings models from the locally signed-in WorkBuddy desktop app into the harness with zero extra configuration.
-
-**Alternatives:**
-
-- [dingminhua/dsh-connect-workbuddy](https://github.com/dingminhua/dsh-connect-workbuddy) (★ 201) — Adds per-model image-input opt-in, account switching, and a read-only credits overview with daily check-in.
-- [aosi526/dsh-workbuddy-xdpool](https://github.com/aosi526/dsh-workbuddy-xdpool) (★ 176) — Merges every signed-in WorkBuddy account into one auto-failover pool with per-model credit multipliers shown.
-
-<details><summary>Install</summary>
-
-**DeepSeek Harness**
-
-```bash
-dsh plugin --profile web add github:corrinehu/dsh-workbuddy-connect
-```
-
-</details>
+- [WorkBuddy model bridge](#dsh-dsh-workbuddy-connect) — Brings models from the locally signed-in WorkBuddy desktop app into the harness with zero extra configuration.
 
 <a id="deepseek-mcp-server"></a>
 
 ### DeepSeek chat and completion
 
-[DeepSeek MCP Server](https://github.com/DMontgomery40/deepseek-mcp-server) — `MCP server` · ★ 356 · License: MIT · Works with: All clients
+[DeepSeek MCP Server](https://github.com/DMontgomery40/deepseek-mcp-server) — `MCP server` · ★ 359 · License: MIT · Works with: All clients
 
 Official DeepSeek server for chat, completion, model listing, and balance endpoints; needs a DEEPSEEK_API_KEY.
 
@@ -260,7 +237,7 @@ extensions:
 
 ### DeepSeek web session models
 
-[cv-superding/dsh-deepseek-web-login](https://github.com/cv-superding/dsh-deepseek-web-login) — `Native plugin` · ★ 289 · License: Apache-2.0 · Works with: DeepSeek Harness only
+[cv-superding/dsh-deepseek-web-login](https://github.com/cv-superding/dsh-deepseek-web-login) — `Native plugin` · ★ 319 · License: Apache-2.0 · Works with: DeepSeek Harness only
 
 Adds a provider that uses chat.deepseek.com web models directly, with browser login capture, proof-of-work request signing, SSE streaming, and prompting-based tool calls.
 
@@ -278,15 +255,15 @@ dsh plugin --profile web add github:cv-superding/dsh-deepseek-web-login
 
 ### ChatGPT/Codex OAuth model bridge
 
-[franksong2702/dsh-codex-connect](https://github.com/franksong2702/dsh-codex-connect) — `Native plugin` · ★ 157 · License: Apache-2.0 · Works with: DeepSeek Harness only
+[franksong2702/dsh-codex-connect](https://github.com/franksong2702/dsh-codex-connect) — `Native plugin` · ★ 169 · License: Apache-2.0 · Works with: DeepSeek Harness only
 
 Connects a ChatGPT account and OpenAI Codex models to the harness via OAuth, with opt-in search and image tools.
 
 **Alternatives:**
 
-- [WSL043/dsh-codex-subscription](https://github.com/WSL043/dsh-codex-subscription) (★ 208) — Adds subscription web search, quota tracking with a safe reset, image tools, and a Fast mode, with no API key or Codex CLI needed.
+- [WSL043/dsh-codex-subscription](https://github.com/WSL043/dsh-codex-subscription) (★ 274) — Adds subscription web search, quota tracking with a safe reset, image tools, and a Fast mode, with no API key or Codex CLI needed.
 - [WNJXYK/dsh-codex-oauth](https://github.com/WNJXYK/dsh-codex-oauth) (★ 14) — Adds image generation, subscription quota reporting, and both browser and device-code OAuth sign-in.
-- [suntianc/dsh-codex-auth](https://github.com/suntianc/dsh-codex-auth) (★ 19) — Reuses an existing Codex CLI ChatGPT login instead of running a separate OAuth flow.
+- [suntianc/dsh-codex-auth](https://github.com/suntianc/dsh-codex-auth) (★ 20) — Reuses an existing Codex CLI ChatGPT login instead of running a separate OAuth flow.
 - [stoneface10/dsh-codex-connect-plus](https://github.com/stoneface10/dsh-codex-connect-plus) (★ 6) — Adds gpt-image-2 image generation and editing alongside Codex model access.
 
 <details><summary>Install</summary>
@@ -303,14 +280,14 @@ dsh plugin --profile web add github:franksong2702/dsh-codex-connect
 
 ### Google Antigravity model provider
 
-[amlyczz/dsh-agy-link](https://github.com/amlyczz/dsh-agy-link) — `Native plugin` · ★ 119 · License: MIT · Works with: DeepSeek Harness only
+[amlyczz/dsh-agy-link](https://github.com/amlyczz/dsh-agy-link) — `Native plugin` · ★ 125 · License: MIT · Works with: DeepSeek Harness only
 
 Connects Google Antigravity (agy CLI) models with streaming chat for Gemini, Claude, and GPT-OSS subscriptions, native tool cards, thinking turns, and in-GUI Google OAuth login.
 
 **Alternatives:**
 
-- [LiZhenNet/dsh-antigravity](https://github.com/LiZhenNet/dsh-antigravity) (★ 27) — Adds explicit quota management and a dedicated model-selector UI.
-- [suntianc/dsh-antigravity-auth](https://github.com/suntianc/dsh-antigravity-auth) (★ 21) — Adds image generation/editing, video understanding, and web search to the Antigravity route.
+- [LiZhenNet/dsh-antigravity](https://github.com/LiZhenNet/dsh-antigravity) (★ 26) — Adds explicit quota management and a dedicated model-selector UI.
+- [suntianc/dsh-antigravity-auth](https://github.com/suntianc/dsh-antigravity-auth) (★ 24) — Adds image generation/editing, video understanding, and web search to the Antigravity route.
 
 <details><summary>Install</summary>
 
@@ -326,13 +303,13 @@ dsh plugin --profile web add github:amlyczz/dsh-agy-link
 
 ### Multi-provider coding subscriptions
 
-[lninghaha/dsh-coding-subscription-oauth](https://github.com/lninghaha/dsh-coding-subscription-oauth) — `Native plugin` · ★ 25 · License: see repo · Works with: DeepSeek Harness only
+[lninghaha/dsh-coding-subscription-oauth](https://github.com/lninghaha/dsh-coding-subscription-oauth) — `Native plugin` · ★ 27 · License: see repo · Works with: DeepSeek Harness only
 
 Signs in locally to SuperGrok/Grok Build, ChatGPT Plus Codex, Kimi Code, and Claude Code subscriptions without pasting tokens, with an opt-in loopback OpenAI/Anthropic gateway.
 
 **Alternatives:**
 
-- [V1ki/dsh-plugin-subscriptions](https://github.com/V1ki/dsh-plugin-subscriptions) (★ 480) — Also exposes image_generate, video_generate, and x_search tools alongside the Claude, Codex, and Grok subscription routes.
+- [V1ki/dsh-plugin-subscriptions](https://github.com/V1ki/dsh-plugin-subscriptions) (★ 508) — Also exposes image_generate, video_generate, and x_search tools alongside the Claude, Codex, and Grok subscription routes.
 
 <details><summary>Install</summary>
 
@@ -355,8 +332,8 @@ Lets each subagent use its own LLM provider and model through configurable role 
 **Alternatives:**
 
 - [SnowAmberX/dsh-role-router](https://github.com/SnowAmberX/dsh-role-router) (★ 5) — Automatically switches to a planner model in plan mode and exposes per-role reasoning effort in the Web UI.
-- [hytime/dsh-thinking-effort](https://github.com/hytime/dsh-thinking-effort) (★ 53) — Sets reasoning-effort levels and sub-agent defaults specifically for custom or third-party models.
-- [HaoyueQin/dsh-better-reasoning-effort](https://github.com/HaoyueQin/dsh-better-reasoning-effort) (★ 61) — Suggests reasoning-effort and input-modality settings per model, fused from a knowledge base with confidence labels.
+- [hytime/dsh-thinking-effort](https://github.com/hytime/dsh-thinking-effort) (★ 56) — Sets reasoning-effort levels and sub-agent defaults specifically for custom or third-party models.
+- [HaoyueQin/dsh-better-reasoning-effort](https://github.com/HaoyueQin/dsh-better-reasoning-effort) (★ 65) — Suggests reasoning-effort and input-modality settings per model, fused from a knowledge base with confidence labels.
 
 <details><summary>Install</summary>
 
@@ -396,7 +373,7 @@ Writes live provider model lists into settings and shows the 5h/7d plan window o
 
 **Alternatives:**
 
-- [HOWILLMAKEIT/dsh-model-context-catalog](https://github.com/HOWILLMAKEIT/dsh-model-context-catalog) (★ 34) — Configures the context-window size for registered models so long sessions aren't misjudged as overflowing.
+- [HOWILLMAKEIT/dsh-model-context-catalog](https://github.com/HOWILLMAKEIT/dsh-model-context-catalog) (★ 30) — Configures the context-window size for registered models so long sessions aren't misjudged as overflowing.
 
 <details><summary>Install</summary>
 
@@ -441,7 +418,7 @@ Keeps model calls alive over unreliable connections with long-backoff stream ret
 **Alternatives:**
 
 - [HB00/dsh-llm-failover](https://github.com/HB00/dsh-llm-failover) (★ 1) — Automatically switches providers on rate limits or quota exhaustion, with a cooldown and a permanent last-resort fallback.
-- [btspoony/dsh-llm-fallbacks](https://github.com/btspoony/dsh-llm-fallbacks) (★ 21) — Applies separate retry and fallback strategies per agent role.
+- [btspoony/dsh-llm-fallbacks](https://github.com/btspoony/dsh-llm-fallbacks) (★ 24) — Applies separate retry and fallback strategies per agent role.
 
 <details><summary>Install</summary>
 
@@ -463,8 +440,8 @@ Exposes OpenCode Zen's free models to the harness with no API key required.
 
 **Alternatives:**
 
-- [xiaozhe7772222/dsh-opencode-zen](https://github.com/xiaozhe7772222/dsh-opencode-zen) (★ 29) — Bundles 6 free models with multi-key rotation and automatic rate-limit backoff.
-- [Duskriver/dsh-opencode-go](https://github.com/Duskriver/dsh-opencode-go) (★ 161) — Adds live gateway model discovery, online capability metadata, and session-aware routing for OpenCode Go.
+- [xiaozhe7772222/dsh-opencode-zen](https://github.com/xiaozhe7772222/dsh-opencode-zen) (★ 31) — Bundles 6 free models with multi-key rotation and automatic rate-limit backoff.
+- [Duskriver/dsh-opencode-go](https://github.com/Duskriver/dsh-opencode-go) (★ 192) — Adds live gateway model discovery, online capability metadata, and session-aware routing for OpenCode Go.
 
 <details><summary>Install</summary>
 
@@ -490,6 +467,29 @@ Registers Volcengine Ark Agent Plan, Coding Plan, and postpaid model routes dire
 
 ```bash
 dsh plugin --profile web add "https://github.com/volcengine/ark-cli/releases/download/dsh-plugins%2Fv0.1.0/ark-plan-api.tgz"
+```
+
+</details>
+
+<a id="dsh-dsh-workbuddy-connect"></a>
+
+### WorkBuddy model bridge
+
+[corrinehu/dsh-workbuddy-connect](https://github.com/corrinehu/dsh-workbuddy-connect) — `Native plugin` · License: MIT · Works with: DeepSeek Harness only
+
+Brings models from the locally signed-in WorkBuddy desktop app into the harness with zero extra configuration.
+
+**Alternatives:**
+
+- [dingminhua/dsh-connect-workbuddy](https://github.com/dingminhua/dsh-connect-workbuddy) (★ 656) — Adds per-model image-input opt-in, account switching, and a read-only credits overview with daily check-in.
+- [aosi526/dsh-workbuddy-xdpool](https://github.com/aosi526/dsh-workbuddy-xdpool) (★ 292) — Merges every signed-in WorkBuddy account into one auto-failover pool with per-model credit multipliers shown.
+
+<details><summary>Install</summary>
+
+**DeepSeek Harness**
+
+```bash
+dsh plugin --profile web add github:corrinehu/dsh-workbuddy-connect
 ```
 
 </details>

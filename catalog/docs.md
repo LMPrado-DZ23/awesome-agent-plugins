@@ -23,8 +23,8 @@
 - [Full office suite inside DSH](#dsh-dsh-univer-office) — Brings spreadsheets, docs, slides, canvases and relational tables into one runtime inside DeepSeek Harness, wi…
 - [Yuque knowledge base access](#yuque-mcp-server) — Exposes a Yuque knowledge base to AI assistants; needs a Yuque personal, group, or general token.
 - [Unified SAP documentation search](#mcp-sap-docs) — Fast unified search across SAP docs (SAPUI5, CAP, OpenUI5, wdi5) using BM25 full-text search.
-- [Editable diagrams in conversations](#dsh-dsh-diagram) — Editable Excalidraw diagrams rendered directly inside DeepSeek Harness conversations.
 - [Text-to-slideshow presentation skill](#dsh-dsh-ppt) — Turns one sentence or a document into an HTML slideshow plus an editable PPTX, with seven layouts (including q…
+- [Editable diagrams in conversations](#dsh-dsh-diagram) — Editable Excalidraw diagrams rendered directly inside DeepSeek Harness conversations.
 - [LaTeX paper workbench with review](#dsh-paperlab) — Overleaf-style LaTeX paper workbench: annotate any text in the rendered PDF and have a DSH agent revise the so…
 - [In-chat preview for produced files](#dsh-dsh-markdown-preview) — In-chat preview for produced files: click a file chip to render Markdown (server-side markdown-it plus highlig…
 - [Auto-generate architecture diagrams](#dsh-archify-integrations-deepseek-harness) — Generates validated, self-contained interactive architecture, workflow, sequence, data-flow and lifecycle diag…
@@ -38,7 +38,7 @@
 
 ### Context7
 
-[Context7](https://github.com/upstash/context7) — `MCP server` · ★ 63k · License: MIT · Works with: All clients
+[Context7](https://github.com/upstash/context7) — `MCP server` · ★ 64k · License: MIT · Works with: All clients
 
 Up-to-date, version-specific library documentation and code examples pulled into the agent context on demand. Local alternative: `npx -y @upstash/context7-mcp`.
 
@@ -200,13 +200,13 @@ extensions:
 
 ### Nature-style academic writing skills
 
-[Yuan1z0825/nature-skills](https://github.com/Yuan1z0825/nature-skills) — `Agent Skills` · ★ 49k · License: Apache-2.0 · Works with: All clients
+[Yuan1z0825/nature-skills](https://github.com/Yuan1z0825/nature-skills) — `Agent Skills` · ★ 51k · License: Apache-2.0 · Works with: All clients
 
 20 skills tailored to Nature-journal academic writing conventions and scientific figure design, including literature pipelines, citations and paper-to-slide conversion.
 
 **Alternatives:**
 
-- [zLanqing/codex-claude-academic-skills](https://github.com/zLanqing/codex-claude-academic-skills) (★ 5.1k) — Broader academic workflow covering literature review, writing polish and scientific computing tools.
+- [zLanqing/codex-claude-academic-skills](https://github.com/zLanqing/codex-claude-academic-skills) (★ 5.3k) — Broader academic workflow covering literature review, writing polish and scientific computing tools.
 
 <details><summary>Install</summary>
 
@@ -300,8 +300,8 @@ Office suite purpose-built for AI agents to read, edit and automate Word, Excel 
 
 **Alternatives:**
 
-- [genspark-ai/genoffice](https://github.com/genspark-ai/genoffice) (★ 10k) — Free open-source alternative office suite (docs, sheets, slides, PDF) with its own CLI and skill.
-- [OpenSenseNova/SenseNova-Skills](https://github.com/OpenSenseNova/SenseNova-Skills) (★ 5.8k) — Modular office-automation skills for Excel workflows: formatting, coloring and KPI reporting.
+- [genspark-ai/genoffice](https://github.com/genspark-ai/genoffice) (★ 11k) — Free open-source alternative office suite (docs, sheets, slides, PDF) with its own CLI and skill.
+- [OpenSenseNova/SenseNova-Skills](https://github.com/OpenSenseNova/SenseNova-Skills) (★ 5.9k) — Modular office-automation skills for Excel workflows: formatting, coloring and KPI reporting.
 
 <details><summary>Install</summary>
 
@@ -395,7 +395,7 @@ Single skill that converts Word, PowerPoint, Excel, OpenDocument, RTF, EPUB, CSV
 
 **Alternatives:**
 
-- [opendatalab/MinerU](https://github.com/opendatalab/MinerU) (★ 82k) — Adds OCR-heavy layout analysis for scanned PDFs and complex documents.
+- [opendatalab/MinerU](https://github.com/opendatalab/MinerU) (★ 83k) — Adds OCR-heavy layout analysis for scanned PDFs and complex documents.
 
 <details><summary>Install</summary>
 
@@ -735,7 +735,7 @@ extensions:
 
 ### Claude Code reference search
 
-[Claude Code Ultimate Guide](https://github.com/FlorianBruniaux/claude-code-ultimate-guide) — `MCP server` · ★ 6.2k · License: CC-BY-SA-4.0 · Works with: All clients
+[Claude Code Ultimate Guide](https://github.com/FlorianBruniaux/claude-code-ultimate-guide) — `MCP server` · ★ 6.3k · License: CC-BY-SA-4.0 · Works with: All clients
 
 Searches the Claude Code Ultimate Guide and machine-readable references from any MCP client.
 
@@ -924,7 +924,7 @@ extensions:
 
 ### Zotero research library access
 
-[Zotero MCP](https://github.com/54yyyu/zotero-mcp) — `MCP server` · ★ 5.5k · License: MIT · Works with: All clients
+[Zotero MCP](https://github.com/54yyyu/zotero-mcp) — `MCP server` · ★ 5.6k · License: MIT · Works with: All clients
 
 Search, read, annotate, and add to a Zotero research library, local or web; needs a ZOTERO_API_KEY.
 
@@ -2118,7 +2118,7 @@ Token-efficient search for coding agents over public and private documentation; 
 
 **Alternatives:**
 
-- [jDocmunch MCP](https://github.com/jgravelle/jdocmunch-mcp) (★ 206) — Section-level local search across .md, .rst, .adoc, .ipynb, .html, .yaml, .json, and OpenAPI files.
+- [jDocmunch MCP](https://github.com/jgravelle/jdocmunch-mcp) (★ 207) — Section-level local search across .md, .rst, .adoc, .ipynb, .html, .yaml, .json, and OpenAPI files.
 
 <details><summary>Install</summary>
 
@@ -2331,15 +2331,15 @@ extensions:
 
 ### PDF reading with page citations
 
-[PDF Reader MCP](https://github.com/SylphxAI/pdf-reader-mcp) — `MCP server` · ★ 1.0k · License: MIT · Works with: All clients
+[PDF Reader MCP](https://github.com/SylphxAI/pdf-reader-mcp) — `MCP server` · ★ 1.1k · License: MIT · Works with: All clients
 
 Evidence-first PDF server that returns citeable page and bounding-box evidence for documents.
 
 **Alternatives:**
 
-- [Docling MCP](https://github.com/docling-project/docling-mcp) (★ 776) — Converts PDFs and other document formats to structured output via Docling; needs a Docling API key.
-- [PageIndex MCP](https://github.com/VectifyAI/pageindex-mcp) (★ 402) — Reasoning-based RAG for chatting with long PDFs, local or online.
-- [MinerU Open MCP](https://github.com/opendatalab/MinerU-Ecosystem) (★ 226) — Parses PDF, image, doc, ppt, and xls files into Markdown via the MinerU API; needs a MINERU_API_TOKEN.
+- [Docling MCP](https://github.com/docling-project/docling-mcp) (★ 778) — Converts PDFs and other document formats to structured output via Docling; needs a Docling API key.
+- [PageIndex MCP](https://github.com/VectifyAI/pageindex-mcp) (★ 404) — Reasoning-based RAG for chatting with long PDFs, local or online.
+- [MinerU Open MCP](https://github.com/opendatalab/MinerU-Ecosystem) (★ 230) — Parses PDF, image, doc, ppt, and xls files into Markdown via the MinerU API; needs a MINERU_API_TOKEN.
 
 <details><summary>Install</summary>
 
@@ -2526,13 +2526,13 @@ extensions:
 
 ### Full office suite inside DSH
 
-[dream-num/dsh-univer-office](https://github.com/dream-num/dsh-univer-office) — `Native plugin` · ★ 567 · License: Apache-2.0 · Works with: DeepSeek Harness only
+[dream-num/dsh-univer-office](https://github.com/dream-num/dsh-univer-office) — `Native plugin` · ★ 612 · License: Apache-2.0 · Works with: DeepSeek Harness only
 
 Brings spreadsheets, docs, slides, canvases and relational tables into one runtime inside DeepSeek Harness, with connected data, validation, versioned changes and isolated worktrees for multi-agent collaboration.
 
 **Alternatives:**
 
-- [kw78/dsh-office-tools](https://github.com/kw78/dsh-office-tools) (★ 32) — Offers simpler standalone tools to create/read Word, create/read/update Excel, and create/read PowerPoint with image placement
+- [kw78/dsh-office-tools](https://github.com/kw78/dsh-office-tools) (★ 37) — Offers simpler standalone tools to create/read Word, create/read/update Excel, and create/read PowerPoint with image placement
 - [didclawapp-ai/DSH-Office](https://github.com/didclawapp-ai/DSH-Office) (★ 6) — Also handles PDF, exposed as office_schema/office_write/office_edit/office_read tools through a local CLI
 
 <details><summary>Install</summary>
@@ -2549,7 +2549,7 @@ dsh plugin --profile web add github:dream-num/dsh-univer-office
 
 ### Yuque knowledge base access
 
-[yuque/yuque-mcp-server](https://github.com/yuque/yuque-mcp-server) — `MCP server` · ★ 255 · License: MIT · Works with: All clients
+[yuque/yuque-mcp-server](https://github.com/yuque/yuque-mcp-server) — `MCP server` · ★ 258 · License: MIT · Works with: All clients
 
 Exposes a Yuque knowledge base to AI assistants; needs a Yuque personal, group, or general token.
 
@@ -2782,7 +2782,7 @@ extensions:
 
 ### Unified SAP documentation search
 
-[marianfoo/mcp-sap-docs](https://github.com/marianfoo/mcp-sap-docs) — `MCP server` · ★ 243 · License: Apache-2.0 · Works with: All clients
+[marianfoo/mcp-sap-docs](https://github.com/marianfoo/mcp-sap-docs) — `MCP server` · ★ 247 · License: Apache-2.0 · Works with: All clients
 
 Fast unified search across SAP docs (SAPUI5, CAP, OpenUI5, wdi5) using BM25 full-text search.
 
@@ -2967,33 +2967,11 @@ extensions:
 
 </details>
 
-<a id="dsh-dsh-diagram"></a>
-
-### Editable diagrams in conversations
-
-[hanzhangzzz/dsh-diagram](https://github.com/hanzhangzzz/dsh-diagram) — `Native plugin` · ★ 18 · License: MIT · Works with: DeepSeek Harness only
-
-Editable Excalidraw diagrams rendered directly inside DeepSeek Harness conversations.
-
-**Alternatives:**
-
-- [MrmoLabs/dsh-mermaid](https://github.com/MrmoLabs/dsh-mermaid) (★ 13) — Renders Mermaid code fences as SVG instead, with streaming, fullscreen zoom/pan and SVG export
-
-<details><summary>Install</summary>
-
-**DeepSeek Harness**
-
-```bash
-dsh plugin --profile web add github:hanzhangzzz/dsh-diagram
-```
-
-</details>
-
 <a id="dsh-dsh-ppt"></a>
 
 ### Text-to-slideshow presentation skill
 
-[STARDUSTLC666/dsh-ppt](https://github.com/STARDUSTLC666/dsh-ppt) — `Native plugin` · ★ 15 · License: MIT · Works with: DeepSeek Harness only
+[STARDUSTLC666/dsh-ppt](https://github.com/STARDUSTLC666/dsh-ppt) — `Native plugin` · ★ 20 · License: MIT · Works with: DeepSeek Harness only
 
 Turns one sentence or a document into an HTML slideshow plus an editable PPTX, with seven layouts (including quotes and native PPTX tables), speaker notes, five built-in themes and bilingual support.
 
@@ -3003,6 +2981,28 @@ Turns one sentence or a document into an HTML slideshow plus an editable PPTX, w
 
 ```bash
 dsh plugin --profile web add github:STARDUSTLC666/dsh-ppt
+```
+
+</details>
+
+<a id="dsh-dsh-diagram"></a>
+
+### Editable diagrams in conversations
+
+[hanzhangzzz/dsh-diagram](https://github.com/hanzhangzzz/dsh-diagram) — `Native plugin` · ★ 19 · License: MIT · Works with: DeepSeek Harness only
+
+Editable Excalidraw diagrams rendered directly inside DeepSeek Harness conversations.
+
+**Alternatives:**
+
+- [MrmoLabs/dsh-mermaid](https://github.com/MrmoLabs/dsh-mermaid) (★ 15) — Renders Mermaid code fences as SVG instead, with streaming, fullscreen zoom/pan and SVG export
+
+<details><summary>Install</summary>
+
+**DeepSeek Harness**
+
+```bash
+dsh plugin --profile web add github:hanzhangzzz/dsh-diagram
 ```
 
 </details>
@@ -3017,7 +3017,7 @@ Overleaf-style LaTeX paper workbench: annotate any text in the rendered PDF and 
 
 **Alternatives:**
 
-- [fly233338/dsh-overleaf](https://github.com/fly233338/dsh-overleaf) (★ 12) — Connects multiple existing Overleaf cloud projects via OverleafMCP for browsing, analysis and Git-based file updates
+- [fly233338/dsh-overleaf](https://github.com/fly233338/dsh-overleaf) (★ 13) — Connects multiple existing Overleaf cloud projects via OverleafMCP for browsing, analysis and Git-based file updates
 
 <details><summary>Install</summary>
 

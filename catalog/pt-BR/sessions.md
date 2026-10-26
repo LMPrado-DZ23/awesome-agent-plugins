@@ -19,7 +19,7 @@
 
 ### Visual non-linear conversation map
 
-[liangmianya/dsh-synapse](https://github.com/liangmianya/dsh-synapse) — `Plugin nativo` · ★ 540 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[liangmianya/dsh-synapse](https://github.com/liangmianya/dsh-synapse) — `Plugin nativo` · ★ 590 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Espaço de conversa visual e não linear para o DeepSeek Harness: sessões, continuações e ramificações viram um mapa de conversa navegável.
 
@@ -37,7 +37,7 @@ dsh plugin --profile web add github:liangmianya/dsh-synapse
 
 ### Cross-tool session import and export
 
-[Nwflower/dsh-chat-import](https://github.com/Nwflower/dsh-chat-import) — `Plugin nativo` · ★ 238 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[Nwflower/dsh-chat-import](https://github.com/Nwflower/dsh-chat-import) — `Plugin nativo` · ★ 255 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Importa históricos de chat com fidelidade total de 13 agentes de codificação (Claude Code, Codex, ChatGPT, Cursor, Gemini, opencode e outros) como sessões retomáveis do DeepSeek Harness, com exportação reversa de volta ao Claude Code.
 
@@ -61,13 +61,13 @@ dsh plugin --profile web add github:Nwflower/dsh-chat-import
 
 ### Archived-session management panel
 
-[MichengAI/dsh-archive-manager](https://github.com/MichengAI/dsh-archive-manager) — `Plugin nativo` · ★ 175 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
+[MichengAI/dsh-archive-manager](https://github.com/MichengAI/dsh-archive-manager) — `Plugin nativo` · ★ 245 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
 
 Adiciona uma página de sessões arquivadas em Settings para buscar, restaurar e excluir sessões arquivadas do DeepSeek Harness por workspace.
 
 **Alternativas:**
 
-- [Ultronen/dsh-archived-chats](https://github.com/Ultronen/dsh-archived-chats) (★ 28) — Adiciona backup e restauração em ZIP, lixeira protegida por snapshot, contabilidade de armazenamento e tags/notas.
+- [Ultronen/dsh-archived-chats](https://github.com/Ultronen/dsh-archived-chats) (★ 29) — Adiciona backup e restauração em ZIP, lixeira protegida por snapshot, contabilidade de armazenamento e tags/notas.
 - [jasonrale/dsh-archive-manager](https://github.com/jasonrale/dsh-archive-manager) (★ 6) — Permite reabrir uma sessão arquivada e continuar conversando, ou excluí-la definitivamente, com busca de mensagens.
 
 <details><summary>Instalar</summary>
@@ -84,14 +84,14 @@ dsh plugin --profile web add github:MichengAI/dsh-archive-manager
 
 ### Conversation rewind via change ledger
 
-[Anionex/dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind) — `Plugin nativo` · ★ 134 · Licença: BSD-3-Clause · Funciona com: DeepSeek Harness apenas
+[Anionex/dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind) — `Plugin nativo` · ★ 138 · Licença: BSD-3-Clause · Funciona com: DeepSeek Harness apenas
 
 Retrocede o estado da conversa e do workspace, com base em um Change Ledger persistente.
 
 **Alternativas:**
 
-- [SiriLee/dsh-rewind](https://github.com/SiriLee/dsh-rewind) (★ 148) — Retrocede no próprio lugar sem bifurcar a sessão, com restauração opcional de arquivos a partir do disco.
-- [limbo947/dsh-recall-plugin](https://github.com/limbo947/dsh-recall-plugin) (★ 39) — Adiciona um painel de confirmação com prévia de diff antes de reverter a conversa e os arquivos do workspace.
+- [SiriLee/dsh-rewind](https://github.com/SiriLee/dsh-rewind) (★ 199) — Retrocede no próprio lugar sem bifurcar a sessão, com restauração opcional de arquivos a partir do disco.
+- [limbo947/dsh-recall-plugin](https://github.com/limbo947/dsh-recall-plugin) (★ 43) — Adiciona um painel de confirmação com prévia de diff antes de reverter a conversa e os arquivos do workspace.
 
 <details><summary>Instalar</summary>
 
@@ -107,7 +107,7 @@ dsh plugin --profile web add github:Anionex/dsh-turn-rewind
 
 ### Cross-workspace session manager
 
-[hkkz9522/dsh-session-manager](https://github.com/hkkz9522/dsh-session-manager) — `Plugin nativo` · ★ 57 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[hkkz9522/dsh-session-manager](https://github.com/hkkz9522/dsh-session-manager) — `Plugin nativo` · ★ 83 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Gerenciador de sessões para a Web UI do DeepSeek Harness: exclui sessões, arquiva sessões, move sessões entre workspaces e migra o preset de agente de uma sessão.
 
@@ -143,7 +143,7 @@ dsh plugin --profile web add github:Moeblack/dsh-message-edit
 
 ### One-click conversation sharing
 
-[hellodigua/dsh-share](https://github.com/hellodigua/dsh-share) — `Plugin nativo` · ★ 37 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[hellodigua/dsh-share](https://github.com/hellodigua/dsh-share) — `Plugin nativo` · ★ 40 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Compartilha suas conversas com um clique.
 

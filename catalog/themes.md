@@ -8,8 +8,8 @@
 - [All-in-one skin and wallpaper suite](#dsh-dsh-dream-skin) — Adds 8 built-in themes plus a translucent wallpaper with adjustable opacity and blur, a per-user accent color,…
 - [Bloom Morandi OKLCH theme](#dsh-dsh-bloom-theme) — Ten Morandi-toned color variants (mist, cinnabar, petal, ripple, sage, stone, lapis, amber, aurora, lavender) …
 - [VTuber companion theme](#dsh-dsh-joi-channel-theme) — A two-suit VTuber theme built around the Joi character: separate light/dark token sets, a standing portrait, c…
-- [Solarized and Selenized theme](#dsh-solarized-dsh-theme) — The classic low-contrast Solarized palette plus Selenized, its refined take, each with dark and light variants…
 - [Neumorphic theme](#dsh-dsh-neu-theme) — Neumorphic light and dark palettes with ambient lighting, material shadows, grain texture, frosted-glass surfa…
+- [Solarized and Selenized theme](#dsh-solarized-dsh-theme) — The classic low-contrast Solarized palette plus Selenized, its refined take, each with dark and light variants…
 - [Windows XP Luna desktop skin](#dsh-dsh-client-ui-theme-xp) — Recreates the Windows XP Luna desktop inside the DSH Web UI, with a floating window manager, taskbar, desktop …
 - [Dracula theme](#dsh-dsh-dracula-theme) — The classic Dracula dark palette plus a Soft variant, registered into the native DSH theme runtime with one-cl…
 
@@ -17,13 +17,13 @@
 
 ### Wallpaper Engine background player
 
-[elysia395/dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine) — `Native plugin` · ★ 1.6k · License: MIT · Works with: DeepSeek Harness only
+[elysia395/dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine) — `Native plugin` · ★ 3.0k · License: MIT · Works with: DeepSeek Harness only
 
 Plays local Wallpaper Engine Video and Web wallpapers behind the chat (Scene wallpapers render as static frames), with content-rating and type filters, custom uploads, and an iOS-style liquid-glass settings window. Requires DSH 0.1.5-rc.1+ and dsh-better-sidebar 0.19.0+.
 
 **Alternatives:**
 
-- [d-dev0101/open-sea-skin](https://github.com/d-dev0101/open-sea-skin) (★ 400) — Renders a real-time WebGPU animated ocean scene with wave, daylight, and glass controls instead of pre-recorded wallpaper files.
+- [d-dev0101/open-sea-skin](https://github.com/d-dev0101/open-sea-skin) (★ 384) — Renders a real-time WebGPU animated ocean scene with wave, daylight, and glass controls instead of pre-recorded wallpaper files.
 
 <details><summary>Install</summary>
 
@@ -39,15 +39,15 @@ dsh plugin --profile web add github:elysia395/dsh-wallpaper-engine
 
 ### All-in-one skin and wallpaper suite
 
-[RevolutionLA/dsh-dream-skin](https://github.com/RevolutionLA/dsh-dream-skin) — `Native plugin` · ★ 255 · License: MIT · Works with: DeepSeek Harness only
+[RevolutionLA/dsh-dream-skin](https://github.com/RevolutionLA/dsh-dream-skin) — `Native plugin` · ★ 285 · License: MIT · Works with: DeepSeek Harness only
 
 Adds 8 built-in themes plus a translucent wallpaper with adjustable opacity and blur, a per-user accent color, and shareable theme-pack import/export with favorites and a random surprise-me picker, native to DSH's own theme system.
 
 **Alternatives:**
 
-- [NoNameLeGo/dsh-catppuccin-theme](https://github.com/NoNameLeGo/dsh-catppuccin-theme) (★ 63) — Adds the official 4-variant Catppuccin palette with adjustable frosted glass across 5 UI regions.
-- [Tkingxiao/dsh-any-background](https://github.com/Tkingxiao/dsh-any-background) (★ 45) — Auto-switches text to light or dark based on extracted wallpaper colors, with per-area blur across 6 regions.
-- [TQSY114514/dsh-ui-appearance](https://github.com/TQSY114514/dsh-ui-appearance) (★ 23) — Bundles full color-palette theming together with video wallpaper backgrounds in one appearance panel.
+- [NoNameLeGo/dsh-catppuccin-theme](https://github.com/NoNameLeGo/dsh-catppuccin-theme) (★ 72) — Adds the official 4-variant Catppuccin palette with adjustable frosted glass across 5 UI regions.
+- [Tkingxiao/dsh-any-background](https://github.com/Tkingxiao/dsh-any-background) (★ 51) — Auto-switches text to light or dark based on extracted wallpaper colors, with per-area blur across 6 regions.
+- [TQSY114514/dsh-ui-appearance](https://github.com/TQSY114514/dsh-ui-appearance) (★ 26) — Bundles full color-palette theming together with video wallpaper backgrounds in one appearance panel.
 - [mux9056-bot/dsh-theme](https://github.com/mux9056-bot/dsh-theme) (★ 3) — Ships 30 drop-in CSS theme packs with light/dark variants, manageable through a programmatic API.
 
 <details><summary>Install</summary>
@@ -64,7 +64,7 @@ dsh plugin --profile web add github:RevolutionLA/dsh-dream-skin
 
 ### Bloom Morandi OKLCH theme
 
-[webkubor/dsh-bloom-theme](https://github.com/webkubor/dsh-bloom-theme) — `Native plugin` · ★ 102 · License: MIT · Works with: DeepSeek Harness only
+[webkubor/dsh-bloom-theme](https://github.com/webkubor/dsh-bloom-theme) — `Native plugin` · ★ 43 · License: MIT · Works with: DeepSeek Harness only
 
 Ten Morandi-toned color variants (mist, cinnabar, petal, ripple, sage, stone, lapis, amber, aurora, lavender) built on the OKLCH color space so light and dark stay perceptually even, switchable from the top bar, with every foreground/background pair meeting WCAG AA or better.
 
@@ -100,6 +100,24 @@ dsh plugin --profile web add github:tpmoonchefryan/dsh-joi-channel-theme
 
 </details>
 
+<a id="dsh-dsh-neu-theme"></a>
+
+### Neumorphic theme
+
+[Lhy723/dsh-neu-theme](https://github.com/Lhy723/dsh-neu-theme) — `Native plugin` · ★ 8 · License: MIT · Works with: DeepSeek Harness only
+
+Neumorphic light and dark palettes with ambient lighting, material shadows, grain texture, frosted-glass surfaces, and micro-interactions.
+
+<details><summary>Install</summary>
+
+**DeepSeek Harness**
+
+```bash
+dsh plugin --profile web add github:Lhy723/dsh-neu-theme
+```
+
+</details>
+
 <a id="dsh-solarized-dsh-theme"></a>
 
 ### Solarized and Selenized theme
@@ -114,24 +132,6 @@ The classic low-contrast Solarized palette plus Selenized, its refined take, eac
 
 ```bash
 dsh plugin --profile web add github:zhijun-dai/Solarized-dsh-theme
-```
-
-</details>
-
-<a id="dsh-dsh-neu-theme"></a>
-
-### Neumorphic theme
-
-[Lhy723/dsh-neu-theme](https://github.com/Lhy723/dsh-neu-theme) — `Native plugin` · ★ 7 · License: MIT · Works with: DeepSeek Harness only
-
-Neumorphic light and dark palettes with ambient lighting, material shadows, grain texture, frosted-glass surfaces, and micro-interactions.
-
-<details><summary>Install</summary>
-
-**DeepSeek Harness**
-
-```bash
-dsh plugin --profile web add github:Lhy723/dsh-neu-theme
 ```
 
 </details>

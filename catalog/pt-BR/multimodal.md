@@ -24,8 +24,8 @@
 - [AI image generation](#dsh-dsh-imagegen) — Adiciona geração de imagem a partir de texto e imagem para imagem à Web GUI do DSH via um endpoint compatível …
 - [Drive ComfyUI image/video workflows](#dsh-dsh-comfyui) — Controla um servidor ComfyUI local ou remoto: ferramentas para executar workflows, inspecionar nós e editar gr…
 - [Design-fidelity visual QA](#dsh-dsh-design-qa) — Permite que um modelo somente texto julgue se uma implementação corresponde ao mock de design, via uma ferrame…
-- [Read replies aloud (TTS)](#dsh-dsh-speak) — Anuncia respostas finais, aprovações e perguntas com a voz natural nativa do sistema no Windows e macOS, sem c…
 - [muapi generative media skills](#generative-media-skills) — 73 skills para geração multimodal de imagem, vídeo e áudio de alta qualidade via API muapi, cobrindo criativos…
+- [Read replies aloud (TTS)](#dsh-dsh-speak) — Anuncia respostas finais, aprovações e perguntas com a voz natural nativa do sistema no Windows e macOS, sem c…
 - [Screenshot capture into composer](#dsh-dsh-plugin-appshot) — Captura a janela ativa em primeiro plano por um atalho global e a insere diretamente no composer para consulta…
 - [TTS/ASR utility toolkit](#dsh-dsh-voice) — Um kit de ferramentas de voz: síntese de fala gratuita via edge-tts, transcrição ASR compatível com OpenAI, li…
 - [UI sound effects and alerts](#dsh-dsh-plugin-uisfx) — Adiciona efeitos sonoros semânticos de UI para início, sucesso e falha de tarefas, além de sinais por botão, c…
@@ -40,7 +40,7 @@
 
 ### HyperFrames
 
-[HyperFrames](https://github.com/heygen-com/hyperframes) — `Agent Skills` · ★ 67k · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[HyperFrames](https://github.com/heygen-com/hyperframes) — `Agent Skills` · ★ 73k · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Skills e CLI para escrever vídeos como composições HTML e renderizá-los em MP4/WebM, feitos para agentes.
 
@@ -310,7 +310,7 @@ npx skills add pipecat-ai/pipecat -a universal
 
 ### Cinematic video shot skill
 
-[Vincentwei1021/video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft) — `Lista / registro` · ★ 12k · Licença: Apache-2.0 · Funciona com: —
+[Vincentwei1021/video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft) — `Lista / registro` · ★ 14k · Licença: Apache-2.0 · Funciona com: —
 
 Skill de vídeo com IA para Claude Code e Codex que produz vídeos cinematográficos de produto com Remotion, apoiada em 152 cartões de receita de plano e 209 previews de movimento.
 
@@ -318,7 +318,7 @@ Skill de vídeo com IA para Claude Code e Codex que produz vídeos cinematográf
 
 ### GPT Image prompt library & CLI
 
-[wuyoscar/GPT-Image2-Skill](https://github.com/wuyoscar/GPT-Image2-Skill) — `Agent Skills` · ★ 5.8k · Licença: MIT · Funciona com: Todos os clientes
+[wuyoscar/GPT-Image2-Skill](https://github.com/wuyoscar/GPT-Image2-Skill) — `Agent Skills` · ★ 5.9k · Licença: MIT · Funciona com: Todos os clientes
 
 Galeria de prompts, biblioteca de prompts de imagem, skill agêntica e CLI para geração e edição de imagens com o GPT Image 2/2.5 da OpenAI.
 
@@ -408,7 +408,7 @@ npx skills add wuyoscar/GPT-Image2-Skill -a universal
 
 ### Remotion official video skills
 
-[remotion-dev/skills](https://github.com/remotion-dev/skills) — `Agent Skills` · ★ 5.4k · Licença: ver repo · Funciona com: Todos os clientes
+[remotion-dev/skills](https://github.com/remotion-dev/skills) — `Agent Skills` · ★ 5.7k · Licença: ver repo · Funciona com: Todos os clientes
 
 Pacote oficial de skills para o Remotion (vídeo programático com React), cobrindo boas práticas, legendas, interatividade, mapas, renderização e uso do Remotion Studio.
 
@@ -498,14 +498,14 @@ npx skills add remotion-dev/skills -a universal
 
 ### Vision bridge for text-only models
 
-[liustack/modlens](https://github.com/liustack/modlens) — `Plugin nativo` · ★ 4.3k · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[liustack/modlens](https://github.com/liustack/modlens) — `Plugin nativo` · ★ 4.5k · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Transforma imagens coladas em evidências estruturadas em JSON — OCR, layout e semântica — para que modelos somente texto entendam e raciocinem sobre capturas de tela e imagens.
 
 **Alternativas:**
 
 - [ysr666/dsh-vision-router](https://github.com/ysr666/dsh-vision-router) (★ 1.2k) — Adiciona ferramentas de pixel: perguntas, grounding, recorte, diff de pixels, cores, SVG e remoção de fundo, via cadeia gratuita sem chave.
-- [Anionex/dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) (★ 902) — Adiciona comparação de imagens, OCR de capturas longas e reprodução de screenshot para UI, via serviço gratuito limitado a 100 imagens/dia.
+- [Anionex/dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) (★ 905) — Adiciona comparação de imagens, OCR de capturas longas e reprodução de screenshot para UI, via serviço gratuito limitado a 100 imagens/dia.
 - [FuzzySoul/dsh-free-vision](https://github.com/FuzzySoul/dsh-free-vision) (★ 8) — Adiciona uma GUI de configurações para escolher entre provedores de visão gratuitos (Qwen3-VL-Flash, Doubao, DeepSeek-OCR).
 - [54xkeee/dsh-youreyes](https://github.com/54xkeee/dsh-youreyes) (★ 2) — Adiciona memória de evidências que sobrevive à compactação de contexto, cache por hash de conteúdo e um painel bilíngue no cliente.
 
@@ -523,13 +523,13 @@ dsh plugin --profile web add github:liustack/modlens
 
 ### Short-drama production skills
 
-[zenstory-ai/drama-skills](https://github.com/zenstory-ai/drama-skills) — `Agent Skills` · ★ 3.1k · Licença: MIT · Funciona com: Todos os clientes
+[zenstory-ai/drama-skills](https://github.com/zenstory-ai/drama-skills) — `Agent Skills` · ★ 3.4k · Licença: MIT · Funciona com: Todos os clientes
 
 Coleção open-source de skills para criação de curtas dramas e drama em quadrinhos por IA: roteiros, assets de personagens, storyboards, prompts de imagem/vídeo e revisão, para Claude Code e Codex.
 
 **Alternativas:**
 
-- [eternityspring/shuohao-skills](https://github.com/eternityspring/shuohao-skills) (★ 4.8k) — Conjunto menor e com escopo parecido para quebra de personagens, roteiro e lista de planos.
+- [eternityspring/shuohao-skills](https://github.com/eternityspring/shuohao-skills) (★ 5.3k) — Conjunto menor e com escopo parecido para quebra de personagens, roteiro e lista de planos.
 
 <details><summary>Instalar</summary>
 
@@ -809,13 +809,13 @@ extensions:
 
 ### Local video understanding
 
-[HUANGCHIHHUNGLeo/claude-real-video](https://github.com/HUANGCHIHHUNGLeo/claude-real-video) — `Servidor MCP` · ★ 2.2k · Licença: MIT · Funciona com: Todos os clientes
+[HUANGCHIHHUNGLeo/claude-real-video](https://github.com/HUANGCHIHHUNGLeo/claude-real-video) — `Servidor MCP` · ★ 2.3k · Licença: MIT · Funciona com: Todos os clientes
 
 Permite que um LLM assista a um vídeo localmente e busque em tudo que já assistiu.
 
 **Alternativas:**
 
-- [burningion/video-editing-mcp](https://github.com/burningion/video-editing-mcp) (★ 294) — Analisa, busca, gera e edita vídeos via Video Jungle; exige VJ_API_KEY.
+- [burningion/video-editing-mcp](https://github.com/burningion/video-editing-mcp) (★ 295) — Analisa, busca, gera e edita vídeos via Video Jungle; exige VJ_API_KEY.
 - [sonpiaz/watch-cli/tree/main/mcp-server](https://github.com/sonpiaz/watch-cli/tree/main/mcp-server) — Entrega um vídeo social, com frames e transcrição já preparados, a um agente; exige chaves de API do Kyma e do Groq.
 
 <details><summary>Instalar</summary>
@@ -1292,7 +1292,7 @@ extensions:
 
 ### ComfyUI workflow control
 
-[artokun/comfyui-mcp](https://github.com/artokun/comfyui-mcp) — `Servidor MCP` · ★ 840 · Licença: MIT · Funciona com: Todos os clientes
+[artokun/comfyui-mcp](https://github.com/artokun/comfyui-mcp) — `Servidor MCP` · ★ 864 · Licença: MIT · Funciona com: Todos os clientes
 
 Servidor e plugin de Claude Code para ComfyUI: roda workflows, gera imagens e gerencia modelos e VRAM.
 
@@ -1481,13 +1481,13 @@ extensions:
 
 ### Adobe Photoshop automation
 
-[alisaitteke/photoshop-mcp](https://github.com/alisaitteke/photoshop-mcp) — `Servidor MCP` · ★ 684 · Licença: MIT · Funciona com: Todos os clientes
+[alisaitteke/photoshop-mcp](https://github.com/alisaitteke/photoshop-mcp) — `Servidor MCP` · ★ 739 · Licença: MIT · Funciona com: Todos os clientes
 
 116 ferramentas para controlar o Adobe Photoshop, combinando ações de IA generativa com receitas, além de uma interface web própria.
 
 **Alternativas:**
 
-- [MCP for Adobe Premiere Pro](https://github.com/leancoderkavy/premiere-pro-mcp) (★ 409) — Servidor local-first para workflows suportados do Adobe Premiere Pro, começando com uma verificação de conexão somente leitura.
+- [MCP for Adobe Premiere Pro](https://github.com/leancoderkavy/premiere-pro-mcp) (★ 438) — Servidor local-first para workflows suportados do Adobe Premiere Pro, começando com uma verificação de conexão somente leitura.
 
 <details><summary>Instalar</summary>
 
@@ -1674,7 +1674,7 @@ extensions:
 
 ### Gemini image generation and editing
 
-[zhongweili/nanobanana-mcp-server](https://github.com/zhongweili/nanobanana-mcp-server) — `Servidor MCP` · ★ 401 · Licença: MIT · Funciona com: Todos os clientes
+[zhongweili/nanobanana-mcp-server](https://github.com/zhongweili/nanobanana-mcp-server) — `Servidor MCP` · ★ 402 · Licença: MIT · Funciona com: Todos os clientes
 
 Oferece geração e edição de imagens via Gemini; exige GEMINI_API_KEY.
 
@@ -1885,7 +1885,7 @@ extensions:
 
 ### Drive Google Flow video generation
 
-[gflow-cli](https://github.com/ffroliva/gflow-cli) — `Servidor MCP` · ★ 312 · Licença: MIT · Funciona com: Todos os clientes
+[gflow-cli](https://github.com/ffroliva/gflow-cli) — `Servidor MCP` · ★ 337 · Licença: MIT · Funciona com: Todos os clientes
 
 Aciona o Google Flow a partir de um agente para gerar vídeos com Veo e imagens com Imagen.
 
@@ -2066,7 +2066,7 @@ extensions:
 
 ### Glif's media-generation agent
 
-[Glif](https://github.com/glifxyz/glif-mcp-server) — `Servidor MCP` · ★ 215 · Licença: MIT · Funciona com: Todos os clientes
+[Glif](https://github.com/glifxyz/glif-mcp-server) — `Servidor MCP` · ★ 216 · Licença: MIT · Funciona com: Todos os clientes
 
 Gera imagens, vídeo e áudio com o agente de geração de mídia do Glif.
 
@@ -2228,7 +2228,7 @@ extensions:
 
 ### AI image generation
 
-[dickpy/dsh-imagegen](https://github.com/dickpy/dsh-imagegen) — `Plugin nativo` · ★ 125 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
+[dickpy/dsh-imagegen](https://github.com/dickpy/dsh-imagegen) — `Plugin nativo` · ★ 144 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
 
 Adiciona geração de imagem a partir de texto e imagem para imagem à Web GUI do DSH via um endpoint compatível com OpenAI configurável (gpt-image ou dall-e-3), com um cartão de configurações e um estúdio de geração na barra lateral.
 
@@ -2250,7 +2250,7 @@ dsh plugin --profile web add github:dickpy/dsh-imagegen
 
 ### Drive ComfyUI image/video workflows
 
-[fandc520/dsh-comfyui](https://github.com/fandc520/dsh-comfyui) — `Plugin nativo` · ★ 117 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[fandc520/dsh-comfyui](https://github.com/fandc520/dsh-comfyui) — `Plugin nativo` · ★ 139 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Controla um servidor ComfyUI local ou remoto: ferramentas para executar workflows, inspecionar nós e editar grafos, com biblioteca de templates, fila ao vivo, templates SDXL e Wan 2.1, e um proxy de mídia de mesma origem.
 
@@ -2282,35 +2282,11 @@ dsh plugin --profile web add github:sunxin-ai/dsh-design-qa
 
 </details>
 
-<a id="dsh-dsh-speak"></a>
-
-### Read replies aloud (TTS)
-
-[Alan2Z/dsh-speak](https://github.com/Alan2Z/dsh-speak) — `Plugin nativo` · ★ 18 · Licença: MIT · Funciona com: DeepSeek Harness apenas
-
-Anuncia respostas finais, aprovações e perguntas com a voz natural nativa do sistema no Windows e macOS, sem custo extra de modelo ou tokens, com anúncios de eventos opcionais e uma página de configurações bilíngue.
-
-**Alternativas:**
-
-- [PolinniZhong/dsh-omi-voice](https://github.com/PolinniZhong/dsh-omi-voice) (★ 76) — Adiciona leitura em voz alta ao toque com vozes naturais Doubao TTS (chave própria), filtrando código, tabelas e diagramas do que é lido.
-- [1624318455/dsh-plugin-tts](https://github.com/1624318455/dsh-plugin-tts) (★ 26) — Adiciona modelos de voz personalizados RVC com instalação de pacotes de voz em um clique a partir de um registro, além do Edge TTS gratuito.
-- [ppy-web/dsh-plugin-xiaomi-mimo-tts](https://github.com/ppy-web/dsh-plugin-xiaomi-mimo-tts) (★ 26) — Adiciona texto para fala Xiaomi MiMo com vozes predefinidas e design de voz personalizado.
-
-<details><summary>Instalar</summary>
-
-**DeepSeek Harness**
-
-```bash
-dsh plugin --profile web add github:Alan2Z/dsh-speak
-```
-
-</details>
-
 <a id="generative-media-skills"></a>
 
 ### muapi generative media skills
 
-[SamurAIGPT/Generative-Media-Skills](https://github.com/SamurAIGPT/Generative-Media-Skills) — `Agent Skills` · ★ 12 · Licença: MIT · Funciona com: Todos os clientes
+[SamurAIGPT/Generative-Media-Skills](https://github.com/SamurAIGPT/Generative-Media-Skills) — `Agent Skills` · ★ 23 · Licença: MIT · Funciona com: Todos os clientes
 
 73 skills para geração multimodal de imagem, vídeo e áudio de alta qualidade via API muapi, cobrindo criativos de anúncio, vídeo social, anúncios de produto e direção cinematográfica.
 
@@ -2396,6 +2372,30 @@ npx skills add SamurAIGPT/Generative-Media-Skills -a universal
 
 </details>
 
+<a id="dsh-dsh-speak"></a>
+
+### Read replies aloud (TTS)
+
+[Alan2Z/dsh-speak](https://github.com/Alan2Z/dsh-speak) — `Plugin nativo` · ★ 19 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+
+Anuncia respostas finais, aprovações e perguntas com a voz natural nativa do sistema no Windows e macOS, sem custo extra de modelo ou tokens, com anúncios de eventos opcionais e uma página de configurações bilíngue.
+
+**Alternativas:**
+
+- [PolinniZhong/dsh-omi-voice](https://github.com/PolinniZhong/dsh-omi-voice) (★ 76) — Adiciona leitura em voz alta ao toque com vozes naturais Doubao TTS (chave própria), filtrando código, tabelas e diagramas do que é lido.
+- [1624318455/dsh-plugin-tts](https://github.com/1624318455/dsh-plugin-tts) (★ 41) — Adiciona modelos de voz personalizados RVC com instalação de pacotes de voz em um clique a partir de um registro, além do Edge TTS gratuito.
+- [ppy-web/dsh-plugin-xiaomi-mimo-tts](https://github.com/ppy-web/dsh-plugin-xiaomi-mimo-tts) (★ 33) — Adiciona texto para fala Xiaomi MiMo com vozes predefinidas e design de voz personalizado.
+
+<details><summary>Instalar</summary>
+
+**DeepSeek Harness**
+
+```bash
+dsh plugin --profile web add github:Alan2Z/dsh-speak
+```
+
+</details>
+
 <a id="dsh-dsh-plugin-appshot"></a>
 
 ### Screenshot capture into composer
@@ -2468,8 +2468,8 @@ Um ciclo de voz gratuito e completo para a Web UI: reconhecimento de fala do nav
 
 - [Zhangbo-cn/dsh-voice-input-plugin](https://github.com/Zhangbo-cn/dsh-voice-input-plugin) (★ 6) — Adiciona ditado por pressionar-e-falar e leitura via Edge TTS que transmite enquanto o modelo gera, com pausa de eco na reprodução.
 - [qishuilalala/dsh-voice-mode#dsh-voice-mode](https://github.com/qishuilalala/dsh-voice-mode/tree/main/plugin/dsh-voice-mode) — Adiciona ASR full-duplex no dispositivo, com palavra de ativação e barge-in real que interrompe a reprodução ao começar a falar.
-- [PensiveFei/dsh-voice-scribe](https://github.com/PensiveFei/dsh-voice-scribe) (★ 36) — Adiciona um atalho (Alt ou Alt+Espaço) para iniciar e parar o ditado, com polimento opcional da transcrição por LLM.
-- [WizisCool/dsh-ears](https://github.com/WizisCool/dsh-ears) (★ 24) — Adiciona escolha entre back-ends de reconhecimento de fala, com página de configurações nativa e polimento opcional via LLM do dsh.
+- [PensiveFei/dsh-voice-scribe](https://github.com/PensiveFei/dsh-voice-scribe) (★ 35) — Adiciona um atalho (Alt ou Alt+Espaço) para iniciar e parar o ditado, com polimento opcional da transcrição por LLM.
+- [WizisCool/dsh-ears](https://github.com/WizisCool/dsh-ears) (★ 25) — Adiciona escolha entre back-ends de reconhecimento de fala, com página de configurações nativa e polimento opcional via LLM do dsh.
 
 <details><summary>Instalar</summary>
 

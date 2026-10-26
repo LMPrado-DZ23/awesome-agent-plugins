@@ -12,7 +12,7 @@
 
 ### Agent Skills
 
-[Agent Skills](https://github.com/agentskills/agentskills) — `Standard / spec` · ★ 26k · License: Apache-2.0 · Works with: —
+[Agent Skills](https://github.com/agentskills/agentskills) — `Standard / spec` · ★ 27k · License: Apache-2.0 · Works with: —
 
 Specification for Agent Skills: a folder with a SKILL.md (name, description, instructions) plus optional scripts and resources that an agent loads on demand.
 
