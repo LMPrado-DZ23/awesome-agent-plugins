@@ -4,7 +4,7 @@
 
 > Um catálogo de **servidores MCP, Agent Skills e plugins nativos** para agentes de IA de programação — com o comando de instalação exato para o *seu* cliente.
 
-![entries](https://img.shields.io/badge/itens-589-blue) ![projects](https://img.shields.io/badge/projects-945-blue) ![clients](https://img.shields.io/badge/clients-13-green)
+![entries](https://img.shields.io/badge/itens-590-blue) ![projects](https://img.shields.io/badge/projects-946-blue) ![clients](https://img.shields.io/badge/clients-13-green)
 
 A maioria das listas é presa a um cliente. Aqui cada item diz com quais agentes funciona, e as instruções de instalação são geradas por cliente a partir de uma única especificação, então ficam consistentes. Plugins quase duplicados são juntados numa entrada que aponta a melhor opção e lista o que cada alternativa acrescenta.
 
@@ -17,7 +17,7 @@ A maioria das listas é presa a um cliente. Aqui cada item diz com quais agentes
 | [Gemini CLI](https://github.com/google-gemini/gemini-cli/blob/main/docs/tools/mcp-server.md) | ✅ | ✅ | ✅ 3 | `GEMINI.md` | ✅ testados de ponta a ponta |
 | [Cursor](https://cursor.com/docs/context/mcp) | ✅ | ✅ | — | `AGENTS.md / .cursor/rules` | da documentação oficial |
 | [VS Code (Copilot)](https://code.visualstudio.com/docs/copilot/customization/mcp-servers) | ✅ | ✅ | — | `.github/copilot-instructions.md` | da documentação oficial |
-| [OpenCode](https://opencode.ai/docs/mcp-servers/) | ✅ | ✅ | — | `AGENTS.md` | da documentação oficial |
+| [OpenCode](https://opencode.ai/docs/mcp-servers/) | ✅ | ✅ | ✅ 1 | `AGENTS.md` | da documentação oficial |
 | [Cline](https://docs.cline.bot/mcp/configuring-mcp-servers) | ✅ | ✅ | — | `.clinerules` | da documentação oficial |
 | [Windsurf](https://docs.windsurf.com/windsurf/cascade/mcp) | ✅ | ✅ | — | `AGENTS.md` | da documentação oficial |
 | [Zed](https://zed.dev/docs/ai/mcp) | ✅ | ✅ | — | `AGENTS.md` | da documentação oficial |
@@ -89,7 +89,7 @@ Kits prontos para cenários comuns — instale o kit inteiro em um cliente com u
 - [Segurança e permissões](catalog/pt-BR/security.md) — 33 itens + 28 alternativas incorporadas
 - [Modelos e provedores](catalog/pt-BR/models.md) — 13 itens + 18 alternativas incorporadas
 - [Uso e custo](catalog/pt-BR/usage.md) — 8 itens + 8 alternativas incorporadas
-- [Sessões e mensagens](catalog/pt-BR/sessions.md) — 10 itens + 7 alternativas incorporadas
+- [Sessões e mensagens](catalog/pt-BR/sessions.md) — 11 itens + 7 alternativas incorporadas
 - [Visão e voz](catalog/pt-BR/multimodal.md) — 31 itens + 21 alternativas incorporadas
 - [Remoto e mobile](catalog/pt-BR/remote.md) — 11 itens + 19 alternativas incorporadas
 - [Melhorias de interface](catalog/pt-BR/ui.md) — 20 itens + 21 alternativas incorporadas
@@ -102,7 +102,7 @@ Toda importação é reproduzível (`scripts/import/`) e todo item passa pelo me
 
 | Origem | Itens | Como é selecionado |
 |---|---|---|
-| Curadoria manual | 44 | Servidores oficiais, especificações e pacotes de skills conferidos nos READMEs. |
+| Curadoria manual | 45 | Servidores oficiais, especificações e pacotes de skills conferidos nos READMEs. |
 | [MCP Registry](https://registry.modelcontextprotocol.io) | 198 | Servidores do registro oficial com ≥200★ cujo namespace no registro bate com o dono no GitHub (contra falsificação); instalação vinda dos dados de pacote do registro. |
 | Busca no GitHub | 127 | Busca por topics e palavras-chave, classificada pelos arquivos que existem de fato (SKILL.md, marketplace de plugins, manifesto de extensão do Gemini). |
 | [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) | 220 | Os melhores plugins por estrelas e downloads no npm; quase duplicados viram alternativas. |

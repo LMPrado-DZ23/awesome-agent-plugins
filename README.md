@@ -4,7 +4,7 @@
 
 > One catalog of **MCP servers, Agent Skills and native plugins** for AI coding agents — with the exact install command for *your* client.
 
-![entries](https://img.shields.io/badge/entries-589-blue) ![projects](https://img.shields.io/badge/projects-945-blue) ![clients](https://img.shields.io/badge/clients-13-green)
+![entries](https://img.shields.io/badge/entries-590-blue) ![projects](https://img.shields.io/badge/projects-946-blue) ![clients](https://img.shields.io/badge/clients-13-green)
 
 Most lists are tied to one client. Here every entry says which agents it works with, and install instructions are generated per client from a single canonical spec, so they stay consistent. Near-duplicate plugins are folded into one entry that points to the best option and lists what each alternative adds.
 
@@ -17,7 +17,7 @@ Most lists are tied to one client. Here every entry says which agents it works w
 | [Gemini CLI](https://github.com/google-gemini/gemini-cli/blob/main/docs/tools/mcp-server.md) | ✅ | ✅ | ✅ 3 | `GEMINI.md` | ✅ tested end-to-end |
 | [Cursor](https://cursor.com/docs/context/mcp) | ✅ | ✅ | — | `AGENTS.md / .cursor/rules` | from official docs |
 | [VS Code (Copilot)](https://code.visualstudio.com/docs/copilot/customization/mcp-servers) | ✅ | ✅ | — | `.github/copilot-instructions.md` | from official docs |
-| [OpenCode](https://opencode.ai/docs/mcp-servers/) | ✅ | ✅ | — | `AGENTS.md` | from official docs |
+| [OpenCode](https://opencode.ai/docs/mcp-servers/) | ✅ | ✅ | ✅ 1 | `AGENTS.md` | from official docs |
 | [Cline](https://docs.cline.bot/mcp/configuring-mcp-servers) | ✅ | ✅ | — | `.clinerules` | from official docs |
 | [Windsurf](https://docs.windsurf.com/windsurf/cascade/mcp) | ✅ | ✅ | — | `AGENTS.md` | from official docs |
 | [Zed](https://zed.dev/docs/ai/mcp) | ✅ | ✅ | — | `AGENTS.md` | from official docs |
@@ -89,7 +89,7 @@ Ready-made kits for common setups — install a whole kit on one client with a s
 - [Security & Permissions](catalog/security.md) — 33 entries + 28 alternatives folded in
 - [Models & Providers](catalog/models.md) — 13 entries + 18 alternatives folded in
 - [Usage & Cost](catalog/usage.md) — 8 entries + 8 alternatives folded in
-- [Sessions & Messages](catalog/sessions.md) — 10 entries + 7 alternatives folded in
+- [Sessions & Messages](catalog/sessions.md) — 11 entries + 7 alternatives folded in
 - [Vision & Voice](catalog/multimodal.md) — 31 entries + 21 alternatives folded in
 - [Remote & Mobile](catalog/remote.md) — 11 entries + 19 alternatives folded in
 - [UI Enhancements](catalog/ui.md) — 20 entries + 21 alternatives folded in
@@ -102,7 +102,7 @@ Every import is reproducible (`scripts/import/`) and every entry passes the same
 
 | Source | Entries | How it is selected |
 |---|---|---|
-| Hand-curated | 44 | Official servers, specs and skill packs checked against their READMEs. |
+| Hand-curated | 45 | Official servers, specs and skill packs checked against their READMEs. |
 | [MCP Registry](https://registry.modelcontextprotocol.io) | 198 | Servers from the official registry with ≥200★, whose registry namespace matches the GitHub owner (anti-impersonation); install spec taken from the registry package data. |
 | GitHub discovery | 127 | Topic/keyword search, classified by files actually present (SKILL.md, plugin marketplace, Gemini extension manifest). |
 | [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) | 220 | Top plugins by stars and npm downloads; near-duplicates folded into alternatives. |
