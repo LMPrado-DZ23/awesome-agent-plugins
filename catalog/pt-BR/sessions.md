@@ -14,6 +14,7 @@
 - [Full-session message history browser](#dsh-dsh-history) — Navega por todas as mensagens enviadas na sessão atual: listagem completa do histórico ordenada do mais novo, …
 - [Bookmark and tag assistant replies](#dsh-dsh-bookmarks) — Marca respostas do assistente com notas e tags; navega por todos os marcadores em um centro entre sessões e ex…
 - [Durable task state across tools](#dsh-task-passport) — Carrega estado durável de tarefas entre DeepSeek Harness, WorkBuddy, Claude Code e Codex com checkpoints legív…
+- [OpenCode Tab Wrangler](#opencode-tab-wrangler) — Organização de abas com prévia no terminal OpenCode V2, limpeza configurável por inatividade e recuperação pel…
 
 <a id="dsh-dsh-synapse"></a>
 
@@ -207,6 +208,24 @@ Carrega estado durável de tarefas entre DeepSeek Harness, WorkBuddy, Claude Cod
 
 ```bash
 dsh plugin --profile web add github:dongsheng123132/task-passport
+```
+
+</details>
+
+<a id="opencode-tab-wrangler"></a>
+
+### OpenCode Tab Wrangler
+
+[OpenCode Tab Wrangler](https://github.com/YidiDev/opencode-tab-wrangler) — `Plugin nativo` · Licença: MIT · Funciona com: OpenCode apenas
+
+Organização de abas com prévia no terminal OpenCode V2, limpeza configurável por inatividade e recuperação pelo Corral sem excluir sessões. Requer OpenCode 2.1.4+ e instalação no cli.json global.
+
+<details><summary>Instalar</summary>
+
+**OpenCode**
+
+```text
+Merge {"package":"opencode-tab-wrangler@1.0.1","options":{}} into the existing plugins array in the global ~/.config/opencode/cli.json. Preserve all other settings and plugins. Open /wrangler. Do not use server opencode.json.
 ```
 
 </details>
