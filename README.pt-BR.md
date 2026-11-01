@@ -4,7 +4,7 @@
 
 > Um catálogo de **servidores MCP, Agent Skills e plugins nativos** para agentes de IA de programação — com o comando de instalação exato para o *seu* cliente.
 
-![entries](https://img.shields.io/badge/itens-589-blue) ![projects](https://img.shields.io/badge/projects-945-blue) ![clients](https://img.shields.io/badge/clients-13-green)
+![entries](https://img.shields.io/badge/itens-589-blue) ![projects](https://img.shields.io/badge/projects-946-blue) ![clients](https://img.shields.io/badge/clients-13-green)
 
 A maioria das listas é presa a um cliente. Aqui cada item diz com quais agentes funciona, e as instruções de instalação são geradas por cliente a partir de uma única especificação, então ficam consistentes. Plugins quase duplicados são juntados numa entrada que aponta a melhor opção e lista o que cada alternativa acrescenta.
 
@@ -77,7 +77,7 @@ Kits prontos para cenários comuns — instale o kit inteiro em um cliente com u
 - [Registros, listas e gerenciadores](catalog/pt-BR/meta.md) — 18 itens + 17 alternativas incorporadas
 - [Skills e instruções](catalog/pt-BR/skills.md) — 46 itens + 49 alternativas incorporadas
 - [Inteligência de código](catalog/pt-BR/code-intel.md) — 10 itens
-- [Navegador e web](catalog/pt-BR/browser.md) — 17 itens + 22 alternativas incorporadas
+- [Navegador e web](catalog/pt-BR/browser.md) — 17 itens + 23 alternativas incorporadas
 - [Documentação e conhecimento](catalog/pt-BR/docs.md) — 29 itens + 12 alternativas incorporadas
 - [Memória](catalog/pt-BR/memory.md) — 25 itens + 18 alternativas incorporadas
 - [Ferramentas e capacidades](catalog/pt-BR/tools.md) — 61 itens + 33 alternativas incorporadas

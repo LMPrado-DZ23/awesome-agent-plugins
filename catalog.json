@@ -16258,7 +16258,17 @@
       "@playwright/mcp@latest"
      ]
     }
-   }
+   },
+   "alternatives": [
+    {
+     "name": "agent-qa",
+     "url": "https://vostride.com",
+     "adds": {
+      "en": "Natural-language web, Android and iOS QA with persistent memidex memory and evidence-based self-improvement; FSL-1.1-ALv2, with model costs separate.",
+      "pt": "QA em linguagem natural para web, Android e iOS, com memória persistente memidex e autoaperfeiçoamento baseado em evidências; FSL-1.1-ALv2, custos de modelo à parte."
+     }
+    }
+   ]
   },
   {
    "id": "pm-skills",
