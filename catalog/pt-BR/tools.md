@@ -5504,7 +5504,7 @@ dsh plugin --profile web add github:heartleo/hn-cli#path:/plugins/hacker-news
 
 [Kilobat CLI](https://github.com/seifip/kilobat-cli) — `Servidor MCP` · Licença: GPL-3.0-only · Funciona com: Todos os clientes
 
-Diagnóstico de Wi-Fi, DNS e conectividade no macOS 14+; o build Homebrew exige Xcode 16+ e o aplicativo de desktop é separado e proprietário.
+Diagnóstico de Wi-Fi, DNS e conectividade no macOS 14+; o build Homebrew exige Xcode 16+ e o aplicativo de desktop é separado e proprietário. Se um cliente gráfico não encontrar kilobat, use o caminho completo retornado por which kilobat.
 
 <details><summary>Instalar</summary>
 
