@@ -200,13 +200,13 @@ extensions:
 
 ### Nature-style academic writing skills
 
-[Yuan1z0825/nature-skills](https://github.com/Yuan1z0825/nature-skills) — `Agent Skills` · ★ 51k · License: Apache-2.0 · Works with: All clients
+[Yuan1z0825/nature-skills](https://github.com/Yuan1z0825/nature-skills) — `Agent Skills` · ★ 52k · License: Apache-2.0 · Works with: All clients
 
 20 skills tailored to Nature-journal academic writing conventions and scientific figure design, including literature pipelines, citations and paper-to-slide conversion.
 
 **Alternatives:**
 
-- [zLanqing/codex-claude-academic-skills](https://github.com/zLanqing/codex-claude-academic-skills) (★ 5.3k) — Broader academic workflow covering literature review, writing polish and scientific computing tools.
+- [zLanqing/codex-claude-academic-skills](https://github.com/zLanqing/codex-claude-academic-skills) (★ 5.6k) — Broader academic workflow covering literature review, writing polish and scientific computing tools.
 
 <details><summary>Install</summary>
 
@@ -294,14 +294,14 @@ npx skills add Yuan1z0825/nature-skills -a universal
 
 ### OfficeCLI agent office suite
 
-[iOfficeAI/OfficeCLI](https://github.com/iOfficeAI/OfficeCLI) — `Agent Skills` · ★ 32k · License: Apache-2.0 · Works with: All clients
+[iOfficeAI/OfficeCLI](https://github.com/iOfficeAI/OfficeCLI) — `Agent Skills` · ★ 33k · License: Apache-2.0 · Works with: All clients
 
 Office suite purpose-built for AI agents to read, edit and automate Word, Excel and PowerPoint files, with dedicated skills for financial models, pitch decks and dashboards.
 
 **Alternatives:**
 
-- [genspark-ai/genoffice](https://github.com/genspark-ai/genoffice) (★ 11k) — Free open-source alternative office suite (docs, sheets, slides, PDF) with its own CLI and skill.
-- [OpenSenseNova/SenseNova-Skills](https://github.com/OpenSenseNova/SenseNova-Skills) (★ 5.9k) — Modular office-automation skills for Excel workflows: formatting, coloring and KPI reporting.
+- [genspark-ai/genoffice](https://github.com/genspark-ai/genoffice) (★ 12k) — Free open-source alternative office suite (docs, sheets, slides, PDF) with its own CLI and skill.
+- [OpenSenseNova/SenseNova-Skills](https://github.com/OpenSenseNova/SenseNova-Skills) (★ 6.0k) — Modular office-automation skills for Excel workflows: formatting, coloring and KPI reporting.
 
 <details><summary>Install</summary>
 
@@ -924,7 +924,7 @@ extensions:
 
 ### Zotero research library access
 
-[Zotero MCP](https://github.com/54yyyu/zotero-mcp) — `MCP server` · ★ 5.6k · License: MIT · Works with: All clients
+[Zotero MCP](https://github.com/54yyyu/zotero-mcp) — `MCP server` · ★ 5.7k · License: MIT · Works with: All clients
 
 Search, read, annotate, and add to a Zotero research library, local or web; needs a ZOTERO_API_KEY.
 
@@ -1131,7 +1131,7 @@ extensions:
 
 ### Simplified Technical English skill
 
-[AminBlg/SimpleEnglish](https://github.com/AminBlg/SimpleEnglish) — `Agent Skills` · ★ 4.0k · License: MIT · Works with: All clients
+[AminBlg/SimpleEnglish](https://github.com/AminBlg/SimpleEnglish) — `Agent Skills` · ★ 4.1k · License: MIT · Works with: All clients
 
 Agent skill that makes an LLM write documentation following ASD-STE100 Simplified Technical English, a controlled-language standard.
 
@@ -1923,7 +1923,7 @@ npx skills add pedrohcgs/claude-code-my-workflow -a universal
 
 ### 3D and AR SDK reference
 
-[SceneView/sceneview](https://github.com/SceneView/sceneview) — `MCP server` · ★ 1.3k · License: Apache-2.0 · Works with: All clients
+[SceneView/sceneview](https://github.com/SceneView/sceneview) — `MCP server` · ★ 1.4k · License: Apache-2.0 · Works with: All clients
 
 API docs, samples, validation, and code generation for the SceneView 3D and AR SDK on Android, iOS, and Web.
 
@@ -2337,9 +2337,9 @@ Evidence-first PDF server that returns citeable page and bounding-box evidence f
 
 **Alternatives:**
 
-- [Docling MCP](https://github.com/docling-project/docling-mcp) (★ 778) — Converts PDFs and other document formats to structured output via Docling; needs a Docling API key.
-- [PageIndex MCP](https://github.com/VectifyAI/pageindex-mcp) (★ 404) — Reasoning-based RAG for chatting with long PDFs, local or online.
-- [MinerU Open MCP](https://github.com/opendatalab/MinerU-Ecosystem) (★ 230) — Parses PDF, image, doc, ppt, and xls files into Markdown via the MinerU API; needs a MINERU_API_TOKEN.
+- [Docling MCP](https://github.com/docling-project/docling-mcp) (★ 782) — Converts PDFs and other document formats to structured output via Docling; needs a Docling API key.
+- [PageIndex MCP](https://github.com/VectifyAI/pageindex-mcp) (★ 407) — Reasoning-based RAG for chatting with long PDFs, local or online.
+- [MinerU Open MCP](https://github.com/opendatalab/MinerU-Ecosystem) (★ 229) — Parses PDF, image, doc, ppt, and xls files into Markdown via the MinerU API; needs a MINERU_API_TOKEN.
 
 <details><summary>Install</summary>
 
@@ -2526,13 +2526,13 @@ extensions:
 
 ### Full office suite inside DSH
 
-[dream-num/dsh-univer-office](https://github.com/dream-num/dsh-univer-office) — `Native plugin` · ★ 612 · License: Apache-2.0 · Works with: DeepSeek Harness only
+[dream-num/dsh-univer-office](https://github.com/dream-num/dsh-univer-office) — `Native plugin` · ★ 656 · License: Apache-2.0 · Works with: DeepSeek Harness only
 
 Brings spreadsheets, docs, slides, canvases and relational tables into one runtime inside DeepSeek Harness, with connected data, validation, versioned changes and isolated worktrees for multi-agent collaboration.
 
 **Alternatives:**
 
-- [kw78/dsh-office-tools](https://github.com/kw78/dsh-office-tools) (★ 37) — Offers simpler standalone tools to create/read Word, create/read/update Excel, and create/read PowerPoint with image placement
+- [kw78/dsh-office-tools](https://github.com/kw78/dsh-office-tools) (★ 41) — Offers simpler standalone tools to create/read Word, create/read/update Excel, and create/read PowerPoint with image placement
 - [didclawapp-ai/DSH-Office](https://github.com/didclawapp-ai/DSH-Office) (★ 6) — Also handles PDF, exposed as office_schema/office_write/office_edit/office_read tools through a local CLI
 
 <details><summary>Install</summary>
@@ -2549,7 +2549,7 @@ dsh plugin --profile web add github:dream-num/dsh-univer-office
 
 ### Yuque knowledge base access
 
-[yuque/yuque-mcp-server](https://github.com/yuque/yuque-mcp-server) — `MCP server` · ★ 258 · License: MIT · Works with: All clients
+[yuque/yuque-mcp-server](https://github.com/yuque/yuque-mcp-server) — `MCP server` · ★ 262 · License: MIT · Works with: All clients
 
 Exposes a Yuque knowledge base to AI assistants; needs a Yuque personal, group, or general token.
 
@@ -2782,7 +2782,7 @@ extensions:
 
 ### Unified SAP documentation search
 
-[marianfoo/mcp-sap-docs](https://github.com/marianfoo/mcp-sap-docs) — `MCP server` · ★ 247 · License: Apache-2.0 · Works with: All clients
+[marianfoo/mcp-sap-docs](https://github.com/marianfoo/mcp-sap-docs) — `MCP server` · ★ 249 · License: Apache-2.0 · Works with: All clients
 
 Fast unified search across SAP docs (SAPUI5, CAP, OpenUI5, wdi5) using BM25 full-text search.
 
@@ -2971,7 +2971,7 @@ extensions:
 
 ### Text-to-slideshow presentation skill
 
-[STARDUSTLC666/dsh-ppt](https://github.com/STARDUSTLC666/dsh-ppt) — `Native plugin` · ★ 20 · License: MIT · Works with: DeepSeek Harness only
+[STARDUSTLC666/dsh-ppt](https://github.com/STARDUSTLC666/dsh-ppt) — `Native plugin` · ★ 21 · License: MIT · Works with: DeepSeek Harness only
 
 Turns one sentence or a document into an HTML slideshow plus an editable PPTX, with seven layouts (including quotes and native PPTX tables), speaker notes, five built-in themes and bilingual support.
 
@@ -2995,7 +2995,7 @@ Editable Excalidraw diagrams rendered directly inside DeepSeek Harness conversat
 
 **Alternatives:**
 
-- [MrmoLabs/dsh-mermaid](https://github.com/MrmoLabs/dsh-mermaid) (★ 15) — Renders Mermaid code fences as SVG instead, with streaming, fullscreen zoom/pan and SVG export
+- [MrmoLabs/dsh-mermaid](https://github.com/MrmoLabs/dsh-mermaid) (★ 17) — Renders Mermaid code fences as SVG instead, with streaming, fullscreen zoom/pan and SVG export
 
 <details><summary>Install</summary>
 

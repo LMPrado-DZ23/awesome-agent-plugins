@@ -200,13 +200,13 @@ extensions:
 
 ### Nature-style academic writing skills
 
-[Yuan1z0825/nature-skills](https://github.com/Yuan1z0825/nature-skills) — `Agent Skills` · ★ 51k · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[Yuan1z0825/nature-skills](https://github.com/Yuan1z0825/nature-skills) — `Agent Skills` · ★ 52k · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 20 skills adaptadas às convenções de escrita acadêmica da revista Nature e ao design de figuras científicas, incluindo pipelines de literatura, citações e conversão de artigo para slides.
 
 **Alternativas:**
 
-- [zLanqing/codex-claude-academic-skills](https://github.com/zLanqing/codex-claude-academic-skills) (★ 5.3k) — Fluxo acadêmico mais amplo cobrindo revisão de literatura, polimento de texto e ferramentas de computação científica.
+- [zLanqing/codex-claude-academic-skills](https://github.com/zLanqing/codex-claude-academic-skills) (★ 5.6k) — Fluxo acadêmico mais amplo cobrindo revisão de literatura, polimento de texto e ferramentas de computação científica.
 
 <details><summary>Instalar</summary>
 
@@ -294,14 +294,14 @@ npx skills add Yuan1z0825/nature-skills -a universal
 
 ### OfficeCLI agent office suite
 
-[iOfficeAI/OfficeCLI](https://github.com/iOfficeAI/OfficeCLI) — `Agent Skills` · ★ 32k · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[iOfficeAI/OfficeCLI](https://github.com/iOfficeAI/OfficeCLI) — `Agent Skills` · ★ 33k · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Suíte de escritório feita para agentes de IA lerem, editarem e automatizarem arquivos Word, Excel e PowerPoint, com skills dedicadas para modelos financeiros, pitch decks e dashboards.
 
 **Alternativas:**
 
-- [genspark-ai/genoffice](https://github.com/genspark-ai/genoffice) (★ 11k) — Suíte de escritório alternativa e gratuita (docs, planilhas, slides, PDF) com CLI e skill próprios.
-- [OpenSenseNova/SenseNova-Skills](https://github.com/OpenSenseNova/SenseNova-Skills) (★ 5.9k) — Skills modulares de automação de escritório para fluxos de Excel: formatação, coloração e relatórios de KPI.
+- [genspark-ai/genoffice](https://github.com/genspark-ai/genoffice) (★ 12k) — Suíte de escritório alternativa e gratuita (docs, planilhas, slides, PDF) com CLI e skill próprios.
+- [OpenSenseNova/SenseNova-Skills](https://github.com/OpenSenseNova/SenseNova-Skills) (★ 6.0k) — Skills modulares de automação de escritório para fluxos de Excel: formatação, coloração e relatórios de KPI.
 
 <details><summary>Instalar</summary>
 
@@ -924,7 +924,7 @@ extensions:
 
 ### Zotero research library access
 
-[Zotero MCP](https://github.com/54yyyu/zotero-mcp) — `Servidor MCP` · ★ 5.6k · Licença: MIT · Funciona com: Todos os clientes
+[Zotero MCP](https://github.com/54yyyu/zotero-mcp) — `Servidor MCP` · ★ 5.7k · Licença: MIT · Funciona com: Todos os clientes
 
 Busca, leitura, anotação e adição de itens na biblioteca de pesquisa do Zotero, local ou web; exige ZOTERO_API_KEY.
 
@@ -1131,7 +1131,7 @@ extensions:
 
 ### Simplified Technical English skill
 
-[AminBlg/SimpleEnglish](https://github.com/AminBlg/SimpleEnglish) — `Agent Skills` · ★ 4.0k · Licença: MIT · Funciona com: Todos os clientes
+[AminBlg/SimpleEnglish](https://github.com/AminBlg/SimpleEnglish) — `Agent Skills` · ★ 4.1k · Licença: MIT · Funciona com: Todos os clientes
 
 Agent skill que faz um LLM escrever documentação seguindo o ASD-STE100 Simplified Technical English, um padrão de linguagem controlada.
 
@@ -1923,7 +1923,7 @@ npx skills add pedrohcgs/claude-code-my-workflow -a universal
 
 ### 3D and AR SDK reference
 
-[SceneView/sceneview](https://github.com/SceneView/sceneview) — `Servidor MCP` · ★ 1.3k · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[SceneView/sceneview](https://github.com/SceneView/sceneview) — `Servidor MCP` · ★ 1.4k · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Documentação de API, exemplos, validação e geração de código para o SDK 3D e AR SceneView em Android, iOS e Web.
 
@@ -2337,9 +2337,9 @@ Servidor de PDF com foco em evidências, retornando página e coordenadas citáv
 
 **Alternativas:**
 
-- [Docling MCP](https://github.com/docling-project/docling-mcp) (★ 778) — Converte PDFs e outros formatos de documento em saída estruturada via Docling; exige uma chave de API do Docling.
-- [PageIndex MCP](https://github.com/VectifyAI/pageindex-mcp) (★ 404) — RAG baseado em raciocínio para conversar com PDFs longos, locais ou online.
-- [MinerU Open MCP](https://github.com/opendatalab/MinerU-Ecosystem) (★ 230) — Converte PDF, imagem, doc, ppt e xls em Markdown via a API do MinerU; exige MINERU_API_TOKEN.
+- [Docling MCP](https://github.com/docling-project/docling-mcp) (★ 782) — Converte PDFs e outros formatos de documento em saída estruturada via Docling; exige uma chave de API do Docling.
+- [PageIndex MCP](https://github.com/VectifyAI/pageindex-mcp) (★ 407) — RAG baseado em raciocínio para conversar com PDFs longos, locais ou online.
+- [MinerU Open MCP](https://github.com/opendatalab/MinerU-Ecosystem) (★ 229) — Converte PDF, imagem, doc, ppt e xls em Markdown via a API do MinerU; exige MINERU_API_TOKEN.
 
 <details><summary>Instalar</summary>
 
@@ -2526,13 +2526,13 @@ extensions:
 
 ### Full office suite inside DSH
 
-[dream-num/dsh-univer-office](https://github.com/dream-num/dsh-univer-office) — `Plugin nativo` · ★ 612 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
+[dream-num/dsh-univer-office](https://github.com/dream-num/dsh-univer-office) — `Plugin nativo` · ★ 656 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
 
 Traz planilhas, documentos, slides, canvases e tabelas relacionais para um único runtime dentro do DeepSeek Harness, com dados conectados, validação, mudanças versionadas e worktrees isolados para colaboração multiagente.
 
 **Alternativas:**
 
-- [kw78/dsh-office-tools](https://github.com/kw78/dsh-office-tools) (★ 37) — Oferece ferramentas mais simples para criar/ler Word, criar/ler/atualizar Excel e criar/ler PowerPoint com posicionamento de imagens
+- [kw78/dsh-office-tools](https://github.com/kw78/dsh-office-tools) (★ 41) — Oferece ferramentas mais simples para criar/ler Word, criar/ler/atualizar Excel e criar/ler PowerPoint com posicionamento de imagens
 - [didclawapp-ai/DSH-Office](https://github.com/didclawapp-ai/DSH-Office) (★ 6) — Também lida com PDF, exposto como ferramentas office_schema/office_write/office_edit/office_read por uma CLI local
 
 <details><summary>Instalar</summary>
@@ -2549,7 +2549,7 @@ dsh plugin --profile web add github:dream-num/dsh-univer-office
 
 ### Yuque knowledge base access
 
-[yuque/yuque-mcp-server](https://github.com/yuque/yuque-mcp-server) — `Servidor MCP` · ★ 258 · Licença: MIT · Funciona com: Todos os clientes
+[yuque/yuque-mcp-server](https://github.com/yuque/yuque-mcp-server) — `Servidor MCP` · ★ 262 · Licença: MIT · Funciona com: Todos os clientes
 
 Expõe uma base de conhecimento do Yuque a assistentes de IA; exige um token pessoal, de grupo ou geral do Yuque.
 
@@ -2782,7 +2782,7 @@ extensions:
 
 ### Unified SAP documentation search
 
-[marianfoo/mcp-sap-docs](https://github.com/marianfoo/mcp-sap-docs) — `Servidor MCP` · ★ 247 · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[marianfoo/mcp-sap-docs](https://github.com/marianfoo/mcp-sap-docs) — `Servidor MCP` · ★ 249 · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Busca unificada e rápida na documentação SAP (SAPUI5, CAP, OpenUI5, wdi5) usando busca full-text BM25.
 
@@ -2971,7 +2971,7 @@ extensions:
 
 ### Text-to-slideshow presentation skill
 
-[STARDUSTLC666/dsh-ppt](https://github.com/STARDUSTLC666/dsh-ppt) — `Plugin nativo` · ★ 20 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[STARDUSTLC666/dsh-ppt](https://github.com/STARDUSTLC666/dsh-ppt) — `Plugin nativo` · ★ 21 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Transforma uma frase ou um documento em uma apresentação HTML mais um PPTX editável, com sete layouts (incluindo citações e tabelas PPTX nativas), notas do apresentador, cinco temas embutidos e suporte bilíngue.
 
@@ -2995,7 +2995,7 @@ Diagramas editáveis do Excalidraw renderizados diretamente dentro das conversas
 
 **Alternativas:**
 
-- [MrmoLabs/dsh-mermaid](https://github.com/MrmoLabs/dsh-mermaid) (★ 15) — Renderiza blocos de código Mermaid como SVG, com streaming, zoom/pan em tela cheia e exportação SVG
+- [MrmoLabs/dsh-mermaid](https://github.com/MrmoLabs/dsh-mermaid) (★ 17) — Renderiza blocos de código Mermaid como SVG, com streaming, zoom/pan em tela cheia e exportação SVG
 
 <details><summary>Instalar</summary>
 

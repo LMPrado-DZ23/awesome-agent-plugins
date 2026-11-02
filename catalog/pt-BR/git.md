@@ -213,13 +213,13 @@ extensions:
 
 ### Alibaba open code review
 
-[alibaba/open-code-review](https://github.com/alibaba/open-code-review) — `Agent Skills` · ★ 48k · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[alibaba/open-code-review](https://github.com/alibaba/open-code-review) — `Agent Skills` · ★ 49k · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Ferramenta híbrida de revisão de código testada em produção na escala da Alibaba, combinando pipelines determinísticos com um agente LLM para comentários precisos linha a linha e um conjunto de regras de segurança multilíngue.
 
 **Alternativas:**
 
-- [hyhmrright/brooks-lint](https://github.com/hyhmrright/brooks-lint) (★ 1.5k) — Skill menor de revisão de código com IA, fundamentada em 12 livros clássicos de engenharia, com rótulos de severidade e citações.
+- [hyhmrright/brooks-lint](https://github.com/hyhmrright/brooks-lint) (★ 1.6k) — Skill menor de revisão de código com IA, fundamentada em 12 livros clássicos de engenharia, com rótulos de severidade e citações.
 
 <details><summary>Instalar</summary>
 
@@ -720,7 +720,7 @@ extensions:
 
 ### Native git operations
 
-[cyanheads/git-mcp-server](https://github.com/cyanheads/git-mcp-server) — `Servidor MCP` · ★ 244 · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[cyanheads/git-mcp-server](https://github.com/cyanheads/git-mcp-server) — `Servidor MCP` · ★ 243 · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Servidor git abrangente com ferramentas nativas como clone, commit e gestão de worktrees.
 
@@ -909,7 +909,7 @@ extensions:
 
 ### GitHub CI and PR review bot
 
-[PerryLink/dsh-github](https://github.com/PerryLink/dsh-github) — `Plugin nativo` · ★ 27 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
+[PerryLink/dsh-github](https://github.com/PerryLink/dsh-github) — `Plugin nativo` · ★ 29 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
 
 Integração de CI com o GitHub de nível oficial: um action.yml composto, um bot de revisão de PR por polling com comentários inline idempotentes e um gate de status-check, além de ferramentas de PR e issues em que toda escrita é aprovada por um humano.
 
@@ -949,7 +949,7 @@ dsh plugin --profile web add github:DietCokewithSugar/dsh-user-experience
 
 ### Git worktree session targets
 
-[wloops/dsh-git-worktree](https://github.com/wloops/dsh-git-worktree) — `Plugin nativo` · ★ 20 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[wloops/dsh-git-worktree](https://github.com/wloops/dsh-git-worktree) — `Plugin nativo` · ★ 21 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Session Targets baseados em git worktree com sessões de tarefa isoladas, status pronto-para-revisão, preview local reversível, entrega confirmada por humano, retenção e recuperação de ambiente, e iteração na mesma sessão.
 
@@ -972,7 +972,7 @@ dsh plugin --profile web add github:wloops/dsh-git-worktree
 
 ### Explore and audit GitHub via gh CLI
 
-[Fectivnfy112357/github-explore](https://github.com/Fectivnfy112357/github-explore) — `Plugin nativo` · ★ 8 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[Fectivnfy112357/github-explore](https://github.com/Fectivnfy112357/github-explore) — `Plugin nativo` · ★ 9 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Scripts de busca, descoberta e auditoria do GitHub empacotados como uma skill em torno da gh CLI: busca de repositórios, exploração multieixo, trending, resumos de repositório, projetos similares, busca de código e auditorias de issues/PRs e organizações.
 
@@ -1001,7 +1001,7 @@ Uma faixa acima do campo de composição lista os arquivos modificados na sessã
 **Alternativas:**
 
 - [cirelir/dsh-change-review](https://github.com/cirelir/dsh-change-review) (★ 14) — Rastreia write/edit com isolamento por sessão, agregação de subagentes e atualizações ao vivo via SSE, sem precisar de git
-- [9087/dsh-diff-approval](https://github.com/9087/dsh-diff-approval) (★ 14) — Permite manter ou reverter cada bloco de mudança individualmente, oferece desfazer/refazer e mantém a revisão persistente entre reinícios
+- [9087/dsh-diff-approval](https://github.com/9087/dsh-diff-approval) (★ 15) — Permite manter ou reverter cada bloco de mudança individualmente, oferece desfazer/refazer e mantém a revisão persistente entre reinícios
 - [Tlyer233/dsh-vscode-review#dsh-review](https://github.com/Tlyer233/dsh-vscode-review/tree/main/dsh-review) — Registra write, edit e rm de shell num repositório git sombra, revisável trecho a trecho numa extensão companheira do VS Code
 
 <details><summary>Instalar</summary>
@@ -1060,7 +1060,7 @@ Conexão via GitHub Device Flow mais um fluxo de PR dentro da conversa: uma barr
 
 **Alternativas:**
 
-- [Moon-shiyue/dsh-github-connect](https://github.com/Moon-shiyue/dsh-github-connect) (★ 11) — Conecta via OAuth device flow ou um personal access token e chama a API do GitHub diretamente por uma ferramenta github_api
+- [Moon-shiyue/dsh-github-connect](https://github.com/Moon-shiyue/dsh-github-connect) (★ 16) — Conecta via OAuth device flow ou um personal access token e chama a API do GitHub diretamente por uma ferramenta github_api
 - [Noob-stupid/dsh-github-login](https://github.com/Noob-stupid/dsh-github-login) (★ 7) — Adiciona login por device flow dentro da janela, sem precisar de terminal, sincronizando o token com a gh CLI e endpoints de status do host
 
 <details><summary>Instalar</summary>
@@ -1290,7 +1290,7 @@ Seletor de branch e grafo Git para a GUI web do dsh: troca de branches e explora
 
 **Alternativas:**
 
-- [Wongzexu/dsh-git-status](https://github.com/Wongzexu/dsh-git-status) (★ 3) — Adiciona uma gaveta de status com grafo DAG de commits, linhas de stash/alterações não commitadas, diffs inline e fetch de todos os remotes
+- [Wongzexu/dsh-git-status](https://github.com/Wongzexu/dsh-git-status) (★ 4) — Adiciona uma gaveta de status com grafo DAG de commits, linhas de stash/alterações não commitadas, diffs inline e fetch de todos os remotes
 
 <details><summary>Instalar</summary>
 
