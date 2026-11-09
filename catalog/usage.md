@@ -17,7 +17,7 @@
 
 ### Context lifecycle dashboard
 
-[bowenliang123/dsh-context](https://github.com/bowenliang123/dsh-context) — `Native plugin` · ★ 4.0k · License: Apache-2.0 · Works with: DeepSeek Harness only
+[bowenliang123/dsh-context](https://github.com/bowenliang123/dsh-context) — `Native plugin` · ★ 4.8k · License: Apache-2.0 · Works with: DeepSeek Harness only
 
 Dashboard, /context command, and browser for one-stop context lifecycle management: categorized composition, content details, evolution trends over time, and compaction and injection events.
 
@@ -39,14 +39,14 @@ dsh plugin --profile web add github:bowenliang123/dsh-context
 
 ### Session and daily cost dashboard
 
-[Han-1413141/dsh-cost-meter](https://github.com/Han-1413141/dsh-cost-meter) — `Native plugin` · ★ 604 · License: MIT · Works with: DeepSeek Harness only
+[Han-1413141/dsh-cost-meter](https://github.com/Han-1413141/dsh-cost-meter) — `Native plugin` · ★ 657 · License: MIT · Works with: DeepSeek Harness only
 
 Tracks per-session and daily API cost against a budget with usage percentage, shows the official account balance, keeps a history dashboard, and syncs official peak/off-peak pricing with one click.
 
 **Alternatives:**
 
 - [feibi-mochi/deepseek-harness-control-center](https://github.com/feibi-mochi/deepseek-harness-control-center) (★ 78) — Adds official recharge, completion alerts, flexible layouts, and agent-assisted session controls.
-- [kenz1117/dsh-ui-usage-billing](https://github.com/kenz1117/dsh-ui-usage-billing) (★ 95) — Estimates cost in CNY from a current multi-provider pricing catalog and exempts subscription-plan routes from the total.
+- [kenz1117/dsh-ui-usage-billing](https://github.com/kenz1117/dsh-ui-usage-billing) (★ 98) — Estimates cost in CNY from a current multi-provider pricing catalog and exempts subscription-plan routes from the total.
 - [nonewind/dsh-spend](https://github.com/nonewind/dsh-spend) (★ 8) — Shows a floating panel with per-model, per-day, and per-session token stats.
 - [Max-Samson/dsh-usage-chart](https://github.com/Max-Samson/dsh-usage-chart) (★ 9) — Adds zero-dependency SVG charts for per-turn usage and cost directly under the composer.
 
@@ -64,13 +64,13 @@ dsh plugin --profile web add github:Han-1413141/dsh-cost-meter
 
 ### Relay-attributed usage tracking
 
-[zh667/TokenLedger](https://github.com/zh667/TokenLedger) — `Native plugin` · ★ 202 · License: MIT · Works with: DeepSeek Harness only
+[zh667/TokenLedger](https://github.com/zh667/TokenLedger) — `Native plugin` · ★ 203 · License: MIT · Works with: DeepSeek Harness only
 
 Sidebar panel that attributes tokens to the relay site that served each request, read from your existing provider config: today/month/all-time totals, per-site and per-model breakdowns, a year activity heatmap, and New API/Sub2API/DeepSeek balances.
 
 **Alternatives:**
 
-- [Jannchie/dsh-bill](https://github.com/Jannchie/dsh-bill) (★ 9) — Prices every call from an online catalogue of 8000+ models and attributes spend by tool output, model output, or system prompt.
+- [Jannchie/dsh-bill](https://github.com/Jannchie/dsh-bill) (★ 10) — Prices every call from an online catalogue of 8000+ models and attributes spend by tool output, model output, or system prompt.
 
 <details><summary>Install</summary>
 

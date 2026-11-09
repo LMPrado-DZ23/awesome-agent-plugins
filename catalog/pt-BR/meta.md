@@ -27,7 +27,7 @@
 
 ### Claude Code official plugin directory
 
-[Claude Code official plugin directory](https://github.com/anthropics/claude-plugins-official) — `Marketplace de plugins` · ★ 46k · Licença: Apache-2.0 · Funciona com: Claude Code apenas
+[Claude Code official plugin directory](https://github.com/anthropics/claude-plugins-official) — `Marketplace de plugins` · ★ 47k · Licença: Apache-2.0 · Funciona com: Claude Code apenas
 
 Diretório de plugins do Claude Code mantido pela Anthropic (comandos, agentes, skills, hooks, servidores MCP) instaláveis com /plugin.
 
@@ -45,7 +45,7 @@ Diretório de plugins do Claude Code mantido pela Anthropic (comandos, agentes, 
 
 ### skills (npx skills)
 
-[skills (npx skills)](https://github.com/vercel-labs/skills) — `Ferramenta` · ★ 38k · Licença: MIT · Funciona com: —
+[skills (npx skills)](https://github.com/vercel-labs/skills) — `Ferramenta` · ★ 39k · Licença: MIT · Funciona com: —
 
 CLI que instala, atualiza, lista e remove Agent Skills de qualquer fonte Git em mais de 75 agentes (Claude Code, Codex, Cursor, Gemini CLI, OpenCode…). Usado por este catálogo para instalar skills.
 
@@ -53,7 +53,7 @@ CLI que instala, atualiza, lista e remove Agent Skills de qualquer fonte Git em 
 
 ### dsh-market
 
-[dsh-market](https://github.com/dsh-market/dsh-market) — `Marketplace de plugins` · ★ 10k · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[dsh-market](https://github.com/dsh-market/dsh-market) — `Marketplace de plugins` · ★ 12k · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Loja de plugins dentro das Configurações do DeepSeek Harness: busca, instalação/atualização em um clique e troca de temas para todos os plugins do awesome-dsh-plugin.
 
@@ -78,7 +78,7 @@ dsh plugin --profile web add dshmarket
 
 ### MCP Registry
 
-[MCP Registry](https://github.com/modelcontextprotocol/registry) — `Lista / registro` · ★ 7.4k · Licença: ver repo · Funciona com: —
+[MCP Registry](https://github.com/modelcontextprotocol/registry) — `Lista / registro` · ★ 7.5k · Licença: ver repo · Funciona com: —
 
 Serviço de registro oficial e comunitário de servidores MCP, com API pública para descobrir servidores publicados e seus metadados de instalação.
 
@@ -86,14 +86,14 @@ Serviço de registro oficial e comunitário de servidores MCP, com API pública 
 
 ### ECC agent harness optimizer
 
-[affaan-m/ECC](https://github.com/affaan-m/ECC) — `Agent Skills` · ★ 295k · Licença: MIT · Funciona com: Todos os clientes
+[affaan-m/ECC](https://github.com/affaan-m/ECC) — `Agent Skills` · ★ 300k · Licença: MIT · Funciona com: Todos os clientes
 
 Sistema de otimização de performance para harnesses de agentes de código, reunindo skills, instintos, memória, segurança e desenvolvimento orientado a pesquisa, para Claude Code, Codex, OpenCode e Cursor.
 
 **Alternativas:**
 
 - [ruvnet/ruflo](https://github.com/ruvnet/ruflo) (★ 81k) — Harness multiagente de longa duração que implanta enxames, coordena fluxos autônomos e adiciona memória adaptativa e RAG vetorial.
-- [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) (★ 29k) — Pacote muito grande com 846 skills, 198 agentes e 282 comandos, cobrindo engenharia, marketing, produto, compliance e pesquisa.
+- [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) (★ 30k) — Pacote muito grande com 846 skills, 198 agentes e 282 comandos, cobrindo engenharia, marketing, produto, compliance e pesquisa.
 - [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills) (★ 49k) — Plano de controle local e agent-first sobre um catálogo com mais de 2.000 skills, com CLI, servidor MCP e workbench de validação próprios.
 - [wshobson/agents](https://github.com/wshobson/agents) (★ 42k) — Marketplace de plugins multi-harness reunindo 183 skills, 202 agentes e 105 comandos para Claude Code, Codex, Cursor e outros.
 
@@ -183,7 +183,7 @@ npx skills add affaan-m/ECC -a universal
 
 ### awesome-mcp-servers
 
-[awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) — `Lista / registro` · ★ 97k · Licença: MIT · Funciona com: —
+[awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) — `Lista / registro` · ★ 98k · Licença: MIT · Funciona com: —
 
 Grande lista comunitária de servidores MCP agrupados por domínio. Mais ampla que este catálogo; sem instruções de instalação por cliente.
 
@@ -191,7 +191,7 @@ Grande lista comunitária de servidores MCP agrupados por domínio. Mais ampla q
 
 ### awesome-claude-code
 
-[awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) — `Lista / registro` · ★ 57k · Licença: ver repo · Funciona com: —
+[awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) — `Lista / registro` · ★ 58k · Licença: ver repo · Funciona com: —
 
 Recursos curados para Claude Code: slash commands, arquivos CLAUDE.md, hooks, fluxos e ferramentas.
 
@@ -199,7 +199,7 @@ Recursos curados para Claude Code: slash commands, arquivos CLAUDE.md, hooks, fl
 
 ### awesome-dsh-plugin
 
-[awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) — `Lista / registro` · ★ 22k · Licença: CC0-1.0 · Funciona com: —
+[awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) — `Lista / registro` · ★ 24k · Licença: CC0-1.0 · Funciona com: —
 
 A lista completa de ~3.900 plugins do DeepSeek Harness. Este catálogo importa os melhores e junta os quase duplicados; consulte a original para o restante.
 
@@ -301,7 +301,7 @@ npx skills add yusufkaraaslan/Skill_Seekers -a universal
 
 ### Validated skill registry
 
-[tech-leads-club/agent-skills](https://github.com/tech-leads-club/agent-skills) — `Agent Skills` · ★ 7.1k · Licença: ver repo · Funciona com: Todos os clientes
+[tech-leads-club/agent-skills](https://github.com/tech-leads-club/agent-skills) — `Agent Skills` · ★ 7.2k · Licença: ver repo · Funciona com: Todos os clientes
 
 Registro seguro e validado de skills para agentes de código profissionais, estendendo Antigravity, Claude Code, Cursor, Copilot e outros.
 
@@ -395,7 +395,7 @@ npx skills add tech-leads-club/agent-skills -a universal
 
 ### Everything Claude Code toolkit
 
-[WorldFlowAI/everything-claude-code](https://github.com/WorldFlowAI/everything-claude-code) — `Agent Skills` · ★ 5.8k · Licença: ver repo · Funciona com: Todos os clientes
+[WorldFlowAI/everything-claude-code](https://github.com/WorldFlowAI/everything-claude-code) — `Agent Skills` · ★ 6.1k · Licença: ver repo · Funciona com: Todos os clientes
 
 Toolkit para Claude Code em um único repositório, reunindo agentes, comandos, skills, regras e hooks para desenvolvimento produtivo assistido por IA.
 
@@ -678,8 +678,8 @@ Ferramenta e conjunto de skills que instala, traduz e compartilha skills de agen
 
 **Alternativas:**
 
-- [runkids/skillshare](https://github.com/runkids/skillshare) (★ 2.9k) — Foca em sincronizar com um comando só e compartilhar skills em equipe entre ferramentas de CLI.
-- [xingkongliang/skills-manager](https://github.com/xingkongliang/skills-manager) (★ 7.2k) — Aplicativo desktop com GUI para navegar e organizar skills em mais de 50 ferramentas de código.
+- [runkids/skillshare](https://github.com/runkids/skillshare) (★ 3.0k) — Foca em sincronizar com um comando só e compartilhar skills em equipe entre ferramentas de CLI.
+- [xingkongliang/skills-manager](https://github.com/xingkongliang/skills-manager) (★ 7.4k) — Aplicativo desktop com GUI para navegar e organizar skills em mais de 50 ferramentas de código.
 - [numman-ali/openskills](https://github.com/numman-ali/openskills) (★ 11k) — Carregador universal e leve de skills, distribuído como pacote npm.
 
 <details><summary>Instalar</summary>
@@ -768,7 +768,7 @@ npx skills add rohitg00/skillkit -a universal
 
 ### Native skin marketplace
 
-[kingOfSoySauce/dsh-skin-market](https://github.com/kingOfSoySauce/dsh-skin-market) — `Plugin nativo` · ★ 296 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[kingOfSoySauce/dsh-skin-market](https://github.com/kingOfSoySauce/dsh-skin-market) — `Plugin nativo` · ★ 317 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Descobre skins da comunidade, mostra pré-visualizações e status de compatibilidade, e oferece caminhos de instalação verificados, com um clique ou manuais.
 
@@ -786,7 +786,7 @@ dsh plugin --profile web add github:kingOfSoySauce/dsh-skin-market
 
 ### Chat-based plugin discovery
 
-[awesome-dsh-plugin/dsh-find-plugin](https://github.com/awesome-dsh-plugin/dsh-find-plugin) — `Plugin nativo` · ★ 216 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[awesome-dsh-plugin/dsh-find-plugin](https://github.com/awesome-dsh-plugin/dsh-find-plugin) — `Plugin nativo` · ★ 229 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Pesquisa um registro curado de plugins por palavra-chave ou categoria diretamente na conversa com o agente e retorna comandos de instalação prontos, sem abrir a interface de Configurações.
 
@@ -804,7 +804,7 @@ dsh plugin --profile web add github:awesome-dsh-plugin/dsh-find-plugin
 
 ### Curated research plugin store
 
-[dsh-research/dsh-research](https://github.com/dsh-research/dsh-research) — `Plugin nativo` · ★ 10 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[dsh-research/dsh-research](https://github.com/dsh-research/dsh-research) — `Plugin nativo` · ★ 11 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Adiciona uma página de plugins de Pesquisa às Configurações com plugins revisados manualmente para busca de literatura, gerenciamento de referências, escrita e workbenches; instala versões fixadas em um clique e faz exatamente uma requisição de rede ao próprio catálogo.
 

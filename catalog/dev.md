@@ -10,10 +10,10 @@
 - [HeroUI React component skills](#heroui) — Official skills from the HeroUI (formerly NextUI) React component library covering migration, React Native usa…
 - [FastMCP](#fastmcp) — Pythonic framework for building MCP servers and clients with decorators, auth, proxying and testing utilities.
 - [Google product skills](#google-skills) — Marketplace of Agent Skills covering Google products and technologies, for grounding coding agents in Google-s…
-- [Compile code and inspect assembly](#compiler-explorer-mcp) — Compiles code with thousands of compilers, inspects the generated assembly, and shares godbolt.org links.
 - [Generate API tests from traffic](#keploy-mcp) — End-to-end API testing: generates and runs tests from OpenAPI, curl, Postman, or real user traffic; needs an A…
-- [Lightweight Charts skills](#lightweight-charts) — Official skills for TradingView's HTML5-canvas financial charting library, covering core chart usage and autho…
+- [Compile code and inspect assembly](#compiler-explorer-mcp) — Compiles code with thousands of compilers, inspects the generated assembly, and shares godbolt.org links.
 - [GSAP animation skills](#gsap-skills) — Official AI skills for GSAP (GreenSock Animation Platform) teaching coding agents correct animation patterns, …
+- [Lightweight Charts skills](#lightweight-charts) — Official skills for TradingView's HTML5-canvas financial charting library, covering core chart usage and autho…
 - [Hugging Face ecosystem skills](#huggingface-skills) — Agent Skills that give coding agents access to the Hugging Face ecosystem: models, datasets and Hub workflows.
 - [MCP Inspector](#mcp-inspector) — Visual testing tool for MCP servers: connect over stdio or HTTP, list and call tools, resources and prompts. R…
 - [Google Stitch design skills](#stitch-skills) — Official Agent Skills library for Google's Stitch MCP server, covering code-to-design, design generation, desi…
@@ -29,10 +29,10 @@
 - [NVIDIA agent skills](#nvidia-skills) — Official NVIDIA Agent Skills for coding agents covering physical AI, robotics, simulation, CUDA and RAG workfl…
 - [Go agentic skills collection](#cc-skills-golang) — Collection of Golang-focused agentic skills for coding agents, packaged as a Gemini CLI extension.
 - [Awesome design style skills](#awesome-design-skills) — 67 DESIGN.md/SKILL.md files, each encoding a distinct visual design style (brutalism, claymorphism, cyberpunk,…
-- [SwiftUI recipes for iOS apps](#shipswift-mcp) — 40+ production-ready SwiftUI recipes for building full-stack iOS apps.
 - [Vue 3 agent skills](#vuejs-ai-skills) — Official agent skills for Vue 3 development, maintained under the Vue.js organization.
-- [Microsoft SDK skills & agents](#microsoft-skills) — Skills, MCP servers, custom agents and Agents.md files that ground coding agents in Microsoft SDKs and platfor…
+- [SwiftUI recipes for iOS apps](#shipswift-mcp) — 40+ production-ready SwiftUI recipes for building full-stack iOS apps.
 - [Software design classics skills](#agent-rules-books) — Skills distilling classic software engineering books into agent guidance: Clean Code, Clean Architecture, Refa…
+- [Microsoft SDK skills & agents](#microsoft-skills) — Skills, MCP servers, custom agents and Agents.md files that ground coding agents in Microsoft SDKs and platfor…
 - [Universal motion design skill](#motion-design-skill) — Official LottieFiles skill encoding universal motion design principles - timing, easing and choreography adapt…
 - [Apify agent skills](#apify-agent-skills) — Official collection of Apify agent skills for building and running web scraping and automation actors.
 - [PortalJS data portal skills](#portaljs) — AI-native framework by Datopian for building data portals: scaffold a full portal from a brief and load datase…
@@ -51,8 +51,8 @@
 - [Next.js development tools](#next-devtools-mcp) — Next.js development tools server with stdio transport.
 - [Public tunnels for localhost services](#rustunnel-mcp) — Gives agents public HTTPS/TCP/UDP URLs for any localhost service; open source and self-hostable.
 - [Control TouchDesigner projects](#touchdesigner-mcp) — Controls and operates TouchDesigner projects through AI agents.
-- [Godot 4.x engine control](#godot-mcp) — Full Godot 4.x engine control with 165 tools for AI-driven game development.
 - [Manage skills from a settings panel](#dsh-dsh-skills-manager) — Manages local DeepSeek Harness skills from the Settings screen and shows Agent skills shared by the team as re…
+- [Godot 4.x engine control](#godot-mcp) — Full Godot 4.x engine control with 165 tools for AI-driven game development.
 - [Universal CPU profiler](#uniprof-mcp) — A universal CPU profiler designed to be used by both humans and AI agents.
 - [AI-powered E2E testing, 10 platforms](#flutter-skill-mcp) — AI-powered end-to-end testing for 10 platforms with 253 tools, requiring no test code.
 - [RStudio AI assistant connection](#clauder-mcp) — Connects RStudio to AI assistants for interactive R coding and data analysis.
@@ -267,7 +267,7 @@ npx skills add thedaviddias/Front-End-Checklist -a universal
 
 ### CopilotKit frontend agent stack
 
-[CopilotKit/CopilotKit](https://github.com/CopilotKit/CopilotKit) — `Agent Skills` · ★ 38k · License: MIT · Works with: All clients
+[CopilotKit/CopilotKit](https://github.com/CopilotKit/CopilotKit) — `Agent Skills` · ★ 39k · License: MIT · Works with: All clients
 
 Frontend framework for building agent-facing UIs and generative UI across React, Angular, mobile and Slack, maker of the AG-UI protocol; ships with agent skills.
 
@@ -455,7 +455,7 @@ Pythonic framework for building MCP servers and clients with decorators, auth, p
 
 ### Google product skills
 
-[google/skills](https://github.com/google/skills) — `Agent Skills` · ★ 22k · License: Apache-2.0 · Works with: All clients
+[google/skills](https://github.com/google/skills) — `Agent Skills` · ★ 24k · License: Apache-2.0 · Works with: All clients
 
 Marketplace of Agent Skills covering Google products and technologies, for grounding coding agents in Google-specific APIs and workflows.
 
@@ -541,173 +541,11 @@ npx skills add google/skills -a universal
 
 </details>
 
-<a id="compiler-explorer-mcp"></a>
-
-### Compile code and inspect assembly
-
-[Compiler Explorer](https://github.com/compiler-explorer/compiler-explorer) — `MCP server` · ★ 19k · License: BSD-2-Clause · Works with: All clients
-
-Compiles code with thousands of compilers, inspects the generated assembly, and shares godbolt.org links.
-
-<details><summary>Install</summary>
-
-**Claude Code**
-
-```bash
-claude mcp add --transport http compiler-explorer https://godbolt.org/mcp
-```
-
-**Codex CLI**
-
-```bash
-codex mcp add compiler-explorer --url https://godbolt.org/mcp
-```
-
-**Gemini CLI**
-
-```bash
-gemini mcp add --transport http compiler-explorer https://godbolt.org/mcp
-```
-
-**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "compiler-explorer": {
-      "url": "https://godbolt.org/mcp"
-    }
-  }
-}
-```
-
-**VS Code (Copilot)** — File: `.vscode/mcp.json`
-
-```json
-{
-  "servers": {
-    "compiler-explorer": {
-      "type": "http",
-      "url": "https://godbolt.org/mcp"
-    }
-  }
-}
-```
-
-**OpenCode** — File: `opencode.json`
-
-```json
-{
-  "$schema": "https://opencode.ai/config.json",
-  "mcp": {
-    "compiler-explorer": {
-      "type": "remote",
-      "url": "https://godbolt.org/mcp",
-      "enabled": true
-    }
-  }
-}
-```
-
-**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
-
-```json
-{
-  "mcpServers": {
-    "compiler-explorer": {
-      "type": "streamableHttp",
-      "url": "https://godbolt.org/mcp"
-    }
-  }
-}
-```
-
-**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
-
-```json
-{
-  "mcpServers": {
-    "compiler-explorer": {
-      "serverUrl": "https://godbolt.org/mcp"
-    }
-  }
-}
-```
-
-**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
-
-```json
-{
-  "context_servers": {
-    "compiler-explorer": {
-      "source": "custom",
-      "command": "npx",
-      "args": [
-        "-y",
-        "mcp-remote",
-        "https://godbolt.org/mcp"
-      ]
-    }
-  }
-}
-```
-_Remote server bridged through the mcp-remote stdio proxy._
-
-**Goose** — File: `~/.config/goose/config.yaml`
-
-```yaml
-extensions:
-  compiler-explorer:
-    type: streamable_http
-    uri: https://godbolt.org/mcp
-    enabled: true
-```
-
-**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "compiler-explorer": {
-      "type": "streamable-http",
-      "url": "https://godbolt.org/mcp"
-    }
-  }
-}
-```
-
-**Roo Code** — File: `.roo/mcp.json`
-
-```json
-{
-  "mcpServers": {
-    "compiler-explorer": {
-      "type": "streamable-http",
-      "url": "https://godbolt.org/mcp"
-    }
-  }
-}
-```
-
-**DeepSeek Harness** — File: `compiler-explorer.cordis.yml  →  dsh web --patch ./compiler-explorer.cordis.yml`
-
-```yaml
-- insert:
-    - id: mcp-compiler-explorer
-      name: '@deepseek-ai/dsh-mcp-client'
-      config:
-        serverName: compiler-explorer
-        transport: streamable-http
-        url: https://godbolt.org/mcp
-```
-
-</details>
-
 <a id="keploy-mcp"></a>
 
 ### Generate API tests from traffic
 
-[Keploy](https://github.com/keploy/keploy) — `MCP server` · ★ 19k · License: Apache-2.0 · Works with: All clients
+[Keploy](https://github.com/keploy/keploy) — `MCP server` · ★ 20k · License: Apache-2.0 · Works with: All clients
 
 End-to-end API testing: generates and runs tests from OpenAPI, curl, Postman, or real user traffic; needs an Authorization token.
 
@@ -891,92 +729,164 @@ extensions:
 
 </details>
 
-<a id="lightweight-charts"></a>
+<a id="compiler-explorer-mcp"></a>
 
-### Lightweight Charts skills
+### Compile code and inspect assembly
 
-[tradingview/lightweight-charts](https://github.com/tradingview/lightweight-charts) — `Agent Skills` · ★ 18k · License: Apache-2.0 · Works with: All clients
+[Compiler Explorer](https://github.com/compiler-explorer/compiler-explorer) — `MCP server` · ★ 19k · License: BSD-2-Clause · Works with: All clients
 
-Official skills for TradingView's HTML5-canvas financial charting library, covering core chart usage and authoring custom chart plugins.
+Compiles code with thousands of compilers, inspects the generated assembly, and shares godbolt.org links.
 
 <details><summary>Install</summary>
 
 **Claude Code**
 
 ```bash
-npx skills add tradingview/lightweight-charts -a claude-code -g
+claude mcp add --transport http compiler-explorer https://godbolt.org/mcp
 ```
 
 **Codex CLI**
 
 ```bash
-npx skills add tradingview/lightweight-charts -a codex -g
+codex mcp add compiler-explorer --url https://godbolt.org/mcp
 ```
 
 **Gemini CLI**
 
 ```bash
-npx skills add tradingview/lightweight-charts -a gemini-cli -g
+gemini mcp add --transport http compiler-explorer https://godbolt.org/mcp
 ```
 
-**Cursor**
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
 
-```bash
-npx skills add tradingview/lightweight-charts -a cursor -g
+```json
+{
+  "mcpServers": {
+    "compiler-explorer": {
+      "url": "https://godbolt.org/mcp"
+    }
+  }
+}
 ```
 
-**VS Code (Copilot)**
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
 
-```bash
-npx skills add tradingview/lightweight-charts -a github-copilot -g
+```json
+{
+  "servers": {
+    "compiler-explorer": {
+      "type": "http",
+      "url": "https://godbolt.org/mcp"
+    }
+  }
+}
 ```
 
-**OpenCode**
+**OpenCode** — File: `opencode.json`
 
-```bash
-npx skills add tradingview/lightweight-charts -a opencode -g
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "compiler-explorer": {
+      "type": "remote",
+      "url": "https://godbolt.org/mcp",
+      "enabled": true
+    }
+  }
+}
 ```
 
-**Cline**
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
 
-```bash
-npx skills add tradingview/lightweight-charts -a cline -g
+```json
+{
+  "mcpServers": {
+    "compiler-explorer": {
+      "type": "streamableHttp",
+      "url": "https://godbolt.org/mcp"
+    }
+  }
+}
 ```
 
-**Windsurf**
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
 
-```bash
-npx skills add tradingview/lightweight-charts -a windsurf -g
+```json
+{
+  "mcpServers": {
+    "compiler-explorer": {
+      "serverUrl": "https://godbolt.org/mcp"
+    }
+  }
+}
 ```
 
-**Zed**
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
 
-```bash
-npx skills add tradingview/lightweight-charts -a zed -g
+```json
+{
+  "context_servers": {
+    "compiler-explorer": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://godbolt.org/mcp"
+      ]
+    }
+  }
+}
+```
+_Remote server bridged through the mcp-remote stdio proxy._
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  compiler-explorer:
+    type: streamable_http
+    uri: https://godbolt.org/mcp
+    enabled: true
 ```
 
-**Goose**
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
 
-```bash
-npx skills add tradingview/lightweight-charts -a goose -g
+```json
+{
+  "mcpServers": {
+    "compiler-explorer": {
+      "type": "streamable-http",
+      "url": "https://godbolt.org/mcp"
+    }
+  }
+}
 ```
 
-**Kiro**
+**Roo Code** — File: `.roo/mcp.json`
 
-```bash
-npx skills add tradingview/lightweight-charts -a kiro-cli -g
+```json
+{
+  "mcpServers": {
+    "compiler-explorer": {
+      "type": "streamable-http",
+      "url": "https://godbolt.org/mcp"
+    }
+  }
+}
 ```
 
-**Roo Code**
+**DeepSeek Harness** — File: `compiler-explorer.cordis.yml  →  dsh web --patch ./compiler-explorer.cordis.yml`
 
-```bash
-npx skills add tradingview/lightweight-charts -a roo -g
-```
-
-**DeepSeek Harness**
-
-```bash
-npx skills add tradingview/lightweight-charts -a universal
+```yaml
+- insert:
+    - id: mcp-compiler-explorer
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: compiler-explorer
+        transport: streamable-http
+        url: https://godbolt.org/mcp
 ```
 
 </details>
@@ -1067,6 +977,96 @@ npx skills add greensock/gsap-skills -a roo -g
 
 ```bash
 npx skills add greensock/gsap-skills -a universal
+```
+
+</details>
+
+<a id="lightweight-charts"></a>
+
+### Lightweight Charts skills
+
+[tradingview/lightweight-charts](https://github.com/tradingview/lightweight-charts) — `Agent Skills` · ★ 18k · License: Apache-2.0 · Works with: All clients
+
+Official skills for TradingView's HTML5-canvas financial charting library, covering core chart usage and authoring custom chart plugins.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+npx skills add tradingview/lightweight-charts -a claude-code -g
+```
+
+**Codex CLI**
+
+```bash
+npx skills add tradingview/lightweight-charts -a codex -g
+```
+
+**Gemini CLI**
+
+```bash
+npx skills add tradingview/lightweight-charts -a gemini-cli -g
+```
+
+**Cursor**
+
+```bash
+npx skills add tradingview/lightweight-charts -a cursor -g
+```
+
+**VS Code (Copilot)**
+
+```bash
+npx skills add tradingview/lightweight-charts -a github-copilot -g
+```
+
+**OpenCode**
+
+```bash
+npx skills add tradingview/lightweight-charts -a opencode -g
+```
+
+**Cline**
+
+```bash
+npx skills add tradingview/lightweight-charts -a cline -g
+```
+
+**Windsurf**
+
+```bash
+npx skills add tradingview/lightweight-charts -a windsurf -g
+```
+
+**Zed**
+
+```bash
+npx skills add tradingview/lightweight-charts -a zed -g
+```
+
+**Goose**
+
+```bash
+npx skills add tradingview/lightweight-charts -a goose -g
+```
+
+**Kiro**
+
+```bash
+npx skills add tradingview/lightweight-charts -a kiro-cli -g
+```
+
+**Roo Code**
+
+```bash
+npx skills add tradingview/lightweight-charts -a roo -g
+```
+
+**DeepSeek Harness**
+
+```bash
+npx skills add tradingview/lightweight-charts -a universal
 ```
 
 </details>
@@ -1285,7 +1285,7 @@ dsh plugin --profile web add github:yjh051108/dsh-routing-suite
 
 ### Xcode project and simulator control
 
-[cameroncooke/XcodeBuildMCP](https://github.com/cameroncooke/XcodeBuildMCP) — `MCP server` · ★ 6.5k · License: MIT · Works with: All clients
+[cameroncooke/XcodeBuildMCP](https://github.com/cameroncooke/XcodeBuildMCP) — `MCP server` · ★ 6.6k · License: MIT · Works with: All clients
 
 Provides tools for Xcode project management, simulator management, and app utilities.
 
@@ -1474,13 +1474,13 @@ extensions:
 
 ### SwiftUI agent skill
 
-[twostraws/SwiftUI-Agent-Skill](https://github.com/twostraws/SwiftUI-Agent-Skill) — `Agent Skills` · ★ 6.4k · License: MIT · Works with: All clients
+[twostraws/SwiftUI-Agent-Skill](https://github.com/twostraws/SwiftUI-Agent-Skill) — `Agent Skills` · ★ 6.5k · License: MIT · Works with: All clients
 
 Agent skill that teaches Claude Code, Codex and other AI tools SwiftUI best practices for building iOS/macOS interfaces.
 
 **Alternatives:**
 
-- [AvdLee/SwiftUI-Agent-Skill](https://github.com/AvdLee/SwiftUI-Agent-Skill) (★ 3.8k) — Same SwiftUI best-practices skill, maintained independently by a different author.
+- [AvdLee/SwiftUI-Agent-Skill](https://github.com/AvdLee/SwiftUI-Agent-Skill) (★ 3.9k) — Same SwiftUI best-practices skill, maintained independently by a different author.
 - [AvdLee/Swift-Concurrency-Agent-Skill](https://github.com/AvdLee/Swift-Concurrency-Agent-Skill) (★ 1.7k) — Companion skill focused on Swift Concurrency: safe concurrency patterns, performance and Swift 6 migration guidance.
 
 <details><summary>Install</summary>
@@ -1569,7 +1569,7 @@ npx skills add twostraws/SwiftUI-Agent-Skill -a universal
 
 ### Anthony Fu's JS ecosystem skills
 
-[antfu/skills](https://github.com/antfu/skills) — `Agent Skills` · ★ 6.0k · License: MIT · Works with: All clients
+[antfu/skills](https://github.com/antfu/skills) — `Agent Skills` · ★ 6.1k · License: MIT · Works with: All clients
 
 Curated skill collection from a well-known open-source maintainer covering Vite, Vue, Nuxt, Pinia, Vitest, VueUse, UnoCSS, pnpm and other modern JS tooling.
 
@@ -1659,7 +1659,7 @@ npx skills add antfu/skills -a universal
 
 ### Anti-Slop TypeScript lint rules
 
-[dmmulroy/anti-slop](https://github.com/dmmulroy/anti-slop) — `Agent Skills` · ★ 5.8k · License: MIT · Works with: All clients
+[dmmulroy/anti-slop](https://github.com/dmmulroy/anti-slop) — `Agent Skills` · ★ 6.0k · License: MIT · Works with: All clients
 
 Single skill installing opinionated Oxlint rules that reject low-evidence, low-quality TypeScript and JavaScript patterns commonly produced by AI code generation.
 
@@ -1749,7 +1749,7 @@ npx skills add dmmulroy/anti-slop -a universal
 
 ### .NET / C# agent skills
 
-[dotnet/skills](https://github.com/dotnet/skills) — `Agent Skills` · ★ 5.8k · License: MIT · Works with: All clients
+[dotnet/skills](https://github.com/dotnet/skills) — `Agent Skills` · ★ 5.9k · License: MIT · Works with: All clients
 
 Official skills repository to assist AI coding agents with .NET and C# development conventions and tooling.
 
@@ -1839,7 +1839,7 @@ npx skills add dotnet/skills -a universal
 
 ### Builder.io agent skills
 
-[BuilderIO/skills](https://github.com/BuilderIO/skills) — `Agent Skills` · ★ 4.6k · License: MIT · Works with: All clients
+[BuilderIO/skills](https://github.com/BuilderIO/skills) — `Agent Skills` · ★ 4.7k · License: MIT · Works with: All clients
 
 Official Agent Skills published by Builder.io for driving its visual headless CMS and site-building platform from a coding agent.
 
@@ -2019,7 +2019,7 @@ npx skills add google-gemini/gemini-skills -a universal
 
 ### Expo agent skills
 
-[expo/skills](https://github.com/expo/skills) — `Agent Skills` · ★ 4.0k · License: MIT · Works with: All clients
+[expo/skills](https://github.com/expo/skills) — `Agent Skills` · ★ 4.1k · License: MIT · Works with: All clients
 
 Official collection of AI agent skills for working with Expo projects and Expo Application Services (EAS).
 
@@ -2109,7 +2109,7 @@ npx skills add expo/skills -a universal
 
 ### NVIDIA agent skills
 
-[NVIDIA/skills](https://github.com/NVIDIA/skills) — `Agent Skills` · ★ 3.8k · License: Apache-2.0 · Works with: All clients
+[NVIDIA/skills](https://github.com/NVIDIA/skills) — `Agent Skills` · ★ 3.9k · License: Apache-2.0 · Works with: All clients
 
 Official NVIDIA Agent Skills for coding agents covering physical AI, robotics, simulation, CUDA and RAG workflows end to end.
 
@@ -2217,15 +2217,15 @@ gemini extensions install https://github.com/samber/cc-skills-golang
 
 ### Awesome design style skills
 
-[bergside/awesome-design-skills](https://github.com/bergside/awesome-design-skills) — `Agent Skills` · ★ 3.4k · License: MIT · Works with: All clients
+[bergside/awesome-design-skills](https://github.com/bergside/awesome-design-skills) — `Agent Skills` · ★ 3.6k · License: MIT · Works with: All clients
 
 67 DESIGN.md/SKILL.md files, each encoding a distinct visual design style (brutalism, claymorphism, cyberpunk, corporate, and more), for agentic UI generation tools.
 
 **Alternatives:**
 
-- [MengTo/Skills](https://github.com/MengTo/Skills) (★ 7.2k) — Broader designer/builder skill set adding 3D asset and procedural-graphics skills.
-- [Nutlope/hallmark](https://github.com/Nutlope/hallmark) (★ 46k) — Single opinionated skill specifically aimed at rejecting generic 'AI slop' visual design.
-- [JimLiu/baoyu-design](https://github.com/JimLiu/baoyu-design) (★ 5.9k) — Runs a Claude-Design-like flow locally to produce polished mockups, decks and wireframes.
+- [MengTo/Skills](https://github.com/MengTo/Skills) (★ 7.3k) — Broader designer/builder skill set adding 3D asset and procedural-graphics skills.
+- [Nutlope/hallmark](https://github.com/Nutlope/hallmark) (★ 52k) — Single opinionated skill specifically aimed at rejecting generic 'AI slop' visual design.
+- [JimLiu/baoyu-design](https://github.com/JimLiu/baoyu-design) (★ 6.3k) — Runs a Claude-Design-like flow locally to produce polished mockups, decks and wireframes.
 
 <details><summary>Install</summary>
 
@@ -2305,6 +2305,96 @@ npx skills add bergside/awesome-design-skills -a roo -g
 
 ```bash
 npx skills add bergside/awesome-design-skills -a universal
+```
+
+</details>
+
+<a id="vuejs-ai-skills"></a>
+
+### Vue 3 agent skills
+
+[vuejs-ai/skills](https://github.com/vuejs-ai/skills) — `Agent Skills` · ★ 3.3k · License: MIT · Works with: All clients
+
+Official agent skills for Vue 3 development, maintained under the Vue.js organization.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+npx skills add vuejs-ai/skills -a claude-code -g
+```
+
+**Codex CLI**
+
+```bash
+npx skills add vuejs-ai/skills -a codex -g
+```
+
+**Gemini CLI**
+
+```bash
+npx skills add vuejs-ai/skills -a gemini-cli -g
+```
+
+**Cursor**
+
+```bash
+npx skills add vuejs-ai/skills -a cursor -g
+```
+
+**VS Code (Copilot)**
+
+```bash
+npx skills add vuejs-ai/skills -a github-copilot -g
+```
+
+**OpenCode**
+
+```bash
+npx skills add vuejs-ai/skills -a opencode -g
+```
+
+**Cline**
+
+```bash
+npx skills add vuejs-ai/skills -a cline -g
+```
+
+**Windsurf**
+
+```bash
+npx skills add vuejs-ai/skills -a windsurf -g
+```
+
+**Zed**
+
+```bash
+npx skills add vuejs-ai/skills -a zed -g
+```
+
+**Goose**
+
+```bash
+npx skills add vuejs-ai/skills -a goose -g
+```
+
+**Kiro**
+
+```bash
+npx skills add vuejs-ai/skills -a kiro-cli -g
+```
+
+**Roo Code**
+
+```bash
+npx skills add vuejs-ai/skills -a roo -g
+```
+
+**DeepSeek Harness**
+
+```bash
+npx skills add vuejs-ai/skills -a universal
 ```
 
 </details>
@@ -2471,92 +2561,92 @@ extensions:
 
 </details>
 
-<a id="vuejs-ai-skills"></a>
+<a id="agent-rules-books"></a>
 
-### Vue 3 agent skills
+### Software design classics skills
 
-[vuejs-ai/skills](https://github.com/vuejs-ai/skills) — `Agent Skills` · ★ 3.2k · License: MIT · Works with: All clients
+[ciembor/agent-rules-books](https://github.com/ciembor/agent-rules-books) — `Agent Skills` · ★ 3.2k · License: MIT · Works with: All clients
 
-Official agent skills for Vue 3 development, maintained under the Vue.js organization.
+Skills distilling classic software engineering books into agent guidance: Clean Code, Clean Architecture, Refactoring, Domain-Driven Design and Designing Data-Intensive Applications.
 
 <details><summary>Install</summary>
 
 **Claude Code**
 
 ```bash
-npx skills add vuejs-ai/skills -a claude-code -g
+npx skills add ciembor/agent-rules-books -a claude-code -g
 ```
 
 **Codex CLI**
 
 ```bash
-npx skills add vuejs-ai/skills -a codex -g
+npx skills add ciembor/agent-rules-books -a codex -g
 ```
 
 **Gemini CLI**
 
 ```bash
-npx skills add vuejs-ai/skills -a gemini-cli -g
+npx skills add ciembor/agent-rules-books -a gemini-cli -g
 ```
 
 **Cursor**
 
 ```bash
-npx skills add vuejs-ai/skills -a cursor -g
+npx skills add ciembor/agent-rules-books -a cursor -g
 ```
 
 **VS Code (Copilot)**
 
 ```bash
-npx skills add vuejs-ai/skills -a github-copilot -g
+npx skills add ciembor/agent-rules-books -a github-copilot -g
 ```
 
 **OpenCode**
 
 ```bash
-npx skills add vuejs-ai/skills -a opencode -g
+npx skills add ciembor/agent-rules-books -a opencode -g
 ```
 
 **Cline**
 
 ```bash
-npx skills add vuejs-ai/skills -a cline -g
+npx skills add ciembor/agent-rules-books -a cline -g
 ```
 
 **Windsurf**
 
 ```bash
-npx skills add vuejs-ai/skills -a windsurf -g
+npx skills add ciembor/agent-rules-books -a windsurf -g
 ```
 
 **Zed**
 
 ```bash
-npx skills add vuejs-ai/skills -a zed -g
+npx skills add ciembor/agent-rules-books -a zed -g
 ```
 
 **Goose**
 
 ```bash
-npx skills add vuejs-ai/skills -a goose -g
+npx skills add ciembor/agent-rules-books -a goose -g
 ```
 
 **Kiro**
 
 ```bash
-npx skills add vuejs-ai/skills -a kiro-cli -g
+npx skills add ciembor/agent-rules-books -a kiro-cli -g
 ```
 
 **Roo Code**
 
 ```bash
-npx skills add vuejs-ai/skills -a roo -g
+npx skills add ciembor/agent-rules-books -a roo -g
 ```
 
 **DeepSeek Harness**
 
 ```bash
-npx skills add vuejs-ai/skills -a universal
+npx skills add ciembor/agent-rules-books -a universal
 ```
 
 </details>
@@ -2655,107 +2745,17 @@ npx skills add microsoft/skills -a universal
 
 </details>
 
-<a id="agent-rules-books"></a>
-
-### Software design classics skills
-
-[ciembor/agent-rules-books](https://github.com/ciembor/agent-rules-books) — `Agent Skills` · ★ 3.2k · License: MIT · Works with: All clients
-
-Skills distilling classic software engineering books into agent guidance: Clean Code, Clean Architecture, Refactoring, Domain-Driven Design and Designing Data-Intensive Applications.
-
-<details><summary>Install</summary>
-
-**Claude Code**
-
-```bash
-npx skills add ciembor/agent-rules-books -a claude-code -g
-```
-
-**Codex CLI**
-
-```bash
-npx skills add ciembor/agent-rules-books -a codex -g
-```
-
-**Gemini CLI**
-
-```bash
-npx skills add ciembor/agent-rules-books -a gemini-cli -g
-```
-
-**Cursor**
-
-```bash
-npx skills add ciembor/agent-rules-books -a cursor -g
-```
-
-**VS Code (Copilot)**
-
-```bash
-npx skills add ciembor/agent-rules-books -a github-copilot -g
-```
-
-**OpenCode**
-
-```bash
-npx skills add ciembor/agent-rules-books -a opencode -g
-```
-
-**Cline**
-
-```bash
-npx skills add ciembor/agent-rules-books -a cline -g
-```
-
-**Windsurf**
-
-```bash
-npx skills add ciembor/agent-rules-books -a windsurf -g
-```
-
-**Zed**
-
-```bash
-npx skills add ciembor/agent-rules-books -a zed -g
-```
-
-**Goose**
-
-```bash
-npx skills add ciembor/agent-rules-books -a goose -g
-```
-
-**Kiro**
-
-```bash
-npx skills add ciembor/agent-rules-books -a kiro-cli -g
-```
-
-**Roo Code**
-
-```bash
-npx skills add ciembor/agent-rules-books -a roo -g
-```
-
-**DeepSeek Harness**
-
-```bash
-npx skills add ciembor/agent-rules-books -a universal
-```
-
-</details>
-
 <a id="motion-design-skill"></a>
 
 ### Universal motion design skill
 
-[LottieFiles/motion-design-skill](https://github.com/LottieFiles/motion-design-skill) — `Agent Skills` · ★ 2.7k · License: MIT · Works with: All clients
+[LottieFiles/motion-design-skill](https://github.com/LottieFiles/motion-design-skill) — `Agent Skills` · ★ 2.9k · License: MIT · Works with: All clients
 
 Official LottieFiles skill encoding universal motion design principles - timing, easing and choreography adapted from Disney animation principles - for UI animation work.
 
 **Alternatives:**
 
-- [Jakubantalik/transitions.dev](https://github.com/Jakubantalik/transitions.dev) (★ 6.0k) — Focused collection of ready-made page and component transitions for web apps.
+- [Jakubantalik/transitions.dev](https://github.com/Jakubantalik/transitions.dev) (★ 6.2k) — Focused collection of ready-made page and component transitions for web apps.
 
 <details><summary>Install</summary>
 
@@ -3689,7 +3689,7 @@ extensions:
 
 ### Windows crash dump analysis
 
-[MCP Server for WinDbg Crash Analysis](https://github.com/svnscha/mcp-windbg) — `MCP server` · ★ 1.6k · License: MIT · Works with: All clients
+[MCP Server for WinDbg Crash Analysis](https://github.com/svnscha/mcp-windbg) — `MCP server` · ★ 1.7k · License: MIT · Works with: All clients
 
 Analyzes Windows crash dumps using WinDbg/CDB.
 
@@ -4795,7 +4795,7 @@ extensions:
 
 ### Sentry MCP
 
-[Sentry MCP](https://github.com/getsentry/sentry-mcp) — `MCP server` · ★ 951 · License: see repo · Works with: All clients
+[Sentry MCP](https://github.com/getsentry/sentry-mcp) — `MCP server` · ★ 961 · License: see repo · Works with: All clients
 
 Query Sentry issues, events, traces and releases from the agent; OAuth sign-in on the remote endpoint.
 
@@ -4957,7 +4957,7 @@ extensions:
 
 ### Next.js development tools
 
-[vercel/next-devtools-mcp](https://github.com/vercel/next-devtools-mcp) — `MCP server` · ★ 834 · License: see repo · Works with: All clients
+[vercel/next-devtools-mcp](https://github.com/vercel/next-devtools-mcp) — `MCP server` · ★ 835 · License: see repo · Works with: All clients
 
 Next.js development tools server with stdio transport.
 
@@ -5146,7 +5146,7 @@ extensions:
 
 ### Public tunnels for localhost services
 
-[rustunnel](https://github.com/joaoh82/rustunnel) — `MCP server` · ★ 660 · License: AGPL-3.0 · Works with: All clients
+[rustunnel](https://github.com/joaoh82/rustunnel) — `MCP server` · ★ 661 · License: AGPL-3.0 · Works with: All clients
 
 Gives agents public HTTPS/TCP/UDP URLs for any localhost service; open source and self-hostable.
 
@@ -5351,7 +5351,7 @@ extensions:
 
 ### Control TouchDesigner projects
 
-[8beeeaaat/touchdesigner-mcp](https://github.com/8beeeaaat/touchdesigner-mcp) — `MCP server` · ★ 610 · License: MIT · Works with: All clients
+[8beeeaaat/touchdesigner-mcp](https://github.com/8beeeaaat/touchdesigner-mcp) — `MCP server` · ★ 623 · License: MIT · Works with: All clients
 
 Controls and operates TouchDesigner projects through AI agents.
 
@@ -5536,19 +5536,42 @@ extensions:
 
 </details>
 
+<a id="dsh-dsh-skills-manager"></a>
+
+### Manage skills from a settings panel
+
+[MichengAI/dsh-skills-manager](https://github.com/MichengAI/dsh-skills-manager) — `Native plugin` · ★ 522 · License: Apache-2.0 · Works with: DeepSeek Harness only
+
+Manages local DeepSeek Harness skills from the Settings screen and shows Agent skills shared by the team as read-only entries.
+
+**Alternatives:**
+
+- [minivv/dsh-agent-skills](https://github.com/minivv/dsh-agent-skills) (★ 17) — Also browses and toggles skills sourced from Codex, OpenCode, Gemini and custom directories
+- [Fishquito7/dsh-skill-mcp-panel](https://github.com/Fishquito7/dsh-skill-mcp-panel) (★ 267) — Adds MCP server CRUD (stdio/HTTP) with connection tests, secret redaction and batch migration
+
+<details><summary>Install</summary>
+
+**DeepSeek Harness**
+
+```bash
+dsh plugin --profile web add github:MichengAI/dsh-skills-manager
+```
+
+</details>
+
 <a id="godot-mcp"></a>
 
 ### Godot 4.x engine control
 
-[Godot MCP](https://github.com/tugcantopaloglu/godot-mcp) — `MCP server` · ★ 508 · License: MIT · Works with: All clients
+[Godot MCP](https://github.com/tugcantopaloglu/godot-mcp) — `MCP server` · ★ 510 · License: MIT · Works with: All clients
 
 Full Godot 4.x engine control with 165 tools for AI-driven game development.
 
 **Alternatives:**
 
 - [tomyud1/godot-mcp/tree/main/mcp-server](https://github.com/tomyud1/godot-mcp/tree/main/mcp-server) — Controls the Godot editor from AI for Godot game engine integration.
-- [HaD0Yun/godot-mcp](https://github.com/HaD0Yun/godot-mcp) (★ 269) — 95+ Godot Engine tools with LSP, DAP, and screenshot support.
-- [Glade-tool/glade-mcp](https://github.com/Glade-tool/glade-mcp) (★ 213) — Controls both the Unity and Godot editors: scenes, scripts, physics, and materials.
+- [HaD0Yun/godot-mcp](https://github.com/HaD0Yun/godot-mcp) (★ 272) — 95+ Godot Engine tools with LSP, DAP, and screenshot support.
+- [Glade-tool/glade-mcp](https://github.com/Glade-tool/glade-mcp) (★ 201) — Controls both the Unity and Godot editors: scenes, scripts, physics, and materials.
 
 <details><summary>Install</summary>
 
@@ -5727,29 +5750,6 @@ extensions:
         args: ["-y","@tugcantopaloglu/godot-mcp"]
         env: {}
         cwd: !!js process.cwd()
-```
-
-</details>
-
-<a id="dsh-dsh-skills-manager"></a>
-
-### Manage skills from a settings panel
-
-[MichengAI/dsh-skills-manager](https://github.com/MichengAI/dsh-skills-manager) — `Native plugin` · ★ 443 · License: Apache-2.0 · Works with: DeepSeek Harness only
-
-Manages local DeepSeek Harness skills from the Settings screen and shows Agent skills shared by the team as read-only entries.
-
-**Alternatives:**
-
-- [minivv/dsh-agent-skills](https://github.com/minivv/dsh-agent-skills) (★ 16) — Also browses and toggles skills sourced from Codex, OpenCode, Gemini and custom directories
-- [Fishquito7/dsh-skill-mcp-panel](https://github.com/Fishquito7/dsh-skill-mcp-panel) (★ 248) — Adds MCP server CRUD (stdio/HTTP) with connection tests, secret redaction and batch migration
-
-<details><summary>Install</summary>
-
-**DeepSeek Harness**
-
-```bash
-dsh plugin --profile web add github:MichengAI/dsh-skills-manager
 ```
 
 </details>
@@ -5947,7 +5947,7 @@ extensions:
 
 ### AI-powered E2E testing, 10 platforms
 
-[ai-dashboad/flutter-skill](https://github.com/ai-dashboad/flutter-skill) — `MCP server` · ★ 399 · License: MIT · Works with: All clients
+[ai-dashboad/flutter-skill](https://github.com/ai-dashboad/flutter-skill) — `MCP server` · ★ 403 · License: MIT · Works with: All clients
 
 AI-powered end-to-end testing for 10 platforms with 253 tools, requiring no test code.
 
@@ -6136,7 +6136,7 @@ extensions:
 
 ### RStudio AI assistant connection
 
-[ClaudeR - RStudio MCP Server](https://github.com/IMNMV/ClaudeR) — `MCP server` · ★ 361 · License: see repo · Works with: All clients
+[ClaudeR - RStudio MCP Server](https://github.com/IMNMV/ClaudeR) — `MCP server` · ★ 366 · License: see repo · Works with: All clients
 
 Connects RStudio to AI assistants for interactive R coding and data analysis.
 
@@ -6317,7 +6317,7 @@ extensions:
 
 ### Full Postman platform access
 
-[Postman MCP Server](https://github.com/postmanlabs/postman-mcp-server) — `MCP server` · ★ 325 · License: Apache-2.0 · Works with: All clients
+[Postman MCP Server](https://github.com/postmanlabs/postman-mcp-server) — `MCP server` · ★ 326 · License: Apache-2.0 · Works with: All clients
 
 Official server giving AI agents trusted access to the full Postman platform; needs a POSTMAN_API_KEY.
 
@@ -6532,7 +6532,7 @@ extensions:
 
 ### All-in-one DSH distribution bundle
 
-[hust-open-atom-club/oh-dsh](https://github.com/hust-open-atom-club/oh-dsh) — `Native plugin` · ★ 324 · License: MIT · Works with: DeepSeek Harness only
+[hust-open-atom-club/oh-dsh](https://github.com/hust-open-atom-club/oh-dsh) — `Native plugin` · ★ 322 · License: MIT · Works with: DeepSeek Harness only
 
 Community distribution that bundles the TUI, desktop app and Web UI together as one package with layered installation.
 
@@ -6755,13 +6755,13 @@ extensions:
 
 ### Website QA audits
 
-[squirrelscan](https://github.com/squirrelscan/squirrelscan) — `MCP server` · ★ 302 · License: MIT · Works with: All clients
+[squirrelscan](https://github.com/squirrelscan/squirrelscan) — `MCP server` · ★ 309 · License: MIT · Works with: All clients
 
 Website QA for coding agents: audits SEO, performance, security, and accessibility.
 
 **Alternatives:**
 
-- [priyankark/lighthouse-mcp](https://github.com/priyankark/lighthouse-mcp) (★ 216) — Google Lighthouse performance metrics for a page.
+- [priyankark/lighthouse-mcp](https://github.com/priyankark/lighthouse-mcp) (★ 218) — Google Lighthouse performance metrics for a page.
 
 <details><summary>Install</summary>
 
@@ -6921,7 +6921,7 @@ extensions:
 
 ### LLM app tracing and evaluation
 
-[Opik MCP Server](https://github.com/comet-ml/opik-mcp) — `MCP server` · ★ 225 · License: Apache-2.0 · Works with: All clients
+[Opik MCP Server](https://github.com/comet-ml/opik-mcp) — `MCP server` · ★ 226 · License: Apache-2.0 · Works with: All clients
 
 Interacts with Opik prompts, traces, datasets, and metrics for LLM application debugging; needs an OPIK_API_KEY.
 
@@ -7136,7 +7136,7 @@ extensions:
 
 ### Diagnose and repair DSH installs
 
-[sjh9714/dsh-win32](https://github.com/sjh9714/dsh-win32) — `Native plugin` · ★ 154 · License: MIT · Works with: DeepSeek Harness only
+[sjh9714/dsh-win32](https://github.com/sjh9714/dsh-win32) — `Native plugin` · ★ 162 · License: MIT · Works with: DeepSeek Harness only
 
 Diagnoses and repairs DeepSeek Harness on native Windows around the official PowerShell and Workspace Write stack, creates a desktop shortcut, and keeps legacy Git Bash/BusyBox presets behind an explicit opt-in. No WSL required.
 
@@ -7160,7 +7160,7 @@ dsh plugin --profile web add github:sjh9714/dsh-win32
 
 ### Add WSL workspace from web GUI
 
-[6Mikao9/dsh-wsl-workspace](https://github.com/6Mikao9/dsh-wsl-workspace) — `Native plugin` · ★ 106 · License: MIT · Works with: DeepSeek Harness only
+[6Mikao9/dsh-wsl-workspace](https://github.com/6Mikao9/dsh-wsl-workspace) — `Native plugin` · ★ 114 · License: MIT · Works with: DeepSeek Harness only
 
 Adds a WSL workspace from the web GUI without needing to install DSH or related tools again inside WSL. Bash commands and file read/write operations run inside the local WSL distribution on the host machine, while Windows files stay accessible.
 
@@ -7182,7 +7182,7 @@ dsh plugin --profile web add github:6Mikao9/dsh-wsl-workspace
 
 ### MCP client runtime status panel
 
-[PerryLink/dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) — `Native plugin` · ★ 91 · License: Apache-2.0 · Works with: DeepSeek Harness only
+[PerryLink/dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) — `Native plugin` · ★ 93 · License: Apache-2.0 · Works with: DeepSeek Harness only
 
 Read-only runtime panel for the official DSH MCP client: shows connection status, registered tools, errors and reconnect counts through the /mcp command and a Settings tab, with sanitized display and enable/disable patch suggestions.
 
@@ -7229,7 +7229,7 @@ Refines prompts, memory, skills and subagent specs from session trajectories int
 
 **Alternatives:**
 
-- [jasen215/dsh-continual-harness](https://github.com/jasen215/dsh-continual-harness) (★ 15) — Runs the refinement loop periodically and exposes it as a model-callable harness_refine tool
+- [jasen215/dsh-continual-harness](https://github.com/jasen215/dsh-continual-harness) (★ 17) — Runs the refinement loop periodically and exposes it as a model-callable harness_refine tool
 
 <details><summary>Install</summary>
 
@@ -7245,7 +7245,7 @@ dsh plugin --profile web add github:ZK-Andy/dsh-continual-evolve
 
 ### Update DSH core and plugins safely
 
-[Airmetro/dsh-update-checker](https://github.com/Airmetro/dsh-update-checker) — `Native plugin` · ★ 21 · License: MIT · Works with: DeepSeek Harness only
+[Airmetro/dsh-update-checker](https://github.com/Airmetro/dsh-update-checker) — `Native plugin` · ★ 22 · License: MIT · Works with: DeepSeek Harness only
 
 Semver-aware update checks for DeepSeek Harness and every installed plugin from npm and GitHub, with a locale-aware banner, one-click updates that back up and integrity-check the main program with rollback on failure, and a watchdog-guarded restart.
 
@@ -7267,7 +7267,7 @@ dsh plugin --profile web add github:Airmetro/dsh-update-checker
 
 ### Import Claude Code setup into DSH
 
-[sjh9714/dsh-movein](https://github.com/sjh9714/dsh-movein) — `Native plugin` · ★ 17 · License: MIT · Works with: DeepSeek Harness only
+[sjh9714/dsh-movein](https://github.com/sjh9714/dsh-movein) — `Native plugin` · ★ 18 · License: MIT · Works with: DeepSeek Harness only
 
 Imports a Claude Code setup into DeepSeek Harness via a settings screen or CLI, with dry-run previews for skills, commands, agents, hooks, permissions and MCP config. Codex and OpenCode are supported as secondary sources with collision-safe apply.
 
@@ -7285,7 +7285,7 @@ dsh plugin --profile web add github:sjh9714/dsh-movein
 
 ### Edit global AGENTS.md from settings
 
-[badai147/dsh-global-rules](https://github.com/badai147/dsh-global-rules) — `Native plugin` · ★ 14 · License: MIT · Works with: DeepSeek Harness only
+[badai147/dsh-global-rules](https://github.com/badai147/dsh-global-rules) — `Native plugin` · ★ 17 · License: MIT · Works with: DeepSeek Harness only
 
 Edits the global ~/.dsh/AGENTS.md rules file directly from the web settings panel, saving live so every session on the machine picks up the change immediately.
 
@@ -7303,7 +7303,7 @@ dsh plugin --profile web add github:badai147/dsh-global-rules
 
 ### Search large MCP catalogs on demand
 
-[labmimors/dsh-mcp-lens](https://github.com/labmimors/dsh-mcp-lens) — `Native plugin` · ★ 11 · License: MIT · Works with: DeepSeek Harness only
+[labmimors/dsh-mcp-lens](https://github.com/labmimors/dsh-mcp-lens) — `Native plugin` · ★ 12 · License: MIT · Works with: DeepSeek Harness only
 
 Progressive-disclosure MCP gateway that searches large remote tool catalogs through mcp_search, then invokes the exact schema through mcp_call, using lazy connections and bounded caches to avoid loading every tool upfront.
 
@@ -7321,7 +7321,7 @@ dsh plugin --profile web add github:labmimors/dsh-mcp-lens
 
 ### Auto-log and dedupe failed calls
 
-[Areium/dsh-fail-logger](https://github.com/Areium/dsh-fail-logger) — `Native plugin` · ★ 10 · License: MIT · Works with: DeepSeek Harness only
+[Areium/dsh-fail-logger](https://github.com/Areium/dsh-fail-logger) — `Native plugin` · ★ 11 · License: MIT · Works with: DeepSeek Harness only
 
 Automatically logs failed tool calls across native tools, PTC run_code and inline invocations, deduplicating and counting root causes into a skill so repeated mistakes fade over time.
 

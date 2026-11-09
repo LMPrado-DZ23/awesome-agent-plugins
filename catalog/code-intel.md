@@ -1163,7 +1163,7 @@ extensions:
 
 ### GitHub code research platform
 
-[Octocode MCP - AI Context Platform](https://github.com/bgauryy/octocode-mcp) — `MCP server` · ★ 956 · License: MIT · Works with: All clients
+[Octocode MCP - AI Context Platform](https://github.com/bgauryy/octocode-mcp) — `MCP server` · ★ 958 · License: MIT · Works with: All clients
 
 AI code research platform to search, analyze, and extract insights from any GitHub repository; needs a GITHUB_TOKEN.
 
@@ -1378,7 +1378,7 @@ extensions:
 
 ### Layered code graph with SCIP
 
-[Hex Graph](https://github.com/levnikolaevich/claude-code-skills) — `MCP server` · ★ 587 · License: MIT · Works with: All clients
+[Hex Graph](https://github.com/levnikolaevich/claude-code-skills) — `MCP server` · ★ 590 · License: MIT · Works with: All clients
 
 Deterministic layered code graph server with framework overlays and SCIP interoperability.
 
@@ -1567,7 +1567,7 @@ extensions:
 
 ### Local semantic code indexer
 
-[Octocode](https://github.com/muvon/octocode) — `MCP server` · ★ 519 · License: Apache-2.0 · Works with: All clients
+[Octocode](https://github.com/muvon/octocode) — `MCP server` · ★ 522 · License: Apache-2.0 · Works with: All clients
 
 AI-powered code indexer for a local repository with semantic search and knowledge graphs.
 

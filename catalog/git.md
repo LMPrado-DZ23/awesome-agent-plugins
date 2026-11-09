@@ -10,11 +10,11 @@
 - [Manage repos across Git hosts](#gk-cli-mcp) — The GitKraken server for managing repos, pull requests, and issues across GitHub, GitLab, and Bitbucket.
 - [Native git operations](#git-mcp-server) — Comprehensive git server enabling native git tools including clone, commit, and worktree management.
 - [GitHub CI and PR review bot](#dsh-dsh-github) — Official-grade GitHub CI integration: a composite action.yml, a polling PR review bot with idempotent inline c…
-- [Find UX issues in React code](#dsh-dsh-user-experience) — Finds potential UX issues in a project by automatically reviewing React/TypeScript code, pinpointing each prob…
 - [Git worktree session targets](#dsh-dsh-git-worktree) — Git-worktree Session Targets with isolated task sessions, ready-for-review status, reversible local preview, h…
+- [Find UX issues in React code](#dsh-dsh-user-experience) — Finds potential UX issues in a project by automatically reviewing React/TypeScript code, pinpointing each prob…
 - [Explore and audit GitHub via gh CLI](#dsh-github-explore) — GitHub search, discovery and audit scripts wrapped as a SKILL.md pack around the gh CLI: repo search, multi-ax…
-- [Review files changed this session](#dsh-dsh-session-review) — A strip above the composer lists files modified in the current session (collapsed by default), with a Review b…
 - [First-class git tools for the model](#dsh-dsh-plugin-git-workflow) — Gives the model first-class Git tools for status, diff, log, commit and branch, with validated messages and pa…
+- [Review files changed this session](#dsh-dsh-session-review) — A strip above the composer lists files modified in the current session (collapsed by default), with a Review b…
 - [Adversarial multi-lens code review](#dsh-dsh-review) — Adversarial code review: parallel finders inspect a diff through separate lenses (correctness, lifecycle, cont…
 - [Connect a GitHub account to DSH](#dsh-dsh-github-connector-github) — GitHub Device Flow connection plus an in-conversation PR workflow: a status bar above the composer for create/…
 - [Git (reference)](#mcp-git) — Reference server to read, search and manipulate local Git repositories (status, diff, log, commit, branch).
@@ -213,7 +213,7 @@ extensions:
 
 ### Alibaba open code review
 
-[alibaba/open-code-review](https://github.com/alibaba/open-code-review) — `Agent Skills` · ★ 49k · License: Apache-2.0 · Works with: All clients
+[alibaba/open-code-review](https://github.com/alibaba/open-code-review) — `Agent Skills` · ★ 50k · License: Apache-2.0 · Works with: All clients
 
 Hybrid code-review tool battle-tested at Alibaba's scale, combining deterministic pipelines with an LLM agent for precise, line-level comments and a built-in multi-language security ruleset.
 
@@ -531,7 +531,7 @@ extensions:
 
 ### Manage repos across Git hosts
 
-[gitkraken/gk-cli](https://github.com/gitkraken/gk-cli) — `MCP server` · ★ 462 · License: see repo · Works with: All clients
+[gitkraken/gk-cli](https://github.com/gitkraken/gk-cli) — `MCP server` · ★ 465 · License: see repo · Works with: All clients
 
 The GitKraken server for managing repos, pull requests, and issues across GitHub, GitLab, and Bitbucket.
 
@@ -720,7 +720,7 @@ extensions:
 
 ### Native git operations
 
-[cyanheads/git-mcp-server](https://github.com/cyanheads/git-mcp-server) — `MCP server` · ★ 243 · License: Apache-2.0 · Works with: All clients
+[cyanheads/git-mcp-server](https://github.com/cyanheads/git-mcp-server) — `MCP server` · ★ 245 · License: Apache-2.0 · Works with: All clients
 
 Comprehensive git server enabling native git tools including clone, commit, and worktree management.
 
@@ -927,29 +927,11 @@ dsh plugin --profile web add github:PerryLink/dsh-github
 
 </details>
 
-<a id="dsh-dsh-user-experience"></a>
-
-### Find UX issues in React code
-
-[DietCokewithSugar/dsh-user-experience](https://github.com/DietCokewithSugar/dsh-user-experience) — `Native plugin` · ★ 21 · License: MIT · Works with: DeepSeek Harness only
-
-Finds potential UX issues in a project by automatically reviewing React/TypeScript code, pinpointing each problem and giving concrete suggestions.
-
-<details><summary>Install</summary>
-
-**DeepSeek Harness**
-
-```bash
-dsh plugin --profile web add github:DietCokewithSugar/dsh-user-experience
-```
-
-</details>
-
 <a id="dsh-dsh-git-worktree"></a>
 
 ### Git worktree session targets
 
-[wloops/dsh-git-worktree](https://github.com/wloops/dsh-git-worktree) — `Native plugin` · ★ 21 · License: MIT · Works with: DeepSeek Harness only
+[wloops/dsh-git-worktree](https://github.com/wloops/dsh-git-worktree) — `Native plugin` · ★ 22 · License: MIT · Works with: DeepSeek Harness only
 
 Git-worktree Session Targets with isolated task sessions, ready-for-review status, reversible local preview, human-confirmed delivery, environment retention and recovery, and same-session iteration.
 
@@ -968,11 +950,29 @@ dsh plugin --profile web add github:wloops/dsh-git-worktree
 
 </details>
 
+<a id="dsh-dsh-user-experience"></a>
+
+### Find UX issues in React code
+
+[DietCokewithSugar/dsh-user-experience](https://github.com/DietCokewithSugar/dsh-user-experience) — `Native plugin` · ★ 21 · License: MIT · Works with: DeepSeek Harness only
+
+Finds potential UX issues in a project by automatically reviewing React/TypeScript code, pinpointing each problem and giving concrete suggestions.
+
+<details><summary>Install</summary>
+
+**DeepSeek Harness**
+
+```bash
+dsh plugin --profile web add github:DietCokewithSugar/dsh-user-experience
+```
+
+</details>
+
 <a id="dsh-github-explore"></a>
 
 ### Explore and audit GitHub via gh CLI
 
-[Fectivnfy112357/github-explore](https://github.com/Fectivnfy112357/github-explore) — `Native plugin` · ★ 9 · License: MIT · Works with: DeepSeek Harness only
+[Fectivnfy112357/github-explore](https://github.com/Fectivnfy112357/github-explore) — `Native plugin` · ★ 10 · License: MIT · Works with: DeepSeek Harness only
 
 GitHub search, discovery and audit scripts wrapped as a SKILL.md pack around the gh CLI: repo search, multi-axis exploration, trending, repo summaries, similar projects, code search, and issue/PR search and org audits.
 
@@ -990,6 +990,24 @@ dsh plugin --profile web add github:Fectivnfy112357/github-explore
 
 </details>
 
+<a id="dsh-dsh-plugin-git-workflow"></a>
+
+### First-class git tools for the model
+
+[truelove-dreamer/dsh-plugin-git-workflow](https://github.com/truelove-dreamer/dsh-plugin-git-workflow) — `Native plugin` · ★ 3 · License: see repo · Works with: DeepSeek Harness only
+
+Gives the model first-class Git tools for status, diff, log, commit and branch, with validated messages and paths, instead of relying on bare shell git calls.
+
+<details><summary>Install</summary>
+
+**DeepSeek Harness**
+
+```bash
+dsh plugin --profile web add github:truelove-dreamer/dsh-plugin-git-workflow
+```
+
+</details>
+
 <a id="dsh-dsh-session-review"></a>
 
 ### Review files changed this session
@@ -1001,7 +1019,7 @@ A strip above the composer lists files modified in the current session (collapse
 **Alternatives:**
 
 - [cirelir/dsh-change-review](https://github.com/cirelir/dsh-change-review) (★ 14) — Tracks write/edit calls with session isolation, subagent aggregation and SSE live updates, also without needing git
-- [9087/dsh-diff-approval](https://github.com/9087/dsh-diff-approval) (★ 15) — Lets each change block be kept or reverted individually, supports undo/redo, and persists the review across restarts
+- [9087/dsh-diff-approval](https://github.com/9087/dsh-diff-approval) (★ 16) — Lets each change block be kept or reverted individually, supports undo/redo, and persists the review across restarts
 - [Tlyer233/dsh-vscode-review#dsh-review](https://github.com/Tlyer233/dsh-vscode-review/tree/main/dsh-review) — Records every write, edit and shell rm into a shadow git repo, reviewable hunk-by-hunk inside a companion VS Code extension
 
 <details><summary>Install</summary>
@@ -1010,24 +1028,6 @@ A strip above the composer lists files modified in the current session (collapse
 
 ```bash
 dsh plugin --profile web add github:sunshaobei/dsh-session-review
-```
-
-</details>
-
-<a id="dsh-dsh-plugin-git-workflow"></a>
-
-### First-class git tools for the model
-
-[truelove-dreamer/dsh-plugin-git-workflow](https://github.com/truelove-dreamer/dsh-plugin-git-workflow) — `Native plugin` · ★ 2 · License: see repo · Works with: DeepSeek Harness only
-
-Gives the model first-class Git tools for status, diff, log, commit and branch, with validated messages and paths, instead of relying on bare shell git calls.
-
-<details><summary>Install</summary>
-
-**DeepSeek Harness**
-
-```bash
-dsh plugin --profile web add github:truelove-dreamer/dsh-plugin-git-workflow
 ```
 
 </details>

@@ -18,8 +18,8 @@
 - [Marketing skills for agents](#marketingskills) — Skills de marketing para Claude Code e agentes de IA, cobrindo CRO, copywriting, SEO, analytics e growth engin…
 - [Scientific Agent Skills library](#scientific-agent-skills) — Biblioteca de skills validadas que transformam um agente de IA em assistente de pesquisa em bioinformática, qu…
 - [Academic research skill pipeline](#academic-research-skills) — Skills que cobrem todo o pipeline de pesquisa acadêmica para o Claude Code: pesquisar, escrever, revisar, corr…
-- [Awesome Cursor rules](#awesome-cursorrules) — Grande coleção curada de arquivos de configuração .cursorrules que personalizam o comportamento de IA do Curso…
 - [Anthropic financial services skills](#financial-services) — Pacote oficial de skills da Anthropic para fluxos de serviços financeiros, reunindo 120 skills, 16 agentes e 5…
+- [Awesome Cursor rules](#awesome-cursorrules) — Grande coleção curada de arquivos de configuração .cursorrules que personalizam o comportamento de IA do Curso…
 - [Mental model distillation skills](#nuwa-skill) — Skills que destilam como pensadores conhecidos específicos (Musk, Feynman, Munger, Naval, Paul Graham) racioci…
 - [Vercel Agent Skills](#vercel-agent-skills) — Coleção de skills da Vercel para desenvolvimento web, incluindo boas práticas de React e diretrizes de design …
 - [Product management skill marketplace](#pm-skills) — Marketplace com mais de 100 skills, comandos e plugins agênticos para gerentes de produto, cobrindo descoberta…
@@ -31,8 +31,8 @@
 - [French bureaucracy skills](#paperasse) — Skills para agentes de IA especializados em burocracia administrativa e contábil francesa: papéis de contador,…
 - [Medical research skills library](#medical-research-skills) — Mais de 600 skills de agente para pesquisa médica: desenho de protocolos de estudo, análise estatística e de e…
 - [Math modeling competition skills](#math-modeling-skill) — Workflow de skills em três papéis (modelagem, programação, redação) para competições de modelagem matemática c…
-- [AI legal assistant skills](#ai-legal-claude) — Pacote de skills de assistente jurídico para o Claude Code cobrindo revisão de contratos, análise de risco, ge…
 - [Creator growth research skills](#creator-buddy) — 32 skills orquestradas para busca de conteúdo multiplataforma, análise de criadores e pesquisa de tendências v…
+- [AI legal assistant skills](#ai-legal-claude) — Pacote de skills de assistente jurídico para o Claude Code cobrindo revisão de contratos, análise de risco, ge…
 - [Software-engineering method pack](#dsh-aegis) — Pacote de métodos para agentes de codificação cobrindo planejamento com baseline primeiro, depuração sistemáti…
 - [Generate UI designs from a brief](#dsh-superdesign-skill) — Skill de design para UI e materiais de marketing no canvas do Superdesign: lê o repositório para obter context…
 - [HarmonyOS NEXT development skills](#dsh-harmony-next-skills) — Pacote de skills HarmonyOS NEXT para o DeepSeek Harness com referências de API offline e orientação para autom…
@@ -43,8 +43,8 @@
 - [On-demand DSH plugin-dev knowledge](#dsh-dsh-plugin-guide) — A base de conhecimento de desenvolvimento de plugins DSH empacotada como uma skill sob demanda: restrições ofi…
 - [Browse and manage skills in-GUI](#dsh-dsh-skill-hub) — Hub de skills integrado à interface do DeepSeek Harness: navega, busca, ativa/desativa, inspeciona, diagnostic…
 - [Programmatic video with React](#dsh-dsh-remotion) — Skill oficial do Remotion portada para o DSH: vídeo programático com React cobrindo animação, áudio, legendas,…
-- [Matt Pocock's engineering skills](#dsh-mattpocock-skills-dsh) — Conjunto completo de skills promovidas de Matt Pocock portado para o DSH: 25 arquivos SKILL.md cobrindo grilli…
 - [HyperFrames HTML video skills](#dsh-dsh-hyperframes) — Vinte skills HyperFrames da HeyGen sincronizadas do projeto original: criação de vídeo em HTML, animação, keyf…
+- [Matt Pocock's engineering skills](#dsh-mattpocock-skills-dsh) — Conjunto completo de skills promovidas de Matt Pocock portado para o DSH: 25 arquivos SKILL.md cobrindo grilli…
 - [Lazy senior dev mode skills](#dsh-dsh-ponytail) — Modo dev sênior preguiçoso Ponytail para o DeepSeek Harness: seis skills adaptadas de DietrichGebert/ponytail.
 - [273 ECC operator skills ported](#dsh-dsh-ecc) — Porta 273 skills do ECC, 95,8% do sistema operador original de 227 mil estrelas, para o DSH em quatro lotes de…
 - [Responsible AI-origin analysis rules](#responsible-ai-origin-analysis) — Instrução permanente de projeto para qualquer agente: nunca tratar um padrão isolado como prova de autoria por…
@@ -55,7 +55,7 @@
 
 ### Superpowers
 
-[Superpowers](https://github.com/obra/superpowers) — `Agent Skills` · ★ 311k · Licença: MIT · Funciona com: Todos os clientes
+[Superpowers](https://github.com/obra/superpowers) — `Agent Skills` · ★ 315k · Licença: MIT · Funciona com: Todos os clientes
 
 Biblioteca de skills e metodologia de desenvolvimento: brainstorming, planejamento, TDD, depuração sistemática, code review e execução com subagentes.
 
@@ -145,7 +145,7 @@ npx skills add obra/superpowers -a universal
 
 ### Anthropic Skills
 
-[Anthropic Skills](https://github.com/anthropics/skills) — `Agent Skills` · ★ 187k · Licença: ver repo · Funciona com: Todos os clientes
+[Anthropic Skills](https://github.com/anthropics/skills) — `Agent Skills` · ★ 190k · Licença: ver repo · Funciona com: Todos os clientes
 
 Agent Skills de referência da Anthropic: PDF, DOCX, XLSX e PPTX, skill-creator, construtor de MCP, design de frontend, testes de web app e mais.
 
@@ -415,7 +415,7 @@ npx skills add LMPrado-DZ23/awesome-agent-plugins --skill super-autonomous-missi
 
 ### Matt Pocock's engineering skills
 
-[mattpocock/skills](https://github.com/mattpocock/skills) — `Agent Skills` · ★ 310k · Licença: MIT · Funciona com: Todos os clientes
+[mattpocock/skills](https://github.com/mattpocock/skills) — `Agent Skills` · ★ 319k · Licença: MIT · Funciona com: Todos os clientes
 
 Coleção pública de 38 skills cobrindo revisão de código, TDD, modelagem de domínio, depuração, arquitetura e escrita de tickets para agentes de código.
 
@@ -505,13 +505,13 @@ npx skills add mattpocock/skills -a universal
 
 ### Karpathy-inspired coding discipline
 
-[multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) — `Agent Skills` · ★ 228k · Licença: ver repo · Funciona com: Todos os clientes
+[multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) — `Agent Skills` · ★ 231k · Licença: ver repo · Funciona com: Todos os clientes
 
 Um único CLAUDE.md destilado das observações de Andrej Karpathy sobre erros comuns de codificação de LLMs, para evitar que agentes criem soluções complicadas demais.
 
 **Alternativas:**
 
-- [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) (★ 183k) — Mesmo espírito levado adiante: 12 skills que fazem o agente pensar como 'o dev sênior mais preguiçoso da sala'.
+- [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) (★ 187k) — Mesmo espírito levado adiante: 12 skills que fazem o agente pensar como 'o dev sênior mais preguiçoso da sala'.
 
 <details><summary>Instalar</summary>
 
@@ -599,16 +599,16 @@ npx skills add multica-ai/andrej-karpathy-skills -a universal
 
 ### UI/UX design intelligence skill
 
-[nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) — `Agent Skills` · ★ 144k · Licença: MIT · Funciona com: Todos os clientes
+[nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) — `Agent Skills` · ★ 147k · Licença: MIT · Funciona com: Todos os clientes
 
 Skill de IA que fornece inteligência de design para construir UI/UX profissional em múltiplas plataformas, com agente e comandos complementares.
 
 **Alternativas:**
 
-- [pbakaus/impeccable](https://github.com/pbakaus/impeccable) (★ 100k) — Skill de linguagem de design focada especificamente em melhorar o gosto visual do agente, sem cobrir o processo mais amplo de UX.
-- [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) (★ 108k) — Skill mais restrita voltada a uma única coisa: impedir o agente de gerar interfaces genéricas e sem graça.
-- [jakubkrehel/skills](https://github.com/jakubkrehel/skills) (★ 10k) — Pequena coleção de skills focada em ajudar um agente a construir interfaces com boa aparência.
-- [Owl-Listener/designer-skills](https://github.com/Owl-Listener/designer-skills) (★ 3.2k) — Conjunto mais amplo de skills de design cobrindo pesquisa, sistemas de design, interação e entrega, além do polimento visual.
+- [pbakaus/impeccable](https://github.com/pbakaus/impeccable) (★ 107k) — Skill de linguagem de design focada especificamente em melhorar o gosto visual do agente, sem cobrir o processo mais amplo de UX.
+- [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) (★ 112k) — Skill mais restrita voltada a uma única coisa: impedir o agente de gerar interfaces genéricas e sem graça.
+- [jakubkrehel/skills](https://github.com/jakubkrehel/skills) (★ 12k) — Pequena coleção de skills focada em ajudar um agente a construir interfaces com boa aparência.
+- [Owl-Listener/designer-skills](https://github.com/Owl-Listener/designer-skills) (★ 3.3k) — Conjunto mais amplo de skills de design cobrindo pesquisa, sistemas de design, interação e entrega, além do polimento visual.
 
 <details><summary>Instalar</summary>
 
@@ -696,14 +696,14 @@ npx skills add nextlevelbuilder/ui-ux-pro-max-skill -a universal
 
 ### Caveman token-saving skill
 
-[JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) — `Agent Skills` · ★ 117k · Licença: ver repo · Funciona com: Todos os clientes
+[JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) — `Agent Skills` · ★ 119k · Licença: ver repo · Funciona com: Todos os clientes
 
 Skill e proxy para agentes de código que corta cerca de 65% dos tokens fazendo o agente se comunicar em uma 'fala de homem das cavernas' bem enxuta.
 
 **Alternativas:**
 
-- [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd) (★ 60k) — Abordagem diferente para saída enxuta: skill em estilo ADHD-friendly que impede o agente de enterrar a resposta em rodeios.
-- [tamaratran/fast-jev-compaction](https://github.com/tamaratran/fast-jev-compaction) (★ 7.8k) — Substitui o próprio resumo de compactação de contexto: cada chamada é pontuada, as obsoletas descartadas, as mantidas ficam literais.
+- [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd) (★ 61k) — Abordagem diferente para saída enxuta: skill em estilo ADHD-friendly que impede o agente de enterrar a resposta em rodeios.
+- [tamaratran/fast-jev-compaction](https://github.com/tamaratran/fast-jev-compaction) (★ 7.9k) — Substitui o próprio resumo de compactação de contexto: cada chamada é pontuada, as obsoletas descartadas, as mantidas ficam literais.
 
 <details><summary>Instalar</summary>
 
@@ -791,13 +791,13 @@ npx skills add JuliusBrussee/caveman -a universal
 
 ### Production-grade engineering skills
 
-[addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) — `Agent Skills` · ★ 113k · Licença: MIT · Funciona com: Todos os clientes
+[addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) — `Agent Skills` · ★ 114k · Licença: MIT · Funciona com: Todos os clientes
 
 Skills de engenharia de nível de produção para agentes de código, criadas por Addy Osmani, cobrindo o ofício do dia a dia de desenvolvimento.
 
 **Alternativas:**
 
-- [addyosmani/web-quality-skills](https://github.com/addyosmani/web-quality-skills) (★ 3.0k) — Pacote complementar do mesmo autor focado em performance web: skills baseadas em Lighthouse e Core Web Vitals.
+- [addyosmani/web-quality-skills](https://github.com/addyosmani/web-quality-skills) (★ 3.1k) — Pacote complementar do mesmo autor focado em performance web: skills baseadas em Lighthouse e Core Web Vitals.
 - [Jeffallan/claude-skills](https://github.com/Jeffallan/claude-skills) (★ 12k) — 67 skills especializadas voltadas a transformar o Claude Code em um par de programação full-stack.
 
 <details><summary>Instalar</summary>
@@ -894,8 +894,8 @@ Catálogo curado pela comunidade com centenas de Agent Skills prontas para insta
 
 - [composio-community/awesome-codex-skills](https://github.com/composio-community/awesome-codex-skills) (★ 17k) — Mesmo conceito de catálogo, direcionado ao Codex CLI e à API.
 - [github/awesome-copilot](https://github.com/github/awesome-copilot) (★ 41k) — Instruções, agentes e skills contribuídos pela comunidade especificamente para o GitHub Copilot.
-- [rmyndharis/antigravity-skills](https://github.com/rmyndharis/antigravity-skills) (★ 1.9k) — Coleção curada equivalente, voltada ao Google Antigravity.
-- [anbeime/skill](https://github.com/anbeime/skill) (★ 9.0k) — Loja de skills em chinês que também indexa e categoriza automaticamente skills coletadas do GitHub.
+- [rmyndharis/antigravity-skills](https://github.com/rmyndharis/antigravity-skills) (★ 2.0k) — Coleção curada equivalente, voltada ao Google Antigravity.
+- [anbeime/skill](https://github.com/anbeime/skill) (★ 9.3k) — Loja de skills em chinês que também indexa e categoriza automaticamente skills coletadas do GitHub.
 
 <details><summary>Instalar</summary>
 
@@ -983,15 +983,15 @@ npx skills add ComposioHQ/awesome-claude-skills -a universal
 
 ### AI-writing humanizer skill
 
-[blader/humanizer](https://github.com/blader/humanizer) — `Marketplace de plugins` · ★ 64k · Licença: MIT · Funciona com: Claude Code apenas
+[blader/humanizer](https://github.com/blader/humanizer) — `Marketplace de plugins` · ★ 67k · Licença: MIT · Funciona com: Claude Code apenas
 
 Agent skill que remove sinais comuns de texto gerado por IA, deixando a escrita com leitura mais natural.
 
 **Alternativas:**
 
-- [conorbronsdon/avoid-ai-writing](https://github.com/conorbronsdon/avoid-ai-writing) (★ 5.4k) — Skill semelhante que audita e reescreve conteúdo para remover padrões de escrita de IA.
-- [Nanako0129/sepia](https://github.com/Nanako0129/sepia) (★ 3.6k) — Skill de remoção de escrita de IA voltada especificamente à ficção, corrigindo a arquitetura narrativa com base em pesquisa publicada.
-- [epoko77-ai/im-not-ai](https://github.com/epoko77-ai/im-not-ai) (★ 6.4k) — Mesma ideia para textos em coreano: detecta e reescreve marcas de tradução e outros sinais típicos de escrita de IA em coreano.
+- [conorbronsdon/avoid-ai-writing](https://github.com/conorbronsdon/avoid-ai-writing) (★ 5.5k) — Skill semelhante que audita e reescreve conteúdo para remover padrões de escrita de IA.
+- [Nanako0129/sepia](https://github.com/Nanako0129/sepia) (★ 3.7k) — Skill de remoção de escrita de IA voltada especificamente à ficção, corrigindo a arquitetura narrativa com base em pesquisa publicada.
+- [epoko77-ai/im-not-ai](https://github.com/epoko77-ai/im-not-ai) (★ 6.5k) — Mesma ideia para textos em coreano: detecta e reescreve marcas de tradução e outros sinais típicos de escrita de IA em coreano.
 
 <details><summary>Instalar</summary>
 
@@ -1007,16 +1007,16 @@ Agent skill que remove sinais comuns de texto gerado por IA, deixando a escrita 
 
 ### Marketing skills for agents
 
-[coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) — `Agent Skills` · ★ 58k · Licença: MIT · Funciona com: Todos os clientes
+[coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) — `Agent Skills` · ★ 59k · Licença: MIT · Funciona com: Todos os clientes
 
 Skills de marketing para Claude Code e agentes de IA, cobrindo CRO, copywriting, SEO, analytics e growth engineering.
 
 **Alternativas:**
 
-- [aaron-he-zhu/aaron-marketing-skills](https://github.com/aaron-he-zhu/aaron-marketing-skills) (★ 3.0k) — 120 skills de marketing organizadas como uma equipe de marketing com IA em 8 disciplinas, com portões de auditoria embutidos.
+- [aaron-he-zhu/aaron-marketing-skills](https://github.com/aaron-he-zhu/aaron-marketing-skills) (★ 3.1k) — 120 skills de marketing organizadas como uma equipe de marketing com IA em 8 disciplinas, com portões de auditoria embutidos.
 - [AgriciDaniel/claude-ads](https://github.com/AgriciDaniel/claude-ads) (★ 11k) — Pacote focado em operações de mídia paga em 12 plataformas de anúncios, com auditorias por fontes e pontuação determinística.
-- [AgriciDaniel/claude-blog](https://github.com/AgriciDaniel/claude-blog) (★ 2.6k) — Conjunto de sub-skills e agentes para blogs, construído sobre um contrato de entrega de conteúdo para SEO e citações por IA.
-- [irinabuht12-oss/marketing-skills](https://github.com/irinabuht12-oss/marketing-skills) (★ 6.7k) — Pacote gratuito de 48 skills para Google Ads, Meta Ads, SEO e visibilidade em IA, com conector MCP hospedado opcional.
+- [AgriciDaniel/claude-blog](https://github.com/AgriciDaniel/claude-blog) (★ 2.7k) — Conjunto de sub-skills e agentes para blogs, construído sobre um contrato de entrega de conteúdo para SEO e citações por IA.
+- [irinabuht12-oss/marketing-skills](https://github.com/irinabuht12-oss/marketing-skills) (★ 7.1k) — Pacote gratuito de 48 skills para Google Ads, Meta Ads, SEO e visibilidade em IA, com conector MCP hospedado opcional.
 
 <details><summary>Instalar</summary>
 
@@ -1104,7 +1104,7 @@ npx skills add coreyhaines31/marketingskills -a universal
 
 ### Scientific Agent Skills library
 
-[K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) — `Agent Skills` · ★ 56k · Licença: MIT · Funciona com: Todos os clientes
+[K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) — `Agent Skills` · ★ 57k · Licença: MIT · Funciona com: Todos os clientes
 
 Biblioteca de skills validadas que transformam um agente de IA em assistente de pesquisa em bioinformática, quimioinformática, astronomia e pesquisa clínica, usada por uma grande comunidade de cientistas.
 
@@ -1200,15 +1200,15 @@ npx skills add K-Dense-AI/scientific-agent-skills -a universal
 
 ### Academic research skill pipeline
 
-[Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) — `Agent Skills` · ★ 55k · Licença: ver repo · Funciona com: Todos os clientes
+[Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) — `Agent Skills` · ★ 56k · Licença: ver repo · Funciona com: Todos os clientes
 
 Skills que cobrem todo o pipeline de pesquisa acadêmica para o Claude Code: pesquisar, escrever, revisar, corrigir e finalizar.
 
 **Alternativas:**
 
 - [Orchestra-Research/AI-Research-SKILLs](https://github.com/Orchestra-Research/AI-Research-SKILLs) (★ 14k) — Biblioteca open-source mais ampla de skills de pesquisa e engenharia de IA, voltada a transformar qualquer agente em assistente de pesquisa.
-- [brycewang-stanford/Auto-Empirical-Research-Skills](https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills) (★ 4.9k) — Biblioteca curada e bem maior de skills para pesquisa empírica em oito disciplinas das ciências sociais.
-- [wanshuiyin/Auto-claude-code-research-in-sleep](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) (★ 18k) — Skills leves, só em markdown, para pesquisa autônoma em ML: revisão entre modelos, descoberta de ideias e automação de experimentos.
+- [brycewang-stanford/Auto-Empirical-Research-Skills](https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills) (★ 5.0k) — Biblioteca curada e bem maior de skills para pesquisa empírica em oito disciplinas das ciências sociais.
+- [wanshuiyin/Auto-claude-code-research-in-sleep](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) (★ 19k) — Skills leves, só em markdown, para pesquisa autônoma em ML: revisão entre modelos, descoberta de ideias e automação de experimentos.
 
 <details><summary>Instalar</summary>
 
@@ -1291,18 +1291,6 @@ npx skills add Imbad0202/academic-research-skills -a universal
 ```
 
 </details>
-
-<a id="awesome-cursorrules"></a>
-
-### Awesome Cursor rules
-
-[PatrickJS/awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules) — `Lista / registro` · ★ 41k · Licença: CC0-1.0 · Funciona com: —
-
-Grande coleção curada de arquivos de configuração .cursorrules que personalizam o comportamento de IA do Cursor para várias linguagens e frameworks.
-
-**Alternativas:**
-
-- [flyeric0212/cursor-rules](https://github.com/flyeric0212/cursor-rules) (★ 1.9k) — Coleção curada semelhante de arquivos de regras do Cursor, organizada pelo mantenedor com notas em chinês.
 
 <a id="financial-services"></a>
 
@@ -1398,11 +1386,23 @@ npx skills add anthropics/financial-services -a universal
 
 </details>
 
+<a id="awesome-cursorrules"></a>
+
+### Awesome Cursor rules
+
+[PatrickJS/awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules) — `Lista / registro` · ★ 41k · Licença: CC0-1.0 · Funciona com: —
+
+Grande coleção curada de arquivos de configuração .cursorrules que personalizam o comportamento de IA do Cursor para várias linguagens e frameworks.
+
+**Alternativas:**
+
+- [flyeric0212/cursor-rules](https://github.com/flyeric0212/cursor-rules) (★ 1.9k) — Coleção curada semelhante de arquivos de regras do Cursor, organizada pelo mantenedor com notas em chinês.
+
 <a id="nuwa-skill"></a>
 
 ### Mental model distillation skills
 
-[alchaincyf/nuwa-skill](https://github.com/alchaincyf/nuwa-skill) — `Agent Skills` · ★ 37k · Licença: MIT · Funciona com: Todos os clientes
+[alchaincyf/nuwa-skill](https://github.com/alchaincyf/nuwa-skill) — `Agent Skills` · ★ 38k · Licença: MIT · Funciona com: Todos os clientes
 
 Skills que destilam como pensadores conhecidos específicos (Musk, Feynman, Munger, Naval, Paul Graham) raciocinam, decidem e se comunicam, para uso como perspectivas de agente.
 
@@ -1497,7 +1497,7 @@ npx skills add alchaincyf/nuwa-skill -a universal
 
 ### Vercel Agent Skills
 
-[Vercel Agent Skills](https://github.com/vercel-labs/agent-skills) — `Agent Skills` · ★ 33k · Licença: ver repo · Funciona com: Todos os clientes
+[Vercel Agent Skills](https://github.com/vercel-labs/agent-skills) — `Agent Skills` · ★ 34k · Licença: ver repo · Funciona com: Todos os clientes
 
 Coleção de skills da Vercel para desenvolvimento web, incluindo boas práticas de React e diretrizes de design web.
 
@@ -1593,7 +1593,7 @@ Marketplace com mais de 100 skills, comandos e plugins agênticos para gerentes 
 
 **Alternativas:**
 
-- [deanpeters/Product-Manager-Skills](https://github.com/deanpeters/Product-Manager-Skills) (★ 7.8k) — Framework de skills de gestão de produto menor, construído sobre métodos consolidados de PM.
+- [deanpeters/Product-Manager-Skills](https://github.com/deanpeters/Product-Manager-Skills) (★ 7.9k) — Framework de skills de gestão de produto menor, construído sobre métodos consolidados de PM.
 
 <details><summary>Instalar</summary>
 
@@ -1681,14 +1681,14 @@ npx skills add phuryn/pm-skills -a universal
 
 ### Open-source SEO skills
 
-[every-app/open-seo](https://github.com/every-app/open-seo) — `Agent Skills` · ★ 26k · Licença: MIT · Funciona com: Todos os clientes
+[every-app/open-seo](https://github.com/every-app/open-seo) — `Agent Skills` · ★ 27k · Licença: MIT · Funciona com: Todos os clientes
 
 Alternativa open-source ao Semrush e Ahrefs, empacotada como agent skills para análise e otimização de SEO.
 
 **Alternativas:**
 
-- [AgriciDaniel/claude-seo](https://github.com/AgriciDaniel/claude-seo) (★ 26k) — Pacote de SEO universal bem maior: 25 sub-skills e 18 sub-agentes cobrindo SEO técnico, E-E-A-T, schema, GEO/AEO e SEO local.
-- [appeeky/aso-skills](https://github.com/appeeky/aso-skills) (★ 2.2k) — Mesma ideia aplicada a lojas de aplicativos: pesquisa de palavras-chave, otimização de metadados e análise de concorrentes para ASO.
+- [AgriciDaniel/claude-seo](https://github.com/AgriciDaniel/claude-seo) (★ 28k) — Pacote de SEO universal bem maior: 25 sub-skills e 18 sub-agentes cobrindo SEO técnico, E-E-A-T, schema, GEO/AEO e SEO local.
+- [appeeky/aso-skills](https://github.com/appeeky/aso-skills) (★ 2.3k) — Mesma ideia aplicada a lojas de aplicativos: pesquisa de palavras-chave, otimização de metadados e análise de concorrentes para ASO.
 
 <details><summary>Instalar</summary>
 
@@ -1783,7 +1783,7 @@ Coleção de Agent Skills para engenharia de contexto e arquiteturas multiagente
 **Alternativas:**
 
 - [NeoLabHQ/context-engineering-kit](https://github.com/NeoLabHQ/context-engineering-kit) (★ 1.8k) — Skills feitas à mão com foco em melhorar a qualidade dos resultados do agente, incluindo alternativa aberta ao estilo CodeRabbit.
-- [mksglu/context-mode](https://github.com/mksglu/context-mode) (★ 33k) — Otimizador de janela de contexto que isola a saída de ferramentas (até 98% de redução) e mantém memória de sessão em 17 plataformas.
+- [mksglu/context-mode](https://github.com/mksglu/context-mode) (★ 34k) — Otimizador de janela de contexto que isola a saída de ferramentas (até 98% de redução) e mantém memória de sessão em 17 plataformas.
 - [rohitg00/pro-workflow](https://github.com/rohitg00/pro-workflow) (★ 2.9k) — Memória autocorretiva que se acumula ao longo de mais de 50 sessões, combinada com worktrees paralelas e fluxos de equipes de agentes.
 
 <details><summary>Instalar</summary>
@@ -1872,13 +1872,13 @@ npx skills add muratcankoylan/Agent-Skills-for-Context-Engineering -a universal
 
 ### Human-sounding Chinese writing skill
 
-[KKKKhazix/human-writing](https://github.com/KKKKhazix/human-writing) — `Agent Skills` · ★ 4.3k · Licença: MIT · Funciona com: Todos os clientes
+[KKKKhazix/human-writing](https://github.com/KKKKhazix/human-writing) — `Agent Skills` · ★ 4.5k · Licença: MIT · Funciona com: Todos os clientes
 
 Skill popular e de uso geral de escrita e reescrita que faz texto em chinês gerado por IA soar como uma pessoa específica falando, em vez de prosa genérica de IA.
 
 **Alternativas:**
 
-- [larashero3-dotcom/writing-dna-skill](https://github.com/larashero3-dotcom/writing-dna-skill) (★ 2.9k) — Destila e recria qualquer estilo de escrita dado como uma skill de agente reutilizável.
+- [larashero3-dotcom/writing-dna-skill](https://github.com/larashero3-dotcom/writing-dna-skill) (★ 3.1k) — Destila e recria qualquer estilo de escrita dado como uma skill de agente reutilizável.
 
 <details><summary>Instalar</summary>
 
@@ -1966,13 +1966,13 @@ npx skills add KKKKhazix/human-writing -a universal
 
 ### Equity trading skills suite
 
-[tradermonty/claude-trading-skills](https://github.com/tradermonty/claude-trading-skills) — `Agent Skills` · ★ 3.5k · Licença: MIT · Funciona com: Todos os clientes
+[tradermonty/claude-trading-skills](https://github.com/tradermonty/claude-trading-skills) — `Agent Skills` · ★ 3.7k · Licença: MIT · Funciona com: Todos os clientes
 
 Quase 100 skills para investidores e traders de ações: análise técnica gráfica, calendários de resultados e econômicos, screeners setoriais, amplitude de mercado e desenvolvimento de estratégias.
 
 **Alternativas:**
 
-- [HKUDS/Vibe-Trading](https://github.com/HKUDS/Vibe-Trading) (★ 37k) — Adiciona backtesting algorítmico, feeds de dados multiativos e skills de finanças comportamentais.
+- [HKUDS/Vibe-Trading](https://github.com/HKUDS/Vibe-Trading) (★ 38k) — Adiciona backtesting algorítmico, feeds de dados multiativos e skills de finanças comportamentais.
 - [xbtlin/ai-berkshire](https://github.com/xbtlin/ai-berkshire) (★ 17k) — Framework de pesquisa em value investing inspirado em Buffett, Munger e outros investidores de valor.
 - [questflowai/investorskills](https://github.com/questflowai/investorskills) (★ 1.9k) — Skills baseadas em personas que destilam como investidores conhecidos específicos pensam e decidem.
 - [RKiding/Awesome-finance-skills](https://github.com/RKiding/Awesome-finance-skills) (★ 3.1k) — Conjunto menor e gratuito de skills financeiras focado em notícias, sentimento e rastreamento de sinais.
@@ -2423,6 +2423,96 @@ npx skills add XiaoMaColtAI/math-modeling-skill -a universal
 
 </details>
 
+<a id="creator-buddy"></a>
+
+### Creator growth research skills
+
+[SpaceZephyr/creator-buddy](https://github.com/SpaceZephyr/creator-buddy) — `Agent Skills` · ★ 1.9k · Licença: ver repo · Funciona com: Todos os clientes
+
+32 skills orquestradas para busca de conteúdo multiplataforma, análise de criadores e pesquisa de tendências virais, com cobertura dedicada a plataformas chinesas como contas oficiais do WeChat.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+npx skills add SpaceZephyr/creator-buddy -a claude-code -g
+```
+
+**Codex CLI**
+
+```bash
+npx skills add SpaceZephyr/creator-buddy -a codex -g
+```
+
+**Gemini CLI**
+
+```bash
+npx skills add SpaceZephyr/creator-buddy -a gemini-cli -g
+```
+
+**Cursor**
+
+```bash
+npx skills add SpaceZephyr/creator-buddy -a cursor -g
+```
+
+**VS Code (Copilot)**
+
+```bash
+npx skills add SpaceZephyr/creator-buddy -a github-copilot -g
+```
+
+**OpenCode**
+
+```bash
+npx skills add SpaceZephyr/creator-buddy -a opencode -g
+```
+
+**Cline**
+
+```bash
+npx skills add SpaceZephyr/creator-buddy -a cline -g
+```
+
+**Windsurf**
+
+```bash
+npx skills add SpaceZephyr/creator-buddy -a windsurf -g
+```
+
+**Zed**
+
+```bash
+npx skills add SpaceZephyr/creator-buddy -a zed -g
+```
+
+**Goose**
+
+```bash
+npx skills add SpaceZephyr/creator-buddy -a goose -g
+```
+
+**Kiro**
+
+```bash
+npx skills add SpaceZephyr/creator-buddy -a kiro-cli -g
+```
+
+**Roo Code**
+
+```bash
+npx skills add SpaceZephyr/creator-buddy -a roo -g
+```
+
+**DeepSeek Harness**
+
+```bash
+npx skills add SpaceZephyr/creator-buddy -a universal
+```
+
+</details>
+
 <a id="ai-legal-claude"></a>
 
 ### AI legal assistant skills
@@ -2513,96 +2603,6 @@ npx skills add zubair-trabzada/ai-legal-claude -a universal
 
 </details>
 
-<a id="creator-buddy"></a>
-
-### Creator growth research skills
-
-[SpaceZephyr/creator-buddy](https://github.com/SpaceZephyr/creator-buddy) — `Agent Skills` · ★ 1.8k · Licença: ver repo · Funciona com: Todos os clientes
-
-32 skills orquestradas para busca de conteúdo multiplataforma, análise de criadores e pesquisa de tendências virais, com cobertura dedicada a plataformas chinesas como contas oficiais do WeChat.
-
-<details><summary>Instalar</summary>
-
-**Claude Code**
-
-```bash
-npx skills add SpaceZephyr/creator-buddy -a claude-code -g
-```
-
-**Codex CLI**
-
-```bash
-npx skills add SpaceZephyr/creator-buddy -a codex -g
-```
-
-**Gemini CLI**
-
-```bash
-npx skills add SpaceZephyr/creator-buddy -a gemini-cli -g
-```
-
-**Cursor**
-
-```bash
-npx skills add SpaceZephyr/creator-buddy -a cursor -g
-```
-
-**VS Code (Copilot)**
-
-```bash
-npx skills add SpaceZephyr/creator-buddy -a github-copilot -g
-```
-
-**OpenCode**
-
-```bash
-npx skills add SpaceZephyr/creator-buddy -a opencode -g
-```
-
-**Cline**
-
-```bash
-npx skills add SpaceZephyr/creator-buddy -a cline -g
-```
-
-**Windsurf**
-
-```bash
-npx skills add SpaceZephyr/creator-buddy -a windsurf -g
-```
-
-**Zed**
-
-```bash
-npx skills add SpaceZephyr/creator-buddy -a zed -g
-```
-
-**Goose**
-
-```bash
-npx skills add SpaceZephyr/creator-buddy -a goose -g
-```
-
-**Kiro**
-
-```bash
-npx skills add SpaceZephyr/creator-buddy -a kiro-cli -g
-```
-
-**Roo Code**
-
-```bash
-npx skills add SpaceZephyr/creator-buddy -a roo -g
-```
-
-**DeepSeek Harness**
-
-```bash
-npx skills add SpaceZephyr/creator-buddy -a universal
-```
-
-</details>
-
 <a id="dsh-aegis"></a>
 
 ### Software-engineering method pack
@@ -2625,14 +2625,14 @@ dsh plugin --profile web add github:GanyuanRan/Aegis
 
 ### Generate UI designs from a brief
 
-[superdesigndev/superdesign-skill](https://github.com/superdesigndev/superdesign-skill) — `Plugin nativo` · ★ 934 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[superdesigndev/superdesign-skill](https://github.com/superdesigndev/superdesign-skill) — `Plugin nativo` · ★ 968 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Skill de design para UI e materiais de marketing no canvas do Superdesign: lê o repositório para obter contexto, extrai o design system e gera e itera rascunhos de design ramificáveis, páginas de fluxo e componentes reutilizáveis pela CLI do Superdesign.
 
 **Alternativas:**
 
-- [xulelenlp/dsh-web-artifact-designer](https://github.com/xulelenlp/dsh-web-artifact-designer) (★ 5) — Produz artefatos HTML/SVG autocontidos (pôsteres, infográficos, landing pages) com checklist anti-IA, sem ferramenta de canvas externa
-- [zhaiyateng/dsh-design-skills](https://github.com/zhaiyateng/dsh-design-skills) (★ 25) — Fornece 10 pacotes de estilo estético (dark SaaS, brutalismo, glassmorphism) com tokens e checklists de aceitação
+- [xulelenlp/dsh-web-artifact-designer](https://github.com/xulelenlp/dsh-web-artifact-designer) (★ 4) — Produz artefatos HTML/SVG autocontidos (pôsteres, infográficos, landing pages) com checklist anti-IA, sem ferramenta de canvas externa
+- [zhaiyateng/dsh-design-skills](https://github.com/zhaiyateng/dsh-design-skills) (★ 26) — Fornece 10 pacotes de estilo estético (dark SaaS, brutalismo, glassmorphism) com tokens e checklists de aceitação
 
 <details><summary>Instalar</summary>
 
@@ -2648,7 +2648,7 @@ dsh plugin --profile web add github:superdesigndev/superdesign-skill
 
 ### HarmonyOS NEXT development skills
 
-[linhay/harmony-next.skills](https://github.com/linhay/harmony-next.skills) — `Plugin nativo` · ★ 365 · Licença: ver repo · Funciona com: DeepSeek Harness apenas
+[linhay/harmony-next.skills](https://github.com/linhay/harmony-next.skills) — `Plugin nativo` · ★ 367 · Licença: ver repo · Funciona com: DeepSeek Harness apenas
 
 Pacote de skills HarmonyOS NEXT para o DeepSeek Harness com referências de API offline e orientação para automação de DevEco, HDC e emulador.
 
@@ -2666,7 +2666,7 @@ dsh plugin --profile web add github:linhay/harmony-next.skills
 
 ### Reverse engineering & pentest skills
 
-[dhicoc/dsh-reverse-skill](https://github.com/dhicoc/dsh-reverse-skill) — `Plugin nativo` · ★ 318 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[dhicoc/dsh-reverse-skill](https://github.com/dhicoc/dsh-reverse-skill) — `Plugin nativo` · ★ 340 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Pacote completo de engenharia reversa com 85 arquivos SKILL.md para o DeepSeek Harness Cordis: engenharia reversa, testes de invasão autorizados e um roteador de skills de pesquisa em segurança.
 
@@ -2684,7 +2684,7 @@ dsh plugin --profile web add github:dhicoc/dsh-reverse-skill
 
 ### Summonable domain-expert subagents
 
-[MichengAI/dsh-agency-agents](https://github.com/MichengAI/dsh-agency-agents) — `Plugin nativo` · ★ 207 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
+[MichengAI/dsh-agency-agents](https://github.com/MichengAI/dsh-agency-agents) — `Plugin nativo` · ★ 230 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
 
 Adiciona um elenco de subagentes especialistas em domínios que podem ser convocados sob demanda, enquanto a sessão principal mantém a tarefa e produz a resposta final.
 
@@ -2702,7 +2702,7 @@ dsh plugin --profile web add github:MichengAI/dsh-agency-agents
 
 ### 88 research and business skills
 
-[sandbaseai/sandbase-skills](https://github.com/sandbaseai/sandbase-skills) — `Plugin nativo` · ★ 206 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
+[sandbaseai/sandbase-skills](https://github.com/sandbaseai/sandbase-skills) — `Plugin nativo` · ★ 209 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
 
 Monta 88 Agent Skills empacotadas de pesquisa, inteligência social, marketing e negócios no DSH através do provedor de Skill do sistema de arquivos.
 
@@ -2720,7 +2720,7 @@ dsh plugin --profile web add github:sandbaseai/sandbase-skills
 
 ### Chinese official document toolkit
 
-[linhut/gongwen-skill](https://github.com/linhut/gongwen-skill) — `Plugin nativo` · ★ 98 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[linhut/gongwen-skill](https://github.com/linhut/gongwen-skill) — `Plugin nativo` · ★ 106 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Kit de documentos oficiais chineses: verificação e correção automática do formato GB/T 9704, marcação de revisão (vermelho e tachado), geração de modelos, conversão de Markdown para docx e inserção de cabeçalho/rodapé/número de página para 24 tipos de documento.
 
@@ -2738,7 +2738,7 @@ dsh plugin --profile web add github:linhut/gongwen-skill
 
 ### On-demand DSH plugin-dev knowledge
 
-[PerryLink/dsh-plugin-guide](https://github.com/PerryLink/dsh-plugin-guide) — `Plugin nativo` · ★ 65 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
+[PerryLink/dsh-plugin-guide](https://github.com/PerryLink/dsh-plugin-guide) — `Plugin nativo` · ★ 66 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
 
 A base de conhecimento de desenvolvimento de plugins DSH empacotada como uma skill sob demanda: restrições oficiais, fluxos de tarefas, referência de API e armadilhas da comunidade, para o agente consultar enquanto constrói um plugin.
 
@@ -2756,7 +2756,7 @@ dsh plugin --profile web add github:PerryLink/dsh-plugin-guide
 
 ### Browse and manage skills in-GUI
 
-[cheshireez/dsh-skill-hub](https://github.com/cheshireez/dsh-skill-hub) — `Plugin nativo` · ★ 38 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[cheshireez/dsh-skill-hub](https://github.com/cheshireez/dsh-skill-hub) — `Plugin nativo` · ★ 39 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Hub de skills integrado à interface do DeepSeek Harness: navega, busca, ativa/desativa, inspeciona, diagnostica e cria a partir do registro oficial ctx.skills, além de um mercado de skills com sincronização de fontes rastreadas e atualização em um clique.
 
@@ -2778,7 +2778,7 @@ dsh plugin --profile web add github:cheshireez/dsh-skill-hub
 
 ### Programmatic video with React
 
-[STARDUSTLC666/dsh-remotion](https://github.com/STARDUSTLC666/dsh-remotion) — `Plugin nativo` · ★ 31 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[STARDUSTLC666/dsh-remotion](https://github.com/STARDUSTLC666/dsh-remotion) — `Plugin nativo` · ★ 35 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Skill oficial do Remotion portada para o DSH: vídeo programático com React cobrindo animação, áudio, legendas, 3D e gráficos em 38 arquivos de regras, além de checagem de saúde dos recursos empacotados.
 
@@ -2788,6 +2788,24 @@ Skill oficial do Remotion portada para o DSH: vídeo programático com React cob
 
 ```bash
 dsh plugin --profile web add github:STARDUSTLC666/dsh-remotion
+```
+
+</details>
+
+<a id="dsh-dsh-hyperframes"></a>
+
+### HyperFrames HTML video skills
+
+[STARDUSTLC666/dsh-hyperframes](https://github.com/STARDUSTLC666/dsh-hyperframes) — `Plugin nativo` · ★ 31 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+
+Vinte skills HyperFrames da HeyGen sincronizadas do projeto original: criação de vídeo em HTML, animação, keyframes, áudio/música para vídeo, uma CLI, um registro, slideshows, recortes de talking-head e conversão de site/produto/PR em vídeo, além de checagem de saúde.
+
+<details><summary>Instalar</summary>
+
+**DeepSeek Harness**
+
+```bash
+dsh plugin --profile web add github:STARDUSTLC666/dsh-hyperframes
 ```
 
 </details>
@@ -2804,7 +2822,7 @@ Conjunto completo de skills promovidas de Matt Pocock portado para o DSH: 25 arq
 
 - [gongyijie85/mattpocock-skills-dsh-zh](https://github.com/gongyijie85/mattpocock-skills-dsh-zh) (★ 8) — Totalmente traduzido para o chinês, mantendo termos técnicos em inglês com glossário
 - [jeremy9682/dsh-skill-pack](https://github.com/jeremy9682/dsh-skill-pack) (★ 5) — Empacota um subconjunto diferente de 11 skills de fluxo de trabalho, incluindo handoff, triage, to-spec, to-tickets e overnight-execution
-- [FeatherHunter/dsh-mattpocock-skills-deck](https://github.com/FeatherHunter/dsh-mattpocock-skills-deck) (★ 280) — Exibe o mesmo conjunto de 25 skills em um painel de detalhes lateral, sem configuração manual
+- [FeatherHunter/dsh-mattpocock-skills-deck](https://github.com/FeatherHunter/dsh-mattpocock-skills-deck) (★ 325) — Exibe o mesmo conjunto de 25 skills em um painel de detalhes lateral, sem configuração manual
 
 <details><summary>Instalar</summary>
 
@@ -2812,24 +2830,6 @@ Conjunto completo de skills promovidas de Matt Pocock portado para o DSH: 25 arq
 
 ```bash
 dsh plugin --profile web add github:gongyijie85/mattpocock-skills-dsh
-```
-
-</details>
-
-<a id="dsh-dsh-hyperframes"></a>
-
-### HyperFrames HTML video skills
-
-[STARDUSTLC666/dsh-hyperframes](https://github.com/STARDUSTLC666/dsh-hyperframes) — `Plugin nativo` · ★ 24 · Licença: MIT · Funciona com: DeepSeek Harness apenas
-
-Vinte skills HyperFrames da HeyGen sincronizadas do projeto original: criação de vídeo em HTML, animação, keyframes, áudio/música para vídeo, uma CLI, um registro, slideshows, recortes de talking-head e conversão de site/produto/PR em vídeo, além de checagem de saúde.
-
-<details><summary>Instalar</summary>
-
-**DeepSeek Harness**
-
-```bash
-dsh plugin --profile web add github:STARDUSTLC666/dsh-hyperframes
 ```
 
 </details>
@@ -2844,7 +2844,7 @@ Modo dev sênior preguiçoso Ponytail para o DeepSeek Harness: seis skills adapt
 
 **Alternativas:**
 
-- [Wenaixi/dsh-ponytail](https://github.com/Wenaixi/dsh-ponytail) (★ 36) — Adiciona uma escada de 7 degraus de YAGNI até código mínimo e garante que nenhuma das seis skills tenha ferramentas vazias
+- [Wenaixi/dsh-ponytail](https://github.com/Wenaixi/dsh-ponytail) (★ 40) — Adiciona uma escada de 7 degraus de YAGNI até código mínimo e garante que nenhuma das seis skills tenha ferramentas vazias
 
 <details><summary>Instalar</summary>
 

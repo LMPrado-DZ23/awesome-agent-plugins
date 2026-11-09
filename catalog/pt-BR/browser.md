@@ -396,7 +396,7 @@ extensions:
 
 ### Firecrawl web data skills
 
-[firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) — `Agent Skills` · ★ 198k · Licença: AGPL-3.0 · Funciona com: Todos os clientes
+[firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) — `Agent Skills` · ★ 200k · Licença: AGPL-3.0 · Funciona com: Todos os clientes
 
 Skills oficiais do Firecrawl para sua API de scraping e busca na web: onboarding, scraping de página única, busca multi-página e interação no navegador, para integrar dados da web ao vivo em agentes.
 
@@ -674,14 +674,14 @@ extensions:
 
 ### Agent browser automation CLI
 
-[vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) — `Agent Skills` · ★ 45k · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) — `Agent Skills` · ★ 48k · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 CLI de automação de navegador feita para agentes de IA controlarem um navegador real: navegar, clicar, preencher formulários e ler páginas.
 
 **Alternativas:**
 
 - [browser-use/browser-harness](https://github.com/browser-use/browser-harness) (★ 19k) — Harness de navegador autorreparável que permite a um LLM completar tarefas abertas de navegação mesmo quando o layout da página muda.
-- [citrolabs/ego-lite](https://github.com/citrolabs/ego-lite) (★ 21k) — Permite que um agente compartilhe sua sessão de navegador já autenticada, em vez de automatizar um navegador novo e sem login.
+- [citrolabs/ego-lite](https://github.com/citrolabs/ego-lite) (★ 22k) — Permite que um agente compartilhe sua sessão de navegador já autenticada, em vez de automatizar um navegador novo e sem login.
 - [SawyerHood/dev-browser](https://github.com/SawyerHood/dev-browser) (★ 6.7k) — Claude Skill minimalista que apenas dá a um agente a capacidade de abrir e usar um navegador web.
 - [lackeyjb/playwright-skill](https://github.com/lackeyjb/playwright-skill) (★ 3.3k) — Skill de automação de navegador de propósito geral construída especificamente sobre o Playwright.
 
@@ -992,7 +992,7 @@ Biblioteca de skills para um CLI de automação de navegador voltado a agentes d
 
 **Alternativas:**
 
-- [D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling) (★ 92k) — Adiciona skill de framework Python de scraping adaptativo para extração em código, de requisições simples a crawls completos.
+- [D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling) (★ 100k) — Adiciona skill de framework Python de scraping adaptativo para extração em código, de requisições simples a crawls completos.
 
 <details><summary>Instalar</summary>
 
@@ -1242,7 +1242,7 @@ extensions:
 
 ### Browserbase web access skills
 
-[browserbase/skills](https://github.com/browserbase/skills) — `Agent Skills` · ★ 3.7k · Licença: ver repo · Funciona com: Todos os clientes
+[browserbase/skills](https://github.com/browserbase/skills) — `Agent Skills` · ★ 3.8k · Licença: ver repo · Funciona com: Todos os clientes
 
 Coleção oficial da Browserbase de agent skills para acessar e interagir com a web por meio de sua infraestrutura de navegador hospedada.
 
@@ -1339,9 +1339,9 @@ Servidor oficial do Brave Search: resultados web, imagens, vídeos, rich results
 **Alternativas:**
 
 - [tavily-ai/tavily-mcp](https://github.com/tavily-ai/tavily-mcp) (★ 2.5k) — Servidor de busca web voltado a IA; exige TAVILY_API_KEY.
-- [SearXNG Search](https://github.com/ihor-sokoliuk/mcp-searxng) (★ 1.3k) — Busca que preserva privacidade via instância própria do SearXNG, com paginação e leitura de URLs.
+- [SearXNG Search](https://github.com/ihor-sokoliuk/mcp-searxng) (★ 1.4k) — Busca que preserva privacidade via instância própria do SearXNG, com paginação e leitura de URLs.
 - [spences10/mcp-omnisearch](https://github.com/spences10/mcp-omnisearch) (★ 358) — Combina múltiplos mecanismos de busca em um único servidor MCP.
-- [TinySuiteHQ/TinySearch](https://github.com/TinySuiteHQ/TinySearch) (★ 237) — Busca de descoberta autogerenciada para agentes; suporta cabeçalhos opcionais de exportação OpenTelemetry.
+- [TinySuiteHQ/TinySearch](https://github.com/TinySuiteHQ/TinySearch) (★ 236) — Busca de descoberta autogerenciada para agentes; suporta cabeçalhos opcionais de exportação OpenTelemetry.
 
 <details><summary>Instalar</summary>
 
@@ -1554,14 +1554,14 @@ extensions:
 
 ### Web search for text-only agents
 
-[liustack/modsearch](https://github.com/liustack/modsearch) — `Plugin nativo` · ★ 911 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[liustack/modsearch](https://github.com/liustack/modsearch) — `Plugin nativo` · ★ 962 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Conecta buscas ao vivo na web e no X (Twitter) a agentes somente texto, retornando evidências estruturadas em JSON com resultados de busca, conteúdo de páginas e citações.
 
 **Alternativas:**
 
-- [DDDMUC/dsh-free-search](https://github.com/DDDMUC/dsh-free-search) (★ 812) — Adiciona 7 motores gratuitos/pagos (DuckDuckGo, Bing, SearXNG, Exa, Perplexity, DeepSeek) com failover automático e UI para chaves de API.
-- [anweat/dsh-web-search-pro](https://github.com/anweat/dsh-web-search-pro) (★ 83) — Adiciona cache de resultados SQLite+LRU e roteia buscas para mecanismos específicos de sites como GitHub, Bilibili, YouTube e Reddit.
+- [DDDMUC/dsh-free-search](https://github.com/DDDMUC/dsh-free-search) (★ 1.0k) — Adiciona 7 motores gratuitos/pagos (DuckDuckGo, Bing, SearXNG, Exa, Perplexity, DeepSeek) com failover automático e UI para chaves de API.
+- [anweat/dsh-web-search-pro](https://github.com/anweat/dsh-web-search-pro) (★ 86) — Adiciona cache de resultados SQLite+LRU e roteia buscas para mecanismos específicos de sites como GitHub, Bilibili, YouTube e Reddit.
 - [A3Boy/dsh-web-tools](https://github.com/A3Boy/dsh-web-tools) (★ 41) — Adiciona pools de chaves próprias (BYOK) entre múltiplos provedores de busca, com monitoramento de saúde e fallback determinístico.
 - [yinnho/aginxbrowser#dsh-aginxbrowser](https://github.com/yinnho/aginxbrowser/tree/main/dsh-aginxbrowser) — Adiciona busca agregada em 14 motores e uma URL de visualização ao vivo para que um humano acompanhe e assuma a navegação.
 
@@ -1579,14 +1579,14 @@ dsh plugin --profile web add github:liustack/modsearch
 
 ### Real browser automation and control
 
-[wqty123/dsh-browser](https://github.com/wqty123/dsh-browser) — `Plugin nativo` · ★ 160 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[wqty123/dsh-browser](https://github.com/wqty123/dsh-browser) — `Plugin nativo` · ★ 178 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Dá ao agente uma janela Electron nativa e compartilhada, controlada via CDP com 20 ferramentas (abrir páginas, snapshots, formulários, screenshots, downloads, detecção de CAPTCHA), enquanto um humano pode acompanhar e assumir o controle.
 
 **Alternativas:**
 
-- [anweat/dsh-browser](https://github.com/anweat/dsh-browser) (★ 31) — Empacota Playwright e Chromium como dependências locais do plugin, com fallback de reuso global e 9 ferramentas de navegador.
-- [stuarthu/dsh-chrome](https://github.com/stuarthu/dsh-chrome) (★ 10) — Adiciona um painel lateral no Chrome que permite ao agente ler a página atual e capturar tráfego HTTP.
+- [anweat/dsh-browser](https://github.com/anweat/dsh-browser) (★ 33) — Empacota Playwright e Chromium como dependências locais do plugin, com fallback de reuso global e 9 ferramentas de navegador.
+- [stuarthu/dsh-chrome](https://github.com/stuarthu/dsh-chrome) (★ 11) — Adiciona um painel lateral no Chrome que permite ao agente ler a página atual e capturar tráfego HTTP.
 - [Tencent/BrowserSkill#dsh-plugin-browserskill](https://github.com/Tencent/BrowserSkill/tree/main/packages/dsh-plugin-browserskill) — Controla janelas do Chrome/Edge com observações de acessibilidade e VOM, e sobreposição ao vivo na Web UI para controlar várias sessões.
 - [Viger1/dsh-pilot](https://github.com/Viger1/dsh-pilot) (★ 0) — Navega e age sobre elementos usando referências de acessibilidade, aplicando a política de origem conforme a postura de aprovação da sessão.
 
@@ -1604,7 +1604,7 @@ dsh plugin --profile web add github:wqty123/dsh-browser
 
 ### Control the Tabbit Browser
 
-[Tabbit-Browser/dsh-plugin](https://github.com/Tabbit-Browser/dsh-plugin) — `Plugin nativo` · ★ 121 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[Tabbit-Browser/dsh-plugin](https://github.com/Tabbit-Browser/dsh-plugin) — `Plugin nativo` · ★ 124 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Dá ao agente controle do Tabbit Browser: carrega automaticamente uma skill complementar, detecta versões qualificadas do Tabbit (1.9.0+), verifica o runtime tabbit-cli e baixa o instalador oficial correspondente quando necessário.
 
