@@ -219,6 +219,10 @@ extensions:
 
 Automação de navegador para agentes via snapshots de acessibilidade do Playwright: navegar, clicar, preencher formulários e capturar telas sem modelo de visão.
 
+**Alternativas:**
+
+- [agent-qa](https://vostride.com) — QA em linguagem natural para web, Android e iOS, com memória persistente memidex e autoaperfeiçoamento baseado em evidências; FSL-1.1-ALv2, custos de modelo à parte.
+
 <details><summary>Instalar</summary>
 
 **Claude Code**
