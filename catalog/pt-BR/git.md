@@ -25,7 +25,7 @@
 
 ### GitHub MCP Server
 
-[GitHub MCP Server](https://github.com/github/github-mcp-server) — `Servidor MCP` · ★ 34k · Licença: MIT · Funciona com: Todos os clientes
+[GitHub MCP Server](https://github.com/github/github-mcp-server) — `Servidor MCP` · ★ 35k · Licença: MIT · Funciona com: Todos os clientes
 
 Servidor oficial do GitHub: repositórios, issues, pull requests, Actions, code scanning e mais. Mostrado o endpoint remoto; a imagem Docker (ghcr.io/github/github-mcp-server) roda localmente.
 
@@ -213,7 +213,7 @@ extensions:
 
 ### Alibaba open code review
 
-[alibaba/open-code-review](https://github.com/alibaba/open-code-review) — `Agent Skills` · ★ 50k · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[alibaba/open-code-review](https://github.com/alibaba/open-code-review) — `Agent Skills` · ★ 53k · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Ferramenta híbrida de revisão de código testada em produção na escala da Alibaba, combinando pipelines determinísticos com um agente LLM para comentários precisos linha a linha e um conjunto de regras de segurança multilíngue.
 
@@ -531,7 +531,7 @@ extensions:
 
 ### Manage repos across Git hosts
 
-[gitkraken/gk-cli](https://github.com/gitkraken/gk-cli) — `Servidor MCP` · ★ 465 · Licença: ver repo · Funciona com: Todos os clientes
+[gitkraken/gk-cli](https://github.com/gitkraken/gk-cli) — `Servidor MCP` · ★ 467 · Licença: ver repo · Funciona com: Todos os clientes
 
 Servidor da GitKraken para gerenciar repositórios, pull requests e issues no GitHub, GitLab e Bitbucket.
 
@@ -909,7 +909,7 @@ extensions:
 
 ### GitHub CI and PR review bot
 
-[PerryLink/dsh-github](https://github.com/PerryLink/dsh-github) — `Plugin nativo` · ★ 29 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
+[PerryLink/dsh-github](https://github.com/PerryLink/dsh-github) — `Plugin nativo` · ★ 31 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
 
 Integração de CI com o GitHub de nível oficial: um action.yml composto, um bot de revisão de PR por polling com comentários inline idempotentes e um gate de status-check, além de ferramentas de PR e issues em que toda escrita é aprovada por um humano.
 
@@ -1060,7 +1060,7 @@ Conexão via GitHub Device Flow mais um fluxo de PR dentro da conversa: uma barr
 
 **Alternativas:**
 
-- [Moon-shiyue/dsh-github-connect](https://github.com/Moon-shiyue/dsh-github-connect) (★ 16) — Conecta via OAuth device flow ou um personal access token e chama a API do GitHub diretamente por uma ferramenta github_api
+- [Moon-shiyue/dsh-github-connect](https://github.com/Moon-shiyue/dsh-github-connect) (★ 17) — Conecta via OAuth device flow ou um personal access token e chama a API do GitHub diretamente por uma ferramenta github_api
 - [Noob-stupid/dsh-github-login](https://github.com/Noob-stupid/dsh-github-login) (★ 7) — Adiciona login por device flow dentro da janela, sem precisar de terminal, sincronizando o token com a gh CLI e endpoints de status do host
 
 <details><summary>Instalar</summary>

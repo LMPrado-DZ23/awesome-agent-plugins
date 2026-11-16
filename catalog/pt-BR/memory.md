@@ -20,8 +20,8 @@
 - [Zero-prompt proactive memory recall](#dsh-dsh-auto-memory) — Memória associativa proativa: recall sem prompt injetado em um ponto fixo, auto-consolidação em três camadas, …
 - [Approval-gated auditable memory](#dsh-dsh-memento) — Memória entre sessões limitada, em camadas e sujeita a aprovação: uma interface de memória tipada com um prove…
 - [Six-layer time-decaying memory](#dsh-stratagate-agentmemory) — Memória de seis camadas com decaimento no tempo: conversas recentes permanecem vívidas enquanto as antigas se …
-- [Auto-distilled hybrid-retrieval memory](#dsh-dsh-layered-memory) — Conversas destiladas automaticamente em fatos atômicos, resumos de cena e um perfil de persona, injetados ante…
 - [Local/remote knowledge base search](#dsh-dsh-knowledge) — Bases de conhecimento locais e remotas com recall por projeto e por sessão, escrita controlada e um console we…
+- [Auto-distilled hybrid-retrieval memory](#dsh-dsh-layered-memory) — Conversas destiladas automaticamente em fatos atômicos, resumos de cena e um perfil de persona, injetados ante…
 - [Markdown notes capture and sync](#dsh-dsh-md-notes) — Gerenciador e editor de notas em markdown para o DSH: captura rápida de conversas em notas, sincronização com …
 - [Personal Obsidian vault memory](#dsh-dsh-client-ui-obsidian-memory) — Memória de IA persistente apoiada em um vault local do Obsidian/Codex, com cinco ferramentas de leitura/escrit…
 - [Multi-layer conversation history recall](#dsh-dsh-recall) — Recall do histórico de conversas via recuperação em três camadas (literal, aproximada, semântica) sobre o text…
@@ -34,7 +34,7 @@
 
 ### Reasoning memory for agents
 
-[Honcho](https://github.com/plastic-labs/honcho) — `Servidor MCP` · ★ 8.0k · Licença: AGPL-3.0 · Funciona com: Todos os clientes
+[Honcho](https://github.com/plastic-labs/honcho) — `Servidor MCP` · ★ 8.1k · Licença: AGPL-3.0 · Funciona com: Todos os clientes
 
 Memória que raciocina: aprendizado contínuo para agentes com estado, buscando mais contexto com menos tokens; exige token de Authorization.
 
@@ -222,7 +222,7 @@ extensions:
 
 ### Markdown knowledge base for agents
 
-[basicmachines-co/basic-memory](https://github.com/basicmachines-co/basic-memory) — `Servidor MCP` · ★ 4.5k · Licença: AGPL-3.0 · Funciona com: Todos os clientes
+[basicmachines-co/basic-memory](https://github.com/basicmachines-co/basic-memory) — `Servidor MCP` · ★ 4.6k · Licença: AGPL-3.0 · Funciona com: Todos os clientes
 
 Gestão de conhecimento local-first com sincronização bidirecional entre um LLM e arquivos Markdown.
 
@@ -592,15 +592,15 @@ extensions:
 
 ### Cross-agent shared long-term memory
 
-[omdsh-dev/dsh-mnemon](https://github.com/omdsh-dev/dsh-mnemon) — `Plugin nativo` · ★ 945 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[omdsh-dev/dsh-mnemon](https://github.com/omdsh-dev/dsh-mnemon) — `Plugin nativo` · ★ 1.0k · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Memória persistente local, compartilhada entre agentes habilitados para Mnemon: memória de runtime, documentos de projeto pesquisáveis, recall semântico, grafo de conhecimento e UI lateral.
 
 **Alternativas:**
 
 - [vectorize-io/hindsight#coding-agents](https://github.com/vectorize-io/hindsight/tree/main/hindsight-integrations/coding-agents) — Adiciona recall/retenção automáticos com reflexão profunda, páginas de conhecimento e bancos de memória por repositório.
-- [ZSeven-W/dsh-noema](https://github.com/ZSeven-W/dsh-noema) (★ 139) — Adiciona importação de memórias de dez outras ferramentas de IA, além de página de configurações.
-- [modusensus/dsh-mneme](https://github.com/modusensus/dsh-mneme) (★ 218) — Adiciona auto-consolidação durante inatividade, congelamento de memórias conflitantes para revisão e trilha de auditoria reproduzível.
+- [ZSeven-W/dsh-noema](https://github.com/ZSeven-W/dsh-noema) (★ 146) — Adiciona importação de memórias de dez outras ferramentas de IA, além de página de configurações.
+- [modusensus/dsh-mneme](https://github.com/modusensus/dsh-mneme) (★ 234) — Adiciona auto-consolidação durante inatividade, congelamento de memórias conflitantes para revisão e trilha de auditoria reproduzível.
 
 <details><summary>Instalar</summary>
 
@@ -616,7 +616,7 @@ dsh plugin --profile web add github:omdsh-dev/dsh-mnemon
 
 ### Obsidian notes access
 
-[cyanheads/obsidian-mcp-server](https://github.com/cyanheads/obsidian-mcp-server) — `Servidor MCP` · ★ 702 · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[cyanheads/obsidian-mcp-server](https://github.com/cyanheads/obsidian-mcp-server) — `Servidor MCP` · ★ 707 · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Lê, escreve, busca e edita notas, tags e frontmatter do Obsidian; exige OBSIDIAN_API_KEY.
 
@@ -831,7 +831,7 @@ extensions:
 
 ### Typed knowledge-graph memory
 
-[adoresever/graph-memory](https://github.com/adoresever/graph-memory) — `Plugin nativo` · ★ 673 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[adoresever/graph-memory](https://github.com/adoresever/graph-memory) — `Plugin nativo` · ★ 675 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Memória entre sessões rastreável e pesquisável que guarda o conhecimento das conversas como nós de grafo tipados (tarefa/habilidade/evento) conectados por arestas tipadas.
 
@@ -849,7 +849,7 @@ dsh plugin --profile web add github:adoresever/graph-memory
 
 ### Local-first agentic RAG
 
-[haiku.rag](https://github.com/ggozad/haiku.rag) — `Servidor MCP` · ★ 655 · Licença: MIT · Funciona com: Todos os clientes
+[haiku.rag](https://github.com/ggozad/haiku.rag) — `Servidor MCP` · ★ 661 · Licença: MIT · Funciona com: Todos os clientes
 
 RAG agêntico local-first com citações: busca híbrida, reranking e recuperação de documentos multimodal.
 
@@ -1030,7 +1030,7 @@ extensions:
 
 ### Failure-recovery lessons knowledge base
 
-[Ikalus1988/MisakaNet](https://github.com/Ikalus1988/MisakaNet) — `Plugin nativo` · ★ 556 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
+[Ikalus1988/MisakaNet](https://github.com/Ikalus1988/MisakaNet) — `Plugin nativo` · ★ 561 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
 
 Busca e registra lições de recuperação de falhas extraídas de sessões reais de engenharia, com recuperação BM25 mais RAG semântico sobre uma base de lições.
 
@@ -1052,7 +1052,7 @@ dsh plugin --profile web add github:Ikalus1988/MisakaNet
 
 ### Anytype encrypted wiki access
 
-[anyproto/anytype-mcp](https://github.com/anyproto/anytype-mcp) — `Servidor MCP` · ★ 538 · Licença: MIT · Funciona com: Todos os clientes
+[anyproto/anytype-mcp](https://github.com/anyproto/anytype-mcp) — `Servidor MCP` · ★ 544 · Licença: MIT · Funciona com: Todos os clientes
 
 Servidor oficial da API do Anytype, um wiki criptografado, local e colaborativo; exige OPENAPI_MCP_HEADERS.
 
@@ -1267,7 +1267,7 @@ extensions:
 
 ### Team chat to knowledge graph
 
-[Beever-AI/beever-atlas](https://github.com/Beever-AI/beever-atlas) — `Servidor MCP` · ★ 451 · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[Beever-AI/beever-atlas](https://github.com/Beever-AI/beever-atlas) — `Servidor MCP` · ★ 454 · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Base de conhecimento open-source que transforma o chat da equipe em um grafo de conhecimento tipado e um wiki gerado automaticamente.
 
@@ -1472,7 +1472,7 @@ extensions:
 
 ### Seven-layer SQLite project memory
 
-[Phant0Meow/dsh-meow-memory](https://github.com/Phant0Meow/dsh-meow-memory) — `Plugin nativo` · ★ 379 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[Phant0Meow/dsh-meow-memory](https://github.com/Phant0Meow/dsh-meow-memory) — `Plugin nativo` · ★ 396 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Memória entre sessões com escopo de projeto em um repositório SQLite de sete camadas (soul/user/project/fact/lesson/rules/topic), com injeção na primeira mensagem, buscas por palavra-chave por mensagem e consolidação em janelas ociosas.
 
@@ -1490,7 +1490,7 @@ dsh plugin --profile web add github:Phant0Meow/dsh-meow-memory
 
 ### Air-gapped enterprise GraphRAG
 
-[bibinprathap/VeritasGraph](https://github.com/bibinprathap/VeritasGraph) — `Servidor MCP` · ★ 326 · Licença: ver repo · Funciona com: Todos os clientes
+[bibinprathap/VeritasGraph](https://github.com/bibinprathap/VeritasGraph) — `Servidor MCP` · ★ 327 · Licença: ver repo · Funciona com: Todos os clientes
 
 Servidor GraphRAG empresarial zero-trust e air-gapped, com respostas offline fundamentadas em citações.
 
@@ -1671,16 +1671,16 @@ extensions:
 
 ### Cross-session agent memory
 
-[OMEGA Memory](https://github.com/omega-memory/omega-memory) — `Servidor MCP` · ★ 224 · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[OMEGA Memory](https://github.com/omega-memory/omega-memory) — `Servidor MCP` · ★ 226 · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Memória persistente, coordenação e aprendizado para agentes de IA, local-first, exposta em 25 ferramentas MCP.
 
 **Alternativas:**
 
-- [Vestige](https://github.com/samvallad33/vestige) (★ 660) — Memória local-first para agentes que retrocede para encontrar a causa raiz de uma falha.
+- [Vestige](https://github.com/samvallad33/vestige) (★ 661) — Memória local-first para agentes que retrocede para encontrar a causa raiz de uma falha.
 - [Compartment](https://github.com/MaxFreedomPollard/Compartment) (★ 569) — Memória agêntica durável, criptografada em repouso, totalmente offline, sem rede nem chave de API.
 - [TeleAI-UAGI/telemem](https://github.com/TeleAI-UAGI/telemem) (★ 493) — Memória multimodal de longo prazo, sensível a personagens, compatível com mem0, com opção totalmente local; exige OPENAI_API_KEY.
-- [Lyellr88/marm-memory](https://github.com/Lyellr88/marm-memory) (★ 435) — Servidor universal que adiciona memória de IA com busca semântica.
+- [Lyellr88/marm-memory](https://github.com/Lyellr88/marm-memory) (★ 438) — Servidor universal que adiciona memória de IA com busca semântica.
 
 <details><summary>Instalar</summary>
 
@@ -1859,7 +1859,7 @@ extensions:
 
 ### Zero-prompt proactive memory recall
 
-[Aik358/dsh-auto-memory](https://github.com/Aik358/dsh-auto-memory) — `Plugin nativo` · ★ 194 · Licença: BSD-3-Clause · Funciona com: DeepSeek Harness apenas
+[Aik358/dsh-auto-memory](https://github.com/Aik358/dsh-auto-memory) — `Plugin nativo` · ★ 203 · Licença: BSD-3-Clause · Funciona com: DeepSeek Harness apenas
 
 Memória associativa proativa: recall sem prompt injetado em um ponto fixo, auto-consolidação em três camadas, cristalização de habilidades e registros de handoff que sobrevivem a trocas de janela de contexto. Armazenamento local em markdown, agnóstico de modelo, sem dependências.
 
@@ -1877,7 +1877,7 @@ dsh plugin --profile web add github:Aik358/dsh-auto-memory
 
 ### Approval-gated auditable memory
 
-[PerryLink/dsh-memento](https://github.com/PerryLink/dsh-memento) — `Plugin nativo` · ★ 143 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
+[PerryLink/dsh-memento](https://github.com/PerryLink/dsh-memento) — `Plugin nativo` · ★ 144 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
 
 Memória entre sessões limitada, em camadas e sujeita a aprovação: uma interface de memória tipada com um provedor SQLite sem dependências, injeção de snapshots congelados e um conjunto de testes de conformidade para adaptadores.
 
@@ -1900,7 +1900,7 @@ dsh plugin --profile web add github:PerryLink/dsh-memento
 
 ### Six-layer time-decaying memory
 
-[diqierjia/StrataGate-AgentMemory](https://github.com/diqierjia/StrataGate-AgentMemory) — `Plugin nativo` · ★ 116 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[diqierjia/StrataGate-AgentMemory](https://github.com/diqierjia/StrataGate-AgentMemory) — `Plugin nativo` · ★ 119 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Memória de seis camadas com decaimento no tempo: conversas recentes permanecem vívidas enquanto as antigas se transformam em resumos, e eventos e relacionamentos duradouros se consolidam em um grafo de conhecimento. Suporta trazer memórias de outras ferramentas de IA.
 
@@ -1910,6 +1910,30 @@ Memória de seis camadas com decaimento no tempo: conversas recentes permanecem 
 
 ```bash
 dsh plugin --profile web add "https://github.com/diqierjia/StrataGate-AgentMemory/releases/latest/download/stratagate-dsh.tgz"
+```
+
+</details>
+
+<a id="dsh-dsh-knowledge"></a>
+
+### Local/remote knowledge base search
+
+[lemoncat7/dsh-knowledge](https://github.com/lemoncat7/dsh-knowledge) — `Plugin nativo` · ★ 25 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+
+Bases de conhecimento locais e remotas com recall por projeto e por sessão, escrita controlada e um console web de gerenciamento embutido.
+
+**Alternativas:**
+
+- [htcqp802/dsh-knowledge-base](https://github.com/htcqp802/dsh-knowledge-base) (★ 13) — Importa md/txt/json/yml/docx/pdf, com gerenciamento de pastas e busca full-text FTS5.
+- [PerryLink/dsh-library](https://github.com/PerryLink/dsh-library) (★ 28) — Transforma documentos locais em uma base consultável com verificação de citações e injeção de fontes.
+- [melandlabs/opencontext#dsh-opencontext](https://github.com/melandlabs/opencontext/tree/main/plugins/dsh-opencontext) — Adiciona captura automática de prompts, resumos de sessão e insights estruturados junto com a recuperação de documentos.
+
+<details><summary>Instalar</summary>
+
+**DeepSeek Harness**
+
+```bash
+dsh plugin --profile web add github:lemoncat7/dsh-knowledge
 ```
 
 </details>
@@ -1928,30 +1952,6 @@ Conversas destiladas automaticamente em fatos atômicos, resumos de cena e um pe
 
 ```bash
 dsh plugin --profile web add github:JunNanLYS/dsh-layered-memory
-```
-
-</details>
-
-<a id="dsh-dsh-knowledge"></a>
-
-### Local/remote knowledge base search
-
-[lemoncat7/dsh-knowledge](https://github.com/lemoncat7/dsh-knowledge) — `Plugin nativo` · ★ 22 · Licença: MIT · Funciona com: DeepSeek Harness apenas
-
-Bases de conhecimento locais e remotas com recall por projeto e por sessão, escrita controlada e um console web de gerenciamento embutido.
-
-**Alternativas:**
-
-- [htcqp802/dsh-knowledge-base](https://github.com/htcqp802/dsh-knowledge-base) (★ 13) — Importa md/txt/json/yml/docx/pdf, com gerenciamento de pastas e busca full-text FTS5.
-- [PerryLink/dsh-library](https://github.com/PerryLink/dsh-library) (★ 26) — Transforma documentos locais em uma base consultável com verificação de citações e injeção de fontes.
-- [melandlabs/opencontext#dsh-opencontext](https://github.com/melandlabs/opencontext/tree/main/plugins/dsh-opencontext) — Adiciona captura automática de prompts, resumos de sessão e insights estruturados junto com a recuperação de documentos.
-
-<details><summary>Instalar</summary>
-
-**DeepSeek Harness**
-
-```bash
-dsh plugin --profile web add github:lemoncat7/dsh-knowledge
 ```
 
 </details>
@@ -1984,9 +1984,9 @@ Memória de IA persistente apoiada em um vault local do Obsidian/Codex, com cinc
 
 **Alternativas:**
 
-- [mingzeng21/dsh-obsidian](https://github.com/mingzeng21/dsh-obsidian) (★ 47) — Conjunto de ferramentas mais simples cobrindo busca, leitura, escrita, mover e lixeira no vault.
+- [mingzeng21/dsh-obsidian](https://github.com/mingzeng21/dsh-obsidian) (★ 52) — Conjunto de ferramentas mais simples cobrindo busca, leitura, escrita, mover e lixeira no vault.
 - [Noelune/unified-agent-memory](https://github.com/Noelune/unified-agent-memory) (★ 7) — Compartilha um único vault do Obsidian entre todos os agentes, com núcleo sem dependências para promover/julgar/esquecer.
-- [398894496-arch/runtime36](https://github.com/398894496-arch/runtime36) (★ 48) — Ferramentas somente leitura que roteiam consultas de status, preferência e correção para a página correspondente do vault.
+- [398894496-arch/runtime36](https://github.com/398894496-arch/runtime36) (★ 72) — Ferramentas somente leitura que roteiam consultas de status, preferência e correção para a página correspondente do vault.
 
 <details><summary>Instalar</summary>
 
@@ -2233,7 +2233,7 @@ Memória de longo prazo guardada em markdown puro, um fato por arquivo. Um índi
 
 **Alternativas:**
 
-- [gezi-wen/sage-mem](https://github.com/gezi-wen/sage-mem) (★ 30) — Usa formato de arquivo compatível com o CLAUDE.md do Claude Code, tornando a migração uma simples cópia de arquivo.
+- [gezi-wen/sage-mem](https://github.com/gezi-wen/sage-mem) (★ 32) — Usa formato de arquivo compatível com o CLAUDE.md do Claude Code, tornando a migração uma simples cópia de arquivo.
 - [Max-Null/dsh-memory](https://github.com/Max-Null/dsh-memory) (★ 6) — Adiciona uma confirmação humana antes de salvar e repositórios JSON globais e por projeto rastreados pelo git.
 
 <details><summary>Instalar</summary>

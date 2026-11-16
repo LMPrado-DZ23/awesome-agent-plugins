@@ -20,7 +20,7 @@ Especificação das Agent Skills: uma pasta com SKILL.md (nome, descrição, ins
 
 ### AGENTS.md
 
-[AGENTS.md](https://github.com/agentsmd/agents.md) — `Padrão / especificação` · ★ 25k · Licença: MIT · Funciona com: —
+[AGENTS.md](https://github.com/agentsmd/agents.md) — `Padrão / especificação` · ★ 26k · Licença: MIT · Funciona com: —
 
 Formato Markdown aberto para instruções de projeto a agentes de código (setup, build, testes, convenções). Lido por Codex, Cursor, OpenCode, Zed, Windsurf, DeepSeek Harness e outros.
 

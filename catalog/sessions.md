@@ -19,7 +19,7 @@
 
 ### Visual non-linear conversation map
 
-[liangmianya/dsh-synapse](https://github.com/liangmianya/dsh-synapse) — `Native plugin` · ★ 691 · License: MIT · Works with: DeepSeek Harness only
+[liangmianya/dsh-synapse](https://github.com/liangmianya/dsh-synapse) — `Native plugin` · ★ 723 · License: MIT · Works with: DeepSeek Harness only
 
 Visual, non-linear conversation workspace for DeepSeek Harness: sessions, follow-ups, and branches become a browsable conversation map.
 
@@ -37,13 +37,13 @@ dsh plugin --profile web add github:liangmianya/dsh-synapse
 
 ### Archived-session management panel
 
-[MichengAI/dsh-archive-manager](https://github.com/MichengAI/dsh-archive-manager) — `Native plugin` · ★ 322 · License: Apache-2.0 · Works with: DeepSeek Harness only
+[MichengAI/dsh-archive-manager](https://github.com/MichengAI/dsh-archive-manager) — `Native plugin` · ★ 367 · License: Apache-2.0 · Works with: DeepSeek Harness only
 
 Adds an archived-sessions page in Settings to search, restore, and delete archived DeepSeek Harness sessions by workspace.
 
 **Alternatives:**
 
-- [Ultronen/dsh-archived-chats](https://github.com/Ultronen/dsh-archived-chats) (★ 28) — Adds ZIP backup and restore, a snapshot-protected recycle bin, storage accounting, and tags/notes.
+- [Ultronen/dsh-archived-chats](https://github.com/Ultronen/dsh-archived-chats) (★ 30) — Adds ZIP backup and restore, a snapshot-protected recycle bin, storage accounting, and tags/notes.
 - [jasonrale/dsh-archive-manager](https://github.com/jasonrale/dsh-archive-manager) (★ 6) — Lets you reopen an archived session and keep chatting, or hard-delete it, with message search.
 
 <details><summary>Install</summary>
@@ -60,7 +60,7 @@ dsh plugin --profile web add github:MichengAI/dsh-archive-manager
 
 ### Cross-tool session import and export
 
-[Nwflower/dsh-chat-import](https://github.com/Nwflower/dsh-chat-import) — `Native plugin` · ★ 298 · License: MIT · Works with: DeepSeek Harness only
+[Nwflower/dsh-chat-import](https://github.com/Nwflower/dsh-chat-import) — `Native plugin` · ★ 316 · License: MIT · Works with: DeepSeek Harness only
 
 Import full-fidelity chat histories from 13 coding agents (Claude Code, Codex, ChatGPT, Cursor, Gemini, opencode, and more) as resumable DeepSeek Harness sessions, with reverse export back to Claude Code.
 
@@ -84,14 +84,14 @@ dsh plugin --profile web add github:Nwflower/dsh-chat-import
 
 ### Conversation rewind via change ledger
 
-[Anionex/dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind) — `Native plugin` · ★ 145 · License: BSD-3-Clause · Works with: DeepSeek Harness only
+[Anionex/dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind) — `Native plugin` · ★ 150 · License: BSD-3-Clause · Works with: DeepSeek Harness only
 
 Rewind conversation and workspace state, powered by a persistent Change Ledger.
 
 **Alternatives:**
 
-- [SiriLee/dsh-rewind](https://github.com/SiriLee/dsh-rewind) (★ 248) — Rewinds in place without forking the session, with an optional disk-backed file restore.
-- [limbo947/dsh-recall-plugin](https://github.com/limbo947/dsh-recall-plugin) (★ 54) — Adds a diff-preview confirmation panel before rolling back the conversation and workspace files.
+- [SiriLee/dsh-rewind](https://github.com/SiriLee/dsh-rewind) (★ 279) — Rewinds in place without forking the session, with an optional disk-backed file restore.
+- [limbo947/dsh-recall-plugin](https://github.com/limbo947/dsh-recall-plugin) (★ 55) — Adds a diff-preview confirmation panel before rolling back the conversation and workspace files.
 
 <details><summary>Install</summary>
 
@@ -107,7 +107,7 @@ dsh plugin --profile web add github:Anionex/dsh-turn-rewind
 
 ### Cross-workspace session manager
 
-[hkkz9522/dsh-session-manager](https://github.com/hkkz9522/dsh-session-manager) — `Native plugin` · ★ 109 · License: MIT · Works with: DeepSeek Harness only
+[hkkz9522/dsh-session-manager](https://github.com/hkkz9522/dsh-session-manager) — `Native plugin` · ★ 124 · License: MIT · Works with: DeepSeek Harness only
 
 Session manager for the DeepSeek Harness Web UI: delete sessions, archive sessions, move sessions across workspaces, and migrate a session's agent preset.
 
@@ -125,7 +125,7 @@ dsh plugin --profile web add github:hkkz9522/dsh-session-manager
 
 ### Branch-based message editing and reroll
 
-[Moeblack/dsh-message-edit](https://github.com/Moeblack/dsh-message-edit) — `Native plugin` · ★ 53 · License: see repo · Works with: DeepSeek Harness only
+[Moeblack/dsh-message-edit](https://github.com/Moeblack/dsh-message-edit) — `Native plugin` · ★ 56 · License: see repo · Works with: DeepSeek Harness only
 
 Branch-based message editing, reroll, retry, and a version timeline.
 

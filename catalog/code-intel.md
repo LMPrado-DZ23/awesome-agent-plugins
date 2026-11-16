@@ -234,7 +234,7 @@ Prerequisite: `uv tool install -p 3.13 serena-agent && serena init`
 
 ### Codebase knowledge graph
 
-[Codebase Memory](https://github.com/DeusData/codebase-memory-mcp) — `MCP server` · ★ 48k · License: MIT · Works with: All clients
+[Codebase Memory](https://github.com/DeusData/codebase-memory-mcp) — `MCP server` · ★ 49k · License: MIT · Works with: All clients
 
 Builds a codebase knowledge graph across 162 languages with sub-millisecond queries and reduced token usage.
 
@@ -423,7 +423,7 @@ extensions:
 
 ### Codebase intelligence for agents
 
-[Repowise](https://github.com/repowise-dev/repowise) — `MCP server` · ★ 8.1k · License: AGPL-3.0 · Works with: All clients
+[Repowise](https://github.com/repowise-dev/repowise) — `MCP server` · ★ 8.2k · License: AGPL-3.0 · Works with: All clients
 
 Codebase intelligence for coding agents: dependency graph, git history, docs, decisions, and code health.
 
@@ -612,7 +612,7 @@ extensions:
 
 ### Entity-level semantic code diff
 
-[Ataraxy-Labs/sem](https://github.com/Ataraxy-Labs/sem) — `MCP server` · ★ 3.4k · License: Apache-2.0 · Works with: All clients
+[Ataraxy-Labs/sem](https://github.com/Ataraxy-Labs/sem) — `MCP server` · ★ 3.5k · License: Apache-2.0 · Works with: All clients
 
 Entity-level code intelligence: semantic diff, impact analysis, blame, and context for AI agents.
 
@@ -801,7 +801,7 @@ extensions:
 
 ### Token-efficient AST code exploration
 
-[jCodemunch MCP](https://github.com/jgravelle/jcodemunch-mcp) — `MCP server` · ★ 2.8k · License: see repo · Works with: All clients
+[jCodemunch MCP](https://github.com/jgravelle/jcodemunch-mcp) — `MCP server` · ★ 2.9k · License: see repo · Works with: All clients
 
 Token-efficient code exploration via tree-sitter AST parsing across 70+ languages, cutting tokens 86-99%.
 
@@ -1163,7 +1163,7 @@ extensions:
 
 ### GitHub code research platform
 
-[Octocode MCP - AI Context Platform](https://github.com/bgauryy/octocode-mcp) — `MCP server` · ★ 958 · License: MIT · Works with: All clients
+[Octocode MCP - AI Context Platform](https://github.com/bgauryy/octocode-mcp) — `MCP server` · ★ 966 · License: MIT · Works with: All clients
 
 AI code research platform to search, analyze, and extract insights from any GitHub repository; needs a GITHUB_TOKEN.
 
@@ -1378,7 +1378,7 @@ extensions:
 
 ### Layered code graph with SCIP
 
-[Hex Graph](https://github.com/levnikolaevich/claude-code-skills) — `MCP server` · ★ 590 · License: MIT · Works with: All clients
+[Hex Graph](https://github.com/levnikolaevich/claude-code-skills) — `MCP server` · ★ 596 · License: MIT · Works with: All clients
 
 Deterministic layered code graph server with framework overlays and SCIP interoperability.
 
@@ -1567,7 +1567,7 @@ extensions:
 
 ### Local semantic code indexer
 
-[Octocode](https://github.com/muvon/octocode) — `MCP server` · ★ 522 · License: Apache-2.0 · Works with: All clients
+[Octocode](https://github.com/muvon/octocode) — `MCP server` · ★ 524 · License: Apache-2.0 · Works with: All clients
 
 AI-powered code indexer for a local repository with semantic search and knowledge graphs.
 

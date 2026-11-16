@@ -17,13 +17,13 @@
 
 ### Wallpaper Engine background player
 
-[elysia395/dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine) — `Plugin nativo` · ★ 6.2k · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[elysia395/dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine) — `Plugin nativo` · ★ 7.2k · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Reproduz papéis de parede de Vídeo e Web do Wallpaper Engine local atrás do chat (papéis de parede de Cena viram quadros estáticos), com filtros de classificação e tipo, uploads personalizados e uma janela de configurações em vidro líquido estilo iOS. Requer DSH 0.1.5-rc.1+ e dsh-better-sidebar 0.19.0+.
 
 **Alternativas:**
 
-- [d-dev0101/open-sea-skin](https://github.com/d-dev0101/open-sea-skin) (★ 388) — Renderiza uma cena de oceano animada em tempo real via WebGPU, com controles de ondas, luz do dia e vidro, em vez de arquivos de papel de parede pré-gravados.
+- [d-dev0101/open-sea-skin](https://github.com/d-dev0101/open-sea-skin) (★ 396) — Renderiza uma cena de oceano animada em tempo real via WebGPU, com controles de ondas, luz do dia e vidro, em vez de arquivos de papel de parede pré-gravados.
 
 <details><summary>Instalar</summary>
 
@@ -39,7 +39,7 @@ dsh plugin --profile web add github:elysia395/dsh-wallpaper-engine
 
 ### Bloom Morandi OKLCH theme
 
-[webkubor/dsh-bloom-theme](https://github.com/webkubor/dsh-bloom-theme) — `Plugin nativo` · ★ 185 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[webkubor/dsh-bloom-theme](https://github.com/webkubor/dsh-bloom-theme) — `Plugin nativo` · ★ 285 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Dez variantes de cor em tons Morandi (névoa, cinábrio, pétala, ondulação, sálvia, pedra, lápis, âmbar, aurora, lavanda) construídas no espaço de cor OKLCH para manter claro e escuro perceptualmente equilibrados, alternáveis pela barra superior, com todos os pares de frente/fundo atendendo ao WCAG AA ou melhor.
 
@@ -57,7 +57,7 @@ dsh plugin --profile web add github:webkubor/dsh-bloom-theme
 
 ### VTuber companion theme
 
-[tpmoonchefryan/dsh-joi-channel-theme](https://github.com/tpmoonchefryan/dsh-joi-channel-theme) — `Plugin nativo` · ★ 21 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[tpmoonchefryan/dsh-joi-channel-theme](https://github.com/tpmoonchefryan/dsh-joi-channel-theme) — `Plugin nativo` · ★ 23 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Um tema VTuber de dois conjuntos construído em torno da personagem Joi: temas claro/escuro separados, um retrato em pé, companheiros chibi acima do compositor que seguem o estado do turno, uma marca dupla na barra lateral e um medidor de contexto em formato de tangerina. Um terceiro cartão restaura o visual padrão.
 
@@ -79,7 +79,7 @@ dsh plugin --profile web add github:tpmoonchefryan/dsh-joi-channel-theme
 
 ### Neumorphic theme
 
-[Lhy723/dsh-neu-theme](https://github.com/Lhy723/dsh-neu-theme) — `Plugin nativo` · ★ 10 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[Lhy723/dsh-neu-theme](https://github.com/Lhy723/dsh-neu-theme) — `Plugin nativo` · ★ 11 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Paletas neumórficas claras e escuras com iluminação ambiente, sombras materiais, textura granulada, superfícies em vidro fosco e microinterações.
 
@@ -157,9 +157,9 @@ Adiciona 8 temas nativos, um papel de parede translúcido com opacidade e desfoq
 
 **Alternativas:**
 
-- [NoNameLeGo/dsh-catppuccin-theme](https://github.com/NoNameLeGo/dsh-catppuccin-theme) (★ 84) — Adiciona a paleta oficial Catppuccin em 4 variantes com vidro fosco ajustável em 5 regiões da interface.
-- [Tkingxiao/dsh-any-background](https://github.com/Tkingxiao/dsh-any-background) (★ 57) — Alterna automaticamente o texto entre claro e escuro conforme as cores extraídas do papel de parede, com desfoque por área em 6 regiões.
-- [TQSY114514/dsh-ui-appearance](https://github.com/TQSY114514/dsh-ui-appearance) (★ 29) — Reúne temas de paleta de cores completos e papéis de parede em vídeo em um único painel de aparência.
+- [NoNameLeGo/dsh-catppuccin-theme](https://github.com/NoNameLeGo/dsh-catppuccin-theme) (★ 88) — Adiciona a paleta oficial Catppuccin em 4 variantes com vidro fosco ajustável em 5 regiões da interface.
+- [Tkingxiao/dsh-any-background](https://github.com/Tkingxiao/dsh-any-background) (★ 59) — Alterna automaticamente o texto entre claro e escuro conforme as cores extraídas do papel de parede, com desfoque por área em 6 regiões.
+- [TQSY114514/dsh-ui-appearance](https://github.com/TQSY114514/dsh-ui-appearance) (★ 32) — Reúne temas de paleta de cores completos e papéis de parede em vídeo em um único painel de aparência.
 - [mux9056-bot/dsh-theme](https://github.com/mux9056-bot/dsh-theme) (★ 3) — Traz 30 pacotes de temas CSS prontos com variantes claro/escuro, gerenciáveis por uma API programática.
 
 <details><summary>Instalar</summary>

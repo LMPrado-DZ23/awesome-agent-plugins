@@ -17,13 +17,13 @@
 
 ### Wallpaper Engine background player
 
-[elysia395/dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine) — `Native plugin` · ★ 6.2k · License: MIT · Works with: DeepSeek Harness only
+[elysia395/dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine) — `Native plugin` · ★ 7.2k · License: MIT · Works with: DeepSeek Harness only
 
 Plays local Wallpaper Engine Video and Web wallpapers behind the chat (Scene wallpapers render as static frames), with content-rating and type filters, custom uploads, and an iOS-style liquid-glass settings window. Requires DSH 0.1.5-rc.1+ and dsh-better-sidebar 0.19.0+.
 
 **Alternatives:**
 
-- [d-dev0101/open-sea-skin](https://github.com/d-dev0101/open-sea-skin) (★ 388) — Renders a real-time WebGPU animated ocean scene with wave, daylight, and glass controls instead of pre-recorded wallpaper files.
+- [d-dev0101/open-sea-skin](https://github.com/d-dev0101/open-sea-skin) (★ 396) — Renders a real-time WebGPU animated ocean scene with wave, daylight, and glass controls instead of pre-recorded wallpaper files.
 
 <details><summary>Install</summary>
 
@@ -39,7 +39,7 @@ dsh plugin --profile web add github:elysia395/dsh-wallpaper-engine
 
 ### Bloom Morandi OKLCH theme
 
-[webkubor/dsh-bloom-theme](https://github.com/webkubor/dsh-bloom-theme) — `Native plugin` · ★ 185 · License: MIT · Works with: DeepSeek Harness only
+[webkubor/dsh-bloom-theme](https://github.com/webkubor/dsh-bloom-theme) — `Native plugin` · ★ 285 · License: MIT · Works with: DeepSeek Harness only
 
 Ten Morandi-toned color variants (mist, cinnabar, petal, ripple, sage, stone, lapis, amber, aurora, lavender) built on the OKLCH color space so light and dark stay perceptually even, switchable from the top bar, with every foreground/background pair meeting WCAG AA or better.
 
@@ -57,7 +57,7 @@ dsh plugin --profile web add github:webkubor/dsh-bloom-theme
 
 ### VTuber companion theme
 
-[tpmoonchefryan/dsh-joi-channel-theme](https://github.com/tpmoonchefryan/dsh-joi-channel-theme) — `Native plugin` · ★ 21 · License: MIT · Works with: DeepSeek Harness only
+[tpmoonchefryan/dsh-joi-channel-theme](https://github.com/tpmoonchefryan/dsh-joi-channel-theme) — `Native plugin` · ★ 23 · License: MIT · Works with: DeepSeek Harness only
 
 A two-suit VTuber theme built around the Joi character: separate light/dark token sets, a standing portrait, chibi companions above the composer that follow turn state, a duo sidebar mark, and a mandarin-shaped context meter. A third card restores the stock look.
 
@@ -79,7 +79,7 @@ dsh plugin --profile web add github:tpmoonchefryan/dsh-joi-channel-theme
 
 ### Neumorphic theme
 
-[Lhy723/dsh-neu-theme](https://github.com/Lhy723/dsh-neu-theme) — `Native plugin` · ★ 10 · License: MIT · Works with: DeepSeek Harness only
+[Lhy723/dsh-neu-theme](https://github.com/Lhy723/dsh-neu-theme) — `Native plugin` · ★ 11 · License: MIT · Works with: DeepSeek Harness only
 
 Neumorphic light and dark palettes with ambient lighting, material shadows, grain texture, frosted-glass surfaces, and micro-interactions.
 
@@ -157,9 +157,9 @@ Adds 8 built-in themes plus a translucent wallpaper with adjustable opacity and 
 
 **Alternatives:**
 
-- [NoNameLeGo/dsh-catppuccin-theme](https://github.com/NoNameLeGo/dsh-catppuccin-theme) (★ 84) — Adds the official 4-variant Catppuccin palette with adjustable frosted glass across 5 UI regions.
-- [Tkingxiao/dsh-any-background](https://github.com/Tkingxiao/dsh-any-background) (★ 57) — Auto-switches text to light or dark based on extracted wallpaper colors, with per-area blur across 6 regions.
-- [TQSY114514/dsh-ui-appearance](https://github.com/TQSY114514/dsh-ui-appearance) (★ 29) — Bundles full color-palette theming together with video wallpaper backgrounds in one appearance panel.
+- [NoNameLeGo/dsh-catppuccin-theme](https://github.com/NoNameLeGo/dsh-catppuccin-theme) (★ 88) — Adds the official 4-variant Catppuccin palette with adjustable frosted glass across 5 UI regions.
+- [Tkingxiao/dsh-any-background](https://github.com/Tkingxiao/dsh-any-background) (★ 59) — Auto-switches text to light or dark based on extracted wallpaper colors, with per-area blur across 6 regions.
+- [TQSY114514/dsh-ui-appearance](https://github.com/TQSY114514/dsh-ui-appearance) (★ 32) — Bundles full color-palette theming together with video wallpaper backgrounds in one appearance panel.
 - [mux9056-bot/dsh-theme](https://github.com/mux9056-bot/dsh-theme) (★ 3) — Ships 30 drop-in CSS theme packs with light/dark variants, manageable through a programmatic API.
 
 <details><summary>Install</summary>

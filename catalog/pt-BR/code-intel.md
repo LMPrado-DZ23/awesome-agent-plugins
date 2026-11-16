@@ -234,7 +234,7 @@ Pré-requisito: `uv tool install -p 3.13 serena-agent && serena init`
 
 ### Codebase knowledge graph
 
-[Codebase Memory](https://github.com/DeusData/codebase-memory-mcp) — `Servidor MCP` · ★ 48k · Licença: MIT · Funciona com: Todos os clientes
+[Codebase Memory](https://github.com/DeusData/codebase-memory-mcp) — `Servidor MCP` · ★ 49k · Licença: MIT · Funciona com: Todos os clientes
 
 Constrói um grafo de conhecimento do código em 162 linguagens, com consultas em sub-milissegundos e menos tokens.
 
@@ -423,7 +423,7 @@ extensions:
 
 ### Codebase intelligence for agents
 
-[Repowise](https://github.com/repowise-dev/repowise) — `Servidor MCP` · ★ 8.1k · Licença: AGPL-3.0 · Funciona com: Todos os clientes
+[Repowise](https://github.com/repowise-dev/repowise) — `Servidor MCP` · ★ 8.2k · Licença: AGPL-3.0 · Funciona com: Todos os clientes
 
 Inteligência de código para agentes: grafo de dependências, histórico do git, documentação, decisões e saúde do código.
 
@@ -612,7 +612,7 @@ extensions:
 
 ### Entity-level semantic code diff
 
-[Ataraxy-Labs/sem](https://github.com/Ataraxy-Labs/sem) — `Servidor MCP` · ★ 3.4k · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[Ataraxy-Labs/sem](https://github.com/Ataraxy-Labs/sem) — `Servidor MCP` · ★ 3.5k · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Inteligência de código no nível de entidade: diff semântico, análise de impacto, blame e contexto para agentes de IA.
 
@@ -801,7 +801,7 @@ extensions:
 
 ### Token-efficient AST code exploration
 
-[jCodemunch MCP](https://github.com/jgravelle/jcodemunch-mcp) — `Servidor MCP` · ★ 2.8k · Licença: ver repo · Funciona com: Todos os clientes
+[jCodemunch MCP](https://github.com/jgravelle/jcodemunch-mcp) — `Servidor MCP` · ★ 2.9k · Licença: ver repo · Funciona com: Todos os clientes
 
 Exploração de código eficiente em tokens via parsing AST com tree-sitter em 70+ linguagens, reduzindo tokens em 86-99%.
 
@@ -1163,7 +1163,7 @@ extensions:
 
 ### GitHub code research platform
 
-[Octocode MCP - AI Context Platform](https://github.com/bgauryy/octocode-mcp) — `Servidor MCP` · ★ 958 · Licença: MIT · Funciona com: Todos os clientes
+[Octocode MCP - AI Context Platform](https://github.com/bgauryy/octocode-mcp) — `Servidor MCP` · ★ 966 · Licença: MIT · Funciona com: Todos os clientes
 
 Plataforma de pesquisa de código com IA para buscar, analisar e extrair informações de qualquer repositório do GitHub; exige GITHUB_TOKEN.
 
@@ -1378,7 +1378,7 @@ extensions:
 
 ### Layered code graph with SCIP
 
-[Hex Graph](https://github.com/levnikolaevich/claude-code-skills) — `Servidor MCP` · ★ 590 · Licença: MIT · Funciona com: Todos os clientes
+[Hex Graph](https://github.com/levnikolaevich/claude-code-skills) — `Servidor MCP` · ★ 596 · Licença: MIT · Funciona com: Todos os clientes
 
 Servidor de grafo de código determinístico em camadas, com overlays de frameworks e interoperabilidade SCIP.
 
@@ -1567,7 +1567,7 @@ extensions:
 
 ### Local semantic code indexer
 
-[Octocode](https://github.com/muvon/octocode) — `Servidor MCP` · ★ 522 · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[Octocode](https://github.com/muvon/octocode) — `Servidor MCP` · ★ 524 · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Indexador de código com IA para um repositório local, com busca semântica e grafos de conhecimento.
 

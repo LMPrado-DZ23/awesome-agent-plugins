@@ -8,15 +8,15 @@
 - [n8n workflow-building skills](#n8n-mcp) — Servidor MCP e conjunto de skills que permitem ao Claude Desktop, Claude Code, Windsurf ou Cursor construir, v…
 - [Lark/Feishu official CLI skills](#cli) — CLI e conjunto de skills oficiais do Lark/Feishu cobrindo mensageria, documentos, base, ponto, aprovações e ou…
 - [Kaneo task and project management](#kaneo-mcp) — Servidor oficial do Kaneo: gerencia tarefas, projetos e labels; exige KANEO_API_KEY.
-- [Agent-native product analytics](#agent-native-mcp) — Analytics agent-native similar a Amplitude/Mixpanel: conecta fontes de dados e gera gráficos a partir de promp…
 - [Google Ads, Meta Ads and GA4](#google-meta-ads-ga4-mcp) — Mais de 250 ferramentas para gerenciar campanhas, criativos, audiências e relatórios do Google Ads, Meta Ads e…
-- [Agent-to-agent commerce trust layer](#internet-court-skill) — Camada de confiança para comércio entre agentes: mandatos em linguagem natural, permissões delegadas on-chain,…
 - [Home Assistant control](#ha-mcp) — Servidor abrangente para gerenciar o Home Assistant por meio de assistentes de IA.
+- [Agent-native product analytics](#agent-native-mcp) — Analytics agent-native similar a Amplitude/Mixpanel: conecta fontes de dados e gera gráficos a partir de promp…
+- [Agent-to-agent commerce trust layer](#internet-court-skill) — Camada de confiança para comércio entre agentes: mandatos em linguagem natural, permissões delegadas on-chain,…
 - [200+ financial metrics](#financetoolkit-mcp) — Calcula mais de 200 métricas financeiras transparentes a partir de demonstrações brutas, sem depender de endpo…
 - [Market screeners and backtesting](#tradingview-mcp) — Dados de mercado em tempo real, screeners, análise técnica e backtesting para ações, cripto e forex.
 - [Notion MCP](#notion-mcp) — Servidor oficial do Notion: busca, lê, cria e atualiza páginas e bancos de dados com um token de integração.
-- [Tolgee translation management](#tolgee-platform-mcp) — Busca chaves, cria traduções e aciona tradução automática em um projeto Tolgee de um app; exige X-API-Key.
 - [OAuth for many marketing platforms](#notfair-plugin-mcp) — Servidor OAuth para Google, Meta, X, LinkedIn, Reddit, TikTok, Google Search Console, GA4, WordPress e GoHighL…
+- [Tolgee translation management](#tolgee-platform-mcp) — Busca chaves, cria traduções e aciona tradução automática em um projeto Tolgee de um app; exige X-API-Key.
 - [Multi-channel IM bot bridge](#dsh-dsh-im) — Conecta bots de mensageria ao harness via QR codes ou credenciais de bot, em nove canais: Feishu, WeChat, Ding…
 - [Remote phone access to Web UI](#dsh-dsh-pocket) — Acesso remoto pelo celular à Web UI: escaneie um QR code para acesso via LAN ou público (túnel cloudflared), c…
 - [SEC EDGAR filings toolkit](#edgartools-mcp) — Kit open-source para o SEC EDGAR, com 11 ferramentas e 7 prompts cobrindo todos os tipos de filing; não exige …
@@ -34,18 +34,18 @@
 - [Phone numbers for verification](#mcp-server) — Compra um número de telefone privado para um agente e devolve o código de verificação por SMS; exige SVN_API_K…
 - [Strava activity access](#strava-mcp) — Acessa a API do Strava para atividades e estatísticas; exige credenciais de cliente do Strava.
 - [Google Maps tools](#mcp-google-map) — 18 ferramentas do Google Maps para agentes: geocode, busca, rotas e clima; exige GOOGLE_MAPS_API_KEY.
-- [Airtable read/write access](#airtable-mcp-server) — Lê e escreve schemas, tabelas e registros de bases do Airtable; exige AIRTABLE_API_KEY.
 - [Zapier apps and actions](#zapier-mcp) — Servidor hospedado que conecta assistentes de IA a mais de 9.000 apps e 40.000 ações via Zapier.
+- [Airtable read/write access](#airtable-mcp-server) — Lê e escreve schemas, tabelas e registros de bases do Airtable; exige AIRTABLE_API_KEY.
 - [Trello board management](#mcp-server-trello) — Servidor para o Trello, com limitação de taxa, tipagem segura e integração completa com a API; exige TRELLO_AP…
 - [monday.com boards and items](#mondaycom-mcp) — Servidor oficial de integração com o monday.com; exige token de Authorization.
 - [Odoo ERP access](#mcp-odoo) — Servidor para o Odoo com escritas controladas e suporte multi-instância; exige URL, banco e credenciais do Odo…
 - [Brazilian tax data tools](#mcp-fiscal-brasil) — Ferramentas fiscais brasileiras: consultas de CNPJ, NF-e, IBS/CBS, ICMS, Simples Nacional e NCM/CFOP, sem exig…
 - [Mapbox geospatial APIs](#mapbox-mcp-server) — Inteligência geoespacial com APIs do Mapbox: geocoding, busca de POI, rotas e isócronas; exige MAPBOX_ACCESS_T…
 - [MikroTik router management](#mikrotik-mcp) — Gerencia roteadores MikroTik via SSH: firewall, NAT, roteamento, DHCP, DNS e WireGuard; exige a senha do Mikro…
-- [Unified SEO intelligence](#search-console-mcp) — Google Search Console, Bing, GA4 e AdSense combinados em inteligência de SEO unificada; exige credenciais do G…
 - [Canvas LMS access](#canvas-mcp) — Integração com o Canvas LMS para estudantes e educadores, com controles de privacidade opcionais.
-- [reMarkable document management](#remarkable-mcp) — Lê, renderiza, busca e gerencia documentos do tablet reMarkable; exige REMARKABLE_TOKEN.
+- [Unified SEO intelligence](#search-console-mcp) — Google Search Console, Bing, GA4 e AdSense combinados em inteligência de SEO unificada; exige credenciais do G…
 - [Live Microsoft Word editing](#word-mcp-live) — Edição do Microsoft Word ao vivo, com controle de alterações, desfazer e comentários, em mais de 40 ferramenta…
+- [reMarkable document management](#remarkable-mcp) — Lê, renderiza, busca e gerencia documentos do tablet reMarkable; exige REMARKABLE_TOKEN.
 - [Programmable inbox for agents](#atomic-mail-agentic-mcp) — Caixa de e-mail programável para agentes de IA via JMAP com autenticação por prova de trabalho; exige ATOMIC_M…
 - [Lean Gmail access](#gmail-mcp-server) — Servidor enxuto para o Gmail, com suporte a autenticação automática.
 - [Self-hosted media suite control](#mcp-arr) — Servidor para o conjunto *arr de mídia: Sonarr, Radarr, Lidarr, Readarr e Prowlarr.
@@ -479,179 +479,17 @@ extensions:
 
 </details>
 
-<a id="agent-native-mcp"></a>
-
-### Agent-native product analytics
-
-[Agent-Native Analytics](https://github.com/BuilderIO/agent-native) — `Servidor MCP` · ★ 7.7k · Licença: ver repo · Funciona com: Todos os clientes
-
-Analytics agent-native similar a Amplitude/Mixpanel: conecta fontes de dados e gera gráficos a partir de prompts.
-
-<details><summary>Instalar</summary>
-
-**Claude Code**
-
-```bash
-claude mcp add --transport http agent-native-analytics https://analytics.agent-native.com/mcp
-```
-
-**Codex CLI**
-
-```bash
-codex mcp add agent-native-analytics --url https://analytics.agent-native.com/mcp
-```
-
-**Gemini CLI**
-
-```bash
-gemini mcp add --transport http agent-native-analytics https://analytics.agent-native.com/mcp
-```
-
-**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "agent-native-analytics": {
-      "url": "https://analytics.agent-native.com/mcp"
-    }
-  }
-}
-```
-
-**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
-
-```json
-{
-  "servers": {
-    "agent-native-analytics": {
-      "type": "http",
-      "url": "https://analytics.agent-native.com/mcp"
-    }
-  }
-}
-```
-
-**OpenCode** — Arquivo: `opencode.json`
-
-```json
-{
-  "$schema": "https://opencode.ai/config.json",
-  "mcp": {
-    "agent-native-analytics": {
-      "type": "remote",
-      "url": "https://analytics.agent-native.com/mcp",
-      "enabled": true
-    }
-  }
-}
-```
-
-**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
-
-```json
-{
-  "mcpServers": {
-    "agent-native-analytics": {
-      "type": "streamableHttp",
-      "url": "https://analytics.agent-native.com/mcp"
-    }
-  }
-}
-```
-
-**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
-
-```json
-{
-  "mcpServers": {
-    "agent-native-analytics": {
-      "serverUrl": "https://analytics.agent-native.com/mcp"
-    }
-  }
-}
-```
-
-**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
-
-```json
-{
-  "context_servers": {
-    "agent-native-analytics": {
-      "source": "custom",
-      "command": "npx",
-      "args": [
-        "-y",
-        "mcp-remote",
-        "https://analytics.agent-native.com/mcp"
-      ]
-    }
-  }
-}
-```
-_Remote server bridged through the mcp-remote stdio proxy._
-
-**Goose** — Arquivo: `~/.config/goose/config.yaml`
-
-```yaml
-extensions:
-  agent-native-analytics:
-    type: streamable_http
-    uri: https://analytics.agent-native.com/mcp
-    enabled: true
-```
-
-**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "agent-native-analytics": {
-      "type": "streamable-http",
-      "url": "https://analytics.agent-native.com/mcp"
-    }
-  }
-}
-```
-
-**Roo Code** — Arquivo: `.roo/mcp.json`
-
-```json
-{
-  "mcpServers": {
-    "agent-native-analytics": {
-      "type": "streamable-http",
-      "url": "https://analytics.agent-native.com/mcp"
-    }
-  }
-}
-```
-
-**DeepSeek Harness** — Arquivo: `agent-native-analytics.cordis.yml  →  dsh web --patch ./agent-native-analytics.cordis.yml`
-
-```yaml
-- insert:
-    - id: mcp-agent-native-analytics
-      name: '@deepseek-ai/dsh-mcp-client'
-      config:
-        serverName: agent-native-analytics
-        transport: streamable-http
-        url: https://analytics.agent-native.com/mcp
-```
-
-</details>
-
 <a id="google-meta-ads-ga4-mcp"></a>
 
 ### Google Ads, Meta Ads and GA4
 
-[Google Ads + Meta Ads + GA4 MCP](https://github.com/irinabuht12-oss/google-meta-ads-ga4-mcp) — `Servidor MCP` · ★ 7.2k · Licença: MIT · Funciona com: Todos os clientes
+[Google Ads + Meta Ads + GA4 MCP](https://github.com/irinabuht12-oss/google-meta-ads-ga4-mcp) — `Servidor MCP` · ★ 8.0k · Licença: MIT · Funciona com: Todos os clientes
 
 Mais de 250 ferramentas para gerenciar campanhas, criativos, audiências e relatórios do Google Ads, Meta Ads e GA4.
 
 **Alternativas:**
 
-- [AdLoop](https://github.com/kLOsk/adloop) (★ 298) — Gerencia Google Ads, GA4 e Tag Manager com uma prévia mostrada antes de cada alteração.
+- [AdLoop](https://github.com/kLOsk/adloop) (★ 302) — Gerencia Google Ads, GA4 e Tag Manager com uma prévia mostrada antes de cada alteração.
 - [surendranb/google-analytics-mcp](https://github.com/surendranb/google-analytics-mcp) (★ 244) — Servidor específico para GA4, com descoberta de schema e agregação no servidor; exige GOOGLE_APPLICATION_CREDENTIALS.
 
 <details><summary>Instalar</summary>
@@ -808,101 +646,11 @@ extensions:
 
 </details>
 
-<a id="internet-court-skill"></a>
-
-### Agent-to-agent commerce trust layer
-
-[internet-court/internet-court-skill](https://github.com/internet-court/internet-court-skill) — `Agent Skills` · ★ 7.1k · Licença: ver repo · Funciona com: Todos os clientes
-
-Camada de confiança para comércio entre agentes: mandatos em linguagem natural, permissões delegadas on-chain, pagamentos, escrow e resolução de disputas em uma única skill aberta.
-
-<details><summary>Instalar</summary>
-
-**Claude Code**
-
-```bash
-npx skills add internet-court/internet-court-skill -a claude-code -g
-```
-
-**Codex CLI**
-
-```bash
-npx skills add internet-court/internet-court-skill -a codex -g
-```
-
-**Gemini CLI**
-
-```bash
-npx skills add internet-court/internet-court-skill -a gemini-cli -g
-```
-
-**Cursor**
-
-```bash
-npx skills add internet-court/internet-court-skill -a cursor -g
-```
-
-**VS Code (Copilot)**
-
-```bash
-npx skills add internet-court/internet-court-skill -a github-copilot -g
-```
-
-**OpenCode**
-
-```bash
-npx skills add internet-court/internet-court-skill -a opencode -g
-```
-
-**Cline**
-
-```bash
-npx skills add internet-court/internet-court-skill -a cline -g
-```
-
-**Windsurf**
-
-```bash
-npx skills add internet-court/internet-court-skill -a windsurf -g
-```
-
-**Zed**
-
-```bash
-npx skills add internet-court/internet-court-skill -a zed -g
-```
-
-**Goose**
-
-```bash
-npx skills add internet-court/internet-court-skill -a goose -g
-```
-
-**Kiro**
-
-```bash
-npx skills add internet-court/internet-court-skill -a kiro-cli -g
-```
-
-**Roo Code**
-
-```bash
-npx skills add internet-court/internet-court-skill -a roo -g
-```
-
-**DeepSeek Harness**
-
-```bash
-npx skills add internet-court/internet-court-skill -a universal
-```
-
-</details>
-
 <a id="ha-mcp"></a>
 
 ### Home Assistant control
 
-[homeassistant-ai/ha-mcp](https://github.com/homeassistant-ai/ha-mcp) — `Servidor MCP` · ★ 5.7k · Licença: MIT · Funciona com: Todos os clientes
+[homeassistant-ai/ha-mcp](https://github.com/homeassistant-ai/ha-mcp) — `Servidor MCP` · ★ 7.9k · Licença: MIT · Funciona com: Todos os clientes
 
 Servidor abrangente para gerenciar o Home Assistant por meio de assistentes de IA.
 
@@ -1075,6 +823,258 @@ extensions:
         args: ["ha-mcp"]
         env: {}
         cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="agent-native-mcp"></a>
+
+### Agent-native product analytics
+
+[Agent-Native Analytics](https://github.com/BuilderIO/agent-native) — `Servidor MCP` · ★ 7.7k · Licença: ver repo · Funciona com: Todos os clientes
+
+Analytics agent-native similar a Amplitude/Mixpanel: conecta fontes de dados e gera gráficos a partir de prompts.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport http agent-native-analytics https://analytics.agent-native.com/mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add agent-native-analytics --url https://analytics.agent-native.com/mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add --transport http agent-native-analytics https://analytics.agent-native.com/mcp
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "agent-native-analytics": {
+      "url": "https://analytics.agent-native.com/mcp"
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "agent-native-analytics": {
+      "type": "http",
+      "url": "https://analytics.agent-native.com/mcp"
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "agent-native-analytics": {
+      "type": "remote",
+      "url": "https://analytics.agent-native.com/mcp",
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "agent-native-analytics": {
+      "type": "streamableHttp",
+      "url": "https://analytics.agent-native.com/mcp"
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "agent-native-analytics": {
+      "serverUrl": "https://analytics.agent-native.com/mcp"
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "agent-native-analytics": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://analytics.agent-native.com/mcp"
+      ]
+    }
+  }
+}
+```
+_Remote server bridged through the mcp-remote stdio proxy._
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  agent-native-analytics:
+    type: streamable_http
+    uri: https://analytics.agent-native.com/mcp
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "agent-native-analytics": {
+      "type": "streamable-http",
+      "url": "https://analytics.agent-native.com/mcp"
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "agent-native-analytics": {
+      "type": "streamable-http",
+      "url": "https://analytics.agent-native.com/mcp"
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `agent-native-analytics.cordis.yml  →  dsh web --patch ./agent-native-analytics.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-agent-native-analytics
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: agent-native-analytics
+        transport: streamable-http
+        url: https://analytics.agent-native.com/mcp
+```
+
+</details>
+
+<a id="internet-court-skill"></a>
+
+### Agent-to-agent commerce trust layer
+
+[internet-court/internet-court-skill](https://github.com/internet-court/internet-court-skill) — `Agent Skills` · ★ 7.1k · Licença: ver repo · Funciona com: Todos os clientes
+
+Camada de confiança para comércio entre agentes: mandatos em linguagem natural, permissões delegadas on-chain, pagamentos, escrow e resolução de disputas em uma única skill aberta.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+npx skills add internet-court/internet-court-skill -a claude-code -g
+```
+
+**Codex CLI**
+
+```bash
+npx skills add internet-court/internet-court-skill -a codex -g
+```
+
+**Gemini CLI**
+
+```bash
+npx skills add internet-court/internet-court-skill -a gemini-cli -g
+```
+
+**Cursor**
+
+```bash
+npx skills add internet-court/internet-court-skill -a cursor -g
+```
+
+**VS Code (Copilot)**
+
+```bash
+npx skills add internet-court/internet-court-skill -a github-copilot -g
+```
+
+**OpenCode**
+
+```bash
+npx skills add internet-court/internet-court-skill -a opencode -g
+```
+
+**Cline**
+
+```bash
+npx skills add internet-court/internet-court-skill -a cline -g
+```
+
+**Windsurf**
+
+```bash
+npx skills add internet-court/internet-court-skill -a windsurf -g
+```
+
+**Zed**
+
+```bash
+npx skills add internet-court/internet-court-skill -a zed -g
+```
+
+**Goose**
+
+```bash
+npx skills add internet-court/internet-court-skill -a goose -g
+```
+
+**Kiro**
+
+```bash
+npx skills add internet-court/internet-court-skill -a kiro-cli -g
+```
+
+**Roo Code**
+
+```bash
+npx skills add internet-court/internet-court-skill -a roo -g
+```
+
+**DeepSeek Harness**
+
+```bash
+npx skills add internet-court/internet-court-skill -a universal
 ```
 
 </details>
@@ -1663,6 +1663,172 @@ extensions:
 
 </details>
 
+<a id="notfair-plugin-mcp"></a>
+
+### OAuth for many marketing platforms
+
+[NotFair](https://github.com/nowork-studio/notfair-plugin) — `Servidor MCP` · ★ 4.2k · Licença: MIT · Funciona com: Todos os clientes
+
+Servidor OAuth para Google, Meta, X, LinkedIn, Reddit, TikTok, Google Search Console, GA4, WordPress e GoHighLevel.
+
+**Alternativas:**
+
+- [NotFair-MetaAds](https://github.com/nowork-studio/toprank) (★ 4.2k) — Servidor dedicado ao Meta Ads (Facebook e Instagram) para analisar performance, gerenciar orçamentos e pausar campanhas.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport http notfair https://notfair.co/api/mcp/notfair
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add notfair --url https://notfair.co/api/mcp/notfair
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add --transport http notfair https://notfair.co/api/mcp/notfair
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "notfair": {
+      "url": "https://notfair.co/api/mcp/notfair"
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "notfair": {
+      "type": "http",
+      "url": "https://notfair.co/api/mcp/notfair"
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "notfair": {
+      "type": "remote",
+      "url": "https://notfair.co/api/mcp/notfair",
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "notfair": {
+      "type": "streamableHttp",
+      "url": "https://notfair.co/api/mcp/notfair"
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "notfair": {
+      "serverUrl": "https://notfair.co/api/mcp/notfair"
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "notfair": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://notfair.co/api/mcp/notfair"
+      ]
+    }
+  }
+}
+```
+_Remote server bridged through the mcp-remote stdio proxy._
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  notfair:
+    type: streamable_http
+    uri: https://notfair.co/api/mcp/notfair
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "notfair": {
+      "type": "streamable-http",
+      "url": "https://notfair.co/api/mcp/notfair"
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "notfair": {
+      "type": "streamable-http",
+      "url": "https://notfair.co/api/mcp/notfair"
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `notfair.cordis.yml  →  dsh web --patch ./notfair.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-notfair
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: notfair
+        transport: streamable-http
+        url: https://notfair.co/api/mcp/notfair
+```
+
+</details>
+
 <a id="tolgee-platform-mcp"></a>
 
 ### Tolgee translation management
@@ -1849,183 +2015,17 @@ extensions:
 
 </details>
 
-<a id="notfair-plugin-mcp"></a>
-
-### OAuth for many marketing platforms
-
-[NotFair](https://github.com/nowork-studio/notfair-plugin) — `Servidor MCP` · ★ 4.1k · Licença: MIT · Funciona com: Todos os clientes
-
-Servidor OAuth para Google, Meta, X, LinkedIn, Reddit, TikTok, Google Search Console, GA4, WordPress e GoHighLevel.
-
-**Alternativas:**
-
-- [NotFair-MetaAds](https://github.com/nowork-studio/toprank) (★ 4.1k) — Servidor dedicado ao Meta Ads (Facebook e Instagram) para analisar performance, gerenciar orçamentos e pausar campanhas.
-
-<details><summary>Instalar</summary>
-
-**Claude Code**
-
-```bash
-claude mcp add --transport http notfair https://notfair.co/api/mcp/notfair
-```
-
-**Codex CLI**
-
-```bash
-codex mcp add notfair --url https://notfair.co/api/mcp/notfair
-```
-
-**Gemini CLI**
-
-```bash
-gemini mcp add --transport http notfair https://notfair.co/api/mcp/notfair
-```
-
-**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "notfair": {
-      "url": "https://notfair.co/api/mcp/notfair"
-    }
-  }
-}
-```
-
-**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
-
-```json
-{
-  "servers": {
-    "notfair": {
-      "type": "http",
-      "url": "https://notfair.co/api/mcp/notfair"
-    }
-  }
-}
-```
-
-**OpenCode** — Arquivo: `opencode.json`
-
-```json
-{
-  "$schema": "https://opencode.ai/config.json",
-  "mcp": {
-    "notfair": {
-      "type": "remote",
-      "url": "https://notfair.co/api/mcp/notfair",
-      "enabled": true
-    }
-  }
-}
-```
-
-**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
-
-```json
-{
-  "mcpServers": {
-    "notfair": {
-      "type": "streamableHttp",
-      "url": "https://notfair.co/api/mcp/notfair"
-    }
-  }
-}
-```
-
-**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
-
-```json
-{
-  "mcpServers": {
-    "notfair": {
-      "serverUrl": "https://notfair.co/api/mcp/notfair"
-    }
-  }
-}
-```
-
-**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
-
-```json
-{
-  "context_servers": {
-    "notfair": {
-      "source": "custom",
-      "command": "npx",
-      "args": [
-        "-y",
-        "mcp-remote",
-        "https://notfair.co/api/mcp/notfair"
-      ]
-    }
-  }
-}
-```
-_Remote server bridged through the mcp-remote stdio proxy._
-
-**Goose** — Arquivo: `~/.config/goose/config.yaml`
-
-```yaml
-extensions:
-  notfair:
-    type: streamable_http
-    uri: https://notfair.co/api/mcp/notfair
-    enabled: true
-```
-
-**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "notfair": {
-      "type": "streamable-http",
-      "url": "https://notfair.co/api/mcp/notfair"
-    }
-  }
-}
-```
-
-**Roo Code** — Arquivo: `.roo/mcp.json`
-
-```json
-{
-  "mcpServers": {
-    "notfair": {
-      "type": "streamable-http",
-      "url": "https://notfair.co/api/mcp/notfair"
-    }
-  }
-}
-```
-
-**DeepSeek Harness** — Arquivo: `notfair.cordis.yml  →  dsh web --patch ./notfair.cordis.yml`
-
-```yaml
-- insert:
-    - id: mcp-notfair
-      name: '@deepseek-ai/dsh-mcp-client'
-      config:
-        serverName: notfair
-        transport: streamable-http
-        url: https://notfair.co/api/mcp/notfair
-```
-
-</details>
-
 <a id="dsh-dsh-im"></a>
 
 ### Multi-channel IM bot bridge
 
-[xmanrui/dsh-im](https://github.com/xmanrui/dsh-im) — `Plugin nativo` · ★ 3.4k · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[xmanrui/dsh-im](https://github.com/xmanrui/dsh-im) — `Plugin nativo` · ★ 3.6k · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Conecta bots de mensageria ao harness via QR codes ou credenciais de bot, em nove canais: Feishu, WeChat, DingTalk, WeCom, QQ, Slack, Telegram, Discord e WhatsApp.
 
 **Alternativas:**
 
-- [MichengAI/dsh-im-connect](https://github.com/MichengAI/dsh-im-connect) (★ 130) — Dá a cada conversa de mensageria seu próprio workspace como canal separado.
+- [MichengAI/dsh-im-connect](https://github.com/MichengAI/dsh-im-connect) (★ 139) — Dá a cada conversa de mensageria seu próprio workspace como canal separado.
 - [AbcdefgXW/dsh-msg-hub](https://github.com/AbcdefgXW/dsh-msg-hub) (★ 5) — Acorda o bot do canal a partir de tarefas agendadas para enviar respostas da IA proativamente ao seu celular.
 - [ThreeBody6666/dsh-im-hub](https://github.com/ThreeBody6666/dsh-im-hub) (★ 3) — Usa callbacks criptografados com AES no WeCom e long polling no Telegram, sem precisar de URL pública.
 
@@ -2043,7 +2043,7 @@ dsh plugin --profile web add github:xmanrui/dsh-im
 
 ### Remote phone access to Web UI
 
-[shaobeichen/dsh-pocket](https://github.com/shaobeichen/dsh-pocket) — `Plugin nativo` · ★ 2.9k · Licença: GPL-2.0 · Funciona com: DeepSeek Harness apenas
+[shaobeichen/dsh-pocket](https://github.com/shaobeichen/dsh-pocket) — `Plugin nativo` · ★ 3.0k · Licença: GPL-2.0 · Funciona com: DeepSeek Harness apenas
 
 Acesso remoto pelo celular à Web UI: escaneie um QR code para acesso via LAN ou público (túnel cloudflared), com sincronização em tempo real, layout adaptado a celular e uma aba de configurações.
 
@@ -2061,13 +2061,13 @@ dsh plugin --profile web add github:shaobeichen/dsh-pocket
 
 ### SEC EDGAR filings toolkit
 
-[EdgarTools](https://github.com/dgunning/edgartools) — `Servidor MCP` · ★ 2.8k · Licença: MIT · Funciona com: Todos os clientes
+[EdgarTools](https://github.com/dgunning/edgartools) — `Servidor MCP` · ★ 2.9k · Licença: MIT · Funciona com: Todos os clientes
 
 Kit open-source para o SEC EDGAR, com 11 ferramentas e 7 prompts cobrindo todos os tipos de filing; não exige chave de API.
 
 **Alternativas:**
 
-- [stefanoamorelli/sec-edgar-mcp](https://github.com/stefanoamorelli/sec-edgar-mcp) (★ 387) — Acessa filings públicos dos EUA via a API do SEC EDGAR; exige um cabeçalho SEC_EDGAR_USER_AGENT.
+- [stefanoamorelli/sec-edgar-mcp](https://github.com/stefanoamorelli/sec-edgar-mcp) (★ 386) — Acessa filings públicos dos EUA via a API do SEC EDGAR; exige um cabeçalho SEC_EDGAR_USER_AGENT.
 
 <details><summary>Instalar</summary>
 
@@ -2782,7 +2782,7 @@ Servidor oficial que traz recursos de modelagem semântica do Power BI para agen
 
 **Alternativas:**
 
-- [SemanticOps MCP (for Power BI)](https://github.com/maxanatsko/mcp-engine-public) (★ 255) — Servidor não oficial para Power BI que também roda em macOS.
+- [SemanticOps MCP (for Power BI)](https://github.com/maxanatsko/mcp-engine-public) (★ 256) — Servidor não oficial para Power BI que também roda em macOS.
 
 <details><summary>Instalar</summary>
 
@@ -3320,7 +3320,7 @@ extensions:
 
 ### Grow a YouTube channel
 
-[yutu](https://github.com/eat-pray-ai/yutu) — `Servidor MCP` · ★ 719 · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[yutu](https://github.com/eat-pray-ai/yutu) — `Servidor MCP` · ★ 724 · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Kit com IA para fazer crescer um canal do YouTube; exige YUTU_CREDENTIAL e YUTU_CACHE_TOKEN.
 
@@ -3544,7 +3544,7 @@ extensions:
 
 ### Query Apple Health exports
 
-[Apple Health](https://github.com/neiltron/apple-health-mcp) — `Servidor MCP` · ★ 574 · Licença: MIT · Funciona com: Todos os clientes
+[Apple Health](https://github.com/neiltron/apple-health-mcp) — `Servidor MCP` · ★ 576 · Licença: MIT · Funciona com: Todos os clientes
 
 Consulta e analisa exportações CSV do Apple Health usando DuckDB; exige HEALTH_DATA_DIR.
 
@@ -3759,7 +3759,7 @@ extensions:
 
 ### Anki flashcard management
 
-[Anki MCP Server](https://github.com/ankimcp/anki-mcp-server) — `Servidor MCP` · ★ 551 · Licença: MIT · Funciona com: Todos os clientes
+[Anki MCP Server](https://github.com/ankimcp/anki-mcp-server) — `Servidor MCP` · ★ 561 · Licença: MIT · Funciona com: Todos os clientes
 
 Gerencia flashcards do Anki: revisão adaptativa, notas, mídia e decks via AnkiConnect.
 
@@ -3948,7 +3948,7 @@ extensions:
 
 ### Hevy workout tracking
 
-[Hevy MCP Server](https://github.com/chrisdoc/hevy-mcp) — `Servidor MCP` · ★ 535 · Licença: MIT · Funciona com: Todos os clientes
+[Hevy MCP Server](https://github.com/chrisdoc/hevy-mcp) — `Servidor MCP` · ★ 543 · Licença: MIT · Funciona com: Todos os clientes
 
 Gerencia treinos, rotinas e dados de exercícios via a API do Hevy; exige HEVY_API_KEY.
 
@@ -4163,7 +4163,7 @@ extensions:
 
 ### Phone numbers for verification
 
-[sv-number/mcp-server](https://github.com/sv-number/mcp-server) — `Servidor MCP` · ★ 521 · Licença: MIT · Funciona com: Todos os clientes
+[sv-number/mcp-server](https://github.com/sv-number/mcp-server) — `Servidor MCP` · ★ 522 · Licença: MIT · Funciona com: Todos os clientes
 
 Compra um número de telefone privado para um agente e devolve o código de verificação por SMS; exige SVN_API_KEY.
 
@@ -4378,7 +4378,7 @@ extensions:
 
 ### Strava activity access
 
-[r-huijts/strava-mcp](https://github.com/r-huijts/strava-mcp) — `Servidor MCP` · ★ 505 · Licença: MIT · Funciona com: Todos os clientes
+[r-huijts/strava-mcp](https://github.com/r-huijts/strava-mcp) — `Servidor MCP` · ★ 508 · Licença: MIT · Funciona com: Todos os clientes
 
 Acessa a API do Strava para atividades e estatísticas; exige credenciais de cliente do Strava.
 
@@ -4611,7 +4611,7 @@ extensions:
 
 ### Google Maps tools
 
-[Google Maps MCP Server](https://github.com/cablate/mcp-google-map) — `Servidor MCP` · ★ 491 · Licença: MIT · Funciona com: Todos os clientes
+[Google Maps MCP Server](https://github.com/cablate/mcp-google-map) — `Servidor MCP` · ★ 499 · Licença: MIT · Funciona com: Todos os clientes
 
 18 ferramentas do Google Maps para agentes: geocode, busca, rotas e clima; exige GOOGLE_MAPS_API_KEY.
 
@@ -4818,6 +4818,168 @@ extensions:
         args: ["-y","@cablate/mcp-google-map"]
         env: {"GOOGLE_MAPS_API_KEY":"<GOOGLE_MAPS_API_KEY>"}
         cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="zapier-mcp"></a>
+
+### Zapier apps and actions
+
+[Zapier](https://github.com/zapier/zapier-mcp) — `Servidor MCP` · ★ 460 · Licença: MIT · Funciona com: Todos os clientes
+
+Servidor hospedado que conecta assistentes de IA a mais de 9.000 apps e 40.000 ações via Zapier.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport http mcp https://mcp.zapier.com/api/v1/connect
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add mcp --url https://mcp.zapier.com/api/v1/connect
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add --transport http mcp https://mcp.zapier.com/api/v1/connect
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "mcp": {
+      "url": "https://mcp.zapier.com/api/v1/connect"
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "mcp": {
+      "type": "http",
+      "url": "https://mcp.zapier.com/api/v1/connect"
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "mcp": {
+      "type": "remote",
+      "url": "https://mcp.zapier.com/api/v1/connect",
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "mcp": {
+      "type": "streamableHttp",
+      "url": "https://mcp.zapier.com/api/v1/connect"
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "mcp": {
+      "serverUrl": "https://mcp.zapier.com/api/v1/connect"
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "mcp": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://mcp.zapier.com/api/v1/connect"
+      ]
+    }
+  }
+}
+```
+_Remote server bridged through the mcp-remote stdio proxy._
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  mcp:
+    type: streamable_http
+    uri: https://mcp.zapier.com/api/v1/connect
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "mcp": {
+      "type": "streamable-http",
+      "url": "https://mcp.zapier.com/api/v1/connect"
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "mcp": {
+      "type": "streamable-http",
+      "url": "https://mcp.zapier.com/api/v1/connect"
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `mcp.cordis.yml  →  dsh web --patch ./mcp.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: mcp
+        transport: streamable-http
+        url: https://mcp.zapier.com/api/v1/connect
 ```
 
 </details>
@@ -5037,173 +5199,11 @@ extensions:
 
 </details>
 
-<a id="zapier-mcp"></a>
-
-### Zapier apps and actions
-
-[Zapier](https://github.com/zapier/zapier-mcp) — `Servidor MCP` · ★ 454 · Licença: MIT · Funciona com: Todos os clientes
-
-Servidor hospedado que conecta assistentes de IA a mais de 9.000 apps e 40.000 ações via Zapier.
-
-<details><summary>Instalar</summary>
-
-**Claude Code**
-
-```bash
-claude mcp add --transport http mcp https://mcp.zapier.com/api/v1/connect
-```
-
-**Codex CLI**
-
-```bash
-codex mcp add mcp --url https://mcp.zapier.com/api/v1/connect
-```
-
-**Gemini CLI**
-
-```bash
-gemini mcp add --transport http mcp https://mcp.zapier.com/api/v1/connect
-```
-
-**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "mcp": {
-      "url": "https://mcp.zapier.com/api/v1/connect"
-    }
-  }
-}
-```
-
-**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
-
-```json
-{
-  "servers": {
-    "mcp": {
-      "type": "http",
-      "url": "https://mcp.zapier.com/api/v1/connect"
-    }
-  }
-}
-```
-
-**OpenCode** — Arquivo: `opencode.json`
-
-```json
-{
-  "$schema": "https://opencode.ai/config.json",
-  "mcp": {
-    "mcp": {
-      "type": "remote",
-      "url": "https://mcp.zapier.com/api/v1/connect",
-      "enabled": true
-    }
-  }
-}
-```
-
-**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
-
-```json
-{
-  "mcpServers": {
-    "mcp": {
-      "type": "streamableHttp",
-      "url": "https://mcp.zapier.com/api/v1/connect"
-    }
-  }
-}
-```
-
-**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
-
-```json
-{
-  "mcpServers": {
-    "mcp": {
-      "serverUrl": "https://mcp.zapier.com/api/v1/connect"
-    }
-  }
-}
-```
-
-**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
-
-```json
-{
-  "context_servers": {
-    "mcp": {
-      "source": "custom",
-      "command": "npx",
-      "args": [
-        "-y",
-        "mcp-remote",
-        "https://mcp.zapier.com/api/v1/connect"
-      ]
-    }
-  }
-}
-```
-_Remote server bridged through the mcp-remote stdio proxy._
-
-**Goose** — Arquivo: `~/.config/goose/config.yaml`
-
-```yaml
-extensions:
-  mcp:
-    type: streamable_http
-    uri: https://mcp.zapier.com/api/v1/connect
-    enabled: true
-```
-
-**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "mcp": {
-      "type": "streamable-http",
-      "url": "https://mcp.zapier.com/api/v1/connect"
-    }
-  }
-}
-```
-
-**Roo Code** — Arquivo: `.roo/mcp.json`
-
-```json
-{
-  "mcpServers": {
-    "mcp": {
-      "type": "streamable-http",
-      "url": "https://mcp.zapier.com/api/v1/connect"
-    }
-  }
-}
-```
-
-**DeepSeek Harness** — Arquivo: `mcp.cordis.yml  →  dsh web --patch ./mcp.cordis.yml`
-
-```yaml
-- insert:
-    - id: mcp-mcp
-      name: '@deepseek-ai/dsh-mcp-client'
-      config:
-        serverName: mcp
-        transport: streamable-http
-        url: https://mcp.zapier.com/api/v1/connect
-```
-
-</details>
-
 <a id="mcp-server-trello"></a>
 
 ### Trello board management
 
-[delorenj/mcp-server-trello](https://github.com/delorenj/mcp-server-trello) — `Servidor MCP` · ★ 447 · Licença: MIT · Funciona com: Todos os clientes
+[delorenj/mcp-server-trello](https://github.com/delorenj/mcp-server-trello) — `Servidor MCP` · ★ 446 · Licença: MIT · Funciona com: Todos os clientes
 
 Servidor para o Trello, com limitação de taxa, tipagem segura e integração completa com a API; exige TRELLO_API_KEY e token.
 
@@ -5427,7 +5427,7 @@ extensions:
 
 ### monday.com boards and items
 
-[mondaycom/mcp](https://github.com/mondaycom/mcp) — `Servidor MCP` · ★ 437 · Licença: MIT · Funciona com: Todos os clientes
+[mondaycom/mcp](https://github.com/mondaycom/mcp) — `Servidor MCP` · ★ 439 · Licença: MIT · Funciona com: Todos os clientes
 
 Servidor oficial de integração com o monday.com; exige token de Authorization.
 
@@ -5615,7 +5615,7 @@ extensions:
 
 ### Odoo ERP access
 
-[erpipe-org/mcp-odoo](https://github.com/erpipe-org/mcp-odoo) — `Servidor MCP` · ★ 427 · Licença: MIT · Funciona com: Todos os clientes
+[erpipe-org/mcp-odoo](https://github.com/erpipe-org/mcp-odoo) — `Servidor MCP` · ★ 434 · Licença: MIT · Funciona com: Todos os clientes
 
 Servidor para o Odoo com escritas controladas e suporte multi-instância; exige URL, banco e credenciais do Odoo.
 
@@ -5849,7 +5849,7 @@ extensions:
 
 ### Brazilian tax data tools
 
-[MCP Fiscal Brasil](https://github.com/DeHor-Labs/mcp-fiscal-brasil) — `Servidor MCP` · ★ 422 · Licença: MIT · Funciona com: Todos os clientes
+[MCP Fiscal Brasil](https://github.com/DeHor-Labs/mcp-fiscal-brasil) — `Servidor MCP` · ★ 431 · Licença: MIT · Funciona com: Todos os clientes
 
 Ferramentas fiscais brasileiras: consultas de CNPJ, NF-e, IBS/CBS, ICMS, Simples Nacional e NCM/CFOP, sem exigir chave de API.
 
@@ -6030,7 +6030,7 @@ extensions:
 
 ### Mapbox geospatial APIs
 
-[mapbox/mcp-server](https://github.com/mapbox/mcp-server) — `Servidor MCP` · ★ 367 · Licença: MIT · Funciona com: Todos os clientes
+[mapbox/mcp-server](https://github.com/mapbox/mcp-server) — `Servidor MCP` · ★ 371 · Licença: MIT · Funciona com: Todos os clientes
 
 Inteligência geoespacial com APIs do Mapbox: geocoding, busca de POI, rotas e isócronas; exige MAPBOX_ACCESS_TOKEN.
 
@@ -6245,7 +6245,7 @@ extensions:
 
 ### MikroTik router management
 
-[jeff-nasseri/mikrotik-mcp](https://github.com/jeff-nasseri/mikrotik-mcp) — `Servidor MCP` · ★ 329 · Licença: MIT · Funciona com: Todos os clientes
+[jeff-nasseri/mikrotik-mcp](https://github.com/jeff-nasseri/mikrotik-mcp) — `Servidor MCP` · ★ 341 · Licença: MIT · Funciona com: Todos os clientes
 
 Gerencia roteadores MikroTik via SSH: firewall, NAT, roteamento, DHCP, DNS e WireGuard; exige a senha do MikroTik.
 
@@ -6457,11 +6457,192 @@ extensions:
 
 </details>
 
+<a id="canvas-mcp"></a>
+
+### Canvas LMS access
+
+[vishalsachdev/canvas-mcp](https://github.com/vishalsachdev/canvas-mcp) — `Servidor MCP` · ★ 331 · Licença: MIT · Funciona com: Todos os clientes
+
+Integração com o Canvas LMS para estudantes e educadores, com controles de privacidade opcionais.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio canvas-mcp -- uvx canvas-mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add canvas-mcp -- uvx canvas-mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add canvas-mcp uvx canvas-mcp
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "canvas-mcp": {
+      "command": "uvx",
+      "args": [
+        "canvas-mcp"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "canvas-mcp": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "canvas-mcp"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "canvas-mcp": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "canvas-mcp"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "canvas-mcp": {
+      "command": "uvx",
+      "args": [
+        "canvas-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "canvas-mcp": {
+      "command": "uvx",
+      "args": [
+        "canvas-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "canvas-mcp": {
+      "source": "custom",
+      "command": "uvx",
+      "args": [
+        "canvas-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  canvas-mcp:
+    type: stdio
+    cmd: uvx
+    args: ["canvas-mcp"]
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "canvas-mcp": {
+      "command": "uvx",
+      "args": [
+        "canvas-mcp"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "canvas-mcp": {
+      "command": "uvx",
+      "args": [
+        "canvas-mcp"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `canvas-mcp.cordis.yml  →  dsh web --patch ./canvas-mcp.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-canvas-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: canvas-mcp
+        transport: stdio
+        command: uvx
+        args: ["canvas-mcp"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
 <a id="search-console-mcp"></a>
 
 ### Unified SEO intelligence
 
-[Search Console MCP](https://github.com/saurabhsharma2u/search-console-mcp) — `Servidor MCP` · ★ 321 · Licença: MIT · Funciona com: Todos os clientes
+[Search Console MCP](https://github.com/saurabhsharma2u/search-console-mcp) — `Servidor MCP` · ★ 325 · Licença: MIT · Funciona com: Todos os clientes
 
 Google Search Console, Bing, GA4 e AdSense combinados em inteligência de SEO unificada; exige credenciais do Google e chaves opcionais de Bing/PageSpeed.
 
@@ -6690,32 +6871,32 @@ extensions:
 
 </details>
 
-<a id="canvas-mcp"></a>
+<a id="word-mcp-live"></a>
 
-### Canvas LMS access
+### Live Microsoft Word editing
 
-[vishalsachdev/canvas-mcp](https://github.com/vishalsachdev/canvas-mcp) — `Servidor MCP` · ★ 319 · Licença: MIT · Funciona com: Todos os clientes
+[Word MCP Live](https://github.com/ykarapazar/word-mcp-live) — `Servidor MCP` · ★ 270 · Licença: MIT · Funciona com: Todos os clientes
 
-Integração com o Canvas LMS para estudantes e educadores, com controles de privacidade opcionais.
+Edição do Microsoft Word ao vivo, com controle de alterações, desfazer e comentários, em mais de 40 ferramentas.
 
 <details><summary>Instalar</summary>
 
 **Claude Code**
 
 ```bash
-claude mcp add --transport stdio canvas-mcp -- uvx canvas-mcp
+claude mcp add --transport stdio word-mcp-live -- uvx word-mcp-live
 ```
 
 **Codex CLI**
 
 ```bash
-codex mcp add canvas-mcp -- uvx canvas-mcp
+codex mcp add word-mcp-live -- uvx word-mcp-live
 ```
 
 **Gemini CLI**
 
 ```bash
-gemini mcp add canvas-mcp uvx canvas-mcp
+gemini mcp add word-mcp-live uvx word-mcp-live
 ```
 
 **Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
@@ -6723,10 +6904,10 @@ gemini mcp add canvas-mcp uvx canvas-mcp
 ```json
 {
   "mcpServers": {
-    "canvas-mcp": {
+    "word-mcp-live": {
       "command": "uvx",
       "args": [
-        "canvas-mcp"
+        "word-mcp-live"
       ]
     }
   }
@@ -6738,11 +6919,11 @@ gemini mcp add canvas-mcp uvx canvas-mcp
 ```json
 {
   "servers": {
-    "canvas-mcp": {
+    "word-mcp-live": {
       "type": "stdio",
       "command": "uvx",
       "args": [
-        "canvas-mcp"
+        "word-mcp-live"
       ]
     }
   }
@@ -6755,11 +6936,11 @@ gemini mcp add canvas-mcp uvx canvas-mcp
 {
   "$schema": "https://opencode.ai/config.json",
   "mcp": {
-    "canvas-mcp": {
+    "word-mcp-live": {
       "type": "local",
       "command": [
         "uvx",
-        "canvas-mcp"
+        "word-mcp-live"
       ],
       "enabled": true
     }
@@ -6772,10 +6953,10 @@ gemini mcp add canvas-mcp uvx canvas-mcp
 ```json
 {
   "mcpServers": {
-    "canvas-mcp": {
+    "word-mcp-live": {
       "command": "uvx",
       "args": [
-        "canvas-mcp"
+        "word-mcp-live"
       ]
     }
   }
@@ -6787,10 +6968,10 @@ gemini mcp add canvas-mcp uvx canvas-mcp
 ```json
 {
   "mcpServers": {
-    "canvas-mcp": {
+    "word-mcp-live": {
       "command": "uvx",
       "args": [
-        "canvas-mcp"
+        "word-mcp-live"
       ]
     }
   }
@@ -6802,11 +6983,11 @@ gemini mcp add canvas-mcp uvx canvas-mcp
 ```json
 {
   "context_servers": {
-    "canvas-mcp": {
+    "word-mcp-live": {
       "source": "custom",
       "command": "uvx",
       "args": [
-        "canvas-mcp"
+        "word-mcp-live"
       ]
     }
   }
@@ -6817,10 +6998,10 @@ gemini mcp add canvas-mcp uvx canvas-mcp
 
 ```yaml
 extensions:
-  canvas-mcp:
+  word-mcp-live:
     type: stdio
     cmd: uvx
-    args: ["canvas-mcp"]
+    args: ["word-mcp-live"]
     enabled: true
 ```
 
@@ -6829,10 +7010,10 @@ extensions:
 ```json
 {
   "mcpServers": {
-    "canvas-mcp": {
+    "word-mcp-live": {
       "command": "uvx",
       "args": [
-        "canvas-mcp"
+        "word-mcp-live"
       ]
     }
   }
@@ -6844,27 +7025,27 @@ extensions:
 ```json
 {
   "mcpServers": {
-    "canvas-mcp": {
+    "word-mcp-live": {
       "command": "uvx",
       "args": [
-        "canvas-mcp"
+        "word-mcp-live"
       ]
     }
   }
 }
 ```
 
-**DeepSeek Harness** — Arquivo: `canvas-mcp.cordis.yml  →  dsh web --patch ./canvas-mcp.cordis.yml`
+**DeepSeek Harness** — Arquivo: `word-mcp-live.cordis.yml  →  dsh web --patch ./word-mcp-live.cordis.yml`
 
 ```yaml
 - insert:
-    - id: mcp-canvas-mcp
+    - id: mcp-word-mcp-live
       name: '@deepseek-ai/dsh-mcp-client'
       config:
-        serverName: canvas-mcp
+        serverName: word-mcp-live
         transport: stdio
         command: uvx
-        args: ["canvas-mcp"]
+        args: ["word-mcp-live"]
         env: {}
         cwd: !!js process.cwd()
 ```
@@ -6875,7 +7056,7 @@ extensions:
 
 ### reMarkable document management
 
-[reMarkable MCP Server](https://github.com/SamMorrowDrums/remarkable-mcp) — `Servidor MCP` · ★ 264 · Licença: MIT · Funciona com: Todos os clientes
+[reMarkable MCP Server](https://github.com/SamMorrowDrums/remarkable-mcp) — `Servidor MCP` · ★ 266 · Licença: MIT · Funciona com: Todos os clientes
 
 Lê, renderiza, busca e gerencia documentos do tablet reMarkable; exige REMARKABLE_TOKEN.
 
@@ -7078,192 +7259,11 @@ extensions:
 
 </details>
 
-<a id="word-mcp-live"></a>
-
-### Live Microsoft Word editing
-
-[Word MCP Live](https://github.com/ykarapazar/word-mcp-live) — `Servidor MCP` · ★ 262 · Licença: MIT · Funciona com: Todos os clientes
-
-Edição do Microsoft Word ao vivo, com controle de alterações, desfazer e comentários, em mais de 40 ferramentas.
-
-<details><summary>Instalar</summary>
-
-**Claude Code**
-
-```bash
-claude mcp add --transport stdio word-mcp-live -- uvx word-mcp-live
-```
-
-**Codex CLI**
-
-```bash
-codex mcp add word-mcp-live -- uvx word-mcp-live
-```
-
-**Gemini CLI**
-
-```bash
-gemini mcp add word-mcp-live uvx word-mcp-live
-```
-
-**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "word-mcp-live": {
-      "command": "uvx",
-      "args": [
-        "word-mcp-live"
-      ]
-    }
-  }
-}
-```
-
-**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
-
-```json
-{
-  "servers": {
-    "word-mcp-live": {
-      "type": "stdio",
-      "command": "uvx",
-      "args": [
-        "word-mcp-live"
-      ]
-    }
-  }
-}
-```
-
-**OpenCode** — Arquivo: `opencode.json`
-
-```json
-{
-  "$schema": "https://opencode.ai/config.json",
-  "mcp": {
-    "word-mcp-live": {
-      "type": "local",
-      "command": [
-        "uvx",
-        "word-mcp-live"
-      ],
-      "enabled": true
-    }
-  }
-}
-```
-
-**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
-
-```json
-{
-  "mcpServers": {
-    "word-mcp-live": {
-      "command": "uvx",
-      "args": [
-        "word-mcp-live"
-      ]
-    }
-  }
-}
-```
-
-**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
-
-```json
-{
-  "mcpServers": {
-    "word-mcp-live": {
-      "command": "uvx",
-      "args": [
-        "word-mcp-live"
-      ]
-    }
-  }
-}
-```
-
-**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
-
-```json
-{
-  "context_servers": {
-    "word-mcp-live": {
-      "source": "custom",
-      "command": "uvx",
-      "args": [
-        "word-mcp-live"
-      ]
-    }
-  }
-}
-```
-
-**Goose** — Arquivo: `~/.config/goose/config.yaml`
-
-```yaml
-extensions:
-  word-mcp-live:
-    type: stdio
-    cmd: uvx
-    args: ["word-mcp-live"]
-    enabled: true
-```
-
-**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "word-mcp-live": {
-      "command": "uvx",
-      "args": [
-        "word-mcp-live"
-      ]
-    }
-  }
-}
-```
-
-**Roo Code** — Arquivo: `.roo/mcp.json`
-
-```json
-{
-  "mcpServers": {
-    "word-mcp-live": {
-      "command": "uvx",
-      "args": [
-        "word-mcp-live"
-      ]
-    }
-  }
-}
-```
-
-**DeepSeek Harness** — Arquivo: `word-mcp-live.cordis.yml  →  dsh web --patch ./word-mcp-live.cordis.yml`
-
-```yaml
-- insert:
-    - id: mcp-word-mcp-live
-      name: '@deepseek-ai/dsh-mcp-client'
-      config:
-        serverName: word-mcp-live
-        transport: stdio
-        command: uvx
-        args: ["word-mcp-live"]
-        env: {}
-        cwd: !!js process.cwd()
-```
-
-</details>
-
 <a id="atomic-mail-agentic-mcp"></a>
 
 ### Programmable inbox for agents
 
-[Atomic Mail](https://github.com/Atomic-Mail/atomic-mail-agentic) — `Servidor MCP` · ★ 256 · Licença: MIT · Funciona com: Todos os clientes
+[Atomic Mail](https://github.com/Atomic-Mail/atomic-mail-agentic) — `Servidor MCP` · ★ 263 · Licença: MIT · Funciona com: Todos os clientes
 
 Caixa de e-mail programável para agentes de IA via JMAP com autenticação por prova de trabalho; exige ATOMIC_MAIL_API_KEY.
 
@@ -7482,7 +7482,7 @@ extensions:
 
 ### Lean Gmail access
 
-[ArtyMcLabin/Gmail-MCP-Server](https://github.com/ArtyMcLabin/Gmail-MCP-Server) — `Servidor MCP` · ★ 255 · Licença: MIT · Funciona com: Todos os clientes
+[ArtyMcLabin/Gmail-MCP-Server](https://github.com/ArtyMcLabin/Gmail-MCP-Server) — `Servidor MCP` · ★ 256 · Licença: MIT · Funciona com: Todos os clientes
 
 Servidor enxuto para o Gmail, com suporte a autenticação automática.
 
@@ -7671,7 +7671,7 @@ extensions:
 
 ### Self-hosted media suite control
 
-[aplaceforallmystuff/mcp-arr](https://github.com/aplaceforallmystuff/mcp-arr) — `Servidor MCP` · ★ 239 · Licença: MIT · Funciona com: Todos os clientes
+[aplaceforallmystuff/mcp-arr](https://github.com/aplaceforallmystuff/mcp-arr) — `Servidor MCP` · ★ 247 · Licença: MIT · Funciona com: Todos os clientes
 
 Servidor para o conjunto *arr de mídia: Sonarr, Radarr, Lidarr, Readarr e Prowlarr.
 
@@ -7922,7 +7922,7 @@ extensions:
 
 ### ServiceNow platform access
 
-[ServiceNow MCP Server (NowAIKit)](https://github.com/aartiq/servicenow-mcp) — `Servidor MCP` · ★ 236 · Licença: ver repo · Funciona com: Todos os clientes
+[ServiceNow MCP Server (NowAIKit)](https://github.com/aartiq/servicenow-mcp) — `Servidor MCP` · ★ 238 · Licença: ver repo · Funciona com: Todos os clientes
 
 Mais de 450 ferramentas para o ServiceNow, somente leitura por padrão.
 
@@ -8326,13 +8326,13 @@ extensions:
 
 ### ACP bridge for editor clients
 
-[openma-ai/deepseek-harness-acp](https://github.com/openma-ai/deepseek-harness-acp) — `Plugin nativo` · ★ 63 · Licença: ver repo · Funciona com: DeepSeek Harness apenas
+[openma-ai/deepseek-harness-acp](https://github.com/openma-ai/deepseek-harness-acp) — `Plugin nativo` · ★ 65 · Licença: ver repo · Funciona com: DeepSeek Harness apenas
 
 Plugin de perfil ACP e servidor stdio independente para usar o agente completo do harness a partir do Zed e de outros clientes ACP, compartilhando credenciais e sessões do harness.
 
 **Alternativas:**
 
-- [grunmin/dsh-acp-enhanced](https://github.com/grunmin/dsh-acp-enhanced) (★ 7) — Adiciona streaming de raciocínio por bloco, telemetria de uso, predefinições de permissão, retomada/arquivamento de sessão e encaminhamento de arquivo/terminal do Zed.
+- [grunmin/dsh-acp-enhanced](https://github.com/grunmin/dsh-acp-enhanced) (★ 8) — Adiciona streaming de raciocínio por bloco, telemetria de uso, predefinições de permissão, retomada/arquivamento de sessão e encaminhamento de arquivo/terminal do Zed.
 
 <details><summary>Instalar</summary>
 
@@ -8348,7 +8348,7 @@ dsh plugin --profile web add github:openma-ai/deepseek-harness-acp
 
 ### Multi-channel notify API and phone control
 
-[THEWOLFWALKER/dsh-notifier](https://github.com/THEWOLFWALKER/dsh-notifier) — `Plugin nativo` · ★ 62 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[THEWOLFWALKER/dsh-notifier](https://github.com/THEWOLFWALKER/dsh-notifier) — `Plugin nativo` · ★ 65 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Uma única API notify() para 27 canais com envios orientados por evento, aprovações e perguntas pelo celular, retomada de tarefas pelo celular, imagens enviadas para a sessão, seis canais de controle de entrada, um console web loopback e mensagens bilíngues, sem dependências em runtime.
 
@@ -8370,7 +8370,7 @@ dsh plugin --profile web add github:THEWOLFWALKER/dsh-notifier
 
 ### Email inbox tools and alerts
 
-[STARDUSTLC666/dsh-email](https://github.com/STARDUSTLC666/dsh-email) — `Plugin nativo` · ★ 41 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[STARDUSTLC666/dsh-email](https://github.com/STARDUSTLC666/dsh-email) — `Plugin nativo` · ★ 47 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Ferramentas de email IMAP/SMTP para listar, ler, buscar, enviar e responder com threading, filtros de intervalo de data, múltiplas contas e predefinições de provedores comuns, um portão de aprovação de envio, uma página de configurações e um popup ao chegar novo email.
 
@@ -8388,13 +8388,13 @@ dsh plugin --profile web add github:STARDUSTLC666/dsh-email
 
 ### Feishu/Lark agent bridge
 
-[PlutoKeating/dsh-lark-bot](https://github.com/PlutoKeating/dsh-lark-bot) — `Plugin nativo` · ★ 41 · Licença: AGPL-3.0 · Funciona com: DeepSeek Harness apenas
+[PlutoKeating/dsh-lark-bot](https://github.com/PlutoKeating/dsh-lark-bot) — `Plugin nativo` · ★ 44 · Licença: AGPL-3.0 · Funciona com: DeepSeek Harness apenas
 
 Ponte para Feishu/Lark com vinculação de agente por escaneamento, cartões em streaming, workspaces de projeto via git-worktree, tarefas paralelas por escopo, agentes multi-papel, notificação entre sessões, gestão de modelo e chaves pelo chat, e um guardião que continua respondendo no Feishu após uma falha.
 
 **Alternativas:**
 
-- [omdsh-dev/dsh-lark](https://github.com/omdsh-dev/dsh-lark) (★ 59) — Executa vários bots que mantêm sessões separadas e podem passar a vez entre si dentro de um mesmo grupo.
+- [omdsh-dev/dsh-lark](https://github.com/omdsh-dev/dsh-lark) (★ 60) — Executa vários bots que mantêm sessões separadas e podem passar a vez entre si dentro de um mesmo grupo.
 
 <details><summary>Instalar</summary>
 
@@ -8410,7 +8410,7 @@ dsh plugin --profile web add github:PlutoKeating/dsh-lark-bot
 
 ### Two-way iMessage channel
 
-[photon-hq/dsh-imessage](https://github.com/photon-hq/dsh-imessage) — `Plugin nativo` · ★ 25 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[photon-hq/dsh-imessage](https://github.com/photon-hq/dsh-imessage) — `Plugin nativo` · ★ 27 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Canal bidirecional de iMessage via Photon: lista de permissão de remetentes, comandos de sessão, aprovações e perguntas dentro do chat, e uma página de configurações para autorização de dispositivo e configuração de linha hospedada.
 
@@ -9672,7 +9672,7 @@ Gerencia portas, credenciais, políticas, visitantes e eventos do UniFi Access; 
 
 **Alternativas:**
 
-- [enuno/unifi-mcp-server](https://github.com/enuno/unifi-mcp-server) (★ 344) — Gestão geral da rede UniFi via a API oficial do UniFi.
+- [enuno/unifi-mcp-server](https://github.com/enuno/unifi-mcp-server) (★ 361) — Gestão geral da rede UniFi via a API oficial do UniFi.
 
 <details><summary>Instalar</summary>
 

@@ -45,7 +45,7 @@ Anthropic-managed directory of Claude Code plugins (commands, agents, skills, ho
 
 ### skills (npx skills)
 
-[skills (npx skills)](https://github.com/vercel-labs/skills) — `Developer tool` · ★ 39k · License: MIT · Works with: —
+[skills (npx skills)](https://github.com/vercel-labs/skills) — `Developer tool` · ★ 40k · License: MIT · Works with: —
 
 CLI that installs, updates, lists and removes Agent Skills from any Git source into 75+ agents (Claude Code, Codex, Cursor, Gemini CLI, OpenCode…). Used by this catalog for skill installs.
 
@@ -53,7 +53,7 @@ CLI that installs, updates, lists and removes Agent Skills from any Git source i
 
 ### dsh-market
 
-[dsh-market](https://github.com/dsh-market/dsh-market) — `Plugin marketplace` · ★ 12k · License: MIT · Works with: DeepSeek Harness only
+[dsh-market](https://github.com/dsh-market/dsh-market) — `Plugin marketplace` · ★ 13k · License: MIT · Works with: DeepSeek Harness only
 
 Plugin market inside DeepSeek Harness Settings: search, one-click install/upgrade and theme switching for every plugin in awesome-dsh-plugin.
 
@@ -61,7 +61,7 @@ Plugin market inside DeepSeek Harness Settings: search, one-click install/upgrad
 
 - [Relistencode/dsh-extension-hub](https://github.com/Relistencode/dsh-extension-hub) (★ 8) — Also manages skills and MCP servers alongside plugins, plus curated and GitHub-based search with npm one-click install.
 - [1e0zj/dsh-plugin-mall](https://github.com/1e0zj/dsh-plugin-mall) (★ 4) — Verifies plugins via package.json manifest checks and anti-squatting protection, plus five tools for headless agent use.
-- [DshMarketPlace/dsh-plugins-store](https://github.com/DshMarketPlace/dsh-plugins-store) (★ 8) — Shows an approval gate listing each plugin's detected risk flags before installing.
+- [DshMarketPlace/dsh-plugins-store](https://github.com/DshMarketPlace/dsh-plugins-store) (★ 9) — Shows an approval gate listing each plugin's detected risk flags before installing.
 - [zhu1090093659/dsh-web#packages/dsh-plugin-manager](https://github.com/zhu1090093659/dsh-web/tree/main/packages/dsh-plugin-manager) — Installs from npm or git with conflict reconciliation, undo, and hand-off to a fix session.
 
 <details><summary>Install</summary>
@@ -86,16 +86,16 @@ Official community-driven registry service for MCP servers, with a public API fo
 
 ### ECC agent harness optimizer
 
-[affaan-m/ECC](https://github.com/affaan-m/ECC) — `Agent Skills` · ★ 300k · License: MIT · Works with: All clients
+[affaan-m/ECC](https://github.com/affaan-m/ECC) — `Agent Skills` · ★ 304k · License: MIT · Works with: All clients
 
 Performance-optimization system for coding-agent harnesses bundling skills, instincts, memory, security and research-first development across Claude Code, Codex, OpenCode and Cursor.
 
 **Alternatives:**
 
-- [ruvnet/ruflo](https://github.com/ruvnet/ruflo) (★ 81k) — Long-running multi-agent harness that deploys swarms, coordinates autonomous workflows and adds adaptive memory and vector RAG.
+- [ruvnet/ruflo](https://github.com/ruvnet/ruflo) (★ 82k) — Long-running multi-agent harness that deploys swarms, coordinates autonomous workflows and adds adaptive memory and vector RAG.
 - [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) (★ 30k) — Very large bundle of 846 skills, 198 agents and 282 commands spanning engineering, marketing, product, compliance and research.
-- [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills) (★ 49k) — Local, agent-first control plane over a catalog of 2,000+ skills, with its own CLI, MCP server and validation workbench.
-- [wshobson/agents](https://github.com/wshobson/agents) (★ 42k) — Multi-harness plugin marketplace bundling 183 skills, 202 agents and 105 commands for Claude Code, Codex, Cursor and more.
+- [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills) (★ 50k) — Local, agent-first control plane over a catalog of 2,000+ skills, with its own CLI, MCP server and validation workbench.
+- [wshobson/agents](https://github.com/wshobson/agents) (★ 43k) — Multi-harness plugin marketplace bundling 183 skills, 202 agents and 105 commands for Claude Code, Codex, Cursor and more.
 
 <details><summary>Install</summary>
 
@@ -199,7 +199,7 @@ Curated resources for Claude Code: slash commands, CLAUDE.md files, hooks, workf
 
 ### awesome-dsh-plugin
 
-[awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) — `Curated list / registry` · ★ 24k · License: CC0-1.0 · Works with: —
+[awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) — `Curated list / registry` · ★ 25k · License: CC0-1.0 · Works with: —
 
 The full list of ~3,900 DeepSeek Harness plugins. This catalog imports its best entries and folds near-duplicates; browse the original for everything else.
 
@@ -395,7 +395,7 @@ npx skills add tech-leads-club/agent-skills -a universal
 
 ### Everything Claude Code toolkit
 
-[WorldFlowAI/everything-claude-code](https://github.com/WorldFlowAI/everything-claude-code) — `Agent Skills` · ★ 6.1k · License: see repo · Works with: All clients
+[WorldFlowAI/everything-claude-code](https://github.com/WorldFlowAI/everything-claude-code) — `Agent Skills` · ★ 6.5k · License: see repo · Works with: All clients
 
 Single-repo Claude Code toolkit bundling agents, commands, skills, rules and hooks for productive AI-assisted development.
 
@@ -485,7 +485,7 @@ npx skills add WorldFlowAI/everything-claude-code -a universal
 
 ### Official community plugin mirror
 
-[anthropics/claude-plugins-community](https://github.com/anthropics/claude-plugins-community) — `Agent Skills` · ★ 4.8k · License: Apache-2.0 · Works with: All clients
+[anthropics/claude-plugins-community](https://github.com/anthropics/claude-plugins-community) — `Agent Skills` · ★ 4.9k · License: Apache-2.0 · Works with: All clients
 
 Read-only mirror of the official community plugin marketplace for Claude Cowork and Claude Code, maintained by Anthropic.
 
@@ -575,7 +575,7 @@ npx skills add anthropics/claude-plugins-community -a universal
 
 ### Claude ecosystem discovery hub
 
-[davepoon/buildwithclaude](https://github.com/davepoon/buildwithclaude) — `Agent Skills` · ★ 3.7k · License: MIT · Works with: All clients
+[davepoon/buildwithclaude](https://github.com/davepoon/buildwithclaude) — `Agent Skills` · ★ 3.8k · License: MIT · Works with: All clients
 
 Single hub for finding Claude skills, agents, commands, hooks, plugins and marketplace collections in one place.
 
@@ -584,7 +584,7 @@ Single hub for finding Claude skills, agents, commands, hooks, plugins and marke
 - [rohitg00/awesome-claude-code-toolkit](https://github.com/rohitg00/awesome-claude-code-toolkit) (★ 2.8k) — Comprehensive index claiming 135 agents, 35 skills, 42 commands, 176+ plugins, 20 hooks and more in one toolkit.
 - [jeremylongshore/tons-of-skills-marketplace](https://github.com/jeremylongshore/tons-of-skills-marketplace) (★ 2.9k) — Model-agnostic skills platform with its own package manager (ccpi) and a canonical layer over 6,000+ skills.
 - [composio-community/awesome-claude-plugins](https://github.com/composio-community/awesome-claude-plugins) (★ 2.0k) — Curated list of plugins that extend Claude Code with custom commands, agents, hooks and MCP servers.
-- [VoltAgent/awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents) (★ 26k) — Focused collection of 100+ specialized Claude Code subagents covering a wide range of development use cases.
+- [VoltAgent/awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents) (★ 27k) — Focused collection of 100+ specialized Claude Code subagents covering a wide range of development use cases.
 
 <details><summary>Install</summary>
 
@@ -678,8 +678,8 @@ Tool and skill set that installs, translates and shares agent skills across Clau
 
 **Alternatives:**
 
-- [runkids/skillshare](https://github.com/runkids/skillshare) (★ 3.0k) — Focuses on one-command syncing and team sharing of skills across CLI tools.
-- [xingkongliang/skills-manager](https://github.com/xingkongliang/skills-manager) (★ 7.4k) — Desktop GUI app for browsing and organizing skills across 50+ coding tools.
+- [runkids/skillshare](https://github.com/runkids/skillshare) (★ 3.2k) — Focuses on one-command syncing and team sharing of skills across CLI tools.
+- [xingkongliang/skills-manager](https://github.com/xingkongliang/skills-manager) (★ 7.5k) — Desktop GUI app for browsing and organizing skills across 50+ coding tools.
 - [numman-ali/openskills](https://github.com/numman-ali/openskills) (★ 11k) — Lightweight universal skills loader distributed as an npm package.
 
 <details><summary>Install</summary>
@@ -768,7 +768,7 @@ npx skills add rohitg00/skillkit -a universal
 
 ### Native skin marketplace
 
-[kingOfSoySauce/dsh-skin-market](https://github.com/kingOfSoySauce/dsh-skin-market) — `Native plugin` · ★ 317 · License: MIT · Works with: DeepSeek Harness only
+[kingOfSoySauce/dsh-skin-market](https://github.com/kingOfSoySauce/dsh-skin-market) — `Native plugin` · ★ 331 · License: MIT · Works with: DeepSeek Harness only
 
 Discovers community skins, shows previews and compatibility status, and provides verified one-click or manual installation paths.
 
@@ -786,7 +786,7 @@ dsh plugin --profile web add github:kingOfSoySauce/dsh-skin-market
 
 ### Chat-based plugin discovery
 
-[awesome-dsh-plugin/dsh-find-plugin](https://github.com/awesome-dsh-plugin/dsh-find-plugin) — `Native plugin` · ★ 229 · License: MIT · Works with: DeepSeek Harness only
+[awesome-dsh-plugin/dsh-find-plugin](https://github.com/awesome-dsh-plugin/dsh-find-plugin) — `Native plugin` · ★ 235 · License: MIT · Works with: DeepSeek Harness only
 
 Searches a curated plugin registry by keyword or category from inside the agent conversation and returns ready-to-run install commands, without opening the Settings UI.
 
