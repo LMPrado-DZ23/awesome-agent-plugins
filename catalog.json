@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "count": 589,
+ "count": 590,
  "clients": {
   "claude-code": {
    "name": "Claude Code",
@@ -12980,6 +12980,34 @@
    "origin": {
     "list": "mcp-registry",
     "ref": "io.github.keploy/mcp"
+   }
+  },
+  {
+   "id": "kilobat-cli",
+   "name": "Kilobat CLI",
+   "title": "macOS network diagnostics",
+   "url": "https://github.com/seifip/kilobat-cli",
+   "type": "mcp-server",
+   "category": "tools",
+   "license": "GPL-3.0-only",
+   "tags": [
+    "networking",
+    "diagnostics",
+    "macos"
+   ],
+   "description": {
+    "en": "Wi-Fi, DNS and host diagnostics on macOS 14+; the Homebrew build needs Xcode 16+, and the desktop app is separate and proprietary. If a GUI client cannot find kilobat, use the full path from which kilobat.",
+    "pt": "Diagnóstico de Wi-Fi, DNS e conectividade no macOS 14+; o build Homebrew exige Xcode 16+ e o aplicativo de desktop é separado e proprietário. Se um cliente gráfico não encontrar kilobat, use o caminho completo retornado por which kilobat."
+   },
+   "mcp": {
+    "name": "kilobat",
+    "prereq": "brew install seifip/kilobat/kilobat",
+    "stdio": {
+     "command": "kilobat",
+     "args": [
+      "mcp"
+     ]
+    }
    }
   },
   {

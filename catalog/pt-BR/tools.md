@@ -64,6 +64,7 @@
 - [Export chats as styled notes](#dsh-notes-dsh-plugin) — Exporta conversas do DSH como imagens PNG no estilo Smartisan Notes, ou cria e atualiza notas em Markdown em u…
 - [Filesystem (reference)](#mcp-filesystem) — Servidor de referência para ler, escrever, buscar e mover arquivos, restrito aos diretórios passados como argu…
 - [Hacker News feeds and search](#dsh-hn-cli-hacker-news) — Ferramentas do Hacker News para feeds, threads de discussão, busca e perfis de usuário.
+- [macOS network diagnostics](#kilobat-cli) — Diagnóstico de Wi-Fi, DNS e conectividade no macOS 14+; o build Homebrew exige Xcode 16+ e o aplicativo de des…
 - [MCP server config manager](#dsh-dsh-plugin-hub-packages-dsh-mcp-manager) — Gerenciador de servidores MCP (stdio / streamable-http) com níveis de config por projeto e global: o MCP do pr…
 
 <a id="claude-mem"></a>
@@ -5493,6 +5494,213 @@ Ferramentas do Hacker News para feeds, threads de discussão, busca e perfis de 
 
 ```bash
 dsh plugin --profile web add github:heartleo/hn-cli#path:/plugins/hacker-news
+```
+
+</details>
+
+<a id="kilobat-cli"></a>
+
+### macOS network diagnostics
+
+[Kilobat CLI](https://github.com/seifip/kilobat-cli) — `Servidor MCP` · Licença: GPL-3.0-only · Funciona com: Todos os clientes
+
+Diagnóstico de Wi-Fi, DNS e conectividade no macOS 14+; o build Homebrew exige Xcode 16+ e o aplicativo de desktop é separado e proprietário. Se um cliente gráfico não encontrar kilobat, use o caminho completo retornado por which kilobat.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+Pré-requisito: `brew install seifip/kilobat/kilobat`
+
+```bash
+claude mcp add --transport stdio kilobat -- kilobat mcp
+```
+
+**Codex CLI**
+
+Pré-requisito: `brew install seifip/kilobat/kilobat`
+
+```bash
+codex mcp add kilobat -- kilobat mcp
+```
+
+**Gemini CLI**
+
+Pré-requisito: `brew install seifip/kilobat/kilobat`
+
+```bash
+gemini mcp add kilobat kilobat mcp
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+Pré-requisito: `brew install seifip/kilobat/kilobat`
+
+```json
+{
+  "mcpServers": {
+    "kilobat": {
+      "command": "kilobat",
+      "args": [
+        "mcp"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+Pré-requisito: `brew install seifip/kilobat/kilobat`
+
+```json
+{
+  "servers": {
+    "kilobat": {
+      "type": "stdio",
+      "command": "kilobat",
+      "args": [
+        "mcp"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+Pré-requisito: `brew install seifip/kilobat/kilobat`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "kilobat": {
+      "type": "local",
+      "command": [
+        "kilobat",
+        "mcp"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+Pré-requisito: `brew install seifip/kilobat/kilobat`
+
+```json
+{
+  "mcpServers": {
+    "kilobat": {
+      "command": "kilobat",
+      "args": [
+        "mcp"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+Pré-requisito: `brew install seifip/kilobat/kilobat`
+
+```json
+{
+  "mcpServers": {
+    "kilobat": {
+      "command": "kilobat",
+      "args": [
+        "mcp"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+Pré-requisito: `brew install seifip/kilobat/kilobat`
+
+```json
+{
+  "context_servers": {
+    "kilobat": {
+      "source": "custom",
+      "command": "kilobat",
+      "args": [
+        "mcp"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+Pré-requisito: `brew install seifip/kilobat/kilobat`
+
+```yaml
+extensions:
+  kilobat:
+    type: stdio
+    cmd: kilobat
+    args: ["mcp"]
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+Pré-requisito: `brew install seifip/kilobat/kilobat`
+
+```json
+{
+  "mcpServers": {
+    "kilobat": {
+      "command": "kilobat",
+      "args": [
+        "mcp"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+Pré-requisito: `brew install seifip/kilobat/kilobat`
+
+```json
+{
+  "mcpServers": {
+    "kilobat": {
+      "command": "kilobat",
+      "args": [
+        "mcp"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `kilobat.cordis.yml  →  dsh web --patch ./kilobat.cordis.yml`
+
+Pré-requisito: `brew install seifip/kilobat/kilobat`
+
+```yaml
+- insert:
+    - id: mcp-kilobat
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: kilobat
+        transport: stdio
+        command: kilobat
+        args: ["mcp"]
+        env: {}
+        cwd: !!js process.cwd()
 ```
 
 </details>
