@@ -22,7 +22,7 @@
 
 ### DeepSeek web session models
 
-[cv-superding/dsh-deepseek-web-login](https://github.com/cv-superding/dsh-deepseek-web-login) — `Plugin nativo` · ★ 384 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
+[cv-superding/dsh-deepseek-web-login](https://github.com/cv-superding/dsh-deepseek-web-login) — `Plugin nativo` · ★ 382 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
 
 Adiciona um provedor que usa diretamente os modelos web de chat.deepseek.com, com captura de login pelo navegador, assinatura de requisições por prova de trabalho, streaming SSE e chamadas de ferramenta baseadas em prompt.
 
@@ -255,14 +255,14 @@ extensions:
 
 ### Google Antigravity model provider
 
-[amlyczz/dsh-agy-link](https://github.com/amlyczz/dsh-agy-link) — `Plugin nativo` · ★ 185 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[amlyczz/dsh-agy-link](https://github.com/amlyczz/dsh-agy-link) — `Plugin nativo` · ★ 219 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Conecta os modelos do Google Antigravity (agy CLI) com chat em streaming para assinaturas Gemini, Claude e GPT-OSS, cartões nativos de ferramentas, turnos de raciocínio e login OAuth do Google direto na interface.
 
 **Alternativas:**
 
-- [LiZhenNet/dsh-antigravity](https://github.com/LiZhenNet/dsh-antigravity) (★ 34) — Adiciona gestão explícita de cota e uma interface dedicada para seleção de modelos.
-- [suntianc/dsh-antigravity-auth](https://github.com/suntianc/dsh-antigravity-auth) (★ 29) — Adiciona geração/edição de imagens, compreensão de vídeo e busca web à rota do Antigravity.
+- [LiZhenNet/dsh-antigravity](https://github.com/LiZhenNet/dsh-antigravity) (★ 35) — Adiciona gestão explícita de cota e uma interface dedicada para seleção de modelos.
+- [suntianc/dsh-antigravity-auth](https://github.com/suntianc/dsh-antigravity-auth) (★ 31) — Adiciona geração/edição de imagens, compreensão de vídeo e busca web à rota do Antigravity.
 
 <details><summary>Instalar</summary>
 
@@ -278,14 +278,14 @@ dsh plugin --profile web add github:amlyczz/dsh-agy-link
 
 ### ChatGPT/Codex OAuth model bridge
 
-[franksong2702/dsh-codex-connect](https://github.com/franksong2702/dsh-codex-connect) — `Plugin nativo` · ★ 183 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
+[franksong2702/dsh-codex-connect](https://github.com/franksong2702/dsh-codex-connect) — `Plugin nativo` · ★ 192 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
 
 Conecta uma conta ChatGPT e os modelos Codex da OpenAI ao harness via OAuth, com ferramentas opcionais de busca e imagem.
 
 **Alternativas:**
 
-- [WSL043/dsh-codex-subscription](https://github.com/WSL043/dsh-codex-subscription) (★ 495) — Adiciona busca web por assinatura, controle de cota com reset seguro, ferramentas de imagem e um modo rápido, sem precisar de chave de API ou do Codex CLI.
-- [WNJXYK/dsh-codex-oauth](https://github.com/WNJXYK/dsh-codex-oauth) (★ 15) — Adiciona geração de imagens, relatório de cota da assinatura e login OAuth via navegador ou código de dispositivo.
+- [WSL043/dsh-codex-subscription](https://github.com/WSL043/dsh-codex-subscription) (★ 527) — Adiciona busca web por assinatura, controle de cota com reset seguro, ferramentas de imagem e um modo rápido, sem precisar de chave de API ou do Codex CLI.
+- [WNJXYK/dsh-codex-oauth](https://github.com/WNJXYK/dsh-codex-oauth) (★ 14) — Adiciona geração de imagens, relatório de cota da assinatura e login OAuth via navegador ou código de dispositivo.
 - [suntianc/dsh-codex-auth](https://github.com/suntianc/dsh-codex-auth) (★ 20) — Reaproveita um login ChatGPT já feito no Codex CLI, em vez de rodar um fluxo OAuth separado.
 - [stoneface10/dsh-codex-connect-plus](https://github.com/stoneface10/dsh-codex-connect-plus) (★ 6) — Adiciona geração e edição de imagens com gpt-image-2 junto do acesso aos modelos Codex.
 
@@ -303,13 +303,13 @@ dsh plugin --profile web add github:franksong2702/dsh-codex-connect
 
 ### Multi-provider coding subscriptions
 
-[lninghaha/dsh-coding-subscription-oauth](https://github.com/lninghaha/dsh-coding-subscription-oauth) — `Plugin nativo` · ★ 28 · Licença: ver repo · Funciona com: DeepSeek Harness apenas
+[lninghaha/dsh-coding-subscription-oauth](https://github.com/lninghaha/dsh-coding-subscription-oauth) — `Plugin nativo` · ★ 30 · Licença: ver repo · Funciona com: DeepSeek Harness apenas
 
 Faz login local nas assinaturas SuperGrok/Grok Build, ChatGPT Plus Codex, Kimi Code e Claude Code sem colar tokens, com um gateway loopback opcional para OpenAI/Anthropic.
 
 **Alternativas:**
 
-- [V1ki/dsh-plugin-subscriptions](https://github.com/V1ki/dsh-plugin-subscriptions) (★ 618) — Também expõe as ferramentas image_generate, video_generate e x_search junto das rotas de assinatura Claude, Codex e Grok.
+- [V1ki/dsh-plugin-subscriptions](https://github.com/V1ki/dsh-plugin-subscriptions) (★ 634) — Também expõe as ferramentas image_generate, video_generate e x_search junto das rotas de assinatura Claude, Codex e Grok.
 
 <details><summary>Instalar</summary>
 
@@ -333,7 +333,7 @@ Permite que cada subagente use seu próprio provedor e modelo de LLM por meio de
 
 - [SnowAmberX/dsh-role-router](https://github.com/SnowAmberX/dsh-role-router) (★ 5) — Alterna automaticamente para um modelo planejador no modo de plano e expõe o esforço de raciocínio por papel na Web UI.
 - [hytime/dsh-thinking-effort](https://github.com/hytime/dsh-thinking-effort) (★ 61) — Define níveis de esforço de raciocínio e padrões de subagente especificamente para modelos customizados ou de terceiros.
-- [HaoyueQin/dsh-better-reasoning-effort](https://github.com/HaoyueQin/dsh-better-reasoning-effort) (★ 68) — Sugere configurações de esforço de raciocínio e modalidade de entrada por modelo, combinadas de uma base de conhecimento com rótulos de confiança.
+- [HaoyueQin/dsh-better-reasoning-effort](https://github.com/HaoyueQin/dsh-better-reasoning-effort) (★ 69) — Sugere configurações de esforço de raciocínio e modalidade de entrada por modelo, combinadas de uma base de conhecimento com rótulos de confiança.
 
 <details><summary>Instalar</summary>
 
@@ -349,7 +349,7 @@ dsh plugin --profile web add github:SeverusZh/dsh-plugin-subagent-director
 
 ### GitHub Copilot model adapter
 
-[lujianjun19/dsh-llm-github-copilot](https://github.com/lujianjun19/dsh-llm-github-copilot) — `Plugin nativo` · ★ 14 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[lujianjun19/dsh-llm-github-copilot](https://github.com/lujianjun19/dsh-llm-github-copilot) — `Plugin nativo` · ★ 15 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Adiciona o GitHub Copilot como provedor de modelos: login via OAuth device-flow, descoberta ao vivo de modelos pela API do Copilot, suporte a visão para modelos com capacidade de imagem, e roteamento automático entre os protocolos Chat Completions e Responses API.
 
@@ -418,7 +418,7 @@ Mantém as chamadas de modelo funcionando em conexões instáveis com retentativ
 **Alternativas:**
 
 - [HB00/dsh-llm-failover](https://github.com/HB00/dsh-llm-failover) (★ 1) — Troca automaticamente de provedor em limites de taxa ou esgotamento de cota, com um cooldown e um fallback permanente de último recurso.
-- [btspoony/dsh-llm-fallbacks](https://github.com/btspoony/dsh-llm-fallbacks) (★ 26) — Aplica estratégias separadas de retentativa e fallback por papel de agente.
+- [btspoony/dsh-llm-fallbacks](https://github.com/btspoony/dsh-llm-fallbacks) (★ 28) — Aplica estratégias separadas de retentativa e fallback por papel de agente.
 
 <details><summary>Instalar</summary>
 
@@ -441,7 +441,7 @@ Expõe os modelos gratuitos do OpenCode Zen para o harness, sem necessidade de c
 **Alternativas:**
 
 - [xiaozhe7772222/dsh-opencode-zen](https://github.com/xiaozhe7772222/dsh-opencode-zen) (★ 30) — Reúne 6 modelos gratuitos com rotação de múltiplas chaves e recuo automático em limites de taxa.
-- [Duskriver/dsh-opencode-go](https://github.com/Duskriver/dsh-opencode-go) (★ 327) — Adiciona descoberta ao vivo de modelos no gateway, metadados de capacidade online e roteamento ciente de sessão para o OpenCode Go.
+- [Duskriver/dsh-opencode-go](https://github.com/Duskriver/dsh-opencode-go) (★ 353) — Adiciona descoberta ao vivo de modelos no gateway, metadados de capacidade online e roteamento ciente de sessão para o OpenCode Go.
 
 <details><summary>Instalar</summary>
 
@@ -481,8 +481,8 @@ Traz os modelos do aplicativo desktop WorkBuddy, já logado localmente, para o h
 
 **Alternativas:**
 
-- [dingminhua/dsh-connect-workbuddy](https://github.com/dingminhua/dsh-connect-workbuddy) (★ 1.7k) — Adiciona entrada de imagem opcional por modelo, troca de conta e uma visão geral de créditos somente leitura com check-in diário.
-- [aosi526/dsh-workbuddy-xdpool](https://github.com/aosi526/dsh-workbuddy-xdpool) (★ 541) — Mescla todas as contas WorkBuddy logadas em um único pool com failover automático, mostrando multiplicadores de crédito por modelo.
+- [dingminhua/dsh-connect-workbuddy](https://github.com/dingminhua/dsh-connect-workbuddy) (★ 1.9k) — Adiciona entrada de imagem opcional por modelo, troca de conta e uma visão geral de créditos somente leitura com check-in diário.
+- [aosi526/dsh-workbuddy-xdpool](https://github.com/aosi526/dsh-workbuddy-xdpool) (★ 601) — Mescla todas as contas WorkBuddy logadas em um único pool com failover automático, mostrando multiplicadores de crédito por modelo.
 
 <details><summary>Instalar</summary>
 

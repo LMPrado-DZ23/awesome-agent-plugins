@@ -14,12 +14,12 @@
 - [Compile code and inspect assembly](#compiler-explorer-mcp) — Compiles code with thousands of compilers, inspects the generated assembly, and shares godbolt.org links.
 - [GSAP animation skills](#gsap-skills) — Official AI skills for GSAP (GreenSock Animation Platform) teaching coding agents correct animation patterns, …
 - [Lightweight Charts skills](#lightweight-charts) — Official skills for TradingView's HTML5-canvas financial charting library, covering core chart usage and autho…
+- [Google Stitch design skills](#stitch-skills) — Official Agent Skills library for Google's Stitch MCP server, covering code-to-design, design generation, desi…
 - [Hugging Face ecosystem skills](#huggingface-skills) — Agent Skills that give coding agents access to the Hugging Face ecosystem: models, datasets and Hub workflows.
 - [MCP Inspector](#mcp-inspector) — Visual testing tool for MCP servers: connect over stdio or HTTP, list and call tools, resources and prompts. R…
-- [Google Stitch design skills](#stitch-skills) — Official Agent Skills library for Google's Stitch MCP server, covering code-to-design, design generation, desi…
 - [Hot-reload plugins without restart](#dsh-dsh-routing-suite) — Runtime injector for DSH plugin packages: inject, hot-reload, unload, promote and self-heal routes, plus a set…
-- [Xcode project and simulator control](#xcodebuildmcp) — Provides tools for Xcode project management, simulator management, and app utilities.
 - [SwiftUI agent skill](#swiftui-agent-skill) — Agent skill that teaches Claude Code, Codex and other AI tools SwiftUI best practices for building iOS/macOS i…
+- [Xcode project and simulator control](#xcodebuildmcp) — Provides tools for Xcode project management, simulator management, and app utilities.
 - [.NET / C# agent skills](#dotnet-skills) — Official skills repository to assist AI coding agents with .NET and C# development conventions and tooling.
 - [Anti-Slop TypeScript lint rules](#anti-slop) — Single skill installing opinionated Oxlint rules that reject low-evidence, low-quality TypeScript and JavaScri…
 - [Anthony Fu's JS ecosystem skills](#antfu-skills) — Curated skill collection from a well-known open-source maintainer covering Vite, Vue, Nuxt, Pinia, Vitest, Vue…
@@ -29,10 +29,10 @@
 - [NVIDIA agent skills](#nvidia-skills) — Official NVIDIA Agent Skills for coding agents covering physical AI, robotics, simulation, CUDA and RAG workfl…
 - [Go agentic skills collection](#cc-skills-golang) — Collection of Golang-focused agentic skills for coding agents, packaged as a Gemini CLI extension.
 - [Awesome design style skills](#awesome-design-skills) — 67 DESIGN.md/SKILL.md files, each encoding a distinct visual design style (brutalism, claymorphism, cyberpunk,…
+- [Universal motion design skill](#motion-design-skill) — Official LottieFiles skill encoding universal motion design principles - timing, easing and choreography adapt…
 - [Vue 3 agent skills](#vuejs-ai-skills) — Official agent skills for Vue 3 development, maintained under the Vue.js organization.
 - [Software design classics skills](#agent-rules-books) — Skills distilling classic software engineering books into agent guidance: Clean Code, Clean Architecture, Refa…
 - [SwiftUI recipes for iOS apps](#shipswift-mcp) — 40+ production-ready SwiftUI recipes for building full-stack iOS apps.
-- [Universal motion design skill](#motion-design-skill) — Official LottieFiles skill encoding universal motion design principles - timing, easing and choreography adapt…
 - [Microsoft SDK skills & agents](#microsoft-skills) — Skills, MCP servers, custom agents and Agents.md files that ground coding agents in Microsoft SDKs and platfor…
 - [Apify agent skills](#apify-agent-skills) — Official collection of Apify agent skills for building and running web scraping and automation actors.
 - [WordPress official agent skills](#agent-skills) — Official WordPress skills giving AI coding assistants expert-level knowledge of blocks, themes, plugins, the A…
@@ -53,13 +53,13 @@
 - [Control TouchDesigner projects](#touchdesigner-mcp) — Controls and operates TouchDesigner projects through AI agents.
 - [Manage skills from a settings panel](#dsh-dsh-skills-manager) — Manages local DeepSeek Harness skills from the Settings screen and shows Agent skills shared by the team as re…
 - [Godot 4.x engine control](#godot-mcp) — Full Godot 4.x engine control with 165 tools for AI-driven game development.
-- [Universal CPU profiler](#uniprof-mcp) — A universal CPU profiler designed to be used by both humans and AI agents.
 - [AI-powered E2E testing, 10 platforms](#flutter-skill-mcp) — AI-powered end-to-end testing for 10 platforms with 253 tools, requiring no test code.
+- [Universal CPU profiler](#uniprof-mcp) — A universal CPU profiler designed to be used by both humans and AI agents.
 - [RStudio AI assistant connection](#clauder-mcp) — Connects RStudio to AI assistants for interactive R coding and data analysis.
 - [Full Postman platform access](#postman-mcp-server) — Official server giving AI agents trusted access to the full Postman platform; needs a POSTMAN_API_KEY.
+- [Website QA audits](#squirrelscan-mcp) — Website QA for coding agents: audits SEO, performance, security, and accessibility.
 - [All-in-one DSH distribution bundle](#dsh-oh-dsh) — Community distribution that bundles the TUI, desktop app and Web UI together as one package with layered insta…
 - [Expose GraphQL operations as tools](#apollo-mcp-server) — Official Apollo server that exposes GraphQL operations as tools for AI models.
-- [Website QA audits](#squirrelscan-mcp) — Website QA for coding agents: audits SEO, performance, security, and accessibility.
 - [LLM app tracing and evaluation](#opik-mcp) — Interacts with Opik prompts, traces, datasets, and metrics for LLM application debugging; needs an OPIK_API_KE…
 - [Diagnose and repair DSH installs](#dsh-dsh-win32) — Diagnoses and repairs DeepSeek Harness on native Windows around the official PowerShell and Workspace Write st…
 - [Add WSL workspace from web GUI](#dsh-dsh-wsl-workspace) — Adds a WSL workspace from the web GUI without needing to install DSH or related tools again inside WSL. Bash c…
@@ -455,7 +455,7 @@ Pythonic framework for building MCP servers and clients with decorators, auth, p
 
 ### Google product skills
 
-[google/skills](https://github.com/google/skills) — `Agent Skills` · ★ 24k · License: Apache-2.0 · Works with: All clients
+[google/skills](https://github.com/google/skills) — `Agent Skills` · ★ 25k · License: Apache-2.0 · Works with: All clients
 
 Marketplace of Agent Skills covering Google products and technologies, for grounding coding agents in Google-specific APIs and workflows.
 
@@ -1071,6 +1071,96 @@ npx skills add tradingview/lightweight-charts -a universal
 
 </details>
 
+<a id="stitch-skills"></a>
+
+### Google Stitch design skills
+
+[google-labs-code/stitch-skills](https://github.com/google-labs-code/stitch-skills) — `Agent Skills` · ★ 12k · License: Apache-2.0 · Works with: All clients
+
+Official Agent Skills library for Google's Stitch MCP server, covering code-to-design, design generation, design-system management and React/shadcn component export.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+npx skills add google-labs-code/stitch-skills -a claude-code -g
+```
+
+**Codex CLI**
+
+```bash
+npx skills add google-labs-code/stitch-skills -a codex -g
+```
+
+**Gemini CLI**
+
+```bash
+npx skills add google-labs-code/stitch-skills -a gemini-cli -g
+```
+
+**Cursor**
+
+```bash
+npx skills add google-labs-code/stitch-skills -a cursor -g
+```
+
+**VS Code (Copilot)**
+
+```bash
+npx skills add google-labs-code/stitch-skills -a github-copilot -g
+```
+
+**OpenCode**
+
+```bash
+npx skills add google-labs-code/stitch-skills -a opencode -g
+```
+
+**Cline**
+
+```bash
+npx skills add google-labs-code/stitch-skills -a cline -g
+```
+
+**Windsurf**
+
+```bash
+npx skills add google-labs-code/stitch-skills -a windsurf -g
+```
+
+**Zed**
+
+```bash
+npx skills add google-labs-code/stitch-skills -a zed -g
+```
+
+**Goose**
+
+```bash
+npx skills add google-labs-code/stitch-skills -a goose -g
+```
+
+**Kiro**
+
+```bash
+npx skills add google-labs-code/stitch-skills -a kiro-cli -g
+```
+
+**Roo Code**
+
+```bash
+npx skills add google-labs-code/stitch-skills -a roo -g
+```
+
+**DeepSeek Harness**
+
+```bash
+npx skills add google-labs-code/stitch-skills -a universal
+```
+
+</details>
+
 <a id="huggingface-skills"></a>
 
 ### Hugging Face ecosystem skills
@@ -1169,96 +1259,6 @@ npx skills add huggingface/skills -a universal
 
 Visual testing tool for MCP servers: connect over stdio or HTTP, list and call tools, resources and prompts. Run with `npx @modelcontextprotocol/inspector`.
 
-<a id="stitch-skills"></a>
-
-### Google Stitch design skills
-
-[google-labs-code/stitch-skills](https://github.com/google-labs-code/stitch-skills) — `Agent Skills` · ★ 9.6k · License: Apache-2.0 · Works with: All clients
-
-Official Agent Skills library for Google's Stitch MCP server, covering code-to-design, design generation, design-system management and React/shadcn component export.
-
-<details><summary>Install</summary>
-
-**Claude Code**
-
-```bash
-npx skills add google-labs-code/stitch-skills -a claude-code -g
-```
-
-**Codex CLI**
-
-```bash
-npx skills add google-labs-code/stitch-skills -a codex -g
-```
-
-**Gemini CLI**
-
-```bash
-npx skills add google-labs-code/stitch-skills -a gemini-cli -g
-```
-
-**Cursor**
-
-```bash
-npx skills add google-labs-code/stitch-skills -a cursor -g
-```
-
-**VS Code (Copilot)**
-
-```bash
-npx skills add google-labs-code/stitch-skills -a github-copilot -g
-```
-
-**OpenCode**
-
-```bash
-npx skills add google-labs-code/stitch-skills -a opencode -g
-```
-
-**Cline**
-
-```bash
-npx skills add google-labs-code/stitch-skills -a cline -g
-```
-
-**Windsurf**
-
-```bash
-npx skills add google-labs-code/stitch-skills -a windsurf -g
-```
-
-**Zed**
-
-```bash
-npx skills add google-labs-code/stitch-skills -a zed -g
-```
-
-**Goose**
-
-```bash
-npx skills add google-labs-code/stitch-skills -a goose -g
-```
-
-**Kiro**
-
-```bash
-npx skills add google-labs-code/stitch-skills -a kiro-cli -g
-```
-
-**Roo Code**
-
-```bash
-npx skills add google-labs-code/stitch-skills -a roo -g
-```
-
-**DeepSeek Harness**
-
-```bash
-npx skills add google-labs-code/stitch-skills -a universal
-```
-
-</details>
-
 <a id="dsh-dsh-routing-suite"></a>
 
 ### Hot-reload plugins without restart
@@ -1277,6 +1277,101 @@ Runtime injector for DSH plugin packages: inject, hot-reload, unload, promote an
 
 ```bash
 dsh plugin --profile web add github:yjh051108/dsh-routing-suite
+```
+
+</details>
+
+<a id="swiftui-agent-skill"></a>
+
+### SwiftUI agent skill
+
+[twostraws/SwiftUI-Agent-Skill](https://github.com/twostraws/SwiftUI-Agent-Skill) — `Agent Skills` · ★ 6.6k · License: MIT · Works with: All clients
+
+Agent skill that teaches Claude Code, Codex and other AI tools SwiftUI best practices for building iOS/macOS interfaces.
+
+**Alternatives:**
+
+- [AvdLee/SwiftUI-Agent-Skill](https://github.com/AvdLee/SwiftUI-Agent-Skill) (★ 3.9k) — Same SwiftUI best-practices skill, maintained independently by a different author.
+- [AvdLee/Swift-Concurrency-Agent-Skill](https://github.com/AvdLee/Swift-Concurrency-Agent-Skill) (★ 1.7k) — Companion skill focused on Swift Concurrency: safe concurrency patterns, performance and Swift 6 migration guidance.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+npx skills add twostraws/SwiftUI-Agent-Skill -a claude-code -g
+```
+
+**Codex CLI**
+
+```bash
+npx skills add twostraws/SwiftUI-Agent-Skill -a codex -g
+```
+
+**Gemini CLI**
+
+```bash
+npx skills add twostraws/SwiftUI-Agent-Skill -a gemini-cli -g
+```
+
+**Cursor**
+
+```bash
+npx skills add twostraws/SwiftUI-Agent-Skill -a cursor -g
+```
+
+**VS Code (Copilot)**
+
+```bash
+npx skills add twostraws/SwiftUI-Agent-Skill -a github-copilot -g
+```
+
+**OpenCode**
+
+```bash
+npx skills add twostraws/SwiftUI-Agent-Skill -a opencode -g
+```
+
+**Cline**
+
+```bash
+npx skills add twostraws/SwiftUI-Agent-Skill -a cline -g
+```
+
+**Windsurf**
+
+```bash
+npx skills add twostraws/SwiftUI-Agent-Skill -a windsurf -g
+```
+
+**Zed**
+
+```bash
+npx skills add twostraws/SwiftUI-Agent-Skill -a zed -g
+```
+
+**Goose**
+
+```bash
+npx skills add twostraws/SwiftUI-Agent-Skill -a goose -g
+```
+
+**Kiro**
+
+```bash
+npx skills add twostraws/SwiftUI-Agent-Skill -a kiro-cli -g
+```
+
+**Roo Code**
+
+```bash
+npx skills add twostraws/SwiftUI-Agent-Skill -a roo -g
+```
+
+**DeepSeek Harness**
+
+```bash
+npx skills add twostraws/SwiftUI-Agent-Skill -a universal
 ```
 
 </details>
@@ -1470,106 +1565,11 @@ extensions:
 
 </details>
 
-<a id="swiftui-agent-skill"></a>
-
-### SwiftUI agent skill
-
-[twostraws/SwiftUI-Agent-Skill](https://github.com/twostraws/SwiftUI-Agent-Skill) — `Agent Skills` · ★ 6.6k · License: MIT · Works with: All clients
-
-Agent skill that teaches Claude Code, Codex and other AI tools SwiftUI best practices for building iOS/macOS interfaces.
-
-**Alternatives:**
-
-- [AvdLee/SwiftUI-Agent-Skill](https://github.com/AvdLee/SwiftUI-Agent-Skill) (★ 3.9k) — Same SwiftUI best-practices skill, maintained independently by a different author.
-- [AvdLee/Swift-Concurrency-Agent-Skill](https://github.com/AvdLee/Swift-Concurrency-Agent-Skill) (★ 1.7k) — Companion skill focused on Swift Concurrency: safe concurrency patterns, performance and Swift 6 migration guidance.
-
-<details><summary>Install</summary>
-
-**Claude Code**
-
-```bash
-npx skills add twostraws/SwiftUI-Agent-Skill -a claude-code -g
-```
-
-**Codex CLI**
-
-```bash
-npx skills add twostraws/SwiftUI-Agent-Skill -a codex -g
-```
-
-**Gemini CLI**
-
-```bash
-npx skills add twostraws/SwiftUI-Agent-Skill -a gemini-cli -g
-```
-
-**Cursor**
-
-```bash
-npx skills add twostraws/SwiftUI-Agent-Skill -a cursor -g
-```
-
-**VS Code (Copilot)**
-
-```bash
-npx skills add twostraws/SwiftUI-Agent-Skill -a github-copilot -g
-```
-
-**OpenCode**
-
-```bash
-npx skills add twostraws/SwiftUI-Agent-Skill -a opencode -g
-```
-
-**Cline**
-
-```bash
-npx skills add twostraws/SwiftUI-Agent-Skill -a cline -g
-```
-
-**Windsurf**
-
-```bash
-npx skills add twostraws/SwiftUI-Agent-Skill -a windsurf -g
-```
-
-**Zed**
-
-```bash
-npx skills add twostraws/SwiftUI-Agent-Skill -a zed -g
-```
-
-**Goose**
-
-```bash
-npx skills add twostraws/SwiftUI-Agent-Skill -a goose -g
-```
-
-**Kiro**
-
-```bash
-npx skills add twostraws/SwiftUI-Agent-Skill -a kiro-cli -g
-```
-
-**Roo Code**
-
-```bash
-npx skills add twostraws/SwiftUI-Agent-Skill -a roo -g
-```
-
-**DeepSeek Harness**
-
-```bash
-npx skills add twostraws/SwiftUI-Agent-Skill -a universal
-```
-
-</details>
-
 <a id="dotnet-skills"></a>
 
 ### .NET / C# agent skills
 
-[dotnet/skills](https://github.com/dotnet/skills) — `Agent Skills` · ★ 6.2k · License: MIT · Works with: All clients
+[dotnet/skills](https://github.com/dotnet/skills) — `Agent Skills` · ★ 6.3k · License: MIT · Works with: All clients
 
 Official skills repository to assist AI coding agents with .NET and C# development conventions and tooling.
 
@@ -1659,7 +1659,7 @@ npx skills add dotnet/skills -a universal
 
 ### Anti-Slop TypeScript lint rules
 
-[dmmulroy/anti-slop](https://github.com/dmmulroy/anti-slop) — `Agent Skills` · ★ 6.1k · License: MIT · Works with: All clients
+[dmmulroy/anti-slop](https://github.com/dmmulroy/anti-slop) — `Agent Skills` · ★ 6.3k · License: MIT · Works with: All clients
 
 Single skill installing opinionated Oxlint rules that reject low-evidence, low-quality TypeScript and JavaScript patterns commonly produced by AI code generation.
 
@@ -2109,7 +2109,7 @@ npx skills add expo/skills -a universal
 
 ### NVIDIA agent skills
 
-[NVIDIA/skills](https://github.com/NVIDIA/skills) — `Agent Skills` · ★ 4.0k · License: Apache-2.0 · Works with: All clients
+[NVIDIA/skills](https://github.com/NVIDIA/skills) — `Agent Skills` · ★ 4.1k · License: Apache-2.0 · Works with: All clients
 
 Official NVIDIA Agent Skills for coding agents covering physical AI, robotics, simulation, CUDA and RAG workflows end to end.
 
@@ -2217,15 +2217,15 @@ gemini extensions install https://github.com/samber/cc-skills-golang
 
 ### Awesome design style skills
 
-[bergside/awesome-design-skills](https://github.com/bergside/awesome-design-skills) — `Agent Skills` · ★ 3.7k · License: MIT · Works with: All clients
+[bergside/awesome-design-skills](https://github.com/bergside/awesome-design-skills) — `Agent Skills` · ★ 3.8k · License: MIT · Works with: All clients
 
 67 DESIGN.md/SKILL.md files, each encoding a distinct visual design style (brutalism, claymorphism, cyberpunk, corporate, and more), for agentic UI generation tools.
 
 **Alternatives:**
 
-- [MengTo/Skills](https://github.com/MengTo/Skills) (★ 7.6k) — Broader designer/builder skill set adding 3D asset and procedural-graphics skills.
-- [Nutlope/hallmark](https://github.com/Nutlope/hallmark) (★ 56k) — Single opinionated skill specifically aimed at rejecting generic 'AI slop' visual design.
-- [JimLiu/baoyu-design](https://github.com/JimLiu/baoyu-design) — Runs a Claude-Design-like flow locally to produce polished mockups, decks and wireframes.
+- [MengTo/Skills](https://github.com/MengTo/Skills) (★ 8.1k) — Broader designer/builder skill set adding 3D asset and procedural-graphics skills.
+- [Nutlope/hallmark](https://github.com/Nutlope/hallmark) (★ 60k) — Single opinionated skill specifically aimed at rejecting generic 'AI slop' visual design.
+- [JimLiu/baoyu-design](https://github.com/JimLiu/baoyu-design) (★ 381) — Runs a Claude-Design-like flow locally to produce polished mockups, decks and wireframes.
 
 <details><summary>Install</summary>
 
@@ -2309,11 +2309,105 @@ npx skills add bergside/awesome-design-skills -a universal
 
 </details>
 
+<a id="motion-design-skill"></a>
+
+### Universal motion design skill
+
+[LottieFiles/motion-design-skill](https://github.com/LottieFiles/motion-design-skill) — `Agent Skills` · ★ 3.6k · License: MIT · Works with: All clients
+
+Official LottieFiles skill encoding universal motion design principles - timing, easing and choreography adapted from Disney animation principles - for UI animation work.
+
+**Alternatives:**
+
+- [Jakubantalik/transitions.dev](https://github.com/Jakubantalik/transitions.dev) (★ 6.5k) — Focused collection of ready-made page and component transitions for web apps.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+npx skills add LottieFiles/motion-design-skill -a claude-code -g
+```
+
+**Codex CLI**
+
+```bash
+npx skills add LottieFiles/motion-design-skill -a codex -g
+```
+
+**Gemini CLI**
+
+```bash
+npx skills add LottieFiles/motion-design-skill -a gemini-cli -g
+```
+
+**Cursor**
+
+```bash
+npx skills add LottieFiles/motion-design-skill -a cursor -g
+```
+
+**VS Code (Copilot)**
+
+```bash
+npx skills add LottieFiles/motion-design-skill -a github-copilot -g
+```
+
+**OpenCode**
+
+```bash
+npx skills add LottieFiles/motion-design-skill -a opencode -g
+```
+
+**Cline**
+
+```bash
+npx skills add LottieFiles/motion-design-skill -a cline -g
+```
+
+**Windsurf**
+
+```bash
+npx skills add LottieFiles/motion-design-skill -a windsurf -g
+```
+
+**Zed**
+
+```bash
+npx skills add LottieFiles/motion-design-skill -a zed -g
+```
+
+**Goose**
+
+```bash
+npx skills add LottieFiles/motion-design-skill -a goose -g
+```
+
+**Kiro**
+
+```bash
+npx skills add LottieFiles/motion-design-skill -a kiro-cli -g
+```
+
+**Roo Code**
+
+```bash
+npx skills add LottieFiles/motion-design-skill -a roo -g
+```
+
+**DeepSeek Harness**
+
+```bash
+npx skills add LottieFiles/motion-design-skill -a universal
+```
+
+</details>
+
 <a id="vuejs-ai-skills"></a>
 
 ### Vue 3 agent skills
 
-[vuejs-ai/skills](https://github.com/vuejs-ai/skills) — `Agent Skills` · ★ 3.3k · License: MIT · Works with: All clients
+[vuejs-ai/skills](https://github.com/vuejs-ai/skills) — `Agent Skills` · ★ 3.4k · License: MIT · Works with: All clients
 
 Official agent skills for Vue 3 development, maintained under the Vue.js organization.
 
@@ -2651,100 +2745,6 @@ extensions:
 
 </details>
 
-<a id="motion-design-skill"></a>
-
-### Universal motion design skill
-
-[LottieFiles/motion-design-skill](https://github.com/LottieFiles/motion-design-skill) — `Agent Skills` · ★ 3.2k · License: MIT · Works with: All clients
-
-Official LottieFiles skill encoding universal motion design principles - timing, easing and choreography adapted from Disney animation principles - for UI animation work.
-
-**Alternatives:**
-
-- [Jakubantalik/transitions.dev](https://github.com/Jakubantalik/transitions.dev) (★ 6.4k) — Focused collection of ready-made page and component transitions for web apps.
-
-<details><summary>Install</summary>
-
-**Claude Code**
-
-```bash
-npx skills add LottieFiles/motion-design-skill -a claude-code -g
-```
-
-**Codex CLI**
-
-```bash
-npx skills add LottieFiles/motion-design-skill -a codex -g
-```
-
-**Gemini CLI**
-
-```bash
-npx skills add LottieFiles/motion-design-skill -a gemini-cli -g
-```
-
-**Cursor**
-
-```bash
-npx skills add LottieFiles/motion-design-skill -a cursor -g
-```
-
-**VS Code (Copilot)**
-
-```bash
-npx skills add LottieFiles/motion-design-skill -a github-copilot -g
-```
-
-**OpenCode**
-
-```bash
-npx skills add LottieFiles/motion-design-skill -a opencode -g
-```
-
-**Cline**
-
-```bash
-npx skills add LottieFiles/motion-design-skill -a cline -g
-```
-
-**Windsurf**
-
-```bash
-npx skills add LottieFiles/motion-design-skill -a windsurf -g
-```
-
-**Zed**
-
-```bash
-npx skills add LottieFiles/motion-design-skill -a zed -g
-```
-
-**Goose**
-
-```bash
-npx skills add LottieFiles/motion-design-skill -a goose -g
-```
-
-**Kiro**
-
-```bash
-npx skills add LottieFiles/motion-design-skill -a kiro-cli -g
-```
-
-**Roo Code**
-
-```bash
-npx skills add LottieFiles/motion-design-skill -a roo -g
-```
-
-**DeepSeek Harness**
-
-```bash
-npx skills add LottieFiles/motion-design-skill -a universal
-```
-
-</details>
-
 <a id="microsoft-skills"></a>
 
 ### Microsoft SDK skills & agents
@@ -2755,7 +2755,7 @@ Skills, MCP servers, custom agents and Agents.md files that ground coding agents
 
 **Alternatives:**
 
-- [microsoft/azure-skills](https://github.com/microsoft/azure-skills) (★ 1.6k) — Same idea narrowed to Azure: skills plus MCP server configs for Azure-specific scenarios.
+- [microsoft/azure-skills](https://github.com/microsoft/azure-skills) (★ 1.7k) — Same idea narrowed to Azure: skills plus MCP server configs for Azure-specific scenarios.
 
 <details><summary>Install</summary>
 
@@ -4606,7 +4606,7 @@ extensions:
 
 ### Unreal Engine 5 automation
 
-[ChiR24/Unreal_mcp](https://github.com/ChiR24/Unreal_mcp) — `MCP server` · ★ 1.0k · License: MIT · Works with: All clients
+[ChiR24/Unreal_mcp](https://github.com/ChiR24/Unreal_mcp) — `MCP server` · ★ 1.1k · License: MIT · Works with: All clients
 
 23 tools for Unreal Engine 5 game development automation.
 
@@ -4795,7 +4795,7 @@ extensions:
 
 ### Sentry MCP
 
-[Sentry MCP](https://github.com/getsentry/sentry-mcp) — `MCP server` · ★ 964 · License: see repo · Works with: All clients
+[Sentry MCP](https://github.com/getsentry/sentry-mcp) — `MCP server` · ★ 973 · License: see repo · Works with: All clients
 
 Query Sentry issues, events, traces and releases from the agent; OAuth sign-in on the remote endpoint.
 
@@ -5146,7 +5146,7 @@ extensions:
 
 ### Public tunnels for localhost services
 
-[rustunnel](https://github.com/joaoh82/rustunnel) — `MCP server` · ★ 665 · License: AGPL-3.0 · Works with: All clients
+[rustunnel](https://github.com/joaoh82/rustunnel) — `MCP server` · ★ 668 · License: AGPL-3.0 · Works with: All clients
 
 Gives agents public HTTPS/TCP/UDP URLs for any localhost service; open source and self-hostable.
 
@@ -5351,7 +5351,7 @@ extensions:
 
 ### Control TouchDesigner projects
 
-[8beeeaaat/touchdesigner-mcp](https://github.com/8beeeaaat/touchdesigner-mcp) — `MCP server` · ★ 635 · License: MIT · Works with: All clients
+[8beeeaaat/touchdesigner-mcp](https://github.com/8beeeaaat/touchdesigner-mcp) — `MCP server` · ★ 639 · License: MIT · Works with: All clients
 
 Controls and operates TouchDesigner projects through AI agents.
 
@@ -5540,14 +5540,14 @@ extensions:
 
 ### Manage skills from a settings panel
 
-[MichengAI/dsh-skills-manager](https://github.com/MichengAI/dsh-skills-manager) — `Native plugin` · ★ 577 · License: Apache-2.0 · Works with: DeepSeek Harness only
+[MichengAI/dsh-skills-manager](https://github.com/MichengAI/dsh-skills-manager) — `Native plugin` · ★ 606 · License: Apache-2.0 · Works with: DeepSeek Harness only
 
 Manages local DeepSeek Harness skills from the Settings screen and shows Agent skills shared by the team as read-only entries.
 
 **Alternatives:**
 
 - [minivv/dsh-agent-skills](https://github.com/minivv/dsh-agent-skills) (★ 17) — Also browses and toggles skills sourced from Codex, OpenCode, Gemini and custom directories
-- [Fishquito7/dsh-skill-mcp-panel](https://github.com/Fishquito7/dsh-skill-mcp-panel) (★ 278) — Adds MCP server CRUD (stdio/HTTP) with connection tests, secret redaction and batch migration
+- [Fishquito7/dsh-skill-mcp-panel](https://github.com/Fishquito7/dsh-skill-mcp-panel) (★ 287) — Adds MCP server CRUD (stdio/HTTP) with connection tests, secret redaction and batch migration
 
 <details><summary>Install</summary>
 
@@ -5563,15 +5563,15 @@ dsh plugin --profile web add github:MichengAI/dsh-skills-manager
 
 ### Godot 4.x engine control
 
-[Godot MCP](https://github.com/tugcantopaloglu/godot-mcp) — `MCP server` · ★ 518 · License: MIT · Works with: All clients
+[Godot MCP](https://github.com/tugcantopaloglu/godot-mcp) — `MCP server` · ★ 523 · License: MIT · Works with: All clients
 
 Full Godot 4.x engine control with 165 tools for AI-driven game development.
 
 **Alternatives:**
 
 - [tomyud1/godot-mcp/tree/main/mcp-server](https://github.com/tomyud1/godot-mcp/tree/main/mcp-server) — Controls the Godot editor from AI for Godot game engine integration.
-- [HaD0Yun/godot-mcp](https://github.com/HaD0Yun/godot-mcp) (★ 274) — 95+ Godot Engine tools with LSP, DAP, and screenshot support.
-- [Glade-tool/glade-mcp](https://github.com/Glade-tool/glade-mcp) (★ 206) — Controls both the Unity and Godot editors: scenes, scripts, physics, and materials.
+- [HaD0Yun/godot-mcp](https://github.com/HaD0Yun/godot-mcp) (★ 275) — 95+ Godot Engine tools with LSP, DAP, and screenshot support.
+- [Glade-tool/glade-mcp](https://github.com/Glade-tool/glade-mcp) (★ 204) — Controls both the Unity and Godot editors: scenes, scripts, physics, and materials.
 
 <details><summary>Install</summary>
 
@@ -5748,6 +5748,195 @@ extensions:
         transport: stdio
         command: npx
         args: ["-y","@tugcantopaloglu/godot-mcp"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
+<a id="flutter-skill-mcp"></a>
+
+### AI-powered E2E testing, 10 platforms
+
+[ai-dashboad/flutter-skill](https://github.com/ai-dashboad/flutter-skill) — `MCP server` · ★ 412 · License: MIT · Works with: All clients
+
+AI-powered end-to-end testing for 10 platforms with 253 tools, requiring no test code.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio flutter-skill -- npx -y flutter-skill
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add flutter-skill -- npx -y flutter-skill
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add flutter-skill npx -y flutter-skill
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "flutter-skill": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "flutter-skill"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "flutter-skill": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "flutter-skill"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "flutter-skill": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "flutter-skill"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "flutter-skill": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "flutter-skill"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "flutter-skill": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "flutter-skill"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "flutter-skill": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "flutter-skill"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  flutter-skill:
+    type: stdio
+    cmd: npx
+    args: ["-y","flutter-skill"]
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "flutter-skill": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "flutter-skill"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "flutter-skill": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "flutter-skill"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `flutter-skill.cordis.yml  →  dsh web --patch ./flutter-skill.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-flutter-skill
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: flutter-skill
+        transport: stdio
+        command: npx
+        args: ["-y","flutter-skill"]
         env: {}
         cwd: !!js process.cwd()
 ```
@@ -5943,200 +6132,11 @@ extensions:
 
 </details>
 
-<a id="flutter-skill-mcp"></a>
-
-### AI-powered E2E testing, 10 platforms
-
-[ai-dashboad/flutter-skill](https://github.com/ai-dashboad/flutter-skill) — `MCP server` · ★ 407 · License: MIT · Works with: All clients
-
-AI-powered end-to-end testing for 10 platforms with 253 tools, requiring no test code.
-
-<details><summary>Install</summary>
-
-**Claude Code**
-
-```bash
-claude mcp add --transport stdio flutter-skill -- npx -y flutter-skill
-```
-
-**Codex CLI**
-
-```bash
-codex mcp add flutter-skill -- npx -y flutter-skill
-```
-
-**Gemini CLI**
-
-```bash
-gemini mcp add flutter-skill npx -y flutter-skill
-```
-
-**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "flutter-skill": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "flutter-skill"
-      ]
-    }
-  }
-}
-```
-
-**VS Code (Copilot)** — File: `.vscode/mcp.json`
-
-```json
-{
-  "servers": {
-    "flutter-skill": {
-      "type": "stdio",
-      "command": "npx",
-      "args": [
-        "-y",
-        "flutter-skill"
-      ]
-    }
-  }
-}
-```
-
-**OpenCode** — File: `opencode.json`
-
-```json
-{
-  "$schema": "https://opencode.ai/config.json",
-  "mcp": {
-    "flutter-skill": {
-      "type": "local",
-      "command": [
-        "npx",
-        "-y",
-        "flutter-skill"
-      ],
-      "enabled": true
-    }
-  }
-}
-```
-
-**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
-
-```json
-{
-  "mcpServers": {
-    "flutter-skill": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "flutter-skill"
-      ]
-    }
-  }
-}
-```
-
-**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
-
-```json
-{
-  "mcpServers": {
-    "flutter-skill": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "flutter-skill"
-      ]
-    }
-  }
-}
-```
-
-**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
-
-```json
-{
-  "context_servers": {
-    "flutter-skill": {
-      "source": "custom",
-      "command": "npx",
-      "args": [
-        "-y",
-        "flutter-skill"
-      ]
-    }
-  }
-}
-```
-
-**Goose** — File: `~/.config/goose/config.yaml`
-
-```yaml
-extensions:
-  flutter-skill:
-    type: stdio
-    cmd: npx
-    args: ["-y","flutter-skill"]
-    enabled: true
-```
-
-**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "flutter-skill": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "flutter-skill"
-      ]
-    }
-  }
-}
-```
-
-**Roo Code** — File: `.roo/mcp.json`
-
-```json
-{
-  "mcpServers": {
-    "flutter-skill": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "flutter-skill"
-      ]
-    }
-  }
-}
-```
-
-**DeepSeek Harness** — File: `flutter-skill.cordis.yml  →  dsh web --patch ./flutter-skill.cordis.yml`
-
-```yaml
-- insert:
-    - id: mcp-flutter-skill
-      name: '@deepseek-ai/dsh-mcp-client'
-      config:
-        serverName: flutter-skill
-        transport: stdio
-        command: npx
-        args: ["-y","flutter-skill"]
-        env: {}
-        cwd: !!js process.cwd()
-```
-
-</details>
-
 <a id="clauder-mcp"></a>
 
 ### RStudio AI assistant connection
 
-[ClaudeR - RStudio MCP Server](https://github.com/IMNMV/ClaudeR) — `MCP server` · ★ 371 · License: see repo · Works with: All clients
+[ClaudeR - RStudio MCP Server](https://github.com/IMNMV/ClaudeR) — `MCP server` · ★ 373 · License: see repo · Works with: All clients
 
 Connects RStudio to AI assistants for interactive R coding and data analysis.
 
@@ -6317,7 +6317,7 @@ extensions:
 
 ### Full Postman platform access
 
-[Postman MCP Server](https://github.com/postmanlabs/postman-mcp-server) — `MCP server` · ★ 333 · License: Apache-2.0 · Works with: All clients
+[Postman MCP Server](https://github.com/postmanlabs/postman-mcp-server) — `MCP server` · ★ 332 · License: Apache-2.0 · Works with: All clients
 
 Official server giving AI agents trusted access to the full Postman platform; needs a POSTMAN_API_KEY.
 
@@ -6528,11 +6528,177 @@ extensions:
 
 </details>
 
+<a id="squirrelscan-mcp"></a>
+
+### Website QA audits
+
+[squirrelscan](https://github.com/squirrelscan/squirrelscan) — `MCP server` · ★ 332 · License: MIT · Works with: All clients
+
+Website QA for coding agents: audits SEO, performance, security, and accessibility.
+
+**Alternatives:**
+
+- [priyankark/lighthouse-mcp](https://github.com/priyankark/lighthouse-mcp) (★ 220) — Google Lighthouse performance metrics for a page.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport http squirrelscan https://mcp.squirrelscan.com/mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add squirrelscan --url https://mcp.squirrelscan.com/mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add --transport http squirrelscan https://mcp.squirrelscan.com/mcp
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "squirrelscan": {
+      "url": "https://mcp.squirrelscan.com/mcp"
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "squirrelscan": {
+      "type": "http",
+      "url": "https://mcp.squirrelscan.com/mcp"
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "squirrelscan": {
+      "type": "remote",
+      "url": "https://mcp.squirrelscan.com/mcp",
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "squirrelscan": {
+      "type": "streamableHttp",
+      "url": "https://mcp.squirrelscan.com/mcp"
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "squirrelscan": {
+      "serverUrl": "https://mcp.squirrelscan.com/mcp"
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "squirrelscan": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://mcp.squirrelscan.com/mcp"
+      ]
+    }
+  }
+}
+```
+_Remote server bridged through the mcp-remote stdio proxy._
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  squirrelscan:
+    type: streamable_http
+    uri: https://mcp.squirrelscan.com/mcp
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "squirrelscan": {
+      "type": "streamable-http",
+      "url": "https://mcp.squirrelscan.com/mcp"
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "squirrelscan": {
+      "type": "streamable-http",
+      "url": "https://mcp.squirrelscan.com/mcp"
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `squirrelscan.cordis.yml  →  dsh web --patch ./squirrelscan.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-squirrelscan
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: squirrelscan
+        transport: streamable-http
+        url: https://mcp.squirrelscan.com/mcp
+```
+
+</details>
+
 <a id="dsh-oh-dsh"></a>
 
 ### All-in-one DSH distribution bundle
 
-[hust-open-atom-club/oh-dsh](https://github.com/hust-open-atom-club/oh-dsh) — `Native plugin` · ★ 324 · License: MIT · Works with: DeepSeek Harness only
+[hust-open-atom-club/oh-dsh](https://github.com/hust-open-atom-club/oh-dsh) — `Native plugin` · ★ 325 · License: MIT · Works with: DeepSeek Harness only
 
 Community distribution that bundles the TUI, desktop app and Web UI together as one package with layered installation.
 
@@ -6550,7 +6716,7 @@ dsh plugin --profile web add github:hust-open-atom-club/oh-dsh
 
 ### Expose GraphQL operations as tools
 
-[Apollo MCP Server](https://github.com/apollographql/apollo-mcp-server) — `MCP server` · ★ 319 · License: MIT · Works with: All clients
+[Apollo MCP Server](https://github.com/apollographql/apollo-mcp-server) — `MCP server` · ★ 322 · License: MIT · Works with: All clients
 
 Official Apollo server that exposes GraphQL operations as tools for AI models.
 
@@ -6747,172 +6913,6 @@ extensions:
         args: ["run","-i","--rm","ghcr.io/apollographql/apollo-mcp-server:v1.19.0"]
         env: {}
         cwd: !!js process.cwd()
-```
-
-</details>
-
-<a id="squirrelscan-mcp"></a>
-
-### Website QA audits
-
-[squirrelscan](https://github.com/squirrelscan/squirrelscan) — `MCP server` · ★ 313 · License: MIT · Works with: All clients
-
-Website QA for coding agents: audits SEO, performance, security, and accessibility.
-
-**Alternatives:**
-
-- [priyankark/lighthouse-mcp](https://github.com/priyankark/lighthouse-mcp) (★ 219) — Google Lighthouse performance metrics for a page.
-
-<details><summary>Install</summary>
-
-**Claude Code**
-
-```bash
-claude mcp add --transport http squirrelscan https://mcp.squirrelscan.com/mcp
-```
-
-**Codex CLI**
-
-```bash
-codex mcp add squirrelscan --url https://mcp.squirrelscan.com/mcp
-```
-
-**Gemini CLI**
-
-```bash
-gemini mcp add --transport http squirrelscan https://mcp.squirrelscan.com/mcp
-```
-
-**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "squirrelscan": {
-      "url": "https://mcp.squirrelscan.com/mcp"
-    }
-  }
-}
-```
-
-**VS Code (Copilot)** — File: `.vscode/mcp.json`
-
-```json
-{
-  "servers": {
-    "squirrelscan": {
-      "type": "http",
-      "url": "https://mcp.squirrelscan.com/mcp"
-    }
-  }
-}
-```
-
-**OpenCode** — File: `opencode.json`
-
-```json
-{
-  "$schema": "https://opencode.ai/config.json",
-  "mcp": {
-    "squirrelscan": {
-      "type": "remote",
-      "url": "https://mcp.squirrelscan.com/mcp",
-      "enabled": true
-    }
-  }
-}
-```
-
-**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
-
-```json
-{
-  "mcpServers": {
-    "squirrelscan": {
-      "type": "streamableHttp",
-      "url": "https://mcp.squirrelscan.com/mcp"
-    }
-  }
-}
-```
-
-**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
-
-```json
-{
-  "mcpServers": {
-    "squirrelscan": {
-      "serverUrl": "https://mcp.squirrelscan.com/mcp"
-    }
-  }
-}
-```
-
-**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
-
-```json
-{
-  "context_servers": {
-    "squirrelscan": {
-      "source": "custom",
-      "command": "npx",
-      "args": [
-        "-y",
-        "mcp-remote",
-        "https://mcp.squirrelscan.com/mcp"
-      ]
-    }
-  }
-}
-```
-_Remote server bridged through the mcp-remote stdio proxy._
-
-**Goose** — File: `~/.config/goose/config.yaml`
-
-```yaml
-extensions:
-  squirrelscan:
-    type: streamable_http
-    uri: https://mcp.squirrelscan.com/mcp
-    enabled: true
-```
-
-**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "squirrelscan": {
-      "type": "streamable-http",
-      "url": "https://mcp.squirrelscan.com/mcp"
-    }
-  }
-}
-```
-
-**Roo Code** — File: `.roo/mcp.json`
-
-```json
-{
-  "mcpServers": {
-    "squirrelscan": {
-      "type": "streamable-http",
-      "url": "https://mcp.squirrelscan.com/mcp"
-    }
-  }
-}
-```
-
-**DeepSeek Harness** — File: `squirrelscan.cordis.yml  →  dsh web --patch ./squirrelscan.cordis.yml`
-
-```yaml
-- insert:
-    - id: mcp-squirrelscan
-      name: '@deepseek-ai/dsh-mcp-client'
-      config:
-        serverName: squirrelscan
-        transport: streamable-http
-        url: https://mcp.squirrelscan.com/mcp
 ```
 
 </details>
@@ -7136,7 +7136,7 @@ extensions:
 
 ### Diagnose and repair DSH installs
 
-[sjh9714/dsh-win32](https://github.com/sjh9714/dsh-win32) — `Native plugin` · ★ 168 · License: MIT · Works with: DeepSeek Harness only
+[sjh9714/dsh-win32](https://github.com/sjh9714/dsh-win32) — `Native plugin` · ★ 170 · License: MIT · Works with: DeepSeek Harness only
 
 Diagnoses and repairs DeepSeek Harness on native Windows around the official PowerShell and Workspace Write stack, creates a desktop shortcut, and keeps legacy Git Bash/BusyBox presets behind an explicit opt-in. No WSL required.
 
@@ -7160,7 +7160,7 @@ dsh plugin --profile web add github:sjh9714/dsh-win32
 
 ### Add WSL workspace from web GUI
 
-[6Mikao9/dsh-wsl-workspace](https://github.com/6Mikao9/dsh-wsl-workspace) — `Native plugin` · ★ 123 · License: MIT · Works with: DeepSeek Harness only
+[6Mikao9/dsh-wsl-workspace](https://github.com/6Mikao9/dsh-wsl-workspace) — `Native plugin` · ★ 124 · License: MIT · Works with: DeepSeek Harness only
 
 Adds a WSL workspace from the web GUI without needing to install DSH or related tools again inside WSL. Bash commands and file read/write operations run inside the local WSL distribution on the host machine, while Windows files stay accessible.
 
@@ -7182,7 +7182,7 @@ dsh plugin --profile web add github:6Mikao9/dsh-wsl-workspace
 
 ### MCP client runtime status panel
 
-[PerryLink/dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) — `Native plugin` · ★ 94 · License: Apache-2.0 · Works with: DeepSeek Harness only
+[PerryLink/dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) — `Native plugin` · ★ 98 · License: Apache-2.0 · Works with: DeepSeek Harness only
 
 Read-only runtime panel for the official DSH MCP client: shows connection status, registered tools, errors and reconnect counts through the /mcp command and a Settings tab, with sanitized display and enable/disable patch suggestions.
 
@@ -7200,13 +7200,13 @@ dsh plugin --profile web add github:PerryLink/dsh-mcp-panel
 
 ### Export session traces to OTel
 
-[loongsuite/dsh-plugin](https://github.com/loongsuite/dsh-plugin) — `Native plugin` · ★ 31 · License: Apache-2.0 · Works with: DeepSeek Harness only
+[loongsuite/dsh-plugin](https://github.com/loongsuite/dsh-plugin) — `Native plugin` · ★ 32 · License: Apache-2.0 · Works with: DeepSeek Harness only
 
 Converts session, agent-loop, LLM and tool lifecycle events into OpenTelemetry GenAI traces and metrics, exported over OTLP/HTTP to any compatible backend, with content capture off by default.
 
 **Alternatives:**
 
-- [PerryLink/dsh-observe](https://github.com/PerryLink/dsh-observe) (★ 15) — Also exports sanitized, buffered traces and metrics directly to Langfuse
+- [PerryLink/dsh-observe](https://github.com/PerryLink/dsh-observe) (★ 17) — Also exports sanitized, buffered traces and metrics directly to Langfuse
 - [xxiaoxiong/dsh-prometheus](https://github.com/xxiaoxiong/dsh-prometheus) (★ 1) — Exposes Prometheus metrics with a Grafana dashboard on a loopback-only endpoint by default
 
 <details><summary>Install</summary>
@@ -7229,7 +7229,7 @@ Refines prompts, memory, skills and subagent specs from session trajectories int
 
 **Alternatives:**
 
-- [jasen215/dsh-continual-harness](https://github.com/jasen215/dsh-continual-harness) (★ 17) — Runs the refinement loop periodically and exposes it as a model-callable harness_refine tool
+- [jasen215/dsh-continual-harness](https://github.com/jasen215/dsh-continual-harness) (★ 18) — Runs the refinement loop periodically and exposes it as a model-callable harness_refine tool
 
 <details><summary>Install</summary>
 
@@ -7303,7 +7303,7 @@ dsh plugin --profile web add github:sjh9714/dsh-movein
 
 ### Search large MCP catalogs on demand
 
-[labmimors/dsh-mcp-lens](https://github.com/labmimors/dsh-mcp-lens) — `Native plugin` · ★ 12 · License: MIT · Works with: DeepSeek Harness only
+[labmimors/dsh-mcp-lens](https://github.com/labmimors/dsh-mcp-lens) — `Native plugin` · ★ 13 · License: MIT · Works with: DeepSeek Harness only
 
 Progressive-disclosure MCP gateway that searches large remote tool catalogs through mcp_search, then invokes the exact schema through mcp_call, using lazy connections and bounded caches to avoid loading every tool upfront.
 

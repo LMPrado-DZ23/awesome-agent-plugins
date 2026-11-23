@@ -17,7 +17,7 @@
 
 ### Context lifecycle dashboard
 
-[bowenliang123/dsh-context](https://github.com/bowenliang123/dsh-context) — `Native plugin` · ★ 5.2k · License: Apache-2.0 · Works with: DeepSeek Harness only
+[bowenliang123/dsh-context](https://github.com/bowenliang123/dsh-context) — `Native plugin` · ★ 5.4k · License: Apache-2.0 · Works with: DeepSeek Harness only
 
 Dashboard, /context command, and browser for one-stop context lifecycle management: categorized composition, content details, evolution trends over time, and compaction and injection events.
 
@@ -39,14 +39,14 @@ dsh plugin --profile web add github:bowenliang123/dsh-context
 
 ### Session and daily cost dashboard
 
-[Han-1413141/dsh-cost-meter](https://github.com/Han-1413141/dsh-cost-meter) — `Native plugin` · ★ 704 · License: MIT · Works with: DeepSeek Harness only
+[Han-1413141/dsh-cost-meter](https://github.com/Han-1413141/dsh-cost-meter) — `Native plugin` · ★ 746 · License: MIT · Works with: DeepSeek Harness only
 
 Tracks per-session and daily API cost against a budget with usage percentage, shows the official account balance, keeps a history dashboard, and syncs official peak/off-peak pricing with one click.
 
 **Alternatives:**
 
 - [feibi-mochi/deepseek-harness-control-center](https://github.com/feibi-mochi/deepseek-harness-control-center) (★ 77) — Adds official recharge, completion alerts, flexible layouts, and agent-assisted session controls.
-- [kenz1117/dsh-ui-usage-billing](https://github.com/kenz1117/dsh-ui-usage-billing) (★ 104) — Estimates cost in CNY from a current multi-provider pricing catalog and exempts subscription-plan routes from the total.
+- [kenz1117/dsh-ui-usage-billing](https://github.com/kenz1117/dsh-ui-usage-billing) (★ 110) — Estimates cost in CNY from a current multi-provider pricing catalog and exempts subscription-plan routes from the total.
 - [nonewind/dsh-spend](https://github.com/nonewind/dsh-spend) (★ 8) — Shows a floating panel with per-model, per-day, and per-session token stats.
 - [Max-Samson/dsh-usage-chart](https://github.com/Max-Samson/dsh-usage-chart) (★ 9) — Adds zero-dependency SVG charts for per-turn usage and cost directly under the composer.
 

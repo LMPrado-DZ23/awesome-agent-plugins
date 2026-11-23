@@ -19,7 +19,7 @@
 
 ### Serena
 
-[Serena](https://github.com/oraios/serena) — `MCP server` · ★ 31k · License: see repo · Works with: All clients
+[Serena](https://github.com/oraios/serena) — `MCP server` · ★ 32k · License: see repo · Works with: All clients
 
 Semantic code retrieval and editing through language servers: find symbols and references, and edit at symbol level instead of by text.
 
@@ -1378,7 +1378,7 @@ extensions:
 
 ### Layered code graph with SCIP
 
-[Hex Graph](https://github.com/levnikolaevich/claude-code-skills) — `MCP server` · ★ 596 · License: MIT · Works with: All clients
+[Hex Graph](https://github.com/levnikolaevich/claude-code-skills) — `MCP server` · ★ 597 · License: MIT · Works with: All clients
 
 Deterministic layered code graph server with framework overlays and SCIP interoperability.
 
@@ -1567,7 +1567,7 @@ extensions:
 
 ### Local semantic code indexer
 
-[Octocode](https://github.com/muvon/octocode) — `MCP server` · ★ 524 · License: Apache-2.0 · Works with: All clients
+[Octocode](https://github.com/muvon/octocode) — `MCP server` · ★ 529 · License: Apache-2.0 · Works with: All clients
 
 AI-powered code indexer for a local repository with semantic search and knowledge graphs.
 
@@ -1756,7 +1756,7 @@ extensions:
 
 ### Semantic search for files and code
 
-[Vexor](https://github.com/scarletkc/vexor) — `MCP server` · ★ 248 · License: MIT · Works with: All clients
+[Vexor](https://github.com/scarletkc/vexor) — `MCP server` · ★ 247 · License: MIT · Works with: All clients
 
 A semantic search engine for files and code; needs a VEXOR_API_KEY (and optionally a rerank API key).
 

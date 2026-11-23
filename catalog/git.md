@@ -213,7 +213,7 @@ extensions:
 
 ### Alibaba open code review
 
-[alibaba/open-code-review](https://github.com/alibaba/open-code-review) — `Agent Skills` · ★ 53k · License: Apache-2.0 · Works with: All clients
+[alibaba/open-code-review](https://github.com/alibaba/open-code-review) — `Agent Skills` · ★ 55k · License: Apache-2.0 · Works with: All clients
 
 Hybrid code-review tool battle-tested at Alibaba's scale, combining deterministic pipelines with an LLM agent for precise, line-level comments and a built-in multi-language security ruleset.
 
@@ -531,7 +531,7 @@ extensions:
 
 ### Manage repos across Git hosts
 
-[gitkraken/gk-cli](https://github.com/gitkraken/gk-cli) — `MCP server` · ★ 467 · License: see repo · Works with: All clients
+[gitkraken/gk-cli](https://github.com/gitkraken/gk-cli) — `MCP server` · ★ 468 · License: see repo · Works with: All clients
 
 The GitKraken server for managing repos, pull requests, and issues across GitHub, GitLab, and Bitbucket.
 
@@ -909,7 +909,7 @@ extensions:
 
 ### GitHub CI and PR review bot
 
-[PerryLink/dsh-github](https://github.com/PerryLink/dsh-github) — `Native plugin` · ★ 31 · License: Apache-2.0 · Works with: DeepSeek Harness only
+[PerryLink/dsh-github](https://github.com/PerryLink/dsh-github) — `Native plugin` · ★ 34 · License: Apache-2.0 · Works with: DeepSeek Harness only
 
 Official-grade GitHub CI integration: a composite action.yml, a polling PR review bot with idempotent inline comments and a status-check gate, plus PR and issue tools where every write is gated by human approval.
 
@@ -931,7 +931,7 @@ dsh plugin --profile web add github:PerryLink/dsh-github
 
 ### Git worktree session targets
 
-[wloops/dsh-git-worktree](https://github.com/wloops/dsh-git-worktree) — `Native plugin` · ★ 22 · License: MIT · Works with: DeepSeek Harness only
+[wloops/dsh-git-worktree](https://github.com/wloops/dsh-git-worktree) — `Native plugin` · ★ 23 · License: MIT · Works with: DeepSeek Harness only
 
 Git-worktree Session Targets with isolated task sessions, ready-for-review status, reversible local preview, human-confirmed delivery, environment retention and recovery, and same-session iteration.
 
@@ -1018,7 +1018,7 @@ A strip above the composer lists files modified in the current session (collapse
 
 **Alternatives:**
 
-- [cirelir/dsh-change-review](https://github.com/cirelir/dsh-change-review) (★ 14) — Tracks write/edit calls with session isolation, subagent aggregation and SSE live updates, also without needing git
+- [cirelir/dsh-change-review](https://github.com/cirelir/dsh-change-review) (★ 15) — Tracks write/edit calls with session isolation, subagent aggregation and SSE live updates, also without needing git
 - [9087/dsh-diff-approval](https://github.com/9087/dsh-diff-approval) (★ 16) — Lets each change block be kept or reverted individually, supports undo/redo, and persists the review across restarts
 - [Tlyer233/dsh-vscode-review#dsh-review](https://github.com/Tlyer233/dsh-vscode-review/tree/main/dsh-review) — Records every write, edit and shell rm into a shadow git repo, reviewable hunk-by-hunk inside a companion VS Code extension
 

@@ -5,8 +5,8 @@
 > This page is generated from `data/entries/` — do not edit by hand.
 
 - [HyperFrames](#hyperframes-skills) — Skills and CLI for writing videos as HTML compositions and rendering them to MP4/WebM, built for agents.
-- [Give Claude the ability to watch video](#claude-video) — Skill that lets Claude watch any video: it downloads it, extracts frames, transcribes the audio, and hands it …
 - [Cinematic video shot skill](#video-shotcraft) — AI video skill for Claude Code and Codex that produces cinematic product videos with Remotion, backed by 152 s…
+- [Give Claude the ability to watch video](#claude-video) — Skill that lets Claude watch any video: it downloads it, extracts frames, transcribes the audio, and hands it …
 - [Pipecat voice agent framework](#pipecat) — Open-source framework for building voice agents, multimodal apps and realtime AI, maintained by Daily and the …
 - [Remotion official video skills](#remotion-dev-skills) — Official skill pack for Remotion (programmatic video with React), covering best practices, captions, interacti…
 - [GPT Image prompt library & CLI](#gpt-image2-skill) — Prompt gallery, image prompt library, agentic skill and CLI for OpenAI's GPT Image 2/2.5 generation and editin…
@@ -18,17 +18,17 @@
 - [Natural voice conversations](#voicemode-mcp) — Natural voice conversations for AI assistants via speech-to-text and text-to-speech; needs an OPENAI_API_KEY.
 - [ComfyUI workflow control](#comfyui-mcp) — Server and Claude Code plugin for ComfyUI: run workflows, generate images, and manage models and VRAM.
 - [Adobe Photoshop automation](#photoshop-mcp) — 116 tools for controlling Adobe Photoshop, combining generative AI actions with recipes, plus a standalone web…
-- [Gemini image generation and editing](#nanobanana-mcp-server) — Provides image generation and editing capabilities via Gemini; needs a GEMINI_API_KEY.
 - [Drive Google Flow video generation](#gflow-cli-mcp) — Drives Google Flow from an agent for Veo video and Imagen image generation.
+- [Gemini image generation and editing](#nanobanana-mcp-server) — Provides image generation and editing capabilities via Gemini; needs a GEMINI_API_KEY.
 - [Glif's media-generation agent](#glif-mcp-server) — Generates images, video, and audio with Glif's media-generation agent.
 - [AI image generation](#dsh-dsh-imagegen) — Adds text-to-image and image-to-image generation to the DSH Web GUI through a configurable OpenAI-compatible e…
 - [Drive ComfyUI image/video workflows](#dsh-dsh-comfyui) — Drives a local or remote ComfyUI server: tools to run workflows, inspect nodes, and edit graphs, with a templa…
-- [Design-fidelity visual QA](#dsh-dsh-design-qa) — Lets a text-only model judge whether an implementation matches its design mock, via a deepseek_vision tool tha…
 - [muapi generative media skills](#generative-media-skills) — 73 skills for high-quality multi-modal image, video and audio generation through the muapi API, covering ad cr…
+- [Design-fidelity visual QA](#dsh-dsh-design-qa) — Lets a text-only model judge whether an implementation matches its design mock, via a deepseek_vision tool tha…
 - [Read replies aloud (TTS)](#dsh-dsh-speak) — Announces final replies, approvals, and questions with the system's built-in natural voice on Windows and macO…
+- [TTS/ASR utility toolkit](#dsh-dsh-voice) — A voice utility toolkit: free edge-tts speech synthesis, OpenAI-compatible ASR transcription, a voice list, ba…
 - [UI sound effects and alerts](#dsh-dsh-plugin-uisfx) — Adds semantic UI sound effects for task start, success, and failure, plus per-button cues, with 12 sound packs…
 - [Screenshot capture into composer](#dsh-dsh-plugin-appshot) — Captures the frontmost active window via a global shortcut and mounts it directly into the composer for agent …
-- [TTS/ASR utility toolkit](#dsh-dsh-voice) — A voice utility toolkit: free edge-tts speech synthesis, OpenAI-compatible ASR transcription, a voice list, ba…
 - [Agent-initiated voice calls](#dsh-dsh-voice-call) — Lets the agent ring the human with an offer_call tool; if accepted, it synthesizes and plays speech locally vi…
 - [Voice dictation and read-aloud](#dsh-dsh-chatvoice) — A free voice closed loop for the Web UI: browser speech recognition for mic input with live interim results, p…
 - [Unified text/vision/image-gen routing](#dsh-dsh-vision-mix) — Routes each request to the right modality inside one Mix model: text-only goes to the chat model, images go to…
@@ -40,7 +40,7 @@
 
 ### HyperFrames
 
-[HyperFrames](https://github.com/heygen-com/hyperframes) — `Agent Skills` · ★ 85k · License: Apache-2.0 · Works with: All clients
+[HyperFrames](https://github.com/heygen-com/hyperframes) — `Agent Skills` · ★ 88k · License: Apache-2.0 · Works with: All clients
 
 Skills and CLI for writing videos as HTML compositions and rendering them to MP4/WebM, built for agents.
 
@@ -126,11 +126,19 @@ npx skills add heygen-com/hyperframes -a universal
 
 </details>
 
+<a id="video-shotcraft"></a>
+
+### Cinematic video shot skill
+
+[Vincentwei1021/video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft) — `Curated list / registry` · ★ 22k · License: Apache-2.0 · Works with: —
+
+AI video skill for Claude Code and Codex that produces cinematic product videos with Remotion, backed by 152 shot-recipe cards and 209 motion previews.
+
 <a id="claude-video"></a>
 
 ### Give Claude the ability to watch video
 
-[bradautomates/claude-video](https://github.com/bradautomates/claude-video) — `Agent Skills` · ★ 21k · License: MIT · Works with: All clients
+[bradautomates/claude-video](https://github.com/bradautomates/claude-video) — `Agent Skills` · ★ 22k · License: MIT · Works with: All clients
 
 Skill that lets Claude watch any video: it downloads it, extracts frames, transcribes the audio, and hands it all back for analysis.
 
@@ -215,14 +223,6 @@ npx skills add bradautomates/claude-video -a universal
 ```
 
 </details>
-
-<a id="video-shotcraft"></a>
-
-### Cinematic video shot skill
-
-[Vincentwei1021/video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft) — `Curated list / registry` · ★ 20k · License: Apache-2.0 · Works with: —
-
-AI video skill for Claude Code and Codex that produces cinematic product videos with Remotion, backed by 152 shot-recipe cards and 209 motion previews.
 
 <a id="pipecat"></a>
 
@@ -318,7 +318,7 @@ npx skills add pipecat-ai/pipecat -a universal
 
 ### Remotion official video skills
 
-[remotion-dev/skills](https://github.com/remotion-dev/skills) — `Agent Skills` · ★ 7.3k · License: see repo · Works with: All clients
+[remotion-dev/skills](https://github.com/remotion-dev/skills) — `Agent Skills` · ★ 7.8k · License: see repo · Works with: All clients
 
 Official skill pack for Remotion (programmatic video with React), covering best practices, captions, interactivity, maps, rendering and Remotion Studio usage.
 
@@ -408,7 +408,7 @@ npx skills add remotion-dev/skills -a universal
 
 ### GPT Image prompt library & CLI
 
-[wuyoscar/GPT-Image2-Skill](https://github.com/wuyoscar/GPT-Image2-Skill) — `Agent Skills` · ★ 6.1k · License: MIT · Works with: All clients
+[wuyoscar/GPT-Image2-Skill](https://github.com/wuyoscar/GPT-Image2-Skill) — `Agent Skills` · ★ 6.2k · License: MIT · Works with: All clients
 
 Prompt gallery, image prompt library, agentic skill and CLI for OpenAI's GPT Image 2/2.5 generation and editing.
 
@@ -498,14 +498,14 @@ npx skills add wuyoscar/GPT-Image2-Skill -a universal
 
 ### Vision bridge for text-only models
 
-[liustack/modlens](https://github.com/liustack/modlens) — `Native plugin` · ★ 5.0k · License: MIT · Works with: DeepSeek Harness only
+[liustack/modlens](https://github.com/liustack/modlens) — `Native plugin` · ★ 5.1k · License: MIT · Works with: DeepSeek Harness only
 
 Turns pasted images into structured JSON evidence — OCR, layout, and semantics — so text-only models can understand and reason about screenshots and pictures.
 
 **Alternatives:**
 
 - [ysr666/dsh-vision-router](https://github.com/ysr666/dsh-vision-router) (★ 1.3k) — Adds pixel-level tools: Q&A, grounding, cropping, pixel diff, colors, SVG tracing, and background cutout, via a free keyless chain.
-- [Anionex/dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) (★ 945) — Adds multi-image comparison, long-screenshot OCR, and screenshot-to-UI reproduction, via a free hosted service capped at 100 images/day.
+- [Anionex/dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) (★ 950) — Adds multi-image comparison, long-screenshot OCR, and screenshot-to-UI reproduction, via a free hosted service capped at 100 images/day.
 - [FuzzySoul/dsh-free-vision](https://github.com/FuzzySoul/dsh-free-vision) (★ 8) — Adds a settings GUI to choose between free-tier vision providers (Qwen3-VL-Flash, Doubao, DeepSeek-OCR).
 - [54xkeee/dsh-youreyes](https://github.com/54xkeee/dsh-youreyes) (★ 2) — Adds evidence memory that survives context compaction, a content-hash cache, and a bilingual client panel.
 
@@ -523,13 +523,13 @@ dsh plugin --profile web add github:liustack/modlens
 
 ### Short-drama production skills
 
-[zenstory-ai/drama-skills](https://github.com/zenstory-ai/drama-skills) — `Agent Skills` · ★ 4.3k · License: MIT · Works with: All clients
+[zenstory-ai/drama-skills](https://github.com/zenstory-ai/drama-skills) — `Agent Skills` · ★ 4.8k · License: MIT · Works with: All clients
 
 Open-source skill collection for AI short-drama and comic-drama creation: scripts, character assets, storyboards, image/video prompts and review, for Claude Code and Codex.
 
 **Alternatives:**
 
-- [eternityspring/shuohao-skills](https://github.com/eternityspring/shuohao-skills) (★ 6.7k) — Smaller, similarly scoped skill set for character breakdown, outlining and shot lists.
+- [eternityspring/shuohao-skills](https://github.com/eternityspring/shuohao-skills) (★ 7.0k) — Smaller, similarly scoped skill set for character breakdown, outlining and shot lists.
 
 <details><summary>Install</summary>
 
@@ -815,7 +815,7 @@ Lets an LLM watch a video locally and search everything it has ever watched.
 
 **Alternatives:**
 
-- [burningion/video-editing-mcp](https://github.com/burningion/video-editing-mcp) (★ 295) — Analyzes, searches, generates, and edits videos via Video Jungle; needs a VJ_API_KEY.
+- [burningion/video-editing-mcp](https://github.com/burningion/video-editing-mcp) (★ 296) — Analyzes, searches, generates, and edits videos via Video Jungle; needs a VJ_API_KEY.
 - [sonpiaz/watch-cli/tree/main/mcp-server](https://github.com/sonpiaz/watch-cli/tree/main/mcp-server) — Hands a social video, bundled with frames and transcript, to an agent; needs Kyma and Groq API keys.
 
 <details><summary>Install</summary>
@@ -1292,7 +1292,7 @@ extensions:
 
 ### ComfyUI workflow control
 
-[artokun/comfyui-mcp](https://github.com/artokun/comfyui-mcp) — `MCP server` · ★ 930 · License: MIT · Works with: All clients
+[artokun/comfyui-mcp](https://github.com/artokun/comfyui-mcp) — `MCP server` · ★ 949 · License: MIT · Works with: All clients
 
 Server and Claude Code plugin for ComfyUI: run workflows, generate images, and manage models and VRAM.
 
@@ -1481,13 +1481,13 @@ extensions:
 
 ### Adobe Photoshop automation
 
-[alisaitteke/photoshop-mcp](https://github.com/alisaitteke/photoshop-mcp) — `MCP server` · ★ 894 · License: MIT · Works with: All clients
+[alisaitteke/photoshop-mcp](https://github.com/alisaitteke/photoshop-mcp) — `MCP server` · ★ 940 · License: MIT · Works with: All clients
 
 116 tools for controlling Adobe Photoshop, combining generative AI actions with recipes, plus a standalone web UI.
 
 **Alternatives:**
 
-- [MCP for Adobe Premiere Pro](https://github.com/leancoderkavy/premiere-pro-mcp) (★ 538) — Local-first server for supported Adobe Premiere Pro workflows, starting with a read-only connection check.
+- [MCP for Adobe Premiere Pro](https://github.com/leancoderkavy/premiere-pro-mcp) (★ 576) — Local-first server for supported Adobe Premiere Pro workflows, starting with a read-only connection check.
 
 <details><summary>Install</summary>
 
@@ -1670,17 +1670,198 @@ extensions:
 
 </details>
 
+<a id="gflow-cli-mcp"></a>
+
+### Drive Google Flow video generation
+
+[gflow-cli](https://github.com/ffroliva/gflow-cli) — `MCP server` · ★ 450 · License: MIT · Works with: All clients
+
+Drives Google Flow from an agent for Veo video and Imagen image generation.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport stdio gflow-cli -- uvx gflow-cli
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add gflow-cli -- uvx gflow-cli
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add gflow-cli uvx gflow-cli
+```
+
+**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "gflow-cli": {
+      "command": "uvx",
+      "args": [
+        "gflow-cli"
+      ]
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — File: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "gflow-cli": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "gflow-cli"
+      ]
+    }
+  }
+}
+```
+
+**OpenCode** — File: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "gflow-cli": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "gflow-cli"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "gflow-cli": {
+      "command": "uvx",
+      "args": [
+        "gflow-cli"
+      ]
+    }
+  }
+}
+```
+
+**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "gflow-cli": {
+      "command": "uvx",
+      "args": [
+        "gflow-cli"
+      ]
+    }
+  }
+}
+```
+
+**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "gflow-cli": {
+      "source": "custom",
+      "command": "uvx",
+      "args": [
+        "gflow-cli"
+      ]
+    }
+  }
+}
+```
+
+**Goose** — File: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  gflow-cli:
+    type: stdio
+    cmd: uvx
+    args: ["gflow-cli"]
+    enabled: true
+```
+
+**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "gflow-cli": {
+      "command": "uvx",
+      "args": [
+        "gflow-cli"
+      ]
+    }
+  }
+}
+```
+
+**Roo Code** — File: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "gflow-cli": {
+      "command": "uvx",
+      "args": [
+        "gflow-cli"
+      ]
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — File: `gflow-cli.cordis.yml  →  dsh web --patch ./gflow-cli.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-gflow-cli
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: gflow-cli
+        transport: stdio
+        command: uvx
+        args: ["gflow-cli"]
+        env: {}
+        cwd: !!js process.cwd()
+```
+
+</details>
+
 <a id="nanobanana-mcp-server"></a>
 
 ### Gemini image generation and editing
 
-[zhongweili/nanobanana-mcp-server](https://github.com/zhongweili/nanobanana-mcp-server) — `MCP server` · ★ 408 · License: MIT · Works with: All clients
+[zhongweili/nanobanana-mcp-server](https://github.com/zhongweili/nanobanana-mcp-server) — `MCP server` · ★ 411 · License: MIT · Works with: All clients
 
 Provides image generation and editing capabilities via Gemini; needs a GEMINI_API_KEY.
 
 **Alternatives:**
 
-- [RLabs-Inc/gemini-mcp](https://github.com/RLabs-Inc/gemini-mcp) (★ 224) — Broader Gemini 3 toolkit with 30+ tools: images, video, research, TTS, and code execution; needs a GEMINI_API_KEY.
+- [RLabs-Inc/gemini-mcp](https://github.com/RLabs-Inc/gemini-mcp) (★ 226) — Broader Gemini 3 toolkit with 30+ tools: images, video, research, TTS, and code execution; needs a GEMINI_API_KEY.
 
 <details><summary>Install</summary>
 
@@ -1881,192 +2062,11 @@ extensions:
 
 </details>
 
-<a id="gflow-cli-mcp"></a>
-
-### Drive Google Flow video generation
-
-[gflow-cli](https://github.com/ffroliva/gflow-cli) — `MCP server` · ★ 400 · License: MIT · Works with: All clients
-
-Drives Google Flow from an agent for Veo video and Imagen image generation.
-
-<details><summary>Install</summary>
-
-**Claude Code**
-
-```bash
-claude mcp add --transport stdio gflow-cli -- uvx gflow-cli
-```
-
-**Codex CLI**
-
-```bash
-codex mcp add gflow-cli -- uvx gflow-cli
-```
-
-**Gemini CLI**
-
-```bash
-gemini mcp add gflow-cli uvx gflow-cli
-```
-
-**Cursor** — File: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "gflow-cli": {
-      "command": "uvx",
-      "args": [
-        "gflow-cli"
-      ]
-    }
-  }
-}
-```
-
-**VS Code (Copilot)** — File: `.vscode/mcp.json`
-
-```json
-{
-  "servers": {
-    "gflow-cli": {
-      "type": "stdio",
-      "command": "uvx",
-      "args": [
-        "gflow-cli"
-      ]
-    }
-  }
-}
-```
-
-**OpenCode** — File: `opencode.json`
-
-```json
-{
-  "$schema": "https://opencode.ai/config.json",
-  "mcp": {
-    "gflow-cli": {
-      "type": "local",
-      "command": [
-        "uvx",
-        "gflow-cli"
-      ],
-      "enabled": true
-    }
-  }
-}
-```
-
-**Cline** — File: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
-
-```json
-{
-  "mcpServers": {
-    "gflow-cli": {
-      "command": "uvx",
-      "args": [
-        "gflow-cli"
-      ]
-    }
-  }
-}
-```
-
-**Windsurf** — File: `~/.codeium/windsurf/mcp_config.json`
-
-```json
-{
-  "mcpServers": {
-    "gflow-cli": {
-      "command": "uvx",
-      "args": [
-        "gflow-cli"
-      ]
-    }
-  }
-}
-```
-
-**Zed** — File: `~/.config/zed/settings.json (or .zed/settings.json)`
-
-```json
-{
-  "context_servers": {
-    "gflow-cli": {
-      "source": "custom",
-      "command": "uvx",
-      "args": [
-        "gflow-cli"
-      ]
-    }
-  }
-}
-```
-
-**Goose** — File: `~/.config/goose/config.yaml`
-
-```yaml
-extensions:
-  gflow-cli:
-    type: stdio
-    cmd: uvx
-    args: ["gflow-cli"]
-    enabled: true
-```
-
-**Kiro** — File: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
-
-```json
-{
-  "mcpServers": {
-    "gflow-cli": {
-      "command": "uvx",
-      "args": [
-        "gflow-cli"
-      ]
-    }
-  }
-}
-```
-
-**Roo Code** — File: `.roo/mcp.json`
-
-```json
-{
-  "mcpServers": {
-    "gflow-cli": {
-      "command": "uvx",
-      "args": [
-        "gflow-cli"
-      ]
-    }
-  }
-}
-```
-
-**DeepSeek Harness** — File: `gflow-cli.cordis.yml  →  dsh web --patch ./gflow-cli.cordis.yml`
-
-```yaml
-- insert:
-    - id: mcp-gflow-cli
-      name: '@deepseek-ai/dsh-mcp-client'
-      config:
-        serverName: gflow-cli
-        transport: stdio
-        command: uvx
-        args: ["gflow-cli"]
-        env: {}
-        cwd: !!js process.cwd()
-```
-
-</details>
-
 <a id="glif-mcp-server"></a>
 
 ### Glif's media-generation agent
 
-[Glif](https://github.com/glifxyz/glif-mcp-server) — `MCP server` · ★ 218 · License: MIT · Works with: All clients
+[Glif](https://github.com/glifxyz/glif-mcp-server) — `MCP server` · ★ 222 · License: MIT · Works with: All clients
 
 Generates images, video, and audio with Glif's media-generation agent.
 
@@ -2228,7 +2228,7 @@ extensions:
 
 ### AI image generation
 
-[dickpy/dsh-imagegen](https://github.com/dickpy/dsh-imagegen) — `Native plugin` · ★ 194 · License: Apache-2.0 · Works with: DeepSeek Harness only
+[dickpy/dsh-imagegen](https://github.com/dickpy/dsh-imagegen) — `Native plugin` · ★ 206 · License: Apache-2.0 · Works with: DeepSeek Harness only
 
 Adds text-to-image and image-to-image generation to the DSH Web GUI through a configurable OpenAI-compatible endpoint (gpt-image or dall-e-3), with a settings card and a sidebar generation studio.
 
@@ -2250,7 +2250,7 @@ dsh plugin --profile web add github:dickpy/dsh-imagegen
 
 ### Drive ComfyUI image/video workflows
 
-[fandc520/dsh-comfyui](https://github.com/fandc520/dsh-comfyui) — `Native plugin` · ★ 189 · License: MIT · Works with: DeepSeek Harness only
+[fandc520/dsh-comfyui](https://github.com/fandc520/dsh-comfyui) — `Native plugin` · ★ 190 · License: MIT · Works with: DeepSeek Harness only
 
 Drives a local or remote ComfyUI server: tools to run workflows, inspect nodes, and edit graphs, with a template library, live queue, SDXL and Wan 2.1 templates, and a same-origin media proxy.
 
@@ -2264,29 +2264,11 @@ dsh plugin --profile web add github:fandc520/dsh-comfyui
 
 </details>
 
-<a id="dsh-dsh-design-qa"></a>
-
-### Design-fidelity visual QA
-
-[sunxin-ai/dsh-design-qa](https://github.com/sunxin-ai/dsh-design-qa) — `Native plugin` · ★ 44 · License: MIT · Works with: DeepSeek Harness only
-
-Lets a text-only model judge whether an implementation matches its design mock, via a deepseek_vision tool that borrows any OpenAI-compatible vision route, shipped with a benchmark of fixtures and injected defects.
-
-<details><summary>Install</summary>
-
-**DeepSeek Harness**
-
-```bash
-dsh plugin --profile web add github:sunxin-ai/dsh-design-qa
-```
-
-</details>
-
 <a id="generative-media-skills"></a>
 
 ### muapi generative media skills
 
-[SamurAIGPT/Generative-Media-Skills](https://github.com/SamurAIGPT/Generative-Media-Skills) — `Agent Skills` · ★ 42 · License: MIT · Works with: All clients
+[SamurAIGPT/Generative-Media-Skills](https://github.com/SamurAIGPT/Generative-Media-Skills) — `Agent Skills` · ★ 50 · License: MIT · Works with: All clients
 
 73 skills for high-quality multi-modal image, video and audio generation through the muapi API, covering ad creatives, social video, product ads and cinematic direction.
 
@@ -2372,19 +2354,37 @@ npx skills add SamurAIGPT/Generative-Media-Skills -a universal
 
 </details>
 
+<a id="dsh-dsh-design-qa"></a>
+
+### Design-fidelity visual QA
+
+[sunxin-ai/dsh-design-qa](https://github.com/sunxin-ai/dsh-design-qa) — `Native plugin` · ★ 44 · License: MIT · Works with: DeepSeek Harness only
+
+Lets a text-only model judge whether an implementation matches its design mock, via a deepseek_vision tool that borrows any OpenAI-compatible vision route, shipped with a benchmark of fixtures and injected defects.
+
+<details><summary>Install</summary>
+
+**DeepSeek Harness**
+
+```bash
+dsh plugin --profile web add github:sunxin-ai/dsh-design-qa
+```
+
+</details>
+
 <a id="dsh-dsh-speak"></a>
 
 ### Read replies aloud (TTS)
 
-[Alan2Z/dsh-speak](https://github.com/Alan2Z/dsh-speak) — `Native plugin` · ★ 19 · License: MIT · Works with: DeepSeek Harness only
+[Alan2Z/dsh-speak](https://github.com/Alan2Z/dsh-speak) — `Native plugin` · ★ 20 · License: MIT · Works with: DeepSeek Harness only
 
 Announces final replies, approvals, and questions with the system's built-in natural voice on Windows and macOS, at zero extra model or token cost, with optional event announcements and a bilingual settings page.
 
 **Alternatives:**
 
 - [PolinniZhong/dsh-omi-voice](https://github.com/PolinniZhong/dsh-omi-voice) (★ 75) — Adds tap-to-read-aloud with natural Doubao TTS voices (bring your own key), filtering out code, tables, and diagrams from what gets read.
-- [1624318455/dsh-plugin-tts](https://github.com/1624318455/dsh-plugin-tts) (★ 60) — Adds RVC custom voice models with one-click voice-pack installs from a registry, alongside free Edge TTS.
-- [ppy-web/dsh-plugin-xiaomi-mimo-tts](https://github.com/ppy-web/dsh-plugin-xiaomi-mimo-tts) (★ 60) — Adds Xiaomi MiMo text-to-speech with preset voices and custom voice design.
+- [1624318455/dsh-plugin-tts](https://github.com/1624318455/dsh-plugin-tts) (★ 65) — Adds RVC custom voice models with one-click voice-pack installs from a registry, alongside free Edge TTS.
+- [ppy-web/dsh-plugin-xiaomi-mimo-tts](https://github.com/ppy-web/dsh-plugin-xiaomi-mimo-tts) (★ 66) — Adds Xiaomi MiMo text-to-speech with preset voices and custom voice design.
 
 <details><summary>Install</summary>
 
@@ -2392,6 +2392,24 @@ Announces final replies, approvals, and questions with the system's built-in nat
 
 ```bash
 dsh plugin --profile web add github:Alan2Z/dsh-speak
+```
+
+</details>
+
+<a id="dsh-dsh-voice"></a>
+
+### TTS/ASR utility toolkit
+
+[STARDUSTLC666/dsh-voice](https://github.com/STARDUSTLC666/dsh-voice) — `Native plugin` · ★ 6 · License: MIT · Works with: DeepSeek Harness only
+
+A voice utility toolkit: free edge-tts speech synthesis, OpenAI-compatible ASR transcription, a voice list, batch voice preview, and a health self-check.
+
+<details><summary>Install</summary>
+
+**DeepSeek Harness**
+
+```bash
+dsh plugin --profile web add github:STARDUSTLC666/dsh-voice
 ```
 
 </details>
@@ -2407,8 +2425,8 @@ Adds semantic UI sound effects for task start, success, and failure, plus per-bu
 **Alternatives:**
 
 - [huguangyu666/dsh-plugin-notify](https://github.com/huguangyu666/dsh-plugin-notify) (★ 3) — Adds a 60-second confirmation window where the agent voice-calls you back if you do not respond, plus Chinese TTS announcements.
-- [AI-Galaxy-GPU/dsh-sound](https://github.com/AI-Galaxy-GPU/dsh-sound) (★ 14) — Adds separate configurable sounds for turn completion, approval, question, plan-review, goal-blocked, and task-failure events.
-- [CAOGGL/dsh-ding](https://github.com/CAOGGL/dsh-ding) (★ 12) — Adds a native Windows notification alongside the completion sound, with debounce/throttle settings.
+- [AI-Galaxy-GPU/dsh-sound](https://github.com/AI-Galaxy-GPU/dsh-sound) (★ 13) — Adds separate configurable sounds for turn completion, approval, question, plan-review, goal-blocked, and task-failure events.
+- [CAOGGL/dsh-ding](https://github.com/CAOGGL/dsh-ding) (★ 11) — Adds a native Windows notification alongside the completion sound, with debounce/throttle settings.
 
 <details><summary>Install</summary>
 
@@ -2434,24 +2452,6 @@ Captures the frontmost active window via a global shortcut and mounts it directl
 
 ```bash
 dsh plugin --profile web add github:TaurusWood/dsh-plugin-appshot
-```
-
-</details>
-
-<a id="dsh-dsh-voice"></a>
-
-### TTS/ASR utility toolkit
-
-[STARDUSTLC666/dsh-voice](https://github.com/STARDUSTLC666/dsh-voice) — `Native plugin` · ★ 5 · License: MIT · Works with: DeepSeek Harness only
-
-A voice utility toolkit: free edge-tts speech synthesis, OpenAI-compatible ASR transcription, a voice list, batch voice preview, and a health self-check.
-
-<details><summary>Install</summary>
-
-**DeepSeek Harness**
-
-```bash
-dsh plugin --profile web add github:STARDUSTLC666/dsh-voice
 ```
 
 </details>
@@ -2487,7 +2487,7 @@ A free voice closed loop for the Web UI: browser speech recognition for mic inpu
 - [Zhangbo-cn/dsh-voice-input-plugin](https://github.com/Zhangbo-cn/dsh-voice-input-plugin) (★ 7) — Adds hold-to-talk dictation and Edge TTS reply reading that streams while the model generates, with echo-pause during playback.
 - [qishuilalala/dsh-voice-mode#dsh-voice-mode](https://github.com/qishuilalala/dsh-voice-mode/tree/main/plugin/dsh-voice-mode) — Adds full-duplex, on-device streaming ASR with wake-word detection and true barge-in that interrupts playback when you start speaking.
 - [PensiveFei/dsh-voice-scribe](https://github.com/PensiveFei/dsh-voice-scribe) (★ 36) — Adds a hotkey (Alt or Alt+Space) to start and stop dictation, with optional LLM polish of the transcript.
-- [WizisCool/dsh-ears](https://github.com/WizisCool/dsh-ears) (★ 31) — Adds a choice of speech-recognition backends with a native settings page and optional polish through dsh's own LLM routes.
+- [WizisCool/dsh-ears](https://github.com/WizisCool/dsh-ears) (★ 30) — Adds a choice of speech-recognition backends with a native settings page and optional polish through dsh's own LLM routes.
 
 <details><summary>Install</summary>
 

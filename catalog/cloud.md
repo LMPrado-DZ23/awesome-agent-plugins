@@ -3049,7 +3049,7 @@ extensions:
 
 ### Query ClickHouse clusters
 
-[ClickHouse](https://github.com/ClickHouse/mcp-clickhouse) — `MCP server` · ★ 907 · License: Apache-2.0 · Works with: All clients
+[ClickHouse](https://github.com/ClickHouse/mcp-clickhouse) — `MCP server` · ★ 915 · License: Apache-2.0 · Works with: All clients
 
 Official server for querying and exploring ClickHouse clusters and chDB.
 
@@ -3274,7 +3274,7 @@ extensions:
 
 ### Neon serverless Postgres management
 
-[Neon](https://github.com/neondatabase/mcp-server-neon) — `MCP server` · ★ 665 · License: MIT · Works with: All clients
+[Neon](https://github.com/neondatabase/mcp-server-neon) — `MCP server` · ★ 667 · License: MIT · Works with: All clients
 
 Official server for managing Neon projects and Lakebase Postgres databases; needs an Authorization token.
 
@@ -3462,7 +3462,7 @@ extensions:
 
 ### Proxmox VE management
 
-[ProxmoxMCP-Plus](https://github.com/RekklesNA/ProxmoxMCP-Plus) — `MCP server` · ★ 659 · License: MIT · Works with: All clients
+[ProxmoxMCP-Plus](https://github.com/RekklesNA/ProxmoxMCP-Plus) — `MCP server` · ★ 664 · License: MIT · Works with: All clients
 
 Manages Proxmox VE VMs, LXCs, snapshots, backups, storage, and cluster operations.
 
@@ -3696,7 +3696,7 @@ extensions:
 
 ### Coolify infrastructure management
 
-[StuMason/coolify-mcp](https://github.com/StuMason/coolify-mcp) — `MCP server` · ★ 625 · License: MIT · Works with: All clients
+[StuMason/coolify-mcp](https://github.com/StuMason/coolify-mcp) — `MCP server` · ★ 628 · License: MIT · Works with: All clients
 
 45 tools for managing Coolify infrastructure, diagnostics, and documentation search; needs a COOLIFY_ACCESS_TOKEN.
 
@@ -3911,7 +3911,7 @@ extensions:
 
 ### MotherDuck SQL analytics
 
-[motherduckdb/mcp-server-motherduck](https://github.com/motherduckdb/mcp-server-motherduck) — `MCP server` · ★ 541 · License: MIT · Works with: All clients
+[motherduckdb/mcp-server-motherduck](https://github.com/motherduckdb/mcp-server-motherduck) — `MCP server` · ★ 544 · License: MIT · Works with: All clients
 
 SQL analytics and data engineering for AI assistants and IDEs via MotherDuck; needs a MOTHERDUCK_TOKEN.
 
@@ -4145,7 +4145,7 @@ extensions:
 
 ### Prometheus metrics and PromQL
 
-[Prometheus MCP Server](https://github.com/pab1it0/prometheus-mcp-server) — `MCP server` · ★ 525 · License: MIT · Works with: All clients
+[Prometheus MCP Server](https://github.com/pab1it0/prometheus-mcp-server) — `MCP server` · ★ 527 · License: MIT · Works with: All clients
 
 Provides Prometheus metrics access and PromQL query execution for AI assistants.
 
@@ -4442,7 +4442,7 @@ extensions:
 
 ### AI-driven Kubernetes deployment
 
-[vfarcic/dot-ai](https://github.com/vfarcic/dot-ai) — `MCP server` · ★ 339 · License: MIT · Works with: All clients
+[vfarcic/dot-ai](https://github.com/vfarcic/dot-ai) — `MCP server` · ★ 340 · License: MIT · Works with: All clients
 
 AI-powered development platform for Kubernetes deployments and intelligent automation.
 
@@ -4631,7 +4631,7 @@ extensions:
 
 ### Elasticsearch queries
 
-[cr7258/elasticsearch-mcp-server](https://github.com/cr7258/elasticsearch-mcp-server) — `MCP server` · ★ 317 · License: Apache-2.0 · Works with: All clients
+[cr7258/elasticsearch-mcp-server](https://github.com/cr7258/elasticsearch-mcp-server) — `MCP server` · ★ 321 · License: Apache-2.0 · Works with: All clients
 
 Interacts with Elasticsearch for search and analytics; needs an ELASTICSEARCH_API_KEY or password.
 
@@ -5063,7 +5063,7 @@ extensions:
 
 ### Enterprise PostgreSQL with hybrid search
 
-[pgEdge/pgedge-postgres-mcp](https://github.com/pgEdge/pgedge-postgres-mcp) — `MCP server` · ★ 247 · License: PostgreSQL · Works with: All clients
+[pgEdge/pgedge-postgres-mcp](https://github.com/pgEdge/pgedge-postgres-mcp) — `MCP server` · ★ 249 · License: PostgreSQL · Works with: All clients
 
 Enterprise PostgreSQL server with natural-language queries, hybrid search (pgvector plus BM25), and a web UI.
 
@@ -5268,7 +5268,7 @@ extensions:
 
 ### VictoriaMetrics integration
 
-[VictoriaMetrics/mcp-victoriametrics](https://github.com/VictoriaMetrics/mcp-victoriametrics) — `MCP server` · ★ 245 · License: Apache-2.0 · Works with: All clients
+[VictoriaMetrics/mcp-victoriametrics](https://github.com/VictoriaMetrics/mcp-victoriametrics) — `MCP server` · ★ 248 · License: Apache-2.0 · Works with: All clients
 
 Integrates with the VictoriaMetrics API and documentation; needs a VictoriaMetrics bearer token.
 

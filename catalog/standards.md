@@ -12,7 +12,7 @@
 
 ### Agent Skills
 
-[Agent Skills](https://github.com/agentskills/agentskills) — `Standard / spec` · ★ 27k · License: Apache-2.0 · Works with: —
+[Agent Skills](https://github.com/agentskills/agentskills) — `Standard / spec` · ★ 28k · License: Apache-2.0 · Works with: —
 
 Specification for Agent Skills: a folder with a SKILL.md (name, description, instructions) plus optional scripts and resources that an agent loads on demand.
 
@@ -28,6 +28,6 @@ Open Markdown format for project instructions to coding agents (setup, build, te
 
 ### Model Context Protocol
 
-[Model Context Protocol](https://github.com/modelcontextprotocol/modelcontextprotocol) — `Standard / spec` · ★ 9.7k · License: see repo · Works with: —
+[Model Context Protocol](https://github.com/modelcontextprotocol/modelcontextprotocol) — `Standard / spec` · ★ 9.8k · License: see repo · Works with: —
 
 Specification and documentation for MCP, the open protocol every client in this list uses to connect agents to tools, data and prompts.

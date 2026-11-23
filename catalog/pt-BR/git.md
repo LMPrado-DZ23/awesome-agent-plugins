@@ -213,7 +213,7 @@ extensions:
 
 ### Alibaba open code review
 
-[alibaba/open-code-review](https://github.com/alibaba/open-code-review) — `Agent Skills` · ★ 53k · Licença: Apache-2.0 · Funciona com: Todos os clientes
+[alibaba/open-code-review](https://github.com/alibaba/open-code-review) — `Agent Skills` · ★ 55k · Licença: Apache-2.0 · Funciona com: Todos os clientes
 
 Ferramenta híbrida de revisão de código testada em produção na escala da Alibaba, combinando pipelines determinísticos com um agente LLM para comentários precisos linha a linha e um conjunto de regras de segurança multilíngue.
 
@@ -531,7 +531,7 @@ extensions:
 
 ### Manage repos across Git hosts
 
-[gitkraken/gk-cli](https://github.com/gitkraken/gk-cli) — `Servidor MCP` · ★ 467 · Licença: ver repo · Funciona com: Todos os clientes
+[gitkraken/gk-cli](https://github.com/gitkraken/gk-cli) — `Servidor MCP` · ★ 468 · Licença: ver repo · Funciona com: Todos os clientes
 
 Servidor da GitKraken para gerenciar repositórios, pull requests e issues no GitHub, GitLab e Bitbucket.
 
@@ -909,7 +909,7 @@ extensions:
 
 ### GitHub CI and PR review bot
 
-[PerryLink/dsh-github](https://github.com/PerryLink/dsh-github) — `Plugin nativo` · ★ 31 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
+[PerryLink/dsh-github](https://github.com/PerryLink/dsh-github) — `Plugin nativo` · ★ 34 · Licença: Apache-2.0 · Funciona com: DeepSeek Harness apenas
 
 Integração de CI com o GitHub de nível oficial: um action.yml composto, um bot de revisão de PR por polling com comentários inline idempotentes e um gate de status-check, além de ferramentas de PR e issues em que toda escrita é aprovada por um humano.
 
@@ -931,7 +931,7 @@ dsh plugin --profile web add github:PerryLink/dsh-github
 
 ### Git worktree session targets
 
-[wloops/dsh-git-worktree](https://github.com/wloops/dsh-git-worktree) — `Plugin nativo` · ★ 22 · Licença: MIT · Funciona com: DeepSeek Harness apenas
+[wloops/dsh-git-worktree](https://github.com/wloops/dsh-git-worktree) — `Plugin nativo` · ★ 23 · Licença: MIT · Funciona com: DeepSeek Harness apenas
 
 Session Targets baseados em git worktree com sessões de tarefa isoladas, status pronto-para-revisão, preview local reversível, entrega confirmada por humano, retenção e recuperação de ambiente, e iteração na mesma sessão.
 
@@ -1018,7 +1018,7 @@ Uma faixa acima do campo de composição lista os arquivos modificados na sessã
 
 **Alternativas:**
 
-- [cirelir/dsh-change-review](https://github.com/cirelir/dsh-change-review) (★ 14) — Rastreia write/edit com isolamento por sessão, agregação de subagentes e atualizações ao vivo via SSE, sem precisar de git
+- [cirelir/dsh-change-review](https://github.com/cirelir/dsh-change-review) (★ 15) — Rastreia write/edit com isolamento por sessão, agregação de subagentes e atualizações ao vivo via SSE, sem precisar de git
 - [9087/dsh-diff-approval](https://github.com/9087/dsh-diff-approval) (★ 16) — Permite manter ou reverter cada bloco de mudança individualmente, oferece desfazer/refazer e mantém a revisão persistente entre reinícios
 - [Tlyer233/dsh-vscode-review#dsh-review](https://github.com/Tlyer233/dsh-vscode-review/tree/main/dsh-review) — Registra write, edit e rm de shell num repositório git sombra, revisável trecho a trecho numa extensão companheira do VS Code
 
