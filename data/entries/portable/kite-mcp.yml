@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: kite-mcp
+name: Kite MCP
+url: https://github.com/kitedotnew/kite-agent-plugins
+type: mcp-server
+category: tools
+license: MIT
+tags:
+  - design
+  - ui
+  - figma-alternative
+description:
+  en: Hosted MCP server for the Kite design tool; the agent draws and edits layers (frames, text, components, auto layout) in a shared design file and reads frames back as HTML.
+  pt: Servidor MCP hospedado da ferramenta de design Kite; o agente desenha e edita camadas (frames, texto, componentes, auto layout) em um arquivo de design compartilhado e lê frames de volta como HTML.
+mcp:
+  name: kite
+  http:
+    url: https://kite.new/api/mcp
