@@ -64,6 +64,7 @@
 - [Export chats as styled notes](#dsh-notes-dsh-plugin) — Exporta conversas do DSH como imagens PNG no estilo Smartisan Notes, ou cria e atualiza notas em Markdown em u…
 - [Filesystem (reference)](#mcp-filesystem) — Servidor de referência para ler, escrever, buscar e mover arquivos, restrito aos diretórios passados como argu…
 - [Hacker News feeds and search](#dsh-hn-cli-hacker-news) — Ferramentas do Hacker News para feeds, threads de discussão, busca e perfis de usuário.
+- [Kite MCP](#kite-mcp) — Servidor MCP hospedado da ferramenta de design Kite; o agente desenha e edita camadas (frames, texto, componen…
 - [MCP server config manager](#dsh-dsh-plugin-hub-packages-dsh-mcp-manager) — Gerenciador de servidores MCP (stdio / streamable-http) com níveis de config por projeto e global: o MCP do pr…
 
 <a id="claude-mem"></a>
@@ -5493,6 +5494,168 @@ Ferramentas do Hacker News para feeds, threads de discussão, busca e perfis de 
 
 ```bash
 dsh plugin --profile web add github:heartleo/hn-cli#path:/plugins/hacker-news
+```
+
+</details>
+
+<a id="kite-mcp"></a>
+
+### Kite MCP
+
+[Kite MCP](https://github.com/kitedotnew/kite-agent-plugins) — `Servidor MCP` · Licença: MIT · Funciona com: Todos os clientes
+
+Servidor MCP hospedado da ferramenta de design Kite; o agente desenha e edita camadas (frames, texto, componentes, auto layout) em um arquivo de design compartilhado e lê frames de volta como HTML.
+
+<details><summary>Instalar</summary>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport http kite https://kite.new/api/mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add kite --url https://kite.new/api/mcp
+```
+
+**Gemini CLI**
+
+```bash
+gemini mcp add --transport http kite https://kite.new/api/mcp
+```
+
+**Cursor** — Arquivo: `.cursor/mcp.json (or ~/.cursor/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "kite": {
+      "url": "https://kite.new/api/mcp"
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — Arquivo: `.vscode/mcp.json`
+
+```json
+{
+  "servers": {
+    "kite": {
+      "type": "http",
+      "url": "https://kite.new/api/mcp"
+    }
+  }
+}
+```
+
+**OpenCode** — Arquivo: `opencode.json`
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "kite": {
+      "type": "remote",
+      "url": "https://kite.new/api/mcp",
+      "enabled": true
+    }
+  }
+}
+```
+
+**Cline** — Arquivo: `cline_mcp_settings.json (Cline → MCP Servers → Configure)`
+
+```json
+{
+  "mcpServers": {
+    "kite": {
+      "type": "streamableHttp",
+      "url": "https://kite.new/api/mcp"
+    }
+  }
+}
+```
+
+**Windsurf** — Arquivo: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "kite": {
+      "serverUrl": "https://kite.new/api/mcp"
+    }
+  }
+}
+```
+
+**Zed** — Arquivo: `~/.config/zed/settings.json (or .zed/settings.json)`
+
+```json
+{
+  "context_servers": {
+    "kite": {
+      "source": "custom",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://kite.new/api/mcp"
+      ]
+    }
+  }
+}
+```
+_Remote server bridged through the mcp-remote stdio proxy._
+
+**Goose** — Arquivo: `~/.config/goose/config.yaml`
+
+```yaml
+extensions:
+  kite:
+    type: streamable_http
+    uri: https://kite.new/api/mcp
+    enabled: true
+```
+
+**Kiro** — Arquivo: `.kiro/settings/mcp.json (or ~/.kiro/settings/mcp.json)`
+
+```json
+{
+  "mcpServers": {
+    "kite": {
+      "type": "streamable-http",
+      "url": "https://kite.new/api/mcp"
+    }
+  }
+}
+```
+
+**Roo Code** — Arquivo: `.roo/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "kite": {
+      "type": "streamable-http",
+      "url": "https://kite.new/api/mcp"
+    }
+  }
+}
+```
+
+**DeepSeek Harness** — Arquivo: `kite.cordis.yml  →  dsh web --patch ./kite.cordis.yml`
+
+```yaml
+- insert:
+    - id: mcp-kite
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: kite
+        transport: streamable-http
+        url: https://kite.new/api/mcp
 ```
 
 </details>
