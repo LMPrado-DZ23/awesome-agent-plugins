@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: publicrecords-skills
+name: Public Records Skills
+url: https://github.com/GeminiGeorge22/publicrecords-skills
+type: skill-pack
+category: skills
+license: MIT
+tags:
+  - public-data
+  - procurement
+  - apify
+description:
+  en: >-
+    Agent Skills for official public data (US contracts and grants, UK and EU tenders, council meetings, ATS jobs,
+    company socials, Etsy, Google ads, sports odds, and Spotify plays). Runs bill the user's own Apify account.
+  pt: >-
+    Agent Skills para dados oficiais públicos (contratos e grants dos EUA, licitações do Reino Unido e da UE,
+    câmaras municipais, vagas, redes sociais de empresas, Etsy, anúncios, odds e Spotify). A cobrança vai para
+    a conta Apify do usuário.
+skill:
+  source: GeminiGeorge22/publicrecords-skills

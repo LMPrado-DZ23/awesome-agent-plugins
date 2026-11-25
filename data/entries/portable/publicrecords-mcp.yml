@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../../schema/entry.schema.json
+id: publicrecords-mcp
+name: Public Records MCP
+url: https://github.com/GeminiGeorge22/publicrecords-mcp
+type: mcp-server
+category: tools
+license: MIT
+tags:
+  - public-data
+  - procurement
+  - apify
+description:
+  en: >-
+    Remote Apify MCP server for official public-records Actors (contracts, grants, tenders, jobs, company socials,
+    Etsy, ads, odds, Spotify, forecast track records). Sign in with your own Apify account (OAuth or API token).
+  pt: >-
+    Servidor MCP remoto da Apify com Actors de dados oficiais públicos (contratos, grants, licitações, vagas,
+    redes sociais, Etsy, anúncios, odds e Spotify). Entre com a sua própria conta Apify (OAuth ou token).
+mcp:
+  name: publicrecords
+  http:
+    url: "https://mcp.apify.com/?tools=publicrecords/company-social-profile-finder,publicrecords/govcon-opportunity-feed,publicrecords/grants-gov-scraper,publicrecords/usaspending-awards-scraper,publicrecords/uk-find-a-tender-scraper,publicrecords/eu-ted-notices-scraper,publicrecords/legistar-meetings-scraper,publicrecords/ashby-jobs-scraper,publicrecords/greenhouse-jobs-scraper,publicrecords/lever-jobs-scraper,publicrecords/smartrecruiters-jobs-scraper,publicrecords/etsy-search-scraper,publicrecords/etsy-shop-velocity,publicrecords/google-ads-transparency-scraper,publicrecords/sports-odds-api,publicrecords/spotify-play-count-scraper,publicrecords/calibration-ledger"

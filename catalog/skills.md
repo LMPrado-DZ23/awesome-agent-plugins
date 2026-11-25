@@ -50,6 +50,7 @@
 - [Responsible AI-origin analysis rules](#responsible-ai-origin-analysis) — Permanent project instruction (Portuguese) for any agent: never treat one pattern as proof of AI authorship, s…
 - [AI Origin Analysis](#ai-origin-analysis) — Skill for assessing whether text, code or a repository may have been AI-generated without treating style as pr…
 - [Clean AI traces from Russian text](#dsh-humanizer-ru-dsh) — Cleans AI traces from Russian text: finds chatbot copy-paste artefacts from major AI tools, strips hidden zero…
+- [Public Records Skills](#publicrecords-skills) — Agent Skills for official public data (US contracts and grants, UK and EU tenders, council meetings, ATS jobs,…
 
 <a id="superpowers"></a>
 
@@ -3068,6 +3069,96 @@ Cleans AI traces from Russian text: finds chatbot copy-paste artefacts from majo
 
 ```bash
 dsh plugin --profile web add github:Vladimir-Human/humanizer-ru#path:/dsh
+```
+
+</details>
+
+<a id="publicrecords-skills"></a>
+
+### Public Records Skills
+
+[Public Records Skills](https://github.com/GeminiGeorge22/publicrecords-skills) — `Agent Skills` · License: MIT · Works with: All clients
+
+Agent Skills for official public data (US contracts and grants, UK and EU tenders, council meetings, ATS jobs, company socials, Etsy, Google ads, sports odds, and Spotify plays). Runs bill the user's own Apify account.
+
+<details><summary>Install</summary>
+
+**Claude Code**
+
+```bash
+npx skills add GeminiGeorge22/publicrecords-skills -a claude-code -g
+```
+
+**Codex CLI**
+
+```bash
+npx skills add GeminiGeorge22/publicrecords-skills -a codex -g
+```
+
+**Gemini CLI**
+
+```bash
+npx skills add GeminiGeorge22/publicrecords-skills -a gemini-cli -g
+```
+
+**Cursor**
+
+```bash
+npx skills add GeminiGeorge22/publicrecords-skills -a cursor -g
+```
+
+**VS Code (Copilot)**
+
+```bash
+npx skills add GeminiGeorge22/publicrecords-skills -a github-copilot -g
+```
+
+**OpenCode**
+
+```bash
+npx skills add GeminiGeorge22/publicrecords-skills -a opencode -g
+```
+
+**Cline**
+
+```bash
+npx skills add GeminiGeorge22/publicrecords-skills -a cline -g
+```
+
+**Windsurf**
+
+```bash
+npx skills add GeminiGeorge22/publicrecords-skills -a windsurf -g
+```
+
+**Zed**
+
+```bash
+npx skills add GeminiGeorge22/publicrecords-skills -a zed -g
+```
+
+**Goose**
+
+```bash
+npx skills add GeminiGeorge22/publicrecords-skills -a goose -g
+```
+
+**Kiro**
+
+```bash
+npx skills add GeminiGeorge22/publicrecords-skills -a kiro-cli -g
+```
+
+**Roo Code**
+
+```bash
+npx skills add GeminiGeorge22/publicrecords-skills -a roo -g
+```
+
+**DeepSeek Harness**
+
+```bash
+npx skills add GeminiGeorge22/publicrecords-skills -a universal
 ```
 
 </details>

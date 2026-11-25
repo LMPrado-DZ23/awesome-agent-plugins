@@ -4,7 +4,7 @@
 
 > Um catálogo de **servidores MCP, Agent Skills e plugins nativos** para agentes de IA de programação — com o comando de instalação exato para o *seu* cliente.
 
-![entries](https://img.shields.io/badge/itens-589-blue) ![projects](https://img.shields.io/badge/projects-945-blue) ![clients](https://img.shields.io/badge/clients-13-green)
+![entries](https://img.shields.io/badge/itens-591-blue) ![projects](https://img.shields.io/badge/projects-947-blue) ![clients](https://img.shields.io/badge/clients-13-green)
 
 A maioria das listas é presa a um cliente. Aqui cada item diz com quais agentes funciona, e as instruções de instalação são geradas por cliente a partir de uma única especificação, então ficam consistentes. Plugins quase duplicados são juntados numa entrada que aponta a melhor opção e lista o que cada alternativa acrescenta.
 
@@ -75,12 +75,12 @@ Kits prontos para cenários comuns — instale o kit inteiro em um cliente com u
 
 - [Padrões e especificações](catalog/pt-BR/standards.md) — 3 itens
 - [Registros, listas e gerenciadores](catalog/pt-BR/meta.md) — 18 itens + 17 alternativas incorporadas
-- [Skills e instruções](catalog/pt-BR/skills.md) — 46 itens + 49 alternativas incorporadas
+- [Skills e instruções](catalog/pt-BR/skills.md) — 47 itens + 49 alternativas incorporadas
 - [Inteligência de código](catalog/pt-BR/code-intel.md) — 10 itens
 - [Navegador e web](catalog/pt-BR/browser.md) — 17 itens + 22 alternativas incorporadas
 - [Documentação e conhecimento](catalog/pt-BR/docs.md) — 29 itens + 12 alternativas incorporadas
 - [Memória](catalog/pt-BR/memory.md) — 25 itens + 18 alternativas incorporadas
-- [Ferramentas e capacidades](catalog/pt-BR/tools.md) — 61 itens + 33 alternativas incorporadas
+- [Ferramentas e capacidades](catalog/pt-BR/tools.md) — 62 itens + 33 alternativas incorporadas
 - [Desenvolvimento e runtime](catalog/pt-BR/dev.md) — 78 itens + 24 alternativas incorporadas
 - [Git e revisão de código](catalog/pt-BR/git.md) — 16 itens + 11 alternativas incorporadas
 - [Nuvem, dados e infra](catalog/pt-BR/cloud.md) — 40 itens + 1 alternativas incorporadas
@@ -102,7 +102,7 @@ Toda importação é reproduzível (`scripts/import/`) e todo item passa pelo me
 
 | Origem | Itens | Como é selecionado |
 |---|---|---|
-| Curadoria manual | 44 | Servidores oficiais, especificações e pacotes de skills conferidos nos READMEs. |
+| Curadoria manual | 46 | Servidores oficiais, especificações e pacotes de skills conferidos nos READMEs. |
 | [MCP Registry](https://registry.modelcontextprotocol.io) | 198 | Servidores do registro oficial com ≥200★ cujo namespace no registro bate com o dono no GitHub (contra falsificação); instalação vinda dos dados de pacote do registro. |
 | Busca no GitHub | 127 | Busca por topics e palavras-chave, classificada pelos arquivos que existem de fato (SKILL.md, marketplace de plugins, manifesto de extensão do Gemini). |
 | [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) | 220 | Os melhores plugins por estrelas e downloads no npm; quase duplicados viram alternativas. |
